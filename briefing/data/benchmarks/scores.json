@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "description": "AI coding tool benchmark scores - tracked for competitive intel",
+    "lastUpdated": "2026-02-11",
+    "sources": [
+      "https://aider.chat/docs/leaderboards/",
+      "https://www.swebench.com/",
+      "https://paperswithcode.com/sota/code-generation-on-humaneval"
+    ]
+  },
+  "aiderPolyglot": {
+    "_description": "Aider's coding benchmark - % of tasks completed correctly",
+    "scores": {
+      "Claude Opus 4 (32k thinking)": { "score": 72.0, "cost": "$65.75", "date": "2026-02-11" },
+      "Claude Opus 4 (no think)": { "score": 70.7, "cost": "$68.63", "date": "2026-02-11" },
+      "Claude 3.7 Sonnet (32k thinking)": { "score": 64.9, "cost": "$36.83", "date": "2026-02-11" },
+      "Claude Sonnet 4 (32k thinking)": { "score": 61.3, "cost": "$26.58", "date": "2026-02-11" },
+      "Claude 3.7 Sonnet (no thinking)": { "score": 60.4, "cost": "$17.72", "date": "2026-02-11" },
+      "Claude Sonnet 4 (no thinking)": { "score": 56.4, "cost": "$15.82", "date": "2026-02-11" },
+      "Claude 3.5 Sonnet": { "score": 51.6, "cost": "$14.41", "date": "2026-02-11" },
+      "GPT-5 (high)": { "score": 88.0, "cost": "$29.08", "date": "2026-02-11" },
+      "GPT-5 (medium)": { "score": 86.7, "cost": "$17.69", "date": "2026-02-11" },
+      "GPT-5 (low)": { "score": 81.3, "cost": "$10.37", "date": "2026-02-11" },
+      "GPT-4.1": { "score": 52.4, "cost": "$9.86", "date": "2026-02-11" },
+      "GPT-4.5-preview": { "score": 44.9, "cost": "$183.18", "date": "2026-02-11" },
+      "o3-pro (high)": { "score": 84.9, "cost": "$146.32", "date": "2026-02-11" },
+      "o3 (high)": { "score": 81.3, "cost": "$21.23", "date": "2026-02-11" },
+      "o3": { "score": 76.9, "cost": "$13.75", "date": "2026-02-11" },
+      "o3-mini (high)": { "score": 60.4, "cost": "$18.16", "date": "2026-02-11" },
+      "o3-mini (medium)": { "score": 53.8, "cost": "$8.86", "date": "2026-02-11" },
+      "o4-mini (high)": { "score": 72.0, "cost": "$19.64", "date": "2026-02-11" },
+      "Gemini 2.5 Pro (32k think)": { "score": 83.1, "cost": "$49.88", "date": "2026-02-11" },
+      "Gemini 2.5 Pro (default think)": { "score": 79.1, "cost": "$45.6", "date": "2026-02-11" },
+      "Grok 4 (high)": { "score": 79.6, "cost": "$59.62", "date": "2026-02-11" },
+      "Grok 3 Beta": { "score": 53.3, "cost": "$11.03", "date": "2026-02-11" },
+      "DeepSeek R1 (0528)": { "score": 71.4, "cost": "$4.8", "date": "2026-02-11" },
+      "DeepSeek V3.2-Exp (Reasoner)": { "score": 74.2, "cost": "$1.3", "date": "2026-02-11" },
+      "DeepSeek V3.2-Exp (Chat)": { "score": 70.2, "cost": "$0.88", "date": "2026-02-11" },
+      "DeepSeek V3 (0324)": { "score": 55.1, "cost": "$1.12", "date": "2026-02-11" }
+    }
+  },
+  "competitorMapping": {
+    "_description": "Which models map to which competitors for alerts",
+    "Anthropic/Claude": ["Claude Opus 4", "Claude Sonnet 4", "Claude 3.7 Sonnet", "Claude 3.5 Sonnet", "Claude 3.5 Haiku"],
+    "GitHub Copilot": ["GPT-4", "GPT-4.1", "GPT-4o", "o1", "o3", "o4"],
+    "Cursor": ["Claude Sonnet", "GPT-4"],
+    "Codeium/Windsurf": ["Custom models"],
+    "Amazon Q": ["Amazon Q"],
+    "Sourcegraph Cody": ["Claude", "GPT models"],
+    "DeepSeek": ["DeepSeek R1", "DeepSeek V3"]
+  },
+  "changeLog": [
+    {
+      "date": "2026-02-11",
+      "event": "Initial benchmark tracking setup",
+      "changes": ["Added Aider Polyglot leaderboard data"]
+    }
+  ]
+}

@@ -1,0 +1,962 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-02-11T15:31:48.743Z",
+      "competitors": {
+        "Cursor": {
+          "keywords": [
+            {
+              "keyword": "cursor ai",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "cursor editor",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "cursor ide",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            }
+          ],
+          "totalScore": 0,
+          "avgScore": 0,
+          "checkedAt": "2026-02-11T15:31:50.492Z"
+        },
+        "Devin": {
+          "keywords": [
+            {
+              "keyword": "devin ai",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "cognition ai",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "devin coding",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            }
+          ],
+          "totalScore": 0,
+          "avgScore": 0,
+          "checkedAt": "2026-02-11T15:31:52.159Z"
+        },
+        "Replit": {
+          "keywords": [
+            {
+              "keyword": "replit ai",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "replit ghostwriter",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            }
+          ],
+          "totalScore": 0,
+          "avgScore": 0,
+          "checkedAt": "2026-02-11T15:31:53.264Z"
+        },
+        "Windsurf": {
+          "keywords": [
+            {
+              "keyword": "windsurf ai",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "codeium windsurf",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            }
+          ],
+          "totalScore": 0,
+          "avgScore": 0,
+          "checkedAt": "2026-02-11T15:31:54.373Z"
+        },
+        "GitHub Copilot": {
+          "keywords": [
+            {
+              "keyword": "github copilot",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "copilot ai",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            }
+          ],
+          "totalScore": 0,
+          "avgScore": 0,
+          "checkedAt": "2026-02-11T15:31:55.479Z"
+        },
+        "Tabnine": {
+          "keywords": [
+            {
+              "keyword": "tabnine",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "tabnine ai",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            }
+          ],
+          "totalScore": 0,
+          "avgScore": 0,
+          "checkedAt": "2026-02-11T15:31:56.581Z"
+        },
+        "Amazon Q": {
+          "keywords": [
+            {
+              "keyword": "amazon q developer",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "aws codewhisperer",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            }
+          ],
+          "totalScore": 0,
+          "avgScore": 0,
+          "checkedAt": "2026-02-11T15:31:57.686Z"
+        },
+        "Sourcegraph Cody": {
+          "keywords": [
+            {
+              "keyword": "sourcegraph cody",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "cody ai",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            }
+          ],
+          "totalScore": 0,
+          "avgScore": 0,
+          "checkedAt": "2026-02-11T15:31:58.787Z"
+        },
+        "Claude Code": {
+          "keywords": [
+            {
+              "keyword": "claude code",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "anthropic claude code",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            }
+          ],
+          "totalScore": 0,
+          "avgScore": 0,
+          "checkedAt": "2026-02-11T15:31:59.888Z"
+        },
+        "Lovable": {
+          "keywords": [
+            {
+              "keyword": "lovable ai",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "lovable dev",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            }
+          ],
+          "totalScore": 0,
+          "avgScore": 0,
+          "checkedAt": "2026-02-11T15:32:00.987Z"
+        },
+        "Bolt": {
+          "keywords": [
+            {
+              "keyword": "bolt new",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "bolt ai",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "stackblitz bolt",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            }
+          ],
+          "totalScore": 0,
+          "avgScore": 0,
+          "checkedAt": "2026-02-11T15:32:02.670Z"
+        },
+        "v0": {
+          "keywords": [
+            {
+              "keyword": "v0 dev",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "vercel v0",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            }
+          ],
+          "totalScore": 0,
+          "avgScore": 0,
+          "checkedAt": "2026-02-11T15:32:03.787Z"
+        },
+        "Aider": {
+          "keywords": [
+            {
+              "keyword": "aider ai",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "aider coding",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            }
+          ],
+          "totalScore": 0,
+          "avgScore": 0,
+          "checkedAt": "2026-02-11T15:32:04.895Z"
+        },
+        "Continue": {
+          "keywords": [
+            {
+              "keyword": "continue dev ai",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            },
+            {
+              "keyword": "continue ai coding",
+              "resultCount": 0,
+              "newsWeight": 0,
+              "score": 0
+            }
+          ],
+          "totalScore": 0,
+          "avgScore": 0,
+          "checkedAt": "2026-02-11T15:32:06.013Z"
+        }
+      }
+    },
+    {
+      "timestamp": "2026-02-11T15:32:26.275Z",
+      "competitors": {
+        "Cursor": {
+          "keywords": [
+            {
+              "keyword": "cursor ai",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            },
+            {
+              "keyword": "cursor editor",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            },
+            {
+              "keyword": "cursor ide",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            }
+          ],
+          "totalScore": 6,
+          "avgScore": 2,
+          "checkedAt": "2026-02-11T15:32:28.330Z",
+          "normalizedScore": 100
+        },
+        "Devin": {
+          "keywords": [
+            {
+              "keyword": "devin ai",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            },
+            {
+              "keyword": "cognition ai",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            },
+            {
+              "keyword": "devin coding",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            }
+          ],
+          "totalScore": 6,
+          "avgScore": 2,
+          "checkedAt": "2026-02-11T15:32:30.260Z",
+          "normalizedScore": 100
+        },
+        "Replit": {
+          "keywords": [
+            {
+              "keyword": "replit ai",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.6,
+              "score": 1.7999999999999998
+            },
+            {
+              "keyword": "replit ghostwriter",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            }
+          ],
+          "totalScore": 4,
+          "avgScore": 2,
+          "checkedAt": "2026-02-11T15:32:31.495Z",
+          "normalizedScore": 67
+        },
+        "Windsurf": {
+          "keywords": [
+            {
+              "keyword": "windsurf ai",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            },
+            {
+              "keyword": "codeium windsurf",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            }
+          ],
+          "totalScore": 4,
+          "avgScore": 2,
+          "checkedAt": "2026-02-11T15:32:32.793Z",
+          "normalizedScore": 67
+        },
+        "GitHub Copilot": {
+          "keywords": [
+            {
+              "keyword": "github copilot",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            },
+            {
+              "keyword": "copilot ai",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.6,
+              "score": 1.7999999999999998
+            }
+          ],
+          "totalScore": 4,
+          "avgScore": 2,
+          "checkedAt": "2026-02-11T15:32:34.093Z",
+          "normalizedScore": 67
+        },
+        "Tabnine": {
+          "keywords": [
+            {
+              "keyword": "tabnine",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            },
+            {
+              "keyword": "tabnine ai",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.6,
+              "score": 1.7999999999999998
+            }
+          ],
+          "totalScore": 4,
+          "avgScore": 2,
+          "checkedAt": "2026-02-11T15:32:35.434Z",
+          "normalizedScore": 67
+        },
+        "Amazon Q": {
+          "keywords": [
+            {
+              "keyword": "amazon q developer",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.6,
+              "score": 1.7999999999999998
+            },
+            {
+              "keyword": "aws codewhisperer",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            }
+          ],
+          "totalScore": 4,
+          "avgScore": 2,
+          "checkedAt": "2026-02-11T15:32:36.872Z",
+          "normalizedScore": 67
+        },
+        "Sourcegraph Cody": {
+          "keywords": [
+            {
+              "keyword": "sourcegraph cody",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.6,
+              "score": 1.7999999999999998
+            },
+            {
+              "keyword": "cody ai",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            }
+          ],
+          "totalScore": 4,
+          "avgScore": 2,
+          "checkedAt": "2026-02-11T15:32:38.211Z",
+          "normalizedScore": 67
+        },
+        "Claude Code": {
+          "keywords": [
+            {
+              "keyword": "claude code",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.6,
+              "score": 1.7999999999999998
+            },
+            {
+              "keyword": "anthropic claude code",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            }
+          ],
+          "totalScore": 4,
+          "avgScore": 2,
+          "checkedAt": "2026-02-11T15:32:39.523Z",
+          "normalizedScore": 67
+        },
+        "Lovable": {
+          "keywords": [
+            {
+              "keyword": "lovable ai",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.6,
+              "score": 1.7999999999999998
+            },
+            {
+              "keyword": "lovable dev",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            }
+          ],
+          "totalScore": 4,
+          "avgScore": 2,
+          "checkedAt": "2026-02-11T15:32:40.844Z",
+          "normalizedScore": 67
+        },
+        "Bolt": {
+          "keywords": [
+            {
+              "keyword": "bolt new",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            },
+            {
+              "keyword": "bolt ai",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            },
+            {
+              "keyword": "stackblitz bolt",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.6,
+              "score": 1.7999999999999998
+            }
+          ],
+          "totalScore": 6,
+          "avgScore": 2,
+          "checkedAt": "2026-02-11T15:32:42.879Z",
+          "normalizedScore": 100
+        },
+        "v0": {
+          "keywords": [
+            {
+              "keyword": "v0 dev",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            },
+            {
+              "keyword": "vercel v0",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            }
+          ],
+          "totalScore": 4,
+          "avgScore": 2,
+          "checkedAt": "2026-02-11T15:32:44.329Z",
+          "normalizedScore": 67
+        },
+        "Aider": {
+          "keywords": [
+            {
+              "keyword": "aider ai",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.6,
+              "score": 1.7999999999999998
+            },
+            {
+              "keyword": "aider coding",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.6,
+              "score": 1.7999999999999998
+            }
+          ],
+          "totalScore": 4,
+          "avgScore": 2,
+          "checkedAt": "2026-02-11T15:32:45.556Z",
+          "normalizedScore": 67
+        },
+        "Continue": {
+          "keywords": [
+            {
+              "keyword": "continue dev ai",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.6,
+              "score": 1.7999999999999998
+            },
+            {
+              "keyword": "continue ai coding",
+              "resultCount": 0,
+              "estimatedResults": 0,
+              "newsWeight": 0.7,
+              "score": 2.1
+            }
+          ],
+          "totalScore": 4,
+          "avgScore": 2,
+          "checkedAt": "2026-02-11T15:32:46.783Z",
+          "normalizedScore": 67
+        }
+      }
+    }
+  ],
+  "latest": {
+    "timestamp": "2026-02-11T15:32:26.275Z",
+    "competitors": {
+      "Cursor": {
+        "keywords": [
+          {
+            "keyword": "cursor ai",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          },
+          {
+            "keyword": "cursor editor",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          },
+          {
+            "keyword": "cursor ide",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          }
+        ],
+        "totalScore": 6,
+        "avgScore": 2,
+        "checkedAt": "2026-02-11T15:32:28.330Z",
+        "normalizedScore": 100
+      },
+      "Devin": {
+        "keywords": [
+          {
+            "keyword": "devin ai",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          },
+          {
+            "keyword": "cognition ai",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          },
+          {
+            "keyword": "devin coding",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          }
+        ],
+        "totalScore": 6,
+        "avgScore": 2,
+        "checkedAt": "2026-02-11T15:32:30.260Z",
+        "normalizedScore": 100
+      },
+      "Replit": {
+        "keywords": [
+          {
+            "keyword": "replit ai",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.6,
+            "score": 1.7999999999999998
+          },
+          {
+            "keyword": "replit ghostwriter",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          }
+        ],
+        "totalScore": 4,
+        "avgScore": 2,
+        "checkedAt": "2026-02-11T15:32:31.495Z",
+        "normalizedScore": 67
+      },
+      "Windsurf": {
+        "keywords": [
+          {
+            "keyword": "windsurf ai",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          },
+          {
+            "keyword": "codeium windsurf",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          }
+        ],
+        "totalScore": 4,
+        "avgScore": 2,
+        "checkedAt": "2026-02-11T15:32:32.793Z",
+        "normalizedScore": 67
+      },
+      "GitHub Copilot": {
+        "keywords": [
+          {
+            "keyword": "github copilot",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          },
+          {
+            "keyword": "copilot ai",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.6,
+            "score": 1.7999999999999998
+          }
+        ],
+        "totalScore": 4,
+        "avgScore": 2,
+        "checkedAt": "2026-02-11T15:32:34.093Z",
+        "normalizedScore": 67
+      },
+      "Tabnine": {
+        "keywords": [
+          {
+            "keyword": "tabnine",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          },
+          {
+            "keyword": "tabnine ai",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.6,
+            "score": 1.7999999999999998
+          }
+        ],
+        "totalScore": 4,
+        "avgScore": 2,
+        "checkedAt": "2026-02-11T15:32:35.434Z",
+        "normalizedScore": 67
+      },
+      "Amazon Q": {
+        "keywords": [
+          {
+            "keyword": "amazon q developer",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.6,
+            "score": 1.7999999999999998
+          },
+          {
+            "keyword": "aws codewhisperer",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          }
+        ],
+        "totalScore": 4,
+        "avgScore": 2,
+        "checkedAt": "2026-02-11T15:32:36.872Z",
+        "normalizedScore": 67
+      },
+      "Sourcegraph Cody": {
+        "keywords": [
+          {
+            "keyword": "sourcegraph cody",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.6,
+            "score": 1.7999999999999998
+          },
+          {
+            "keyword": "cody ai",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          }
+        ],
+        "totalScore": 4,
+        "avgScore": 2,
+        "checkedAt": "2026-02-11T15:32:38.211Z",
+        "normalizedScore": 67
+      },
+      "Claude Code": {
+        "keywords": [
+          {
+            "keyword": "claude code",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.6,
+            "score": 1.7999999999999998
+          },
+          {
+            "keyword": "anthropic claude code",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          }
+        ],
+        "totalScore": 4,
+        "avgScore": 2,
+        "checkedAt": "2026-02-11T15:32:39.523Z",
+        "normalizedScore": 67
+      },
+      "Lovable": {
+        "keywords": [
+          {
+            "keyword": "lovable ai",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.6,
+            "score": 1.7999999999999998
+          },
+          {
+            "keyword": "lovable dev",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          }
+        ],
+        "totalScore": 4,
+        "avgScore": 2,
+        "checkedAt": "2026-02-11T15:32:40.844Z",
+        "normalizedScore": 67
+      },
+      "Bolt": {
+        "keywords": [
+          {
+            "keyword": "bolt new",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          },
+          {
+            "keyword": "bolt ai",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          },
+          {
+            "keyword": "stackblitz bolt",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.6,
+            "score": 1.7999999999999998
+          }
+        ],
+        "totalScore": 6,
+        "avgScore": 2,
+        "checkedAt": "2026-02-11T15:32:42.879Z",
+        "normalizedScore": 100
+      },
+      "v0": {
+        "keywords": [
+          {
+            "keyword": "v0 dev",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          },
+          {
+            "keyword": "vercel v0",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          }
+        ],
+        "totalScore": 4,
+        "avgScore": 2,
+        "checkedAt": "2026-02-11T15:32:44.329Z",
+        "normalizedScore": 67
+      },
+      "Aider": {
+        "keywords": [
+          {
+            "keyword": "aider ai",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.6,
+            "score": 1.7999999999999998
+          },
+          {
+            "keyword": "aider coding",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.6,
+            "score": 1.7999999999999998
+          }
+        ],
+        "totalScore": 4,
+        "avgScore": 2,
+        "checkedAt": "2026-02-11T15:32:45.556Z",
+        "normalizedScore": 67
+      },
+      "Continue": {
+        "keywords": [
+          {
+            "keyword": "continue dev ai",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.6,
+            "score": 1.7999999999999998
+          },
+          {
+            "keyword": "continue ai coding",
+            "resultCount": 0,
+            "estimatedResults": 0,
+            "newsWeight": 0.7,
+            "score": 2.1
+          }
+        ],
+        "totalScore": 4,
+        "avgScore": 2,
+        "checkedAt": "2026-02-11T15:32:46.783Z",
+        "normalizedScore": 67
+      }
+    }
+  },
+  "updatedAt": "2026-02-11T15:32:46.784Z"
+}

@@ -1,0 +1,92 @@
+{
+  "scrapedAt": "2026-02-11T13:50:00Z",
+  "profiles": {
+    "cursor": {
+      "handle": "cursor_ai",
+      "name": "Cursor",
+      "followers": 308100,
+      "following": 44,
+      "posts": 264,
+      "verified": true,
+      "bio": "The best way to code with AI.",
+      "website": "cursor.com",
+      "joinedDate": "August 2023"
+    },
+    "github-copilot": {
+      "handle": "GitHubCopilot",
+      "name": "GitHub Copilot",
+      "followers": 14400,
+      "following": 0,
+      "posts": 1,
+      "verified": false,
+      "bio": "Your AI pair programmer",
+      "website": "copilot.github.com",
+      "joinedDate": "June 2021",
+      "note": "Barely active - 1 post total"
+    },
+    "replit": {
+      "handle": "Replit",
+      "name": "Replit",
+      "followers": 213200,
+      "following": 568,
+      "posts": 13700,
+      "verified": true,
+      "bio": "Idea to app, fast. Create beautiful, modern web applications at the speed of thought with the power of Replit's AI Agent.",
+      "website": "replit.com",
+      "joinedDate": "September 2011"
+    },
+    "tabnine": {
+      "handle": "tabnine",
+      "name": "Tabnine",
+      "followers": 15000,
+      "following": 209,
+      "posts": 6016,
+      "verified": true,
+      "bio": "Tabnine is the AI dev platform for mission-critical engineering—controlled by your developers, grounded in your knowledge, and secured to protect your IP.",
+      "website": "tabnine.com",
+      "joinedDate": "July 2019"
+    },
+    "sourcegraph": {
+      "handle": "Sourcegraph",
+      "name": "Sourcegraph",
+      "followers": 23100,
+      "following": 1261,
+      "posts": 5184,
+      "verified": true,
+      "bio": "Code understanding for humans and agents.",
+      "website": "sourcegraph.com",
+      "joinedDate": "June 2013",
+      "recentNews": "Dec 2025: Sourcegraph & Amp becoming separate companies"
+    },
+    "poolside": {
+      "handle": "poolsideai",
+      "name": "Poolside AI",
+      "followers": 3498,
+      "following": 2,
+      "posts": 34,
+      "verified": false,
+      "bio": null,
+      "website": "poolside.ai",
+      "joinedDate": "May 2023",
+      "recentNews": "Dec 2024: AWS first-party partnership, Oct 2024: $500M raise"
+    }
+  },
+  "summary": {
+    "largestFollowing": {
+      "company": "Cursor",
+      "followers": 308100
+    },
+    "mostActive": {
+      "company": "Replit", 
+      "posts": 13700
+    },
+    "rankings": [
+      { "rank": 1, "company": "Cursor", "followers": 308100 },
+      { "rank": 2, "company": "Replit", "followers": 213200 },
+      { "rank": 3, "company": "Sourcegraph", "followers": 23100 },
+      { "rank": 4, "company": "Tabnine", "followers": 15000 },
+      { "rank": 5, "company": "GitHub Copilot", "followers": 14400 },
+      { "rank": 6, "company": "Poolside AI", "followers": 3498 }
+    ]
+  }
+}

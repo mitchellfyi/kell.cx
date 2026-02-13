@@ -1,0 +1,199 @@
+{
+  "companies": {
+    "Cursor": {
+      "name": "Cursor",
+      "search": {
+        "resultsFound": 9,
+        "linkedInMatches": 10,
+        "sampleTitles": [
+          "Job Hirings Near Me | Full-time &amp; Part-time Jobs",
+          "Urgently Hiring Now | Job Opportunities | Highest Paying Jobs",
+          "2,000+Nvidia And Anysphere Jobs in United States (98 new)",
+          "528 Anysphere Anthropic jobs in United States - LinkedIn",
+          "3,940,000+For My Meeting With Max From Anysphere Review My ... - LinkedIn"
+        ],
+        "scrapedAt": "2026-02-11T13:34:54.285Z"
+      },
+      "careers": {
+        "url": "https://www.cursor.com/careers",
+        "estimatedJobs": "unknown",
+        "hasContent": true,
+        "scrapedAt": "2026-02-11T13:34:55.013Z"
+      },
+      "scrapedAt": "2026-02-11T13:34:55.013Z"
+    },
+    "Cognition AI": {
+      "name": "Cognition AI",
+      "search": {
+        "count": null,
+        "error": "HTTP 202"
+      },
+      "careers": {
+        "url": "https://cognition.ai/careers",
+        "estimatedJobs": "unknown",
+        "hasContent": true,
+        "scrapedAt": "2026-02-11T13:34:56.805Z"
+      },
+      "scrapedAt": "2026-02-11T13:34:56.805Z"
+    },
+    "Replit": {
+      "name": "Replit",
+      "search": {
+        "count": null,
+        "error": "HTTP 202"
+      },
+      "careers": {
+        "url": "https://replit.com/careers",
+        "estimatedJobs": "unknown",
+        "hasContent": true,
+        "scrapedAt": "2026-02-11T13:34:58.524Z"
+      },
+      "scrapedAt": "2026-02-11T13:34:58.524Z"
+    },
+    "Codeium": {
+      "name": "Codeium",
+      "search": {
+        "count": null,
+        "error": "HTTP 202"
+      },
+      "careers": {
+        "url": "https://codeium.com/careers",
+        "estimatedJobs": "unknown",
+        "hasContent": true,
+        "scrapedAt": "2026-02-11T13:35:00.335Z"
+      },
+      "scrapedAt": "2026-02-11T13:35:00.335Z"
+    },
+    "Windsurf": {
+      "name": "Windsurf",
+      "search": {
+        "count": null,
+        "error": "HTTP 202"
+      },
+      "careers": null,
+      "scrapedAt": "2026-02-11T13:35:01.903Z"
+    },
+    "GitHub": {
+      "name": "GitHub",
+      "search": {
+        "count": null,
+        "error": "HTTP 202"
+      },
+      "careers": {
+        "error": "HTTP 403"
+      },
+      "scrapedAt": "2026-02-11T13:35:04.205Z"
+    },
+    "Tabnine": {
+      "name": "Tabnine",
+      "search": {
+        "count": null,
+        "error": "HTTP 202"
+      },
+      "careers": {
+        "url": "https://www.tabnine.com/careers",
+        "estimatedJobs": "unknown",
+        "hasContent": true,
+        "scrapedAt": "2026-02-11T13:35:05.930Z"
+      },
+      "scrapedAt": "2026-02-11T13:35:05.930Z"
+    },
+    "Sourcegraph": {
+      "name": "Sourcegraph",
+      "search": {
+        "count": null,
+        "error": "HTTP 202"
+      },
+      "careers": {
+        "url": "https://sourcegraph.com/careers",
+        "estimatedJobs": 6,
+        "hasContent": true,
+        "scrapedAt": "2026-02-11T13:35:07.753Z"
+      },
+      "scrapedAt": "2026-02-11T13:35:07.753Z"
+    },
+    "Augment Code": {
+      "name": "Augment Code",
+      "search": {
+        "count": null,
+        "error": "HTTP 202"
+      },
+      "careers": {
+        "url": "https://www.augmentcode.com/careers",
+        "estimatedJobs": "unknown",
+        "hasContent": true,
+        "scrapedAt": "2026-02-11T13:35:09.567Z"
+      },
+      "scrapedAt": "2026-02-11T13:35:09.567Z"
+    },
+    "Continue": {
+      "name": "Continue",
+      "search": {
+        "count": null,
+        "error": "HTTP 202"
+      },
+      "careers": {
+        "url": "https://www.continue.dev/careers",
+        "estimatedJobs": "unknown",
+        "hasContent": true,
+        "scrapedAt": "2026-02-11T13:35:11.620Z"
+      },
+      "scrapedAt": "2026-02-11T13:35:11.620Z"
+    },
+    "Poolside AI": {
+      "name": "Poolside AI",
+      "search": {
+        "count": null,
+        "error": "HTTP 202"
+      },
+      "careers": {
+        "url": "https://poolside.ai/careers",
+        "estimatedJobs": 19,
+        "hasContent": true,
+        "scrapedAt": "2026-02-11T13:35:13.209Z"
+      },
+      "scrapedAt": "2026-02-11T13:35:13.209Z"
+    },
+    "Lovable": {
+      "name": "Lovable",
+      "search": {
+        "count": null,
+        "error": "HTTP 202"
+      },
+      "careers": {
+        "url": "https://lovable.dev/careers",
+        "estimatedJobs": "unknown",
+        "hasContent": true,
+        "scrapedAt": "2026-02-11T13:35:15.229Z"
+      },
+      "scrapedAt": "2026-02-11T13:35:15.229Z"
+    },
+    "StackBlitz": {
+      "name": "StackBlitz",
+      "search": {
+        "count": null,
+        "error": "HTTP 202"
+      },
+      "careers": {
+        "url": "https://stackblitz.com/careers",
+        "error": "Invalid URL"
+      },
+      "scrapedAt": "2026-02-11T13:35:16.899Z"
+    },
+    "Vercel": {
+      "name": "Vercel",
+      "search": {
+        "count": null,
+        "error": "HTTP 202"
+      },
+      "careers": {
+        "url": "https://vercel.com/careers",
+        "estimatedJobs": "unknown",
+        "hasContent": true,
+        "scrapedAt": "2026-02-11T13:35:19.072Z"
+      },
+      "scrapedAt": "2026-02-11T13:35:19.072Z"
+    }
+  },
+  "lastScan": "2026-02-11T13:35:20.573Z"
+}

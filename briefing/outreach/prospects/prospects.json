@@ -1,0 +1,356 @@
+{
+  "prospects": [
+    {
+      "name": "Arlan Rakhmetzhanov",
+      "company": "Nozomio",
+      "role": "Founder",
+      "source": "YC S25, AI coding agents",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "high",
+      "personalization": "YC company, direct competitor space, young founder likely scrappy on intel"
+    },
+    {
+      "name": "Deshraj Yadav",
+      "company": "Mem0 (YC S24)",
+      "role": "Founder",
+      "source": "AI memory layer for agents",
+      "email": null,
+      "linkedin": "linkedin.com/in/deshrajdry",
+      "priority": "medium",
+      "personalization": "Adjacent space—AI infra. Their customers are AI coding tool users."
+    },
+    {
+      "name": "Eric Y.",
+      "company": "Epsilla (YC)",
+      "role": "Co-Founder",
+      "source": "AI Agents, vector DB",
+      "email": null,
+      "linkedin": "linkedin.com/in/eric-y-a4a743271",
+      "priority": "medium",
+      "personalization": "AI agents space, overlaps with coding assistant market"
+    },
+    {
+      "name": "Cognition AI team",
+      "company": "Cognition (Devin)",
+      "role": "Leadership",
+      "source": "$10.2B valuation, $73M ARR",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "low",
+      "personalization": "They're one of the tracked competitors—meta angle, but big company likely has own intel"
+    },
+    {
+      "name": "Bhavin Shah",
+      "company": "Moveworks",
+      "role": "CEO & Co-Founder",
+      "source": "AI assistant platform",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "medium",
+      "personalization": "Enterprise AI assistant—may want intel on coding tools entering enterprise"
+    },
+    {
+      "name": "Dmitry",
+      "company": "PitchBob.io",
+      "role": "Founder",
+      "source": "AI co-pilot for founders",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "low",
+      "personalization": "Different vertical but founder-focused AI"
+    },
+    {
+      "name": "Ashish Nagar",
+      "company": "Level AI",
+      "role": "Founder",
+      "source": "Stanford, AI for customer service",
+      "email": null,
+      "linkedin": "linkedin.com/in/ashishnagar",
+      "priority": "low",
+      "personalization": "Enterprise AI, different vertical"
+    },
+    {
+      "name": "Amjad Masad",
+      "company": "Replit",
+      "role": "CEO",
+      "source": "We track them—they'd benefit from seeing the briefing",
+      "email": "amjad@replit.com",
+      "linkedin": "linkedin.com/in/amjadmasad",
+      "priority": "high",
+      "personalization": "Direct competitor, very active on Twitter, might appreciate the transparency"
+    },
+    {
+      "name": "Anysphere team",
+      "company": "Cursor",
+      "role": "Founders",
+      "source": "Market leader, $300M ARR",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "medium",
+      "personalization": "They're winning—may not need intel, but founders often curious"
+    },
+    {
+      "name": "Varun Mohan",
+      "company": "Codeium/Windsurf",
+      "role": "CEO",
+      "source": "Major player, aggressive pricing",
+      "email": null,
+      "linkedin": "linkedin.com/in/vaaborern",
+      "priority": "high",
+      "personalization": "Aggressive competitor, would benefit from tracking the field"
+    },
+    {
+      "name": "Dhanji Prasanna",
+      "company": "Codeium/Windsurf",
+      "role": "CTO",
+      "source": "Ex-Google, technical leader",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "medium",
+      "personalization": "Technical angle—might appreciate data-driven approach"
+    },
+    {
+      "name": "Jacob Jackson",
+      "company": "Supermaven",
+      "role": "Founder",
+      "source": "Ex-Tabnine, fast autocomplete focus",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "high",
+      "personalization": "Smaller player, more likely to want intel on bigger competitors"
+    },
+    {
+      "name": "Scott Wu",
+      "company": "Cognition (Devin)",
+      "role": "CEO",
+      "source": "IOI gold medalist, $10B valuation",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "medium",
+      "personalization": "Leading the agent race, intense competition with Cursor"
+    },
+    {
+      "name": "Igor Ostrovsky",
+      "company": "Augment Code",
+      "role": "Co-Founder",
+      "source": "Ex-Microsoft, enterprise focus",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "high",
+      "personalization": "Enterprise AI coding, would want intel on Copilot, Cursor enterprise moves"
+    },
+    {
+      "name": "Guy Podjarny",
+      "company": "Tessl",
+      "role": "Founder",
+      "source": "Ex-Snyk founder, AI for security",
+      "email": null,
+      "linkedin": "linkedin.com/in/guypod",
+      "priority": "medium",
+      "personalization": "Security + AI, adjacent to coding tools"
+    },
+    {
+      "name": "Beyang Liu",
+      "company": "Sourcegraph",
+      "role": "CTO & Co-Founder",
+      "source": "Cody AI, code intelligence",
+      "email": null,
+      "linkedin": "linkedin.com/in/beyang-liu",
+      "priority": "high",
+      "personalization": "We track Cody—might appreciate seeing the format, direct competitor intel"
+    },
+    {
+      "name": "Quinn Slack",
+      "company": "Sourcegraph",
+      "role": "CEO",
+      "source": "Leading code intelligence, Cody",
+      "email": null,
+      "linkedin": "linkedin.com/in/quinnslack",
+      "priority": "high",
+      "personalization": "Major player, enterprise focus, would want Copilot/Cursor intel"
+    },
+    {
+      "name": "Natan Yellin",
+      "company": "Continue.dev",
+      "role": "Founder",
+      "source": "Open source AI coding, YC",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "high",
+      "personalization": "Open source underdog, definitely wants intel on proprietary competitors"
+    },
+    {
+      "name": "Sarah Guo",
+      "company": "Conviction",
+      "role": "GP",
+      "source": "AI-focused VC, ex-Greylock",
+      "email": null,
+      "linkedin": "linkedin.com/in/sarahguo",
+      "priority": "medium",
+      "personalization": "AI investor, No Priors podcast, would want market intel for DD"
+    },
+    {
+      "name": "Elad Gil",
+      "company": "Investor",
+      "role": "Angel/VC",
+      "source": "Prolific AI investor, advisor to many",
+      "email": null,
+      "linkedin": "linkedin.com/in/eladgil",
+      "priority": "medium",
+      "personalization": "High profile, probably gets tons of email, but active in AI coding space"
+    },
+    {
+      "name": "Anton Osika",
+      "company": "Lovable",
+      "role": "CEO & Co-Founder",
+      "source": "Swedish AI coding startup, $6.6B valuation, $330M Series B Jan 2026",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "high",
+      "personalization": "Massive growth, app creation via prompts—needs intel on Cursor/Replit entering their space",
+      "added": "2026-02-11"
+    },
+    {
+      "name": "Poolside AI team",
+      "company": "Poolside",
+      "role": "Leadership",
+      "source": "AI coding assistant, Nvidia-backed, $200M funding, $20B valuation",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "high",
+      "personalization": "Well-funded challenger, competing for enterprise deals with Cursor/Copilot",
+      "added": "2026-02-11"
+    },
+    {
+      "name": "SigmanticAI team",
+      "company": "SigmanticAI",
+      "role": "Founders",
+      "source": "YC, AI for hardware/RTL design, VSCode fork",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "medium",
+      "personalization": "Niche (hardware), but AI coding approach—might want to track general coding AI trends",
+      "added": "2026-02-11"
+    },
+    {
+      "name": "Jonathan Siddharth",
+      "company": "Turing",
+      "role": "CEO",
+      "source": "Coding provider for OpenAI, $2.2B valuation, $111M Series E",
+      "email": null,
+      "linkedin": "linkedin.com/in/jonathansiddharth",
+      "priority": "medium",
+      "personalization": "Different model (human coders + AI), but tracks AI coding tools as competition",
+      "added": "2026-02-11"
+    },
+    {
+      "name": "Michael Truell",
+      "company": "Cursor (Anysphere)",
+      "role": "CEO & Co-Founder",
+      "source": "$10B valuation, $300M ARR, market leader",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "medium",
+      "personalization": "Market leader—may have internal intel, but founders often want external perspective",
+      "added": "2026-02-11"
+    },
+    {
+      "name": "Aman Sanger",
+      "company": "Cursor (Anysphere)",
+      "role": "Co-Founder",
+      "source": "Technical co-founder at Cursor",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "medium",
+      "personalization": "Technical founder, might appreciate data-driven competitive analysis",
+      "added": "2026-02-11"
+    },
+    {
+      "name": "Deon Nicholas",
+      "company": "Forethought",
+      "role": "CEO",
+      "source": "AI for customer service, enterprise AI",
+      "email": null,
+      "linkedin": "linkedin.com/in/deonnicholas",
+      "priority": "low",
+      "personalization": "Adjacent AI space, enterprise focus",
+      "added": "2026-02-11"
+    },
+    {
+      "name": "Waseem Alshikh",
+      "company": "Writer",
+      "role": "Co-Founder & CTO",
+      "source": "Enterprise AI writing, full-stack AI platform",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "low",
+      "personalization": "Adjacent—AI writing vs coding, but competing for enterprise AI budget",
+      "added": "2026-02-11"
+    }
+  ],
+  {
+      "name": "Daniel Milo",
+      "company": "Firestreak Ventures",
+      "role": "Partner",
+      "source": "VC firm, backed Anthropic & Hugging Face, 2-3 week decisions",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "high",
+      "personalization": "New fund (2022), fast-moving, deep tech focus. Would want competitive intel on AI coding tools for DD on portfolio/prospects.",
+      "added": "2026-02-11"
+    },
+    {
+      "name": "Aydin Senkut",
+      "company": "Felicis",
+      "role": "Founder & Managing Partner",
+      "source": "DevTools investor, backed Plaid, Notion, Shopify",
+      "email": null,
+      "linkedin": "linkedin.com/in/aydinsenkut",
+      "priority": "high",
+      "personalization": "Known for founder-friendly approach, bottom-up adoption thesis fits AI coding tools. Competitive intel valuable for DD.",
+      "added": "2026-02-11"
+    },
+    {
+      "name": "Ravi Mhatre",
+      "company": "Lightspeed Venture Partners",
+      "role": "Partner",
+      "source": "DevTools focus, Series A specialist",
+      "email": null,
+      "linkedin": "search required",
+      "priority": "medium",
+      "personalization": "Lightspeed active in DevTools (12 deals 2024). Competitive landscape intel useful for investment decisions.",
+      "added": "2026-02-11"
+    },
+    {
+      "name": "Charles Hudson",
+      "company": "Precursor Ventures",
+      "role": "Managing Partner & Founder",
+      "source": "Pre-seed specialist, DevTools portfolio",
+      "email": null,
+      "linkedin": "linkedin.com/in/charleshudson",
+      "priority": "medium",
+      "personalization": "Pre-seed focus means helping founders understand competitive landscape early. Briefing = DD tool.",
+      "added": "2026-02-11"
+    },
+    {
+      "name": "Jake Saper",
+      "company": "Emergence Capital",
+      "role": "Partner",
+      "source": "Enterprise software VC, developer tools thesis",
+      "email": null,
+      "linkedin": "linkedin.com/in/jakesaper",
+      "priority": "medium",
+      "personalization": "Enterprise + developer tools focus. Would value intel on Copilot/Cursor enterprise positioning.",
+      "added": "2026-02-11"
+    }
+  ],
+  "metadata": {
+    "created": "2026-02-11",
+    "updated": "2026-02-11",
+    "total": 33,
+    "high_priority": 14,
+    "needs_email_research": 31,
+    "notes": "Added 5 DevTools VCs from Evil Martians 2025 analysis: Firestreak (Anthropic backer), Felicis, Lightspeed, Precursor, Emergence"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "cursor": {
+    "company": "Cursor",
+    "scrapedAt": "2026-02-11T12:32:31.596Z",
+    "careersUrl": "https://cursor.com/careers",
+    "status": "active",
+    "estimatedCount": 67,
+    "roles": [],
+    "categories": {},
+    "signals": [
+      "Heavy hiring: 67+ open roles"
+    ]
+  },
+  "cognition": {
+    "company": "Cognition (Devin)",
+    "scrapedAt": "2026-02-11T12:32:32.227Z",
+    "careersUrl": "https://cognition.ai/careers",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "replit": {
+    "company": "Replit",
+    "scrapedAt": "2026-02-11T12:32:32.499Z",
+    "careersUrl": "https://replit.com/site/careers",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "windsurf": {
+    "company": "Codeium (Windsurf)",
+    "scrapedAt": "2026-02-11T12:32:32.703Z",
+    "careersUrl": "https://codeium.com/careers",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "copilot": {
+    "company": "GitHub Copilot",
+    "scrapedAt": "2026-02-11T12:32:32.899Z",
+    "careersUrl": "https://github.com/about/careers",
+    "status": "error",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": [],
+    "error": "HTTP 403"
+  },
+  "tabnine": {
+    "company": "Tabnine",
+    "scrapedAt": "2026-02-11T12:32:33.825Z",
+    "careersUrl": "https://www.tabnine.com/careers",
+    "status": "active",
+    "estimatedCount": 5,
+    "roles": [
+      "Introducing Provenance and Attribution: Minimize IP liability for GenAI output"
+    ],
+    "categories": {},
+    "signals": []
+  },
+  "amazonq": {
+    "company": "Amazon Q Developer",
+    "scrapedAt": "2026-02-11T12:32:33.905Z",
+    "careersUrl": "https://www.amazon.jobs/en/search?base_query=Q+Developer",
+    "status": "active",
+    "estimatedCount": 1,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "cody": {
+    "company": "Sourcegraph (Cody)",
+    "scrapedAt": "2026-02-11T12:32:34.520Z",
+    "careersUrl": "https://boards.greenhouse.io/sourcegraph91",
+    "status": "active",
+    "estimatedCount": 7,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "continue": {
+    "company": "Continue.dev",
+    "scrapedAt": "2026-02-11T12:32:35.999Z",
+    "careersUrl": "https://continue.dev/careers",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "supermaven": {
+    "company": "Supermaven",
+    "scrapedAt": "2026-02-11T12:32:36.583Z",
+    "careersUrl": "https://supermaven.com/about",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "augment": {
+    "company": "Augment Code",
+    "scrapedAt": "2026-02-11T12:32:36.619Z",
+    "careersUrl": "https://www.augmentcode.com/careers",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "lovable": {
+    "company": "Lovable",
+    "scrapedAt": "2026-02-11T12:32:36.917Z",
+    "careersUrl": "https://lovable.dev/careers",
+    "status": "active",
+    "estimatedCount": 98,
+    "roles": [],
+    "categories": {},
+    "signals": [
+      "Heavy hiring: 98+ open roles"
+    ]
+  },
+  "poolside": {
+    "company": "Poolside",
+    "scrapedAt": "2026-02-11T12:32:38.043Z",
+    "careersUrl": "https://poolside.ai/careers",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  }
+}

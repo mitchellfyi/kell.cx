@@ -9,7 +9,7 @@ const path = require('path');
 
 // Paths
 const WAITLIST_FILE = path.join(__dirname, '..', 'waitlist.json');
-const BRIEFING_PROJECT = '/home/clawdbot/clawd/projects/briefing';
+const BRIEFING_PROJECT = path.join(__dirname, '..', 'briefing');
 
 // Resend API config
 const RESEND_API_KEY = 're_abKgjcKU_C6v6AeLrQ53e3HWabPQGSfqW';

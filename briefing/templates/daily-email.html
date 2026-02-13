@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Intel</title>
+</head>
+<body style="margin:0;padding:0;background:#f5f5f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f5f5f5;padding:20px 0;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" style="background:#fff;border-radius:8px;overflow:hidden;max-width:100%;">
+          
+          <!-- Header -->
+          <tr>
+            <td style="background:#0a0a0a;padding:24px 32px;">
+              <span style="color:#fff;font-size:18px;font-weight:600;">⚡ Briefing</span>
+              <span style="color:#666;font-size:14px;float:right;">{{DATE}}</span>
+            </td>
+          </tr>
+          
+          <!-- Key Signals -->
+          <tr>
+            <td style="padding:24px 32px;border-bottom:1px solid #eee;">
+              <h2 style="margin:0 0 16px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:#666;">Key Signals</h2>
+              {{#each signals}}
+              <div style="padding:8px 0;border-bottom:1px solid #f0f0f0;">
+                <strong style="color:#111;">{{company}}</strong>
+                <span style="color:#666;"> — {{signal}}</span>
+                {{#if link}}<a href="{{link}}" style="color:#3b82f6;text-decoration:none;margin-left:8px;">View →</a>{{/if}}
+              </div>
+              {{/each}}
+            </td>
+          </tr>
+          
+          <!-- Pricing Changes -->
+          {{#if pricingChanges}}
+          <tr>
+            <td style="padding:24px 32px;border-bottom:1px solid #eee;">
+              <h2 style="margin:0 0 16px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:#666;">Pricing Changes</h2>
+              <table width="100%" style="font-size:14px;">
+                <tr style="color:#666;">
+                  <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;"><strong>Tool</strong></td>
+                  <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;"><strong>Change</strong></td>
+                </tr>
+                {{#each pricingChanges}}
+                <tr>
+                  <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;"><a href="{{link}}" style="color:#111;text-decoration:none;">{{company}}</a></td>
+                  <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;color:#666;">{{change}}</td>
+                </tr>
+                {{/each}}
+              </table>
+            </td>
+          </tr>
+          {{/if}}
+          
+          <!-- Hiring Activity -->
+          {{#if hiring}}
+          <tr>
+            <td style="padding:24px 32px;border-bottom:1px solid #eee;">
+              <h2 style="margin:0 0 16px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:#666;">Hiring Activity</h2>
+              <table width="100%" style="font-size:14px;">
+                {{#each hiring}}
+                <tr>
+                  <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;"><a href="{{link}}" style="color:#111;text-decoration:none;">{{company}}</a></td>
+                  <td style="padding:8px 0;border-bottom:1px solid #f0f0f0;color:#666;">{{roles}} roles{{#if change}} <span style="color:#22c55e;">(+{{change}})</span>{{/if}}</td>
+                </tr>
+                {{/each}}
+              </table>
+            </td>
+          </tr>
+          {{/if}}
+          
+          <!-- News -->
+          {{#if news}}
+          <tr>
+            <td style="padding:24px 32px;border-bottom:1px solid #eee;">
+              <h2 style="margin:0 0 16px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:#666;">News</h2>
+              {{#each news}}
+              <div style="padding:8px 0;">
+                <a href="{{link}}" style="color:#111;text-decoration:none;font-weight:500;">{{title}}</a>
+                <span style="color:#999;font-size:13px;"> — {{source}}</span>
+              </div>
+              {{/each}}
+            </td>
+          </tr>
+          {{/if}}
+          
+          <!-- Footer -->
+          <tr>
+            <td style="padding:24px 32px;background:#fafafa;text-align:center;">
+              <p style="margin:0;color:#999;font-size:13px;">
+                <a href="https://kell.cx" style="color:#666;text-decoration:none;">kell.cx</a> · 
+                <a href="https://kell.cx/data/" style="color:#666;text-decoration:none;">View Data</a> · 
+                <a href="{{unsubscribeLink}}" style="color:#999;text-decoration:none;">Unsubscribe</a>
+              </p>
+            </td>
+          </tr>
+          
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-02-11T09:41:18.839Z",
+  "newArticles": [
+    {
+      "source": "Ars Technica",
+      "title": "Developers say AI coding tools work—and that&#039;s precisely what worries them",
+      "link": "https://arstechnica.com/ai/2026/01/developers-say-ai-coding-tools-work-and-thats-precisely-what-worries-them/",
+      "pubDate": "Fri, 30 Jan 2026 19:04:15 +0000",
+      "description": "",
+      "matchReason": "keyword: ai coding"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "OpenAI spills technical details about how its AI coding agent works",
+      "link": "https://arstechnica.com/ai/2026/01/openai-spills-technical-details-about-how-its-ai-coding-agent-works/",
+      "pubDate": "Mon, 26 Jan 2026 23:05:17 +0000",
+      "description": "",
+      "matchReason": "keyword: ai coding"
+    }
+  ],
+  "allRelevantArticles": [
+    {
+      "source": "Ars Technica",
+      "title": "Developers say AI coding tools work—and that&#039;s precisely what worries them",
+      "link": "https://arstechnica.com/ai/2026/01/developers-say-ai-coding-tools-work-and-thats-precisely-what-worries-them/",
+      "pubDate": "Fri, 30 Jan 2026 19:04:15 +0000",
+      "description": "",
+      "matchReason": "keyword: ai coding"
+    },
+    {
+      "source": "Ars Technica",
+      "title": "OpenAI spills technical details about how its AI coding agent works",
+      "link": "https://arstechnica.com/ai/2026/01/openai-spills-technical-details-about-how-its-ai-coding-agent-works/",
+      "pubDate": "Mon, 26 Jan 2026 23:05:17 +0000",
+      "description": "",
+      "matchReason": "keyword: ai coding"
+    }
+  ],
+  "signals": [
+    "2 new relevant article(s) in tech press"
+  ]
+}
