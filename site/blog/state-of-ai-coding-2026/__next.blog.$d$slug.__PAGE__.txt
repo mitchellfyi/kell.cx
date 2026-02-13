@@ -1,18 +1,87 @@
 1:"$Sreact.fragment"
-2:I[11363,["/_next/static/chunks/0dc5382467fc7d73.js"],""]
-f:I[36222,["/_next/static/chunks/b296557f5fbf63fb.js","/_next/static/chunks/29b10150c0f3771e.js"],"OutletBoundary"]
-10:"$Sreact.suspense"
-0:{"buildId":"w5eQAcvpxNxY36V59ncQl","rsc":["$","$1","c",{"children":[["$","article",null,{"className":"mx-auto max-w-2xl px-6 py-12","children":[["$","$L2",null,{"href":"/blog","className":"text-sm text-zinc-500 hover:text-zinc-300 mb-8 inline-block","children":"← Back to blog"}],["$","header",null,{"className":"mb-8","children":[["$","span",null,{"className":"text-4xl mb-4 block","children":"📊"}],["$","h1",null,{"className":"text-3xl font-semibold tracking-tight mb-2","children":"State of AI Coding Tools 2026"}],["$","p",null,{"className":"text-zinc-400 mb-4","children":"The market has exploded. Here's who's winning, who's struggling, and where it's all heading."}],["$","time",null,{"className":"text-sm text-zinc-600","children":"February 10, 2026"}]]}],["$","div",null,{"className":"prose prose-invert prose-zinc max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-h2:text-xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-lg prose-h3:mt-6 prose-h3:mb-3 prose-p:text-zinc-300 prose-p:leading-relaxed prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline prose-strong:text-white prose-strong:font-medium prose-code:text-zinc-200 prose-code:bg-zinc-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-pre:bg-zinc-900 prose-pre:border prose-pre:border-white/10 prose-li:text-zinc-300 prose-table:text-sm prose-th:text-left prose-th:text-zinc-300 prose-th:font-medium prose-th:pb-2 prose-th:border-b prose-th:border-white/10 prose-td:py-2 prose-td:text-zinc-400 prose-td:border-b prose-td:border-white/5 prose-hr:border-white/10 prose-hr:my-8 ","children":[["$","p","0",{"dangerouslySetInnerHTML":{"__html":"The AI coding tool landscape has fundamentally transformed in the past year. What was once a two-horse race between GitHub Copilot and a handful of startups has become a sprawling ecosystem of specialized tools, each carving out their niche."}}],["$","h2","1",{"children":"The Big Players"}],["$","p","2",{"dangerouslySetInnerHTML":{"__html":"<strong>Cursor</strong> continues to dominate mindshare among professional developers. Their $10B valuation reflects the market's belief that the IDE itself will be rebuilt around AI. With 500 fast requests per month on their $20/mo Pro tier, they've found the sweet spot between utility and monetization."}}],["$","p","3",{"dangerouslySetInnerHTML":{"__html":"<strong>GitHub Copilot</strong> maintains the largest user base due to enterprise adoption and the free tier for students and open source maintainers. At $10/month for individuals, it remains the \"safe\" choice for corporate environments already in the Microsoft ecosystem."}}],["$","p","4",{"dangerouslySetInnerHTML":{"__html":"<strong>Windsurf (Codeium)</strong> has emerged as the serious free alternative. Their unlimited completions on the free tier and aggressive $10/mo pro pricing puts pressure on the entire market. The Windsurf editor launch shows they're not content being just a plugin."}}],["$","h2","5",{"children":"The Open Source Movement"}],["$","p","6",{"dangerouslySetInnerHTML":{"__html":"The most interesting development has been the rise of open-source alternatives:"}}],["$","ul","7",{"children":[["$","li","0",{"dangerouslySetInnerHTML":{"__html":"<strong>Aider</strong> (40K+ GitHub stars) - Paul Gauthier's terminal-first approach has found a devoted following among developers who prefer working in their existing environment"}}],["$","li","1",{"dangerouslySetInnerHTML":{"__html":"<strong>Continue</strong> (31K+ stars) - The most polished open-source VS Code extension, now with solid JetBrains support"}}],"$L3"]}],"$L4","$L5","$L6","$L7","$L8","$L9","$La","$Lb","$Lc"]}],"$Ld"]}],null,"$Le"]}],"loading":null,"isPartial":false}
-3:["$","li","2",{"dangerouslySetInnerHTML":{"__html":"<strong>Cline</strong> - Gaining momentum as the \"agent-first\" approach to coding assistance"}}]
-4:["$","h2","8",{"children":"What's Actually Working"}]
-5:["$","p","9",{"dangerouslySetInnerHTML":{"__html":"Based on our data tracking, the tools seeing the most organic growth share common traits:"}}]
-6:["$","ol","10",{"children":[["$","li","0",{"dangerouslySetInnerHTML":{"__html":"<strong>Fast iteration</strong> - Weekly updates beat monthly releases"}}],["$","li","1",{"dangerouslySetInnerHTML":{"__html":"<strong>Model flexibility</strong> - BYOK (Bring Your Own Key) options are increasingly expected"}}],["$","li","2",{"dangerouslySetInnerHTML":{"__html":"<strong>Agent capabilities</strong> - Multi-file edits and autonomous task completion are table stakes now"}}],["$","li","3",{"dangerouslySetInnerHTML":{"__html":"<strong>Context awareness</strong> - Understanding the full codebase, not just the current file"}}]]}]
-7:["$","h2","11",{"children":"Where It's Heading"}]
-8:["$","p","12",{"dangerouslySetInnerHTML":{"__html":"Three trends to watch:"}}]
-9:["$","ol","13",{"children":[["$","li","0",{"dangerouslySetInnerHTML":{"__html":"<strong>Consolidation</strong> - Expect 2-3 acquisitions of smaller players by big tech in 2026"}}],["$","li","1",{"dangerouslySetInnerHTML":{"__html":"<strong>Specialization</strong> - Vertical-specific tools (legal code, fintech, infrastructure) will emerge"}}],["$","li","2",{"dangerouslySetInnerHTML":{"__html":"<strong>Agent evolution</strong> - The line between \"assistant\" and \"autonomous developer\" continues to blur"}}]]}]
-a:["$","p","14",{"dangerouslySetInnerHTML":{"__html":"The winners will be those who balance capability with predictability. Developers want AI that helps them ship faster without introducing chaos."}}]
-b:["$","hr","15",{}]
-c:["$","p","16",{"dangerouslySetInnerHTML":{"__html":"<em>We track 40+ AI coding tools daily. <a href=\"/\">Join the waitlist</a> for competitive intelligence delivered to your inbox.</em>"}}]
-d:["$","footer",null,{"className":"mt-12 pt-8 border-t border-white/10","children":["$","p",null,{"className":"text-sm text-zinc-500","children":["Want more competitive intelligence?"," ",["$","$L2",null,{"href":"/","className":"text-blue-400 hover:text-blue-300","children":"Join the waitlist"}]," ","for daily updates."]}]}]
-e:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
-11:null
+2:I[11363,["/_next/static/chunks/0dc5382467fc7d73.js","/_next/static/chunks/9452dda7a36f35b7.js"],""]
+3:I[62697,["/_next/static/chunks/0dc5382467fc7d73.js","/_next/static/chunks/9452dda7a36f35b7.js"],"Markdown"]
+8:I[36222,["/_next/static/chunks/b296557f5fbf63fb.js","/_next/static/chunks/9cd5137c153d62df.js"],"OutletBoundary"]
+9:"$Sreact.suspense"
+4:T12a4,
+Eighteen months ago, AI coding tools were a novelty. Today, they're infrastructure. The shift happened faster than anyone predicted, and the landscape looks nothing like the forecasts from 2024.
+
+Here's what's actually happening.
+
+## The Consolidation Nobody Expected
+
+The conventional wisdom was that we'd see 3-4 major players emerge. Instead, we got fragmentation. There are now 40+ tools with meaningful user bases, and the "winner take all" dynamic hasn't materialized.
+
+Why? Because developers are specific about their workflows. A solo founder building a SaaS doesn't need the same tool as a staff engineer at a bank. The market is segmenting faster than it's consolidating.
+
+**Cursor** has mindshare but not market share. Their $10B valuation assumes dominance that usage data doesn't support. They're beloved by a vocal minority—mostly early adopters on Twitter—but enterprise penetration remains shallow. The 500 request limit on Pro creates friction that power users resent.
+
+**GitHub Copilot** owns the enterprise. Not because it's best, but because procurement already trusts Microsoft. The $19/seat business tier is a rounding error for companies already paying for GitHub Enterprise. Technical superiority doesn't matter when you're embedded in the purchase order.
+
+**Windsurf** is the interesting one. Codeium's pivot from "free Copilot alternative" to a full IDE was bold. Unlimited completions on the free tier is a loss leader that's working—they're acquiring users faster than anyone except Copilot. Whether they can monetize remains unclear.
+
+## What the Numbers Say
+
+We track install counts, job postings, GitHub stars, changelog frequency, and pricing changes across 40+ tools. Some patterns:
+
+**Growth leaders (by install velocity):**
+1. Windsurf — aggressive free tier driving adoption
+2. Cursor — strong but slowing
+3. Continue — open source momentum
+4. Cline — agent-first approach resonating
+
+**Stagnating:**
+- Tabnine (losing ground to free alternatives)
+- Replit Ghostwriter (overshadowed by their pivot to agents)
+- Amazon CodeWhisperer (exists, technically)
+
+**The open source surge is real.** Aider crossed 40K GitHub stars. Continue hit 31K. These aren't toys—they're production tools for developers who want control over their stack and their costs.
+
+## The BYOK Revolution
+
+Bring Your Own Key is becoming standard. Developers don't want to pay $20/month for a wrapper around an API they could call directly.
+
+The tools winning here understand something important: the value isn't in the model access, it's in the workflow integration. Aider, Continue, and Cline all support BYOK and all are growing. They compete on UX, not API markup.
+
+This threatens the business model of every tool charging subscription fees for model access. Cursor's $20/month makes sense only if their UX is worth $20 more than calling Claude directly. For many developers, it isn't.
+
+## The Agent Question
+
+Every tool is racing to add "agent" capabilities—autonomous multi-file edits, task planning, code review. The marketing copy is indistinguishable. The actual capabilities vary wildly.
+
+Here's the honest assessment: agents are oversold. They work well for bounded tasks with clear success criteria. They fail unpredictably on ambiguous problems. The gap between demo and daily driver remains wide.
+
+**What's actually useful today:**
+- Multi-file refactors with human confirmation
+- Test generation from implementation
+- Documentation updates
+- Boilerplate scaffolding
+
+**What's still unreliable:**
+- Open-ended feature implementation
+- Complex debugging
+- Architectural decisions
+- Anything requiring business context
+
+The tools that acknowledge these limitations outperform those that promise autonomy.
+
+## Where This Goes
+
+Three predictions for the next 12 months:
+
+**1. Price compression continues.** Copilot at $10/month will face pressure. Codeium is proving that free tiers can drive growth. Someone will try $5/month positioning and force a race to the bottom.
+
+**2. IDE fragmentation increases.** VS Code's dominance is weakening. Cursor, Windsurf, Zed, and others are proving that developers will switch editors for better AI integration. The IDE is becoming the new browser war.
+
+**3. Specialization emerges.** Generic "code faster" tools will lose to vertical-specific solutions. Legal tech, fintech, infrastructure, mobile—each will get purpose-built AI coding tools. The horizontal play is already crowded.
+
+The winners won't be the tools with the best models. Models are commoditizing. The winners will be the ones who understand specific workflows deeply enough to remove friction invisible to generalists.
+
+---
+
+*We track this market daily. [Join the waitlist](/) for competitive intelligence delivered to your inbox.*
+0:{"buildId":"v7Dtq_CuegXiV3FuiGLBh","rsc":["$","$1","c",{"children":[["$","article",null,{"className":"mx-auto max-w-2xl px-6 py-12","children":[["$","$L2",null,{"href":"/blog","className":"text-sm text-zinc-500 hover:text-zinc-300 mb-8 inline-block","children":"← Back to blog"}],["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-3xl font-semibold tracking-tight mb-3","children":"State of AI Coding Tools 2026"}],["$","p",null,{"className":"text-zinc-400 text-lg mb-4","children":"The market has exploded. Here's who's winning, who's struggling, and where it's all heading."}],["$","time",null,{"className":"text-sm text-zinc-600","children":"February 10, 2026"}]]}],["$","div",null,{"className":"prose-custom","children":["$","$L3",null,{"content":"$4"}]}],"$L5"]}],["$L6"],"$L7"]}],"loading":null,"isPartial":false}
+5:["$","footer",null,{"className":"mt-12 pt-8 border-t border-white/10","children":["$","p",null,{"className":"text-sm text-zinc-500","children":["Want more competitive intelligence?"," ",["$","$L2",null,{"href":"/","className":"text-blue-400 hover:text-blue-300","children":"Join the waitlist"}]," ","for daily updates."]}]}]
+6:["$","script","script-0",{"src":"/_next/static/chunks/9452dda7a36f35b7.js","async":true}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null
