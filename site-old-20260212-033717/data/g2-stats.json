@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-02-11T19:02:29.727Z",
+  "productCount": 0,
+  "products": [],
+  "errors": [
+    "GitHub Copilot: HTTP 403",
+    "Cursor: HTTP 403",
+    "Codeium: HTTP 403",
+    "Tabnine: HTTP 403",
+    "Amazon CodeWhisperer: HTTP 403",
+    "Sourcegraph Cody: HTTP 403",
+    "Replit: HTTP 403",
+    "JetBrains AI: HTTP 403",
+    "Claude: HTTP 403",
+    "ChatGPT: HTTP 403"
+  ],
+  "summary": {
+    "avgRating": null,
+    "totalReviews": 0,
+    "topRated": null,
+    "mostReviewed": null
+  }
+}

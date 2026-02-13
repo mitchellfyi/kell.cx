@@ -1,0 +1,488 @@
+{
+  "scraped_at": "2026-02-12T00:34:03.366Z",
+  "source": "bluesky",
+  "stats": {
+    "total_fetched": 21,
+    "ai_relevant": 21,
+    "high_engagement": 17,
+    "recent": 4
+  },
+  "search_terms": [
+    "claude 4",
+    "gpt-5",
+    "anthropic",
+    "openai",
+    "llama 4",
+    "gemini 2",
+    "ai benchmark",
+    "swe-bench",
+    "aider",
+    "cursor ai",
+    "copilot",
+    "ai agent",
+    "ai coding"
+  ],
+  "key_accounts": [
+    "simonw.bsky.social",
+    "karpathy.bsky.social",
+    "emilyprobably.bsky.social",
+    "ylecun.bsky.social",
+    "jeffdean.bsky.social",
+    "hardmaru.bsky.social",
+    "fchollet.bsky.social",
+    "rasbt.bsky.social",
+    "mlpopular.bsky.social",
+    "aigrant.bsky.social",
+    "huggingface.bsky.social",
+    "thealgorithmicbridge.bsky.social",
+    "nonint.com",
+    "moritzlaurer.bsky.social",
+    "jeremyphoward.bsky.social"
+  ],
+  "high_engagement_posts": [
+    {
+      "uri": "at://did:plc:7chsbgw6o6oh5oiglpgc3467/app.bsky.feed.post/3mc76dyw5ds2y",
+      "url": "https://bsky.app/profile/hardmaru.bsky.social/post/3mc76dyw5ds2y",
+      "author": {
+        "handle": "hardmaru.bsky.social",
+        "displayName": "hardmaru",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7chsbgw6o6oh5oiglpgc3467/bafkreicpq2lhscgzahbyspqimfvb5y34acedy2xqsjiykptgvr2dk2tyga@jpeg"
+      },
+      "text": "One of my favorite findings: Positional embeddings are just training wheels. They help convergence but hurt long-context generalization.\n\nWe found that if you simply delete them after pretraining and recalibrate for <1% of the original budget, you unlock massive context windows. Smarter, not harder.",
+      "createdAt": "2026-01-12T04:12:05.492Z",
+      "created_utc": 1768191125,
+      "likeCount": 220,
+      "repostCount": 32,
+      "replyCount": 8,
+      "embed": {
+        "type": "app.bsky.embed.record#view"
+      },
+      "hasImages": false,
+      "category": "discussion",
+      "engagement": 292
+    },
+    {
+      "uri": "at://did:plc:uinkqqbeiydzfm7v7pi4e5mi/app.bsky.feed.post/3m5xascodwc2f",
+      "url": "https://bsky.app/profile/jeffdean.bsky.social/post/3m5xascodwc2f",
+      "author": {
+        "handle": "jeffdean.bsky.social",
+        "displayName": "Jeff Dean",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:uinkqqbeiydzfm7v7pi4e5mi/bafkreialsrhkr4gzt372e5icrayge5mnsspqlabefzlv26z35dv4ymoqmi@jpeg"
+      },
+      "text": "I’m really excited about our release of Gemini 3 today, the result of hard work by many, many people in the Gemini team and all across Google! 🎊\n\nblog.google/products/gem...\n\nGemini 3 performs quite well on a wide range of benchmarks.",
+      "createdAt": "2025-11-19T02:53:48.547Z",
+      "created_utc": 1763520828,
+      "likeCount": 184,
+      "repostCount": 24,
+      "replyCount": 18,
+      "embed": {
+        "type": "app.bsky.embed.images#view"
+      },
+      "hasImages": true,
+      "category": "release",
+      "engagement": 250
+    },
+    {
+      "uri": "at://did:plc:j7gi6r4kh6uof7rfrqpm3fej/app.bsky.feed.post/3jwoneqcave2h",
+      "url": "https://bsky.app/profile/karpathy.bsky.social/post/3jwoneqcave2h",
+      "author": {
+        "handle": "karpathy.bsky.social",
+        "displayName": "karpathy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:j7gi6r4kh6uof7rfrqpm3fej/bafkreif2kom6tntioszs573z7to2etwko6vkwlwflf3exbj3hnzywhcjci@jpeg"
+      },
+      "text": "How can you not be jealous when you copy paste a long passage of text to GPT-4, ask it to eg summarize and see tokens flowing moments later",
+      "createdAt": "2023-05-27T03:56:08.230Z",
+      "created_utc": 1685159768,
+      "likeCount": 218,
+      "repostCount": 5,
+      "replyCount": 11,
+      "embed": null,
+      "hasImages": false,
+      "category": "discussion",
+      "engagement": 239
+    },
+    {
+      "uri": "at://did:plc:uinkqqbeiydzfm7v7pi4e5mi/app.bsky.feed.post/3ma77bhibf22g",
+      "url": "https://bsky.app/profile/jeffdean.bsky.social/post/3ma77bhibf22g",
+      "author": {
+        "handle": "jeffdean.bsky.social",
+        "displayName": "Jeff Dean",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:uinkqqbeiydzfm7v7pi4e5mi/bafkreialsrhkr4gzt372e5icrayge5mnsspqlabefzlv26z35dv4ymoqmi@jpeg"
+      },
+      "text": "We’ve pushed out the Pareto frontier of efficiency vs. intelligence again.\n\nWith Gemini 3 Flash ⚡️, we are seeing reasoning capabilities previously reserved for our largest models. This opens up entirely new categories of near real-time applications that require complex thought.\n\nMore in thread ⬇️",
+      "createdAt": "2025-12-17T17:38:10.585Z",
+      "created_utc": 1765993090,
+      "likeCount": 129,
+      "repostCount": 18,
+      "replyCount": 2,
+      "embed": {
+        "type": "app.bsky.embed.images#view"
+      },
+      "hasImages": true,
+      "category": "thread",
+      "engagement": 167
+    },
+    {
+      "uri": "at://did:plc:qygqevukksg7rnewku4ffpkv/app.bsky.feed.post/3mc762xas7c2i",
+      "url": "https://bsky.app/profile/sakanaai.bsky.social/post/3mc762xas7c2i",
+      "author": {
+        "handle": "sakanaai.bsky.social",
+        "displayName": "sakanaai.bsky.social",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qygqevukksg7rnewku4ffpkv/bafkreigl47cnfugoad54fcah6g5l6e25id5zfaqwucqbgvx3ojhgcnlmye@jpeg"
+      },
+      "text": "Introducing DroPE: Extending Context by Dropping Positional Embeddings\n\nWe found embeddings like RoPE aid training but bottleneck long-sequence generalization. Our solution’s simple: treat them as a temporary training scaffold, not a permanent necessity.\n\narxiv.org/abs/2512.12167\npub.sakana.ai/DroPE",
+      "createdAt": "2026-01-12T04:07:01.753Z",
+      "created_utc": 1768190821,
+      "likeCount": 118,
+      "repostCount": 22,
+      "replyCount": 2,
+      "embed": {
+        "type": "app.bsky.embed.video#view"
+      },
+      "hasImages": false,
+      "category": "release",
+      "engagement": 164
+    },
+    {
+      "uri": "at://did:plc:qygqevukksg7rnewku4ffpkv/app.bsky.feed.post/3mcqfpg3ixk2h",
+      "url": "https://bsky.app/profile/sakanaai.bsky.social/post/3mcqfpg3ixk2h",
+      "author": {
+        "handle": "sakanaai.bsky.social",
+        "displayName": "sakanaai.bsky.social",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qygqevukksg7rnewku4ffpkv/bafkreigl47cnfugoad54fcah6g5l6e25id5zfaqwucqbgvx3ojhgcnlmye@jpeg"
+      },
+      "text": "Introducing RePo: Language Models with Context Re-Positioning\n\nStandard LLMs force a rigid linear structure on context, treating physical proximity as relevance. Cognitive Load Theory suggests this is inefficient—models waste capacity managing noise instead of reasoning.\n\narxiv.org/abs/2512.14391",
+      "createdAt": "2026-01-19T00:39:00.143Z",
+      "created_utc": 1768783140,
+      "likeCount": 55,
+      "repostCount": 8,
+      "replyCount": 1,
+      "embed": {
+        "type": "app.bsky.embed.video#view"
+      },
+      "hasImages": false,
+      "category": "release",
+      "engagement": 72
+    },
+    {
+      "uri": "at://did:plc:uinkqqbeiydzfm7v7pi4e5mi/app.bsky.feed.post/3m4xvqlaydk22",
+      "url": "https://bsky.app/profile/jeffdean.bsky.social/post/3m4xvqlaydk22",
+      "author": {
+        "handle": "jeffdean.bsky.social",
+        "displayName": "Jeff Dean",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:uinkqqbeiydzfm7v7pi4e5mi/bafkreialsrhkr4gzt372e5icrayge5mnsspqlabefzlv26z35dv4ymoqmi@jpeg"
+      },
+      "text": "DataRater can continuously+adaptively learn which examples will improve an ML model the most during training.\n\nDelighted to have worked on this with @luisazintgraf.bsky.social, @dancalian.bsky.social, @gregfar.bsky.social, Iurii Kemaev, et al. (see full list at the of Luisa's thread).",
+      "createdAt": "2025-11-06T15:43:27.389Z",
+      "created_utc": 1762443807,
+      "likeCount": 40,
+      "repostCount": 6,
+      "replyCount": 0,
+      "embed": {
+        "type": "app.bsky.embed.record#view"
+      },
+      "hasImages": false,
+      "category": "thread",
+      "engagement": 52
+    },
+    {
+      "uri": "at://did:plc:caqrj5ozzdpo6j2sym65uds5/app.bsky.feed.post/3lcwypgmzi22a",
+      "url": "https://bsky.app/profile/narsilou.bsky.social/post/3lcwypgmzi22a",
+      "author": {
+        "handle": "narsilou.bsky.social",
+        "displayName": "narsilou.bsky.social",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:caqrj5ozzdpo6j2sym65uds5/bafkreib4lk3643ltqohjx7v4hmwsxbstwj2fsbw23ud3np42ewtdb5l7re@jpeg"
+      },
+      "text": "Performance leap: TGI v3 is out. Processes 3x more tokens, 13x faster than vLLM on long prompts. Zero config !",
+      "createdAt": "2024-12-10T10:08:48.150Z",
+      "created_utc": 1733825328,
+      "likeCount": 19,
+      "repostCount": 6,
+      "replyCount": 1,
+      "embed": {
+        "type": "app.bsky.embed.images#view"
+      },
+      "hasImages": true,
+      "category": "discussion",
+      "engagement": 32
+    },
+    {
+      "uri": "at://did:plc:qygqevukksg7rnewku4ffpkv/app.bsky.feed.post/3mcqfrd4c7s2h",
+      "url": "https://bsky.app/profile/sakanaai.bsky.social/post/3mcqfrd4c7s2h",
+      "author": {
+        "handle": "sakanaai.bsky.social",
+        "displayName": "sakanaai.bsky.social",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qygqevukksg7rnewku4ffpkv/bafkreigl47cnfugoad54fcah6g5l6e25id5zfaqwucqbgvx3ojhgcnlmye@jpeg"
+      },
+      "text": "RePo moves us toward models that intelligently curate their own working memory rather than passively accepting input order.\n\nRead the full breakdown on our website:\npub.sakana.ai/repo/\n\nPaper: arxiv.org/abs/2512.14391",
+      "createdAt": "2026-01-19T00:40:04.131Z",
+      "created_utc": 1768783204,
+      "likeCount": 18,
+      "repostCount": 4,
+      "replyCount": 0,
+      "embed": {
+        "type": "app.bsky.embed.external#view",
+        "uri": "https://arxiv.org/abs/2512.14391",
+        "title": "RePo: Language Models with Context Re-Positioning",
+        "description": "In-context learning is fundamental to modern Large Language Models (LLMs); however, prevailing architectures impose a rigid and fixed contextual structure by assigning linear or constant positional in..."
+      },
+      "hasImages": false,
+      "category": "link",
+      "engagement": 26
+    },
+    {
+      "uri": "at://did:plc:ad6svofinb7goy2sfyeapvcw/app.bsky.feed.post/3m5xbo7wch223",
+      "url": "https://bsky.app/profile/triangulator.org/post/3m5xbo7wch223",
+      "author": {
+        "handle": "triangulator.org",
+        "displayName": "Kevin Webb",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ad6svofinb7goy2sfyeapvcw/bafkreicjglkxciubnhpwwjlmch47badrwceivxclixyty6a6xetkybunre@jpeg"
+      },
+      "text": "The multimodal reasoning is very cool. Something I’ve been tracking with models for a while and Gemini 3 Pro was the first to produce a plausible response.",
+      "createdAt": "2025-11-19T03:09:25.189Z",
+      "created_utc": 1763521765,
+      "likeCount": 17,
+      "repostCount": 4,
+      "replyCount": 0,
+      "embed": {
+        "type": "app.bsky.embed.record#view"
+      },
+      "hasImages": false,
+      "category": "discussion",
+      "engagement": 25
+    },
+    {
+      "uri": "at://did:plc:pm3u5k444vz63ficauiqrmo7/app.bsky.feed.post/3ld4n6wbaj22p",
+      "url": "https://bsky.app/profile/moritzlaurer.bsky.social/post/3ld4n6wbaj22p",
+      "author": {
+        "handle": "moritzlaurer.bsky.social",
+        "displayName": "Moritz Laurer",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pm3u5k444vz63ficauiqrmo7/bafkreigxsw42npb5y5gvagwacytkrlsjey6zi5znoi7bymnk3k72u5o7ju@jpeg"
+      },
+      "text": "I've been building a small library for working with prompt templates on the @huggingface.bsky.social Hub: `pip install prompt-templates`. Motivation: \n\nThe community currently shares prompt templates in a wide variety of formats: in datasets, in model cards, as strings in .py files, as .txt/... 🧵",
+      "createdAt": "2024-12-12T15:58:41.388Z",
+      "created_utc": 1734019121,
+      "likeCount": 16,
+      "repostCount": 4,
+      "replyCount": 1,
+      "embed": null,
+      "hasImages": false,
+      "category": "discussion",
+      "engagement": 25
+    },
+    {
+      "uri": "at://did:plc:qygqevukksg7rnewku4ffpkv/app.bsky.feed.post/3md3r4vgfac2s",
+      "url": "https://bsky.app/profile/sakanaai.bsky.social/post/3md3r4vgfac2s",
+      "author": {
+        "handle": "sakanaai.bsky.social",
+        "displayName": "sakanaai.bsky.social",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qygqevukksg7rnewku4ffpkv/bafkreigl47cnfugoad54fcah6g5l6e25id5zfaqwucqbgvx3ojhgcnlmye@jpeg"
+      },
+      "text": "We are thrilled to announce a strategic partnership with Google!\n\nGoogle is also making a financial investment in Sakana AI to strengthen this collaboration. We are combining Google’s world-class products like Gemini and Gemma with our agile R&D to accelerate automated scientific discovery.",
+      "createdAt": "2026-01-23T13:02:40.718Z",
+      "created_utc": 1769173360,
+      "likeCount": 17,
+      "repostCount": 2,
+      "replyCount": 1,
+      "embed": {
+        "type": "app.bsky.embed.video#view"
+      },
+      "hasImages": false,
+      "category": "discussion",
+      "engagement": 22
+    },
+    {
+      "uri": "at://did:plc:tt4wavjsze5fzhbj66pgewll/app.bsky.feed.post/3lbpnazu3qv2n",
+      "url": "https://bsky.app/profile/realpython.com/post/3lbpnazu3qv2n",
+      "author": {
+        "handle": "realpython.com",
+        "displayName": "Real Python",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:tt4wavjsze5fzhbj66pgewll/bafkreigkyqcpk6mhzcjo5pmuxy2lc557bizxz2i6l37rdunwc3h4kfuizm@jpeg"
+      },
+      "text": "🐍📰 Hugging Face Transformers: Leverage Open-Source AI in Python\n\n#python\n\nrealpython.com/huggingface-...",
+      "createdAt": "2024-11-24T18:30:03.929Z",
+      "created_utc": 1732473003,
+      "likeCount": 14,
+      "repostCount": 2,
+      "replyCount": 0,
+      "embed": {
+        "type": "app.bsky.embed.images#view"
+      },
+      "hasImages": true,
+      "category": "discussion",
+      "engagement": 18
+    },
+    {
+      "uri": "at://did:plc:j7gi6r4kh6uof7rfrqpm3fej/app.bsky.feed.post/3jtysc3ethk23",
+      "url": "https://bsky.app/profile/karpathy.bsky.social/post/3jtysc3ethk23",
+      "author": {
+        "handle": "karpathy.bsky.social",
+        "displayName": "karpathy",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:j7gi6r4kh6uof7rfrqpm3fej/bafkreif2kom6tntioszs573z7to2etwko6vkwlwflf3exbj3hnzywhcjci@jpeg"
+      },
+      "text": "I was going to join the bandwagon of demanding to be charged for my tokens but then I realized I actually own so few 🥺",
+      "createdAt": "2023-04-23T00:35:10.436Z",
+      "created_utc": 1682210110,
+      "likeCount": 11,
+      "repostCount": 2,
+      "replyCount": 2,
+      "embed": null,
+      "hasImages": false,
+      "category": "discussion",
+      "engagement": 17
+    },
+    {
+      "uri": "at://did:plc:pm3u5k444vz63ficauiqrmo7/app.bsky.feed.post/3lf5jd6xcm22l",
+      "url": "https://bsky.app/profile/moritzlaurer.bsky.social/post/3lf5jd6xcm22l",
+      "author": {
+        "handle": "moritzlaurer.bsky.social",
+        "displayName": "Moritz Laurer",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pm3u5k444vz63ficauiqrmo7/bafkreigxsw42npb5y5gvagwacytkrlsjey6zi5znoi7bymnk3k72u5o7ju@jpeg"
+      },
+      "text": "OpenAI is losing money on the $200/month subscription 🤯. It's crazy how expensive it is to run these largest LLMs:\n\n- ChatGPT Pro costs $200/month ($2,400/year) and is still unprofitable for OpenAI due to higher-than-expected usage.\n- OpenAI reportedly expected losses of about $5 billion",
+      "createdAt": "2025-01-07T11:12:32.744Z",
+      "created_utc": 1736248352,
+      "likeCount": 4,
+      "repostCount": 4,
+      "replyCount": 1,
+      "embed": null,
+      "hasImages": false,
+      "category": "discussion",
+      "engagement": 13
+    },
+    {
+      "uri": "at://did:plc:pm3u5k444vz63ficauiqrmo7/app.bsky.feed.post/3ldqlj7vqkc23",
+      "url": "https://bsky.app/profile/moritzlaurer.bsky.social/post/3ldqlj7vqkc23",
+      "author": {
+        "handle": "moritzlaurer.bsky.social",
+        "displayName": "Moritz Laurer",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pm3u5k444vz63ficauiqrmo7/bafkreigxsw42npb5y5gvagwacytkrlsjey6zi5znoi7bymnk3k72u5o7ju@jpeg"
+      },
+      "text": "Quite excited by the ModernBERT release! 0.15/0.4B small, 2T modern pre-training data and tokenizer with code, 8k context window, great efficient model for embeddings & classification!\n\nThis will probably be the basis for many future SOTA encoders! I can finally stop using DeBERTav3 2021 :D",
+      "createdAt": "2024-12-20T14:21:54.323Z",
+      "created_utc": 1734704514,
+      "likeCount": 8,
+      "repostCount": 1,
+      "replyCount": 1,
+      "embed": {
+        "type": "app.bsky.embed.images#view"
+      },
+      "hasImages": true,
+      "category": "release",
+      "engagement": 11
+    },
+    {
+      "uri": "at://did:plc:qygqevukksg7rnewku4ffpkv/app.bsky.feed.post/3mdjr4tlywc2y",
+      "url": "https://bsky.app/profile/sakanaai.bsky.social/post/3mdjr4tlywc2y",
+      "author": {
+        "handle": "sakanaai.bsky.social",
+        "displayName": "sakanaai.bsky.social",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qygqevukksg7rnewku4ffpkv/bafkreigl47cnfugoad54fcah6g5l6e25id5zfaqwucqbgvx3ojhgcnlmye@jpeg"
+      },
+      "text": "「How Competition is Stifling AI Breakthroughs」\n\nSakana AI共同創業者 Llion Jones のTED AIトークが公開されました。目標を定めすぎないオープンエンドな研究がブレークスルーを生む理由、Transformerの成功が業界にもたらした状況、それを乗り越える次の構想と成果を語りました。\n\nwww.ted.com/talks/llion_...",
+      "createdAt": "2026-01-29T02:39:55.141Z",
+      "created_utc": 1769654395,
+      "likeCount": 4,
+      "repostCount": 1,
+      "replyCount": 0,
+      "embed": {
+        "type": "app.bsky.embed.external#view",
+        "uri": "https://www.ted.com/talks/llion_jones_how_competition_is_stifling_ai_breakthroughs",
+        "title": "How competition is stifling AI breakthroughs",
+        "description": "Llion Jones cowrote \"Attention Is All You Need,\" the seminal paper that introduced the transformer — the architecture that launched the generative AI revolution. Now he warns that the industry that gr..."
+      },
+      "hasImages": false,
+      "category": "link",
+      "engagement": 6
+    }
+  ],
+  "recent_posts": [
+    {
+      "uri": "at://did:plc:qygqevukksg7rnewku4ffpkv/app.bsky.feed.post/3md3r5ephms2s",
+      "url": "https://bsky.app/profile/sakanaai.bsky.social/post/3md3r5ephms2s",
+      "author": {
+        "handle": "sakanaai.bsky.social",
+        "displayName": "sakanaai.bsky.social",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qygqevukksg7rnewku4ffpkv/bafkreigl47cnfugoad54fcah6g5l6e25id5zfaqwucqbgvx3ojhgcnlmye@jpeg"
+      },
+      "text": "Our work on The AI Scientist and ALE-Agent has already shown the power of these models.\n\nNow, we are scaling reliable AI in mission-critical sectors like finance and government to ensure the highest security and data sovereignty.\n\nFull details: sakana.ai/google#en",
+      "createdAt": "2026-01-23T13:02:56.743Z",
+      "created_utc": 1769173376,
+      "likeCount": 1,
+      "repostCount": 1,
+      "replyCount": 1,
+      "embed": {
+        "type": "app.bsky.embed.external#view",
+        "uri": "https://sakana.ai/google#en",
+        "title": "Sakana AI",
+        "description": "Sakana AI、Googleとの戦略的パートナーシップ締結を発表"
+      },
+      "hasImages": false,
+      "category": "link",
+      "engagement": 4
+    },
+    {
+      "uri": "at://did:plc:pm3u5k444vz63ficauiqrmo7/app.bsky.feed.post/3lfhlbudjns2w",
+      "url": "https://bsky.app/profile/moritzlaurer.bsky.social/post/3lfhlbudjns2w",
+      "author": {
+        "handle": "moritzlaurer.bsky.social",
+        "displayName": "Moritz Laurer",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pm3u5k444vz63ficauiqrmo7/bafkreigxsw42npb5y5gvagwacytkrlsjey6zi5znoi7bymnk3k72u5o7ju@jpeg"
+      },
+      "text": "FACTS is a great paper from @GoogleDeepMind on measuring the factuality of LLM outputs. You can now download their prompt templates from @huggingface to improve LLM-based fact-checking yourself!\n🧵",
+      "createdAt": "2025-01-11T11:14:12.906Z",
+      "created_utc": 1736594052,
+      "likeCount": 3,
+      "repostCount": 0,
+      "replyCount": 1,
+      "embed": {
+        "type": "app.bsky.embed.images#view"
+      },
+      "hasImages": true,
+      "category": "discussion",
+      "engagement": 4
+    },
+    {
+      "uri": "at://did:plc:pm3u5k444vz63ficauiqrmo7/app.bsky.feed.post/3lfcqkvs4pc22",
+      "url": "https://bsky.app/profile/moritzlaurer.bsky.social/post/3lfcqkvs4pc22",
+      "author": {
+        "handle": "moritzlaurer.bsky.social",
+        "displayName": "Moritz Laurer",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pm3u5k444vz63ficauiqrmo7/bafkreigxsw42npb5y5gvagwacytkrlsjey6zi5znoi7bymnk3k72u5o7ju@jpeg"
+      },
+      "text": "The TRL v0.13 release is 🔥! My highlight are the new process reward trainer to train models similar to o1 and tool call support:\n\n🧠 Process reward trainer: Enables training of Process-supervised Reward Models (PRMs), which reward the quality of intermediate steps, promoting structured reasoning.",
+      "createdAt": "2025-01-09T13:05:26.448Z",
+      "created_utc": 1736427926,
+      "likeCount": 2,
+      "repostCount": 0,
+      "replyCount": 1,
+      "embed": {
+        "type": "app.bsky.embed.images#view"
+      },
+      "hasImages": true,
+      "category": "release",
+      "engagement": 3
+    },
+    {
+      "uri": "at://did:plc:pm3u5k444vz63ficauiqrmo7/app.bsky.feed.post/3lfrrh56rds2u",
+      "url": "https://bsky.app/profile/moritzlaurer.bsky.social/post/3lfrrh56rds2u",
+      "author": {
+        "handle": "moritzlaurer.bsky.social",
+        "displayName": "Moritz Laurer",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:pm3u5k444vz63ficauiqrmo7/bafkreigxsw42npb5y5gvagwacytkrlsjey6zi5znoi7bymnk3k72u5o7ju@jpeg"
+      },
+      "text": ".@microsoft.com's rStar-Math paper claims that 🤏 ~7B models can match the math skills of o1 using clever train- and test-time techniques. You can now download their prompt templates from @hf.co ! \n🧵",
+      "createdAt": "2025-01-15T12:31:09.805Z",
+      "created_utc": 1736944269,
+      "likeCount": 1,
+      "repostCount": 0,
+      "replyCount": 1,
+      "embed": {
+        "type": "app.bsky.embed.images#view"
+      },
+      "hasImages": true,
+      "category": "discussion",
+      "engagement": 2
+    }
+  ]
+}

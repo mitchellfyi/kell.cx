@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Briefing — Kell</title>
+    <meta name="description" content="See what a Kell daily competitive intelligence briefing looks like. Real data, real signals.">
+    <meta property="og:title" content="Sample Daily Briefing — Kell">
+    <meta property="og:description" content="See what competitive intelligence looks like. Real data from today.">
+    <meta property="og:image" content="https://kell.cx/og-image.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #fafafa;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .nav-logo { color: #fff; text-decoration: none; font-weight: 600; }
+        .nav-links { display: flex; gap: 1.5rem; }
+        .nav-links a { color: #888; text-decoration: none; font-size: 0.9rem; }
+        .nav-links a:hover { color: #fff; }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .header .logo { font-size: 2rem; margin-bottom: 0.5rem; }
+        .header h1 { font-size: 1.75rem; font-weight: 600; margin-bottom: 0.25rem; }
+        .header .date { color: #666; font-size: 0.9rem; }
+        .header .live { 
+            display: inline-block;
+            background: rgba(34, 197, 94, 0.15);
+            color: #22c55e;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 0.75rem;
+        }
+        
+        /* Summary stats */
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .stat {
+            text-align: center;
+            padding: 1rem 0.5rem;
+            background: rgba(255,255,255,0.02);
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        .stat-value {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.125rem;
+        }
+        .stat-value.up { color: #22c55e; }
+        .stat-label {
+            font-size: 0.7rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        
+        /* Email preview */
+        .email {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+        .email-header {
+            padding: 1rem 1.5rem;
+            background: rgba(255,255,255,0.03);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            font-size: 0.85rem;
+            color: #888;
+        }
+        .email-header span { display: block; margin-bottom: 0.25rem; }
+        .email-header strong { color: #ccc; }
+        .email-body { padding: 1.5rem; }
+        
+        /* Sections */
+        .section { margin-bottom: 2rem; }
+        .section:last-child { margin-bottom: 0; }
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #666;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        
+        /* Competitor cards */
+        .competitor {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .competitor:last-child { margin-bottom: 0; }
+        .competitor.highlight {
+            border-color: rgba(59, 130, 246, 0.3);
+            background: rgba(59, 130, 246, 0.05);
+        }
+        .competitor-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+        }
+        .competitor-name { font-weight: 600; font-size: 1rem; }
+        .competitor-badge {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            background: rgba(255,255,255,0.06);
+            color: #888;
+        }
+        .competitor-badge.new { background: rgba(34, 197, 94, 0.15); color: #22c55e; }
+        .competitor-badge.hot { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+        
+        .signal {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+            font-size: 0.9rem;
+        }
+        .signal:last-child { border-bottom: none; }
+        .signal-icon { flex-shrink: 0; font-size: 0.85rem; }
+        .signal-content { flex: 1; }
+        .signal-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: #555;
+            margin-bottom: 0.125rem;
+        }
+        .signal-text { color: #ccc; }
+        .signal-text a { color: #3b82f6; text-decoration: none; }
+        .signal-text a:hover { text-decoration: underline; }
+        .signal-new { color: #22c55e; }
+        .signal-alert { color: #f59e0b; }
+        
+        /* Metrics row */
+        .metrics {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid rgba(255,255,255,0.04);
+        }
+        .metric {
+            font-size: 0.8rem;
+        }
+        .metric-label { color: #555; }
+        .metric-value { color: #ccc; font-weight: 500; }
+        .metric-change { font-size: 0.75rem; margin-left: 0.25rem; }
+        .metric-up { color: #22c55e; }
+        .metric-down { color: #ef4444; }
+        
+        /* CTA */
+        .cta {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(139, 92, 246, 0.08));
+            border-radius: 12px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        .cta h3 { margin-bottom: 0.5rem; }
+        .cta p { color: #888; margin-bottom: 1.5rem; font-size: 0.95rem; }
+        .cta-button {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            background: #fff;
+            color: #0a0a0a;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-button:hover { 
+            transform: translateY(-1px);
+            box-shadow: 0 4px 20px rgba(255,255,255,0.1);
+        }
+        
+        /* Footer */
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            text-align: center;
+            color: #555;
+            font-size: 0.85rem;
+        }
+        footer a { color: #888; text-decoration: none; }
+        footer a:hover { color: #fff; }
+        
+        @media (max-width: 600px) {
+            .container { padding: 1.5rem 1rem; }
+            nav { flex-direction: column; gap: 1rem; text-align: center; }
+            .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.75rem 1.25rem; }
+            .summary { grid-template-columns: repeat(2, 1fr); }
+            .metrics { flex-wrap: wrap; gap: 0.75rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="nav-logo">⚡ Kell</a>
+            <div class="nav-links">
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/data/">Data</a>
+                <a href="/pricing.html">Pricing</a>
+            </div>
+        </nav>
+        
+        <div class="header">
+            <div class="logo">⚡</div>
+            <h1>Sample Daily Briefing</h1>
+            <p class="date">AI Coding Tools · Tuesday, Feb 11, 2026</p>
+            <span class="live">✓ Real data from today</span>
+        </div>
+        
+        <div class="summary">
+            <div class="stat">
+                <div class="stat-value">12</div>
+                <div class="stat-label">Tools tracked</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value up">7</div>
+                <div class="stat-label">Active today</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">160M</div>
+                <div class="stat-label">VSCode installs</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">439K</div>
+                <div class="stat-label">GitHub stars</div>
+            </div>
+        </div>
+        
+        <div class="email">
+            <div class="email-header">
+                <span><strong>From:</strong> briefings@kell.cx</span>
+                <span><strong>Subject:</strong> ⚡ Claude Code ships v2.1.39 · OpenHands takes GitHub lead · Cline growth +6%</span>
+            </div>
+            <div class="email-body">
+                
+                <div class="section">
+                    <div class="section-header">🚨 Key Moves</div>
+                    
+                    <div class="competitor highlight">
+                        <div class="competitor-header">
+                            <div class="competitor-name">Claude Code</div>
+                            <span class="competitor-badge new">Release</span>
+                        </div>
+                        <div class="signal">
+                            <span class="signal-icon">📦</span>
+                            <div class="signal-content">
+                                <div class="signal-label">New Version · 19 hours ago</div>
+                                <div class="signal-text signal-new">v2.1.39 — Improved terminal rendering, fixed fatal errors being swallowed, fixed process hanging after session close</div>
+                            </div>
+                        </div>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-label">GitHub:</span>
+                                <span class="metric-value">66.1K ⭐</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Issues:</span>
+                                <span class="metric-value">6,654 open</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="competitor highlight">
+                        <div class="competitor-header">
+                            <div class="competitor-name">OpenHands</div>
+                            <span class="competitor-badge hot">Leader</span>
+                        </div>
+                        <div class="signal">
+                            <span class="signal-icon">👑</span>
+                            <div class="signal-content">
+                                <div class="signal-label">GitHub Stars</div>
+                                <div class="signal-text">Now #1 in open source AI coding — <strong>67.8K stars</strong>, surpassed Claude Code</div>
+                            </div>
+                        </div>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-label">Forks:</span>
+                                <span class="metric-value">8.4K</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Activity:</span>
+                                <span class="metric-value">Hot 🔥</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-header">📈 Growth Signals</div>
+                    
+                    <div class="competitor">
+                        <div class="competitor-header">
+                            <div class="competitor-name">Cline</div>
+                            <span class="competitor-badge">VSCode</span>
+                        </div>
+                        <div class="signal">
+                            <span class="signal-icon">📊</span>
+                            <div class="signal-content">
+                                <div class="signal-label">Adoption</div>
+                                <div class="signal-text">3.07M installs · <span class="signal-new">+6.1% monthly growth</span> — fastest growing extension</div>
+                            </div>
+                        </div>
+                        <div class="signal">
+                            <span class="signal-icon">📦</span>
+                            <div class="signal-content">
+                                <div class="signal-label">Last Release</div>
+                                <div class="signal-text">v3.57.1 (5 days ago) — Fixed Opus 4.6 for Bedrock provider</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="competitor">
+                        <div class="competitor-header">
+                            <div class="competitor-name">Continue</div>
+                            <span class="competitor-badge">VSCode</span>
+                        </div>
+                        <div class="signal">
+                            <span class="signal-icon">📊</span>
+                            <div class="signal-content">
+                                <div class="signal-label">Adoption</div>
+                                <div class="signal-text">2.12M installs · <span class="signal-new">+7.3% monthly growth</span></div>
+                            </div>
+                        </div>
+                        <div class="signal">
+                            <span class="signal-icon">📦</span>
+                            <div class="signal-content">
+                                <div class="signal-label">Release Today</div>
+                                <div class="signal-text">v1.3.31 — Dependency updates, UI fixes</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="competitor">
+                        <div class="competitor-header">
+                            <div class="competitor-name">Goose (Block)</div>
+                            <span class="competitor-badge">Hot</span>
+                        </div>
+                        <div class="signal">
+                            <span class="signal-icon">🚀</span>
+                            <div class="signal-content">
+                                <div class="signal-label">Momentum</div>
+                                <div class="signal-text">30.3K GitHub stars · Active commits today · Rust-based agent</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-header">🏢 Market Leaders</div>
+                    
+                    <div class="competitor">
+                        <div class="competitor-header">
+                            <div class="competitor-name">GitHub Copilot</div>
+                            <span class="competitor-badge">Incumbent</span>
+                        </div>
+                        <div class="signal">
+                            <span class="signal-icon">📊</span>
+                            <div class="signal-content">
+                                <div class="signal-label">Dominance</div>
+                                <div class="signal-text">71.2M + 60.9M installs (Copilot + Chat) — 82% market share by installs</div>
+                            </div>
+                        </div>
+                        <div class="signal">
+                            <span class="signal-icon">⚠️</span>
+                            <div class="signal-content">
+                                <div class="signal-label">Rating</div>
+                                <div class="signal-text signal-alert">3.6★ on Chat extension — lower than competitors</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="competitor">
+                        <div class="competitor-header">
+                            <div class="competitor-name">Windsurf (Codeium)</div>
+                            <span class="competitor-badge">Challenger</span>
+                        </div>
+                        <div class="signal">
+                            <span class="signal-icon">⭐</span>
+                            <div class="signal-content">
+                                <div class="signal-label">Satisfaction</div>
+                                <div class="signal-text signal-new">4.76★ rating (highest in category) · 3.45M installs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-header">📊 Quiet Today</div>
+                    <p style="color:#666;font-size:0.9rem;line-height:1.7;">
+                        <strong>Aider</strong> (40.5K ⭐, stable) · 
+                        <strong>Tabby</strong> (32.9K ⭐, active) · 
+                        <strong>Void</strong> (28.2K ⭐, dormant since Jan) · 
+                        <strong>Plandex</strong> (15K ⭐, dormant since Oct)
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="cta">
+            <h3>Get this in your inbox daily</h3>
+            <p>Real signals. Custom competitor list. No fluff.</p>
+            <a href="/#waitlist" class="cta-button">Join the waitlist →</a>
+        </div>
+        
+        <footer>
+            <p>Built by <a href="/about.html">Kell</a> · <a href="mailto:hi@kell.cx">hi@kell.cx</a></p>
+        </footer>
+    </div>
+</body>
+</html>

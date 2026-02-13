@@ -1,0 +1,28 @@
+# AI Agent Project Manifest
+# Generated: 2026-02-11T20:31:05Z
+
+version: 1
+
+project:
+  name: "kell-cx"
+  description: ""
+
+git:
+  remote: ""
+  branch: "main"
+
+domains: {}
+
+tools: {}
+
+quality:
+  test_command: ""
+  lint_command: ""
+  format_command: ""
+  build_command: ""
+
+agent:
+  name: "claude"
+  model: "opus"
+  max_retries: 2
+  parallel_workers: 2

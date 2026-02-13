@@ -1,0 +1,92 @@
+{
+  "generatedAt": "2026-02-11T19:03:05.443Z",
+  "toolCount": 6,
+  "tools": [
+    {
+      "name": "gh",
+      "formula": "gh",
+      "category": "Dev Tool",
+      "version": "2.86.0",
+      "description": "GitHub command-line tool",
+      "homepage": "https://cli.github.com/",
+      "installs30d": 242006,
+      "installs90d": 518019,
+      "installs365d": 1925249,
+      "recentMomentum": 140
+    },
+    {
+      "name": "Ollama",
+      "formula": "ollama",
+      "category": "Local LLM",
+      "version": "0.15.5",
+      "description": "Create, run, and share large language models (LLMs)",
+      "homepage": "https://ollama.com/",
+      "installs30d": 52482,
+      "installs90d": 108276,
+      "installs365d": 352040,
+      "recentMomentum": 145
+    },
+    {
+      "name": "glab",
+      "formula": "glab",
+      "category": "Dev Tool",
+      "version": "1.82.0",
+      "description": "Open-source GitLab command-line tool",
+      "homepage": "https://gitlab.com/gitlab-org/cli",
+      "installs30d": 18364,
+      "installs90d": 47873,
+      "installs365d": 170273,
+      "recentMomentum": 115
+    },
+    {
+      "name": "llm",
+      "formula": "llm",
+      "category": "CLI Tool",
+      "version": "0.28",
+      "description": "Access large language models from the command-line",
+      "homepage": "https://llm.datasette.io/",
+      "installs30d": 1090,
+      "installs90d": 3730,
+      "installs365d": 16347,
+      "recentMomentum": 88
+    },
+    {
+      "name": "Aider",
+      "formula": "aider",
+      "category": "Coding Agent",
+      "version": "0.86.1",
+      "description": "AI pair programming in your terminal",
+      "homepage": "https://aider.chat/",
+      "installs30d": 585,
+      "installs90d": 2094,
+      "installs365d": 19436,
+      "recentMomentum": 84
+    },
+    {
+      "name": "Fabric",
+      "formula": "fabric",
+      "category": "CLI Tool",
+      "version": "3.2.2",
+      "description": "Library and command-line tool for SSH",
+      "homepage": "https://www.fabfile.org/",
+      "installs30d": 125,
+      "installs90d": 338,
+      "installs365d": 1229,
+      "recentMomentum": 111
+    }
+  ],
+  "errors": [
+    "Claude Code: Not found on Homebrew",
+    "Continue: Not found on Homebrew",
+    "LangChain CLI: Not found on Homebrew",
+    "LMStudio: Not found on Homebrew",
+    "sgpt: Not found on Homebrew"
+  ],
+  "summary": {
+    "total30d": 314652,
+    "total90d": 680330,
+    "total365d": 2484574,
+    "topByInstalls": "gh",
+    "fastestGrowing": "Ollama"
+  }
+}

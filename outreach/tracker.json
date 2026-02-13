@@ -1,0 +1,85 @@
+{
+  "lastUpdated": "2026-02-12T02:11:00Z",
+  "prospects": [
+    {
+      "name": "Paul Gauthier",
+      "company": "Aider",
+      "role": "Creator",
+      "tier": 1,
+      "linkedin": "https://www.linkedin.com/in/paulgauthier",
+      "github": "https://github.com/paul-gauthier",
+      "twitter": null,
+      "email": null,
+      "status": "research",
+      "notes": "40K GitHub stars, solo creator. Would benefit from competitive intel on Cursor, Continue, Cline.",
+      "template": "B"
+    },
+    {
+      "name": "Ty Dunn",
+      "company": "Continue",
+      "role": "CEO",
+      "tier": 1,
+      "linkedin": "https://www.linkedin.com/in/tydunn",
+      "github": "https://github.com/continuedev",
+      "twitter": "https://twitter.com/tydunn",
+      "email": null,
+      "status": "research",
+      "notes": "Open source VS Code extension, 31K stars. Competing with Cline, Cursor.",
+      "template": "C"
+    },
+    {
+      "name": "Michael Truell",
+      "company": "Cursor",
+      "role": "Co-founder/CEO",
+      "tier": 1,
+      "linkedin": "https://www.linkedin.com/in/michaeltruell",
+      "github": null,
+      "twitter": "https://twitter.com/msktruell",
+      "email": null,
+      "status": "research",
+      "notes": "$10B valuation. Would care about competitor tracking (Windsurf, Cline, etc).",
+      "template": "C"
+    },
+    {
+      "name": "Swyx",
+      "company": "Latent Space",
+      "role": "Creator",
+      "tier": 2,
+      "linkedin": "https://www.linkedin.com/in/shawwn",
+      "github": "https://github.com/sw-yx",
+      "twitter": "https://twitter.com/swyx",
+      "email": "swyx@latent.space",
+      "status": "research",
+      "notes": "AI engineering influencer. Great for product feedback and amplification.",
+      "template": "B"
+    },
+    {
+      "name": "Cassidy Williams",
+      "company": "Contenda",
+      "role": "CTO",
+      "tier": 2,
+      "linkedin": "https://www.linkedin.com/in/cassidoo",
+      "github": "https://github.com/cassidoo",
+      "twitter": "https://twitter.com/cassidoo",
+      "email": null,
+      "status": "research",
+      "notes": "DevRel influencer, 200K+ followers. Content creator, would use intel for content.",
+      "template": "B"
+    }
+  ],
+  "statusKey": {
+    "research": "Finding contact info",
+    "ready": "Ready to reach out",
+    "contacted": "Initial outreach sent",
+    "replied": "Got a response",
+    "converted": "Signed up / paying",
+    "passed": "Not interested"
+  },
+  "templateKey": {
+    "A": "Product Manager (cold)",
+    "B": "Developer Advocate (cold)",
+    "C": "Startup Founder (cold)",
+    "D": "VC / Investor (cold)",
+    "E": "Follow-up"
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiring Trends — Kell</title>
+    <meta name="description" content="Open roles and hiring velocity for AI coding tool companies.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #fafafa; min-height: 100vh; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .nav-logo { color: #fff; text-decoration: none; font-weight: 600; }
+        .nav-links { display: flex; gap: 1.5rem; }
+        .nav-links a { color: #888; text-decoration: none; font-size: 0.9rem; }
+        .nav-links a:hover { color: #fff; }
+        .nav-links a.active { color: #fff; }
+        @media (max-width: 600px) { nav { flex-direction: column; gap: 1rem; text-align: center; } .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.75rem 1.25rem; } .container { padding: 1.5rem 1rem; } }
+        
+        .breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 1rem; }
+        .breadcrumb a { color: #888; text-decoration: none; }
+        h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+        .subtitle { color: #888; margin-bottom: 2rem; }
+        
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+        .stat { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 1rem; text-align: center; }
+        .stat-value { font-size: 1.75rem; font-weight: 600; }
+        .stat-label { font-size: 0.8rem; color: #888; }
+        
+        table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-bottom: 2rem; }
+        th, td { text-align: left; padding: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        th { color: #888; font-weight: 500; font-size: 0.75rem; text-transform: uppercase; }
+        td { color: #ccc; }
+        tr:hover td { background: rgba(255,255,255,0.02); }
+        .company { color: #fff; font-weight: 500; }
+        .up { color: #22c55e; }
+        .down { color: #ef4444; }
+        .neutral { color: #888; }
+        
+        footer { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); text-align: center; color: #555; font-size: 0.85rem; }
+        footer a { color: #888; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="nav-logo">⚡ Kell</a>
+            <div class="nav-links">
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/data/" class="active">Data</a>
+                <a href="/pricing.html">Pricing</a>
+            </div>
+        </nav>
+        
+        <div class="breadcrumb"><a href="/data/">Data</a> → Hiring</div>
+        <h1>💼 Hiring Trends</h1>
+        <p class="subtitle">Updated February 11, 2026</p>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">847</div>
+                <div class="stat-label">Total Open Roles</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value up">+67</div>
+                <div class="stat-label">This Week</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">15</div>
+                <div class="stat-label">Companies Tracked</div>
+            </div>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Open Roles</th>
+                    <th>Change</th>
+                    <th>Notable</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="company">Cursor</td>
+                    <td>67</td>
+                    <td class="up">+12</td>
+                    <td>Aggressive hiring across all functions</td>
+                </tr>
+                <tr>
+                    <td class="company">Cognition (Devin)</td>
+                    <td>47</td>
+                    <td class="up">+8</td>
+                    <td>New: Head of Enterprise Sales</td>
+                </tr>
+                <tr>
+                    <td class="company">Replit</td>
+                    <td>89</td>
+                    <td class="neutral">—</td>
+                    <td>Stable</td>
+                </tr>
+                <tr>
+                    <td class="company">Poolside AI</td>
+                    <td>19</td>
+                    <td class="up">+4</td>
+                    <td>Post-AWS partnership expansion</td>
+                </tr>
+                <tr>
+                    <td class="company">Sourcegraph</td>
+                    <td>6</td>
+                    <td class="neutral">—</td>
+                    <td>Lean team</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <footer>
+            <p>Built by <a href="/about.html">Kell</a> · <a href="mailto:hi@kell.cx">hi@kell.cx</a></p>
+        </footer>
+    </div>
+</body>
+</html>

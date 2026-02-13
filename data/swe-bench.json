@@ -1,0 +1,722 @@
+{
+  "scraped_at": "2026-02-11T21:21:17.981Z",
+  "source": "https://www.swebench.com/",
+  "source_repo": "https://github.com/SWE-bench/swe-bench.github.io",
+  "leaderboard_count": 4,
+  "leaderboards": {
+    "bash-only": {
+      "name": "bash-only",
+      "entry_count": 34,
+      "top_10": [
+        {
+          "name": "Claude 4.5 Opus medium (20251101)",
+          "date": "2025-11-24",
+          "resolved_pct": 74.4,
+          "cost": 360.6224985,
+          "instance_cost": 0.721244997,
+          "logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://www.anthropic.com/news/claude-opus-4-5",
+          "tags": [
+            "Model: claude-opus-4-5-20251101",
+            "Org: Anthropic",
+            "System: Attempts - 1"
+          ],
+          "rank": 1
+        },
+        {
+          "name": "Gemini 3 Pro Preview (2025-11-18)",
+          "date": "2025-11-18",
+          "resolved_pct": 74.2,
+          "cost": 229.978759475,
+          "instance_cost": 0.45995751895000003,
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Google-gemini-icon.svg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://ai.google.dev/gemini-api/docs/models",
+          "tags": [
+            "Model: gemini-3-pro-preview",
+            "Org: Google DeepMind",
+            "System: Attempts - 1"
+          ],
+          "rank": 2
+        },
+        {
+          "name": "GPT-5.2 (2025-12-11) (high reasoning)",
+          "date": "2025-12-11",
+          "resolved_pct": 71.8,
+          "cost": 260.1295018,
+          "instance_cost": 0.5202590036,
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://platform.openai.com/docs/models/gpt-5",
+          "tags": [
+            "Model: gpt-5.2-2025-12-11",
+            "Org: OpenAI",
+            "System: Attempts - 1"
+          ],
+          "rank": 3
+        },
+        {
+          "name": "Claude 4.5 Sonnet (20250929)",
+          "date": "2025-09-29",
+          "resolved_pct": 70.6,
+          "cost": 279.16737045,
+          "instance_cost": 0.5583347409,
+          "logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://www.anthropic.com/news/claude-sonnet-4-5",
+          "tags": [
+            "Model: claude-sonnet-4-5-20250929",
+            "Org: Anthropic",
+            "System: Attempts - 1"
+          ],
+          "rank": 4
+        },
+        {
+          "name": "GPT-5.2 (2025-12-11)",
+          "date": "2025-12-11",
+          "resolved_pct": 69,
+          "cost": 134.8337487,
+          "instance_cost": 0.2696674974,
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://platform.openai.com/docs/models/",
+          "tags": [
+            "Model: gpt-5.2-2025-12-11",
+            "Org: OpenAI",
+            "System: Attempts - 1"
+          ],
+          "rank": 5
+        },
+        {
+          "name": "Claude 4 Opus (20250514)",
+          "date": "2025-08-02",
+          "resolved_pct": 67.6,
+          "cost": 565.6352234999999,
+          "instance_cost": 1.131270447,
+          "logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://www.anthropic.com/news/claude-4",
+          "tags": [
+            "Model: claude-4-opus-20250514",
+            "Org: Anthropic",
+            "System: Attempts - 1"
+          ],
+          "rank": 6
+        },
+        {
+          "name": "GPT-5.1-codex (medium reasoning)",
+          "date": "2025-11-24",
+          "resolved_pct": 66,
+          "cost": 294.44117500000004,
+          "instance_cost": 0.5888823500000001,
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://platform.openai.com/docs/models/gpt-5",
+          "tags": [
+            "Model: gpt-5.1-codex",
+            "Org: OpenAI",
+            "System: Attempts - 1"
+          ],
+          "rank": 7
+        },
+        {
+          "name": "GPT-5.1 (2025-11-13) (medium reasoning)",
+          "date": "2025-11-20",
+          "resolved_pct": 66,
+          "cost": 153.07773625000002,
+          "instance_cost": 0.3061554725,
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://platform.openai.com/docs/models/gpt-5",
+          "tags": [
+            "Model: gpt-5.1-2025-11-13",
+            "Org: OpenAI",
+            "System: Attempts - 1"
+          ],
+          "rank": 8
+        },
+        {
+          "name": "GPT-5 (2025-08-07) (medium reasoning)",
+          "date": "2025-08-07",
+          "resolved_pct": 65,
+          "cost": 140.19150875,
+          "instance_cost": 0.2803830175,
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://platform.openai.com/docs/models/gpt-5",
+          "tags": [
+            "Model: gpt-5-2025-08-07",
+            "Org: OpenAI",
+            "System: Attempts - 1"
+          ],
+          "rank": 9
+        },
+        {
+          "name": "Claude 4 Sonnet (20250514)",
+          "date": "2025-07-26",
+          "resolved_pct": 64.93,
+          "cost": 185.7265839,
+          "instance_cost": 0.37145316780000004,
+          "logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://www.anthropic.com/news/claude-4",
+          "tags": [
+            "Model: claude-4-sonnet-20250514",
+            "Org: Anthropic",
+            "System: Attempts - 1"
+          ],
+          "rank": 10
+        }
+      ],
+      "updated": "2025-11-24"
+    },
+    "test": {
+      "name": "Test",
+      "entry_count": 23,
+      "top_10": [
+        {
+          "name": "Salesforce AI Research SAGE (bash-only)",
+          "date": "2025-10-27",
+          "resolved_pct": 44.25,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://avatars.githubusercontent.com/u/137096229",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://www.salesforce.com/blog/sage-swe/",
+          "tags": [
+            "Model: claude-sonnet-4.5",
+            "Model: gpt-5",
+            "Org: Salesforce AI Research",
+            "System: Attempts - 2+"
+          ],
+          "rank": 1
+        },
+        {
+          "name": "Atlassian Rovo Dev (2025-06-05)",
+          "date": "2025-06-05",
+          "resolved_pct": 41.98,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://pf-emoji-service--cdn.us-east-1.prod.public.atl-paas.net/atlassian/productivityEmojis/logo-rovo-64px.png",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://www.atlassian.com/rovo-dev",
+          "tags": [
+            "Org: Atlassian",
+            "System: Attempts - 1"
+          ],
+          "rank": 2
+        },
+        {
+          "name": "Amazon Q Developer Agent (v20250405-dev)",
+          "date": "2025-05-22",
+          "resolved_pct": 37.1,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://aws.amazon.com/q/developer/",
+          "tags": [
+            "Org: AWS",
+            "System: Attempts - 2+"
+          ],
+          "rank": 3
+        },
+        {
+          "name": "SWE-agent 1.0 (Claude 3.7 Sonnet)",
+          "date": "2025-02-27",
+          "resolved_pct": 33.83,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://github.com/swe-agent/swe-agent",
+          "tags": [
+            "Model: claude-3-7-sonnet-20250219",
+            "Org: SWE-agent",
+            "System: Attempts - 1"
+          ],
+          "rank": 4
+        },
+        {
+          "name": "Amazon Q Developer Agent (v20241202-dev)",
+          "date": "2025-01-31",
+          "resolved_pct": 29.99,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://aws.amazon.com/q/developer/",
+          "tags": [
+            "Org: AWS",
+            "System: Attempts - 1"
+          ],
+          "rank": 5
+        },
+        {
+          "name": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
+          "date": "2024-11-03",
+          "resolved_pct": 29.38,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://avatars.githubusercontent.com/u/169105795?s=200&v=4",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://docs.all-hands.dev/",
+          "tags": [
+            "Org: OpenHands",
+            "System: Attempts - 1"
+          ],
+          "rank": 6
+        },
+        {
+          "name": "AutoCodeRover-v2.0 (Claude-3.5-Sonnet-20241022)",
+          "date": "2024-11-21",
+          "resolved_pct": 24.89,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://github.com/AutoCodeRoverSG/autocoderoversg.github.io/blob/main/img/logo_small.png?raw=true",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://www.autocoderover.net/",
+          "tags": [
+            "Model: claude-3-5-sonnet-20241022",
+            "System: Attempts - 1"
+          ],
+          "rank": 7
+        },
+        {
+          "name": "Honeycomb",
+          "date": "2024-08-20",
+          "resolved_pct": 22.06,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://pbs.twimg.com/profile_images/1826351945021636608/eQgGBRKw_400x400.jpg",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://honeycomb.sh/",
+          "tags": [
+            "System: Attempts - 1"
+          ],
+          "rank": 8
+        },
+        {
+          "name": "Amazon Q Developer Agent (v20240719-dev)",
+          "date": "2024-07-21",
+          "resolved_pct": 19.75,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://aws.amazon.com/q/developer/",
+          "tags": [
+            "Org: AWS",
+            "System: Attempts - 1"
+          ],
+          "rank": 9
+        },
+        {
+          "name": "Factory Code Droid",
+          "date": "2024-06-17",
+          "resolved_pct": 19.27,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_400x400.jpg",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://www.factory.ai/",
+          "tags": [
+            "System: Attempts - 1"
+          ],
+          "rank": 10
+        }
+      ],
+      "updated": "2025-10-27"
+    },
+    "verified": {
+      "name": "Verified",
+      "entry_count": 165,
+      "top_10": [
+        {
+          "name": "TRAE + Doubao-Seed-Code",
+          "date": "2025-09-28",
+          "resolved_pct": 78.8,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://se-research.bytedance.com/logos/bytedance.jpg",
+          "os_model": false,
+          "os_system": true,
+          "site": [
+            "https://github.com/bytedance/trae-agent",
+            "https://seed.bytedance.com/"
+          ],
+          "tags": [
+            "Model: Doubao-Seed-Code",
+            "Model: Doubao-Seed-1.6",
+            "Org: ByteDance",
+            "System: Attempts - 2+"
+          ],
+          "rank": 1
+        },
+        {
+          "name": "live-SWE-agent + Gemini 3 Pro Preview (2025-11-18)",
+          "date": "2025-11-20",
+          "resolved_pct": 77.4,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://github.com/OpenAutoCoder/live-swe-agent",
+          "tags": [
+            "Model: gemini-3-pro-preview",
+            "Org: UIUC",
+            "System: Attempts - 1"
+          ],
+          "rank": 2
+        },
+        {
+          "name": "Atlassian Rovo Dev (2025-09-02)",
+          "date": "2025-09-02",
+          "resolved_pct": 76.8,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://pf-emoji-service--cdn.us-east-1.prod.public.atl-paas.net/atlassian/productivityEmojis/logo-rovo-64px.png",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://www.atlassian.com/rovo-dev",
+          "tags": [
+            "Model: claude-sonnet-4-20250514",
+            "Model: gpt-5",
+            "Org: Atlassian",
+            "System: Attempts - 2"
+          ],
+          "rank": 3
+        },
+        {
+          "name": "EPAM AI/Run Developer Agent v20250719 + Claude 4 Sonnet",
+          "date": "2025-08-04",
+          "resolved_pct": 76.8,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://www.epam.com/content/dam/epam/homepage/epam_logo_light.svg",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://www.epam.com/services/artificial-intelligence",
+          "tags": [
+            "Model: claude-sonnet-4-20250514",
+            "Org: EPAM Systems, Inc.",
+            "System: Attempts - 2+"
+          ],
+          "rank": 4
+        },
+        {
+          "name": "ACoder",
+          "date": "2025-08-19",
+          "resolved_pct": 76.4,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://raw.githubusercontent.com/ACoder-AI/ACoder/refs/heads/main/ACoder_logo.png",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://github.com/ACoder-AI/ACoder",
+          "tags": [
+            "Model: claude-4-sonnet",
+            "Model: claude-4.1-opus",
+            "Model: gpt-5-0807-global",
+            "Model: gemini-2.5-pro-06-17",
+            "Org: ACoder",
+            "System: Attempts - 2+"
+          ],
+          "rank": 5
+        },
+        {
+          "name": "Warp",
+          "date": "2025-09-01",
+          "resolved_pct": 75.6,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://storage.googleapis.com/warp-static-assets/logo/logo--black.png",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://www.warp.dev",
+          "tags": [
+            "Model: gpt-5",
+            "Model: claude-sonnet-4-20250514",
+            "Org: Warp",
+            "System: Attempts - 2+"
+          ],
+          "rank": 6
+        },
+        {
+          "name": "TRAE",
+          "date": "2025-06-12",
+          "resolved_pct": 75.2,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://se-research.bytedance.com/logos/trae.png",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://github.com/bytedance/trae-agent",
+          "tags": [
+            "Model: claude-4-sonnet-20250522",
+            "Model: claude-4-opus-20250522",
+            "Model: claude-3-7-sonnet-20250219",
+            "Model: gemini-2.5-pro-preview-06-05",
+            "Org: TRAE",
+            "System: Attempts - 2+"
+          ],
+          "rank": 7
+        },
+        {
+          "name": "Harness AI",
+          "date": "2025-07-31",
+          "resolved_pct": 74.8,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://cdn.prod.website-files.com/6222ca42ea87e1bd1aa1d10c/64f8ea8d154732b5e6bfff97_harness-logo-icon.svg",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://www.harness.io/",
+          "tags": [
+            "Model: claude-sonnet-4-20250514",
+            "Org: Harness",
+            "System: Attempts - 1"
+          ],
+          "rank": 8
+        },
+        {
+          "name": "Sonar Foundation Agent + Claude 4.5 Sonnet",
+          "date": "2025-11-03",
+          "resolved_pct": 74.8,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://assets-eu-01.kc-usercontent.com/55017e37-262d-017b-afd6-daa9468cbc30/8e59bcad-6e39-41dc-abd9-a0e251e8d63f/Sonar%20%282%29.svg?w=128&h=32&dpr=2&fit=crop&q=80",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://www.sonarsource.com",
+          "tags": [
+            "Model: claude-sonnet-4-5",
+            "Org: Sonar",
+            "System: Attempts - 1"
+          ],
+          "rank": 9
+        },
+        {
+          "name": "Lingxi-v1.5_claude-4-sonnet-20250514",
+          "date": "2025-07-20",
+          "resolved_pct": 74.6,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://imgur.com/a/VMuwi7n",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://github.com/nimasteryang/Lingxi",
+          "tags": [
+            "Model: claude-4-sonnet-20250514",
+            "Org: Lingxi",
+            "System: Attempts - 1"
+          ],
+          "rank": 10
+        }
+      ],
+      "updated": "2025-09-28"
+    },
+    "lite": {
+      "name": "Lite",
+      "entry_count": 84,
+      "top_10": [
+        {
+          "name": "ExpeRepair-v1.0 + Claude 4 Sonnet",
+          "date": "2025-06-25",
+          "resolved_pct": 60.33,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "http://www.is.cas.cn/dqwh2016/xxbs2016/201609/W020160923674377419690.jpg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://github.com/ExpeRepair/ExpeRepair",
+          "tags": [
+            "Model: claude-4-sonnet-20250514",
+            "Model: o3-mini",
+            "Model: o4-mini",
+            "System: Attempts - 2+"
+          ],
+          "rank": 1
+        },
+        {
+          "name": "Refact.ai Agent",
+          "date": "2025-04-25",
+          "resolved_pct": 60,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://refact.ai/favicon.png",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://refact.ai",
+          "tags": [
+            "Model: claude-3-7-sonnet-20250219",
+            "Model: o4-mini",
+            "Org: Refact.ai",
+            "System: Attempts - 1"
+          ],
+          "rank": 2
+        },
+        {
+          "name": "KGCompass + Claude 4 Sonnet (20250514)",
+          "date": "2025-09-06",
+          "resolved_pct": 58.33,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://avatars.githubusercontent.com/u/214923202?s=200&v=4",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://github.com/GLEAM-Lab/KGCompass",
+          "tags": [
+            "Model: claude-4-sonnet-20250514",
+            "Org: GLEAM-Lab",
+            "System: Attempts - 2+"
+          ],
+          "rank": 3
+        },
+        {
+          "name": "SWE-agent + Claude 4 Sonnet",
+          "date": "2025-05-26",
+          "resolved_pct": 56.67,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://avatars.githubusercontent.com/u/166046056?s=200&v=4",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://github.com/SWE-agent/SWE-agent",
+          "tags": [
+            "Model: claude-4-sonnet-20250514",
+            "Org: SWE-agent",
+            "System: Attempts - 1"
+          ],
+          "rank": 4
+        },
+        {
+          "name": "Isoform",
+          "date": "2025-01-14",
+          "resolved_pct": 55,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://avatars.githubusercontent.com/u/4956703?s=200&v=4",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://www.isoform.ai",
+          "tags": [
+            "System: Attempts - 2+"
+          ],
+          "rank": 5
+        },
+        {
+          "name": "SemAgent_Multi-v1.0",
+          "date": "2025-06-25",
+          "resolved_pct": 51.67,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://raw.githubusercontent.com/AnvithPabba/SemAgent_Multi/refs/heads/main/images/square_university_logo.jpg",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://arxiv.org/abs/2506.16650",
+          "tags": [
+            "Model: claude-3-7-sonnet-20250219",
+            "Model: gemini-2.5-pro-preview-05-06",
+            "Org: Columbia",
+            "Org: SemAgent",
+            "System: Attempts - 2+"
+          ],
+          "rank": 6
+        },
+        {
+          "name": "Isea",
+          "date": "2025-09-11",
+          "resolved_pct": 51.33,
+          "cost": null,
+          "instance_cost": null,
+          "logo": null,
+          "os_model": false,
+          "os_system": false,
+          "site": null,
+          "tags": [
+            "Model: claude-3.5-sonnet-20241022",
+            "System: Attempts - 2+"
+          ],
+          "rank": 7
+        },
+        {
+          "name": "EntroPO + R2E + Qwen3-Coder-30B-A3B-Instruct",
+          "date": "2025-09-01",
+          "resolved_pct": 49.67,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://github.com/sherdencooper/R2E-Gym/blob/EntroPO/assets/42_logo.png",
+          "os_model": true,
+          "os_system": true,
+          "site": "https://github.com/sherdencooper/R2E-Gym",
+          "tags": [
+            "Model: Qwen3-Coder-30B-A3B-Instruct",
+            "Org: 42-b3yond-6ug",
+            "System: Attempts - 2+"
+          ],
+          "rank": 8
+        },
+        {
+          "name": "Blackbox AI Agent",
+          "date": "2024-12-20",
+          "resolved_pct": 49,
+          "cost": null,
+          "instance_cost": null,
+          "logo": null,
+          "os_model": false,
+          "os_system": false,
+          "site": "https://www.blackbox.ai/",
+          "tags": [],
+          "rank": 9
+        },
+        {
+          "name": "Codev",
+          "date": "2025-05-28",
+          "resolved_pct": 49,
+          "cost": null,
+          "instance_cost": null,
+          "logo": null,
+          "os_model": false,
+          "os_system": false,
+          "site": "https://www.co-dev.ai",
+          "tags": [
+            "Model: claude-3-7-sonnet-20250219",
+            "Model: claude-3-5-haiku-20241022",
+            "Model: gemini-2.5-pro-preview-05-06",
+            "Model: gemini-2.5-flash-preview-04-17",
+            "Model: o4-mini-2025-04-16",
+            "Model: gpt-4o-mini",
+            "Model: text-embedding-3-small",
+            "Org: co-dev.ai",
+            "System: Attempts - 1"
+          ],
+          "rank": 10
+        }
+      ],
+      "updated": "2025-06-25"
+    }
+  }
+}

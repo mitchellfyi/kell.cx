@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://kell.cx/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://kell.cx/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kell.cx/pricing.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://kell.cx/sample.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kell.cx/blog.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kell.cx/data/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kell.cx/data/github.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kell.cx/data/hiring.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kell.cx/data/pypi.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kell.cx/data/npm.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kell.cx/data/vscode.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kell.cx/blog-state-of-ai-coding-2026.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://kell.cx/blog-ai-coding-tool-pricing-2026.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://kell.cx/blog-competitor-monitoring-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://kell.cx/data/homebrew.html</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kell.cx/data/jetbrains.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kell.cx/data/benchmarks.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kell.cx/data/hackernews.html</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kell.cx/data/discord.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+</urlset>

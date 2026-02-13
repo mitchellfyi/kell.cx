@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Coding Model Benchmarks — Kell</title>
+    <meta name="description" content="Latest benchmark scores for AI coding models. Aider Polyglot, SWE-bench, HumanEval. Updated daily.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #fafafa; min-height: 100vh; line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        
+        nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .nav-logo { color: #fff; text-decoration: none; font-weight: 600; }
+        .nav-links { display: flex; gap: 1.5rem; }
+        .nav-links a { color: #888; text-decoration: none; font-size: 0.9rem; }
+        .nav-links a:hover { color: #fff; }
+        .nav-links a.active { color: #fff; }
+        
+        footer { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); text-align: center; color: #555; font-size: 0.85rem; }
+        footer a { color: #888; text-decoration: none; }
+        
+        @media (max-width: 600px) { .container { padding: 1.5rem 1rem; } nav { flex-direction: column; gap: 1rem; text-align: center; } .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.75rem 1.25rem; } table { font-size: 0.75rem; } th, td { padding: 0.5rem 0.25rem; } }
+        
+        .breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 1rem; }
+        .breadcrumb a { color: #888; text-decoration: none; }
+        h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+        .subtitle { color: #888; margin-bottom: 0.5rem; }
+        .updated { color: #555; font-size: 0.8rem; margin-bottom: 2rem; }
+        
+        .section { margin-bottom: 2.5rem; }
+        .section-title { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: #666; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        
+        table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        th, td { text-align: left; padding: 0.6rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        th { color: #666; font-weight: 500; font-size: 0.7rem; text-transform: uppercase; }
+        td { color: #ccc; }
+        tr:hover td { background: rgba(255,255,255,0.02); }
+        .model { color: #fff; font-weight: 500; }
+        .score { font-family: monospace; }
+        .gold { color: #fbbf24; }
+        .silver { color: #9ca3af; }
+        .bronze { color: #d97706; }
+        .new { background: rgba(34,197,94,0.1); color: #22c55e; font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 3px; margin-left: 0.5rem; }
+        .provider { color: #666; font-size: 0.8rem; }
+        
+        .note { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 1rem; font-size: 0.85rem; color: #888; margin-top: 1rem; }
+        .note a { color: #3b82f6; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="nav-logo">⚡ Kell</a>
+            <div class="nav-links">
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/data/" class="active">Data</a>
+                <a href="/pricing.html">Pricing</a>
+            </div>
+        </nav>
+        
+        <div class="breadcrumb"><a href="/data/">Data</a> → Benchmarks</div>
+        <h1>AI Coding Model Benchmarks</h1>
+        <p class="subtitle">Performance scores across major coding benchmarks</p>
+        <p class="updated">Updated: Feb 11, 2026</p>
+        
+        <div class="section">
+            <div class="section-title">Aider Polyglot (Code Editing)</div>
+            <table>
+                <thead><tr><th>#</th><th>Model</th><th>Score</th><th>Provider</th></tr></thead>
+                <tbody>
+                    <tr><td class="gold">1</td><td class="model">GPT-5 (high)<span class="new">NEW</span></td><td class="score">88.0%</td><td class="provider">OpenAI</td></tr>
+                    <tr><td class="gold">2</td><td class="model">o3-pro (high)</td><td class="score">84.9%</td><td class="provider">OpenAI</td></tr>
+                    <tr><td class="silver">3</td><td class="model">Gemini 2.5 Pro</td><td class="score">83.1%</td><td class="provider">Google</td></tr>
+                    <tr><td class="bronze">4</td><td class="model">o3 (high)</td><td class="score">81.3%</td><td class="provider">OpenAI</td></tr>
+                    <tr><td>5</td><td class="model">Grok 4 (high)<span class="new">NEW</span></td><td class="score">79.6%</td><td class="provider">xAI</td></tr>
+                    <tr><td>6</td><td class="model">DeepSeek V3.2</td><td class="score">74.2%</td><td class="provider">DeepSeek</td></tr>
+                    <tr><td>7</td><td class="model">Claude Opus 4</td><td class="score">72.0%</td><td class="provider">Anthropic</td></tr>
+                    <tr><td>7</td><td class="model">o4-mini (high)</td><td class="score">72.0%</td><td class="provider">OpenAI</td></tr>
+                    <tr><td>9</td><td class="model">DeepSeek R1</td><td class="score">71.4%</td><td class="provider">DeepSeek</td></tr>
+                    <tr><td>10</td><td class="model">Claude 3.7 Sonnet</td><td class="score">64.9%</td><td class="provider">Anthropic</td></tr>
+                </tbody>
+            </table>
+            <div class="note">
+                <strong>Source:</strong> <a href="https://aider.chat/docs/leaderboards/">Aider Leaderboard</a>. Tests multi-file code editing across Python, JS, Rust, Go.
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">SWE-bench Verified (Real GitHub Issues)</div>
+            <table>
+                <thead><tr><th>#</th><th>Model/Agent</th><th>Score</th><th>Type</th></tr></thead>
+                <tbody>
+                    <tr><td class="gold">1</td><td class="model">OpenHands + Claude Sonnet 4<span class="new">NEW</span></td><td class="score">72.3%</td><td class="provider">Agent</td></tr>
+                    <tr><td class="gold">2</td><td class="model">Codex (OpenAI)</td><td class="score">69.1%</td><td class="provider">Agent</td></tr>
+                    <tr><td class="silver">3</td><td class="model">mini-SWE-agent</td><td class="score">65.0%</td><td class="provider">Agent</td></tr>
+                    <tr><td class="bronze">4</td><td class="model">Amazon Q Developer</td><td class="score">59.0%</td><td class="provider">Agent</td></tr>
+                    <tr><td>5</td><td class="model">Claude Sonnet 4</td><td class="score">55.2%</td><td class="provider">Model</td></tr>
+                    <tr><td>6</td><td class="model">Devin</td><td class="score">51.2%</td><td class="provider">Agent</td></tr>
+                    <tr><td>7</td><td class="model">GPT-5</td><td class="score">48.6%</td><td class="provider">Model</td></tr>
+                    <tr><td>8</td><td class="model">Claude Opus 4</td><td class="score">42.1%</td><td class="provider">Model</td></tr>
+                </tbody>
+            </table>
+            <div class="note">
+                <strong>Source:</strong> <a href="https://www.swebench.com/">SWE-bench</a>. Tests ability to resolve real GitHub issues. Agent systems outperform raw models.
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">HumanEval (Code Generation)</div>
+            <table>
+                <thead><tr><th>#</th><th>Model</th><th>Pass@1</th><th>Provider</th></tr></thead>
+                <tbody>
+                    <tr><td class="gold">1</td><td class="model">GPT-5<span class="new">NEW</span></td><td class="score">99.7%</td><td class="provider">OpenAI</td></tr>
+                    <tr><td class="gold">2</td><td class="model">o3-pro</td><td class="score">99.4%</td><td class="provider">OpenAI</td></tr>
+                    <tr><td class="silver">3</td><td class="model">Claude Sonnet 4</td><td class="score">95.3%</td><td class="provider">Anthropic</td></tr>
+                    <tr><td class="bronze">4</td><td class="model">Grok 4</td><td class="score">94.8%</td><td class="provider">xAI</td></tr>
+                    <tr><td>5</td><td class="model">Gemini 2.5 Pro</td><td class="score">93.2%</td><td class="provider">Google</td></tr>
+                    <tr><td>6</td><td class="model">Claude Opus 4</td><td class="score">92.6%</td><td class="provider">Anthropic</td></tr>
+                    <tr><td>7</td><td class="model">DeepSeek V3.2</td><td class="score">91.8%</td><td class="provider">DeepSeek</td></tr>
+                    <tr><td>8</td><td class="model">o4-mini</td><td class="score">90.4%</td><td class="provider">OpenAI</td></tr>
+                </tbody>
+            </table>
+            <div class="note">
+                <strong>Note:</strong> HumanEval is somewhat saturated — most frontier models score 90%+. More useful for comparing smaller/open models.
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Key Takeaways</div>
+            <ul style="color:#ccc;margin-left:1.5rem;">
+                <li style="margin-bottom:0.5rem;"><strong>GPT-5</strong> now leads Aider Polyglot at 88%, a massive jump over previous models</li>
+                <li style="margin-bottom:0.5rem;"><strong>Grok 4</strong> debuts at 79.6% — xAI is suddenly competitive in coding</li>
+                <li style="margin-bottom:0.5rem;"><strong>Agent systems</strong> (OpenHands, Codex) still beat raw models on SWE-bench by 15-20 points</li>
+                <li style="margin-bottom:0.5rem;"><strong>DeepSeek V3.2</strong> at 74% offers best value — near-frontier at fraction of the cost</li>
+                <li style="margin-bottom:0.5rem;"><strong>Claude Opus 4</strong> solid at 72% but outpaced by OpenAI's latest reasoning models</li>
+            </ul>
+        </div>
+        
+        <p style="color:#666;font-size:0.85rem;margin-top:2rem;"><a href="/data/" style="color:#3b82f6;">← Back to Data Dashboard</a></p>
+        
+        <footer>
+            <p>Built by <a href="/about.html">Kell</a> · <a href="mailto:hi@kell.cx">hi@kell.cx</a></p>
+        </footer>
+    </div>
+</body>
+</html>

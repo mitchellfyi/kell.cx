@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Metrics — Kell</title>
+    <meta name="description" content="Twitter followers and social presence for AI coding tools.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #fafafa; min-height: 100vh; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .nav-logo { color: #fff; text-decoration: none; font-weight: 600; }
+        .nav-links { display: flex; gap: 1.5rem; }
+        .nav-links a { color: #888; text-decoration: none; font-size: 0.9rem; }
+        .nav-links a:hover { color: #fff; }
+        .nav-links a.active { color: #fff; }
+        @media (max-width: 600px) { nav { flex-direction: column; gap: 1rem; text-align: center; } .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.75rem 1.25rem; } .container { padding: 1.5rem 1rem; } }
+        
+        .breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 1rem; }
+        .breadcrumb a { color: #888; text-decoration: none; }
+        h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+        .subtitle { color: #888; margin-bottom: 2rem; }
+        
+        table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-bottom: 2rem; }
+        th, td { text-align: left; padding: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        th { color: #888; font-weight: 500; font-size: 0.75rem; text-transform: uppercase; }
+        td { color: #ccc; }
+        tr:hover td { background: rgba(255,255,255,0.02); }
+        .company { color: #fff; font-weight: 500; }
+        .highlight { color: #22c55e; font-weight: 600; }
+        .dim { color: #666; }
+        .rank { color: #666; font-size: 0.8rem; }
+        
+        footer { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); text-align: center; color: #555; font-size: 0.85rem; }
+        footer a { color: #888; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="nav-logo">⚡ Kell</a>
+            <div class="nav-links">
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/data/" class="active">Data</a>
+                <a href="/pricing.html">Pricing</a>
+            </div>
+        </nav>
+        
+        <div class="breadcrumb"><a href="/data/">Data</a> → Social</div>
+        <h1>📱 Twitter/X Followers</h1>
+        <p class="subtitle">Updated February 11, 2026</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Company</th>
+                    <th>Handle</th>
+                    <th>Followers</th>
+                    <th>Posts</th>
+                    <th>Joined</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="rank">1</td>
+                    <td class="company">Cursor</td>
+                    <td>@cursor_ai</td>
+                    <td class="highlight">308,100</td>
+                    <td>264</td>
+                    <td>Aug 2023</td>
+                </tr>
+                <tr>
+                    <td class="rank">2</td>
+                    <td class="company">Replit</td>
+                    <td>@Replit</td>
+                    <td>213,200</td>
+                    <td>13,700</td>
+                    <td>Sep 2011</td>
+                </tr>
+                <tr>
+                    <td class="rank">3</td>
+                    <td class="company">Sourcegraph</td>
+                    <td>@Sourcegraph</td>
+                    <td>23,100</td>
+                    <td>5,184</td>
+                    <td>Jun 2013</td>
+                </tr>
+                <tr>
+                    <td class="rank">4</td>
+                    <td class="company">Tabnine</td>
+                    <td>@tabnine</td>
+                    <td>15,000</td>
+                    <td>6,016</td>
+                    <td>Jul 2019</td>
+                </tr>
+                <tr>
+                    <td class="rank">5</td>
+                    <td class="company">GitHub Copilot</td>
+                    <td>@GitHubCopilot</td>
+                    <td>14,400</td>
+                    <td class="dim">1 (inactive)</td>
+                    <td>Jun 2021</td>
+                </tr>
+                <tr>
+                    <td class="rank">6</td>
+                    <td class="company">Poolside AI</td>
+                    <td>@poolsideai</td>
+                    <td>3,498</td>
+                    <td>34</td>
+                    <td>May 2023</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <footer>
+            <p>Built by <a href="/about.html">Kell</a> · <a href="mailto:hi@kell.cx">hi@kell.cx</a></p>
+        </footer>
+    </div>
+</body>
+</html>

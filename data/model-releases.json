@@ -1,0 +1,647 @@
+{
+  "lastUpdated": "2026-02-12T00:20:42.369Z",
+  "description": "AI model releases tracked by Briefing",
+  "summary": {
+    "totalModels": 17,
+    "providers": 7,
+    "recentReleases": 3,
+    "newestModel": "Claude Opus 4.6",
+    "newestRelease": "2026-02-10"
+  },
+  "recentReleases": [
+    {
+      "provider": "anthropic",
+      "name": "Claude Opus 4.6",
+      "version": "4.6",
+      "family": "Claude",
+      "type": "flagship",
+      "released": "2026-02-10",
+      "status": "current",
+      "highlights": [
+        "Extended thinking",
+        "Computer use",
+        "MCP support"
+      ],
+      "apiId": "claude-opus-4-6-20260210",
+      "pricingInput": 15,
+      "pricingOutput": 75,
+      "contextWindow": 200000
+    },
+    {
+      "provider": "openai",
+      "name": "GPT-5.3-Codex",
+      "version": "5.3",
+      "family": "GPT",
+      "type": "coding",
+      "released": "2026-02-04",
+      "status": "current",
+      "highlights": [
+        "Coding-optimized",
+        "Codex product integration"
+      ],
+      "apiId": "gpt-5.3-codex"
+    },
+    {
+      "provider": "openai",
+      "name": "GPT-5.2",
+      "version": "5.2",
+      "family": "GPT",
+      "type": "general",
+      "released": "2025-12-15",
+      "status": "current",
+      "highlights": [
+        "General purpose flagship"
+      ],
+      "apiId": "gpt-5.2"
+    }
+  ],
+  "byProvider": {
+    "anthropic": {
+      "name": "Anthropic",
+      "sources": {
+        "name": "Anthropic",
+        "apiChangelog": "https://docs.anthropic.com/en/api/changelog",
+        "blog": "https://www.anthropic.com/news"
+      },
+      "models": [
+        {
+          "provider": "anthropic",
+          "name": "Claude Opus 4.6",
+          "version": "4.6",
+          "family": "Claude",
+          "type": "flagship",
+          "released": "2026-02-10",
+          "status": "current",
+          "highlights": [
+            "Extended thinking",
+            "Computer use",
+            "MCP support"
+          ],
+          "apiId": "claude-opus-4-6-20260210",
+          "pricingInput": 15,
+          "pricingOutput": 75,
+          "contextWindow": 200000
+        },
+        {
+          "provider": "anthropic",
+          "name": "Claude Sonnet 4",
+          "version": "4.0",
+          "family": "Claude",
+          "type": "balanced",
+          "released": "2025-05-22",
+          "status": "current",
+          "highlights": [
+            "Improved coding",
+            "Extended thinking optional"
+          ],
+          "apiId": "claude-sonnet-4-20250514",
+          "pricingInput": 3,
+          "pricingOutput": 15,
+          "contextWindow": 200000
+        },
+        {
+          "provider": "anthropic",
+          "name": "Claude Haiku 4",
+          "version": "4.0",
+          "family": "Claude",
+          "type": "fast",
+          "released": "2025-05-22",
+          "status": "current",
+          "highlights": [
+            "Fastest Claude",
+            "Low latency"
+          ],
+          "apiId": "claude-haiku-4-20250514",
+          "pricingInput": 0.8,
+          "pricingOutput": 4,
+          "contextWindow": 200000
+        },
+        {
+          "provider": "anthropic",
+          "name": "Claude Opus 4.5",
+          "version": "4.5",
+          "family": "Claude",
+          "type": "flagship",
+          "released": "2025-02-24",
+          "status": "current",
+          "highlights": [
+            "Extended thinking",
+            "Computer use",
+            "MCP support"
+          ],
+          "apiId": "claude-opus-4-5-20250224",
+          "pricingInput": 15,
+          "pricingOutput": 75,
+          "contextWindow": 200000
+        }
+      ]
+    },
+    "openai": {
+      "name": "OpenAI",
+      "sources": {
+        "name": "OpenAI",
+        "apiChangelog": "https://platform.openai.com/docs/changelog",
+        "blog": "https://openai.com/blog"
+      },
+      "models": [
+        {
+          "provider": "openai",
+          "name": "GPT-5.3-Codex",
+          "version": "5.3",
+          "family": "GPT",
+          "type": "coding",
+          "released": "2026-02-04",
+          "status": "current",
+          "highlights": [
+            "Coding-optimized",
+            "Codex product integration"
+          ],
+          "apiId": "gpt-5.3-codex"
+        },
+        {
+          "provider": "openai",
+          "name": "GPT-5.2",
+          "version": "5.2",
+          "family": "GPT",
+          "type": "general",
+          "released": "2025-12-15",
+          "status": "current",
+          "highlights": [
+            "General purpose flagship"
+          ],
+          "apiId": "gpt-5.2"
+        },
+        {
+          "provider": "openai",
+          "name": "o3",
+          "version": "3",
+          "family": "o-series",
+          "type": "reasoning",
+          "released": "2025-04-16",
+          "status": "current",
+          "highlights": [
+            "Deep reasoning",
+            "Multi-step planning"
+          ],
+          "apiId": "o3"
+        },
+        {
+          "provider": "openai",
+          "name": "o3-mini",
+          "version": "3-mini",
+          "family": "o-series",
+          "type": "reasoning-fast",
+          "released": "2025-01-31",
+          "status": "current",
+          "highlights": [
+            "Fast reasoning",
+            "Cost effective"
+          ],
+          "apiId": "o3-mini"
+        }
+      ]
+    },
+    "xai": {
+      "name": "xAI",
+      "sources": {
+        "name": "xAI",
+        "website": "https://x.ai"
+      },
+      "models": [
+        {
+          "provider": "xai",
+          "name": "Grok 4",
+          "version": "4",
+          "family": "Grok",
+          "type": "flagship",
+          "released": "2025-07-15",
+          "status": "current",
+          "highlights": [
+            "Real-time X data",
+            "Reasoning"
+          ]
+        }
+      ]
+    },
+    "google": {
+      "name": "Google",
+      "sources": {
+        "name": "Google",
+        "blog": "https://blog.google/technology/ai/",
+        "vertexChangelog": "https://cloud.google.com/vertex-ai/docs/release-notes"
+      },
+      "models": [
+        {
+          "provider": "google",
+          "name": "Gemini 2.5 Flash",
+          "version": "2.5",
+          "family": "Gemini",
+          "type": "fast",
+          "released": "2025-04-17",
+          "status": "current",
+          "highlights": [
+            "Fast multimodal",
+            "Cost effective"
+          ],
+          "apiId": "gemini-2.5-flash",
+          "contextWindow": 1000000
+        },
+        {
+          "provider": "google",
+          "name": "Gemini 2.5 Pro",
+          "version": "2.5",
+          "family": "Gemini",
+          "type": "flagship",
+          "released": "2025-03-25",
+          "status": "current",
+          "highlights": [
+            "1M context",
+            "Multimodal",
+            "Deep Think mode"
+          ],
+          "apiId": "gemini-2.5-pro",
+          "contextWindow": 1000000
+        }
+      ]
+    },
+    "meta": {
+      "name": "Meta",
+      "sources": {
+        "name": "Meta",
+        "blog": "https://ai.meta.com/blog/",
+        "huggingface": "https://huggingface.co/meta-llama"
+      },
+      "models": [
+        {
+          "provider": "meta",
+          "name": "Llama 4 Scout",
+          "version": "4",
+          "family": "Llama",
+          "type": "efficient",
+          "released": "2025-04-05",
+          "status": "current",
+          "highlights": [
+            "17B active params",
+            "10M context",
+            "Open weights"
+          ],
+          "contextWindow": 10000000,
+          "openSource": true
+        },
+        {
+          "provider": "meta",
+          "name": "Llama 4 Maverick",
+          "version": "4",
+          "family": "Llama",
+          "type": "flagship",
+          "released": "2025-04-05",
+          "status": "current",
+          "highlights": [
+            "400B MoE",
+            "1M context",
+            "Open weights"
+          ],
+          "contextWindow": 1000000,
+          "openSource": true
+        }
+      ]
+    },
+    "deepseek": {
+      "name": "DeepSeek",
+      "sources": {
+        "name": "DeepSeek",
+        "website": "https://deepseek.com",
+        "huggingface": "https://huggingface.co/deepseek-ai"
+      },
+      "models": [
+        {
+          "provider": "deepseek",
+          "name": "DeepSeek R1",
+          "version": "1",
+          "family": "DeepSeek-R",
+          "type": "reasoning",
+          "released": "2025-01-20",
+          "status": "current",
+          "highlights": [
+            "Chain-of-thought",
+            "MIT license"
+          ],
+          "openSource": true
+        },
+        {
+          "provider": "deepseek",
+          "name": "DeepSeek V3",
+          "version": "3",
+          "family": "DeepSeek",
+          "type": "flagship",
+          "released": "2024-12-26",
+          "status": "current",
+          "highlights": [
+            "671B MoE",
+            "Open weights",
+            "Cost efficient"
+          ],
+          "openSource": true
+        }
+      ]
+    },
+    "mistral": {
+      "name": "Mistral",
+      "sources": {
+        "name": "Mistral",
+        "blog": "https://mistral.ai/news/",
+        "huggingface": "https://huggingface.co/mistralai"
+      },
+      "models": [
+        {
+          "provider": "mistral",
+          "name": "Mistral Large 2",
+          "version": "2",
+          "family": "Mistral",
+          "type": "flagship",
+          "released": "2024-07-24",
+          "status": "current",
+          "highlights": [
+            "128K context",
+            "Multilingual"
+          ],
+          "contextWindow": 128000
+        },
+        {
+          "provider": "mistral",
+          "name": "Codestral",
+          "version": "1",
+          "family": "Codestral",
+          "type": "coding",
+          "released": "2024-05-29",
+          "status": "current",
+          "highlights": [
+            "80+ languages",
+            "32K context"
+          ],
+          "contextWindow": 32000
+        }
+      ]
+    }
+  },
+  "allModels": [
+    {
+      "provider": "anthropic",
+      "name": "Claude Opus 4.6",
+      "version": "4.6",
+      "family": "Claude",
+      "type": "flagship",
+      "released": "2026-02-10",
+      "status": "current",
+      "highlights": [
+        "Extended thinking",
+        "Computer use",
+        "MCP support"
+      ],
+      "apiId": "claude-opus-4-6-20260210",
+      "pricingInput": 15,
+      "pricingOutput": 75,
+      "contextWindow": 200000
+    },
+    {
+      "provider": "openai",
+      "name": "GPT-5.3-Codex",
+      "version": "5.3",
+      "family": "GPT",
+      "type": "coding",
+      "released": "2026-02-04",
+      "status": "current",
+      "highlights": [
+        "Coding-optimized",
+        "Codex product integration"
+      ],
+      "apiId": "gpt-5.3-codex"
+    },
+    {
+      "provider": "openai",
+      "name": "GPT-5.2",
+      "version": "5.2",
+      "family": "GPT",
+      "type": "general",
+      "released": "2025-12-15",
+      "status": "current",
+      "highlights": [
+        "General purpose flagship"
+      ],
+      "apiId": "gpt-5.2"
+    },
+    {
+      "provider": "xai",
+      "name": "Grok 4",
+      "version": "4",
+      "family": "Grok",
+      "type": "flagship",
+      "released": "2025-07-15",
+      "status": "current",
+      "highlights": [
+        "Real-time X data",
+        "Reasoning"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "name": "Claude Sonnet 4",
+      "version": "4.0",
+      "family": "Claude",
+      "type": "balanced",
+      "released": "2025-05-22",
+      "status": "current",
+      "highlights": [
+        "Improved coding",
+        "Extended thinking optional"
+      ],
+      "apiId": "claude-sonnet-4-20250514",
+      "pricingInput": 3,
+      "pricingOutput": 15,
+      "contextWindow": 200000
+    },
+    {
+      "provider": "anthropic",
+      "name": "Claude Haiku 4",
+      "version": "4.0",
+      "family": "Claude",
+      "type": "fast",
+      "released": "2025-05-22",
+      "status": "current",
+      "highlights": [
+        "Fastest Claude",
+        "Low latency"
+      ],
+      "apiId": "claude-haiku-4-20250514",
+      "pricingInput": 0.8,
+      "pricingOutput": 4,
+      "contextWindow": 200000
+    },
+    {
+      "provider": "google",
+      "name": "Gemini 2.5 Flash",
+      "version": "2.5",
+      "family": "Gemini",
+      "type": "fast",
+      "released": "2025-04-17",
+      "status": "current",
+      "highlights": [
+        "Fast multimodal",
+        "Cost effective"
+      ],
+      "apiId": "gemini-2.5-flash",
+      "contextWindow": 1000000
+    },
+    {
+      "provider": "openai",
+      "name": "o3",
+      "version": "3",
+      "family": "o-series",
+      "type": "reasoning",
+      "released": "2025-04-16",
+      "status": "current",
+      "highlights": [
+        "Deep reasoning",
+        "Multi-step planning"
+      ],
+      "apiId": "o3"
+    },
+    {
+      "provider": "meta",
+      "name": "Llama 4 Scout",
+      "version": "4",
+      "family": "Llama",
+      "type": "efficient",
+      "released": "2025-04-05",
+      "status": "current",
+      "highlights": [
+        "17B active params",
+        "10M context",
+        "Open weights"
+      ],
+      "contextWindow": 10000000,
+      "openSource": true
+    },
+    {
+      "provider": "meta",
+      "name": "Llama 4 Maverick",
+      "version": "4",
+      "family": "Llama",
+      "type": "flagship",
+      "released": "2025-04-05",
+      "status": "current",
+      "highlights": [
+        "400B MoE",
+        "1M context",
+        "Open weights"
+      ],
+      "contextWindow": 1000000,
+      "openSource": true
+    },
+    {
+      "provider": "google",
+      "name": "Gemini 2.5 Pro",
+      "version": "2.5",
+      "family": "Gemini",
+      "type": "flagship",
+      "released": "2025-03-25",
+      "status": "current",
+      "highlights": [
+        "1M context",
+        "Multimodal",
+        "Deep Think mode"
+      ],
+      "apiId": "gemini-2.5-pro",
+      "contextWindow": 1000000
+    },
+    {
+      "provider": "anthropic",
+      "name": "Claude Opus 4.5",
+      "version": "4.5",
+      "family": "Claude",
+      "type": "flagship",
+      "released": "2025-02-24",
+      "status": "current",
+      "highlights": [
+        "Extended thinking",
+        "Computer use",
+        "MCP support"
+      ],
+      "apiId": "claude-opus-4-5-20250224",
+      "pricingInput": 15,
+      "pricingOutput": 75,
+      "contextWindow": 200000
+    },
+    {
+      "provider": "openai",
+      "name": "o3-mini",
+      "version": "3-mini",
+      "family": "o-series",
+      "type": "reasoning-fast",
+      "released": "2025-01-31",
+      "status": "current",
+      "highlights": [
+        "Fast reasoning",
+        "Cost effective"
+      ],
+      "apiId": "o3-mini"
+    },
+    {
+      "provider": "deepseek",
+      "name": "DeepSeek R1",
+      "version": "1",
+      "family": "DeepSeek-R",
+      "type": "reasoning",
+      "released": "2025-01-20",
+      "status": "current",
+      "highlights": [
+        "Chain-of-thought",
+        "MIT license"
+      ],
+      "openSource": true
+    },
+    {
+      "provider": "deepseek",
+      "name": "DeepSeek V3",
+      "version": "3",
+      "family": "DeepSeek",
+      "type": "flagship",
+      "released": "2024-12-26",
+      "status": "current",
+      "highlights": [
+        "671B MoE",
+        "Open weights",
+        "Cost efficient"
+      ],
+      "openSource": true
+    },
+    {
+      "provider": "mistral",
+      "name": "Mistral Large 2",
+      "version": "2",
+      "family": "Mistral",
+      "type": "flagship",
+      "released": "2024-07-24",
+      "status": "current",
+      "highlights": [
+        "128K context",
+        "Multilingual"
+      ],
+      "contextWindow": 128000
+    },
+    {
+      "provider": "mistral",
+      "name": "Codestral",
+      "version": "1",
+      "family": "Codestral",
+      "type": "coding",
+      "released": "2024-05-29",
+      "status": "current",
+      "highlights": [
+        "80+ languages",
+        "32K context"
+      ],
+      "contextWindow": 32000
+    }
+  ]
+}

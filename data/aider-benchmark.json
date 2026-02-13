@@ -1,0 +1,657 @@
+{
+  "generatedAt": "2026-02-11T20:42:21.132Z",
+  "source": "https://aider.chat/docs/leaderboards/",
+  "totalModels": 69,
+  "topScore": 88,
+  "topModel": "gpt-5 (high)",
+  "leaderboard": [
+    {
+      "model": "gpt-5 (high)",
+      "score": 88,
+      "cost": 29.08,
+      "command": "aider --model openai/gpt-5",
+      "formatScore": 91.6,
+      "format": null,
+      "rank": 1
+    },
+    {
+      "model": "gpt-5 (medium)",
+      "score": 86.7,
+      "cost": 17.69,
+      "command": "aider --model openai/gpt-5",
+      "formatScore": 88.4,
+      "format": null,
+      "rank": 2
+    },
+    {
+      "model": "o3-pro (high)",
+      "score": 84.9,
+      "cost": 146.32,
+      "command": "aider --model o3-pro",
+      "formatScore": 97.8,
+      "format": null,
+      "rank": 3
+    },
+    {
+      "model": "gemini-2.5-pro-preview-06-05 (32k think)",
+      "score": 83.1,
+      "cost": 49.88,
+      "command": "aider --model gemini/gemini-2.5-pro-preview-06-05 --thinking-tokens 32k",
+      "formatScore": 99.6,
+      "format": null,
+      "rank": 4
+    },
+    {
+      "model": "gpt-5 (low)",
+      "score": 81.3,
+      "cost": 10.37,
+      "command": "aider --model openai/gpt-5",
+      "formatScore": 86.7,
+      "format": null,
+      "rank": 5
+    },
+    {
+      "model": "o3 (high)",
+      "score": 81.3,
+      "cost": 21.23,
+      "command": "aider --model o3 --reasoning-effort high",
+      "formatScore": 94.7,
+      "format": null,
+      "rank": 6
+    },
+    {
+      "model": "grok-4 (high)",
+      "score": 79.6,
+      "cost": 59.62,
+      "command": "aider --model openrouter/x-ai/grok-4",
+      "formatScore": 97.3,
+      "format": null,
+      "rank": 7
+    },
+    {
+      "model": "gemini-2.5-pro-preview-06-05 (default think)",
+      "score": 79.1,
+      "cost": 45.6,
+      "command": "aider --model gemini/gemini-2.5-pro-preview-06-05",
+      "formatScore": 100,
+      "format": null,
+      "rank": 8
+    },
+    {
+      "model": "o3 (high) + gpt-4.1",
+      "score": 78.2,
+      "cost": 17.55,
+      "command": "aider --model o3",
+      "formatScore": 100,
+      "format": null,
+      "rank": 9
+    },
+    {
+      "model": "Test timeouts",
+      "score": 76.9,
+      "cost": 13.75,
+      "command": "aider --model o3",
+      "formatScore": 93.8,
+      "format": null,
+      "rank": 10
+    },
+    {
+      "model": "Gemini 2.5 Pro Preview 05-06",
+      "score": 76.9,
+      "cost": 37.41,
+      "command": "aider --model gemini/gemini-2.5-pro-preview-05-06",
+      "formatScore": 97.3,
+      "format": null,
+      "rank": 11
+    },
+    {
+      "model": "DeepSeek-V3.2-Exp (Reasoner)",
+      "score": 74.2,
+      "cost": 1.3,
+      "command": "aider --model deepseek/deepseek-reasoner",
+      "formatScore": 97.3,
+      "format": null,
+      "rank": 12
+    },
+    {
+      "model": "Gemini 2.5 Pro Preview 03-25",
+      "score": 72.9,
+      "cost": null,
+      "command": "aider --model gemini/gemini-2.5-pro-preview-03-25",
+      "formatScore": 92.4,
+      "format": null,
+      "rank": 13
+    },
+    {
+      "model": "claude-opus-4-20250514 (32k thinking)",
+      "score": 72,
+      "cost": 65.75,
+      "command": "aider --model claude-opus-4-20250514",
+      "formatScore": 97.3,
+      "format": null,
+      "rank": 14
+    },
+    {
+      "model": "o4-mini (high)",
+      "score": 72,
+      "cost": 19.64,
+      "command": "aider --model o4-mini",
+      "formatScore": 90.7,
+      "format": null,
+      "rank": 15
+    },
+    {
+      "model": "DeepSeek R1 (0528)",
+      "score": 71.4,
+      "cost": 4.8,
+      "command": "aider --model deepseek/deepseek-reasoner",
+      "formatScore": 94.6,
+      "format": null,
+      "rank": 16
+    },
+    {
+      "model": "claude-opus-4-20250514 (no think)",
+      "score": 70.7,
+      "cost": 68.63,
+      "command": "aider --model claude-opus-4-20250514",
+      "formatScore": 98.7,
+      "format": null,
+      "rank": 17
+    },
+    {
+      "model": "DeepSeek-V3.2-Exp (Chat)",
+      "score": 70.2,
+      "cost": 0.88,
+      "command": "aider --model deepseek/deepseek-chat",
+      "formatScore": 98.2,
+      "format": null,
+      "rank": 18
+    },
+    {
+      "model": "claude-3-7-sonnet-20250219 (32k thinking tokens)",
+      "score": 64.9,
+      "cost": 36.83,
+      "command": "aider --model anthropic/claude-3-7-sonnet-20250219 --thinking-tokens 32k",
+      "formatScore": 97.8,
+      "format": null,
+      "rank": 19
+    },
+    {
+      "model": "DeepSeek R1 + claude-3-5-sonnet-20241022",
+      "score": 64,
+      "cost": 13.29,
+      "command": "aider --architect --model r1 --editor-model sonnet",
+      "formatScore": 100,
+      "format": null,
+      "rank": 20
+    },
+    {
+      "model": "o1-2024-12-17 (high)",
+      "score": 61.7,
+      "cost": 186.5,
+      "command": "aider --model openrouter/openai/o1",
+      "formatScore": 91.5,
+      "format": null,
+      "rank": 21
+    },
+    {
+      "model": "claude-sonnet-4-20250514 (32k thinking)",
+      "score": 61.3,
+      "cost": 26.58,
+      "command": "aider --model claude-sonnet-4-20250514",
+      "formatScore": 97.3,
+      "format": null,
+      "rank": 22
+    },
+    {
+      "model": "claude-3-7-sonnet-20250219 (no thinking)",
+      "score": 60.4,
+      "cost": 17.72,
+      "command": "aider --model sonnet",
+      "formatScore": 93.3,
+      "format": null,
+      "rank": 23
+    },
+    {
+      "model": "o3-mini (high)",
+      "score": 60.4,
+      "cost": 18.16,
+      "command": "aider --model o3-mini --reasoning-effort high",
+      "formatScore": 93.3,
+      "format": null,
+      "rank": 24
+    },
+    {
+      "model": "Qwen3 235B A22B diff, no think, Alibaba API",
+      "score": 59.6,
+      "cost": null,
+      "command": "aider --model openai/qwen3-235b-a22b",
+      "formatScore": 92.9,
+      "format": null,
+      "rank": 25
+    },
+    {
+      "model": "Kimi K2",
+      "score": 59.1,
+      "cost": 1.24,
+      "command": "aider --model openrouter/moonshotai/kimi-k2",
+      "formatScore": 92.9,
+      "format": null,
+      "rank": 26
+    },
+    {
+      "model": "DeepSeek R1",
+      "score": 56.9,
+      "cost": 5.42,
+      "command": "aider --model deepseek/deepseek-reasoner",
+      "formatScore": 96.9,
+      "format": null,
+      "rank": 27
+    },
+    {
+      "model": "claude-sonnet-4-20250514 (no thinking)",
+      "score": 56.4,
+      "cost": 15.82,
+      "command": "aider --model claude-sonnet-4-20250514",
+      "formatScore": 98.2,
+      "format": null,
+      "rank": 28
+    },
+    {
+      "model": "gemini-2.5-flash-preview-05-20 (24k think)",
+      "score": 55.1,
+      "cost": 8.56,
+      "command": "aider --model gemini/gemini-2.5-flash-preview-05-20",
+      "formatScore": 95.6,
+      "format": null,
+      "rank": 29
+    },
+    {
+      "model": "DeepSeek V3 (0324)",
+      "score": 55.1,
+      "cost": 1.12,
+      "command": "aider --model deepseek/deepseek-chat",
+      "formatScore": 99.6,
+      "format": null,
+      "rank": 30
+    },
+    {
+      "model": "Quasar Alpha",
+      "score": 54.7,
+      "cost": null,
+      "command": "aider --model openrouter/openrouter/quasar-alpha",
+      "formatScore": 98.2,
+      "format": null,
+      "rank": 31
+    },
+    {
+      "model": "o3-mini (medium)",
+      "score": 53.8,
+      "cost": 8.86,
+      "command": "aider --model o3-mini",
+      "formatScore": 95.1,
+      "format": null,
+      "rank": 32
+    },
+    {
+      "model": "Grok 3 Beta",
+      "score": 53.3,
+      "cost": 11.03,
+      "command": "aider --model openrouter/x-ai/grok-3-beta",
+      "formatScore": 99.6,
+      "format": null,
+      "rank": 33
+    },
+    {
+      "model": "Optimus Alpha",
+      "score": 52.9,
+      "cost": null,
+      "command": "aider --model openrouter/openrouter/optimus-alpha",
+      "formatScore": 97.3,
+      "format": null,
+      "rank": 34
+    },
+    {
+      "model": "gpt-4.1",
+      "score": 52.4,
+      "cost": 9.86,
+      "command": "aider --model gpt-4.1",
+      "formatScore": 98.2,
+      "format": null,
+      "rank": 35
+    },
+    {
+      "model": "claude-3-5-sonnet-20241022",
+      "score": 51.6,
+      "cost": 14.41,
+      "command": "aider --model claude-3-5-sonnet-20241022",
+      "formatScore": 99.6,
+      "format": null,
+      "rank": 36
+    },
+    {
+      "model": "Grok 3 Mini Beta (high)",
+      "score": 49.3,
+      "cost": 0.73,
+      "command": "aider --model xai/grok-3-mini-beta --reasoning-effort high",
+      "formatScore": 99.6,
+      "format": null,
+      "rank": 37
+    },
+    {
+      "model": "DeepSeek Chat V3 (prev)",
+      "score": 48.4,
+      "cost": 0.34,
+      "command": "aider --model deepseek/deepseek-chat",
+      "formatScore": 98.7,
+      "format": null,
+      "rank": 38
+    },
+    {
+      "model": "gemini-2.5-flash-preview-04-17 (default)",
+      "score": 47.1,
+      "cost": 1.85,
+      "command": "aider --model gemini/gemini-2.5-flash-preview-04-17",
+      "formatScore": 85.3,
+      "format": null,
+      "rank": 39
+    },
+    {
+      "model": "chatgpt-4o-latest (2025-03-29)",
+      "score": 45.3,
+      "cost": 19.74,
+      "command": "aider --model chatgpt-4o-latest",
+      "formatScore": 64.4,
+      "format": null,
+      "rank": 40
+    },
+    {
+      "model": "gpt-4.5-preview",
+      "score": 44.9,
+      "cost": 183.18,
+      "command": "aider --model openai/gpt-4.5-preview",
+      "formatScore": 97.3,
+      "format": null,
+      "rank": 41
+    },
+    {
+      "model": "gemini-2.5-flash-preview-05-20 (no think)",
+      "score": 44,
+      "cost": 1.14,
+      "command": "aider --model gemini/gemini-2.5-flash-preview-05-20",
+      "formatScore": 93.8,
+      "format": null,
+      "rank": 42
+    },
+    {
+      "model": "gpt-oss-120b (high)",
+      "score": 41.8,
+      "cost": 0.74,
+      "command": "aider --model openrouter/openai/gpt-oss-120b --reasoning-effort high",
+      "formatScore": 79.1,
+      "format": null,
+      "rank": 43
+    },
+    {
+      "model": "Qwen3 32B",
+      "score": 40,
+      "cost": 0.76,
+      "command": "aider --model openrouter/qwen/qwen3-32b",
+      "formatScore": 83.6,
+      "format": null,
+      "rank": 44
+    },
+    {
+      "model": "gemini-exp-1206",
+      "score": 38.2,
+      "cost": null,
+      "command": "aider --model gemini/gemini-exp-1206",
+      "formatScore": 98.2,
+      "format": null,
+      "rank": 45
+    },
+    {
+      "model": "Gemini 2.0 Pro exp-02-05",
+      "score": 35.6,
+      "cost": null,
+      "command": "aider --model gemini/gemini-2.0-pro-exp-02-05",
+      "formatScore": 100,
+      "format": null,
+      "rank": 46
+    },
+    {
+      "model": "Grok 3 Mini Beta (low)",
+      "score": 34.7,
+      "cost": 0.79,
+      "command": "aider --model openrouter/x-ai/grok-3-mini-beta",
+      "formatScore": 100,
+      "format": null,
+      "rank": 47
+    },
+    {
+      "model": "o1-mini-2024-09-12",
+      "score": 32.9,
+      "cost": 18.58,
+      "command": "aider --model o1-mini",
+      "formatScore": 96.9,
+      "format": null,
+      "rank": 48
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "score": 32.4,
+      "cost": 1.99,
+      "command": "aider --model gpt-4.1-mini",
+      "formatScore": 92.4,
+      "format": null,
+      "rank": 49
+    },
+    {
+      "model": "claude-3-5-haiku-20241022",
+      "score": 28,
+      "cost": 6.06,
+      "command": "aider --model claude-3-5-haiku-20241022",
+      "formatScore": 91.1,
+      "format": null,
+      "rank": 50
+    },
+    {
+      "model": "chatgpt-4o-latest (2025-02-15)",
+      "score": 27.1,
+      "cost": 14.37,
+      "command": "aider --model chatgpt-4o-latest",
+      "formatScore": 93.3,
+      "format": null,
+      "rank": 51
+    },
+    {
+      "model": "QwQ-32B + Qwen 2.5 Coder Instruct",
+      "score": 26.2,
+      "cost": null,
+      "command": "aider --model fireworks_ai/accounts/fireworks/models/qwq-32b --architect",
+      "formatScore": 100,
+      "format": null,
+      "rank": 52
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "score": 23.1,
+      "cost": 7.03,
+      "command": "aider --model gpt-4o-2024-08-06",
+      "formatScore": 94.2,
+      "format": null,
+      "rank": 53
+    },
+    {
+      "model": "gemini-2.0-flash-exp",
+      "score": 22.2,
+      "cost": null,
+      "command": "aider --model gemini/gemini-2.0-flash-exp",
+      "formatScore": 100,
+      "format": null,
+      "rank": 54
+    },
+    {
+      "model": "qwen-max-2025-01-25",
+      "score": 21.8,
+      "cost": null,
+      "command": "OPENAI_API_BASE=https://dashscope-intl.aliyuncs.com/compatible-mode/v1 aider --model openai/qwen-max-2025-01-25",
+      "formatScore": 90.2,
+      "format": null,
+      "rank": 55
+    },
+    {
+      "model": "QwQ-32B",
+      "score": 20.9,
+      "cost": null,
+      "command": "aider --model fireworks_ai/accounts/fireworks/models/qwq-32b",
+      "formatScore": 67.6,
+      "format": null,
+      "rank": 56
+    },
+    {
+      "model": "gemini-2.0-flash-thinking-exp-01-21",
+      "score": 18.2,
+      "cost": null,
+      "command": "aider --model gemini/gemini-2.0-flash-thinking-exp-01-21",
+      "formatScore": 77.8,
+      "format": null,
+      "rank": 57
+    },
+    {
+      "model": "gpt-4o-2024-11-20",
+      "score": 18.2,
+      "cost": 6.74,
+      "command": "aider --model gpt-4o-2024-11-20",
+      "formatScore": 95.1,
+      "format": null,
+      "rank": 58
+    },
+    {
+      "model": "DeepSeek Chat V2.5",
+      "score": 17.8,
+      "cost": 0.51,
+      "command": "aider --model deepseek/deepseek-chat",
+      "formatScore": 92.9,
+      "format": null,
+      "rank": 59
+    },
+    {
+      "model": "Qwen2.5-Coder-32B-Instruct",
+      "score": 16.4,
+      "cost": null,
+      "command": "aider --model openai/Qwen2.5-Coder-32B-Instruct",
+      "formatScore": 99.6,
+      "format": null,
+      "rank": 60
+    },
+    {
+      "model": "Llama 4 Maverick",
+      "score": 15.6,
+      "cost": null,
+      "command": "aider --model nvidia_nim/meta/llama-4-maverick-17b-128e-instruct",
+      "formatScore": 99.1,
+      "format": null,
+      "rank": 61
+    },
+    {
+      "model": "yi-lightning",
+      "score": 12.9,
+      "cost": null,
+      "command": "aider --model openai/yi-lightning",
+      "formatScore": 92.9,
+      "format": null,
+      "rank": 62
+    },
+    {
+      "model": "command-a-03-2025-quality",
+      "score": 12,
+      "cost": null,
+      "command": "OPENAI_API_BASE=https://api.cohere.ai/compatibility/v1 aider --model openai/command-a-03-2025-quality",
+      "formatScore": 99.6,
+      "format": null,
+      "rank": 63
+    },
+    {
+      "model": "Codestral 25.01",
+      "score": 11.1,
+      "cost": 1.98,
+      "command": "aider --model mistral/codestral-latest",
+      "formatScore": 100,
+      "format": null,
+      "rank": 64
+    },
+    {
+      "model": "openhands-lm-32b-v0.1",
+      "score": 10.2,
+      "cost": null,
+      "command": "aider --model openrouter/all-hands/openhands-lm-32b-v0.1",
+      "formatScore": 95.1,
+      "format": null,
+      "rank": 65
+    },
+    {
+      "model": "gpt-4.1-nano",
+      "score": 8.9,
+      "cost": 0.43,
+      "command": "aider --model gpt-4.1-nano",
+      "formatScore": 94.2,
+      "format": null,
+      "rank": 66
+    },
+    {
+      "model": "Qwen2.5-Coder-32B-Instruct",
+      "score": 8,
+      "cost": null,
+      "command": "aider --model openai/Qwen/Qwen2.5-Coder-32B-Instruct # via hyperbolic",
+      "formatScore": 71.6,
+      "format": null,
+      "rank": 67
+    },
+    {
+      "model": "gemma-3-27b-it",
+      "score": 4.9,
+      "cost": null,
+      "command": "aider --model openrouter/google/gemma-3-27b-it",
+      "formatScore": 100,
+      "format": null,
+      "rank": 68
+    },
+    {
+      "model": "gpt-4o-mini-2024-07-18",
+      "score": 3.6,
+      "cost": 0.32,
+      "command": "aider --model gpt-4o-mini-2024-07-18",
+      "formatScore": 100,
+      "format": null,
+      "rank": 69
+    }
+  ],
+  "byProvider": {
+    "openai": {
+      "count": 21,
+      "topModel": "gpt-5 (high)",
+      "topScore": 88
+    },
+    "anthropic": {
+      "count": 9,
+      "topModel": "claude-opus-4-20250514 (32k thinking)",
+      "topScore": 72
+    },
+    "google": {
+      "count": 12,
+      "topModel": "gemini-2.5-pro-preview-06-05 (32k think)",
+      "topScore": 83.1
+    },
+    "deepseek": {
+      "count": 8,
+      "topModel": "DeepSeek-V3.2-Exp (Reasoner)",
+      "topScore": 74.2
+    },
+    "xai": {
+      "count": 4,
+      "topModel": "grok-4 (high)",
+      "topScore": 79.6
+    }
+  }
+}

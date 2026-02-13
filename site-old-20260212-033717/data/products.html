@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All AI Coding Tools - Briefing</title>
+    <meta name="description" content="Complete list of AI coding tools with data coverage tracking. See which tools we monitor and where the gaps are.">
+    <link rel="canonical" href="https://kell.cx/data/products.html">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #141414;
+            --surface-hover: #1a1a1a;
+            --border: #2a2a2a;
+            --text: #e5e5e5;
+            --text-muted: #888;
+            --accent: #3b82f6;
+            --green: #22c55e;
+            --red: #ef4444;
+            --yellow: #eab308;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+        header { margin-bottom: 3rem; }
+        h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .subtitle { color: var(--text-muted); font-size: 1.1rem; }
+        
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .stat-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .stat-value { font-size: 2rem; font-weight: 700; color: var(--accent); }
+        .stat-label { color: var(--text-muted); font-size: 0.85rem; }
+        
+        .section-title {
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .product-grid {
+            display: grid;
+            gap: 1rem;
+        }
+        .product-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            transition: border-color 0.2s;
+        }
+        .product-card:hover { border-color: var(--accent); }
+        
+        .product-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+        .product-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .product-company {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        .category-badge {
+            font-size: 0.7rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            background: var(--border);
+            color: var(--text-muted);
+        }
+        .category-badge.ide-integrated { background: #1e3a5f; color: #60a5fa; }
+        .category-badge.standalone-agent { background: #1e3a1e; color: #4ade80; }
+        .category-badge.ai-native-ide { background: #4a1e5f; color: #c084fc; }
+        
+        .coverage-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+        .coverage-item {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        .coverage-item.has-data { background: #14532d; color: var(--green); }
+        .coverage-item.no-data { background: #1f1f1f; color: #666; }
+        .dot { width: 6px; height: 6px; border-radius: 50%; }
+        .dot.green { background: var(--green); }
+        .dot.gray { background: #444; }
+        
+        .product-notes {
+            margin-top: 0.75rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+        
+        .gaps-section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .gaps-section h3 { margin-bottom: 1rem; }
+        .gap-row {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .gap-row:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .gap-source {
+            min-width: 120px;
+            font-weight: 600;
+            color: var(--yellow);
+        }
+        .gap-products {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .well-covered {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #14532d33;
+            border-radius: 8px;
+        }
+        .well-covered strong { color: var(--green); }
+        
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        
+        @media (max-width: 640px) {
+            .stats-row { grid-template-columns: repeat(2, 1fr); }
+            .product-header { flex-direction: column; gap: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 All AI Coding Tools</h1>
+            <p class="subtitle">Complete product list with data coverage tracking</p>
+        </header>
+        
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-value">21</div>
+                <div class="stat-label">Products Tracked</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">11</div>
+                <div class="stat-label">IDE Extensions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">8</div>
+                <div class="stat-label">Agents</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">3</div>
+                <div class="stat-label">AI-Native IDEs</div>
+            </div>
+        </div>
+        
+        <h2 class="section-title">🏢 IDE Extensions</h2>
+        <div class="product-grid" id="ide-integrated"></div>
+        
+        <h2 class="section-title">🤖 Standalone Agents</h2>
+        <div class="product-grid" id="standalone-agent"></div>
+        
+        <h2 class="section-title">💻 AI-Native IDEs</h2>
+        <div class="product-grid" id="ai-native-ide"></div>
+        
+        <div class="gaps-section">
+            <h3>🔍 Coverage Gaps</h3>
+            <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.9rem;">
+                Data sources we're missing for each platform:
+            </p>
+            <div class="gap-row">
+                <span class="gap-source">VS Code</span>
+                <span class="gap-products">Cursor, Claude Code, Aider, OpenHands, Goose, Devin, Replit Agent, Bolt.new, Lovable</span>
+            </div>
+            <div class="gap-row">
+                <span class="gap-source">JetBrains</span>
+                <span class="gap-products">Cursor, Claude Code, Cline, Aider, OpenHands, Goose, Tabby, Void, Devin, Replit, Bolt.new, Lovable, Phind, BlackboxAI</span>
+            </div>
+            <div class="gap-row">
+                <span class="gap-source">GitHub</span>
+                <span class="gap-products">GitHub Copilot, Cursor, Windsurf, Cody, Tabnine, Supermaven, Amazon Q, Devin, Replit, Bolt.new, Lovable, Phind, BlackboxAI</span>
+            </div>
+            <div class="gap-row">
+                <span class="gap-source">Pricing</span>
+                <span class="gap-products">Cline, OpenHands, Goose, Void</span>
+            </div>
+            
+            <div class="well-covered">
+                <strong>✅ Best Covered:</strong> Aider, Continue, Claude Code — have data across most platforms
+            </div>
+        </div>
+        
+        <footer>
+            <p>Updated: Feb 11, 2026 · <a href="/data/">← Back to Data Dashboard</a></p>
+        </footer>
+    </div>
+    
+    <script>
+    const products = [
+        { id: "github-copilot", name: "GitHub Copilot", company: "GitHub (Microsoft)", category: "ide-integrated", coverage: { vscode: true, jetbrains: true, github: false, npm: false, pypi: false, homebrew: false, hn: true, pricing: true, discord: false }, notes: "Dominant player. 71M+ VS Code installs." },
+        { id: "cline", name: "Cline", company: "Cline (OSS)", category: "ide-integrated", coverage: { vscode: true, jetbrains: false, github: true, npm: false, pypi: false, homebrew: false, hn: true, pricing: false, discord: true }, notes: "Open source. Formerly claude-dev. 57K GitHub stars." },
+        { id: "continue", name: "Continue", company: "Continue Dev (OSS)", category: "ide-integrated", coverage: { vscode: true, jetbrains: true, github: true, npm: false, pypi: false, homebrew: false, hn: true, pricing: true, discord: true }, notes: "Model-agnostic. 31K GitHub stars." },
+        { id: "sourcegraph-cody", name: "Cody", company: "Sourcegraph", category: "ide-integrated", coverage: { vscode: true, jetbrains: true, github: false, npm: false, pypi: false, homebrew: false, hn: true, pricing: true, discord: false }, notes: "Enterprise-focused with code search." },
+        { id: "tabnine", name: "Tabnine", company: "Tabnine", category: "ide-integrated", coverage: { vscode: true, jetbrains: true, github: false, npm: false, pypi: false, homebrew: false, hn: true, pricing: true, discord: false }, notes: "Legacy mode. One of the earliest." },
+        { id: "supermaven", name: "Supermaven", company: "Supermaven", category: "ide-integrated", coverage: { vscode: true, jetbrains: true, github: false, npm: false, pypi: false, homebrew: false, hn: true, pricing: true, discord: false }, notes: "Fastest completion. Ex-Tabnine founder." },
+        { id: "amazon-q", name: "Amazon Q Developer", company: "AWS", category: "ide-integrated", coverage: { vscode: true, jetbrains: true, github: false, npm: false, pypi: false, homebrew: false, hn: true, pricing: true, discord: false }, notes: "Formerly CodeWhisperer." },
+        { id: "tabby", name: "Tabby", company: "TabbyML", category: "ide-integrated", coverage: { vscode: false, jetbrains: false, github: true, npm: false, pypi: false, homebrew: false, hn: true, pricing: true, discord: true }, notes: "Self-hosted. Privacy focus. 33K stars." },
+        { id: "phind", name: "Phind", company: "Phind", category: "ide-integrated", coverage: { vscode: true, jetbrains: false, github: false, npm: false, pypi: false, homebrew: false, hn: true, pricing: true, discord: false }, notes: "Search-first. Own LLM." },
+        { id: "blackbox", name: "BlackboxAI", company: "BlackboxAI", category: "ide-integrated", coverage: { vscode: true, jetbrains: false, github: false, npm: false, pypi: false, homebrew: false, hn: false, pricing: true, discord: false }, notes: "4.7M VS Code installs." },
+        { id: "windsurf", name: "Windsurf (Codeium)", company: "Codeium", category: "ai-native-ide", coverage: { vscode: true, jetbrains: true, github: false, npm: false, pypi: false, homebrew: false, hn: true, pricing: true, discord: true }, notes: "Formerly Codeium. Now standalone IDE." },
+        { id: "claude-code", name: "Claude Code", company: "Anthropic", category: "standalone-agent", coverage: { vscode: false, jetbrains: false, github: true, npm: true, pypi: false, homebrew: false, hn: true, pricing: true, discord: false }, notes: "Terminal agent. 66K stars, 7.7M npm/week." },
+        { id: "aider", name: "Aider", company: "Aider AI (OSS)", category: "standalone-agent", coverage: { vscode: false, jetbrains: false, github: true, npm: false, pypi: true, homebrew: true, hn: true, pricing: true, discord: true }, notes: "Established terminal AI. 40K stars." },
+        { id: "openhands", name: "OpenHands", company: "OpenHands (OSS)", category: "standalone-agent", coverage: { vscode: false, jetbrains: false, github: true, npm: false, pypi: false, homebrew: false, hn: true, pricing: false, discord: true }, notes: "Highest starred. 68K stars." },
+        { id: "goose", name: "Goose", company: "Block", category: "standalone-agent", coverage: { vscode: false, jetbrains: false, github: true, npm: false, pypi: false, homebrew: false, hn: true, pricing: false, discord: false }, notes: "From Block (Square). 30K stars." },
+        { id: "devin", name: "Devin", company: "Cognition Labs", category: "standalone-agent", coverage: { vscode: false, jetbrains: false, github: false, npm: false, pypi: false, homebrew: false, hn: true, pricing: true, discord: false }, notes: "Closed beta. 'First AI engineer' claims." },
+        { id: "replit-agent", name: "Replit Agent", company: "Replit", category: "standalone-agent", coverage: { vscode: false, jetbrains: false, github: false, npm: false, pypi: false, homebrew: false, hn: true, pricing: true, discord: false }, notes: "Web-based. Part of Replit platform." },
+        { id: "bolt", name: "Bolt.new", company: "StackBlitz", category: "standalone-agent", coverage: { vscode: false, jetbrains: false, github: false, npm: false, pypi: false, homebrew: false, hn: true, pricing: true, discord: false }, notes: "Web-based app generation." },
+        { id: "lovable", name: "Lovable", company: "Lovable", category: "standalone-agent", coverage: { vscode: false, jetbrains: false, github: false, npm: false, pypi: false, homebrew: false, hn: true, pricing: true, discord: false }, notes: "Formerly GPT Engineer." },
+        { id: "cursor", name: "Cursor", company: "Anysphere", category: "ai-native-ide", coverage: { vscode: false, jetbrains: false, github: false, npm: false, pypi: false, homebrew: true, hn: true, pricing: true, discord: true }, notes: "VS Code fork. Closed source." },
+        { id: "void", name: "Void", company: "Void Editor (OSS)", category: "ai-native-ide", coverage: { vscode: false, jetbrains: false, github: true, npm: false, pypi: false, homebrew: false, hn: true, pricing: false, discord: true }, notes: "Open source Cursor alt. 28K stars." }
+    ];
+    
+    const sources = ['vscode', 'jetbrains', 'github', 'npm', 'pypi', 'homebrew', 'hn', 'pricing', 'discord'];
+    const sourceLabels = { vscode: 'VS Code', jetbrains: 'JetBrains', github: 'GitHub', npm: 'npm', pypi: 'PyPI', homebrew: 'Homebrew', hn: 'HN', pricing: 'Pricing', discord: 'Discord' };
+    
+    function renderProduct(p) {
+        const coverageHtml = sources.map(s => {
+            const hasData = p.coverage[s];
+            return `<span class="coverage-item ${hasData ? 'has-data' : 'no-data'}"><span class="dot ${hasData ? 'green' : 'gray'}"></span>${sourceLabels[s]}</span>`;
+        }).join('');
+        
+        return `
+            <div class="product-card">
+                <div class="product-header">
+                    <div>
+                        <div class="product-name">${p.name}</div>
+                        <div class="product-company">${p.company}</div>
+                    </div>
+                    <span class="category-badge ${p.category}">${p.category.replace('-', ' ')}</span>
+                </div>
+                <div class="coverage-grid">${coverageHtml}</div>
+                <p class="product-notes">${p.notes}</p>
+            </div>
+        `;
+    }
+    
+    const categories = ['ide-integrated', 'standalone-agent', 'ai-native-ide'];
+    categories.forEach(cat => {
+        const container = document.getElementById(cat);
+        if (container) {
+            container.innerHTML = products
+                .filter(p => p.category === cat)
+                .map(renderProduct)
+                .join('');
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+{
+  "scraped_at": "2026-02-11T21:02:11.414Z",
+  "feeds": [
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml"
+    },
+    {
+      "name": "Simon Willison",
+      "url": "https://simonwillison.net/atom/everything/"
+    },
+    {
+      "name": "MIT Tech Review AI",
+      "url": "https://www.technologyreview.com/feed/"
+    },
+    {
+      "name": "The Batch (DeepLearning.AI)",
+      "url": "https://www.deeplearning.ai/the-batch/feed/"
+    },
+    {
+      "name": "AI News (Google)",
+      "url": "https://blog.google/technology/ai/rss/"
+    }
+  ],
+  "total_count": 40,
+  "items": [
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Is a secure AI assistant possible?",
+      "url": "https://www.technologyreview.com/2026/02/11/1132768/is-a-secure-ai-assistant-possible/",
+      "date": "2026-02-11T20:08:35.000Z",
+      "description": "AI agents are a risky business. Even when stuck inside the chatbox window, LLMs will make mistakes and behave badly. Once they have tools that they can use to interact with the outside world, such as ..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Skills in OpenAI API",
+      "url": "https://simonwillison.net/2026/Feb/11/skills-in-openai-api/#atom-everything",
+      "date": "2026-02-11T19:19:22.000Z",
+      "description": "<p><strong><a href=\"https://developers.openai.com/cookbook/examples/skills_in_api\">Skills in OpenAI API</a></strong></p> OpenAI's adoption of Skills continues to gain ground. You can now use Skills di..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "GLM-5: From Vibe Coding to Agentic Engineering",
+      "url": "https://simonwillison.net/2026/Feb/11/glm-5/#atom-everything",
+      "date": "2026-02-11T18:56:14.000Z",
+      "description": "<p><strong><a href=\"https://z.ai/blog/glm-5\">GLM-5: From Vibe Coding to Agentic Engineering</a></strong></p> This is a <em>huge</em> new MIT-licensed model: 754B parameters and <a href=\"https://huggin..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "cysqlite - a new sqlite driver",
+      "url": "https://simonwillison.net/2026/Feb/11/cysqlite/#atom-everything",
+      "date": "2026-02-11T17:34:40.000Z",
+      "description": "<p><strong><a href=\"https://charlesleifer.com/blog/cysqlite---a-new-sqlite-driver/\">cysqlite - a new sqlite driver</a></strong></p> Charles Leifer has been maintaining <a href=\"https://github.com/cole..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "The Download: inside the QuitGPT movement, and EVs in Africa",
+      "url": "https://www.technologyreview.com/2026/02/11/1132724/the-download-inside-the-quitgpt-movement-and-evs-in-africa/",
+      "date": "2026-02-11T13:10:00.000Z",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A “QuitGPT” campaign is urging people to cancel th..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "EVs could be cheaper to own than gas cars in Africa by 2040",
+      "url": "https://www.technologyreview.com/2026/02/11/1132714/evs-africa-cost/",
+      "date": "2026-02-11T10:00:00.000Z",
+      "description": "Electric vehicles could be economically competitive in Africa sooner than expected. Just 1% of new cars sold across the continent in 2025 were electric, but a new analysis finds that with solar off-gr..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Introducing Showboat and Rodney, so agents can demo what they’ve built",
+      "url": "https://simonwillison.net/2026/Feb/10/showboat-and-rodney/#atom-everything",
+      "date": "2026-02-10T17:45:29.000Z",
+      "description": "<p>A key challenge working with coding agents is having them both test what they’ve built and demonstrate that software to you, their overseer. This goes beyond automated tests - we need artifacts tha..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "A “QuitGPT” campaign is urging people to cancel their ChatGPT subscriptions",
+      "url": "https://www.technologyreview.com/2026/02/10/1132577/a-quitgpt-campaign-is-urging-people-to-cancel-chatgpt-subscriptions/",
+      "date": "2026-02-10T17:00:24.000Z",
+      "description": "In September, Alfred Stephen, a freelance software developer in Singapore, purchased a ChatGPT Plus subscription, which costs $20 a month and offers more access to advanced models, to speed up his wor..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "9 fun questions to try asking Google Photos",
+      "url": "https://blog.google/products-and-platforms/products/photos/ask-button-ask-photos-tips/",
+      "date": "2026-02-10T17:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/2025-Travel-Trends_hero.max-600x600.format-webp.webp\">Learn more about Google Photos’ new Ask button as well as other function..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "The Download: Making AI Work, and why the Moltbook hype is similar to Pokémon",
+      "url": "https://www.technologyreview.com/2026/02/10/1132608/the-download-making-ai-work-and-why-the-moltbook-hype-is-similar-to-pokemon/",
+      "date": "2026-02-10T13:10:00.000Z",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A first look at Making AI Work, MIT Technology Rev..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "Helping kids and teens learn and grow online on Safer Internet Day",
+      "url": "https://blog.google/innovation-and-ai/technology/safety-security/safer-internet-day-2026-kids-teens/",
+      "date": "2026-02-10T02:30:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Helpingkidsteens_Hero.max-600x600.format-webp.webp\">We’re sharing our latest updates designed to support families, kids and te..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Structured Context Engineering for File-Native Agentic Systems",
+      "url": "https://simonwillison.net/2026/Feb/9/structured-context-engineering-for-file-native-agentic-systems/#atom-everything",
+      "date": "2026-02-09T23:56:51.000Z",
+      "description": "<p><strong><a href=\"https://arxiv.org/abs/2602.05447\">Structured Context Engineering for File-Native Agentic Systems</a></strong></p> New paper by Damon McMillan exploring challenging LLM context task..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Why the Moltbook frenzy was like Pokémon",
+      "url": "https://www.technologyreview.com/2026/02/09/1132537/a-lesson-from-pokemon/",
+      "date": "2026-02-09T17:02:56.000Z",
+      "description": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&#160;sign up here. Lots of influential people in tech last week were describ..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "AI Doesn’t Reduce Work—It Intensifies It",
+      "url": "https://simonwillison.net/2026/Feb/9/ai-intensifies-work/#atom-everything",
+      "date": "2026-02-09T16:43:07.000Z",
+      "description": "<p><strong><a href=\"https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it\">AI Doesn’t Reduce Work—It Intensifies It</a></strong></p> Aruna Ranganathan and Xingqi Maggie Ye from Berkeley Haas..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "The Download: what Moltbook tells us about AI hype, and the rise and rise of AI therapy",
+      "url": "https://www.technologyreview.com/2026/02/09/1132498/the-download-what-moltbook-tells-us-about-ai-hype-and-the-rise-and-rise-of-ai-therapy/",
+      "date": "2026-02-09T13:10:00.000Z",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Moltbook was peak AI theater For a few days recent..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Making AI Work, MIT Technology Review’s new AI newsletter, is here",
+      "url": "https://www.technologyreview.com/2026/02/09/1132462/ai-newsletter-professional-applications/",
+      "date": "2026-02-09T11:30:00.000Z",
+      "description": "For years, our newsroom has explored AI’s limitations and potential dangers, as well as its growing energy needs. And our reporters have looked closely at how generative tools are being used for tasks..."
+    },
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "Transformers.js v4 Preview: Now Available on NPM!",
+      "url": "https://huggingface.co/blog/transformersjs-v4",
+      "date": "2026-02-09T00:00:00.000Z",
+      "description": null
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Kākāpō mug by Karen James",
+      "url": "https://simonwillison.net/2026/Feb/8/kakapo-mug/#atom-everything",
+      "date": "2026-02-08T17:25:07.000Z",
+      "description": "<p>Friend and neighbour <a href=\"https://www.etsy.com/shop/KarenJamesMakes\">Karen James</a> made me a Kākāpō mug. It has a charismatic Kākāpō, four Kākāpō chicks (in celebration of the <a href=\"https:..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Quoting Thomas Ptacek",
+      "url": "https://simonwillison.net/2026/Feb/8/thomas-ptacek/#atom-everything",
+      "date": "2026-02-08T02:25:53.000Z",
+      "description": "<blockquote cite=\"https://twitter.com/tqbf/status/2019493645888462993\"><p>People on the orange site are laughing at this, assuming it's just an ad and that there's nothing to it. Vulnerability researc..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Vouch",
+      "url": "https://simonwillison.net/2026/Feb/7/vouch/#atom-everything",
+      "date": "2026-02-07T23:57:57.000Z",
+      "description": "<p><strong><a href=\"https://github.com/mitchellh/vouch\">Vouch</a></strong></p> Mitchell Hashimoto's new system to help address the deluge of worthless AI-generated PRs faced by open source projects no..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Claude: Speed up responses with fast mode",
+      "url": "https://simonwillison.net/2026/Feb/7/claude-fast-mode/#atom-everything",
+      "date": "2026-02-07T23:10:33.000Z",
+      "description": "<p><strong><a href=\"https://code.claude.com/docs/en/fast-mode\">Claude: Speed up responses with fast mode</a></strong></p> New \"research preview\" from Anthropic today: you can now access a faster versi..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Moltbook was peak AI theater",
+      "url": "https://www.technologyreview.com/2026/02/06/1132448/moltbook-was-peak-ai-theater/",
+      "date": "2026-02-06T16:38:11.000Z",
+      "description": "For a few days this week the hottest new hangout on the internet was a vibe-coded Reddit clone called Moltbook, which billed itself as a social network for bots. As the website’s tagline puts it: “Whe..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "The Download: helping cancer survivors to give birth, and cleaning up Bangladesh&#8217;s garment industry",
+      "url": "https://www.technologyreview.com/2026/02/06/1132375/the-download-helping-cancer-survivors-to-give-birth-and-cleaning-up-bangladeshs-garment-industry/",
+      "date": "2026-02-06T13:10:00.000Z",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. An experimental surgery is helping cancer survivor..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "Natively Adaptive Interfaces: A new framework for AI accessibility",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/accessibility/natively-adaptive-interfaces-ai-accessibility/",
+      "date": "2026-02-05T17:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Natively_Adaptive_Interfaces_He.max-600x600.format-webp.webp\">Learn how Google's NAI framework uses AI to make technology more..."
+    },
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "Introducing SyGra Studio",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/sygra-studio",
+      "date": "2026-02-05T16:52:28.000Z",
+      "description": null
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "How Google Cloud is helping Team USA elevate their tricks with AI",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/us-ski-snowboard-tool-winter-olympics-2026/",
+      "date": "2026-02-05T16:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/helping_Team_USA_Hero.max-600x600.format-webp.webp\">Google Cloud built an industry-first AI tool to help U.S. Ski and Snowboar..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "Watch our new Gemini ad ahead of football’s biggest weekend",
+      "url": "https://blog.google/company-news/inside-google/company-announcements/gemini-ad-new-home/",
+      "date": "2026-02-05T14:30:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SB_2026_New_Home_16_9_Thumbnail.max-600x600.format-webp.webp\">Learn more about Google’s new ad that will run during football’s..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "The latest AI news we announced in January",
+      "url": "https://blog.google/innovation-and-ai/products/google-ai-updates-january-2026/",
+      "date": "2026-02-04T16:55:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/LatestAI_v5.max-600x600.format-webp.webp\">Google AI announcements from January"
+    },
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "Nemotron ColEmbed V2: Raising the Bar for Multimodal Retrieval with ViDoRe V3’s Top Model",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-colembed-v2",
+      "date": "2026-02-04T15:00:40.000Z",
+      "description": null
+    },
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "Community Evals: Because we&apos;re done trusting black-box leaderboards over the community",
+      "url": "https://huggingface.co/blog/community-evals",
+      "date": "2026-02-04T00:00:00.000Z",
+      "description": null
+    },
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "H Company&apos;s new Holo2 model takes the lead in UI Localization",
+      "url": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b",
+      "date": "2026-02-03T17:40:14.000Z",
+      "description": null
+    },
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+",
+      "url": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3",
+      "date": "2026-02-03T15:03:19.000Z",
+      "description": null
+    },
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "Training Design for Text-to-Image Models: Lessons from Ablations",
+      "url": "https://huggingface.co/blog/Photoroom/prx-part2",
+      "date": "2026-02-03T11:25:53.000Z",
+      "description": null
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "How we’re helping preserve the genetic information of endangered species with AI",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-to-preserve-endangered-species/",
+      "date": "2026-02-02T18:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Terria-Clay_Collage_hero.max-600x600.format-webp.webp\">Scientists are working to sequence the genome of every known species on..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "Advancing AI benchmarking with Game Arena",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/",
+      "date": "2026-02-02T17:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/kaggle_Gsmes_Hero.png\">We’re expanding Game Arena with Poker and Werewolf, while Gemini 3 Pro and Flash top our chess..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "Project Genie: Experimenting with infinite, interactive worlds",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/",
+      "date": "2026-01-29T17:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/genie-3__project-genie__hero-fi.max-600x600.format-webp_d7CisM6.webp\">Google AI Ultra subscribers in the U.S. can now try out ..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "Hear more about interactive world models in our latest podcast.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/release-notes-podcast-project-genie/",
+      "date": "2026-01-29T15:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/RN25_Episode_Thumbnail.max-600x600.format-webp.webp\">The latest episode of the Google AI: Release Notes podcast focuses on Gen..."
+    },
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "Introducing Daggr: Chain apps programmatically, inspect visually",
+      "url": "https://huggingface.co/blog/daggr",
+      "date": "2026-01-29T00:00:00.000Z",
+      "description": null
+    },
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "We Got Claude to Build CUDA Kernels and teach open models!",
+      "url": "https://huggingface.co/blog/upskill",
+      "date": "2026-01-28T00:00:00.000Z",
+      "description": null
+    },
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "Architectural Choices in China&apos;s Open-Source AI Ecosystem: Building Beyond DeepSeek",
+      "url": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-2",
+      "date": "2026-01-27T15:01:45.000Z",
+      "description": null
+    }
+  ]
+}

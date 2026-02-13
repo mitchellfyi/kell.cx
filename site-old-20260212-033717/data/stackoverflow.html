@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Overflow Trends — Kell</title>
+    <meta name="description" content="Track what developers are asking about AI coding tools on Stack Overflow. See common issues and trending questions.">
+    <meta property="og:title" content="Stack Overflow AI Coding Tool Trends">
+    <meta property="og:description" content="What problems are developers facing with AI coding assistants?">
+    <meta property="og:image" content="https://kell.cx/og-image.png">
+    <meta property="og:url" content="https://kell.cx/data/stackoverflow.html">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #fafafa;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .nav-logo { color: #fff; text-decoration: none; font-weight: 600; }
+        .nav-links { display: flex; gap: 1.5rem; }
+        .nav-links a { color: #888; text-decoration: none; font-size: 0.9rem; }
+        .nav-links a:hover { color: #fff; }
+        .nav-links a.active { color: #fff; }
+        
+        @media (max-width: 600px) {
+            nav { flex-direction: column; gap: 1rem; text-align: center; }
+            .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.75rem 1.25rem; }
+            .container { padding: 1.5rem 1rem; }
+        }
+        
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        .breadcrumb a { color: #888; text-decoration: none; }
+        .breadcrumb a:hover { color: #fff; }
+        
+        h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .subtitle { color: #888; margin-bottom: 0.5rem; }
+        .updated { color: #555; font-size: 0.85rem; margin-bottom: 2rem; }
+        
+        .section { margin-bottom: 3rem; }
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        th, td {
+            text-align: left;
+            padding: 0.75rem;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        th {
+            color: #888;
+            font-weight: 500;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        td { color: #ccc; }
+        tr:hover td { background: rgba(255,255,255,0.02); }
+        
+        .tool-name { color: #fff; font-weight: 500; }
+        .activity-high { color: #ef4444; }
+        .activity-medium { color: #eab308; }
+        .activity-low { color: #3b82f6; }
+        .activity-minimal { color: #888; }
+        
+        .issues-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+        }
+        .issue-tag {
+            background: rgba(255,255,255,0.05);
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            color: #888;
+        }
+        
+        .question-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .question-card:hover {
+            border-color: rgba(255,255,255,0.2);
+        }
+        .question-title {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .question-title:hover { color: #3b82f6; }
+        .question-meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        .question-meta span { display: flex; align-items: center; gap: 0.25rem; }
+        .tool-badge {
+            background: rgba(59, 130, 246, 0.15);
+            color: #3b82f6;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-left: auto;
+        }
+        
+        .insight-box {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .insight-box h3 {
+            color: #3b82f6;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .insight-box p { color: #ccc; font-size: 0.9rem; }
+        
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            text-align: center;
+            color: #555;
+            font-size: 0.85rem;
+        }
+        footer a { color: #888; text-decoration: none; }
+        footer a:hover { color: #fff; }
+        
+        @media (max-width: 600px) {
+            table { font-size: 0.8rem; }
+            th, td { padding: 0.5rem 0.25rem; }
+            .question-meta { flex-wrap: wrap; gap: 0.5rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="nav-logo">⚡ Kell</a>
+            <div class="nav-links">
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/data/" class="active">Data</a>
+                <a href="/pricing.html">Pricing</a>
+            </div>
+        </nav>
+        
+        <div class="breadcrumb"><a href="/data/">Data</a> → Stack Overflow</div>
+        
+        <h1>Stack Overflow Trends</h1>
+        <p class="subtitle">What problems are developers asking about?</p>
+        <p class="updated" id="updated">Loading...</p>
+        
+        <div class="insight-box">
+            <h3>💡 What This Shows</h3>
+            <p>Stack Overflow questions reveal real pain points developers face with AI coding tools. High question counts can indicate adoption issues, confusing UX, or gaps in documentation.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Tool Activity (Last 30 Days)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tool</th>
+                        <th>Questions</th>
+                        <th>Activity</th>
+                        <th>Common Issues</th>
+                    </tr>
+                </thead>
+                <tbody id="tools-table">
+                    <tr><td colspan="4" style="text-align:center;color:#666;">Loading...</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Top Recent Questions</h2>
+            <div id="recent-questions">
+                <div class="question-card" style="text-align:center;color:#666;">Loading...</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>General AI Coding Topics</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Questions</th>
+                        <th>Activity</th>
+                    </tr>
+                </thead>
+                <tbody id="topics-table">
+                    <tr><td colspan="3" style="text-align:center;color:#666;">Loading...</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <footer>
+            <p>Built by <a href="/about.html">Kell</a> · <a href="mailto:hi@kell.cx">hi@kell.cx</a></p>
+        </footer>
+    </div>
+    
+    <script>
+        async function loadData() {
+            try {
+                const res = await fetch('/data/stackoverflow-trends.json');
+                const data = await res.json();
+                
+                // Update timestamp
+                const date = new Date(data.generatedAt);
+                document.getElementById('updated').textContent = 
+                    `Updated ${date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' })}`;
+                
+                // Render tools table
+                const toolsHtml = data.tools.map(t => `
+                    <tr>
+                        <td class="tool-name">${t.emoji} ${t.name}</td>
+                        <td>${t.questionsLast30d}</td>
+                        <td class="activity-${t.activityLevel}">${t.activityLevel}</td>
+                        <td>
+                            <div class="issues-list">
+                                ${t.commonIssues.slice(0, 3).map(i => 
+                                    `<span class="issue-tag">${i.issue} (${i.count})</span>`
+                                ).join('')}
+                            </div>
+                        </td>
+                    </tr>
+                `).join('');
+                document.getElementById('tools-table').innerHTML = toolsHtml || 
+                    '<tr><td colspan="4" style="color:#666">No data available</td></tr>';
+                
+                // Render recent questions
+                const questionsHtml = data.recentHighlights.slice(0, 10).map(q => `
+                    <div class="question-card">
+                        <a href="${q.url}" target="_blank" class="question-title">${q.title}</a>
+                        <div class="question-meta">
+                            <span>↑ ${q.score}</span>
+                            <span>💬 ${q.answers} answers</span>
+                            <span>👀 ${q.views.toLocaleString()} views</span>
+                            <span class="tool-badge">${q.tool}</span>
+                        </div>
+                    </div>
+                `).join('');
+                document.getElementById('recent-questions').innerHTML = questionsHtml || 
+                    '<div class="question-card" style="color:#666">No recent questions</div>';
+                
+                // Render topics table
+                const topicsHtml = data.topics.map(t => `
+                    <tr>
+                        <td>${t.emoji} ${t.name}</td>
+                        <td>${t.questionsLast30d}</td>
+                        <td class="activity-${t.activityLevel}">${t.activityLevel}</td>
+                    </tr>
+                `).join('');
+                document.getElementById('topics-table').innerHTML = topicsHtml || 
+                    '<tr><td colspan="3" style="color:#666">No data available</td></tr>';
+                    
+            } catch (err) {
+                console.error('Failed to load data:', err);
+                document.getElementById('tools-table').innerHTML = 
+                    '<tr><td colspan="4" style="color:#ef4444">Failed to load data</td></tr>';
+            }
+        }
+        
+        loadData();
+    </script>
+</body>
+</html>

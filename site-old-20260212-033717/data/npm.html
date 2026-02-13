@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPM Downloads: AI Coding Tools — Kell</title>
+    <meta name="description" content="Weekly npm download stats for AI coding SDKs and frameworks. Track adoption of OpenAI, Anthropic, LangChain, and more.">
+    <meta property="og:title" content="NPM Downloads: AI Coding Tools — Kell">
+    <meta property="og:description" content="Weekly npm download stats for AI coding SDKs and frameworks.">
+    <meta property="og:image" content="https://kell.cx/og-image.png">
+    <meta property="og:url" content="https://kell.cx/data/npm.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #fafafa;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .nav-logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-links a {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .nav-links a:hover { color: #fff; }
+        .nav-links a.active { color: #fff; }
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        .breadcrumb a {
+            color: #888;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover { color: #fff; }
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+        .subtitle {
+            color: #888;
+            margin-bottom: 2rem;
+        }
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .summary-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 1.25rem;
+        }
+        .summary-card .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: #888;
+            margin-bottom: 0.5rem;
+        }
+        .summary-card .value {
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+        .summary-card .note {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.25rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        th, td {
+            text-align: left;
+            padding: 0.75rem;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        th {
+            color: #888;
+            font-weight: 500;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        td { color: #ccc; }
+        tr:hover td { background: rgba(255,255,255,0.02); }
+        .package-name {
+            font-weight: 500;
+            color: #fff;
+        }
+        .package-name a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .package-name a:hover { color: #3b82f6; }
+        .downloads {
+            font-family: 'SF Mono', Monaco, monospace;
+            font-size: 0.85rem;
+        }
+        .tier {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            background: rgba(255,255,255,0.05);
+        }
+        .tier.massive { background: rgba(239,68,68,0.15); color: #ef4444; }
+        .tier.popular { background: rgba(234,179,8,0.15); color: #eab308; }
+        .tier.growing { background: rgba(34,197,94,0.15); color: #22c55e; }
+        .tier.emerging { background: rgba(59,130,246,0.15); color: #3b82f6; }
+        .category-badge {
+            font-size: 0.7rem;
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            background: rgba(255,255,255,0.08);
+            color: #888;
+        }
+        .timestamp {
+            font-size: 0.8rem;
+            color: #555;
+            margin-top: 2rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            text-align: center;
+            color: #555;
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: #888;
+            text-decoration: none;
+        }
+        footer a:hover { color: #fff; }
+        @media (max-width: 600px) {
+            .container { padding: 1.5rem 1rem; }
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.75rem 1.25rem;
+            }
+            table { font-size: 0.8rem; }
+            th, td { padding: 0.5rem 0.25rem; }
+            .summary-cards { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="nav-logo">⚡ Kell</a>
+            <div class="nav-links">
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/data/" class="active">Data</a>
+                <a href="/pricing.html">Pricing</a>
+            </div>
+        </nav>
+
+        <div class="breadcrumb"><a href="/data/">Data</a> → NPM Downloads</div>
+        
+        <h1>📦 NPM Download Stats</h1>
+        <p class="subtitle">Weekly download stats for AI coding SDKs, frameworks, and tools</p>
+
+        <div class="summary-cards" id="summary">
+            <div class="summary-card">
+                <div class="label">Total Weekly Downloads</div>
+                <div class="value" id="total-weekly">—</div>
+                <div class="note">across all tracked packages</div>
+            </div>
+            <div class="summary-card">
+                <div class="label">Most Downloaded</div>
+                <div class="value" id="top-package">—</div>
+                <div class="note" id="top-downloads">—</div>
+            </div>
+            <div class="summary-card">
+                <div class="label">Packages Tracked</div>
+                <div class="value" id="package-count">—</div>
+                <div class="note">SDKs & frameworks</div>
+            </div>
+        </div>
+
+        <h2>All Packages</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Package</th>
+                    <th>Category</th>
+                    <th>Weekly</th>
+                    <th>Monthly</th>
+                    <th>Popularity</th>
+                </tr>
+            </thead>
+            <tbody id="packages-table">
+                <tr><td colspan="5" style="text-align: center; color: #666;">Loading...</td></tr>
+            </tbody>
+        </table>
+
+        <p class="timestamp">Data updated: <span id="updated">—</span></p>
+
+        <footer>
+            <p>Built by <a href="/about.html">Kell</a> · <a href="mailto:hi@kell.cx">hi@kell.cx</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const categoryLabels = {
+            'sdk': 'SDK',
+            'framework': 'Framework',
+            'ai-assistant': 'AI Assistant',
+            'ai-editor': 'AI Editor',
+            'tool': 'Tool',
+        };
+
+        async function loadData() {
+            try {
+                const res = await fetch('/data/npm-downloads.json');
+                const data = await res.json();
+                renderData(data);
+            } catch (err) {
+                document.getElementById('packages-table').innerHTML = 
+                    '<tr><td colspan="5" style="color: #ef4444;">Failed to load data</td></tr>';
+            }
+        }
+
+        function formatNumber(n) {
+            if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+            if (n >= 1000) return (n / 1000).toFixed(1) + 'K';
+            return n.toString();
+        }
+
+        function renderData(data) {
+            // Summary
+            document.getElementById('total-weekly').textContent = formatNumber(data.summary.totalWeeklyDownloads);
+            document.getElementById('top-package').textContent = data.summary.mostDownloaded || '—';
+            document.getElementById('top-downloads').textContent = data.packages[0] 
+                ? formatNumber(data.packages[0].weeklyDownloads) + '/week' 
+                : '—';
+            document.getElementById('package-count').textContent = data.packageCount;
+            document.getElementById('updated').textContent = new Date(data.generatedAt).toLocaleString();
+
+            // Table
+            const tbody = document.getElementById('packages-table');
+            tbody.innerHTML = data.packages.map(pkg => `
+                <tr>
+                    <td class="package-name">
+                        <a href="${pkg.npmUrl}" target="_blank">${pkg.displayName}</a>
+                        ${pkg.version ? `<span style="color:#666; font-size:0.75rem; margin-left:0.5rem">v${pkg.version}</span>` : ''}
+                    </td>
+                    <td><span class="category-badge">${categoryLabels[pkg.category] || pkg.category}</span></td>
+                    <td class="downloads">${pkg.weeklyFormatted}</td>
+                    <td class="downloads">${pkg.monthlyFormatted}</td>
+                    <td><span class="tier ${pkg.tier}">${pkg.emoji} ${pkg.tier}</span></td>
+                </tr>
+            `).join('');
+        }
+
+        loadData();
+    </script>
+</body>
+</html>

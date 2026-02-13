@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Week in AI Coding Tools — Feb 11, 2026 | Kell</title>
+    <meta name="description" content="Weekly roundup: Cursor's 67-role hiring spree, GPT-5.3-Codex GA for Copilot, Windsurf Tab v2, and Replit pricing concerns.">
+    <meta name="keywords" content="AI coding tools weekly, Cursor hiring, GPT-5.3-Codex, Windsurf Tab v2, Replit pricing">
+    <link rel="canonical" href="https://kell.cx/blog-weekly-feb-11-2026.html">
+    <meta property="og:title" content="This Week in AI Coding Tools — Feb 11, 2026">
+    <meta property="og:description" content="Cursor hiring 67+ roles, GPT-5.3-Codex GA, Windsurf Tab v2, and community concerns about Replit pricing.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kell.cx/blog-weekly-feb-11-2026.html">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #fafafa;
+            min-height: 100vh;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        nav a { color: #888; text-decoration: none; font-size: 0.9rem; }
+        nav a:hover { color: #fff; }
+        .nav-links a { margin-left: 1.5rem; }
+        .logo { color: #fff !important; font-weight: 600; display: flex; align-items: center; gap: 0.5rem; }
+        
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 0.5rem; }
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+        .lead {
+            font-size: 1.1rem;
+            color: #aaa;
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+            border-left: 2px solid #333;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2.5rem 0 1rem;
+            color: #fff;
+        }
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.75rem;
+            color: #ccc;
+        }
+        p { margin-bottom: 1rem; color: #ccc; }
+        a { color: #6ea8fe; }
+        
+        ul {
+            margin: 1rem 0 1.5rem 1.5rem;
+            color: #ccc;
+        }
+        li { margin-bottom: 0.5rem; }
+        
+        .highlight {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .highlight h4 {
+            font-size: 1rem;
+            color: #fff;
+            margin-bottom: 0.75rem;
+        }
+        
+        .news-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .news-item:last-child { border-bottom: none; }
+        .news-source { font-size: 0.8rem; color: #666; margin-top: 0.25rem; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+        th {
+            text-align: left;
+            padding: 0.75rem;
+            background: rgba(255,255,255,0.03);
+            color: #888;
+            font-weight: 500;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        td {
+            padding: 0.75rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        
+        .insight {
+            background: rgba(255,255,255,0.02);
+            border-left: 2px solid #6ea8fe;
+            padding: 1rem 1rem 1rem 1.5rem;
+            margin: 1.5rem 0;
+            color: #aaa;
+            font-size: 0.95rem;
+        }
+        
+        .cta {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        .cta h3 { margin-bottom: 0.75rem; color: #fff; }
+        .cta p { color: #888; margin-bottom: 1rem; }
+        .cta a.btn {
+            display: inline-block;
+            background: #fff;
+            color: #0a0a0a;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .cta a.btn:hover { background: #eee; }
+        
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            text-align: center;
+            color: #444;
+            font-size: 0.85rem;
+        }
+            @media (max-width: 600px) {
+            nav { flex-direction: column !important; gap: 1rem !important; text-align: center; }
+            .nav-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1rem; }
+            .nav-links a { margin-left: 0 !important; margin-right: 0 !important; }
+            .container { padding: 1.5rem 1rem !important; }
+        }
+    
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .nav-logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-links a {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .nav-links a:hover { color: #fff; }
+        .nav-links a.active { color: #fff; }
+        
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.75rem 1.25rem;
+            }
+            .container { padding: 1.5rem 1rem; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="nav-logo">⚡ Kell</a>
+            <div class="nav-links">
+            <a href="/about.html">About</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/data/">Data</a>
+            <a href="/pricing.html">Pricing</a>
+            </div>
+        </nav>
+        
+        <article>
+            <p class="meta">February 11, 2026 • Weekly Roundup</p>
+            <h1>This Week in AI Coding Tools</h1>
+            <p class="lead">Cursor's aggressive hiring, GPT-5.3-Codex goes GA, Windsurf ships Tab v2, and the community debates Replit's pricing.</p>
+            
+            <h2>🔥 Headlines</h2>
+            
+            <div class="highlight">
+                <h4>Cursor Hiring Spree: 67+ Open Roles</h4>
+                <p style="margin-bottom:0">Cursor now has more open positions than any other AI coding tool company. Heavy emphasis on ML infrastructure and platform engineering. Are they scaling for enterprise, or gearing up for an acquisition?</p>
+            </div>
+            
+            <div class="highlight">
+                <h4>GPT-5.3-Codex Generally Available for GitHub Copilot</h4>
+                <p style="margin-bottom:0">Microsoft's Copilot users now have access to OpenAI's latest coding model. The upgrade came quietly — no major announcement, just better completions showing up in users' IDEs.</p>
+            </div>
+            
+            <div class="highlight">
+                <h4>Windsurf Tab v2 Ships</h4>
+                <p style="margin-bottom:0">Codeium's Windsurf IDE launched Tab v2 this week, focusing on "flow-focused" development. The feature aims to reduce context switching by keeping relevant code in view during AI-assisted editing.</p>
+            </div>
+            
+            <h2>📰 In the News</h2>
+            
+            <div class="news-item">
+                <strong>OpenAI's new Codex app hits 1M+ downloads in first week</strong>
+                <p style="margin:0.5rem 0 0">Limits may be coming for free and Go tier users as demand exceeds expectations.</p>
+                <p class="news-source">VentureBeat</p>
+            </div>
+            
+            <div class="news-item">
+                <strong>Developers say AI coding tools work—and that's precisely what worries them</strong>
+                <p style="margin:0.5rem 0 0">Survey shows growing concern about over-reliance on AI assistance.</p>
+                <p class="news-source">Ars Technica</p>
+            </div>
+            
+            <div class="news-item">
+                <strong>OpenAI spills technical details about how its AI coding agent works</strong>
+                <p style="margin:0.5rem 0 0">Rare technical transparency from OpenAI on their agentic coding approach.</p>
+                <p class="news-source">Ars Technica</p>
+            </div>
+            
+            <h2>💬 Community Buzz</h2>
+            
+            <p>What developers are talking about on Hacker News and Reddit this week:</p>
+            
+            <ul>
+                <li><strong>"GPT-5.3-Codex is now generally available for GitHub Copilot"</strong> — Positive reception, though some note minimal perceivable difference</li>
+                <li><strong>"Intent – Developer workspace for agent orchestration"</strong> — Augment Code's new tool getting attention</li>
+                <li><strong>"Windsurf Tab v2"</strong> — Mixed reviews on the flow-focused approach</li>
+                <li><strong>"Replit's Recent Pricing Change Is About Trust, Not Credits"</strong> — Community pushback on pricing model changes</li>
+            </ul>
+            
+            <div class="insight">
+                The Replit discussion is interesting — it's less about the actual price changes and more about perceived bait-and-switch tactics. Trust is fragile in developer tools.
+            </div>
+            
+            <h2>📊 Quick Stats</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tool</th>
+                        <th>This Week</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Cursor</td><td>67+ roles open, pricing page updated</td></tr>
+                    <tr><td>GitHub Copilot</td><td>GPT-5.3-Codex rollout complete</td></tr>
+                    <tr><td>Windsurf</td><td>Tab v2 launched</td></tr>
+                    <tr><td>Replit</td><td>Pricing controversy, trust concerns</td></tr>
+                    <tr><td>Continue.dev</td><td>v1.3.31 released</td></tr>
+                    <tr><td>Devin</td><td>Pricing page updated (quiet)</td></tr>
+                    <tr><td>Augment Code</td><td>Intent workspace announced</td></tr>
+                </tbody>
+            </table>
+            
+            <h2>🎯 What to Watch</h2>
+            
+            <h3>1. Cursor's endgame</h3>
+            <p>67 open roles is aggressive. They're either building for massive scale, preparing for enterprise sales, or positioning for acquisition. Microsoft buying them to boost Copilot isn't crazy.</p>
+            
+            <h3>2. Model flexibility becoming standard</h3>
+            <p>GitHub Copilot now supports multiple model backends. Expect other tools to follow — vendor lock-in to a single AI provider is increasingly risky.</p>
+            
+            <h3>3. Pricing experimentation continues</h3>
+            <p>Multiple tools adjusted pricing this week. The market hasn't found equilibrium yet. Watch for convergence around the $20-25/month individual tier.</p>
+            
+            <div class="cta">
+                <h3>Get the full daily briefing</h3>
+                <p>This is a summary. Kell subscribers get daily competitive intelligence on 15+ AI coding tools — pricing changes, job postings, product updates, and more.</p>
+                <a href="/" class="btn">Try Kell →</a>
+            </div>
+            
+            <p><em>Kell is a competitive intelligence service for AI coding tools. We track Cursor, GitHub Copilot, Devin, Windsurf, Replit, and 10 other players daily.</em></p>
+        </article>
+        
+        <footer>
+            <p>Built by <a href="/about.html">Kell</a> · <a href="mailto:hi@kell.cx">hi@kell.cx</a></p>
+        </footer>
+    </div>
+</body>
+</html>

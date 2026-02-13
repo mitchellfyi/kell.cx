@@ -1,0 +1,92 @@
+{
+  "generatedAt": "2026-02-11T20:20:52.727Z",
+  "stats": [
+    {
+      "icon": "🔧",
+      "value": "160.2M",
+      "label": "Total extensions",
+      "subject": "12 tools tracked",
+      "source": "vscode-total"
+    },
+    {
+      "icon": "📊",
+      "value": "71.2M",
+      "label": "VS Code installs",
+      "subject": "GitHub Copilot",
+      "source": "vscode"
+    },
+    {
+      "icon": "⭐",
+      "value": "67.8K",
+      "label": "GitHub stars",
+      "subject": "OpenHands",
+      "source": "github"
+    },
+    {
+      "icon": "🚀",
+      "value": "v2.1.39",
+      "label": "Latest release",
+      "subject": "Claude Code • 19h ago",
+      "source": "releases"
+    },
+    {
+      "icon": "🔥",
+      "value": "7",
+      "label": "Active today",
+      "subject": "Repos with commits",
+      "source": "github-hot"
+    },
+    {
+      "icon": "🐍",
+      "value": "15.4M",
+      "label": "Weekly downloads",
+      "subject": "LiteLLM",
+      "source": "pypi"
+    },
+    {
+      "icon": "📦",
+      "value": "12.4M",
+      "label": "NPM weekly",
+      "subject": "OpenAI SDK",
+      "source": "npm"
+    },
+    {
+      "icon": "🍺",
+      "value": "242.0K",
+      "label": "30-day installs",
+      "subject": "gh",
+      "source": "homebrew"
+    }
+  ],
+  "featured": [
+    {
+      "icon": "🔧",
+      "value": "160.2M",
+      "label": "Total extensions",
+      "subject": "12 tools tracked",
+      "source": "vscode-total"
+    },
+    {
+      "icon": "📊",
+      "value": "71.2M",
+      "label": "VS Code installs",
+      "subject": "GitHub Copilot",
+      "source": "vscode"
+    },
+    {
+      "icon": "⭐",
+      "value": "67.8K",
+      "label": "GitHub stars",
+      "subject": "OpenHands",
+      "source": "github"
+    },
+    {
+      "icon": "🚀",
+      "value": "v2.1.39",
+      "label": "Latest release",
+      "subject": "Claude Code • 19h ago",
+      "source": "releases"
+    }
+  ],
+  "toolsTracked": 24
+}

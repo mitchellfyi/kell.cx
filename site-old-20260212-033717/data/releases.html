@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Releases — Kell</title>
+    <meta name="description" content="Track what AI coding tools shipped this week. Claude Code, Cline, Aider, and more.">
+    <meta property="og:title" content="AI Coding Tool Releases — Kell">
+    <meta property="og:description" content="What shipped this week in AI coding tools.">
+    <meta property="og:image" content="https://kell.cx/og-image.png">
+    <meta property="og:url" content="https://kell.cx/data/releases.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #fafafa;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .nav-logo { color: #fff; text-decoration: none; font-weight: 600; }
+        .nav-links { display: flex; gap: 1.5rem; }
+        .nav-links a { color: #888; text-decoration: none; font-size: 0.9rem; }
+        .nav-links a:hover { color: #fff; }
+        .nav-links a.active { color: #fff; }
+        
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        .breadcrumb a { color: #888; text-decoration: none; }
+        .breadcrumb a:hover { color: #fff; }
+        
+        h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .subtitle { color: #888; margin-bottom: 0.5rem; }
+        .updated { color: #555; font-size: 0.85rem; margin-bottom: 2rem; }
+        
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .stat-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #3b82f6;
+        }
+        .stat-label {
+            font-size: 0.75rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .release-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .release-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.2s;
+        }
+        .release-card:hover {
+            border-color: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.03);
+        }
+        .release-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .release-tool {
+            font-weight: 600;
+            color: #fff;
+        }
+        .release-version {
+            color: #3b82f6;
+            font-family: ui-monospace, SFMono-Regular, monospace;
+            font-size: 0.9rem;
+        }
+        .release-time {
+            color: #555;
+            font-size: 0.85rem;
+        }
+        .release-link {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.85rem;
+            padding: 0.25rem 0.75rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .release-link:hover {
+            color: #fff;
+            border-color: rgba(255,255,255,0.3);
+        }
+        .prerelease {
+            background: rgba(234, 179, 8, 0.1);
+            color: #eab308;
+            font-size: 0.7rem;
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        
+        .section-title {
+            font-size: 1.1rem;
+            color: #888;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        
+        .insight {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 3px solid #3b82f6;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+        .insight strong { color: #fff; }
+        
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            text-align: center;
+            color: #555;
+            font-size: 0.85rem;
+        }
+        footer a { color: #888; text-decoration: none; }
+        footer a:hover { color: #fff; }
+        
+        @media (max-width: 600px) {
+            nav { flex-direction: column; gap: 1rem; text-align: center; }
+            .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.75rem 1.25rem; }
+            .container { padding: 1.5rem 1rem; }
+            .release-card { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+            .release-link { align-self: flex-end; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="nav-logo">⚡ Kell</a>
+            <div class="nav-links">
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/data/" class="active">Data</a>
+                <a href="/pricing.html">Pricing</a>
+            </div>
+        </nav>
+        
+        <div class="breadcrumb"><a href="/data/">Data</a> → Releases</div>
+        
+        <h1>Recent Releases</h1>
+        <p class="subtitle">What AI coding tools shipped this week</p>
+        <p class="updated">Updated: <span id="updated-date">Loading...</span></p>
+        
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-value" id="releases-this-week">—</div>
+                <div class="stat-label">This Week</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="tools-tracked">—</div>
+                <div class="stat-label">Tools Tracked</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="most-active">—</div>
+                <div class="stat-label">Most Active</div>
+            </div>
+        </div>
+        
+        <div id="insight-box" class="insight" style="display: none;">
+            <strong>This week:</strong> <span id="insight-text"></span>
+        </div>
+        
+        <h2 class="section-title">🔥 This Week</h2>
+        <div id="recent-releases" class="release-list">
+            <p style="color: #666;">Loading...</p>
+        </div>
+        
+        <h2 class="section-title">📦 Latest by Tool</h2>
+        <div id="latest-by-tool" class="release-list">
+            <p style="color: #666;">Loading...</p>
+        </div>
+        
+        <footer>
+            <p>Data from GitHub Releases · Built by <a href="/about.html">Kell</a> · <a href="mailto:hi@kell.cx">hi@kell.cx</a></p>
+        </footer>
+    </div>
+    
+    <script>
+    (async function() {
+        try {
+            const res = await fetch('/data/releases.json');
+            const data = await res.json();
+            
+            // Update date
+            const updatedDate = new Date(data.generatedAt);
+            document.getElementById('updated-date').textContent = updatedDate.toLocaleDateString('en-US', { 
+                month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit'
+            });
+            
+            // Update stats
+            document.getElementById('releases-this-week').textContent = data.summary.releasedThisWeek;
+            document.getElementById('tools-tracked').textContent = data.toolCount;
+            
+            // Find most active tool this week
+            const toolCounts = {};
+            data.recentReleases.forEach(r => {
+                toolCounts[r.tool] = (toolCounts[r.tool] || 0) + 1;
+            });
+            const mostActive = Object.entries(toolCounts).sort((a, b) => b[1] - a[1])[0];
+            if (mostActive) {
+                document.getElementById('most-active').textContent = mostActive[0];
+                
+                // Show insight
+                document.getElementById('insight-box').style.display = 'block';
+                document.getElementById('insight-text').textContent = 
+                    `${mostActive[0]} shipped ${mostActive[1]} releases. ` +
+                    `${data.summary.releasedThisWeek} total releases across ${Object.keys(toolCounts).length} tools.`;
+            }
+            
+            // Render recent releases
+            const recentContainer = document.getElementById('recent-releases');
+            if (data.recentReleases.length > 0) {
+                recentContainer.innerHTML = data.recentReleases.map(r => `
+                    <div class="release-card">
+                        <div class="release-info">
+                            <span class="release-tool">${r.tool}</span>
+                            <span class="release-version">${r.version}</span>
+                            ${r.isPrerelease ? '<span class="prerelease">Pre</span>' : ''}
+                            <span class="release-time">${r.relativeTime}</span>
+                        </div>
+                        <a href="${r.url}" target="_blank" class="release-link">View →</a>
+                    </div>
+                `).join('');
+            } else {
+                recentContainer.innerHTML = '<p style="color: #666;">No releases this week.</p>';
+            }
+            
+            // Render latest by tool
+            const latestContainer = document.getElementById('latest-by-tool');
+            latestContainer.innerHTML = data.latestByTool.map(r => `
+                <div class="release-card">
+                    <div class="release-info">
+                        <span class="release-tool">${r.name}</span>
+                        <span class="release-version">${r.latestVersion}</span>
+                        ${r.isPrerelease ? '<span class="prerelease">Pre</span>' : ''}
+                        <span class="release-time">${r.relativeTime}</span>
+                    </div>
+                    <a href="${r.url}" target="_blank" class="release-link">View →</a>
+                </div>
+            `).join('');
+            
+        } catch (e) {
+            console.error('Failed to load data:', e);
+            document.getElementById('recent-releases').innerHTML = '<p style="color: #ef4444;">Failed to load release data.</p>';
+        }
+    })();
+    </script>
+</body>
+</html>

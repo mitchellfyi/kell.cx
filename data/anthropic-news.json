@@ -1,0 +1,53 @@
+{
+  "scraped_at": "2026-02-11T23:11:33.595Z",
+  "source": "anthropic.com",
+  "stats": {
+    "news_count": 3,
+    "research_count": 4,
+    "total_unique": 7
+  },
+  "items": [
+    {
+      "title": "Introducing Claude Opus 4.6",
+      "url": "https://www.anthropic.com/news/claude-opus-4-6",
+      "source": "anthropic-news",
+      "category": "model"
+    },
+    {
+      "title": "News",
+      "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
+      "source": "anthropic-news",
+      "category": "announcement"
+    },
+    {
+      "title": "Products",
+      "url": "https://www.anthropic.com/news/covering-electricity-price-increases",
+      "source": "anthropic-news",
+      "category": "announcement"
+    },
+    {
+      "title": "Interpretability",
+      "url": "https://www.anthropic.com/research/team/alignment",
+      "source": "anthropic-research",
+      "category": "announcement"
+    },
+    {
+      "title": "Project Vend: Phase two",
+      "url": "https://www.anthropic.com/research/project-vend-2",
+      "source": "anthropic-research",
+      "category": "announcement"
+    },
+    {
+      "title": "Publications",
+      "url": "https://www.anthropic.com/research/introspection",
+      "source": "anthropic-research",
+      "category": "announcement"
+    },
+    {
+      "title": "Products",
+      "url": "https://www.anthropic.com/research/AI-assistance-coding-skills",
+      "source": "anthropic-research",
+      "category": "announcement"
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "generatedAt": "2026-02-11T18:41:24.237Z",
+  "packageCount": 10,
+  "packages": [
+    {
+      "package": "litellm",
+      "tool": "LiteLLM",
+      "category": "llm-sdk",
+      "version": "1.81.10",
+      "summary": "Library to easily interface with LLM API providers",
+      "lastDay": 2809265,
+      "lastWeek": 15432778,
+      "lastMonth": 57844343
+    },
+    {
+      "package": "anthropic",
+      "tool": "Anthropic SDK",
+      "category": "llm-sdk",
+      "version": "0.79.0",
+      "summary": "The official Python library for the anthropic API",
+      "lastDay": 2444029,
+      "lastWeek": 13036036,
+      "lastMonth": 46194280
+    },
+    {
+      "package": "llama-index",
+      "tool": "LlamaIndex",
+      "category": "framework",
+      "version": "0.14.14",
+      "summary": "Interface between LLMs and your data",
+      "lastDay": 387836,
+      "lastWeek": 2109289,
+      "lastMonth": 7436071
+    },
+    {
+      "package": "outlines",
+      "tool": "Outlines",
+      "category": "framework",
+      "version": "1.2.10",
+      "summary": "Probabilistic Generative Model Programming",
+      "lastDay": 51520,
+      "lastWeek": 306074,
+      "lastMonth": 1435073
+    },
+    {
+      "package": "dspy-ai",
+      "tool": "DSPy",
+      "category": "framework",
+      "version": "3.1.3",
+      "summary": "DSPy",
+      "lastDay": 56476,
+      "lastWeek": 316100,
+      "lastMonth": 1102864
+    },
+    {
+      "package": "aider-chat",
+      "tool": "Aider",
+      "category": "ai-coding",
+      "version": "0.86.1",
+      "summary": "Aider is AI pair programming in your terminal",
+      "lastDay": 25285,
+      "lastWeek": 179391,
+      "lastMonth": 568207
+    },
+    {
+      "package": "autogen",
+      "tool": "AutoGen",
+      "category": "agents",
+      "version": "0.11.0",
+      "summary": "Alias package for ag2",
+      "lastDay": 6137,
+      "lastWeek": 39853,
+      "lastMonth": 145427
+    },
+    {
+      "package": "marvin",
+      "tool": "Marvin",
+      "category": "framework",
+      "version": "3.2.6",
+      "summary": "a simple and powerful tool to get things done with AI",
+      "lastDay": 2348,
+      "lastWeek": 12610,
+      "lastMonth": 47617
+    },
+    {
+      "package": "aider-install",
+      "tool": "Aider",
+      "category": "ai-coding",
+      "version": "0.2.0",
+      "summary": "Installer for the aider AI pair programming CLI tool.",
+      "lastDay": 1201,
+      "lastWeek": 6207,
+      "lastMonth": 27969
+    },
+    {
+      "package": "guidance",
+      "tool": "Guidance",
+      "category": "framework",
+      "version": "0.3.1",
+      "summary": "A guidance language for controlling large language models.",
+      "lastDay": 1622,
+      "lastWeek": 6262,
+      "lastMonth": 22264
+    }
+  ],
+  "byCategory": {
+    "ai-coding": [
+      {
+        "package": "aider-chat",
+        "tool": "Aider",
+        "category": "ai-coding",
+        "version": "0.86.1",
+        "summary": "Aider is AI pair programming in your terminal",
+        "lastDay": 25285,
+        "lastWeek": 179391,
+        "lastMonth": 568207
+      },
+      {
+        "package": "aider-install",
+        "tool": "Aider",
+        "category": "ai-coding",
+        "version": "0.2.0",
+        "summary": "Installer for the aider AI pair programming CLI tool.",
+        "lastDay": 1201,
+        "lastWeek": 6207,
+        "lastMonth": 27969
+      }
+    ],
+    "llm-sdk": [
+      {
+        "package": "litellm",
+        "tool": "LiteLLM",
+        "category": "llm-sdk",
+        "version": "1.81.10",
+        "summary": "Library to easily interface with LLM API providers",
+        "lastDay": 2809265,
+        "lastWeek": 15432778,
+        "lastMonth": 57844343
+      },
+      {
+        "package": "anthropic",
+        "tool": "Anthropic SDK",
+        "category": "llm-sdk",
+        "version": "0.79.0",
+        "summary": "The official Python library for the anthropic API",
+        "lastDay": 2444029,
+        "lastWeek": 13036036,
+        "lastMonth": 46194280
+      }
+    ],
+    "framework": [
+      {
+        "package": "llama-index",
+        "tool": "LlamaIndex",
+        "category": "framework",
+        "version": "0.14.14",
+        "summary": "Interface between LLMs and your data",
+        "lastDay": 387836,
+        "lastWeek": 2109289,
+        "lastMonth": 7436071
+      },
+      {
+        "package": "outlines",
+        "tool": "Outlines",
+        "category": "framework",
+        "version": "1.2.10",
+        "summary": "Probabilistic Generative Model Programming",
+        "lastDay": 51520,
+        "lastWeek": 306074,
+        "lastMonth": 1435073
+      },
+      {
+        "package": "dspy-ai",
+        "tool": "DSPy",
+        "category": "framework",
+        "version": "3.1.3",
+        "summary": "DSPy",
+        "lastDay": 56476,
+        "lastWeek": 316100,
+        "lastMonth": 1102864
+      },
+      {
+        "package": "marvin",
+        "tool": "Marvin",
+        "category": "framework",
+        "version": "3.2.6",
+        "summary": "a simple and powerful tool to get things done with AI",
+        "lastDay": 2348,
+        "lastWeek": 12610,
+        "lastMonth": 47617
+      },
+      {
+        "package": "guidance",
+        "tool": "Guidance",
+        "category": "framework",
+        "version": "0.3.1",
+        "summary": "A guidance language for controlling large language models.",
+        "lastDay": 1622,
+        "lastWeek": 6262,
+        "lastMonth": 22264
+      }
+    ],
+    "agents": [
+      {
+        "package": "autogen",
+        "tool": "AutoGen",
+        "category": "agents",
+        "version": "0.11.0",
+        "summary": "Alias package for ag2",
+        "lastDay": 6137,
+        "lastWeek": 39853,
+        "lastMonth": 145427
+      }
+    ]
+  },
+  "summary": {
+    "aiCodingDownloads": 596176,
+    "sdkDownloads": 104038623,
+    "frameworkDownloads": 10043889,
+    "totalMonthly": 114824115
+  },
+  "errors": [
+    "mentat: No data",
+    "openai: No data",
+    "langchain: No data",
+    "pydantic-ai: No data",
+    "instructor: No data",
+    "crewai: No data"
+  ]
+}

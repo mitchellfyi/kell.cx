@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Monitor Your Competitors (Without Going Crazy) — Kell</title>
+    <meta name="description" content="A practical guide to competitive intelligence. What to track, where to find it, and how to automate the boring parts.">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How to Monitor Your Competitors (Without Going Crazy)">
+    <meta property="og:description" content="A practical guide to competitive intelligence. What to track, where to find it, and how to automate the boring parts.">
+    <meta property="og:url" content="https://kell.cx/blog-competitor-monitoring-guide.html">
+    
+    <link rel="canonical" href="https://kell.cx/blog-competitor-monitoring-guide.html">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #fafafa;
+            min-height: 100vh;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .nav-logo { color: #fff; text-decoration: none; font-weight: 600; }
+        .nav-links { display: flex; gap: 1.5rem; }
+        .nav-links a { color: #888; text-decoration: none; font-size: 0.9rem; }
+        .nav-links a:hover { color: #fff; }
+        .nav-links a.active { color: #fff; }
+        
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            text-align: center;
+            color: #555;
+            font-size: 0.85rem;
+        }
+        footer a { color: #888; text-decoration: none; }
+        footer a:hover { color: #fff; }
+        
+        @media (max-width: 600px) {
+            nav { flex-direction: column; gap: 1rem; text-align: center; }
+            .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.75rem 1.25rem; }
+            .container { padding: 1.5rem 1rem; }
+        }
+        
+        .meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        h1 { font-size: 2.2rem; margin-bottom: 0.75rem; line-height: 1.2; }
+        h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; color: #fff; }
+        h3 { font-size: 1.2rem; margin: 2rem 0 0.75rem; color: #eee; }
+        p { margin-bottom: 1.25rem; color: #ccc; }
+        a { color: #3b82f6; }
+        a:hover { color: #60a5fa; }
+        
+        ul, ol { margin: 1rem 0 1.5rem 1.5rem; color: #bbb; }
+        li { margin-bottom: 0.5rem; }
+        
+        .highlight {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 3px solid #3b82f6;
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .highlight p { margin: 0; color: #ccc; }
+        
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        th { color: #888; font-weight: 500; font-size: 0.8rem; text-transform: uppercase; }
+        td { color: #ccc; }
+        
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        .cta {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(59, 130, 246, 0.05));
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        .cta h3 { margin-top: 0; color: #fff; }
+        .cta p { color: #aaa; margin-bottom: 1.5rem; }
+        .cta-btn {
+            display: inline-block;
+            background: #3b82f6;
+            color: #fff !important;
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .cta-btn:hover { background: #2563eb; }
+        
+        .footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            font-size: 0.85rem;
+            color: #555;
+        }
+        .footer a { color: #888; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="nav-logo">⚡ Kell</a>
+            <div class="nav-links">
+                <a href="/about.html">About</a>
+                <a href="/blog.html" class="active">Blog</a>
+                <a href="/data/">Data</a>
+                <a href="/pricing.html">Pricing</a>
+            </div>
+        </nav>
+        
+        <article>
+            <h1>How to Monitor Your Competitors (Without Going Crazy)</h1>
+            <p class="meta">February 11, 2026 · 8 min read</p>
+            
+            <p>You know you should track your competitors. Everyone says so. But in practice, it either becomes an obsessive time sink or something you abandon after a week.</p>
+            
+            <p>Here's the thing: most competitive intelligence advice is written for enterprise companies with dedicated CI teams. If you're a founder, PM, or small team, you need something that actually fits your workflow.</p>
+            
+            <p>This guide is what I wish existed when I started building competitive monitoring systems. Practical, prioritized, and automatable.</p>
+            
+            <h2>What Actually Matters (and What Doesn't)</h2>
+            
+            <p>Not all competitive signals are equal. Some predict future moves. Most are noise. Here's the hierarchy:</p>
+            
+            <h3>🔴 High Signal (Track Weekly)</h3>
+            
+            <ul>
+                <li><strong>Pricing changes</strong> — The clearest signal of strategy shift. Are they going upmarket? Downmarket? Adding usage-based pricing?</li>
+                <li><strong>Job postings</strong> — Hiring an ML team? Going enterprise? Expanding to new geo? Jobs reveal plans 6-12 months before announcements.</li>
+                <li><strong>Funding/M&A</strong> — Changes what's possible. A competitor with fresh capital will move differently than one on fumes.</li>
+                <li><strong>Major feature launches</strong> — New capabilities that change the competitive landscape.</li>
+            </ul>
+            
+            <h3>🟡 Medium Signal (Track Monthly)</h3>
+            
+            <ul>
+                <li><strong>Changelog updates</strong> — Shows velocity and focus areas. Weekly changelogs = aggressive iteration.</li>
+                <li><strong>VS Code / Extension installs</strong> — Proxy for adoption trends (for dev tools).</li>
+                <li><strong>App store ratings</strong> — User satisfaction trends over time.</li>
+                <li><strong>Community size</strong> — Discord members, GitHub stars, subreddit subscribers.</li>
+            </ul>
+            
+            <h3>🟢 Low Signal (Track Quarterly)</h3>
+            
+            <ul>
+                <li><strong>Social media followers</strong> — Vanity metric, easily gamed.</li>
+                <li><strong>Blog posts</strong> — Mostly content marketing noise.</li>
+                <li><strong>Conference talks</strong> — Nice to know, rarely actionable.</li>
+            </ul>
+            
+            <div class="highlight">
+                <p><strong>Rule of thumb:</strong> If a signal would change what you're building or how you're positioning, track it weekly. Everything else is optional.</p>
+            </div>
+            
+            <h2>Where to Find the Data</h2>
+            
+            <p>Here's where to find each signal and what to look for:</p>
+            
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Signal</th>
+                            <th>Source</th>
+                            <th>What to watch</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pricing</td>
+                            <td>Pricing pages, Internet Archive</td>
+                            <td>New tiers, price increases, feature gates</td>
+                        </tr>
+                        <tr>
+                            <td>Jobs</td>
+                            <td>LinkedIn, careers pages, Greenhouse</td>
+                            <td>Team growth, new roles, locations</td>
+                        </tr>
+                        <tr>
+                            <td>Funding</td>
+                            <td>Crunchbase, TechCrunch, SEC filings</td>
+                            <td>Round size, investors, valuation signals</td>
+                        </tr>
+                        <tr>
+                            <td>Product</td>
+                            <td>Changelogs, GitHub, ProductHunt</td>
+                            <td>Major releases, pivot signals</td>
+                        </tr>
+                        <tr>
+                            <td>Adoption</td>
+                            <td>VS Code Marketplace, npm, PyPI</td>
+                            <td>Install velocity, not absolutes</td>
+                        </tr>
+                        <tr>
+                            <td>Sentiment</td>
+                            <td>Reddit, HN, Stack Overflow</td>
+                            <td>Pain points, praise, switching signals</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h2>Building Your Tracking System</h2>
+            
+            <p>You have three options, each with tradeoffs:</p>
+            
+            <h3>Option 1: Manual (Free, High Effort)</h3>
+            
+            <p>Create a spreadsheet. Check each competitor once a week. Record changes.</p>
+            
+            <p><strong>Works if:</strong> You have 3-5 competitors max and discipline to check weekly.</p>
+            
+            <p><strong>Fails when:</strong> You get busy (spoiler: you will). Important changes slip through because you checked on Tuesday but pricing changed on Wednesday.</p>
+            
+            <h3>Option 2: DIY Automation (Low Cost, High Setup)</h3>
+            
+            <p>Write scrapers that check pages daily. Store history. Diff for changes.</p>
+            
+            <p><strong>Stack I'd recommend:</strong></p>
+            <ul>
+                <li>Playwright or Puppeteer for scraping</li>
+                <li>Cron jobs or GitHub Actions for scheduling</li>
+                <li>Simple JSON storage with git history</li>
+                <li>Slack/email notifications for changes</li>
+            </ul>
+            
+            <p><strong>Works if:</strong> You're technical and enjoy building internal tools.</p>
+            
+            <p><strong>Fails when:</strong> Sites change their structure, you hit rate limits, you don't have time to maintain scrapers that inevitably break.</p>
+            
+            <h3>Option 3: Use a Service (Low Effort, Has Cost)</h3>
+            
+            <p>Pay someone else to handle the infrastructure. Get a daily digest.</p>
+            
+            <p><strong>Works if:</strong> Your time is worth more than the subscription cost.</p>
+            
+            <p><strong>Fails when:</strong> The service doesn't track your specific competitors or signals.</p>
+            
+            <div class="highlight">
+                <p><strong>My take:</strong> Start with Option 1 to validate what you actually care about. If you find yourself consistently checking the same things, either automate it or pay for a service. Time spent refreshing competitor pricing pages is time not spent building your product.</p>
+            </div>
+            
+            <h2>Making It Actionable</h2>
+            
+            <p>Data without action is just trivia. Here's how to turn competitive intel into decisions:</p>
+            
+            <h3>Pricing Changes → Positioning Review</h3>
+            <p>When a competitor changes pricing, ask: Does this affect our positioning? Should we adjust our tiers? Is there a gap we can fill?</p>
+            
+            <h3>Hiring Patterns → Roadmap Hints</h3>
+            <p>If a competitor suddenly hires 5 ML engineers, they're probably building something AI-related. If they're hiring enterprise sales, they're going upmarket. Plan accordingly.</p>
+            
+            <h3>Feature Launches → Build/Buy/Partner</h3>
+            <p>When competitors ship new features, decide quickly: build it yourself, buy/integrate something, or explicitly choose not to compete on that dimension.</p>
+            
+            <h3>Funding News → Timeline Shifts</h3>
+            <p>A competitor raising $100M means they can sustain losses longer and move faster. A competitor doing layoffs means they're cutting scope. Adjust your race pace.</p>
+            
+            <h2>The "So What?" Test</h2>
+            
+            <p>Before adding any new signal to your tracking, ask: "If this changes, would I do anything differently?"</p>
+            
+            <p>If the answer is no, don't track it. Competitive intelligence should inform decisions, not satisfy curiosity.</p>
+            
+            <p>Track less, but track the right things.</p>
+            
+            <div class="cta">
+                <h3>Too busy to build this yourself?</h3>
+                <p>Briefing tracks AI coding tools daily — pricing, jobs, features, funding. Wake up to intel, not research.</p>
+                <a href="/#signup" class="cta-btn">Get daily briefings →</a>
+            </div>
+            
+            <h2>What We Track at Kell</h2>
+            
+            <p>For context, here's what our competitive intelligence system monitors for AI coding tools:</p>
+            
+            <ul>
+                <li><strong>15 competitors</strong> — Cursor, Copilot, Devin, Windsurf, Replit, and more</li>
+                <li><strong>Pricing pages</strong> — Daily checks, diff detection</li>
+                <li><strong>Job boards</strong> — LinkedIn searches + careers pages</li>
+                <li><strong>Changelogs</strong> — Product updates and version changes</li>
+                <li><strong>VS Code Marketplace</strong> — Install counts, ratings, versions</li>
+                <li><strong>GitHub releases</strong> — For open-source tools</li>
+                <li><strong>Hacker News + Reddit</strong> — Mentions and sentiment</li>
+                <li><strong>Funding news</strong> — TechCrunch, VentureBeat, Crunchbase</li>
+                <li><strong>Benchmark scores</strong> — Aider Polyglot leaderboard</li>
+                <li><strong>Community size</strong> — Discord members, GitHub stars</li>
+            </ul>
+            
+            <p>All of this synthesizes into a single daily email. No dashboards to check. No tabs to keep open. Just signal.</p>
+            
+            <p><a href="/sample.html">See a sample briefing →</a></p>
+        </article>
+        
+        <footer>
+            <p>Built by <a href="/about.html">Kell</a> · <a href="mailto:hi@kell.cx">hi@kell.cx</a></p>
+        </footer>
+    </div>
+</body>
+</html>

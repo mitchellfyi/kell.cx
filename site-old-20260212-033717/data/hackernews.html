@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackerNews Buzz — Kell</title>
+    <meta name="description" content="AI coding tool mentions and discussions on HackerNews. Track which tools are generating the most buzz.">
+    <meta property="og:title" content="HackerNews Buzz — AI Coding Tools">
+    <meta property="og:description" content="Track AI coding tool mentions and discussions on HackerNews">
+    <meta property="og:image" content="https://kell.cx/og-image.png">
+    <meta property="og:url" content="https://kell.cx/data/hackernews.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #fafafa;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .nav-logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-links a {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .nav-links a:hover { color: #fff; }
+        .nav-links a.active { color: #fff; }
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        .breadcrumb a {
+            color: #888;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover { color: #fff; }
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: #888;
+            margin-bottom: 2rem;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .stat-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .stat-card .value {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #3b82f6;
+        }
+        .stat-card .label {
+            font-size: 0.8rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            color: #fff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        th, td {
+            text-align: left;
+            padding: 0.75rem 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        th {
+            color: #888;
+            font-weight: 500;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        td { color: #ccc; }
+        tr:hover td { background: rgba(255,255,255,0.02); }
+        .tool-cell { width: 100px; }
+        .tool-tag {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: rgba(59,130,246,0.15);
+            color: #3b82f6;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .title-cell a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .title-cell a:hover { text-decoration: underline; }
+        .hn-link {
+            color: #ff6600 !important;
+            margin-left: 0.5rem;
+            font-size: 0.8rem;
+        }
+        .stat-cell {
+            text-align: right;
+            width: 80px;
+            color: #888;
+        }
+        .date-cell {
+            text-align: right;
+            width: 70px;
+            color: #666;
+            font-size: 0.85rem;
+        }
+        .rank-cell {
+            width: 50px;
+            color: #666;
+        }
+        .updated {
+            font-size: 0.8rem;
+            color: #555;
+            margin-top: 2rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            text-align: center;
+            color: #555;
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: #888;
+            text-decoration: none;
+        }
+        footer a:hover { color: #fff; }
+        
+        @media (max-width: 600px) {
+            .container { padding: 1.5rem 1rem; }
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.75rem 1.25rem;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            table { font-size: 0.8rem; }
+            th, td { padding: 0.5rem 0.25rem; }
+            .tool-cell { width: 70px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="nav-logo">⚡ Kell</a>
+            <div class="nav-links">
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/data/" class="active">Data</a>
+                <a href="/pricing.html">Pricing</a>
+            </div>
+        </nav>
+        
+        <div class="breadcrumb"><a href="/data/">Data</a> → HackerNews Buzz</div>
+        
+        <h1>📰 HackerNews Buzz</h1>
+        <p class="subtitle">AI coding tool mentions and discussions — Last 30 days</p>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="value">81</div>
+                <div class="label">Stories</div>
+            </div>
+            <div class="stat-card">
+                <div class="value">5.7K</div>
+                <div class="label">Total Points</div>
+            </div>
+            <div class="stat-card">
+                <div class="value">3.3K</div>
+                <div class="label">Comments</div>
+            </div>
+            <div class="stat-card">
+                <div class="value">10</div>
+                <div class="label">Viral Posts</div>
+            </div>
+        </div>
+        
+        <h2>🏆 Tool Rankings</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Tool</th>
+                    <th style="text-align:right">Mentions</th>
+                    <th style="text-align:right">Points</th>
+                    <th style="text-align:right">Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td class="rank-cell">#1</td>
+                        <td>Claude Code</td>
+                        <td class="stat-cell">10</td>
+                        <td class="stat-cell">3.9K</td>
+                        <td class="stat-cell">2.6K</td>
+                    </tr>
+                    <tr>
+                        <td class="rank-cell">#2</td>
+                        <td>Cline</td>
+                        <td class="stat-cell">10</td>
+                        <td class="stat-cell">957</td>
+                        <td class="stat-cell">311</td>
+                    </tr>
+                    <tr>
+                        <td class="rank-cell">#3</td>
+                        <td>Continue</td>
+                        <td class="stat-cell">10</td>
+                        <td class="stat-cell">270</td>
+                        <td class="stat-cell">145</td>
+                    </tr>
+                    <tr>
+                        <td class="rank-cell">#4</td>
+                        <td>Codeium</td>
+                        <td class="stat-cell">10</td>
+                        <td class="stat-cell">230</td>
+                        <td class="stat-cell">64</td>
+                    </tr>
+                    <tr>
+                        <td class="rank-cell">#5</td>
+                        <td>Tabnine</td>
+                        <td class="stat-cell">2</td>
+                        <td class="stat-cell">193</td>
+                        <td class="stat-cell">74</td>
+                    </tr>
+                    <tr>
+                        <td class="rank-cell">#6</td>
+                        <td>Copilot</td>
+                        <td class="stat-cell">10</td>
+                        <td class="stat-cell">49</td>
+                        <td class="stat-cell">10</td>
+                    </tr>
+                    <tr>
+                        <td class="rank-cell">#7</td>
+                        <td>Cursor</td>
+                        <td class="stat-cell">10</td>
+                        <td class="stat-cell">38</td>
+                        <td class="stat-cell">21</td>
+                    </tr>
+                    <tr>
+                        <td class="rank-cell">#8</td>
+                        <td>GPT Pilot</td>
+                        <td class="stat-cell">9</td>
+                        <td class="stat-cell">18</td>
+                        <td class="stat-cell">13</td>
+                    </tr>
+                    <tr>
+                        <td class="rank-cell">#9</td>
+                        <td>Aider</td>
+                        <td class="stat-cell">5</td>
+                        <td class="stat-cell">9</td>
+                        <td class="stat-cell">5</td>
+                    </tr>
+                    <tr>
+                        <td class="rank-cell">#10</td>
+                        <td>OpenHands</td>
+                        <td class="stat-cell">3</td>
+                        <td class="stat-cell">6</td>
+                        <td class="stat-cell">2</td>
+                    </tr>
+            </tbody>
+        </table>
+        
+        <h2>📋 Recent Stories</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tool</th>
+                    <th>Title</th>
+                    <th style="text-align:right">Points</th>
+                    <th style="text-align:right">💬</th>
+                    <th style="text-align:right">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Claude Code</span></td>
+                        <td class="title-cell">
+                            <a href="https://marginlab.ai/trackers/claude-code/" target="_blank" rel="noopener">Claude Code daily benchmarks for degradation tracking</a>
+                            <a href="https://news.ycombinator.com/item?id=46810282" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">🔥 760</td>
+                        <td class="stat-cell">355</td>
+                        <td class="date-cell">Jan 29</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Cline</span></td>
+                        <td class="title-cell">
+                            <a href="https://qwen.ai/blog?id=qwen3tts-0115" target="_blank" rel="noopener">Qwen3-TTS family is now open sourced: Voice design, clone, and generation</a>
+                            <a href="https://news.ycombinator.com/item?id=46719229" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">🔥 744</td>
+                        <td class="stat-cell">225</td>
+                        <td class="date-cell">Jan 22</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Claude Code</span></td>
+                        <td class="title-cell">
+                            <a href="https://twitter.com/NicerInPerson/status/2014989679796347375" target="_blank" rel="noopener">Claude Code's new hidden feature: Swarms</a>
+                            <a href="https://news.ycombinator.com/item?id=46743908" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">🔥 521</td>
+                        <td class="stat-cell">335</td>
+                        <td class="date-cell">Jan 24</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Claude Code</span></td>
+                        <td class="title-cell">
+                            <a href="https://www.theverge.com/tech/865689/microsoft-claude-code-anthropic-partnership-notepad" target="_blank" rel="noopener">Claude Code is suddenly everywhere inside Microsoft</a>
+                            <a href="https://news.ycombinator.com/item?id=46854999" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">🔥 408</td>
+                        <td class="stat-cell">524</td>
+                        <td class="date-cell">Feb 2</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Claude Code</span></td>
+                        <td class="title-cell">
+                            <a href="https://code.claude.com/docs/en/agent-teams" target="_blank" rel="noopener">Orchestrate teams of Claude Code sessions</a>
+                            <a href="https://news.ycombinator.com/item?id=46902368" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">🔥 395</td>
+                        <td class="stat-cell">225</td>
+                        <td class="date-cell">Feb 5</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Claude Code</span></td>
+                        <td class="title-cell">
+                            <a href="https://boxc.net/blog/2026/claude-code-connecting-to-local-models-when-your-quota-runs-out/" target="_blank" rel="noopener">Claude Code: connect to a local model when your quota runs out</a>
+                            <a href="https://news.ycombinator.com/item?id=46845845" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">🔥 386</td>
+                        <td class="stat-cell">211</td>
+                        <td class="date-cell">Feb 1</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Claude Code</span></td>
+                        <td class="title-cell">
+                            <a href="https://blog.emilburzo.com/2026/01/running-claude-code-dangerously-safely/" target="_blank" rel="noopener">Running Claude Code dangerously (safely)</a>
+                            <a href="https://news.ycombinator.com/item?id=46690907" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">🔥 351</td>
+                        <td class="stat-cell">258</td>
+                        <td class="date-cell">Jan 20</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Claude Code</span></td>
+                        <td class="title-cell">
+                            <a href="https://symmetrybreak.ing/blog/claude-code-is-being-dumbed-down/" target="_blank" rel="noopener">Claude Code Is Being Dumbed Down</a>
+                            <a href="https://news.ycombinator.com/item?id=46978710" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">🔥 344</td>
+                        <td class="stat-cell">254</td>
+                        <td class="date-cell">Feb 11</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Claude Code</span></td>
+                        <td class="title-cell">
+                            <a href="https://www.fluid.sh/" target="_blank" rel="noopener">Claude Code for Infrastructure</a>
+                            <a href="https://news.ycombinator.com/item?id=46889703" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">🔥 276</td>
+                        <td class="stat-cell">176</td>
+                        <td class="date-cell">Feb 4</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Claude Code</span></td>
+                        <td class="title-cell">
+                            <a href="https://blog.vjeux.com/2026/analysis/porting-100k-lines-from-typescript-to-rust-using-claude-code-in-a-month.html" target="_blank" rel="noopener">Porting 100k lines from TypeScript to Rust using Claude Code in a month</a>
+                            <a href="https://news.ycombinator.com/item?id=46765694" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">🔥 255</td>
+                        <td class="stat-cell">164</td>
+                        <td class="date-cell">Jan 26</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Claude Code</span></td>
+                        <td class="title-cell">
+                            <a href="https://github.com/davidbeesley/claude-chill" target="_blank" rel="noopener">Claude Chill: Fix Claude Code's flickering in terminal</a>
+                            <a href="https://news.ycombinator.com/item?id=46699072" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">📈 192</td>
+                        <td class="stat-cell">148</td>
+                        <td class="date-cell">Jan 20</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Cline</span></td>
+                        <td class="title-cell">
+                            <a href="https://github.com/artifact-keeper" target="_blank" rel="noopener">Show HN: Artifact Keeper – Open-Source Artifactory/Nexus Alternative in Rust</a>
+                            <a href="https://news.ycombinator.com/item?id=46909037" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">📈 166</td>
+                        <td class="stat-cell">68</td>
+                        <td class="date-cell">Feb 6</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Tabnine</span></td>
+                        <td class="title-cell">
+                            <a href="https://arcadeblogger.com/2026/02/02/unseen-footage-of-atari-battlezone-cabinet-production/" target="_blank" rel="noopener">Unseen Footage of Atari Battlezone Arcade Cabinet Production</a>
+                            <a href="https://news.ycombinator.com/item?id=46868343" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">📈 163</td>
+                        <td class="stat-cell">64</td>
+                        <td class="date-cell">Feb 3</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Codeium</span></td>
+                        <td class="title-cell">
+                            <a href="https://www.wiz.io/blog/wiz-research-codebreach-vulnerability-aws-codebuild" target="_blank" rel="noopener">Supply Chain Vuln Compromised Core AWS GitHub Repos &amp; Threatened the AWS Console</a>
+                            <a href="https://news.ycombinator.com/item?id=46636093" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">📈 160</td>
+                        <td class="stat-cell">38</td>
+                        <td class="date-cell">Jan 15</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Continue</span></td>
+                        <td class="title-cell">
+                            <a href="https://news.ycombinator.com/item?id=46917886" target="_blank" rel="noopener">Tell HN: I'm a PM at a big system of record SaaS. We're cooked</a>
+                            <a href="https://news.ycombinator.com/item?id=46917886" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">📈 103</td>
+                        <td class="stat-cell">45</td>
+                        <td class="date-cell">Feb 6</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Continue</span></td>
+                        <td class="title-cell">
+                            <a href="https://news.ycombinator.com/item?id=46872733" target="_blank" rel="noopener">Launch HN: Modelence (YC S25) – App Builder with TypeScript / MongoDB Framework</a>
+                            <a href="https://news.ycombinator.com/item?id=46872733" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">📈 72</td>
+                        <td class="stat-cell">44</td>
+                        <td class="date-cell">Feb 3</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Codeium</span></td>
+                        <td class="title-cell">
+                            <a href="https://codemic.io/#hn" target="_blank" rel="noopener">Show HN: CodeMic</a>
+                            <a href="https://news.ycombinator.com/item?id=46933135" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">💬 47</td>
+                        <td class="stat-cell">24</td>
+                        <td class="date-cell">Feb 8</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Continue</span></td>
+                        <td class="title-cell">
+                            <a href="https://github.com/tilework-tech/nori-cli" target="_blank" rel="noopener">Show HN: Nori CLI, a better interface for Claude Code (no flicker)</a>
+                            <a href="https://news.ycombinator.com/item?id=46616562" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">💬 37</td>
+                        <td class="stat-cell">9</td>
+                        <td class="date-cell">Jan 14</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Tabnine</span></td>
+                        <td class="title-cell">
+                            <a href="https://cabinetmagazine.org/issues/57/wertheim.php" target="_blank" rel="noopener">The fax numbers of the beast, and other mathematical sports</a>
+                            <a href="https://news.ycombinator.com/item?id=46867799" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">💬 30</td>
+                        <td class="stat-cell">10</td>
+                        <td class="date-cell">Feb 3</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Continue</span></td>
+                        <td class="title-cell">
+                            <a href="https://news.ycombinator.com/item?id=46603473" target="_blank" rel="noopener">Tell HN: The Google Tenor GIF API has been shut down</a>
+                            <a href="https://news.ycombinator.com/item?id=46603473" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">💬 26</td>
+                        <td class="stat-cell">17</td>
+                        <td class="date-cell">Jan 13</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Cline</span></td>
+                        <td class="title-cell">
+                            <a href="https://blog.kilo.ai/p/cline-just-acqui-hired" target="_blank" rel="noopener">Was Cline just acqui-hired by OpenAI?</a>
+                            <a href="https://news.ycombinator.com/item?id=46808769" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">📰 15</td>
+                        <td class="stat-cell">0</td>
+                        <td class="date-cell">Jan 29</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Cline</span></td>
+                        <td class="title-cell">
+                            <a href="https://news.ycombinator.com/item?id=46965731" target="_blank" rel="noopener">Ask HN: Why is everyone here so AI-hyped?</a>
+                            <a href="https://news.ycombinator.com/item?id=46965731" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">💬 15</td>
+                        <td class="stat-cell">10</td>
+                        <td class="date-cell">Feb 10</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Codeium</span></td>
+                        <td class="title-cell">
+                            <a href="https://codemic.io/#" target="_blank" rel="noopener">Show HN: Record and share your coding sessions with CodeMic</a>
+                            <a href="https://news.ycombinator.com/item?id=46795468" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">📰 14</td>
+                        <td class="stat-cell">2</td>
+                        <td class="date-cell">Jan 28</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Continue</span></td>
+                        <td class="title-cell">
+                            <a href="https://news.ycombinator.com/item?id=46731498" target="_blank" rel="noopener">Locked out of my GCP account for 3 days, still charged, can't redirect domain</a>
+                            <a href="https://news.ycombinator.com/item?id=46731498" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">📰 14</td>
+                        <td class="stat-cell">4</td>
+                        <td class="date-cell">Jan 23</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Cursor</span></td>
+                        <td class="title-cell">
+                            <a href="https://gitbybit.com" target="_blank" rel="noopener">Show HN: GitByBit — Git course integrated into VSCode and Cursor</a>
+                            <a href="https://news.ycombinator.com/item?id=46779485" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">📰 13</td>
+                        <td class="stat-cell">7</td>
+                        <td class="date-cell">Jan 27</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Continue</span></td>
+                        <td class="title-cell">
+                            <a href="https://news.ycombinator.com/item?id=46634159" target="_blank" rel="noopener">Ask HN: What to teach my kid if AI does math and CS?</a>
+                            <a href="https://news.ycombinator.com/item?id=46634159" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">💬 12</td>
+                        <td class="stat-cell">22</td>
+                        <td class="date-cell">Jan 15</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Copilot</span></td>
+                        <td class="title-cell">
+                            <a href="https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/" target="_blank" rel="noopener">Build an agent into any app with the GitHub Copilot SDK</a>
+                            <a href="https://news.ycombinator.com/item?id=46722463" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">📰 11</td>
+                        <td class="stat-cell">1</td>
+                        <td class="date-cell">Jan 22</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Cursor</span></td>
+                        <td class="title-cell">
+                            <a href="https://news.ycombinator.com/item?id=46706156" target="_blank" rel="noopener">Ask HN: What are good resources to get familiar with AI code editors?</a>
+                            <a href="https://news.ycombinator.com/item?id=46706156" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">📰 9</td>
+                        <td class="stat-cell">8</td>
+                        <td class="date-cell">Jan 21</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">Copilot</span></td>
+                        <td class="title-cell">
+                            <a href="https://github.blog/changelog/2026-01-16-github-copilot-now-supports-opencode/" target="_blank" rel="noopener">GitHub Copilot now supports OpenCode</a>
+                            <a href="https://news.ycombinator.com/item?id=46654912" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">📰 9</td>
+                        <td class="stat-cell">1</td>
+                        <td class="date-cell">Jan 17</td>
+                    </tr>
+                    <tr>
+                        <td class="tool-cell"><span class="tool-tag">GPT Pilot</span></td>
+                        <td class="title-cell">
+                            <a href="https://news.ycombinator.com/item?id=46791551" target="_blank" rel="noopener">Ask HN: Vibe Researching&quot; with AI – Anyone Using It for Real?</a>
+                            <a href="https://news.ycombinator.com/item?id=46791551" class="hn-link" target="_blank" rel="noopener">↗</a>
+                        </td>
+                        <td class="stat-cell">📰 8</td>
+                        <td class="stat-cell">5</td>
+                        <td class="date-cell">Jan 28</td>
+                    </tr>
+            </tbody>
+        </table>
+        
+        <p class="updated">Last updated: Wed, 11 Feb 2026 20:21:05 GMT</p>
+        
+        <footer>
+            <p>Built by <a href="/about.html">Kell</a> · <a href="mailto:hi@kell.cx">hi@kell.cx</a></p>
+        </footer>
+    </div>
+</body>
+</html>

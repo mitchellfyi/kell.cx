@@ -1,0 +1,413 @@
+{
+  "generated_at": "2026-02-12T02:03:22.232Z",
+  "stats": {
+    "total_sources": 8,
+    "total_items": 372,
+    "recent_count": 30,
+    "older_count": 20
+  },
+  "recent": [
+    {
+      "title": "Show HN: agent alcove – Claude, GPT, and Gemini debate across forums",
+      "url": "https://agentalcove.ai",
+      "date": "2026-02-11T20:15:21.000Z",
+      "description": "1 points, 0 comments on HN",
+      "source": "hackernews",
+      "score": 34.8
+    },
+    {
+      "title": "llama.cpp: b7999",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b7999",
+      "date": "2026-02-11T16:53:12.000Z",
+      "description": "<details open>\n\ncommon : improve download error reporting (#19491)\n\nSigned-off-by: Adrien Gallouët <angt@huggingface.co>\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/",
+      "source": "github-releases",
+      "score": 32.1
+    },
+    {
+      "title": "How to Structure Inputs for Claude, ChatGPT, and Gemini",
+      "url": "https://app.writtte.com/read/wKYzFmP",
+      "date": "2026-02-11T16:31:39.000Z",
+      "description": "1 points, 0 comments on HN",
+      "source": "hackernews",
+      "score": 32
+    },
+    {
+      "title": "llama.cpp: b7998",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b7998",
+      "date": "2026-02-11T15:37:00.000Z",
+      "description": "<details open>\n\nhexagon: Add ARGSORT, DIV, SQR, SQRT, SUM_ROWS, GEGLU (#19406)\n\n* hexagon: add ARGSORT op\n\nCo-authored-by: Yarden Tal <yardent@qti.qualcomm.com>\n\n* hexagon: argsort reject tensors with",
+      "source": "github-releases",
+      "score": 31.8
+    },
+    {
+      "title": "llama.cpp: b7997",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b7997",
+      "date": "2026-02-11T14:06:42.000Z",
+      "description": "<details open>\n\nllama : correct typos 'occured' and 'occurences' (#19414)\n\nCo-authored-by: thecaptain789 <thecaptain789@users.noreply.github.com>\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (ar",
+      "source": "github-releases",
+      "score": 31.5
+    },
+    {
+      "title": "LlamaIndex: v0.14.14",
+      "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.14",
+      "date": "2026-02-10T23:08:46.000Z",
+      "description": "# Release Notes\n\n## [2026-02-10]\n\n### llama-index-callbacks-wandb [0.4.2]\n\n- Fix potential crashes and improve security defaults in core components ([#20610](https://github.com/run-llama/llama_index/p",
+      "source": "github-releases",
+      "score": 31.4
+    },
+    {
+      "title": "llama.cpp: b7996",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b7996",
+      "date": "2026-02-11T12:59:08.000Z",
+      "description": "<details open>\n\nmodel : fix wavtokenizer embedding notions (#19479)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b7996/llama-b799",
+      "source": "github-releases",
+      "score": 31.3
+    },
+    {
+      "title": "llama.cpp: b7995",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b7995",
+      "date": "2026-02-11T12:41:10.000Z",
+      "description": "<details open>\n\nggml : extend bin bcast for permuted src1 (#19484)\n\n* tests : extend bin bcast for permuted src1\n\n* cont : extend bin support\n\n* cont : s0 is always 1\n\n* tests : simplify\n\n</details>\n\n",
+      "source": "github-releases",
+      "score": 31.2
+    },
+    {
+      "title": "📰 TC: Apple's Siri revamp reportedly delayed... again",
+      "url": "https://techcrunch.com/2026/02/11/apples-siri-revamp-reportedly-delayed-again/",
+      "date": "2026-02-11T21:19:46.000Z",
+      "description": "While the new Siri was expected to launch with the upcoming iOS 26.4 update in March, now, the changes are expected to roll out more slowly over time, reportedly postponing some features until the May iOS update, or even until the release of iOS 27 in September.",
+      "source": "techcrunch-ai",
+      "score": 31
+    },
+    {
+      "title": "📰 TC: Elon Musk suggests spate of xAI exits have been push, not pull",
+      "url": "https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/",
+      "date": "2026-02-11T20:47:00.000Z",
+      "description": "At least nine engineers, including two co-founders, have announced their exits from xAI in the past week, fueling online speculation and raising questions about stability at Musk’s AI company amid mounting controversy.",
+      "source": "techcrunch-ai",
+      "score": 30.9
+    },
+    {
+      "title": "📝 Claude Opus 4.6: Unpacking Anthropic's Latest AI Safety Breakthroughs",
+      "url": "https://dev.to/alessandro_pignati/claude-opus-46-unpacking-anthropics-latest-ai-safety-breakthroughs-391f",
+      "date": "2026-02-11T16:13:01.000Z",
+      "description": "Remember when Anthropic's Claude Opus 4.6 dropped? It wasn't just another incremental update. This...",
+      "source": "devto-ai",
+      "score": 30
+    },
+    {
+      "title": "GLM-5: From Vibe Coding to Agentic Engineering",
+      "url": "https://simonwillison.net/2026/Feb/11/glm-5/#atom-everything",
+      "date": "2026-02-11T18:56:14.000Z",
+      "description": "<p><strong><a href=\"https://z.ai/blog/glm-5\">GLM-5: From Vibe Coding to Agentic Engineering</a></strong></p> This is a <em>huge</em> new MIT-licensed model: 754B parameters and <a href=\"https://huggin...",
+      "source": "rss-simon-willison",
+      "score": 29.5
+    },
+    {
+      "title": "📰 TC: How AI changes the math for startups, according to a Microsoft VP",
+      "url": "https://techcrunch.com/2026/02/11/how-ai-changes-the-math-for-startups-according-to-a-microsoft-vp/",
+      "date": "2026-02-11T17:51:37.000Z",
+      "description": "Amanda Silver is a corporate vice president at Microsoft’s CoreAI division, where she works on tools for deploying apps and agentic systems within enterprises.",
+      "source": "techcrunch-ai",
+      "score": 29.3
+    },
+    {
+      "title": "Show HN: Unpack – a lightweight way to steer Codex/Claude with phased docs",
+      "url": "https://github.com/apresmoi/unpack",
+      "date": "2026-02-11T19:47:25.000Z",
+      "description": "7 points, 0 comments on HN",
+      "source": "hackernews",
+      "score": 28.7
+    },
+    {
+      "title": "LiteLLM: v1.81.3-stable.opus-4-6",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.3-stable.opus-4-6",
+      "date": "2026-02-11T19:50:46.000Z",
+      "description": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.3-stable...v1.81.3-stable.opus-4-6",
+      "source": "github-releases",
+      "score": 28.7
+    },
+    {
+      "title": "📰 TC: xAI lays out interplanetary ambitions in public all-hands",
+      "url": "https://techcrunch.com/2026/02/11/xai-lays-out-interplanetary-ambitions-in-public-all-hands/",
+      "date": "2026-02-11T23:29:08.000Z",
+      "description": "On Wednesday, xAI took the rare step of publishing its full 45-minute all-hands presentation to the X platform, making it widely available.",
+      "source": "techcrunch-ai",
+      "score": 28.5
+    },
+    {
+      "title": "Claude Code Is Being Dumbed Down",
+      "url": "https://symmetrybreak.ing/blog/claude-code-is-being-dumbed-down/",
+      "date": "2026-02-11T18:23:39.000Z",
+      "description": "388 points, 299 comments on HN",
+      "source": "hackernews",
+      "score": 28.4
+    },
+    {
+      "title": "Microsoft: January 2026 Recovery 2",
+      "url": "https://github.com/microsoft/vscode/releases/tag/1.109.2",
+      "date": "2026-02-11T03:24:57.000Z",
+      "description": "The update addresses these [issues](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22January+2026+Recovery+2%22+is%3Aclosed+).\n\nFor the complete release notes go to [Updates](htt",
+      "source": "github-releases",
+      "score": 28.3
+    },
+    {
+      "title": "📰 TC: AI inference startup Modal Labs in talks to raise at $2.5B valuation, sources say",
+      "url": "https://techcrunch.com/2026/02/11/ai-inference-startup-modal-labs-in-talks-to-raise-at-2-5b-valuation-sources-say/",
+      "date": "2026-02-11T22:48:35.000Z",
+      "description": "General Catalyst is in talks to lead the round for the four-year-old startup, according to our sources.",
+      "source": "techcrunch-ai",
+      "score": 28.3
+    },
+    {
+      "title": "LiteLLM: litellm_stable_build-test-v0.1",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/litellm_stable_build-test-v0.1",
+      "date": "2026-02-11T17:21:02.000Z",
+      "description": "## What's Changed\n* merge main by @Sameerlite in https://github.com/BerriAI/litellm/pull/20252\n* [Docs] 1.81.9 stability by @ishaan-jaff in https://github.com/BerriAI/litellm/pull/20665\n* Semantic fil",
+      "source": "github-releases",
+      "score": 28.2
+    },
+    {
+      "title": "📰 TC: OpenAI disbands mission alignment team",
+      "url": "https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team-which-focused-on-safe-and-trustworthy-ai-development/",
+      "date": "2026-02-11T21:57:18.000Z",
+      "description": "The team's leader has been given a new role as OpenAI's chief futurist, while the other team members have been reassigned throughout the company.",
+      "source": "techcrunch-ai",
+      "score": 28.1
+    },
+    {
+      "title": "Exploring AI Driven Coding: Using Xcode 26.3 MCP Tools in Cursor, Claude, Codex",
+      "url": "https://rudrank.com/exploring-xcode-using-mcp-tools-cursor-external-clients",
+      "date": "2026-02-10T21:11:11.000Z",
+      "description": "1 points, 0 comments on HN",
+      "source": "hackernews",
+      "score": 28
+    },
+    {
+      "title": "📰 TC: Uber Eats launches AI assistant to help with grocery cart creation",
+      "url": "https://techcrunch.com/2026/02/11/uber-eats-launches-ai-assistant-to-help-with-grocery-cart-creation/",
+      "date": "2026-02-11T21:07:37.000Z",
+      "description": "Uber Eats launched a new AI feature, “Cart Assistant,” that can automatically add items to your cart based on text or image prompts.",
+      "source": "techcrunch-ai",
+      "score": 28
+    },
+    {
+      "title": "I used Claude Code to teach myself Rust",
+      "url": "https://mlolson.github.io/blog/2026/02/11/learning-rust/",
+      "date": "2026-02-11T16:08:13.000Z",
+      "description": "4 points, 0 comments on HN",
+      "source": "hackernews",
+      "score": 27.9
+    },
+    {
+      "title": "📰 TC: Who will own your company’s AI layer? Glean’s CEO explains",
+      "url": "https://techcrunch.com/video/who-will-own-your-companys-ai-layer-gleans-ceo-explains/",
+      "date": "2026-02-11T20:49:07.000Z",
+      "description": "Enterprise AI is shifting fast from chatbots that answer questions to systems that actually do the work across an organization. But who will own the AI layer that powers all of it?&#160; Glean, which started as an enterprise search product, has evolved into what it calls an “AI work assistant,” aimi",
+      "source": "techcrunch-ai",
+      "score": 27.9
+    },
+    {
+      "title": "Show HN: Codingagents.md – The open directory for AI coding agents",
+      "url": "https://codingagents.md/",
+      "date": "2026-02-11T19:50:17.000Z",
+      "description": "3 points, 4 comments on HN",
+      "source": "hackernews",
+      "score": 27.7
+    },
+    {
+      "title": "📝 How a Go-Based LLM Gateway Achieves Extreme Performance Gains (Bifrost vs LiteLLM)",
+      "url": "https://dev.to/the_greatbonnie/how-a-go-based-llm-gateway-achieves-extreme-performance-gains-bifrost-vs-litellm-1l3o",
+      "date": "2026-02-11T14:29:39.000Z",
+      "description": "Unless you live under a rock, AI has been the talk of the town since 2022 when ChatGPT was announced...",
+      "source": "devto-ai",
+      "score": 27.6
+    },
+    {
+      "title": "📰 TC: Why the economics of orbital AI are so brutal",
+      "url": "https://techcrunch.com/2026/02/11/why-the-economics-of-orbital-ai-are-so-brutal/",
+      "date": "2026-02-11T18:15:21.000Z",
+      "description": "A 1 GW orbital data center would cost roughly $42.4 billion — almost three times its ground-bound equivalent.",
+      "source": "techcrunch-ai",
+      "score": 27.4
+    },
+    {
+      "title": "A practical guide to use AI Coding agents",
+      "url": "https://www.devtoolsacademy.com/blog/ai-coding-agents-practical-guide/",
+      "date": "2026-02-11T17:42:49.000Z",
+      "description": "2 points, 0 comments on HN",
+      "source": "hackernews",
+      "score": 27.3
+    },
+    {
+      "title": "📰 TC: Threads' new &#8216;Dear Algo' AI feature lets you personalize your feed",
+      "url": "https://techcrunch.com/2026/02/11/threads-new-dear-algo-ai-feature-lets-you-personalize-your-feed/",
+      "date": "2026-02-11T18:00:00.000Z",
+      "description": "The platform's new feature lets users tell Threads what they temporarily want to see more or less of in their feed.",
+      "source": "techcrunch-ai",
+      "score": 27.3
+    }
+  ],
+  "older": [
+    {
+      "title": "📝 Codex vs Claude Code (2026): Which AI Coding Agent Wins the Throne?",
+      "url": "https://dev.to/tech_croc_f32fbb6ea8ed4/codex-vs-claude-code-2026-which-ai-coding-agent-wins-the-throne-1d0j",
+      "date": "2026-02-09T12:09:11.000Z",
+      "description": "In 2026, the \"AI pair programmer\" era is dead. We have entered the era of AI Coding Agents.  Today,...",
+      "source": "devto-ai",
+      "score": 23.1
+    },
+    {
+      "title": "📝 What Your Claude Code Agents Don't Need to Be Told",
+      "url": "https://dev.to/helderberto/what-your-claude-code-agents-dont-need-to-be-told-4ed5",
+      "date": "2026-02-09T17:44:21.000Z",
+      "description": "Claude Code has a finite context window. Every token matters. Your agent definitions, skill files,...",
+      "source": "devto-ai",
+      "score": 22.3
+    },
+    {
+      "title": "Sixteen Claude AI agents working together created a new C compiler",
+      "url": "https://arstechnica.com/ai/2026/02/sixteen-claude-ai-agents-working-together-created-a-new-c-compiler/",
+      "date": "2026-02-09T21:23:25.000Z",
+      "description": "3 points, 0 comments on HN",
+      "source": "hackernews",
+      "score": 21
+    },
+    {
+      "title": "📝 Using Laravel Boost With DDEV",
+      "url": "https://dev.to/jonesrussell/using-laravel-boost-with-ddev-1kc6",
+      "date": "2026-02-10T00:00:00.000Z",
+      "description": "Ahnii!  Laravel Boost is an official MCP server that gives AI coding agents deep context about your...",
+      "source": "devto-ai",
+      "score": 20.6
+    },
+    {
+      "title": "Anthropic: v2.1.38",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.38",
+      "date": "2026-02-10T00:53:32.000Z",
+      "description": "## What's changed\n\n- Fixed VS Code terminal scroll-to-top regression introduced in 2.1.37\n- Fixed Tab key queueing slash commands instead of autocompleting\n- Fixed bash permission matching for command",
+      "source": "github-releases",
+      "score": 19.8
+    },
+    {
+      "title": "🚀 Atyla",
+      "url": "https://www.producthunt.com/products/atyla",
+      "date": "2026-02-09T14:02:00.000Z",
+      "description": "The SEO tool for ChatGPT, Gemini and AI search engines",
+      "source": "producthunt-ai",
+      "score": 19.5
+    },
+    {
+      "title": "🚀 Willow for Developers",
+      "url": "https://www.producthunt.com/products/willow-voice",
+      "date": "2026-02-09T23:04:25.000Z",
+      "description": "Dictation for Cursor & AI IDEs, the fastest way to vibe code",
+      "source": "producthunt-ai",
+      "score": 19.4
+    },
+    {
+      "title": "Anthropic hired philosopher Amanda Askell to give its chatbot Claude morals",
+      "url": "https://www.wsj.com/tech/ai/anthropic-amanda-askell-philosopher-ai-3c031883",
+      "date": "2026-02-09T22:38:05.000Z",
+      "description": "4 points, 1 comments on HN",
+      "source": "hackernews",
+      "score": 19.3
+    },
+    {
+      "title": "OpenAI: v2.18.0",
+      "url": "https://github.com/openai/openai-python/releases/tag/v2.18.0",
+      "date": "2026-02-09T21:41:36.000Z",
+      "description": "## 2.18.0 (2026-02-09)\n\nFull Changelog: [v2.17.0...v2.18.0](https://github.com/openai/openai-python/compare/v2.17.0...v2.18.0)\n\n### Features\n\n* **api:** add context_management to responses ([137e992](",
+      "source": "github-releases",
+      "score": 19.1
+    },
+    {
+      "title": "🚀 0xAudit",
+      "url": "https://www.producthunt.com/products/0xaudit",
+      "date": "2026-02-09T21:46:54.000Z",
+      "description": "The security layer for AI agents to scan, fix verify via MCP",
+      "source": "producthunt-ai",
+      "score": 19.1
+    },
+    {
+      "title": "Structured Context Engineering for File-Native Agentic Systems",
+      "url": "https://simonwillison.net/2026/Feb/9/structured-context-engineering-for-file-native-agentic-systems/#atom-everything",
+      "date": "2026-02-09T23:56:51.000Z",
+      "description": "<p><strong><a href=\"https://arxiv.org/abs/2602.05447\">Structured Context Engineering for File-Native Agentic Systems</a></strong></p> New paper by Damon McMillan exploring challenging LLM context task...",
+      "source": "rss-simon-willison",
+      "score": 18.6
+    },
+    {
+      "title": "🚀 claw.fm",
+      "url": "https://www.producthunt.com/products/claw-fm",
+      "date": "2026-02-09T18:33:18.000Z",
+      "description": "Give your OpenClaw agent a music career.",
+      "source": "producthunt-ai",
+      "score": 18.4
+    },
+    {
+      "title": "Agentic Coding Is Draining Your Moat",
+      "url": "https://www.slwip.com/agentic-coding-is-draining-your-moat/",
+      "date": "2026-02-09T21:35:01.000Z",
+      "description": "4 points, 4 comments on HN",
+      "source": "hackernews",
+      "score": 18.1
+    },
+    {
+      "title": "🚀 CasDoc",
+      "url": "https://www.producthunt.com/products/casdoc",
+      "date": "2026-02-09T21:26:11.000Z",
+      "description": "More context-aware AI development and planning",
+      "source": "producthunt-ai",
+      "score": 17
+    },
+    {
+      "title": "Tabby: next-alpha",
+      "url": "https://github.com/TabbyML/tabby/releases/tag/next-alpha",
+      "date": "2026-02-09T10:49:36.000Z",
+      "description": "",
+      "source": "github-releases",
+      "score": 16.8
+    },
+    {
+      "title": "🚀 SClawHub",
+      "url": "https://www.producthunt.com/products/sclawhub",
+      "date": "2026-02-09T10:29:16.000Z",
+      "description": "Security scanner for OpenClaw AI agent skills",
+      "source": "producthunt-ai",
+      "score": 16.8
+    },
+    {
+      "title": "Declawed – Live dashboard tracking 135K+ exposed OpenClaw AI agent panels",
+      "url": "https://declawed.io/",
+      "date": "2026-02-09T21:27:45.000Z",
+      "description": "3 points, 2 comments on HN",
+      "source": "hackernews",
+      "score": 16
+    },
+    {
+      "title": "🔷 Google AI: In our latest podcast, hear how the “Smoke Jumpers” team brings Gemini to billions of people.",
+      "url": "https://blog.google/products-and-platforms/products/gemini/release-notes-podcast-smokejumpers/",
+      "date": "2026-01-27T10:28:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/thumbnails_EP24_002_ccRelease_N.max-600x600.format-webp.webp\">Bringing Gemini to billions of users requires a massive, coordinated infrastructure effort. In the latest episode of the Google AI: Release Notes podcast, host Loga",
+      "source": "google-ai-blog",
+      "score": 16
+    },
+    {
+      "title": "🚀 Antal.Ai",
+      "url": "https://www.producthunt.com/products/antal-ai",
+      "date": "2026-02-09T15:10:37.000Z",
+      "description": "Detects and obscures people in realtime video streams",
+      "source": "producthunt-ai",
+      "score": 15.7
+    },
+    {
+      "title": "📝 🚀 Stop Hallucinating! Build a RAG Chatbot in 5 Minutes with LangChain",
+      "url": "https://dev.to/zeroshotanu/stop-hallucinating-build-a-rag-chatbot-in-5-minutes-with-langchain-5da9",
+      "date": "2026-02-09T18:03:48.000Z",
+      "description": "Ever asked an AI about something that happened yesterday, only for it to confidently lie to your...",
+      "source": "devto-ai",
+      "score": 15.3
+    }
+  ]
+}

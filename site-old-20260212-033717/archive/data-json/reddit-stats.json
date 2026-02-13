@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-02-11T16:40:56.022Z",
+  "subredditCount": 0,
+  "subreddits": [],
+  "byCategory": {},
+  "summary": {
+    "totalSubscribers": 0,
+    "totalActive": 0,
+    "largestCommunity": null,
+    "toolSpecific": []
+  },
+  "errors": [
+    "r/LocalLLaMA: HTTP 403",
+    "r/ChatGPT: HTTP 403",
+    "r/ChatGPTCoding: HTTP 403",
+    "r/cursor: HTTP 403",
+    "r/ClaudeAI: HTTP 403",
+    "r/Codeium: HTTP 403",
+    "r/CopilotAI: HTTP 403",
+    "r/aider_ai: HTTP 403",
+    "r/OpenAI: HTTP 403",
+    "r/singularity: HTTP 403",
+    "r/MachineLearning: HTTP 403",
+    "r/artificial: HTTP 403",
+    "r/ProgrammerHumor: HTTP 403"
+  ]
+}

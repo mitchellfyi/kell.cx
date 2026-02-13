@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation Model Releases — Kell</title>
+    <meta name="description" content="Track the latest AI foundation model releases from Anthropic, OpenAI, Google, Meta, xAI, Mistral, and DeepSeek. Updated daily.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #fafafa; min-height: 100vh; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        
+        nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .nav-logo { color: #fff; text-decoration: none; font-weight: 600; }
+        .nav-links { display: flex; gap: 1.5rem; }
+        .nav-links a { color: #888; text-decoration: none; font-size: 0.9rem; }
+        .nav-links a:hover { color: #fff; }
+        .nav-links a.active { color: #fff; }
+        
+        footer { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); text-align: center; color: #555; font-size: 0.85rem; }
+        footer a { color: #888; text-decoration: none; }
+        
+        .breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 1rem; }
+        .breadcrumb a { color: #888; text-decoration: none; }
+        h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+        .subtitle { color: #888; margin-bottom: 0.5rem; }
+        .updated { color: #555; font-size: 0.8rem; margin-bottom: 2rem; }
+        
+        .stats-row { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .stat-box { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 1rem 1.5rem; }
+        .stat-value { font-size: 1.5rem; font-weight: 600; color: #fff; }
+        .stat-label { font-size: 0.8rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; }
+        
+        .section { margin-bottom: 2.5rem; }
+        .section-title { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: #666; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        
+        .company-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 2rem; }
+        .company-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 1.25rem; }
+        .company-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .company-logo { font-size: 1.5rem; }
+        .company-name { font-weight: 600; color: #fff; }
+        .company-url { color: #555; font-size: 0.8rem; margin-left: auto; }
+        .company-url a { color: #3b82f6; text-decoration: none; }
+        
+        .model-list { list-style: none; }
+        .model-item { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); flex-wrap: wrap; gap: 0.5rem; }
+        .model-item:last-child { border-bottom: none; }
+        .model-info { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+        .model-name { color: #eee; font-weight: 500; }
+        .model-meta { display: flex; gap: 0.5rem; align-items: center; }
+        .model-type { color: #666; font-size: 0.75rem; background: rgba(255,255,255,0.05); padding: 0.15rem 0.5rem; border-radius: 3px; }
+        .model-type.flagship { background: rgba(251,191,36,0.15); color: #fbbf24; }
+        .model-type.coding { background: rgba(59,130,246,0.15); color: #3b82f6; }
+        .model-type.reasoning { background: rgba(168,85,247,0.15); color: #a855f7; }
+        .model-type.fast { background: rgba(34,197,94,0.15); color: #22c55e; }
+        .model-type.open { background: rgba(249,115,22,0.15); color: #f97316; }
+        .new { background: rgba(34,197,94,0.1); color: #22c55e; font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 3px; }
+        .model-details { font-size: 0.75rem; color: #666; }
+        .model-details span { margin-right: 0.75rem; }
+        
+        table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        th, td { text-align: left; padding: 0.6rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        th { color: #666; font-weight: 500; font-size: 0.7rem; text-transform: uppercase; }
+        td { color: #ccc; }
+        tr:hover td { background: rgba(255,255,255,0.02); }
+        .date { color: #888; font-family: monospace; }
+        .price { font-family: monospace; color: #a3e635; }
+        .context { font-family: monospace; color: #38bdf8; }
+        
+        .note { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 1rem; font-size: 0.85rem; color: #888; margin-top: 1rem; }
+        .note a { color: #3b82f6; }
+        
+        @media (max-width: 768px) { 
+            .container { padding: 1.5rem 1rem; } 
+            nav { flex-direction: column; gap: 1rem; text-align: center; } 
+            .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.75rem 1.25rem; } 
+            .company-grid { grid-template-columns: 1fr; } 
+            table { font-size: 0.75rem; } 
+            th, td { padding: 0.5rem 0.25rem; } 
+            .stats-row { gap: 1rem; }
+            .stat-box { flex: 1; min-width: 120px; }
+            .model-item { flex-direction: column; align-items: flex-start; }
+            .model-meta { width: 100%; justify-content: flex-start; }
+        }
+        
+        /* Auto-generated: 2026-02-12T00:50:00.000Z */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="nav-logo">⚡ Kell</a>
+            <div class="nav-links">
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/data/" class="active">Data</a>
+                <a href="/pricing.html">Pricing</a>
+            </div>
+        </nav>
+        
+        <div class="breadcrumb"><a href="/data/">Data</a> → Foundation Models</div>
+        <h1>Foundation Model Releases</h1>
+        <p class="subtitle">Track the latest AI models from major providers</p>
+        <p class="updated">Updated: Feb 12, 2026 at 00:50 UTC</p>
+        
+        <div class="stats-row">
+            <div class="stat-box">
+                <div class="stat-value">17</div>
+                <div class="stat-label">Models Tracked</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">7</div>
+                <div class="stat-label">Providers</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">3</div>
+                <div class="stat-label">Released in 2026</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">Feb 10</div>
+                <div class="stat-label">Latest Release</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Recent Releases (2026)</div>
+            <table>
+                <thead><tr><th>Date</th><th>Model</th><th>Provider</th><th>Type</th><th>Pricing</th><th>Context</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td class="date">Feb 10</td>
+                        <td><strong>Claude Opus 4.6</strong><span class="new">NEW</span></td>
+                        <td>Anthropic</td>
+                        <td><span class="model-type flagship">Flagship</span></td>
+                        <td class="price">$15 / $75</td>
+                        <td class="context">200K</td>
+                    </tr>
+                    <tr>
+                        <td class="date">Feb 4</td>
+                        <td><strong>GPT-5.3-Codex</strong></td>
+                        <td>OpenAI</td>
+                        <td><span class="model-type coding">Coding</span></td>
+                        <td class="price">—</td>
+                        <td class="context">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">All Models by Release Date</div>
+            <table>
+                <thead><tr><th>Released</th><th>Model</th><th>Provider</th><th>Type</th><th>Input/Output $/M</th><th>Context</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td class="date">2026-02-10</td>
+                        <td><strong>Claude Opus 4.6</strong></td>
+                        <td>Anthropic</td>
+                        <td><span class="model-type flagship">Flagship</span></td>
+                        <td class="price">$15 / $75</td>
+                        <td class="context">200K</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2026-02-04</td>
+                        <td><strong>GPT-5.3-Codex</strong></td>
+                        <td>OpenAI</td>
+                        <td><span class="model-type coding">Coding</span></td>
+                        <td class="price">—</td>
+                        <td class="context">—</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2025-12-15</td>
+                        <td><strong>GPT-5.2</strong></td>
+                        <td>OpenAI</td>
+                        <td><span class="model-type flagship">General</span></td>
+                        <td class="price">—</td>
+                        <td class="context">—</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2025-07-15</td>
+                        <td><strong>Grok 4</strong></td>
+                        <td>xAI</td>
+                        <td><span class="model-type flagship">Flagship</span></td>
+                        <td class="price">—</td>
+                        <td class="context">—</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2025-05-22</td>
+                        <td><strong>Claude Sonnet 4</strong></td>
+                        <td>Anthropic</td>
+                        <td><span class="model-type">Balanced</span></td>
+                        <td class="price">$3 / $15</td>
+                        <td class="context">200K</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2025-05-22</td>
+                        <td><strong>Claude Haiku 4</strong></td>
+                        <td>Anthropic</td>
+                        <td><span class="model-type fast">Fast</span></td>
+                        <td class="price">$0.80 / $4</td>
+                        <td class="context">200K</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2025-04-17</td>
+                        <td><strong>Gemini 2.5 Flash</strong></td>
+                        <td>Google</td>
+                        <td><span class="model-type fast">Fast</span></td>
+                        <td class="price">—</td>
+                        <td class="context">1M</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2025-04-16</td>
+                        <td><strong>o3</strong></td>
+                        <td>OpenAI</td>
+                        <td><span class="model-type reasoning">Reasoning</span></td>
+                        <td class="price">—</td>
+                        <td class="context">—</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2025-04-05</td>
+                        <td><strong>Llama 4 Scout</strong> <span class="model-type open">Open</span></td>
+                        <td>Meta</td>
+                        <td><span class="model-type fast">Efficient</span></td>
+                        <td class="price">Free</td>
+                        <td class="context">10M</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2025-04-05</td>
+                        <td><strong>Llama 4 Maverick</strong> <span class="model-type open">Open</span></td>
+                        <td>Meta</td>
+                        <td><span class="model-type flagship">Flagship</span></td>
+                        <td class="price">Free</td>
+                        <td class="context">1M</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2025-03-25</td>
+                        <td><strong>Gemini 2.5 Pro</strong></td>
+                        <td>Google</td>
+                        <td><span class="model-type flagship">Flagship</span></td>
+                        <td class="price">—</td>
+                        <td class="context">1M</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2025-02-24</td>
+                        <td><strong>Claude Opus 4.5</strong></td>
+                        <td>Anthropic</td>
+                        <td><span class="model-type flagship">Flagship</span></td>
+                        <td class="price">$15 / $75</td>
+                        <td class="context">200K</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2025-01-31</td>
+                        <td><strong>o3-mini</strong></td>
+                        <td>OpenAI</td>
+                        <td><span class="model-type fast">Reasoning-fast</span></td>
+                        <td class="price">—</td>
+                        <td class="context">—</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2025-01-20</td>
+                        <td><strong>DeepSeek R1</strong> <span class="model-type open">Open</span></td>
+                        <td>DeepSeek</td>
+                        <td><span class="model-type reasoning">Reasoning</span></td>
+                        <td class="price">Free</td>
+                        <td class="context">—</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2024-12-26</td>
+                        <td><strong>DeepSeek V3</strong> <span class="model-type open">Open</span></td>
+                        <td>DeepSeek</td>
+                        <td><span class="model-type flagship">Flagship</span></td>
+                        <td class="price">Free</td>
+                        <td class="context">—</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2024-07-24</td>
+                        <td><strong>Mistral Large 2</strong></td>
+                        <td>Mistral</td>
+                        <td><span class="model-type flagship">Flagship</span></td>
+                        <td class="price">—</td>
+                        <td class="context">128K</td>
+                    </tr>
+                    <tr>
+                        <td class="date">2024-05-29</td>
+                        <td><strong>Codestral</strong></td>
+                        <td>Mistral</td>
+                        <td><span class="model-type coding">Coding</span></td>
+                        <td class="price">—</td>
+                        <td class="context">32K</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Current Models by Provider</div>
+            <div class="company-grid">
+                <div class="company-card">
+                    <div class="company-header">
+                        <span class="company-logo">🟤</span>
+                        <span class="company-name">Anthropic</span>
+                        <span class="company-url"><a href="https://anthropic.com">anthropic.com</a></span>
+                    </div>
+                    <ul class="model-list">
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">Claude Opus 4.6</span>
+                                <span class="new">NEW</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type flagship">Flagship</span>
+                            </div>
+                        </li>
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">Claude Sonnet 4</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type">Balanced</span>
+                            </div>
+                        </li>
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">Claude Haiku 4</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type fast">Fast</span>
+                            </div>
+                        </li>
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">Claude Opus 4.5</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type flagship">Flagship</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="model-details" style="margin-top:0.75rem;">
+                        <span>📊 200K context</span>
+                        <span>💵 $0.80–$75/M tokens</span>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-header">
+                        <span class="company-logo">🟢</span>
+                        <span class="company-name">OpenAI</span>
+                        <span class="company-url"><a href="https://openai.com">openai.com</a></span>
+                    </div>
+                    <ul class="model-list">
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">GPT-5.3-Codex</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type coding">Coding</span>
+                            </div>
+                        </li>
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">GPT-5.2</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type flagship">General</span>
+                            </div>
+                        </li>
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">o3</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type reasoning">Reasoning</span>
+                            </div>
+                        </li>
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">o3-mini</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type fast">Reasoning-fast</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-header">
+                        <span class="company-logo">🔵</span>
+                        <span class="company-name">Google</span>
+                        <span class="company-url"><a href="https://ai.google">ai.google</a></span>
+                    </div>
+                    <ul class="model-list">
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">Gemini 2.5 Pro</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type flagship">Flagship</span>
+                            </div>
+                        </li>
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">Gemini 2.5 Flash</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type fast">Fast</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="model-details" style="margin-top:0.75rem;">
+                        <span>📊 1M context</span>
+                        <span>🎯 Deep Think mode</span>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-header">
+                        <span class="company-logo">🔷</span>
+                        <span class="company-name">Meta</span>
+                        <span class="company-url"><a href="https://ai.meta.com">ai.meta.com</a></span>
+                    </div>
+                    <ul class="model-list">
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">Llama 4 Maverick</span>
+                                <span class="model-type open">Open</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type flagship">Flagship</span>
+                            </div>
+                        </li>
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">Llama 4 Scout</span>
+                                <span class="model-type open">Open</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type fast">Efficient</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="model-details" style="margin-top:0.75rem;">
+                        <span>📊 Up to 10M context</span>
+                        <span>🆓 Open weights</span>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-header">
+                        <span class="company-logo">⚫</span>
+                        <span class="company-name">xAI</span>
+                        <span class="company-url"><a href="https://x.ai">x.ai</a></span>
+                    </div>
+                    <ul class="model-list">
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">Grok 4</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type flagship">Flagship</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="model-details" style="margin-top:0.75rem;">
+                        <span>🐦 Real-time X data</span>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-header">
+                        <span class="company-logo">🟠</span>
+                        <span class="company-name">Mistral</span>
+                        <span class="company-url"><a href="https://mistral.ai">mistral.ai</a></span>
+                    </div>
+                    <ul class="model-list">
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">Mistral Large 2</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type flagship">Flagship</span>
+                            </div>
+                        </li>
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">Codestral</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type coding">Coding</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="model-details" style="margin-top:0.75rem;">
+                        <span>📊 128K context</span>
+                        <span>🌍 Multilingual</span>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-header">
+                        <span class="company-logo">🐋</span>
+                        <span class="company-name">DeepSeek</span>
+                        <span class="company-url"><a href="https://deepseek.com">deepseek.com</a></span>
+                    </div>
+                    <ul class="model-list">
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">DeepSeek V3</span>
+                                <span class="model-type open">Open</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type flagship">Flagship</span>
+                            </div>
+                        </li>
+                        <li class="model-item">
+                            <div class="model-info">
+                                <span class="model-name">DeepSeek R1</span>
+                                <span class="model-type open">Open</span>
+                            </div>
+                            <div class="model-meta">
+                                <span class="model-type reasoning">Reasoning</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="model-details" style="margin-top:0.75rem;">
+                        <span>🆓 Open weights (MIT)</span>
+                        <span>⚡ 671B MoE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Model Categories</div>
+            <div class="note">
+                <p style="margin-bottom:0.75rem;"><span class="model-type flagship">Flagship</span> — Highest capability, best quality, higher cost</p>
+                <p style="margin-bottom:0.75rem;"><span class="model-type coding">Coding</span> — Optimized for code generation and editing</p>
+                <p style="margin-bottom:0.75rem;"><span class="model-type reasoning">Reasoning</span> — Extended thinking, multi-step problem solving</p>
+                <p style="margin-bottom:0.75rem;"><span class="model-type fast">Fast</span> — Lower latency, lower cost, good for real-time apps</p>
+                <p><span class="model-type open">Open</span> — Open weights available for self-hosting</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Tracking Sources</div>
+            <table>
+                <thead><tr><th>Provider</th><th>News</th><th>Changelog</th><th>Other</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Anthropic</strong></td>
+                        <td><a href="https://anthropic.com/news" style="color:#3b82f6">News</a></td>
+                        <td><a href="https://docs.anthropic.com/en/release-notes/overview" style="color:#3b82f6">API Release Notes</a></td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OpenAI</strong></td>
+                        <td><a href="https://openai.com/blog" style="color:#3b82f6">Blog</a></td>
+                        <td><a href="https://platform.openai.com/docs/changelog" style="color:#3b82f6">Changelog</a></td>
+                        <td><a href="https://status.openai.com" style="color:#3b82f6">Status</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google</strong></td>
+                        <td><a href="https://deepmind.google/blog" style="color:#3b82f6">DeepMind Blog</a></td>
+                        <td><a href="https://ai.google.dev/changelog" style="color:#3b82f6">AI Studio</a></td>
+                        <td><a href="https://cloud.google.com/vertex-ai/docs/release-notes" style="color:#3b82f6">Vertex</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Meta</strong></td>
+                        <td><a href="https://ai.meta.com/blog" style="color:#3b82f6">AI Blog</a></td>
+                        <td>—</td>
+                        <td><a href="https://huggingface.co/meta-llama" style="color:#3b82f6">Hugging Face</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>xAI</strong></td>
+                        <td><a href="https://x.ai" style="color:#3b82f6">x.ai</a></td>
+                        <td>—</td>
+                        <td>X/Twitter</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mistral</strong></td>
+                        <td><a href="https://mistral.ai/news" style="color:#3b82f6">News</a></td>
+                        <td>—</td>
+                        <td><a href="https://huggingface.co/mistralai" style="color:#3b82f6">Hugging Face</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DeepSeek</strong></td>
+                        <td><a href="https://deepseek.com" style="color:#3b82f6">DeepSeek</a></td>
+                        <td>—</td>
+                        <td><a href="https://huggingface.co/deepseek-ai" style="color:#3b82f6">Hugging Face</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <p style="color:#666;font-size:0.85rem;margin-top:2rem;"><a href="/data/" style="color:#3b82f6;">← Back to Data Dashboard</a></p>
+        
+        <footer>
+            <p>Built by <a href="/about.html">Kell</a> · <a href="mailto:hi@kell.cx">hi@kell.cx</a></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+{
+  "source": "TechCrunch",
+  "url": "https://techcrunch.com",
+  "fetched_at": "2026-02-12T02:02:50.285Z",
+  "total_parsed": 20,
+  "ai_filtered": 10,
+  "articles": [
+    {
+      "title": "AI inference startup Modal Labs in talks to raise at $2.5B valuation, sources say",
+      "url": "https://techcrunch.com/2026/02/11/ai-inference-startup-modal-labs-in-talks-to-raise-at-2-5b-valuation-sources-say/",
+      "date": "2026-02-11T22:48:35.000Z",
+      "description": "General Catalyst is in talks to lead the round for the four-year-old startup, according to our sources.",
+      "author": "Marina Temkin",
+      "categories": [
+        "AI",
+        "Enterprise",
+        "Startups",
+        "Exclusive",
+        "General Catalyst",
+        "inference",
+        "Modal Labs"
+      ]
+    },
+    {
+      "title": "How AI changes the math for startups, according to a Microsoft VP",
+      "url": "https://techcrunch.com/2026/02/11/how-ai-changes-the-math-for-startups-according-to-a-microsoft-vp/",
+      "date": "2026-02-11T17:51:37.000Z",
+      "description": "Amanda Silver is a corporate vice president at Microsoft’s CoreAI division, where she works on tools for deploying apps and agentic systems within enterprises.",
+      "author": "Russell Brandom",
+      "categories": [
+        "AI",
+        "Exclusive",
+        "interview",
+        "Microsoft",
+        "Microsoft Foundry"
+      ]
+    },
+    {
+      "title": "Uber Eats launches AI assistant to help with grocery cart creation",
+      "url": "https://techcrunch.com/2026/02/11/uber-eats-launches-ai-assistant-to-help-with-grocery-cart-creation/",
+      "date": "2026-02-11T21:07:37.000Z",
+      "description": "Uber Eats launched a new AI feature, “Cart Assistant,” that can automatically add items to your cart based on text or image prompts.",
+      "author": "Lauren Forristal",
+      "categories": [
+        "AI",
+        "Apps",
+        "AI chatbot",
+        "food delivery",
+        "Uber Eats"
+      ]
+    },
+    {
+      "title": "Who will own your company’s AI layer? Glean’s CEO explains",
+      "url": "https://techcrunch.com/video/who-will-own-your-companys-ai-layer-gleans-ceo-explains/",
+      "date": "2026-02-11T20:49:07.000Z",
+      "description": "Enterprise AI is shifting fast from chatbots that answer questions to systems that actually do the work across an organization. But who will own the AI layer that powers all of it?&#160; Glean, which started as an enterprise search product, has evolved into what it calls an “AI work assistant,” aiming to sit underneath other AI [...]",
+      "author": "Theresa Loconsolo",
+      "categories": [
+        "AI",
+        "Startups",
+        "AI agents",
+        "AI consolidation",
+        "Arvind Jain",
+        "Equity Video",
+        "Glean",
+        "Web Summit Qatar"
+      ]
+    },
+    {
+      "title": "Why the economics of orbital AI are so brutal",
+      "url": "https://techcrunch.com/2026/02/11/why-the-economics-of-orbital-ai-are-so-brutal/",
+      "date": "2026-02-11T18:15:21.000Z",
+      "description": "A 1 GW orbital data center would cost roughly $42.4 billion — almost three times its ground-bound equivalent.",
+      "author": "Tim Fernholz",
+      "categories": [
+        "AI",
+        "Space",
+        "data center",
+        "Google",
+        "Project Suncatcher",
+        "SpaceX",
+        "Starcloud",
+        "Starlink",
+        "xAI"
+      ]
+    },
+    {
+      "title": "Threads' new &#8216;Dear Algo' AI feature lets you personalize your feed",
+      "url": "https://techcrunch.com/2026/02/11/threads-new-dear-algo-ai-feature-lets-you-personalize-your-feed/",
+      "date": "2026-02-11T18:00:00.000Z",
+      "description": "The platform's new feature lets users tell Threads what they temporarily want to see more or less of in their feed.",
+      "author": "Aisha Malik",
+      "categories": [
+        "AI",
+        "Apps",
+        "Social",
+        "algorithms",
+        "Meta",
+        "social media",
+        "Threads"
+      ]
+    },
+    {
+      "title": "OpenAI disbands mission alignment team",
+      "url": "https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team-which-focused-on-safe-and-trustworthy-ai-development/",
+      "date": "2026-02-11T21:57:18.000Z",
+      "description": "The team's leader has been given a new role as OpenAI's chief futurist, while the other team members have been reassigned throughout the company.",
+      "author": "Lucas Ropek",
+      "categories": [
+        "AI",
+        "ai safety",
+        "ChatGPT",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "Elon Musk suggests spate of xAI exits have been push, not pull",
+      "url": "https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/",
+      "date": "2026-02-11T20:47:00.000Z",
+      "description": "At least nine engineers, including two co-founders, have announced their exits from xAI in the past week, fueling online speculation and raising questions about stability at Musk’s AI company amid mounting controversy.",
+      "author": "Rebecca Bellan",
+      "categories": [
+        "AI",
+        "Elon Musk",
+        "Exclusive",
+        "X",
+        "xAI"
+      ]
+    },
+    {
+      "title": "xAI lays out interplanetary ambitions in public all-hands",
+      "url": "https://techcrunch.com/2026/02/11/xai-lays-out-interplanetary-ambitions-in-public-all-hands/",
+      "date": "2026-02-11T23:29:08.000Z",
+      "description": "On Wednesday, xAI took the rare step of publishing its full 45-minute all-hands presentation to the X platform, making it widely available.",
+      "author": "Russell Brandom",
+      "categories": [
+        "AI",
+        "Elon Musk",
+        "xAI"
+      ]
+    },
+    {
+      "title": "Apple's Siri revamp reportedly delayed... again",
+      "url": "https://techcrunch.com/2026/02/11/apples-siri-revamp-reportedly-delayed-again/",
+      "date": "2026-02-11T21:19:46.000Z",
+      "description": "While the new Siri was expected to launch with the upcoming iOS 26.4 update in March, now, the changes are expected to roll out more slowly over time, reportedly postponing some features until the May iOS update, or even until the release of iOS 27 in September.",
+      "author": "Amanda Silberling",
+      "categories": [
+        "AI",
+        "Apple",
+        "In Brief",
+        "siri"
+      ]
+    }
+  ]
+}

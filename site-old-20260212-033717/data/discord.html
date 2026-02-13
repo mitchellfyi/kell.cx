@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Communities — Kell</title>
+    <meta name="description" content="Discord server sizes and engagement for AI coding tool communities.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #fafafa; min-height: 100vh; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .nav-logo { color: #fff; text-decoration: none; font-weight: 600; }
+        .nav-links { display: flex; gap: 1.5rem; }
+        .nav-links a { color: #888; text-decoration: none; font-size: 0.9rem; }
+        .nav-links a:hover { color: #fff; }
+        .nav-links a.active { color: #fff; }
+        @media (max-width: 600px) { nav { flex-direction: column; gap: 1rem; text-align: center; } .nav-links { flex-wrap: wrap; justify-content: center; gap: 0.75rem 1.25rem; } .container { padding: 1.5rem 1rem; } }
+        
+        .breadcrumb { font-size: 0.85rem; color: #666; margin-bottom: 1rem; }
+        .breadcrumb a { color: #888; text-decoration: none; }
+        h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+        .subtitle { color: #888; margin-bottom: 2rem; }
+        
+        table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-bottom: 2rem; }
+        th, td { text-align: left; padding: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        th { color: #888; font-weight: 500; font-size: 0.75rem; text-transform: uppercase; }
+        td { color: #ccc; }
+        tr:hover td { background: rgba(255,255,255,0.02); }
+        .company { color: #fff; font-weight: 500; }
+        .highlight { color: #22c55e; }
+        .good { color: #22c55e; }
+        .ok { color: #eab308; }
+        .low { color: #888; }
+        
+        .note { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 1rem; font-size: 0.85rem; color: #888; }
+        
+        footer { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); text-align: center; color: #555; font-size: 0.85rem; }
+        footer a { color: #888; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/" class="nav-logo">⚡ Kell</a>
+            <div class="nav-links">
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/data/" class="active">Data</a>
+                <a href="/pricing.html">Pricing</a>
+            </div>
+        </nav>
+        
+        <div class="breadcrumb"><a href="/data/">Data</a> → Discord</div>
+        <h1>💬 Discord Communities</h1>
+        <p class="subtitle">Updated February 11, 2026</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Community</th>
+                    <th>Members</th>
+                    <th>Online</th>
+                    <th>Engagement</th>
+                    <th>Health</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="company">Cursor</td>
+                    <td class="highlight">34,400</td>
+                    <td>3,800</td>
+                    <td>11.0%</td>
+                    <td class="good">● Healthy</td>
+                </tr>
+                <tr>
+                    <td class="company">Continue.dev</td>
+                    <td>8,200</td>
+                    <td>890</td>
+                    <td>10.9%</td>
+                    <td class="good">● Healthy</td>
+                </tr>
+                <tr>
+                    <td class="company">Codeium/Windsurf</td>
+                    <td>5,100</td>
+                    <td>420</td>
+                    <td>8.2%</td>
+                    <td class="ok">● Active</td>
+                </tr>
+                <tr>
+                    <td class="company">Tabnine</td>
+                    <td>2,300</td>
+                    <td>180</td>
+                    <td>7.8%</td>
+                    <td class="ok">● Active</td>
+                </tr>
+                <tr>
+                    <td class="company">Replit</td>
+                    <td>1,600</td>
+                    <td>110</td>
+                    <td>6.9%</td>
+                    <td class="low">● Quiet</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="note">
+            <strong>Engagement rate</strong> = online members / total members. Above 10% is considered healthy community engagement. Below 5% may indicate inactive or bot-heavy server.
+        </div>
+        
+        <footer>
+            <p>Built by <a href="/about.html">Kell</a> · <a href="mailto:hi@kell.cx">hi@kell.cx</a></p>
+        </footer>
+    </div>
+</body>
+</html>

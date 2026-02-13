@@ -1,0 +1,65 @@
+{
+  "changes": [
+    {
+      "tool": "Windsurf",
+      "url": "https://codeium.com/pricing",
+      "timestamp": "2026-02-11T22:51:19.630Z",
+      "oldPrices": [],
+      "newPrices": [
+        15
+      ],
+      "changes": [
+        {
+          "type": "added",
+          "price": 15
+        }
+      ]
+    },
+    {
+      "tool": "Sourcegraph Cody",
+      "url": "https://sourcegraph.com/pricing",
+      "timestamp": "2026-02-11T22:51:20.876Z",
+      "oldPrices": [],
+      "newPrices": [
+        49
+      ],
+      "changes": [
+        {
+          "type": "added",
+          "price": 49
+        }
+      ]
+    },
+    {
+      "tool": "Amazon Q Developer",
+      "url": "https://aws.amazon.com/q/developer/pricing/",
+      "timestamp": "2026-02-11T22:51:21.969Z",
+      "oldPrices": [],
+      "newPrices": [
+        19
+      ],
+      "changes": [
+        {
+          "type": "added",
+          "price": 19
+        }
+      ]
+    },
+    {
+      "tool": "Replit",
+      "url": "https://replit.com/pricing",
+      "timestamp": "2026-02-11T22:51:23.317Z",
+      "oldPrices": [],
+      "newPrices": [
+        40
+      ],
+      "changes": [
+        {
+          "type": "added",
+          "price": 40
+        }
+      ]
+    }
+  ],
+  "lastChecked": "2026-02-11T22:51:25.056Z"
+}

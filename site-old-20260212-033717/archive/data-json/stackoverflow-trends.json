@@ -1,0 +1,363 @@
+{
+  "generatedAt": "2026-02-11T16:51:14.219Z",
+  "period": "Last 30 days",
+  "toolCount": 10,
+  "tools": [
+    {
+      "name": "GitHub Copilot",
+      "category": "ai-assistant",
+      "query": "github copilot",
+      "questionsLast30d": 13,
+      "questionsFormatted": "13",
+      "activityLevel": "low",
+      "emoji": "📊",
+      "commonIssues": [
+        {
+          "issue": "compatibility",
+          "count": 2
+        },
+        {
+          "issue": "authentication",
+          "count": 1
+        }
+      ],
+      "topQuestions": [
+        {
+          "title": "vscode agentic flow",
+          "url": "https://stackoverflow.com/questions/79887110/vscode-agentic-flow",
+          "score": -2,
+          "answers": 0,
+          "views": 47,
+          "createdAt": "2026-02-11T04:23:10.000Z"
+        },
+        {
+          "title": "Can I use “Claude” Agent type with the MCP in GitHub Copilot?",
+          "url": "https://stackoverflow.com/questions/79884525/can-i-use-claude-agent-type-with-the-mcp-in-github-copilot",
+          "score": -3,
+          "answers": 0,
+          "views": 36,
+          "createdAt": "2026-02-06T18:00:02.000Z"
+        },
+        {
+          "title": "How does account authentication work for GitHub Copilot and other AI providers in IntelliJ AI Assistant?",
+          "url": "https://stackoverflow.com/questions/79884491/how-does-account-authentication-work-for-github-copilot-and-other-ai-providers-i",
+          "score": 0,
+          "answers": 2,
+          "views": 40,
+          "createdAt": "2026-02-06T17:08:06.000Z"
+        }
+      ]
+    },
+    {
+      "name": "Cursor",
+      "category": "ai-editor",
+      "query": "cursor ai",
+      "questionsLast30d": 2,
+      "questionsFormatted": "2",
+      "activityLevel": "minimal",
+      "emoji": "🌱",
+      "commonIssues": [],
+      "topQuestions": [
+        {
+          "title": "What will be next time?",
+          "url": "https://stackoverflow.com/questions/79882933/what-will-be-next-time",
+          "score": 0,
+          "answers": 1,
+          "views": 37,
+          "createdAt": "2026-02-04T16:45:22.000Z"
+        },
+        {
+          "title": "Monorepo + AI tools (Copilot, Cursor): does having full codebase context provide real advantages in practice?",
+          "url": "https://stackoverflow.com/questions/79872256/monorepo-ai-tools-copilot-cursor-does-having-full-codebase-context-provide",
+          "score": 0,
+          "answers": 0,
+          "views": 19,
+          "createdAt": "2026-01-20T18:32:53.000Z"
+        }
+      ]
+    },
+    {
+      "name": "Claude Code",
+      "category": "ai-assistant",
+      "query": "claude code OR \"claude coding\"",
+      "questionsLast30d": 0,
+      "questionsFormatted": "0",
+      "activityLevel": "minimal",
+      "emoji": "🌱",
+      "commonIssues": [],
+      "topQuestions": []
+    },
+    {
+      "name": "Codeium",
+      "category": "ai-assistant",
+      "query": "\"codeium\"",
+      "questionsLast30d": 0,
+      "questionsFormatted": "0",
+      "activityLevel": "minimal",
+      "emoji": "🌱",
+      "commonIssues": [],
+      "topQuestions": []
+    },
+    {
+      "name": "Aider",
+      "category": "ai-assistant",
+      "query": "aider ai OR \"aider coding\"",
+      "questionsLast30d": 0,
+      "questionsFormatted": "0",
+      "activityLevel": "minimal",
+      "emoji": "🌱",
+      "commonIssues": [],
+      "topQuestions": []
+    },
+    {
+      "name": "Tabnine",
+      "category": "ai-assistant",
+      "query": "tabnine",
+      "questionsLast30d": 0,
+      "questionsFormatted": "0",
+      "activityLevel": "minimal",
+      "emoji": "🌱",
+      "commonIssues": [],
+      "topQuestions": []
+    },
+    {
+      "name": "Cody",
+      "category": "ai-assistant",
+      "query": "sourcegraph cody",
+      "questionsLast30d": 0,
+      "questionsFormatted": "0",
+      "activityLevel": "minimal",
+      "emoji": "🌱",
+      "commonIssues": [],
+      "topQuestions": []
+    },
+    {
+      "name": "CodeWhisperer",
+      "category": "ai-assistant",
+      "query": "amazon codewhisperer OR \"codewhisperer\"",
+      "questionsLast30d": 0,
+      "questionsFormatted": "0",
+      "activityLevel": "minimal",
+      "emoji": "🌱",
+      "commonIssues": [],
+      "topQuestions": []
+    },
+    {
+      "name": "Replit AI",
+      "category": "ai-ide",
+      "query": "replit ai OR \"replit ghostwriter\"",
+      "questionsLast30d": 0,
+      "questionsFormatted": "0",
+      "activityLevel": "minimal",
+      "emoji": "🌱",
+      "commonIssues": [],
+      "topQuestions": []
+    },
+    {
+      "name": "Continue",
+      "category": "ai-assistant",
+      "query": "continue.dev",
+      "questionsLast30d": 0,
+      "questionsFormatted": "0",
+      "activityLevel": "minimal",
+      "emoji": "🌱",
+      "commonIssues": [],
+      "topQuestions": []
+    }
+  ],
+  "topics": [
+    {
+      "name": "AI Code Completion",
+      "category": "concept",
+      "questionsLast30d": 1,
+      "activityLevel": "minimal",
+      "emoji": "🌱"
+    },
+    {
+      "name": "LLM Code Generation",
+      "category": "concept",
+      "questionsLast30d": 2,
+      "activityLevel": "minimal",
+      "emoji": "🌱"
+    },
+    {
+      "name": "AI Pair Programming",
+      "category": "concept",
+      "questionsLast30d": 0,
+      "activityLevel": "minimal",
+      "emoji": "🌱"
+    },
+    {
+      "name": "ChatGPT Coding",
+      "category": "concept",
+      "questionsLast30d": 16,
+      "activityLevel": "low",
+      "emoji": "📊"
+    }
+  ],
+  "byCategory": {
+    "ai-assistant": {
+      "count": 8,
+      "totalQuestions": 13
+    },
+    "ai-editor": {
+      "count": 1,
+      "totalQuestions": 2
+    },
+    "ai-ide": {
+      "count": 1,
+      "totalQuestions": 0
+    }
+  },
+  "recentHighlights": [
+    {
+      "tool": "GitHub Copilot",
+      "title": "How I can get the Copilot Pro coupon by GitHub Education Benefits",
+      "url": "https://stackoverflow.com/questions/79880457/how-i-can-get-the-copilot-pro-coupon-by-github-education-benefits",
+      "score": 2,
+      "answers": 4,
+      "views": 77,
+      "createdAt": "2026-02-01T11:51:27.000Z"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "title": "Remove grey code suggestions overlays in VSCode for C#",
+      "url": "https://stackoverflow.com/questions/79877258/remove-grey-code-suggestions-overlays-in-vscode-for-c",
+      "score": 2,
+      "answers": 0,
+      "views": 55,
+      "createdAt": "2026-01-27T15:36:34.000Z"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "title": "Observability for a GitHub Copilot custom agent (Visual Studio Code)",
+      "url": "https://stackoverflow.com/questions/79868327/observability-for-a-github-copilot-custom-agent-visual-studio-code",
+      "score": 2,
+      "answers": 1,
+      "views": 169,
+      "createdAt": "2026-01-15T08:27:17.000Z"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "title": "Is it possible to disable formatting suggestions only by GitHub copilot?",
+      "url": "https://stackoverflow.com/questions/79877937/is-it-possible-to-disable-formatting-suggestions-only-by-github-copilot",
+      "score": 1,
+      "answers": 2,
+      "views": 38,
+      "createdAt": "2026-01-28T12:26:44.000Z"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "title": "How does account authentication work for GitHub Copilot and other AI providers in IntelliJ AI Assistant?",
+      "url": "https://stackoverflow.com/questions/79884491/how-does-account-authentication-work-for-github-copilot-and-other-ai-providers-i",
+      "score": 0,
+      "answers": 2,
+      "views": 40,
+      "createdAt": "2026-02-06T17:08:06.000Z"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "title": "MCP tools fail with &quot;currently disabled by the user&quot; error",
+      "url": "https://stackoverflow.com/questions/79875997/mcp-tools-fail-with-currently-disabled-by-the-user-error",
+      "score": 0,
+      "answers": 0,
+      "views": 125,
+      "createdAt": "2026-01-26T00:05:47.000Z"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "title": "Monorepo + AI tools (Copilot, Cursor): does having full codebase context provide real advantages in practice?",
+      "url": "https://stackoverflow.com/questions/79872256/monorepo-ai-tools-copilot-cursor-does-having-full-codebase-context-provide",
+      "score": 0,
+      "answers": 0,
+      "views": 19,
+      "createdAt": "2026-01-20T18:32:53.000Z"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "title": "Why do .NET 10 / C# 14 extension members only work in Visual Studio 2026?",
+      "url": "https://stackoverflow.com/questions/79870942/why-do-net-10-c-14-extension-members-only-work-in-visual-studio-2026",
+      "score": 0,
+      "answers": 2,
+      "views": 177,
+      "createdAt": "2026-01-19T06:07:08.000Z"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "title": "Visual Studio Code Shortcut for switching between Copilot models?",
+      "url": "https://stackoverflow.com/questions/79866557/visual-studio-code-shortcut-for-switching-between-copilot-models",
+      "score": 0,
+      "answers": 1,
+      "views": 114,
+      "createdAt": "2026-01-13T00:28:40.000Z"
+    },
+    {
+      "tool": "Cursor",
+      "title": "What will be next time?",
+      "url": "https://stackoverflow.com/questions/79882933/what-will-be-next-time",
+      "score": 0,
+      "answers": 1,
+      "views": 37,
+      "createdAt": "2026-02-04T16:45:22.000Z"
+    },
+    {
+      "tool": "Cursor",
+      "title": "Monorepo + AI tools (Copilot, Cursor): does having full codebase context provide real advantages in practice?",
+      "url": "https://stackoverflow.com/questions/79872256/monorepo-ai-tools-copilot-cursor-does-having-full-codebase-context-provide",
+      "score": 0,
+      "answers": 0,
+      "views": 19,
+      "createdAt": "2026-01-20T18:32:53.000Z"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "title": "vscode agentic flow",
+      "url": "https://stackoverflow.com/questions/79887110/vscode-agentic-flow",
+      "score": -2,
+      "answers": 0,
+      "views": 47,
+      "createdAt": "2026-02-11T04:23:10.000Z"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "title": "VS Code intellisence not working using Github Copilot Chat",
+      "url": "https://stackoverflow.com/questions/79884202/vs-code-intellisence-not-working-using-github-copilot-chat",
+      "score": -2,
+      "answers": 0,
+      "views": 58,
+      "createdAt": "2026-02-06T10:04:47.000Z"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "title": "Can I use “Claude” Agent type with the MCP in GitHub Copilot?",
+      "url": "https://stackoverflow.com/questions/79884525/can-i-use-claude-agent-type-with-the-mcp-in-github-copilot",
+      "score": -3,
+      "answers": 0,
+      "views": 36,
+      "createdAt": "2026-02-06T18:00:02.000Z"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "title": "How to copy the response from GitHub Copilot in VS Code?",
+      "url": "https://stackoverflow.com/questions/79870633/how-to-copy-the-response-from-github-copilot-in-vs-code",
+      "score": -3,
+      "answers": 1,
+      "views": 137,
+      "createdAt": "2026-01-18T16:47:58.000Z"
+    }
+  ],
+  "summary": {
+    "totalQuestions": 15,
+    "mostActive": "GitHub Copilot",
+    "topIssues": [
+      {
+        "issue": "compatibility",
+        "count": 2
+      },
+      {
+        "issue": "authentication",
+        "count": 1
+      }
+    ]
+  }
+}
