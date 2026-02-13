@@ -75,13 +75,13 @@ const extensionData = [
 function getTrendBadge(trend: string) {
   switch (trend) {
     case "hot":
-      return <span className="text-xs bg-red-500/20 text-red-400 px-2 py-0.5 rounded">🔥 Hot</span>;
+      return <span className="text-xs bg-red-500/20 text-red-400 px-2 py-0.5 rounded">Hot</span>;
     case "growing":
-      return <span className="text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded">📈 Growing</span>;
+      return <span className="text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded">Growing</span>;
     case "stable":
-      return <span className="text-xs bg-zinc-500/20 text-zinc-400 px-2 py-0.5 rounded">→ Stable</span>;
+      return <span className="text-xs bg-zinc-500/20 text-zinc-400 px-2 py-0.5 rounded">Stable</span>;
     case "declining":
-      return <span className="text-xs bg-amber-500/20 text-amber-400 px-2 py-0.5 rounded">📉 Declining</span>;
+      return <span className="text-xs bg-amber-500/20 text-amber-400 px-2 py-0.5 rounded">Declining</span>;
     default:
       return null;
   }
@@ -94,13 +94,13 @@ export default function VSCodePage() {
         <Link href="/data" className="hover:text-white">Data</Link> → VS Code
       </div>
       
-      <h1 className="text-2xl font-semibold tracking-tight mb-2">💻 VS Code AI Extensions</h1>
+      <h1 className="text-2xl font-semibold tracking-tight mb-2">VS Code AI Extensions</h1>
       <p className="text-zinc-400 mb-4">
         Popular AI coding extensions in the VS Code marketplace
       </p>
 
       <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4 mb-8 text-sm">
-        <strong className="text-amber-400">⚠️ Data Note:</strong>{" "}
+        <strong className="text-amber-400">Data Note:</strong>{" "}
         <span className="text-zinc-400">
           Install counts are approximate. VS Code API doesn&apos;t provide exact numbers publicly.
           Automated tracking coming soon.
@@ -143,28 +143,28 @@ export default function VSCodePage() {
         <h2 className="text-lg font-medium text-white">Key Insights</h2>
         <div className="grid md:grid-cols-2 gap-4">
           <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg">
-            <h3 className="text-sm font-medium text-white mb-2">🏆 Market Leader</h3>
+            <h3 className="text-sm font-medium text-white mb-2">Market Leader</h3>
             <p className="text-sm text-zinc-400">
               GitHub Copilot dominates with 20M+ installs, but faces growing competition 
               from free alternatives like Codeium and Continue.
             </p>
           </div>
           <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg">
-            <h3 className="text-sm font-medium text-white mb-2">🔥 Rising Stars</h3>
+            <h3 className="text-sm font-medium text-white mb-2">Rising Stars</h3>
             <p className="text-sm text-zinc-400">
               Cline (agentic coding) and Continue (BYOK) are growing fast among 
               power users who want more control.
             </p>
           </div>
           <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg">
-            <h3 className="text-sm font-medium text-white mb-2">💰 Free Options</h3>
+            <h3 className="text-sm font-medium text-white mb-2">Free Options</h3>
             <p className="text-sm text-zinc-400">
               BYOK (Bring Your Own Key) tools let developers use their own API keys, 
               making them effectively free if you already pay for API access.
             </p>
           </div>
           <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg">
-            <h3 className="text-sm font-medium text-white mb-2">📊 Ratings Caveat</h3>
+            <h3 className="text-sm font-medium text-white mb-2">Ratings Caveat</h3>
             <p className="text-sm text-zinc-400">
               High ratings on newer extensions often reflect early adopter enthusiasm. 
               Copilot&apos;s lower rating includes years of feedback.
@@ -175,7 +175,7 @@ export default function VSCodePage() {
 
       {/* CTA */}
       <div className="mt-8 p-4 bg-blue-500/5 border border-blue-500/20 rounded-lg text-sm">
-        <strong className="text-blue-400">📡 Want extension tracking?</strong>
+        <strong className="text-blue-400">Want extension tracking?</strong>
         <p className="text-zinc-400 mt-1">
           We&apos;re building automated VS Code marketplace tracking.{" "}
           <Link href="/" className="text-blue-400 hover:text-blue-300">

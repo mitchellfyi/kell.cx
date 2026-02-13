@@ -71,13 +71,13 @@ function getCategoryColor(category?: string): string {
 
 function getCategoryLabel(category?: string): string {
   const labels: Record<string, string> = {
-    "agents": "🤖 Agents",
-    "code-generation": "💻 Code Gen",
-    "benchmarks": "📊 Benchmarks",
-    "safety": "🛡️ Safety",
-    "reasoning": "🧠 Reasoning",
-    "multimodal": "🎨 Multimodal",
-    "training": "⚡ Training",
+    "agents": "Agents",
+    "code-generation": "Code Gen",
+    "benchmarks": "Benchmarks",
+    "safety": "Safety",
+    "reasoning": "Reasoning",
+    "multimodal": "Multimodal",
+    "training": "Training",
   };
   return labels[category || ""] || category || "Other";
 }

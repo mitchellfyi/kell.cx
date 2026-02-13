@@ -123,7 +123,7 @@ export default function PricingPage() {
         <Link href="/data" className="hover:text-white">Data</Link> → Pricing
       </div>
       
-      <h1 className="text-2xl font-semibold tracking-tight mb-2">💰 AI Coding Tool Pricing</h1>
+      <h1 className="text-2xl font-semibold tracking-tight mb-2">AI Coding Tool Pricing</h1>
       <p className="text-zinc-400 mb-8">Last updated: {data.meta.lastUpdated}</p>
 
       <div className="flex flex-wrap gap-6 mb-8 text-sm">
@@ -149,7 +149,7 @@ export default function PricingPage() {
       {/* LLM API Pricing */}
       {data.llmApiPricing && (
         <section className="mb-8">
-          <h2 className="text-lg font-medium text-white mb-2">🔑 LLM API Pricing (BYOK Reference)</h2>
+          <h2 className="text-lg font-medium text-white mb-2">LLM API Pricing (BYOK Reference)</h2>
           <p className="text-sm text-zinc-500 mb-4">{data.llmApiPricing.description}</p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
@@ -194,7 +194,7 @@ export default function PricingPage() {
         </div>
 
         <div className="bg-blue-500/5 border border-blue-500/20 rounded-lg p-4 text-sm">
-          <strong className="text-blue-400">💡 Quick Picks:</strong>
+          <strong className="text-blue-400">Quick Picks:</strong>
           <ul className="mt-2 space-y-1 text-zinc-400">
             <li>• <strong className="text-white">Best free:</strong> Windsurf (unlimited completions)</li>
             <li>• <strong className="text-white">Cheapest paid:</strong> Cody at $9/mo</li>
@@ -210,7 +210,7 @@ export default function PricingPage() {
 function PricingSection({ category }: { category: Category }) {
   return (
     <section className="mb-8">
-      <h2 className="text-lg font-medium text-white mb-4">{category.emoji} {category.name}</h2>
+      <h2 className="text-lg font-medium text-white mb-4">{category.name}</h2>
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>

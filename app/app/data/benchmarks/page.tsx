@@ -141,12 +141,12 @@ export default function BenchmarksPage() {
         <Link href="/data" className="hover:text-white">Data</Link> → Benchmarks
       </div>
       
-      <h1 className="text-2xl font-semibold tracking-tight mb-2">📊 AI Coding Model Benchmarks</h1>
+      <h1 className="text-2xl font-semibold tracking-tight mb-2">AI Coding Model Benchmarks</h1>
       <p className="text-zinc-400 mb-8">Performance scores across major coding benchmarks</p>
 
       {/* Important distinction */}
       <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4 mb-8 text-sm">
-        <strong className="text-amber-400">⚠️ Models vs Agents:</strong>{" "}
+        <strong className="text-amber-400">Models vs Agents:</strong>{" "}
         <span className="text-zinc-400">
           Aider tests raw model coding ability. SWE-bench tests complete agent systems (model + scaffolding).
           A model that ranks lower on Aider might power an agent that ranks higher on SWE-bench.

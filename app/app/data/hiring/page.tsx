@@ -53,7 +53,7 @@ export default function HiringPage() {
         <Link href="/data" className="hover:text-white">Data</Link> → Hiring
       </div>
 
-      <h1 className="text-2xl font-semibold tracking-tight mb-2">💼 Hiring Trends</h1>
+      <h1 className="text-2xl font-semibold tracking-tight mb-2">Hiring Trends</h1>
       <p className="text-zinc-400 mb-8">Open roles and hiring velocity across AI coding tool companies</p>
 
       {/* Stats */}

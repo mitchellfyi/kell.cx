@@ -24,15 +24,15 @@ const recentSignals = [
 ];
 
 const drillDownPages = [
-  { href: "/data/pricing", title: "💰 Pricing", stat: "10 tools compared" },
-  { href: "/data/benchmarks", title: "📊 Benchmarks", stat: "69 models ranked" },
-  { href: "/data/github", title: "⭐ GitHub Stars", stat: "439K total" },
-  { href: "/data/vscode", title: "🔌 VS Code", stat: "160M+ installs" },
-  { href: "/data/hiring", title: "💼 Hiring", stat: "847 open roles" },
-  { href: "/data/releases", title: "📦 Releases", stat: "18 this week" },
-  { href: "/data/hackernews", title: "🔥 Hacker News", stat: "215 mentions" },
-  { href: "/data/arxiv", title: "📄 ArXiv Papers", stat: "50+ AI papers" },
-  { href: "/data/models", title: "🧠 Models", stat: "Foundation + coding" },
+  { href: "/data/pricing", title: "Pricing", stat: "10 tools compared" },
+  { href: "/data/benchmarks", title: "Benchmarks", stat: "69 models ranked" },
+  { href: "/data/github", title: "GitHub Stars", stat: "439K total" },
+  { href: "/data/vscode", title: "VS Code", stat: "160M+ installs" },
+  { href: "/data/hiring", title: "Hiring", stat: "847 open roles" },
+  { href: "/data/releases", title: "Releases", stat: "18 this week" },
+  { href: "/data/hackernews", title: "Hacker News", stat: "215 mentions" },
+  { href: "/data/arxiv", title: "ArXiv Papers", stat: "50+ AI papers" },
+  { href: "/data/models", title: "Models", stat: "Foundation + coding" },
 ];
 
 export const metadata = {
