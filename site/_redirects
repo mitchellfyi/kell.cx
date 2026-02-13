@@ -1,7 +1,0 @@
-# Clean URL handling for static export
-/about /about.html 200
-/blog /blog.html 200
-/blog/* /blog/:splat.html 200
-/data /data.html 200
-/data/* /data/:splat.html 200
-/pricing /pricing.html 200

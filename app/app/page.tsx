@@ -37,8 +37,11 @@ export default function HomePage() {
 
       {/* Sample Briefing */}
       <div className="text-left mb-10 p-6 bg-white/[0.02] rounded-xl border border-white/[0.06]">
-        <h3 className="text-xs uppercase tracking-wide text-zinc-500 mb-4">
+        <h3 className="text-xs uppercase tracking-wide text-zinc-500 mb-4 flex items-center justify-between">
           Sample briefing
+          <a href="/sample" className="text-blue-400 normal-case tracking-normal text-xs">
+            View full →
+          </a>
         </h3>
 
         <div className="flex items-center gap-2 text-xs text-zinc-500 mb-4 pb-3 border-b border-white/[0.06]">

@@ -28,9 +28,11 @@ const drillDownPages = [
   { href: "/data/benchmarks", title: "📊 Benchmarks", stat: "69 models ranked" },
   { href: "/data/github", title: "⭐ GitHub Stars", stat: "439K total" },
   { href: "/data/vscode", title: "🔌 VS Code", stat: "160M+ installs" },
+  { href: "/data/hiring", title: "💼 Hiring", stat: "847 open roles" },
   { href: "/data/releases", title: "📦 Releases", stat: "18 this week" },
   { href: "/data/hackernews", title: "🔥 Hacker News", stat: "215 mentions" },
   { href: "/data/arxiv", title: "📄 ArXiv Papers", stat: "50+ AI papers" },
+  { href: "/data/models", title: "🧠 Models", stat: "Foundation + coding" },
 ];
 
 export const metadata = {
@@ -65,8 +67,11 @@ export default function DataPage() {
 
       {/* Momentum Leaderboard */}
       <section className="mb-10">
-        <div className="mb-4 pb-2 border-b border-white/[0.08]">
+        <div className="flex justify-between items-center mb-4 pb-2 border-b border-white/[0.08]">
           <h2 className="text-xs uppercase tracking-wide text-zinc-500">Momentum Leaderboard</h2>
+          <Link href="/leaderboard" className="text-xs text-blue-400 hover:text-blue-300">
+            Full rankings →
+          </Link>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">

@@ -1,13 +1,16 @@
 # Kell Priorities
 
-**Last updated:** 2026-02-13 14:05 UTC
+**Last updated:** 2026-02-13 15:30 UTC
 **Goal:** First paying customer
 
 ---
 
 ## P0 — Do Now
 
-_No P0 items — move to P1_
+1. **Outreach to potential customers**
+   - ✅ Swyx draft ready (outreach/drafts/swyx-latentspace.md)
+   - ⏳ Awaiting Mitchell's approval to send first email
+   - Status: READY TO SEND
 
 ---
 
@@ -26,10 +29,6 @@ _No P0 items — move to P1_
 ---
 
 ## P2 — Next
-
-4. **Outreach to potential customers**
-   - Tracker exists at outreach/tracker.json
-   - Status: NOT STARTED
 
 5. **Content that drives signups**
    - Blog posts, comparisons, analysis
