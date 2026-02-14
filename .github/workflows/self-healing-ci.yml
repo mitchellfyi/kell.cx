@@ -69,8 +69,8 @@ jobs:
                   repo: context.repo.repo,
                   job_id: job.id
                 });
-                const logLines = logs.data.split('\\n');
-                jobLogs.push({ name: job.name, log: logLines.slice(-200).join('\\n') });
+                const logLines = logs.data.split('\n');
+                jobLogs.push({ name: job.name, log: logLines.slice(-200).join('\n') });
               } catch (error) {
                 jobLogs.push({ name: job.name, log: 'Failed to fetch logs' });
               }
@@ -109,21 +109,61 @@ jobs:
             if (workflowDetails.failedJobs.length === 0) return;
             let logsSection = '';
             for (const jobLog of workflowDetails.jobLogs) {
-              logsSection += `### Job: ${jobLog.name}\\n\\n\`\`\`\\n${jobLog.log}\\n\`\`\`\\n\\n`;
+              logsSection += `### Job: ${jobLog.name}\n\n\`\`\`\n${jobLog.log}\n\`\`\`\n\n`;
             }
             if (!issueCheck.exists) {
-              const issueBody = `## CI Failure — Auto-generated\\n\\nThe CI workflow failed on branch \`main\` at commit \`${workflowDetails.sha}\`.\\n\\n**Failed run:** ${workflowDetails.runUrl}\\n\\n## Task\\n\\nAnalyze the failure logs below and fix the code that is causing CI to fail.\\n\\n**Rules:**\\n- Fix the root cause in the source code, tests, or configuration\\n- Do NOT skip, disable, or mark any tests as expected failures\\n- Do NOT add \`continue-on-error\` or any other workaround\\n- Run the full test suite locally before submitting your PR\\n- Keep your changes minimal and focused on the fix\\n\\n## Failure Logs\\n\\n${logsSection}`;
+              const issueBody = `## CI Failure — Auto-generated
+
+            The CI workflow failed on branch \`main\` at commit \`${workflowDetails.sha}\`.
+
+            **Failed run:** ${workflowDetails.runUrl}
+
+            ## Task
+
+            Analyze the failure logs below and fix the code that is causing CI to fail.
+
+            **Rules:**
+            - Fix the root cause in the source code, tests, or configuration
+            - Do NOT skip, disable, or mark any tests as expected failures
+            - Do NOT add \`continue-on-error\` or any other workaround
+            - Run the full test suite locally before submitting your PR
+            - Keep your changes minimal and focused on the fix
+
+            ## Failure Logs
+
+            ${logsSection}`;
+
               const issue = await github.rest.issues.create({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 title: `[CI Fix] CI failure on \`main\` (${workflowDetails.shortSha})`,
                 body: issueBody,
-                labels: ['ci-fix', 'automated'],
-                assignees: ['copilot']
+                labels: ['ci-fix', 'automated']
               });
               console.log(`Created issue #${issue.data.number}`);
+              
+              // Assign to Copilot using the correct bot name
+              try {
+                await github.rest.issues.addAssignees({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue.data.number,
+                  assignees: ['copilot-swe-agent[bot]']
+                });
+                console.log('Assigned issue to Copilot');
+              } catch (error) {
+                console.log('Could not assign to Copilot:', error.message);
+              }
             } else if (issueCheck.commentCount < 3) {
-              const commentBody = `## New Failure Detected\\n\\n**Failed run:** ${workflowDetails.runUrl}\\n**Commit:** \`${workflowDetails.sha}\`\\n\\n## Failure Logs\\n\\n${logsSection}`;
+              const commentBody = `## New Failure Detected
+
+            **Failed run:** ${workflowDetails.runUrl}
+            **Commit:** \`${workflowDetails.sha}\`
+
+            ## Failure Logs
+
+            ${logsSection}`;
+
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
@@ -138,4 +178,3 @@ jobs:
                 labels: ['needs-human']
               });
             }
-
