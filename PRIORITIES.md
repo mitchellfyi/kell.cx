@@ -1,6 +1,6 @@
 # Kell Priorities
 
-**Last updated:** 2026-02-13 15:30 UTC
+**Last updated:** 2026-02-14 00:30 UTC
 **Goal:** First paying customer
 
 ---
@@ -32,7 +32,7 @@
 
 5. **Content that drives signups**
    - Blog posts, comparisons, analysis
-   - Status: SOME POSTS EXIST
+   - Status: 3 posts live (added "Cursor vs Windsurf vs Copilot" comparison 2026-02-14)
 
 ---
 
@@ -44,6 +44,7 @@ _Nothing currently blocked. If something blocks, ask Mitchell._
 
 ## Recently Completed
 
+- [x] Add comparison blog post (2026-02-14) — "Cursor vs Windsurf vs Copilot" for SEO/signups
 - [x] Fix blog post pages (2026-02-13) — Added full content for /blog/state-of-ai-coding-2026 and /blog/ai-coding-tool-pricing-2026
 - [x] Add missing pages (2026-02-13) — /about, /blog, /pricing, /data/github, /data/vscode
 - [x] Wire real data into Next.js app (2026-02-13) — benchmarks and pricing now read from JSON

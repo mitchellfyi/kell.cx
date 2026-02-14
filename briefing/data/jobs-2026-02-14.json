@@ -1,0 +1,161 @@
+{
+  "cursor": {
+    "company": "Cursor",
+    "scrapedAt": "2026-02-14T06:04:20.599Z",
+    "careersUrl": "https://cursor.com/careers",
+    "status": "active",
+    "estimatedCount": 67,
+    "roles": [],
+    "categories": {},
+    "signals": [
+      "Heavy hiring: 67+ open roles"
+    ]
+  },
+  "cognition": {
+    "company": "Cognition (Devin)",
+    "scrapedAt": "2026-02-14T06:04:21.166Z",
+    "careersUrl": "https://cognition.ai/careers",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "replit": {
+    "company": "Replit",
+    "scrapedAt": "2026-02-14T06:04:21.376Z",
+    "careersUrl": "https://replit.com/site/careers",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "windsurf": {
+    "company": "Codeium (Windsurf)",
+    "scrapedAt": "2026-02-14T06:04:21.557Z",
+    "careersUrl": "https://codeium.com/careers",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "copilot": {
+    "company": "GitHub Copilot",
+    "scrapedAt": "2026-02-14T06:04:21.758Z",
+    "careersUrl": "https://github.com/about/careers",
+    "status": "error",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": [],
+    "error": "HTTP 403"
+  },
+  "tabnine": {
+    "company": "Tabnine",
+    "scrapedAt": "2026-02-14T06:04:22.673Z",
+    "careersUrl": "https://www.tabnine.com/careers",
+    "status": "active",
+    "estimatedCount": 5,
+    "roles": [
+      "Introducing Provenance and Attribution: Minimize IP liability for GenAI output"
+    ],
+    "categories": {},
+    "signals": []
+  },
+  "amazonq": {
+    "company": "Amazon Q Developer",
+    "scrapedAt": "2026-02-14T06:04:22.730Z",
+    "careersUrl": "https://www.amazon.jobs/en/search?base_query=Q+Developer",
+    "status": "active",
+    "estimatedCount": 1,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "cody": {
+    "company": "Sourcegraph (Cody)",
+    "scrapedAt": "2026-02-14T06:04:23.287Z",
+    "careersUrl": "https://boards.greenhouse.io/sourcegraph91",
+    "status": "active",
+    "estimatedCount": 7,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "continue": {
+    "company": "Continue.dev",
+    "scrapedAt": "2026-02-14T06:04:23.682Z",
+    "careersUrl": "https://continue.dev/careers",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "supermaven": {
+    "company": "Supermaven",
+    "scrapedAt": "2026-02-14T06:04:24.147Z",
+    "careersUrl": "https://supermaven.com/about",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "augment": {
+    "company": "Augment Code",
+    "scrapedAt": "2026-02-14T06:04:24.178Z",
+    "careersUrl": "https://www.augmentcode.com/careers",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "lovable": {
+    "company": "Lovable",
+    "scrapedAt": "2026-02-14T06:04:24.338Z",
+    "careersUrl": "https://lovable.dev/careers",
+    "status": "active",
+    "estimatedCount": 93,
+    "roles": [],
+    "categories": {},
+    "signals": [
+      "Heavy hiring: 93+ open roles"
+    ]
+  },
+  "poolside": {
+    "company": "Poolside",
+    "scrapedAt": "2026-02-14T06:04:24.639Z",
+    "careersUrl": "https://poolside.ai/careers",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "bolt": {
+    "company": "Bolt (StackBlitz)",
+    "scrapedAt": "2026-02-14T06:04:24.660Z",
+    "careersUrl": "https://stackblitz.com/careers",
+    "status": "active",
+    "estimatedCount": 0,
+    "roles": [],
+    "categories": {},
+    "signals": []
+  },
+  "v0": {
+    "company": "v0 (Vercel)",
+    "scrapedAt": "2026-02-14T06:04:24.842Z",
+    "careersUrl": "https://vercel.com/careers",
+    "status": "active",
+    "estimatedCount": 39,
+    "roles": [],
+    "categories": {},
+    "signals": [
+      "Heavy hiring: 39+ open roles"
+    ]
+  }
+}

@@ -10,7 +10,7 @@
     "userCountStr": null,
     "reviewCount": null,
     "version": null,
-    "scrapedAt": "2026-02-13T13:12:49.932Z"
+    "scrapedAt": "2026-02-14T06:05:39.374Z"
   },
   "hobjkcpmjhlegmobgonaagepfckjkceh": {
     "name": "Codeium",
@@ -23,7 +23,7 @@
     "userCountStr": "60,000",
     "reviewCount": 197,
     "version": null,
-    "scrapedAt": "2026-02-13T13:12:50.572Z"
+    "scrapedAt": "2026-02-14T06:05:40.053Z"
   },
   "hcjjlaldokddkmhaoehokfpiaioomema": {
     "name": "Tabnine",
@@ -36,7 +36,7 @@
     "userCountStr": null,
     "reviewCount": null,
     "version": null,
-    "scrapedAt": "2026-02-13T13:12:51.231Z"
+    "scrapedAt": "2026-02-14T06:05:40.726Z"
   },
   "codeaccelerate": {
     "name": "Continue",
@@ -49,7 +49,7 @@
     "userCountStr": null,
     "reviewCount": null,
     "version": null,
-    "scrapedAt": "2026-02-13T13:12:51.926Z"
+    "scrapedAt": "2026-02-14T06:05:41.425Z"
   },
   "fabekkagncfkmdfhoklfokfokhoommcc": {
     "name": "Amazon Q",
@@ -62,7 +62,7 @@
     "userCountStr": null,
     "reviewCount": null,
     "version": null,
-    "scrapedAt": "2026-02-13T13:12:52.552Z"
+    "scrapedAt": "2026-02-14T06:05:42.092Z"
   },
   "nnpcmdgfpanfaoifkgbgccabjjamhddj": {
     "name": "Sourcegraph Cody",
@@ -75,7 +75,7 @@
     "userCountStr": null,
     "reviewCount": null,
     "version": null,
-    "scrapedAt": "2026-02-13T13:12:53.193Z"
+    "scrapedAt": "2026-02-14T06:05:42.766Z"
   },
   "kcfibkpgpmfolpdmhphjpobjfmdafbhm": {
     "name": "Cursor",
@@ -88,6 +88,6 @@
     "userCountStr": null,
     "reviewCount": null,
     "version": null,
-    "scrapedAt": "2026-02-13T13:12:53.871Z"
+    "scrapedAt": "2026-02-14T06:05:43.441Z"
   }
 }
