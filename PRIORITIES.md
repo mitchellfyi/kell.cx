@@ -1,16 +1,16 @@
 # Kell Priorities
 
-**Last updated:** 2026-02-14 00:30 UTC
+**Last updated:** 2026-02-14 15:31 UTC
 **Goal:** First paying customer
 
 ---
 
 ## P0 — Do Now
 
-1. **Outreach to potential customers**
-   - ✅ Swyx draft ready (outreach/drafts/swyx-latentspace.md)
-   - ⏳ Awaiting Mitchell's approval to send first email
-   - Status: READY TO SEND
+1. **Live testing phase**
+   - Need 5 days of live testing before any real outreach
+   - Track: Digest deliveries, site stability, subscriber flow
+   - Started: 2026-02-14
 
 ---
 
@@ -33,6 +33,15 @@
 5. **Content that drives signups**
    - Blog posts, comparisons, analysis
    - Status: 3 posts live (added "Cursor vs Windsurf vs Copilot" comparison 2026-02-14)
+
+---
+
+## P4 — Later (after 5 days live testing)
+
+4. **Outreach to potential customers**
+   - ✅ Swyx draft ready (outreach/drafts/swyx-latentspace.md)
+   - ⛔ DO NOT send until 5 days of live testing complete (~2026-02-19)
+   - Mitchell explicitly asked for this delay on 2026-02-14
 
 ---
 
