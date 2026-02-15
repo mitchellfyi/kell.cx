@@ -1,0 +1,49 @@
+name: AI Content Generation
+
+on:
+  schedule:
+    # Run weekly on Sunday at 08:00 UTC
+    - cron: '0 8 * * 0'
+  workflow_dispatch:
+
+env:
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+  OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o' }}
+
+jobs:
+  generate-content:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: 'app/package-lock.json'
+
+      - name: Install dependencies
+        working-directory: app
+        run: npm ci
+
+      - name: Generate evergreen content
+        working-directory: app
+        run: npx tsx scripts/generate-content.ts
+
+      - name: Commit updated content
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+          git add data/generated/ 2>/dev/null || true
+          
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: regenerate evergreen content [skip ci]"
+            git push
+          fi

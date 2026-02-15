@@ -290,3 +290,35 @@ export interface MarketAnalysisData {
 export function getMarketAnalysis(): MarketAnalysisData | null {
   return loadJson<MarketAnalysisData | null>("market-analysis.json", null);
 }
+
+// Generated Content (Evergreen)
+export interface TrendReport {
+  period: string;
+  title: string;
+  marketOverview: string;
+  leaders: string[];
+  risers: string[];
+  keyDevelopments: string[];
+  outlook: string;
+  lastUpdated: string;
+}
+
+export interface ComparisonPage {
+  tools: string[];
+  title: string;
+  introduction: string;
+  pricingComparison: string;
+  featureComparison: string;
+  verdict: string;
+  lastUpdated: string;
+}
+
+export interface GeneratedContent {
+  trendReport: TrendReport | null;
+  comparisons: ComparisonPage[];
+  generatedAt: string;
+}
+
+export function getGeneratedContent(): GeneratedContent | null {
+  return loadJson<GeneratedContent | null>("generated/index.json", null);
+}

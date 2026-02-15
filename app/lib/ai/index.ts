@@ -9,3 +9,4 @@ export * from './insights';
 export * from './summarize';
 export * from './competitive';
 export * from './search';
+export * from './content';
