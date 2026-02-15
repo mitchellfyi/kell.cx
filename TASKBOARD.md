@@ -1,78 +1,75 @@
 # Taskboard
 
-> Last updated: 2026-02-15 09:25 UTC
+> Last updated: 2026-02-15 09:35 UTC
 
-## Current Sprint: Complete Data Infrastructure
+## ✅ Completed Today
 
-### ✅ Done Today
+### Infrastructure
 - [x] GitHub Actions daily data refresh (05:00 UTC)
-- [x] Wire up /data page with real data + source links
-- [x] Key Insights at top of every drill-down page
-- [x] Master list of tracked companies/tools/models (data/master-list.json)
-- [x] Convert pricing blog → /data/pricing (dynamic)
-- [x] Create /data/news (24-48h headlines, ranked)
-- [x] Create /data/opensource (GitHub trending, releases)
-- [x] GitHub Trending collector script
-- [x] AI insights generator (Claude API)
-- [x] Briefing automation in workflow
-- [x] Homepage clarity (AI Coding Tools Intelligence)
+- [x] RESEND_API_KEY added to repo secrets
+- [x] Claude Code CLI integration for AI insights
+- [x] Master list of tracked companies/tools/models
+- [x] GitHub Trending collector
+- [x] AI insights generator
 
-### 🔄 In Progress
-- [ ] Workflow running (collecting + insight generation)
-- [ ] Need to add ANTHROPIC_API_KEY + RESEND_API_KEY to repo secrets
+### Pages (All with Key Insights at top, pulling from real data)
+- [x] `/data` — Dashboard with live stats
+- [x] `/data/pricing` — Dynamic pricing comparison  
+- [x] `/data/vscode` — VS Code extension stats
+- [x] `/data/releases` — GitHub releases
+- [x] `/data/hackernews` — HN mentions
+- [x] `/data/news` — Last 48h headlines
+- [x] `/data/opensource` — Trending repos
+- [x] `/data/benchmarks` — Aider + LMArena leaderboards
+- [x] `/data/models` — All providers
+- [x] `/data/hiring` — Job counts by company
 
-### 📋 Next Up
+### Content
+- [x] Homepage clarity ("AI Coding Tools Intelligence")
+- [x] Converted pricing blog → dynamic page
 
-**P1 - Complete Automation**
-- [ ] Add GitHub repo secrets: ANTHROPIC_API_KEY, RESEND_API_KEY
-- [ ] Test full workflow with briefing send
-- [ ] Verify insights are generated correctly
+---
 
-**P2 - Data Pages**
-- [ ] /data/benchmarks (Aider + LMArena leaderboards)
-- [ ] /data/models (all providers + pricing)
-- [ ] /data/hiring (jobs by company + listings)
-- [ ] Social commentary page (Reddit + Twitter + Bluesky)
+## 🔄 In Progress
 
-**P3 - UX Improvements**
+- [ ] Workflow running (testing fixed git commit)
+
+---
+
+## 📋 Remaining Tasks
+
+**P2 - UX Polish**
 - [ ] Tabs component for multi-section pages
 - [ ] Full-width email tables
-- [ ] Remove blog, redirect to data pages
-- [ ] More consistent key insights formatting
+- [ ] Remove blog section (redirect to data pages)
+- [ ] Social commentary page (Reddit + Bluesky aggregation)
+
+**P3 - Data Quality**
+- [ ] Add more companies to master-list.json as discovered
+- [ ] Improve jobs scraping (some return 0)
+- [ ] Add Twitter/X high-profile posts
 
 ---
 
-## Data Sources Status
+## Data Flow
 
-| Source | Script | Automated | Status |
-|--------|--------|-----------|--------|
-| VS Code Marketplace | collect-vscode-stats.js | ✅ | Working |
-| GitHub Releases | collect-releases.js | ✅ | Working |
-| GitHub Stats | collect-github-stats.js | ✅ | Working |
-| GitHub Trending | collect-github-trending.js | ✅ | New |
-| Hacker News | collect-hn-mentions.js | ✅ | Working |
-| npm Downloads | collect-npm-downloads.js | ✅ | Working |
-| PyPI Stats | collect-pypi-stats.js | ✅ | Working |
-| Homebrew | collect-homebrew-stats.js | ✅ | Working |
-| Reddit | collect-reddit-stats.js | ✅ | Working |
-| Stack Overflow | collect-stackoverflow-trends.js | ✅ | Working |
-| G2 Reviews | collect-g2-reviews.js | ✅ | Working |
-| News Aggregation | aggregate-news.js | ✅ | Working |
-| AI Insights | generate-insights.js | ✅ | New |
+```
+Daily at 05:00 UTC:
+1. collect-*.js scripts run
+2. aggregate-news.js combines sources  
+3. generate-insights.js creates AI insights
+4. git commit + push
+5. Vercel auto-deploys
+6. send-briefing-to-subscribers.js emails waitlist
+```
 
 ---
 
-## Page Status
+## Secrets Status
 
-| Page | Data Source | Status |
-|------|------------|--------|
-| /data | Dashboard | ✅ Live |
-| /data/pricing | pricing.json | ✅ Live |
-| /data/vscode | vscode-stats.json | ✅ Live |
-| /data/releases | github-releases.json | ✅ Live |
-| /data/hackernews | hn-ai-mentions.json | ✅ Live |
-| /data/news | latest-news.json + hn | ✅ Live |
-| /data/opensource | github-trending.json | ✅ Live |
-| /data/benchmarks | aider-benchmark.json | 🔄 Hardcoded |
-| /data/models | model-releases.json | 🔄 Hardcoded |
-| /data/hiring | - | 🔄 Hardcoded |
+| Secret | Status |
+|--------|--------|
+| GH_PAT | ✅ |
+| CLAUDE_CODE_OAUTH_TOKEN | ✅ |
+| RESEND_API_KEY | ✅ |
+| MITCHELL_PAT | ✅ |
