@@ -36,9 +36,10 @@ function getStats() {
     cat.tools?.forEach((tool: any) => {
       totalTools++;
       if (tool.freeTier) freeCount++;
-      if (tool.individual?.price) {
-        minPrice = Math.min(minPrice, tool.individual.price);
-        maxPrice = Math.max(maxPrice, tool.individual.price);
+      const price = tool.individual?.price;
+      if (typeof price === 'number' && !isNaN(price)) {
+        minPrice = Math.min(minPrice, price);
+        maxPrice = Math.max(maxPrice, price);
       }
     });
   });
@@ -47,7 +48,7 @@ function getStats() {
     totalTools,
     freeCount,
     minPrice: minPrice === Infinity ? 0 : minPrice,
-    maxPrice,
+    maxPrice: maxPrice === 0 ? 0 : maxPrice,
   };
 }
 

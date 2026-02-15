@@ -132,19 +132,20 @@ export async function generateCompletion(
       // Newer models (o1, gpt-5, o3) use different parameters
       const isReasoningModel = model.includes('o1') || model.includes('gpt-5') || model.includes('o3');
       
-      const params: OpenAI.Chat.ChatCompletionCreateParams = {
-        model,
-        messages: [{ role: 'user', content: prompt }],
-        ...(isReasoningModel
-          ? { max_completion_tokens: config.maxTokens || 2000 }
-          : {
-              max_tokens: config.maxTokens || 2000,
-              temperature: config.temperature ?? 0.7
-            }
-        )
-      };
-
-      return client.chat.completions.create(params);
+      if (isReasoningModel) {
+        return client.chat.completions.create({
+          model,
+          messages: [{ role: 'user', content: prompt }],
+          max_completion_tokens: config.maxTokens || 2000,
+        });
+      } else {
+        return client.chat.completions.create({
+          model,
+          messages: [{ role: 'user', content: prompt }],
+          max_tokens: config.maxTokens || 2000,
+          temperature: config.temperature ?? 0.7,
+        });
+      }
     });
     
     const latencyMs = Date.now() - startTime;
