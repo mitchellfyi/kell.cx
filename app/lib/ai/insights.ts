@@ -68,7 +68,7 @@ export async function generateDailyInsights(
   
   const response = await generateJSON<{ insights: DailyInsight[]; marketSummary: string }>(
     prompt,
-    { maxTokens: 1500, temperature: 0.7 }
+    { maxTokens: 8000, temperature: 0.7 }  // Higher limit for reasoning models
   );
   
   if (!response.success || !response.data) {
