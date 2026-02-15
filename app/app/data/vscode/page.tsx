@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 import { getVSCodeStats, sources } from "@/lib/data";
 
 const data = getVSCodeStats();
@@ -35,8 +36,10 @@ export default function VSCodePage() {
   });
 
   return (
-    <div className="mx-auto max-w-4xl px-6 py-12">
-      <div className="mb-6">
+    <div className="mx-auto max-w-5xl px-6 py-8">
+      <DataNav />
+      <DataBreadcrumb current="Data" />
+      <div className="hidden">
         <Link href="/data" className="text-sm text-zinc-500 hover:text-zinc-400">
           ← Back to Dashboard
         </Link>

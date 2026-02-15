@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
+import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 
 // Load pricing data
 function loadPricing() {
@@ -21,21 +22,7 @@ function loadPricing() {
   return { categories: [], meta: {} };
 }
 
-function loadInsights() {
-  const path = join(process.cwd(), "..", "data", "insights.json");
-  if (existsSync(path)) {
-    try {
-      const data = JSON.parse(readFileSync(path, "utf8"));
-      return data.pricing || data.market || [];
-    } catch {
-      return [];
-    }
-  }
-  return [];
-}
-
 const pricing = loadPricing();
-const insights = loadInsights();
 
 // Calculate stats
 function getStats() {
@@ -60,7 +47,6 @@ function getStats() {
     freeCount,
     minPrice: minPrice === Infinity ? 0 : minPrice,
     maxPrice,
-    avgPrice: Math.round((minPrice + maxPrice) / 2),
   };
 }
 
@@ -73,46 +59,61 @@ export const metadata = {
 
 export default function PricingPage() {
   const lastUpdated = pricing.meta?.lastUpdated || "Recently";
+  const categories = pricing.categories || [];
 
   return (
-    <div className="mx-auto max-w-5xl px-6 py-12">
-      <div className="mb-6">
-        <Link href="/data" className="text-sm text-zinc-500 hover:text-zinc-400">
-          ← Back to Dashboard
-        </Link>
-      </div>
+    <div className="mx-auto max-w-5xl px-6 py-8">
+      <DataNav />
+      
+      <DataBreadcrumb current="Pricing" />
+      <PageHeader 
+        title="AI Coding Tool Pricing"
+        description="Complete pricing comparison — updated daily"
+        stats={`${stats.totalTools} tools compared · Last updated: ${lastUpdated}`}
+      />
 
-      <h1 className="text-3xl font-semibold tracking-tight mb-2">AI Coding Tool Pricing</h1>
-      <p className="text-zinc-400 mb-1">Complete pricing comparison — updated daily</p>
-      <p className="text-sm text-zinc-600 mb-6">
-        {stats.totalTools} tools compared · Last updated: {lastUpdated}
-      </p>
+      {/* Jump Links */}
+      {categories.length > 0 && (
+        <div className="flex gap-2 mb-8 overflow-x-auto pb-2 -mx-6 px-6 md:mx-0 md:px-0">
+          <a href="#insights" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+            💡 Insights
+          </a>
+          {categories.map((cat: any) => (
+            <a 
+              key={cat.id}
+              href={`#${cat.id}`} 
+              className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap"
+            >
+              {cat.emoji} {cat.name}
+            </a>
+          ))}
+        </div>
+      )}
 
       {/* Key Insights */}
-      <div className="bg-green-500/5 border border-green-500/20 rounded-lg p-5 mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-green-400 mb-4">💰 Key Insights</h2>
-        <ul className="space-y-2 text-sm text-zinc-300">
-          <li>
-            <strong className="text-white">{stats.freeCount} of {stats.totalTools}</strong> tools offer a free tier
-          </li>
-          <li>
-            Individual plans range from <strong className="text-green-400">${stats.minPrice}</strong> to{" "}
-            <strong className="text-green-400">${stats.maxPrice}</strong>/month
-          </li>
-          <li>
-            Most tools follow a <strong className="text-white">Free → Pro → Team → Enterprise</strong> model
-          </li>
-          <li>
-            Team pricing typically adds <strong className="text-white">50-100%</strong> premium over individual plans
-          </li>
-          {insights.slice(0, 2).map((insight: string, i: number) => (
-            <li key={i}>{insight}</li>
-          ))}
-        </ul>
-      </div>
+      <section id="insights" className="scroll-mt-20">
+        <div className="bg-green-500/5 border border-green-500/20 rounded-lg p-5 mb-8">
+          <h2 className="text-xs uppercase tracking-wide text-green-400 mb-3">💰 Key Insights</h2>
+          <ul className="space-y-2 text-sm text-zinc-300">
+            <li>
+              <strong className="text-white">{stats.freeCount} of {stats.totalTools}</strong> tools offer a free tier
+            </li>
+            <li>
+              Individual plans range from <strong className="text-green-400">${stats.minPrice}</strong> to{" "}
+              <strong className="text-green-400">${stats.maxPrice}</strong>/month
+            </li>
+            <li>
+              Most tools follow a <strong className="text-white">Free → Pro → Team → Enterprise</strong> model
+            </li>
+            <li>
+              Team pricing typically adds <strong className="text-white">50-100%</strong> premium over individual plans
+            </li>
+          </ul>
+        </div>
+      </section>
 
       {/* Summary Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
         <StatCard value={String(stats.totalTools)} label="Tools Compared" />
         <StatCard value={String(stats.freeCount)} label="Free Tiers" />
         <StatCard value={`$${stats.minPrice}`} label="Lowest Pro" />
@@ -120,13 +121,13 @@ export default function PricingPage() {
       </div>
 
       {/* Pricing Tables by Category */}
-      {pricing.categories?.map((category: any) => (
-        <section key={category.id} className="mb-10">
-          <h2 className="text-lg font-medium text-white mb-4 pb-2 border-b border-white/[0.08]">
+      {categories.map((category: any) => (
+        <section key={category.id} id={category.id} className="mb-10 scroll-mt-20">
+          <h2 className="text-lg font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             {category.emoji} {category.name}
           </h2>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
+          <div className="overflow-x-auto -mx-6 px-6 md:mx-0 md:px-0">
+            <table className="w-full text-sm min-w-[600px]">
               <thead>
                 <tr className="text-left text-xs text-zinc-500 uppercase">
                   <th className="pb-3 pr-4">Tool</th>
@@ -154,7 +155,7 @@ export default function PricingPage() {
                       {tool.freeTier === true ? (
                         <span className="text-green-400">✓ Free</span>
                       ) : tool.freeTier ? (
-                        <span className="text-zinc-400">{tool.freeTier}</span>
+                        <span className="text-zinc-400 text-xs">{tool.freeTier}</span>
                       ) : (
                         <span className="text-zinc-600">—</span>
                       )}
@@ -174,7 +175,7 @@ export default function PricingPage() {
                           ${tool.team.price}<span className="text-zinc-500 text-xs">/{tool.team.period}</span>
                         </span>
                       ) : tool.team ? (
-                        <span className="text-zinc-400">{tool.team}</span>
+                        <span className="text-zinc-400 text-xs">{tool.team}</span>
                       ) : (
                         <span className="text-zinc-600">—</span>
                       )}
@@ -185,12 +186,12 @@ export default function PricingPage() {
                           ${tool.enterprise.price}<span className="text-zinc-500 text-xs">/{tool.enterprise.period}</span>
                         </span>
                       ) : tool.enterprise ? (
-                        <span className="text-zinc-400">{tool.enterprise}</span>
+                        <span className="text-zinc-400 text-xs">{tool.enterprise}</span>
                       ) : (
                         <span className="text-zinc-600">—</span>
                       )}
                     </td>
-                    <td className="py-3 text-zinc-500 text-xs">{tool.notes || "—"}</td>
+                    <td className="py-3 text-zinc-500 text-xs max-w-[150px] truncate">{tool.notes || "—"}</td>
                   </tr>
                 ))}
               </tbody>
@@ -200,30 +201,30 @@ export default function PricingPage() {
       ))}
 
       {/* Pricing Observations */}
-      <section className="bg-white/[0.02] border border-white/[0.08] rounded-lg p-6 mb-8">
-        <h2 className="text-lg font-medium text-white mb-4">Pricing Patterns</h2>
-        <div className="space-y-4 text-sm text-zinc-400">
-          <p>
-            <strong className="text-white">The "Free" Trap:</strong> Most free tiers are heavily rate-limited. 
-            Cursor gives 2,000 completions/month, Windsurf is unlimited but slower models.
-          </p>
-          <p>
-            <strong className="text-white">Team vs Individual:</strong> The jump from individual to team pricing 
-            often adds minimal features (SSO, admin controls) for 50-100% more cost per seat.
-          </p>
-          <p>
-            <strong className="text-white">Enterprise Theater:</strong> "Custom pricing" usually means "we'll charge 
-            as much as we think you'll pay." Expect 2-5x team pricing for compliance checkboxes.
-          </p>
-          <p>
-            <strong className="text-white">BYOK Option:</strong> Tools like Continue, Cline, and Aider let you 
-            bring your own API keys — true $0 cost (beyond your API spend).
-          </p>
+      <section className="bg-white/[0.02] border border-white/[0.08] rounded-lg p-5 mb-8">
+        <h2 className="text-base font-medium text-white mb-4">Pricing Patterns</h2>
+        <div className="grid md:grid-cols-2 gap-4 text-sm text-zinc-400">
+          <div>
+            <strong className="text-white block mb-1">The "Free" Trap</strong>
+            <p>Most free tiers are heavily rate-limited. Cursor gives 2,000 completions/month, Windsurf is unlimited but slower models.</p>
+          </div>
+          <div>
+            <strong className="text-white block mb-1">Team vs Individual</strong>
+            <p>The jump from individual to team pricing often adds minimal features (SSO, admin controls) for 50-100% more cost per seat.</p>
+          </div>
+          <div>
+            <strong className="text-white block mb-1">Enterprise Theater</strong>
+            <p>"Custom pricing" usually means "we'll charge as much as we think you'll pay." Expect 2-5x team pricing.</p>
+          </div>
+          <div>
+            <strong className="text-white block mb-1">BYOK Option</strong>
+            <p>Tools like Continue, Cline, and Aider let you bring your own API keys — true $0 cost (beyond your API spend).</p>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
-      <div className="mt-10 pt-6 border-t border-white/[0.08] text-xs text-zinc-600">
+      <div className="pt-6 border-t border-white/[0.08] text-xs text-zinc-600">
         <p>
           Pricing data collected from official websites. Verified daily. 
           Prices shown in USD. Some tools offer annual discounts not shown here.
@@ -235,8 +236,8 @@ export default function PricingPage() {
 
 function StatCard({ value, label }: { value: string; label: string }) {
   return (
-    <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
-      <div className="text-2xl font-semibold text-white">{value}</div>
+    <div className="p-3 md:p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
+      <div className="text-xl md:text-2xl font-semibold text-white">{value}</div>
       <div className="text-xs text-zinc-500 mt-1">{label}</div>
     </div>
   );

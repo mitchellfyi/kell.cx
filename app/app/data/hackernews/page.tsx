@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getHNMentions, sources } from "@/lib/data";
+import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 
 const data = getHNMentions();
 
@@ -13,8 +14,8 @@ function getKeyInsights() {
   const stories = data.stories;
   const totalPoints = stories.reduce((sum, s) => sum + s.points, 0);
   const totalComments = stories.reduce((sum, s) => sum + s.comments, 0);
-  const topStory = stories.sort((a, b) => b.points - a.points)[0];
-  const mostDiscussed = stories.sort((a, b) => b.comments - a.comments)[0];
+  const topStory = [...stories].sort((a, b) => b.points - a.points)[0];
+  const mostDiscussed = [...stories].sort((a, b) => b.comments - a.comments)[0];
   
   return {
     totalStories: stories.length,
@@ -35,33 +36,42 @@ const otherStories = data.stories.filter(s => s.points < 20).sort((a, b) => b.po
 
 export default function HNPage() {
   const lastUpdated = new Date(data.generatedAt).toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
+    month: "short", day: "numeric", year: "numeric"
   });
 
   return (
-    <div className="mx-auto max-w-4xl px-6 py-12">
-      <div className="mb-6">
-        <Link href="/data" className="text-sm text-zinc-500 hover:text-zinc-400">
-          ← Back to Dashboard
-        </Link>
-      </div>
+    <div className="mx-auto max-w-5xl px-6 py-8">
+      <DataNav />
+      
+      <DataBreadcrumb current="Hacker News" />
+      <PageHeader 
+        title="Hacker News Mentions"
+        description="AI coding tool discussions on Hacker News (24h)"
+        stats={`${insights.totalStories} stories · ${formatNumber(insights.totalPoints)} points · Updated ${lastUpdated}`}
+      />
 
-      <h1 className="text-3xl font-semibold tracking-tight mb-2">Hacker News Mentions</h1>
-      <p className="text-zinc-400 mb-1">AI coding tool discussions on Hacker News (24h)</p>
-      <p className="text-sm text-zinc-600 mb-6">
-        {insights.totalStories} stories · Last updated: {lastUpdated} ·{" "}
-        <a href={sources.hn} target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300">
-          Source: Hacker News ↗
-        </a>
-      </p>
+      {/* Jump Links */}
+      <div className="flex gap-2 mb-8 overflow-x-auto pb-2 -mx-6 px-6 md:mx-0 md:px-0">
+        {hotStories.length > 0 && (
+          <a href="#hot" className="px-3 py-1.5 text-xs font-medium rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 whitespace-nowrap">
+            🔥 Hot ({hotStories.length})
+          </a>
+        )}
+        {warmStories.length > 0 && (
+          <a href="#trending" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+            📈 Trending ({warmStories.length})
+          </a>
+        )}
+        {otherStories.length > 0 && (
+          <a href="#recent" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+            Recent ({otherStories.length})
+          </a>
+        )}
+      </div>
 
       {/* Key Insights */}
       <div className="bg-orange-500/5 border border-orange-500/20 rounded-lg p-5 mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-orange-400 mb-4">📊 Key Insights</h2>
+        <h2 className="text-xs uppercase tracking-wide text-orange-400 mb-3">🔥 Key Insights</h2>
         <ul className="space-y-2 text-sm text-zinc-300">
           <li>
             <strong className="text-green-400">{formatNumber(insights.totalPoints)}</strong> total points across{" "}
@@ -69,12 +79,7 @@ export default function HNPage() {
           </li>
           {insights.topStory && (
             <li>
-              Top story: <strong className="text-white">"{truncate(insights.topStory.title, 60)}"</strong> ({insights.topStory.points} pts)
-            </li>
-          )}
-          {insights.mostDiscussed && insights.mostDiscussed !== insights.topStory && (
-            <li>
-              Most discussed: <strong className="text-white">{insights.mostDiscussed.comments}</strong> comments on "{truncate(insights.mostDiscussed.title, 40)}"
+              Top story: <strong className="text-white">"{truncate(insights.topStory.title, 50)}"</strong> ({insights.topStory.points} pts)
             </li>
           )}
           <li>
@@ -84,51 +89,49 @@ export default function HNPage() {
       </div>
 
       {/* Summary Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
         <StatCard value={String(insights.totalStories)} label="Stories" />
         <StatCard value={formatNumber(insights.totalPoints)} label="Total Points" />
         <StatCard value={formatNumber(insights.totalComments)} label="Comments" />
-        <StatCard value={String(hotStories.length)} label="Hot (100+ pts)" />
+        <StatCard value={String(hotStories.length)} label="Hot (100+)" />
       </div>
 
       {/* Hot Stories */}
       {hotStories.length > 0 && (
-        <section className="mb-8">
-          <h2 className="text-xs uppercase tracking-wide text-orange-400 mb-4 pb-2 border-b border-white/[0.08]">
+        <section id="hot" className="mb-8 scroll-mt-20">
+          <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             🔥 Hot Stories (100+ points)
           </h2>
           <StoryList stories={hotStories} />
         </section>
       )}
 
-      {/* Warm Stories */}
+      {/* Trending */}
       {warmStories.length > 0 && (
-        <section className="mb-8">
-          <h2 className="text-xs uppercase tracking-wide text-zinc-500 mb-4 pb-2 border-b border-white/[0.08]">
-            Trending (20-99 points)
+        <section id="trending" className="mb-8 scroll-mt-20">
+          <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
+            📈 Trending (20-99 points)
           </h2>
-          <StoryList stories={warmStories.slice(0, 10)} />
+          <StoryList stories={warmStories.slice(0, 15)} />
         </section>
       )}
 
-      {/* Other Stories */}
+      {/* Recent */}
       {otherStories.length > 0 && (
-        <section className="mb-8">
-          <h2 className="text-xs uppercase tracking-wide text-zinc-500 mb-4 pb-2 border-b border-white/[0.08]">
+        <section id="recent" className="mb-8 scroll-mt-20">
+          <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             Recent Mentions
           </h2>
-          <StoryList stories={otherStories.slice(0, 10)} />
+          <StoryList stories={otherStories.slice(0, 15)} />
         </section>
       )}
 
-      {/* Data freshness footer */}
-      <div className="mt-10 pt-6 border-t border-white/[0.08] text-xs text-zinc-600">
+      {/* Footer */}
+      <div className="pt-6 border-t border-white/[0.08] text-xs text-zinc-600">
         <p>
           Data collected via{" "}
-          <a href="https://hn.algolia.com/api" className="text-zinc-500 hover:text-zinc-400">
-            HN Algolia API
-          </a>
-          . Updated daily at 05:00 UTC. Tracks mentions of AI coding tools, models, and related topics.
+          <a href="https://hn.algolia.com/api" className="text-zinc-500 hover:text-zinc-400">HN Algolia API</a>.
+          Updated daily at 05:00 UTC. Tracks mentions of AI coding tools, models, and related topics.
         </p>
       </div>
     </div>
@@ -137,18 +140,18 @@ export default function HNPage() {
 
 function StoryList({ stories }: { stories: typeof data.stories }) {
   return (
-    <div className="space-y-3">
+    <div className="space-y-2">
       {stories.map((story) => (
         <div
           key={story.id}
-          className="flex items-start justify-between p-4 bg-white/[0.02] rounded-lg border border-white/[0.04] hover:border-white/[0.08]"
+          className="flex items-start justify-between p-3 md:p-4 bg-white/[0.02] rounded-lg border border-white/[0.04] hover:border-white/10 transition-colors"
         >
-          <div className="flex-1 pr-4">
+          <div className="flex-1 pr-3 min-w-0">
             <a
               href={story.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-white hover:text-blue-400 line-clamp-2"
+              className="font-medium text-white hover:text-blue-400 line-clamp-2 text-sm md:text-base"
             >
               {story.title}
             </a>
@@ -158,12 +161,11 @@ function StoryList({ stories }: { stories: typeof data.stories }) {
           </div>
           <div className="text-right flex-shrink-0">
             <span className="text-green-400 font-semibold">{story.points}</span>
-            <span className="text-xs text-zinc-600 block">points</span>
             <a
               href={story.hnUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-orange-400 hover:text-orange-300"
+              className="text-xs text-orange-400 hover:text-orange-300 block mt-0.5"
             >
               HN ↗
             </a>
@@ -176,8 +178,8 @@ function StoryList({ stories }: { stories: typeof data.stories }) {
 
 function StatCard({ value, label }: { value: string; label: string }) {
   return (
-    <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
-      <div className="text-2xl font-semibold text-white">{value}</div>
+    <div className="p-3 md:p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
+      <div className="text-xl md:text-2xl font-semibold text-white">{value}</div>
       <div className="text-xs text-zinc-500 mt-1">{label}</div>
     </div>
   );

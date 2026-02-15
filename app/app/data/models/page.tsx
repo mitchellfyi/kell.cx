@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { getLMArenaLeaderboard, getAiderBenchmark, sources } from "@/lib/data";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
+import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 
-// Load model data
-function loadModels() {
+// Load model releases
+function loadModelReleases() {
   const path = join(process.cwd(), "..", "data", "model-releases.json");
   if (existsSync(path)) {
     try {
@@ -27,28 +29,22 @@ function loadMasterList() {
   return { models: [] };
 }
 
-function loadInsights() {
-  const path = join(process.cwd(), "..", "data", "insights.json");
-  if (existsSync(path)) {
-    try {
-      const data = JSON.parse(readFileSync(path, "utf8"));
-      return data.models || data.market || [];
-    } catch {
-      return [];
-    }
-  }
-  return [];
-}
-
-const modelData = loadModels();
+const modelData = loadModelReleases();
 const masterList = loadMasterList();
-const insights = loadInsights();
+const lmarena = getLMArenaLeaderboard();
+const aider = getAiderBenchmark();
 
-// Organize by provider
-const providers = Object.entries(modelData.byProvider || {}).map(([key, data]: [string, any]) => ({
-  id: key,
-  ...data,
-}));
+// Group LMArena by organization
+const byOrg: Record<string, any[]> = {};
+lmarena.models.forEach((m) => {
+  if (!byOrg[m.organization]) byOrg[m.organization] = [];
+  byOrg[m.organization].push(m);
+});
+
+const organizations = Object.entries(byOrg)
+  .map(([name, models]) => ({ name, models, count: models.length }))
+  .sort((a, b) => b.count - a.count)
+  .slice(0, 8);
 
 export const metadata = {
   title: "AI Models — Kell",
@@ -56,149 +52,158 @@ export const metadata = {
 };
 
 export default function ModelsPage() {
-  const lastUpdated = modelData.lastUpdated
-    ? new Date(modelData.lastUpdated).toLocaleDateString("en-US", { month: "short", day: "numeric" })
-    : "Recently";
-
   const recentReleases = modelData.recentReleases || [];
-  const totalModels = modelData.summary?.totalModels || masterList.models?.length || 17;
+  const totalModels = lmarena.total_models || masterList.models?.length || 0;
 
   return (
-    <div className="mx-auto max-w-5xl px-6 py-12">
-      <div className="mb-6">
-        <Link href="/data" className="text-sm text-zinc-500 hover:text-zinc-400">
-          ← Back to Dashboard
-        </Link>
-      </div>
+    <div className="mx-auto max-w-5xl px-6 py-8">
+      <DataNav />
+      
+      <DataBreadcrumb current="Models" />
+      <PageHeader 
+        title="AI Models"
+        description="All major AI models for coding and general use"
+        stats={`${totalModels} models · ${organizations.length}+ providers · LMArena rankings`}
+      />
 
-      <h1 className="text-3xl font-semibold tracking-tight mb-2">AI Models</h1>
-      <p className="text-zinc-400 mb-1">All major AI models for coding and general use</p>
-      <p className="text-sm text-zinc-600 mb-6">
-        {totalModels} models tracked · {providers.length} providers · Last updated: {lastUpdated}
-      </p>
+      {/* Jump Links */}
+      <div className="flex gap-2 mb-8 overflow-x-auto pb-2 -mx-6 px-6 md:mx-0 md:px-0">
+        <a href="#rankings" className="px-3 py-1.5 text-xs font-medium rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 whitespace-nowrap">
+          🏆 Rankings
+        </a>
+        <a href="#providers" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+          🏢 By Provider
+        </a>
+        {recentReleases.length > 0 && (
+          <a href="#releases" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+            🆕 Recent Releases
+          </a>
+        )}
+      </div>
 
       {/* Key Insights */}
       <div className="bg-purple-500/5 border border-purple-500/20 rounded-lg p-5 mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-purple-400 mb-4">🤖 Key Insights</h2>
+        <h2 className="text-xs uppercase tracking-wide text-purple-400 mb-3">🤖 Key Insights</h2>
         <ul className="space-y-2 text-sm text-zinc-300">
           <li>
-            Latest release: <strong className="text-white">{modelData.summary?.newestModel || "Claude Opus 4.6"}</strong> ({modelData.summary?.newestRelease || "Feb 10"})
+            <strong className="text-white">{totalModels}</strong> models tracked across{" "}
+            <strong className="text-white">{organizations.length}+</strong> providers
           </li>
           <li>
-            <strong className="text-white">{recentReleases.length}</strong> new models in the past month
+            Top coding model: <strong className="text-white">{aider.topModel || "GPT-5"}</strong> ({aider.topScore}% on Aider)
           </li>
           <li>
-            Major providers: <strong className="text-white">Anthropic, OpenAI, Google, Meta, xAI, Mistral, DeepSeek</strong>
+            LMArena #1 overall: <strong className="text-white">{lmarena.models[0]?.name || "Claude Opus 4.6"}</strong>
           </li>
-          {insights.slice(0, 2).map((insight: string, i: number) => (
-            <li key={i}>{insight}</li>
-          ))}
         </ul>
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-        <StatCard value={String(totalModels)} label="Models Tracked" />
-        <StatCard value={String(providers.length || 7)} label="Providers" />
-        <StatCard value={String(recentReleases.length || 3)} label="Recent Releases" />
-        <StatCard value={modelData.summary?.newestModel?.split(' ')[0] || "Claude"} label="Latest Provider" />
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+        <StatCard value={String(totalModels)} label="Total Models" />
+        <StatCard value={String(organizations.length)} label="Providers" />
+        <StatCard value={`${aider.topScore}%`} label="Top Aider Score" />
+        <StatCard value="#1" label={lmarena.models[0]?.organization || "Anthropic"} />
       </div>
 
-      {/* Recent Releases */}
-      {recentReleases.length > 0 && (
-        <section className="mb-10">
-          <h2 className="text-lg font-medium text-white mb-4 pb-2 border-b border-white/[0.08]">
-            🆕 Recent Releases
-          </h2>
-          <div className="space-y-3">
-            {recentReleases.map((model: any, i: number) => (
-              <div
-                key={i}
-                className="flex items-start justify-between p-4 bg-white/[0.02] rounded-lg border border-white/[0.04]"
-              >
-                <div>
-                  <div className="font-medium text-white">{model.name}</div>
-                  <div className="text-sm text-zinc-500 mt-1">
-                    {model.provider} · {model.type} · Released {model.released}
-                  </div>
-                  {model.highlights && (
-                    <div className="flex gap-2 mt-2">
-                      {model.highlights.slice(0, 3).map((h: string, j: number) => (
-                        <span key={j} className="text-xs px-2 py-0.5 bg-white/[0.05] rounded text-zinc-400">
-                          {h}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
-                {model.pricingInput && (
-                  <div className="text-right text-sm">
-                    <div className="text-zinc-400">${model.pricingInput}/M in</div>
-                    <div className="text-zinc-500">${model.pricingOutput}/M out</div>
-                  </div>
-                )}
-              </div>
-            ))}
+      {/* LMArena Top Rankings */}
+      <section id="rankings" className="mb-10 scroll-mt-20">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 pb-2 border-b border-white/[0.08] gap-2">
+          <div>
+            <h2 className="text-lg font-semibold text-white">🏆 LMArena Top 20</h2>
+            <p className="text-sm text-zinc-500">Overall rankings from 7M+ human votes</p>
           </div>
-        </section>
-      )}
+          <a href={sources.lmarena} target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-500 hover:text-zinc-400 whitespace-nowrap">
+            Source ↗
+          </a>
+        </div>
+        <div className="overflow-x-auto -mx-6 px-6 md:mx-0 md:px-0">
+          <table className="w-full text-sm min-w-[500px]">
+            <thead>
+              <tr className="text-left text-xs text-zinc-500 uppercase">
+                <th className="pb-3 pr-4 w-14">Rank</th>
+                <th className="pb-3 pr-4">Model</th>
+                <th className="pb-3 pr-4">Provider</th>
+                <th className="pb-3 text-center">Coding</th>
+                <th className="pb-3 text-center">Math</th>
+              </tr>
+            </thead>
+            <tbody className="text-zinc-300">
+              {lmarena.models.slice(0, 20).map((model, i) => (
+                <tr key={model.name} className="border-b border-white/[0.04] hover:bg-white/[0.02]">
+                  <td className={`py-2.5 pr-4 ${getRankStyle(model.rank_overall)}`}>#{model.rank_overall}</td>
+                  <td className="py-2.5 pr-4 font-medium text-white">{model.name}</td>
+                  <td className="py-2.5 pr-4">
+                    <span className="px-2 py-0.5 bg-white/[0.05] text-zinc-400 rounded text-xs">
+                      {model.organization}
+                    </span>
+                  </td>
+                  <td className="py-2.5 text-center text-zinc-500">
+                    {model.rank_coding ? `#${model.rank_coding}` : "—"}
+                  </td>
+                  <td className="py-2.5 text-center text-zinc-500">
+                    {model.rank_math ? `#${model.rank_math}` : "—"}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       {/* By Provider */}
-      <section className="mb-10">
-        <h2 className="text-lg font-medium text-white mb-4 pb-2 border-b border-white/[0.08]">
-          📊 Models by Provider
+      <section id="providers" className="mb-10 scroll-mt-20">
+        <h2 className="text-lg font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
+          🏢 Models by Provider
         </h2>
-        <div className="grid gap-6 md:grid-cols-2">
-          {providers.map((provider: any) => (
-            <div
-              key={provider.id}
-              className="p-4 bg-white/[0.02] rounded-lg border border-white/[0.08]"
-            >
-              <h3 className="font-medium text-white mb-3">{provider.name}</h3>
-              <div className="space-y-2">
-                {provider.models?.slice(0, 4).map((model: any, i: number) => (
-                  <div key={i} className="flex justify-between text-sm">
-                    <span className="text-zinc-300">{model.name}</span>
-                    <span className={`text-xs px-2 py-0.5 rounded ${
-                      model.status === 'current' ? 'bg-green-500/20 text-green-400' : 'bg-zinc-500/20 text-zinc-500'
-                    }`}>
-                      {model.status || model.type}
-                    </span>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {organizations.map((org) => (
+            <div key={org.name} className="p-4 bg-white/[0.02] rounded-lg border border-white/[0.08]">
+              <div className="flex justify-between items-center mb-3">
+                <h3 className="font-medium text-white">{org.name}</h3>
+                <span className="text-xs text-zinc-500">{org.count} models</span>
+              </div>
+              <div className="space-y-1.5">
+                {org.models.slice(0, 4).map((model: any) => (
+                  <div key={model.name} className="flex justify-between text-sm">
+                    <span className="text-zinc-300 truncate pr-2">{model.name}</span>
+                    <span className="text-zinc-500 whitespace-nowrap">#{model.rank_overall}</span>
                   </div>
                 ))}
+                {org.count > 4 && (
+                  <p className="text-xs text-zinc-600 mt-2">+{org.count - 4} more</p>
+                )}
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* From Master List if no provider data */}
-      {providers.length === 0 && masterList.models?.length > 0 && (
-        <section className="mb-10">
-          <h2 className="text-lg font-medium text-white mb-4 pb-2 border-b border-white/[0.08]">
-            All Tracked Models
+      {/* Recent Releases */}
+      {recentReleases.length > 0 && (
+        <section id="releases" className="mb-10 scroll-mt-20">
+          <h2 className="text-lg font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
+            🆕 Recent Model Releases
           </h2>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="text-left text-xs text-zinc-500 uppercase">
-                  <th className="pb-3 pr-4">Model</th>
-                  <th className="pb-3 pr-4">Provider</th>
-                  <th className="pb-3 pr-4">Type</th>
-                  <th className="pb-3">Released</th>
-                </tr>
-              </thead>
-              <tbody className="text-zinc-300">
-                {masterList.models.map((model: any, i: number) => (
-                  <tr key={i} className="border-b border-white/[0.04]">
-                    <td className="py-3 pr-4 font-medium text-white">{model.name}</td>
-                    <td className="py-3 pr-4 text-zinc-500 capitalize">{model.provider}</td>
-                    <td className="py-3 pr-4 text-zinc-500">{model.type}</td>
-                    <td className="py-3 text-zinc-500">{model.released || "—"}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="space-y-2">
+            {recentReleases.slice(0, 8).map((model: any, i: number) => (
+              <div
+                key={i}
+                className="flex items-start justify-between p-3 md:p-4 bg-white/[0.02] rounded-lg border border-white/[0.04]"
+              >
+                <div>
+                  <div className="font-medium text-white">{model.name}</div>
+                  <div className="text-xs text-zinc-500 mt-1">
+                    {model.provider} · {model.type} · Released {model.released}
+                  </div>
+                </div>
+                {model.pricingInput && (
+                  <div className="text-right text-xs text-zinc-500">
+                    ${model.pricingInput}/M in
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </section>
       )}
@@ -208,28 +213,30 @@ export default function ModelsPage() {
         <h3 className="text-sm font-medium text-white mb-3">Model Categories</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
           <div>
-            <div className="text-zinc-500 mb-1">Flagship</div>
-            <div className="text-zinc-300">Claude Opus, GPT-5, Gemini Pro</div>
+            <div className="text-zinc-500 mb-1 text-xs uppercase">Flagship</div>
+            <div className="text-zinc-300 text-xs">Claude Opus, GPT-5, Gemini Pro</div>
           </div>
           <div>
-            <div className="text-zinc-500 mb-1">Coding-Optimized</div>
-            <div className="text-zinc-300">Codestral, GPT-5.3-Codex</div>
+            <div className="text-zinc-500 mb-1 text-xs uppercase">Coding</div>
+            <div className="text-zinc-300 text-xs">Codestral, GPT-5.3-Codex</div>
           </div>
           <div>
-            <div className="text-zinc-500 mb-1">Reasoning</div>
-            <div className="text-zinc-300">o3, Claude Thinking</div>
+            <div className="text-zinc-500 mb-1 text-xs uppercase">Reasoning</div>
+            <div className="text-zinc-300 text-xs">o3, Claude Thinking</div>
           </div>
           <div>
-            <div className="text-zinc-500 mb-1">Fast/Efficient</div>
-            <div className="text-zinc-300">Haiku, Flash, Llama Scout</div>
+            <div className="text-zinc-500 mb-1 text-xs uppercase">Fast</div>
+            <div className="text-zinc-300 text-xs">Haiku, Flash, Llama Scout</div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <div className="mt-10 pt-6 border-t border-white/[0.08] text-xs text-zinc-600">
+      <div className="pt-6 border-t border-white/[0.08] text-xs text-zinc-600">
         <p>
-          Model data tracked from official provider announcements and API documentation.
+          Model rankings from{" "}
+          <a href={sources.lmarena} className="text-zinc-500 hover:text-zinc-400">LMArena</a> and{" "}
+          <a href={sources.aider} className="text-zinc-500 hover:text-zinc-400">Aider</a>.
           Updated daily at 05:00 UTC.
         </p>
       </div>
@@ -239,9 +246,16 @@ export default function ModelsPage() {
 
 function StatCard({ value, label }: { value: string; label: string }) {
   return (
-    <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
-      <div className="text-2xl font-semibold text-white">{value}</div>
+    <div className="p-3 md:p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
+      <div className="text-xl md:text-2xl font-semibold text-white">{value}</div>
       <div className="text-xs text-zinc-500 mt-1">{label}</div>
     </div>
   );
+}
+
+function getRankStyle(rank: number): string {
+  if (rank === 1) return "text-amber-400 font-bold";
+  if (rank === 2) return "text-zinc-300 font-semibold";
+  if (rank === 3) return "text-orange-400 font-semibold";
+  return "text-zinc-500";
 }

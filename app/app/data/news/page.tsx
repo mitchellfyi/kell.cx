@@ -2,14 +2,14 @@ import Link from "next/link";
 import { getLatestNews, getHNMentions, sources } from "@/lib/data";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
+import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 
 // Load insights
 function loadInsights() {
   const path = join(process.cwd(), "..", "data", "insights.json");
   if (existsSync(path)) {
     try {
-      const data = JSON.parse(readFileSync(path, "utf8"));
-      return data.news || [];
+      return JSON.parse(readFileSync(path, "utf8"));
     } catch {
       return [];
     }
@@ -46,11 +46,6 @@ const allNews = [
 const last24h = allNews.filter(item => new Date(item.date || item.publishedAt) > cutoff24h);
 const last48h = allNews.filter(item => new Date(item.date || item.publishedAt) <= cutoff24h);
 
-// Get top headlines (highest scored)
-const topHeadlines = [...allNews]
-  .sort((a, b) => (b.points || b.score || 0) - (a.points || a.score || 0))
-  .slice(0, 5);
-
 export const metadata = {
   title: "AI News Today — Kell",
   description: "Top AI coding tool news and discussions from the last 48 hours.",
@@ -58,43 +53,32 @@ export const metadata = {
 
 export default function NewsPage() {
   return (
-    <div className="mx-auto max-w-4xl px-6 py-12">
-      <div className="mb-6">
-        <Link href="/data" className="text-sm text-zinc-500 hover:text-zinc-400">
-          ← Back to Dashboard
-        </Link>
-      </div>
+    <div className="mx-auto max-w-5xl px-6 py-8">
+      <DataNav />
+      
+      <DataBreadcrumb current="News" />
+      <PageHeader 
+        title="AI News Today"
+        description="What's happening in AI coding tools"
+        stats={`${allNews.length} stories · Last 48 hours`}
+      />
 
-      <h1 className="text-3xl font-semibold tracking-tight mb-2">AI News Today</h1>
-      <p className="text-zinc-400 mb-1">What's happening in AI coding tools</p>
-      <p className="text-sm text-zinc-600 mb-6">
-        {allNews.length} stories · Last 48 hours ·{" "}
-        <a href={sources.hn} target="_blank" rel="noopener noreferrer" className="text-orange-400">
-          HN
-        </a>
-        {" + RSS feeds"}
-      </p>
-
-      {/* Key Insights */}
-      <div className="bg-purple-500/5 border border-purple-500/20 rounded-lg p-5 mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-purple-400 mb-4">📰 Today's Headlines</h2>
-        <ul className="space-y-2 text-sm text-zinc-300">
-          {topHeadlines.slice(0, 3).map((item, i) => (
-            <li key={i}>
-              <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400">
-                {truncate(item.title, 80)}
-              </a>
-              {item.points && <span className="text-zinc-500 ml-2">({item.points} pts)</span>}
-            </li>
-          ))}
-          {insights.slice(0, 2).map((insight: string, i: number) => (
-            <li key={`insight-${i}`} className="text-zinc-400">{insight}</li>
-          ))}
-        </ul>
+      {/* Jump Links */}
+      <div className="flex gap-2 mb-8 overflow-x-auto pb-2 -mx-6 px-6 md:mx-0 md:px-0">
+        {last24h.length > 0 && (
+          <a href="#recent" className="px-3 py-1.5 text-xs font-medium rounded-full bg-green-500/10 text-green-400 border border-green-500/20 whitespace-nowrap">
+            🔥 Last 24h ({last24h.length})
+          </a>
+        )}
+        {last48h.length > 0 && (
+          <a href="#earlier" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+            Earlier ({last48h.length})
+          </a>
+        )}
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
         <StatCard value={String(last24h.length)} label="Last 24h" />
         <StatCard value={String(last48h.length)} label="24-48h ago" />
         <StatCard 
@@ -109,8 +93,8 @@ export default function NewsPage() {
 
       {/* Last 24 Hours */}
       {last24h.length > 0 && (
-        <section className="mb-10">
-          <h2 className="text-xs uppercase tracking-wide text-green-400 mb-4 pb-2 border-b border-white/[0.08]">
+        <section id="recent" className="mb-10 scroll-mt-20">
+          <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             🔥 Last 24 Hours
           </h2>
           <NewsList items={last24h} />
@@ -119,8 +103,8 @@ export default function NewsPage() {
 
       {/* 24-48h ago */}
       {last48h.length > 0 && (
-        <section className="mb-10">
-          <h2 className="text-xs uppercase tracking-wide text-zinc-500 mb-4 pb-2 border-b border-white/[0.08]">
+        <section id="earlier" className="mb-10 scroll-mt-20">
+          <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             Earlier (24-48h ago)
           </h2>
           <NewsList items={last48h.slice(0, 15)} />
@@ -134,7 +118,7 @@ export default function NewsPage() {
       )}
 
       {/* Footer */}
-      <div className="mt-10 pt-6 border-t border-white/[0.08] text-xs text-zinc-600">
+      <div className="pt-6 border-t border-white/[0.08] text-xs text-zinc-600">
         <p>
           News aggregated from Hacker News, company blogs, RSS feeds, and tech publications.
           Updated daily at 05:00 UTC.
@@ -146,18 +130,18 @@ export default function NewsPage() {
 
 function NewsList({ items }: { items: any[] }) {
   return (
-    <div className="space-y-3">
+    <div className="space-y-2">
       {items.map((item, i) => (
         <div
           key={i}
-          className="flex items-start justify-between p-4 bg-white/[0.02] rounded-lg border border-white/[0.04] hover:border-white/[0.08]"
+          className="flex items-start justify-between p-3 md:p-4 bg-white/[0.02] rounded-lg border border-white/[0.04] hover:border-white/10 transition-colors"
         >
-          <div className="flex-1 pr-4">
+          <div className="flex-1 pr-3 min-w-0">
             <a
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-white hover:text-blue-400 line-clamp-2"
+              className="font-medium text-white hover:text-blue-400 line-clamp-2 text-sm md:text-base"
             >
               {item.title}
             </a>
@@ -168,17 +152,14 @@ function NewsList({ items }: { items: any[] }) {
           </div>
           <div className="text-right flex-shrink-0">
             {item.points && (
-              <>
-                <span className="text-green-400 font-semibold">{item.points}</span>
-                <span className="text-xs text-zinc-600 block">points</span>
-              </>
+              <span className="text-green-400 font-semibold">{item.points}</span>
             )}
             {item.hnUrl && (
               <a
                 href={item.hnUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-orange-400 hover:text-orange-300"
+                className="text-xs text-orange-400 hover:text-orange-300 block mt-0.5"
               >
                 HN ↗
               </a>
@@ -192,15 +173,14 @@ function NewsList({ items }: { items: any[] }) {
 
 function StatCard({ value, label }: { value: string; label: string }) {
   return (
-    <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
-      <div className="text-2xl font-semibold text-white">{value}</div>
+    <div className="p-3 md:p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
+      <div className="text-xl md:text-2xl font-semibold text-white">{value}</div>
       <div className="text-xs text-zinc-500 mt-1">{label}</div>
     </div>
   );
 }
 
 function formatNumber(n: number): string {
-  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
   if (n >= 1_000) return `${(n / 1_000).toFixed(1)}K`;
   return n.toString();
 }
@@ -214,8 +194,4 @@ function formatRelativeTime(dateStr: string): string {
   if (hours < 24) return `${hours}h ago`;
   if (hours < 48) return "Yesterday";
   return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
-}
-
-function truncate(str: string, len: number): string {
-  return str.length > len ? str.slice(0, len) + "..." : str;
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 
@@ -97,7 +98,7 @@ export default function ArxivPage() {
   
   if (!data) {
     return (
-      <div className="mx-auto max-w-4xl px-6 py-12">
+      <div className="mx-auto max-w-5xl px-6 py-8">
         <div className="text-sm text-zinc-500 mb-4">
           <Link href="/data" className="hover:text-white">Data</Link> → ArXiv Papers
         </div>
@@ -139,7 +140,7 @@ export default function ArxivPage() {
     .sort((a, b) => b[1] - a[1]);
 
   return (
-    <div className="mx-auto max-w-4xl px-6 py-12">
+    <div className="mx-auto max-w-5xl px-6 py-8">
       <div className="text-sm text-zinc-500 mb-4">
         <Link href="/data" className="hover:text-white">Data</Link> → ArXiv Papers
       </div>

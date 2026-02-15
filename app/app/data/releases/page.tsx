@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getGitHubReleases, sources } from "@/lib/data";
+import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 
 const data = getGitHubReleases();
 
@@ -23,55 +24,56 @@ function getKeyInsights() {
   const allReleases = data.recentReleases;
   const thisWeekCount = allReleases.filter(r => new Date(r.publishedAt) > oneWeekAgo).length;
   
-  // Most active repos
   const repoCount: Record<string, number> = {};
   allReleases.forEach(r => {
     repoCount[r.company] = (repoCount[r.company] || 0) + 1;
   });
   const mostActive = Object.entries(repoCount).sort((a, b) => b[1] - a[1])[0];
-  
-  // Latest release
   const latest = allReleases[0];
   
-  return {
-    thisWeekCount,
-    mostActive,
-    latest,
-    totalTracked: allReleases.length,
-  };
+  return { thisWeekCount, mostActive, latest, totalTracked: allReleases.length };
 }
 
 const insights = getKeyInsights();
 
 export default function ReleasesPage() {
   const lastUpdated = new Date(data.generatedAt).toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
+    month: "short", day: "numeric", year: "numeric"
   });
 
   return (
-    <div className="mx-auto max-w-4xl px-6 py-12">
-      <div className="mb-6">
-        <Link href="/data" className="text-sm text-zinc-500 hover:text-zinc-400">
-          ← Back to Dashboard
-        </Link>
-      </div>
+    <div className="mx-auto max-w-5xl px-6 py-8">
+      <DataNav />
+      
+      <DataBreadcrumb current="Releases" />
+      <PageHeader 
+        title="GitHub Releases"
+        description="Latest releases from AI coding tool repositories"
+        stats={`${insights.totalTracked} repos tracked · Updated ${lastUpdated}`}
+      />
 
-      <h1 className="text-3xl font-semibold tracking-tight mb-2">GitHub Releases</h1>
-      <p className="text-zinc-400 mb-1">Latest releases from AI coding tool repositories</p>
-      <p className="text-sm text-zinc-600 mb-6">
-        {insights.totalTracked} repos tracked · Last updated: {lastUpdated} ·{" "}
-        <a href={sources.github} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
-          Source: GitHub API ↗
-        </a>
-      </p>
+      {/* Jump Links */}
+      <div className="flex gap-2 mb-8 overflow-x-auto pb-2 -mx-6 px-6 md:mx-0 md:px-0">
+        {releasesToday.length > 0 && (
+          <a href="#today" className="px-3 py-1.5 text-xs font-medium rounded-full bg-green-500/10 text-green-400 border border-green-500/20 whitespace-nowrap">
+            🔥 Today ({releasesToday.length})
+          </a>
+        )}
+        {releasesThisWeek.length > 0 && (
+          <a href="#week" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+            This Week ({releasesThisWeek.length})
+          </a>
+        )}
+        {olderReleases.length > 0 && (
+          <a href="#older" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+            Older ({olderReleases.length})
+          </a>
+        )}
+      </div>
 
       {/* Key Insights */}
       <div className="bg-blue-500/5 border border-blue-500/20 rounded-lg p-5 mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-blue-400 mb-4">📊 Key Insights</h2>
+        <h2 className="text-xs uppercase tracking-wide text-blue-400 mb-3">🚀 Key Insights</h2>
         <ul className="space-y-2 text-sm text-zinc-300">
           <li>
             <strong className="text-green-400">{insights.thisWeekCount}</strong> releases in the past week
@@ -83,57 +85,56 @@ export default function ReleasesPage() {
           )}
           {insights.latest && (
             <li>
-              Latest: <strong className="text-white">{insights.latest.company}</strong> {insights.latest.tag} (
-              {formatRelativeTime(insights.latest.publishedAt)})
+              Latest: <strong className="text-white">{insights.latest.company}</strong> {insights.latest.tag} ({formatRelativeTime(insights.latest.publishedAt)})
             </li>
           )}
         </ul>
       </div>
 
       {/* Summary Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
         <StatCard value={String(releasesToday.length)} label="Today" />
         <StatCard value={String(releasesThisWeek.length)} label="This Week" />
         <StatCard value={String(data.recentReleases.length)} label="Total Recent" />
         <StatCard value={String(insights.totalTracked)} label="Repos Tracked" />
       </div>
 
-      {/* Releases grouped by time */}
+      {/* Today's Releases */}
       {releasesToday.length > 0 && (
-        <section className="mb-8">
-          <h2 className="text-xs uppercase tracking-wide text-green-400 mb-4 pb-2 border-b border-white/[0.08]">
+        <section id="today" className="mb-8 scroll-mt-20">
+          <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             🔥 Today
           </h2>
           <ReleaseList releases={releasesToday} />
         </section>
       )}
 
+      {/* This Week */}
       {releasesThisWeek.length > 0 && (
-        <section className="mb-8">
-          <h2 className="text-xs uppercase tracking-wide text-zinc-500 mb-4 pb-2 border-b border-white/[0.08]">
+        <section id="week" className="mb-8 scroll-mt-20">
+          <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             This Week
           </h2>
           <ReleaseList releases={releasesThisWeek} />
         </section>
       )}
 
+      {/* Older */}
       {olderReleases.length > 0 && (
-        <section className="mb-8">
-          <h2 className="text-xs uppercase tracking-wide text-zinc-500 mb-4 pb-2 border-b border-white/[0.08]">
+        <section id="older" className="mb-8 scroll-mt-20">
+          <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             Older
           </h2>
-          <ReleaseList releases={olderReleases.slice(0, 10)} />
+          <ReleaseList releases={olderReleases.slice(0, 15)} />
         </section>
       )}
 
-      {/* Data freshness footer */}
-      <div className="mt-10 pt-6 border-t border-white/[0.08] text-xs text-zinc-600">
+      {/* Footer */}
+      <div className="pt-6 border-t border-white/[0.08] text-xs text-zinc-600">
         <p>
-          Data collected automatically from{" "}
-          <a href={sources.github} className="text-zinc-500 hover:text-zinc-400">
-            GitHub Releases API
-          </a>
-          . Updated daily at 05:00 UTC.
+          Data collected from{" "}
+          <a href={sources.github} className="text-zinc-500 hover:text-zinc-400">GitHub Releases API</a>.
+          Updated daily at 05:00 UTC.
         </p>
       </div>
     </div>
@@ -142,37 +143,29 @@ export default function ReleasesPage() {
 
 function ReleaseList({ releases }: { releases: typeof data.recentReleases }) {
   return (
-    <div className="space-y-3">
+    <div className="space-y-2">
       {releases.map((release) => (
-        <div
+        <a
           key={release.url}
-          className="flex items-start justify-between p-4 bg-white/[0.02] rounded-lg border border-white/[0.04] hover:border-white/[0.08]"
+          href={release.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-between p-3 md:p-4 bg-white/[0.02] rounded-lg border border-white/[0.04] hover:border-white/10 hover:bg-white/[0.03] transition-colors"
         >
-          <div className="flex-1">
-            <a
-              href={release.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-white hover:text-blue-400"
-            >
-              {release.company} — {release.tag}
-            </a>
-            <p className="text-xs text-zinc-500 mt-1">
-              {formatRelativeTime(release.publishedAt)}
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="font-medium text-white">{release.company}</span>
+              <span className="text-zinc-400 text-sm">{release.tag}</span>
               {release.isPrerelease && (
-                <span className="ml-2 text-amber-400">(prerelease)</span>
+                <span className="px-1.5 py-0.5 text-[10px] rounded bg-amber-500/20 text-amber-400">pre</span>
               )}
-            </p>
+            </div>
+            <p className="text-xs text-zinc-600 mt-1 truncate">{release.repo}</p>
           </div>
-          <a
-            href={`https://github.com/${release.repo}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-zinc-600 hover:text-zinc-400 whitespace-nowrap ml-4"
-          >
-            {release.repo} ↗
-          </a>
-        </div>
+          <span className="text-xs text-zinc-500 whitespace-nowrap ml-3">
+            {formatRelativeTime(release.publishedAt)}
+          </span>
+        </a>
       ))}
     </div>
   );
@@ -180,8 +173,8 @@ function ReleaseList({ releases }: { releases: typeof data.recentReleases }) {
 
 function StatCard({ value, label }: { value: string; label: string }) {
   return (
-    <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
-      <div className="text-2xl font-semibold text-white">{value}</div>
+    <div className="p-3 md:p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
+      <div className="text-xl md:text-2xl font-semibold text-white">{value}</div>
       <div className="text-xs text-zinc-500 mt-1">{label}</div>
     </div>
   );
@@ -196,6 +189,6 @@ function formatRelativeTime(dateStr: string): string {
   if (hours < 1) return "Just now";
   if (hours < 24) return `${hours}h ago`;
   if (days === 1) return "Yesterday";
-  if (days < 7) return `${days} days ago`;
+  if (days < 7) return `${days}d ago`;
   return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
