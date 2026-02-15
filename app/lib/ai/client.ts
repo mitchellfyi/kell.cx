@@ -129,18 +129,23 @@ export async function generateCompletion(
   
   try {
     const response = await withRetry(async () => {
-      // Use max_completion_tokens for newer models (o1, gpt-5, etc.)
-      const isNewModel = model.includes('o1') || model.includes('gpt-5') || model.includes('o3');
-      const tokenParam = isNewModel 
-        ? { max_completion_tokens: config.maxTokens || 2000 }
-        : { max_tokens: config.maxTokens || 2000 };
+      // Newer models (o1, gpt-5, o3) use different parameters
+      const isReasoningModel = model.includes('o1') || model.includes('gpt-5') || model.includes('o3');
       
-      return client.chat.completions.create({
+      const params: Record<string, unknown> = {
         model,
         messages: [{ role: 'user', content: prompt }],
-        ...tokenParam,
-        temperature: config.temperature ?? 0.7,
-      });
+      };
+      
+      // Token limit param
+      if (isReasoningModel) {
+        params.max_completion_tokens = config.maxTokens || 2000;
+      } else {
+        params.max_tokens = config.maxTokens || 2000;
+        params.temperature = config.temperature ?? 0.7;
+      }
+      
+      return client.chat.completions.create(params as Parameters<typeof client.chat.completions.create>[0]);
     });
     
     const latencyMs = Date.now() - startTime;
