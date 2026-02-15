@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 /**
  * Generate AI-powered insights from collected data
- * Uses OpenAI API or falls back to rule-based insights
+ * Uses Claude API (preferred) or OpenAI API, with rule-based fallback
  */
 
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
+const AIInsightGenerator = require('./lib/ai-insights');
+const CrossSourceAnalyzer = require('./lib/cross-source-analyzer');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const OUTPUT_FILE = path.join(DATA_DIR, 'insights.json');
@@ -162,12 +164,38 @@ async function generateInsights() {
     pricing: loadJson('pricing.json'),
     trending: loadJson('github-trending.json'),
     masterList: loadJson('master-list.json'),
+    hiring: loadJson('hiring-history.json'),
+    momentum: loadJson('momentum-history.json')
   };
 
   let insights = null;
-  
-  // Try OpenAI
-  if (process.env.OPENAI_API_KEY) {
+
+  // Try Claude API first (preferred)
+  if (process.env.ANTHROPIC_API_KEY) {
+    console.error('Using Claude API for insight generation...');
+    try {
+      const aiGen = new AIInsightGenerator();
+      insights = await aiGen.generateDailyInsights(data);
+
+      // Enhance with cross-source patterns
+      const analyzer = new CrossSourceAnalyzer();
+      const patterns = analyzer.analyzePatterns(data);
+
+      // Add pattern insights to market section
+      if (patterns.length > 0 && insights.market) {
+        const patternInsights = patterns.slice(0, 2).map(p => p.message);
+        insights.market = [...insights.market, ...patternInsights];
+      }
+
+      console.error('✓ Generated insights via Claude API');
+    } catch (error) {
+      console.error('Claude API failed:', error.message);
+      insights = null;
+    }
+  }
+
+  // Fallback to OpenAI
+  if (!insights && process.env.OPENAI_API_KEY) {
     console.error(`Using OpenAI (model: ${process.env.OPENAI_MODEL || 'gpt-4o-mini'})...`);
     
     const prompt = `You are an AI analyst for kell.cx, a competitive intelligence service for AI coding tools.

@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 /**
- * Trend Anomaly Detector for Briefing
- * Spots unusual changes that warrant attention
+ * AI-Powered Trend Detector for Briefing
+ * Uses AI to identify meaningful patterns and generate insights
  */
 
 const fs = require('fs');
 const path = require('path');
+const AIInsightGenerator = require('../scripts/lib/ai-insights');
+const CrossSourceAnalyzer = require('../scripts/lib/cross-source-analyzer');
 
 const DATA_DIR = path.join(__dirname, 'data');
 
@@ -222,41 +224,122 @@ function formatAlertsMd(alerts) {
   return md;
 }
 
+async function detectAITrends() {
+  // Load all data for AI analysis
+  const data = {
+    vscode: loadJSON('vscode-marketplace.json') || loadJSON('../site/data/vscode-stats.json'),
+    releases: loadJSON('github-releases.json'),
+    hn: loadJSON('hn-ai-mentions.json'),
+    news: loadJSON('news.json'),
+    pricing: loadJSON('pricing-history.json'),
+    hiring: loadJSON('hiring-history.json'),
+    momentum: loadJSON('momentum-history.json')
+  };
+
+  // Use cross-source analyzer to find patterns
+  const analyzer = new CrossSourceAnalyzer();
+  const patterns = analyzer.analyzePatterns(data);
+
+  // Convert patterns to alerts format
+  const alerts = patterns.map(pattern => ({
+    type: pattern.type,
+    company: pattern.company || 'Market',
+    severity: pattern.strength > 5 ? 'high' : 'medium',
+    message: pattern.message,
+    details: pattern.details || pattern
+  }));
+
+  return alerts;
+}
+
+async function generateAIInsights() {
+  try {
+    const aiGen = new AIInsightGenerator();
+
+    // Load all data
+    const data = {
+      vscode: loadJSON('vscode-marketplace.json') || loadJSON('../site/data/vscode-stats.json'),
+      releases: loadJSON('github-releases.json'),
+      hn: loadJSON('hn-ai-mentions.json'),
+      news: loadJSON('news.json'),
+      pricing: loadJSON('pricing-history.json'),
+      hiring: loadJSON('hiring-history.json'),
+      momentum: loadJSON('momentum-history.json')
+    };
+
+    // Generate AI insights
+    const insights = await aiGen.generateDailyInsights(data);
+
+    // Save AI insights
+    const insightFile = path.join(DATA_DIR, 'ai-insights.json');
+    fs.writeFileSync(insightFile, JSON.stringify(insights, null, 2));
+
+    console.log('🤖 AI insights generated successfully');
+    return insights;
+  } catch (error) {
+    console.error('Failed to generate AI insights:', error.message);
+    console.log('Falling back to pattern analysis...');
+    return null;
+  }
+}
+
 async function main() {
-  console.log('🔍 Trend Anomaly Detection\n');
-  
-  const allAlerts = getAllAlerts();
-  
+  console.log('🔍 AI-Powered Trend Detection\n');
+
+  let allAlerts = [];
+
+  // Try AI-powered detection first
+  if (process.env.ANTHROPIC_API_KEY) {
+    try {
+      // Generate comprehensive AI insights
+      const aiInsights = await generateAIInsights();
+
+      // Also run cross-source pattern detection
+      const aiAlerts = await detectAITrends();
+      allAlerts = [...aiAlerts];
+
+      console.log('✨ AI analysis complete');
+    } catch (error) {
+      console.error('AI analysis failed:', error.message);
+      console.log('Falling back to rule-based detection...');
+      allAlerts = getAllAlerts();
+    }
+  } else {
+    console.log('No ANTHROPIC_API_KEY found, using rule-based detection');
+    allAlerts = getAllAlerts();
+  }
+
   if (allAlerts.length === 0) {
-    console.log('✅ No significant anomalies detected');
+    console.log('✅ No significant trends detected');
   } else {
     console.log(`⚠️  ${allAlerts.length} signals detected:\n`);
-    
+
     const highAlerts = allAlerts.filter(a => a.severity === 'high');
     const mediumAlerts = allAlerts.filter(a => a.severity === 'medium');
-    
+
     if (highAlerts.length > 0) {
       console.log('🔴 HIGH PRIORITY:');
       highAlerts.forEach(a => console.log(`   • ${a.message}`));
       console.log();
     }
-    
+
     if (mediumAlerts.length > 0) {
       console.log('🟡 NOTABLE:');
       mediumAlerts.forEach(a => console.log(`   • ${a.message}`));
       console.log();
     }
   }
-  
+
   // Save alerts
   const alertFile = path.join(DATA_DIR, 'trend-alerts.json');
   fs.writeFileSync(alertFile, JSON.stringify({
     generated: new Date().toISOString(),
-    alerts: allAlerts
+    alerts: allAlerts,
+    aiPowered: !!process.env.ANTHROPIC_API_KEY
   }, null, 2));
-  
+
   console.log(`📁 Saved to ${alertFile}`);
-  
+
   return allAlerts;
 }
 
