@@ -1,75 +1,78 @@
 # Taskboard
 
-> Last updated: 2026-02-15 08:50 UTC
+> Last updated: 2026-02-15 09:25 UTC
 
-## Current Sprint: Data Quality & Automation
+## Current Sprint: Complete Data Infrastructure
 
-### ✅ Done
-- [x] GitHub Actions daily data refresh workflow (05:00 UTC)
-- [x] Wire up /data page with real data sources
-- [x] Add source attribution links to all stats
-- [x] Dynamic timestamps on data page
+### ✅ Done Today
+- [x] GitHub Actions daily data refresh (05:00 UTC)
+- [x] Wire up /data page with real data + source links
+- [x] Key Insights at top of every drill-down page
+- [x] Master list of tracked companies/tools/models (data/master-list.json)
+- [x] Convert pricing blog → /data/pricing (dynamic)
+- [x] Create /data/news (24-48h headlines, ranked)
+- [x] Create /data/opensource (GitHub trending, releases)
+- [x] GitHub Trending collector script
+- [x] AI insights generator (Claude API)
+- [x] Briefing automation in workflow
+- [x] Homepage clarity (AI Coding Tools Intelligence)
 
 ### 🔄 In Progress
-- [ ] First data refresh running (GitHub Actions triggered)
+- [ ] Workflow running (collecting + insight generation)
+- [ ] Need to add ANTHROPIC_API_KEY + RESEND_API_KEY to repo secrets
 
-### 📋 Up Next
+### 📋 Next Up
 
-**P1 - Data Freshness (This Week)**
-- [ ] Verify all scripts run successfully in GitHub Actions
-- [ ] Add missing data sources to workflow (arxiv, bluesky, devto)
-- [ ] Fix any scripts writing to wrong directories (data/ vs site/data/)
-- [ ] Add data validation to catch stale/broken sources
+**P1 - Complete Automation**
+- [ ] Add GitHub repo secrets: ANTHROPIC_API_KEY, RESEND_API_KEY
+- [ ] Test full workflow with briefing send
+- [ ] Verify insights are generated correctly
 
-**P2 - New Tool Discovery**
-- [ ] Auto-flag new AI coding tools from Product Hunt
-- [ ] Track new repos gaining stars in AI coding category
-- [ ] Monitor HuggingFace for new coding-relevant models
-- [ ] Add Anthropic/OpenAI changelog RSS to news feed
+**P2 - Data Pages**
+- [ ] /data/benchmarks (Aider + LMArena leaderboards)
+- [ ] /data/models (all providers + pricing)
+- [ ] /data/hiring (jobs by company + listings)
+- [ ] Social commentary page (Reddit + Twitter + Bluesky)
 
-**P3 - UI Polish**
-- [ ] Add more drill-down pages (/data/vscode, /data/releases, etc.)
-- [ ] Show "data as of X hours ago" on each section
-- [ ] Add sparklines/mini charts for trends
-- [ ] Mobile responsiveness pass
-
-**P4 - Email Briefings**
-- [ ] Test daily briefing generation
-- [ ] Set up subscriber delivery (after manual testing)
-- [ ] Add "subscribe" CTA to data pages
+**P3 - UX Improvements**
+- [ ] Tabs component for multi-section pages
+- [ ] Full-width email tables
+- [ ] Remove blog, redirect to data pages
+- [ ] More consistent key insights formatting
 
 ---
 
 ## Data Sources Status
 
-| Source | Script | Frequency | Status |
+| Source | Script | Automated | Status |
 |--------|--------|-----------|--------|
-| VS Code Marketplace | collect-vscode-stats.js | Daily | ✅ |
-| GitHub Releases | collect-releases.js | Daily | ✅ |
-| GitHub Stats | collect-github-stats.js | Daily | ✅ |
-| Hacker News | collect-hn-mentions.js | Daily | ✅ |
-| npm Downloads | collect-npm-downloads.js | Daily | ✅ |
-| PyPI Stats | collect-pypi-stats.js | Daily | ✅ |
-| Homebrew | collect-homebrew-stats.js | Daily | ✅ |
-| Reddit | collect-reddit-stats.js | Daily | ✅ |
-| Stack Overflow | collect-stackoverflow-trends.js | Daily | ✅ |
-| G2 Reviews | collect-g2-reviews.js | Daily | ✅ |
-| Product Hunt | (in data) | Manual | ⚠️ |
-| HuggingFace | (in data) | Manual | ⚠️ |
-| ArXiv | (in data) | Manual | ⚠️ |
+| VS Code Marketplace | collect-vscode-stats.js | ✅ | Working |
+| GitHub Releases | collect-releases.js | ✅ | Working |
+| GitHub Stats | collect-github-stats.js | ✅ | Working |
+| GitHub Trending | collect-github-trending.js | ✅ | New |
+| Hacker News | collect-hn-mentions.js | ✅ | Working |
+| npm Downloads | collect-npm-downloads.js | ✅ | Working |
+| PyPI Stats | collect-pypi-stats.js | ✅ | Working |
+| Homebrew | collect-homebrew-stats.js | ✅ | Working |
+| Reddit | collect-reddit-stats.js | ✅ | Working |
+| Stack Overflow | collect-stackoverflow-trends.js | ✅ | Working |
+| G2 Reviews | collect-g2-reviews.js | ✅ | Working |
+| News Aggregation | aggregate-news.js | ✅ | Working |
+| AI Insights | generate-insights.js | ✅ | New |
 
 ---
 
-## Quick Commands
+## Page Status
 
-```bash
-# Run data refresh locally
-node scripts/collect-releases.js
-node scripts/aggregate-news.js
-
-# Regenerate taskboard
-doyaken tasks
-
-# Check workflow status
-gh run list --workflow=daily-data-refresh.yml
-```
+| Page | Data Source | Status |
+|------|------------|--------|
+| /data | Dashboard | ✅ Live |
+| /data/pricing | pricing.json | ✅ Live |
+| /data/vscode | vscode-stats.json | ✅ Live |
+| /data/releases | github-releases.json | ✅ Live |
+| /data/hackernews | hn-ai-mentions.json | ✅ Live |
+| /data/news | latest-news.json + hn | ✅ Live |
+| /data/opensource | github-trending.json | ✅ Live |
+| /data/benchmarks | aider-benchmark.json | 🔄 Hardcoded |
+| /data/models | model-releases.json | 🔄 Hardcoded |
+| /data/hiring | - | 🔄 Hardcoded |
