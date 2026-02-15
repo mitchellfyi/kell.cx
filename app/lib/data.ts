@@ -74,6 +74,32 @@ export interface HNStory {
   hnUrl: string;
 }
 
+export interface HNSummary {
+  storyId: string;
+  summary: string;
+  sentiment: 'positive' | 'negative' | 'mixed' | 'neutral';
+  sentimentScore: number;
+  keyQuotes?: string[];
+  competitiveImplication?: string;
+  analyzedAt: string;
+}
+
+export interface HNSentimentTrend {
+  trend: 'improving' | 'declining' | 'stable';
+  average: number;
+  recentAverage: number;
+  shifts: Array<{
+    date: string;
+    direction: 'positive' | 'negative';
+    magnitude: number;
+  }>;
+  timeline: Array<{
+    date: string;
+    average: number;
+    sentiment: string;
+  }>;
+}
+
 export interface NewsItem {
   title: string;
   url: string;
@@ -97,7 +123,15 @@ export function getGitHubReleases(): { recentReleases: GitHubRelease[]; generate
   });
 }
 
-export function getHNMentions(): { stories: HNStory[]; generatedAt: string } {
+export function getHNMentions(): {
+  stories: HNStory[];
+  generatedAt: string;
+  summaries?: Record<string, HNSummary>;
+  sentimentAnalysis?: {
+    current?: HNSentimentTrend;
+    historical?: HNSentimentTrend;
+  };
+} {
   return loadJson("hn-ai-mentions.json", {
     generatedAt: new Date().toISOString(),
     stories: [],
