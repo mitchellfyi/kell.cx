@@ -25,9 +25,8 @@ const insights = loadInsights();
 const cutoff48h = new Date(Date.now() - 48 * 60 * 60 * 1000);
 const cutoff24h = new Date(Date.now() - 24 * 60 * 60 * 1000);
 
-const rawNewsData = newsData as any;
 const allNews = [
-  ...(rawNewsData.items || rawNewsData.recent || rawNewsData.older || []).map((item: any) => ({
+  ...(newsData.items || newsData.recent || newsData.older || []).map((item: any) => ({
     ...item,
     type: 'news',
   })),

@@ -104,7 +104,7 @@ export function getHNMentions(): { stories: HNStory[]; generatedAt: string } {
   });
 }
 
-export function getLatestNews(): { items: NewsItem[]; generatedAt: string } {
+export function getLatestNews(): { items: NewsItem[]; generatedAt: string; recent?: NewsItem[]; older?: NewsItem[] } {
   return loadJson("latest-news.json", {
     generatedAt: new Date().toISOString(),
     items: [],
