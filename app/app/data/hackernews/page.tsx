@@ -50,23 +50,25 @@ export default function HNPage() {
         stats={`${insights.totalStories} stories · ${formatNumber(insights.totalPoints)} points · Updated ${lastUpdated}`}
       />
 
-      {/* Jump Links */}
-      <div className="flex gap-2 mb-8 overflow-x-auto pb-2 -mx-6 px-6 md:mx-0 md:px-0">
-        {hotStories.length > 0 && (
-          <a href="#hot" className="px-3 py-1.5 text-xs font-medium rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 whitespace-nowrap">
-            🔥 Hot ({hotStories.length})
-          </a>
-        )}
-        {warmStories.length > 0 && (
-          <a href="#trending" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-            📈 Trending ({warmStories.length})
-          </a>
-        )}
-        {otherStories.length > 0 && (
-          <a href="#recent" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-            Recent ({otherStories.length})
-          </a>
-        )}
+      {/* Sticky Section Nav */}
+      <div className="sticky top-[57px] z-20 bg-zinc-950/95 backdrop-blur-sm -mx-6 px-6 py-3 mb-6 border-b border-white/[0.06]">
+        <div className="flex gap-2 overflow-x-auto scrollbar-hide">
+          {hotStories.length > 0 && (
+            <a href="#hot" className="px-3 py-1.5 text-xs font-medium rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 whitespace-nowrap">
+              🔥 Hot ({hotStories.length})
+            </a>
+          )}
+          {warmStories.length > 0 && (
+            <a href="#trending" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+              📈 Trending ({warmStories.length})
+            </a>
+          )}
+          {otherStories.length > 0 && (
+            <a href="#recent" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+              Recent ({otherStories.length})
+            </a>
+          )}
+        </div>
       </div>
 
       {/* Key Insights */}
@@ -98,7 +100,7 @@ export default function HNPage() {
 
       {/* Hot Stories */}
       {hotStories.length > 0 && (
-        <section id="hot" className="mb-8 scroll-mt-20">
+        <section id="hot" className="mb-8 scroll-mt-32">
           <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             🔥 Hot Stories (100+ points)
           </h2>
@@ -108,7 +110,7 @@ export default function HNPage() {
 
       {/* Trending */}
       {warmStories.length > 0 && (
-        <section id="trending" className="mb-8 scroll-mt-20">
+        <section id="trending" className="mb-8 scroll-mt-32">
           <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             📈 Trending (20-99 points)
           </h2>
@@ -118,7 +120,7 @@ export default function HNPage() {
 
       {/* Recent */}
       {otherStories.length > 0 && (
-        <section id="recent" className="mb-8 scroll-mt-20">
+        <section id="recent" className="mb-8 scroll-mt-32">
           <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             Recent Mentions
           </h2>

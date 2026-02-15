@@ -4,29 +4,29 @@ import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 
-// Load insights
-function loadInsights() {
-  const path = join(process.cwd(), "..", "data", "insights.json");
+// Load latest news data directly
+function loadLatestNews() {
+  const path = join(process.cwd(), "..", "data", "latest-news.json");
   if (existsSync(path)) {
     try {
       return JSON.parse(readFileSync(path, "utf8"));
     } catch {
-      return [];
+      return { recent: [], older: [] };
     }
   }
-  return [];
+  return { recent: [], older: [] };
 }
 
-const newsData = getLatestNews();
+const newsData = loadLatestNews();
 const hnData = getHNMentions();
-const insights = loadInsights();
 
-// Filter to last 48 hours
-const cutoff48h = new Date(Date.now() - 48 * 60 * 60 * 1000);
-const cutoff24h = new Date(Date.now() - 24 * 60 * 60 * 1000);
-
+// Combine all news sources
 const allNews = [
-  ...(newsData.items || newsData.recent || newsData.older || []).map((item: any) => ({
+  ...(newsData.recent || []).map((item: any) => ({
+    ...item,
+    type: 'news',
+  })),
+  ...(newsData.older || []).map((item: any) => ({
     ...item,
     type: 'news',
   })),
@@ -40,60 +40,74 @@ const allNews = [
     hnUrl: story.hnUrl,
     type: 'hn',
   })),
-].filter(item => new Date(item.date || item.publishedAt) > cutoff48h)
- .sort((a, b) => new Date(b.date || b.publishedAt).getTime() - new Date(a.date || a.publishedAt).getTime());
+].sort((a, b) => new Date(b.date || b.publishedAt).getTime() - new Date(a.date || a.publishedAt).getTime());
+
+// Group by recency
+const now = new Date();
+const cutoff24h = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+const cutoff7d = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
 
 const last24h = allNews.filter(item => new Date(item.date || item.publishedAt) > cutoff24h);
-const last48h = allNews.filter(item => new Date(item.date || item.publishedAt) <= cutoff24h);
+const lastWeek = allNews.filter(item => {
+  const d = new Date(item.date || item.publishedAt);
+  return d <= cutoff24h && d > cutoff7d;
+});
+const older = allNews.filter(item => new Date(item.date || item.publishedAt) <= cutoff7d).slice(0, 20);
 
 export const metadata = {
-  title: "AI News Today — Kell",
-  description: "Top AI coding tool news and discussions from the last 48 hours.",
+  title: "AI News — Kell",
+  description: "Latest AI coding tool news and discussions.",
 };
 
 export default function NewsPage() {
+  const totalHNPoints = hnData.stories.reduce((sum, s) => sum + s.points, 0);
+  
   return (
     <div className="mx-auto max-w-5xl px-6 py-8">
       <DataNav />
       
       <DataBreadcrumb current="News" />
       <PageHeader 
-        title="AI News Today"
-        description="What's happening in AI coding tools"
-        stats={`${allNews.length} stories · Last 48 hours`}
+        title="AI News"
+        description="Latest news and discussions on AI coding tools"
+        stats={`${allNews.length} stories from HN, blogs, and RSS feeds`}
       />
 
-      {/* Jump Links */}
-      <div className="flex gap-2 mb-8 overflow-x-auto pb-2 -mx-6 px-6 md:mx-0 md:px-0">
-        {last24h.length > 0 && (
-          <a href="#recent" className="px-3 py-1.5 text-xs font-medium rounded-full bg-green-500/10 text-green-400 border border-green-500/20 whitespace-nowrap">
-            🔥 Last 24h ({last24h.length})
+      {/* Sticky Section Nav */}
+      <div className="sticky top-[57px] z-20 bg-zinc-950/95 backdrop-blur-sm -mx-6 px-6 py-3 mb-6 border-b border-white/[0.06]">
+        <div className="flex gap-2 overflow-x-auto scrollbar-hide">
+          {last24h.length > 0 && (
+            <a href="#recent" className="px-3 py-1.5 text-xs font-medium rounded-full bg-green-500/10 text-green-400 border border-green-500/20 whitespace-nowrap">
+              🔥 Today ({last24h.length})
+            </a>
+          )}
+          {lastWeek.length > 0 && (
+            <a href="#week" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+              This Week ({lastWeek.length})
+            </a>
+          )}
+          {older.length > 0 && (
+            <a href="#older" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+              Older ({older.length})
+            </a>
+          )}
+          <a href="#hn" className="px-3 py-1.5 text-xs font-medium rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 whitespace-nowrap">
+            🔥 HN ({hnData.stories.length})
           </a>
-        )}
-        {last48h.length > 0 && (
-          <a href="#earlier" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-            Earlier ({last48h.length})
-          </a>
-        )}
+        </div>
       </div>
 
       {/* Stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
-        <StatCard value={String(last24h.length)} label="Last 24h" />
-        <StatCard value={String(last48h.length)} label="24-48h ago" />
-        <StatCard 
-          value={String(allNews.filter(n => n.type === 'hn').length)} 
-          label="From HN" 
-        />
-        <StatCard 
-          value={formatNumber(allNews.filter(n => n.type === 'hn').reduce((sum, n) => sum + (n.points || 0), 0))} 
-          label="Total Points" 
-        />
+        <StatCard value={String(allNews.length)} label="Total Stories" />
+        <StatCard value={String(hnData.stories.length)} label="From HN" />
+        <StatCard value={formatNumber(totalHNPoints)} label="HN Points" />
+        <StatCard value={String(newsData.stats?.total_sources || 8)} label="Sources" />
       </div>
 
       {/* Last 24 Hours */}
       {last24h.length > 0 && (
-        <section id="recent" className="mb-10 scroll-mt-20">
+        <section id="recent" className="mb-10 scroll-mt-32">
           <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             🔥 Last 24 Hours
           </h2>
@@ -101,17 +115,72 @@ export default function NewsPage() {
         </section>
       )}
 
-      {/* 24-48h ago */}
-      {last48h.length > 0 && (
-        <section id="earlier" className="mb-10 scroll-mt-20">
+      {/* This Week */}
+      {lastWeek.length > 0 && (
+        <section id="week" className="mb-10 scroll-mt-32">
           <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
-            Earlier (24-48h ago)
+            This Week
           </h2>
-          <NewsList items={last48h.slice(0, 15)} />
+          <NewsList items={lastWeek.slice(0, 20)} />
         </section>
       )}
 
-      {allNews.length === 0 && (
+      {/* Older */}
+      {older.length > 0 && (
+        <section id="older" className="mb-10 scroll-mt-32">
+          <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
+            Older
+          </h2>
+          <NewsList items={older} />
+        </section>
+      )}
+
+      {/* HN Highlights */}
+      {hnData.stories.length > 0 && (
+        <section id="hn" className="mb-10 scroll-mt-32">
+          <div className="flex justify-between items-center mb-4 pb-2 border-b border-white/[0.08]">
+            <h2 className="text-base font-semibold text-white">🔥 Hacker News Highlights</h2>
+            <Link href="/data/hackernews" className="text-xs text-zinc-500 hover:text-zinc-400">
+              View all →
+            </Link>
+          </div>
+          <div className="space-y-2">
+            {hnData.stories.slice(0, 10).map((story) => (
+              <div
+                key={story.id}
+                className="flex items-start justify-between p-3 md:p-4 bg-white/[0.02] rounded-lg border border-white/[0.04] hover:border-white/10 transition-colors"
+              >
+                <div className="flex-1 pr-3 min-w-0">
+                  <a
+                    href={story.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-white hover:text-blue-400 line-clamp-2 text-sm md:text-base"
+                  >
+                    {story.title}
+                  </a>
+                  <p className="text-xs text-zinc-500 mt-1">
+                    by {story.author} · {story.comments} comments
+                  </p>
+                </div>
+                <div className="text-right flex-shrink-0">
+                  <span className="text-green-400 font-semibold">{story.points}</span>
+                  <a
+                    href={story.hnUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-orange-400 hover:text-orange-300 block mt-0.5"
+                  >
+                    HN ↗
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {allNews.length === 0 && hnData.stories.length === 0 && (
         <div className="text-center py-12 text-zinc-500">
           <p>No recent news found. Check back soon!</p>
         </div>
@@ -186,12 +255,15 @@ function formatNumber(n: number): string {
 }
 
 function formatRelativeTime(dateStr: string): string {
+  if (!dateStr) return "Unknown";
   const now = new Date();
   const date = new Date(dateStr);
   const hours = Math.floor((now.getTime() - date.getTime()) / (1000 * 60 * 60));
+  const days = Math.floor(hours / 24);
   
   if (hours < 1) return "Just now";
   if (hours < 24) return `${hours}h ago`;
-  if (hours < 48) return "Yesterday";
+  if (days === 1) return "Yesterday";
+  if (days < 7) return `${days}d ago`;
   return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }

@@ -72,26 +72,28 @@ export default function PricingPage() {
         stats={`${stats.totalTools} tools compared · Last updated: ${lastUpdated}`}
       />
 
-      {/* Jump Links */}
+      {/* Sticky Section Nav */}
       {categories.length > 0 && (
-        <div className="flex gap-2 mb-8 overflow-x-auto pb-2 -mx-6 px-6 md:mx-0 md:px-0">
-          <a href="#insights" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-            💡 Insights
-          </a>
-          {categories.map((cat: any) => (
-            <a 
-              key={cat.id}
-              href={`#${cat.id}`} 
-              className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap"
-            >
-              {cat.emoji} {cat.name}
+        <div className="sticky top-[57px] z-20 bg-zinc-950/95 backdrop-blur-sm -mx-6 px-6 py-3 mb-6 border-b border-white/[0.06]">
+          <div className="flex gap-2 overflow-x-auto scrollbar-hide">
+            <a href="#insights" className="px-3 py-1.5 text-xs font-medium rounded-full bg-green-500/10 text-green-400 border border-green-500/20 whitespace-nowrap">
+              💡 Insights
             </a>
-          ))}
+            {categories.map((cat: any) => (
+              <a 
+                key={cat.id}
+                href={`#${cat.id}`} 
+                className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap"
+              >
+                {cat.emoji} {cat.name}
+              </a>
+            ))}
+          </div>
         </div>
       )}
 
       {/* Key Insights */}
-      <section id="insights" className="scroll-mt-20">
+      <section id="insights" className="scroll-mt-32">
         <div className="bg-green-500/5 border border-green-500/20 rounded-lg p-5 mb-8">
           <h2 className="text-xs uppercase tracking-wide text-green-400 mb-3">💰 Key Insights</h2>
           <ul className="space-y-2 text-sm text-zinc-300">
@@ -122,7 +124,7 @@ export default function PricingPage() {
 
       {/* Pricing Tables by Category */}
       {categories.map((category: any) => (
-        <section key={category.id} id={category.id} className="mb-10 scroll-mt-20">
+        <section key={category.id} id={category.id} className="mb-10 scroll-mt-32">
           <h2 className="text-lg font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             {category.emoji} {category.name}
           </h2>

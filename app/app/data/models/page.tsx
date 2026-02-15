@@ -66,19 +66,21 @@ export default function ModelsPage() {
         stats={`${totalModels} models · ${organizations.length}+ providers · LMArena rankings`}
       />
 
-      {/* Jump Links */}
-      <div className="flex gap-2 mb-8 overflow-x-auto pb-2 -mx-6 px-6 md:mx-0 md:px-0">
-        <a href="#rankings" className="px-3 py-1.5 text-xs font-medium rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 whitespace-nowrap">
-          🏆 Rankings
-        </a>
-        <a href="#providers" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-          🏢 By Provider
-        </a>
-        {recentReleases.length > 0 && (
-          <a href="#releases" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-            🆕 Recent Releases
+      {/* Sticky Section Nav */}
+      <div className="sticky top-[57px] z-20 bg-zinc-950/95 backdrop-blur-sm -mx-6 px-6 py-3 mb-6 border-b border-white/[0.06]">
+        <div className="flex gap-2 overflow-x-auto scrollbar-hide">
+          <a href="#rankings" className="px-3 py-1.5 text-xs font-medium rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 whitespace-nowrap">
+            🏆 Rankings
           </a>
-        )}
+          <a href="#providers" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+            🏢 By Provider
+          </a>
+          {recentReleases.length > 0 && (
+            <a href="#releases" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+              🆕 Recent Releases
+            </a>
+          )}
+        </div>
       </div>
 
       {/* Key Insights */}
@@ -107,7 +109,7 @@ export default function ModelsPage() {
       </div>
 
       {/* LMArena Top Rankings */}
-      <section id="rankings" className="mb-10 scroll-mt-20">
+      <section id="rankings" className="mb-10 scroll-mt-32">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 pb-2 border-b border-white/[0.08] gap-2">
           <div>
             <h2 className="text-lg font-semibold text-white">🏆 LMArena Top 20</h2>
@@ -152,7 +154,7 @@ export default function ModelsPage() {
       </section>
 
       {/* By Provider */}
-      <section id="providers" className="mb-10 scroll-mt-20">
+      <section id="providers" className="mb-10 scroll-mt-32">
         <h2 className="text-lg font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
           🏢 Models by Provider
         </h2>
@@ -181,7 +183,7 @@ export default function ModelsPage() {
 
       {/* Recent Releases */}
       {recentReleases.length > 0 && (
-        <section id="releases" className="mb-10 scroll-mt-20">
+        <section id="releases" className="mb-10 scroll-mt-32">
           <h2 className="text-lg font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             🆕 Recent Model Releases
           </h2>

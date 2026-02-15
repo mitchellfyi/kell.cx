@@ -31,17 +31,19 @@ export default function BenchmarksPage() {
         stats={`${aider.totalModels || 0} models on Aider · ${lmarena.total_models || 0} on LMArena · Updated ${aiderUpdated}`}
       />
 
-      {/* Jump Links - Mobile Friendly */}
-      <div className="flex gap-2 mb-8 overflow-x-auto pb-2 -mx-6 px-6 md:mx-0 md:px-0">
-        <a href="#aider" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-          🔧 Aider Benchmark
-        </a>
-        <a href="#lmarena" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-          🎯 LMArena Rankings
-        </a>
-        <a href="#methodology" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-          📖 Methodology
-        </a>
+      {/* Sticky Section Nav */}
+      <div className="sticky top-[57px] z-20 bg-zinc-950/95 backdrop-blur-sm -mx-6 px-6 py-3 mb-6 border-b border-white/[0.06]">
+        <div className="flex gap-2 overflow-x-auto scrollbar-hide">
+          <a href="#aider" className="px-3 py-1.5 text-xs font-medium rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/20 whitespace-nowrap">
+            🔧 Aider Benchmark
+          </a>
+          <a href="#lmarena" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+            🎯 LMArena Rankings
+          </a>
+          <a href="#methodology" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
+            📖 Methodology
+          </a>
+        </div>
       </div>
 
       {/* Key Insights */}
@@ -71,7 +73,7 @@ export default function BenchmarksPage() {
       </div>
 
       {/* Aider Benchmark */}
-      <section id="aider" className="mb-10 scroll-mt-20">
+      <section id="aider" className="mb-10 scroll-mt-32">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 pb-2 border-b border-white/[0.08] gap-2">
           <div>
             <h2 className="text-lg font-semibold text-white">🔧 Aider Coding Benchmark</h2>
@@ -115,7 +117,7 @@ export default function BenchmarksPage() {
       </section>
 
       {/* LMArena Coding Rankings */}
-      <section id="lmarena" className="mb-10 scroll-mt-20">
+      <section id="lmarena" className="mb-10 scroll-mt-32">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 pb-2 border-b border-white/[0.08] gap-2">
           <div>
             <h2 className="text-lg font-semibold text-white">🎯 LMArena Coding Rankings</h2>
@@ -161,7 +163,7 @@ export default function BenchmarksPage() {
       </section>
 
       {/* Methodology Note */}
-      <section id="methodology" className="scroll-mt-20">
+      <section id="methodology" className="scroll-mt-32">
         <div className="bg-white/[0.02] border border-white/[0.08] rounded-lg p-5 mb-8">
           <h3 className="text-sm font-medium text-white mb-3">📖 About These Benchmarks</h3>
           <div className="text-sm text-zinc-500 space-y-3">
