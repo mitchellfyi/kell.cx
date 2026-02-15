@@ -37,7 +37,7 @@ function getKeyInsights() {
     thisWeekCount,
     mostActive,
     latest,
-    totalTracked: data.reposTracked || allReleases.length,
+    totalTracked: allReleases.length,
   };
 }
 

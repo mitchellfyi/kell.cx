@@ -15,15 +15,10 @@ function getKeyInsights() {
   const totalInstalls = data.totalInstalls;
   const avgRating = sorted.reduce((sum, e) => sum + e.averageRating, 0) / sorted.length;
   
-  // Find fastest growing (by trending)
-  const byTrending = [...data.extensions].sort((a, b) => (b.trendingMonthly || 0) - (a.trendingMonthly || 0));
-  const fastestGrowing = byTrending[0];
-  
   return {
     topExtension,
     totalInstalls,
     avgRating,
-    fastestGrowing,
     extensionCount: data.extensions.length,
   };
 }
@@ -71,12 +66,6 @@ export default function VSCodePage() {
           <li>
             Average rating: <strong className="text-white">⭐ {insights.avgRating.toFixed(1)}</strong> across {insights.extensionCount} extensions
           </li>
-          {insights.fastestGrowing && (
-            <li>
-              Fastest growing this month:{" "}
-              <strong className="text-amber-400">{insights.fastestGrowing.name}</strong>
-            </li>
-          )}
         </ul>
       </div>
 
@@ -101,8 +90,7 @@ export default function VSCodePage() {
                 <th className="pb-3 pr-4">Extension</th>
                 <th className="pb-3 pr-4">Publisher</th>
                 <th className="pb-3 pr-4 text-right">Installs</th>
-                <th className="pb-3 pr-4 text-right">Rating</th>
-                <th className="pb-3 text-right">Monthly Trend</th>
+                <th className="pb-3 text-right">Rating</th>
               </tr>
             </thead>
             <tbody className="text-zinc-300">
@@ -125,17 +113,8 @@ export default function VSCodePage() {
                     <td className="py-3 pr-4 text-right text-green-400 font-medium">
                       {formatNumber(ext.installs)}
                     </td>
-                    <td className="py-3 pr-4 text-right text-zinc-400">
+                    <td className="py-3 text-right text-zinc-400">
                       ⭐ {ext.averageRating.toFixed(1)}
-                    </td>
-                    <td className="py-3 text-right">
-                      {ext.trendingMonthly ? (
-                        <span className={ext.trendingMonthly > 5 ? "text-green-400" : "text-zinc-500"}>
-                          +{ext.trendingMonthly.toFixed(1)}%
-                        </span>
-                      ) : (
-                        <span className="text-zinc-600">-</span>
-                      )}
                     </td>
                   </tr>
                 ))}
