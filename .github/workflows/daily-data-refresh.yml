@@ -1,0 +1,95 @@
+name: Daily Data Refresh
+
+on:
+  schedule:
+    # Run at 05:00 UTC daily (before 6am briefings)
+    - cron: '0 5 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: |
+          cd scripts
+          npm install --prefix .. 2>/dev/null || true
+      
+      - name: Collect GitHub releases
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: node scripts/collect-releases.js
+        continue-on-error: true
+      
+      - name: Collect GitHub stats
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: node scripts/collect-github-stats.js
+        continue-on-error: true
+      
+      - name: Collect HN mentions
+        run: node scripts/collect-hn-mentions.js
+        continue-on-error: true
+      
+      - name: Collect VS Code stats
+        run: node scripts/collect-vscode-stats.js
+        continue-on-error: true
+      
+      - name: Collect npm downloads
+        run: node scripts/collect-npm-downloads.js
+        continue-on-error: true
+      
+      - name: Collect PyPI stats
+        run: node scripts/collect-pypi-stats.js
+        continue-on-error: true
+      
+      - name: Collect Homebrew stats
+        run: node scripts/collect-homebrew-stats.js
+        continue-on-error: true
+      
+      - name: Collect Reddit stats
+        run: node scripts/collect-reddit-stats.js
+        continue-on-error: true
+      
+      - name: Collect StackOverflow trends
+        run: node scripts/collect-stackoverflow-trends.js
+        continue-on-error: true
+      
+      - name: Collect G2 reviews
+        run: node scripts/collect-g2-reviews.js
+        continue-on-error: true
+      
+      - name: Aggregate news
+        run: node scripts/aggregate-news.js
+      
+      - name: Generate live intel
+        run: node scripts/generate-live-intel.js
+        continue-on-error: true
+      
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet data/; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "Kell"
+          git config user.email "hi@kell.cx"
+          git add data/
+          git commit -m "📊 Daily data refresh $(date -u +%Y-%m-%d)"
+          git push
