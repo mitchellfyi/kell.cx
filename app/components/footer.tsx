@@ -42,7 +42,7 @@ export function Footer() {
             <h3 className="text-xs uppercase tracking-wide text-zinc-500 mb-3">Company</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/about" className="text-zinc-400 hover:text-white transition-colors">About</Link></li>
-              <li><Link href="/blog" className="text-zinc-400 hover:text-white transition-colors">Blog</Link></li>
+              <li><Link href="/archive" className="text-zinc-400 hover:text-white transition-colors">Archive</Link></li>
               <li><a href="mailto:hi@kell.cx" className="text-zinc-400 hover:text-white transition-colors">Contact</a></li>
               <li><a href="https://github.com/kellcx" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors">GitHub</a></li>
             </ul>
