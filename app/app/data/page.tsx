@@ -232,6 +232,7 @@ export default function DataPage() {
           <QuickLink href="/data/benchmarks" emoji="🏆" title="Benchmarks" stat={`${aiderData.totalModels} models`} />
           <QuickLink href="/data/news" emoji="📰" title="News" stat="Last 48h" />
           <QuickLink href="/data/opensource" emoji="⭐" title="Open Source" stat="Trending" />
+          <QuickLink href="/competitive-analysis" emoji="🎯" title="Intelligence" stat="AI analysis" />
           <QuickLink href="/data/hiring" emoji="💼" title="Hiring" stat="Who's growing" />
           <QuickLink href="/data/models" emoji="🤖" title="Models" stat="All providers" />
           <QuickLink href="/data/releases" emoji="🚀" title="Releases" stat={`${stats.releasesThisWeek} this week`} />
