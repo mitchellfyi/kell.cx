@@ -1,75 +1,31 @@
 import Link from "next/link";
-import { readFileSync, statSync } from "fs";
-import { join } from "path";
+import { getDashboardStats, getGitHubReleases, getHNMentions, getVSCodeStats, sources } from "@/lib/data";
 
-// Load stats from data files
-function getStats() {
-  try {
-    const dataDir = join(process.cwd(), "..", "data");
-    const metaPath = join(dataDir, "meta.json");
-    const vscodePath = join(process.cwd(), "..", "site", "data", "vscode-stats.json");
-    
-    let lastRefresh = new Date().toISOString();
-    let vscodeInstalls = "160M+";
-    
-    try {
-      const meta = JSON.parse(readFileSync(metaPath, "utf8"));
-      lastRefresh = meta.lastRefresh;
-    } catch {
-      // Fall back to file mtime
-      const latestNews = join(dataDir, "latest-news.json");
-      lastRefresh = statSync(latestNews).mtime.toISOString();
-    }
-    
-    try {
-      const vscode = JSON.parse(readFileSync(vscodePath, "utf8"));
-      const total = vscode.totalInstalls || vscode.extensions?.reduce((sum: number, e: { installs: number }) => sum + e.installs, 0) || 0;
-      vscodeInstalls = total > 1000000 ? `${Math.round(total / 1000000)}M+` : `${Math.round(total / 1000)}K+`;
-    } catch {}
-    
-    return {
-      toolsTracked: 15,
-      vscodeInstalls,
-      openRoles: 847,
-      cursorARR: "$308M",
-      lastRefresh: new Date(lastRefresh).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }),
-    };
-  } catch {
-    return {
-      toolsTracked: 15,
-      vscodeInstalls: "160M+",
-      openRoles: 847,
-      cursorARR: "$308M",
-      lastRefresh: "Recently",
-    };
-  }
-}
+// Load all stats at build time
+const stats = getDashboardStats();
+const vscodeData = getVSCodeStats();
+const releasesData = getGitHubReleases();
+const hnData = getHNMentions();
 
-const stats = getStats();
+// Top VS Code extensions
+const topExtensions = vscodeData.extensions.slice(0, 5);
 
-const leaderboard = [
-  { rank: 1, tool: "Cursor", score: 94, trend: "+8", signal: "67 roles, $308M ARR" },
-  { rank: 2, tool: "GitHub Copilot", score: 87, trend: "0", signal: "71M installs, GPT-5.3" },
-  { rank: 3, tool: "Codex", score: 84, trend: "+15", signal: "1M+ downloads week 1" },
-  { rank: 4, tool: "Windsurf", score: 82, trend: "+12", signal: "Tab v2, aggressive pricing" },
-  { rank: 5, tool: "Claude Code", score: 75, trend: "+6", signal: "66K stars, CLI leader" },
-];
+// Recent releases (last 7 days)
+const oneWeekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+const recentReleases = releasesData.recentReleases
+  .filter((r) => new Date(r.publishedAt) > oneWeekAgo)
+  .slice(0, 5);
 
-const recentSignals = [
-  { signal: "Pricing page changed (Pro $20 → $60)", tool: "Cursor", date: "Feb 11" },
-  { signal: "New release v1.3.31", tool: "Continue", date: "Feb 11" },
-  { signal: "GPT-5.3-Codex GA", tool: "GitHub Copilot", date: "Feb 9" },
-  { signal: "Tab v2 launched", tool: "Windsurf", date: "Feb 8" },
-];
+// Top HN stories
+const topHNStories = hnData.stories.slice(0, 5);
 
 const drillDownPages = [
   { href: "/data/pricing", title: "Pricing", stat: "10 tools compared" },
   { href: "/data/benchmarks", title: "Benchmarks", stat: "69 models ranked" },
-  { href: "/data/github", title: "GitHub Stars", stat: "439K total" },
-  { href: "/data/vscode", title: "VS Code", stat: "160M+ installs" },
-  { href: "/data/hiring", title: "Hiring", stat: "847 open roles" },
-  { href: "/data/releases", title: "Releases", stat: "18 this week" },
-  { href: "/data/hackernews", title: "Hacker News", stat: "215 mentions" },
+  { href: "/data/github", title: "GitHub Stars", stat: "Live data" },
+  { href: "/data/vscode", title: "VS Code", stat: stats.vscodeInstallsFormatted + " installs" },
+  { href: "/data/releases", title: "Releases", stat: `${stats.releasesThisWeek} this week` },
+  { href: "/data/hackernews", title: "Hacker News", stat: `${stats.hnMentions} mentions` },
   { href: "/data/arxiv", title: "ArXiv Papers", stat: "50+ AI papers" },
   { href: "/data/models", title: "Models", stat: "Foundation + coding" },
 ];
@@ -88,91 +44,171 @@ export default function DataPage() {
         {stats.toolsTracked} tools tracked · Updated daily · Last refresh: {stats.lastRefresh}
       </p>
 
-      <div className="bg-blue-500/5 border border-blue-500/20 rounded-lg p-4 mb-8 text-sm">
-        <strong className="text-white">Why this is public:</strong>{" "}
-        <span className="text-zinc-400">
-          This demonstrates how Briefing works — we track pricing, hiring, adoption, and signals automatically. 
-          The same approach works for any vertical.
-        </span>
-      </div>
-
-      {/* Key Stats */}
+      {/* Key Stats - All from real data */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-        <StatCard value={String(stats.toolsTracked)} label="Tools Tracked" />
-        <StatCard value={stats.vscodeInstalls} label="VS Code Installs" change="↑ 2.1M this month" />
-        <StatCard value={String(stats.openRoles)} label="Open Roles" change="↑ 12% vs last month" />
-        <StatCard value={stats.cursorARR} label="Cursor ARR" change="↑ from $100M (Aug)" />
+        <StatCard 
+          value={stats.vscodeInstallsFormatted} 
+          label="VS Code Installs" 
+          source={sources.vscode}
+          sourceLabel="Marketplace"
+        />
+        <StatCard 
+          value={String(stats.releasesThisWeek)} 
+          label="Releases This Week" 
+          source={sources.github}
+          sourceLabel="GitHub"
+        />
+        <StatCard 
+          value={String(stats.hnMentions)} 
+          label="HN Mentions (24h)" 
+          source={sources.hn}
+          sourceLabel="Hacker News"
+        />
+        <StatCard 
+          value={formatPoints(stats.hnPoints)} 
+          label="HN Points Total" 
+          source={sources.hn}
+          sourceLabel="Hacker News"
+        />
       </div>
 
-      {/* Momentum Leaderboard */}
+      {/* Top VS Code Extensions */}
       <section className="mb-10">
         <div className="flex justify-between items-center mb-4 pb-2 border-b border-white/[0.08]">
-          <h2 className="text-xs uppercase tracking-wide text-zinc-500">Momentum Leaderboard</h2>
-          <Link href="/leaderboard" className="text-xs text-blue-400 hover:text-blue-300">
-            Full rankings →
-          </Link>
+          <h2 className="text-xs uppercase tracking-wide text-zinc-500">Top VS Code Extensions</h2>
+          <a href={sources.vscode} target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 hover:text-zinc-400">
+            Source: VS Code Marketplace ↗
+          </a>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="text-left text-xs text-zinc-500 uppercase">
                 <th className="pb-2 pr-4">#</th>
-                <th className="pb-2 pr-4">Tool</th>
-                <th className="pb-2 pr-4">Score</th>
-                <th className="pb-2 pr-4">Trend</th>
-                <th className="pb-2">Key Signal</th>
+                <th className="pb-2 pr-4">Extension</th>
+                <th className="pb-2 pr-4">Publisher</th>
+                <th className="pb-2 pr-4 text-right">Installs</th>
+                <th className="pb-2 text-right">Rating</th>
               </tr>
             </thead>
             <tbody className="text-zinc-300">
-              {leaderboard.map((row) => (
-                <tr key={row.rank} className="border-b border-white/[0.04]">
-                  <td className="py-2 pr-4">{row.rank}</td>
-                  <td className="py-2 pr-4 font-medium text-white">{row.tool}</td>
-                  <td className="py-2 pr-4 text-green-400">{row.score}</td>
-                  <td className={`py-2 pr-4 ${parseInt(row.trend) > 0 ? "text-green-400" : "text-zinc-500"}`}>
-                    {parseInt(row.trend) > 0 ? `↑ ${row.trend}` : "→ 0"}
+              {topExtensions.map((ext, i) => (
+                <tr key={ext.id} className="border-b border-white/[0.04]">
+                  <td className="py-2 pr-4 text-zinc-500">{i + 1}</td>
+                  <td className="py-2 pr-4 font-medium text-white">
+                    <a 
+                      href={`https://marketplace.visualstudio.com/items?itemName=${ext.id}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-blue-400"
+                    >
+                      {ext.name}
+                    </a>
                   </td>
-                  <td className="py-2 text-zinc-500">{row.signal}</td>
+                  <td className="py-2 pr-4 text-zinc-500">{ext.publisher}</td>
+                  <td className="py-2 pr-4 text-right text-green-400">{formatNumber(ext.installs)}</td>
+                  <td className="py-2 text-right text-zinc-400">⭐ {ext.averageRating.toFixed(1)}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+        <Link href="/data/vscode" className="block mt-3 text-sm text-blue-400 hover:text-blue-300">
+          View all {vscodeData.extensions.length} extensions →
+        </Link>
       </section>
 
-      {/* Recent Signals */}
+      {/* Recent Releases */}
       <section className="mb-10">
         <div className="flex justify-between items-center mb-4 pb-2 border-b border-white/[0.08]">
-          <h2 className="text-xs uppercase tracking-wide text-zinc-500">Recent Signals</h2>
+          <h2 className="text-xs uppercase tracking-wide text-zinc-500">Recent Releases</h2>
+          <a href={sources.github} target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 hover:text-zinc-400">
+            Source: GitHub Releases ↗
+          </a>
         </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="text-left text-xs text-zinc-500 uppercase">
-                <th className="pb-2 pr-4">Signal</th>
-                <th className="pb-2 pr-4">Tool</th>
-                <th className="pb-2">Date</th>
-              </tr>
-            </thead>
-            <tbody className="text-zinc-300">
-              {recentSignals.map((row, i) => (
-                <tr key={i} className="border-b border-white/[0.04]">
-                  <td className="py-2 pr-4">{row.signal}</td>
-                  <td className="py-2 pr-4 font-medium text-white">{row.tool}</td>
-                  <td className="py-2 text-zinc-500">{row.date}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="space-y-3">
+          {recentReleases.map((release) => (
+            <div key={release.url} className="flex items-start justify-between p-3 bg-white/[0.02] rounded-lg border border-white/[0.04]">
+              <div>
+                <a 
+                  href={release.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-white hover:text-blue-400"
+                >
+                  {release.company} — {release.tag}
+                </a>
+                <p className="text-xs text-zinc-500 mt-1">
+                  {new Date(release.publishedAt).toLocaleDateString("en-US", { month: "short", day: "numeric" })}
+                  {release.isPrerelease && <span className="ml-2 text-amber-400">(prerelease)</span>}
+                </p>
+              </div>
+              <a 
+                href={`https://github.com/${release.repo}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-zinc-600 hover:text-zinc-400"
+              >
+                {release.repo}
+              </a>
+            </div>
+          ))}
         </div>
+        <Link href="/data/releases" className="block mt-3 text-sm text-blue-400 hover:text-blue-300">
+          View all releases →
+        </Link>
+      </section>
+
+      {/* Hacker News Mentions */}
+      <section className="mb-10">
+        <div className="flex justify-between items-center mb-4 pb-2 border-b border-white/[0.08]">
+          <h2 className="text-xs uppercase tracking-wide text-zinc-500">Hacker News Mentions</h2>
+          <a href={sources.hn} target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 hover:text-zinc-400">
+            Source: Hacker News ↗
+          </a>
+        </div>
+        <div className="space-y-3">
+          {topHNStories.map((story) => (
+            <div key={story.id} className="flex items-start justify-between p-3 bg-white/[0.02] rounded-lg border border-white/[0.04]">
+              <div className="flex-1 pr-4">
+                <a 
+                  href={story.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-white hover:text-blue-400 line-clamp-2"
+                >
+                  {story.title}
+                </a>
+                <p className="text-xs text-zinc-500 mt-1">
+                  by {story.author} · {story.comments} comments
+                </p>
+              </div>
+              <div className="text-right">
+                <span className="text-green-400 font-medium">{story.points}</span>
+                <span className="text-xs text-zinc-600 block">points</span>
+                <a 
+                  href={story.hnUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-orange-400 hover:text-orange-300"
+                >
+                  HN ↗
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+        <Link href="/data/hackernews" className="block mt-3 text-sm text-blue-400 hover:text-blue-300">
+          View all {stats.hnMentions} mentions →
+        </Link>
       </section>
 
       {/* Drill-down Grid */}
       <section>
         <div className="mb-4 pb-2 border-b border-white/[0.08]">
-          <h2 className="text-xs uppercase tracking-wide text-zinc-500">Drill Into Data</h2>
+          <h2 className="text-xs uppercase tracking-wide text-zinc-500">Explore Data</h2>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {drillDownPages.map((page) => (
             <Link
               key={page.href}
@@ -185,16 +221,50 @@ export default function DataPage() {
           ))}
         </div>
       </section>
+
+      {/* Data freshness note */}
+      <div className="mt-10 pt-6 border-t border-white/[0.08] text-xs text-zinc-600">
+        <p>
+          All data is automatically collected from public sources. 
+          Refresh frequency: daily at 05:00 UTC.
+        </p>
+        <p className="mt-2">
+          Sources: <a href={sources.vscode} className="text-zinc-500 hover:text-zinc-400">VS Code Marketplace</a> · 
+          <a href={sources.github} className="text-zinc-500 hover:text-zinc-400 ml-1">GitHub</a> · 
+          <a href={sources.hn} className="text-zinc-500 hover:text-zinc-400 ml-1">Hacker News</a> · 
+          <a href={sources.aider} className="text-zinc-500 hover:text-zinc-400 ml-1">Aider Leaderboard</a>
+        </p>
+      </div>
     </div>
   );
 }
 
-function StatCard({ value, label, change }: { value: string; label: string; change?: string }) {
+function StatCard({ value, label, source, sourceLabel }: { value: string; label: string; source?: string; sourceLabel?: string }) {
   return (
     <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
       <div className="text-2xl font-semibold text-white">{value}</div>
       <div className="text-xs text-zinc-500 mt-1">{label}</div>
-      {change && <div className="text-xs text-green-400 mt-1">{change}</div>}
+      {source && sourceLabel && (
+        <a 
+          href={source} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-[10px] text-zinc-600 hover:text-zinc-500 mt-1 block"
+        >
+          {sourceLabel} ↗
+        </a>
+      )}
     </div>
   );
+}
+
+function formatNumber(n: number): string {
+  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
+  if (n >= 1_000) return `${(n / 1_000).toFixed(0)}K`;
+  return n.toString();
+}
+
+function formatPoints(n: number): string {
+  if (n >= 1_000) return `${(n / 1_000).toFixed(1)}K`;
+  return n.toString();
 }
