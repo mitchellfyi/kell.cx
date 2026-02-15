@@ -28,6 +28,7 @@ const drillDownPages = [
   { href: "/data/opensource", title: "⭐ Open Source", stat: "Trending repos" },
   { href: "/data/benchmarks", title: "📊 Benchmarks", stat: "Model rankings" },
   { href: "/data/models", title: "🤖 Models", stat: "All providers" },
+  { href: "/data/hiring", title: "💼 Hiring", stat: "Who's growing" },
 ];
 
 export const metadata = {

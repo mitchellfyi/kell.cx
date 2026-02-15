@@ -1,153 +1,204 @@
 import Link from "next/link";
+import { readFileSync, existsSync, readdirSync } from "fs";
+import { join } from "path";
+
+// Load latest jobs data
+function loadJobsData() {
+  const briefingDataDir = join(process.cwd(), "..", "briefing", "data");
+  
+  try {
+    // Find the latest jobs file
+    const files = readdirSync(briefingDataDir)
+      .filter(f => f.startsWith('jobs-') && f.endsWith('.json'))
+      .sort()
+      .reverse();
+    
+    if (files.length === 0) return {};
+    
+    const latestFile = join(briefingDataDir, files[0]);
+    return JSON.parse(readFileSync(latestFile, "utf8"));
+  } catch (e) {
+    return {};
+  }
+}
+
+function loadInsights() {
+  const path = join(process.cwd(), "..", "data", "insights.json");
+  if (existsSync(path)) {
+    try {
+      const data = JSON.parse(readFileSync(path, "utf8"));
+      return data.hiring || data.market || [];
+    } catch {
+      return [];
+    }
+  }
+  return [];
+}
+
+const jobsData = loadJobsData();
+const insights = loadInsights();
+
+// Process jobs data
+const companies = Object.entries(jobsData).map(([id, data]: [string, any]) => ({
+  id,
+  name: data.company,
+  careersUrl: data.careersUrl,
+  count: data.estimatedCount || 0,
+  roles: data.roles || [],
+  signals: data.signals || [],
+  status: data.status,
+  scrapedAt: data.scrapedAt,
+})).filter(c => c.status !== 'error').sort((a, b) => b.count - a.count);
+
+const totalJobs = companies.reduce((sum, c) => sum + c.count, 0);
+const hiringCompanies = companies.filter(c => c.count > 0);
 
 export const metadata = {
-  title: "Hiring Trends — Kell",
-  description: "Open roles and hiring velocity for AI coding tool companies. Track who's growing fastest.",
+  title: "AI Coding Tool Hiring — Kell",
+  description: "Who's hiring in AI coding tools. Track open roles across major companies.",
 };
-
-const hiringData = [
-  { company: "Lovable", roles: 98, change: "+34", departments: "Engineering, Sales, Marketing", signal: "Rapid expansion" },
-  { company: "Cursor", roles: 67, change: "+12", departments: "Engineering, Product", signal: "Series B scaling" },
-  { company: "Windsurf", roles: 52, change: "+8", departments: "Engineering, DevRel", signal: "Post-launch hiring" },
-  { company: "Cognition (Devin)", roles: 45, change: "+6", departments: "Research, Engineering", signal: "Autonomous agents" },
-  { company: "Replit", roles: 34, change: "-3", departments: "Engineering, Education", signal: "Stabilizing" },
-  { company: "Codeium", roles: 28, change: "+4", departments: "Engineering, Enterprise Sales", signal: "Enterprise push" },
-  { company: "Continue", roles: 18, change: "+2", departments: "Engineering", signal: "Open source growth" },
-  { company: "Factory", roles: 15, change: "+5", departments: "Research, Engineering", signal: "Stealth mode" },
-  { company: "Sourcegraph", roles: 12, change: "-2", departments: "Engineering", signal: "Cody focus" },
-  { company: "Tabnine", roles: 11, change: "0", departments: "Engineering, Sales", signal: "Steady state" },
-];
-
-const stats = {
-  totalRoles: 847,
-  weeklyChange: "+67",
-  companiesTracked: 15,
-  topDepartment: "Engineering",
-};
-
-const insights = [
-  { title: "Lovable leads", desc: "98 open roles (+34 this week) — fastest growing company in space" },
-  { title: "Cursor scaling", desc: "67 roles as they scale post-Series B at $308M ARR" },
-  { title: "Engineering dominant", desc: "72% of roles are engineering — product still being built" },
-  { title: "Sales emerging", desc: "Enterprise sales roles up 40% vs last month" },
-];
-
-function getChangeStyle(change: string): string {
-  const val = parseInt(change);
-  if (val > 0) return "text-green-400";
-  if (val < 0) return "text-red-400";
-  return "text-zinc-500";
-}
-
-function formatChange(change: string): string {
-  const val = parseInt(change);
-  if (val > 0) return `+${val}`;
-  if (val < 0) return `${val}`;
-  return "—";
-}
 
 export default function HiringPage() {
+  const lastUpdated = companies[0]?.scrapedAt
+    ? new Date(companies[0].scrapedAt).toLocaleDateString("en-US", { 
+        month: "short", 
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      })
+    : "Recently";
+
   return (
     <div className="mx-auto max-w-4xl px-6 py-12">
-      <div className="text-sm text-zinc-500 mb-4">
-        <Link href="/data" className="hover:text-white">Data</Link> → Hiring
+      <div className="mb-6">
+        <Link href="/data" className="text-sm text-zinc-500 hover:text-zinc-400">
+          ← Back to Dashboard
+        </Link>
       </div>
 
-      <h1 className="text-2xl font-semibold tracking-tight mb-2">Hiring Trends</h1>
-      <p className="text-zinc-400 mb-8">Open roles and hiring velocity across AI coding tool companies</p>
+      <h1 className="text-3xl font-semibold tracking-tight mb-2">Who's Hiring</h1>
+      <p className="text-zinc-400 mb-1">Open roles at AI coding tool companies</p>
+      <p className="text-sm text-zinc-600 mb-6">
+        {companies.length} companies tracked · Last updated: {lastUpdated}
+      </p>
+
+      {/* Key Insights */}
+      <div className="bg-green-500/5 border border-green-500/20 rounded-lg p-5 mb-8">
+        <h2 className="text-xs uppercase tracking-wide text-green-400 mb-4">💼 Key Insights</h2>
+        <ul className="space-y-2 text-sm text-zinc-300">
+          <li>
+            <strong className="text-white">{totalJobs}+</strong> open roles across{" "}
+            <strong className="text-white">{hiringCompanies.length}</strong> companies
+          </li>
+          {hiringCompanies[0] && (
+            <li>
+              <strong className="text-white">{hiringCompanies[0].name}</strong> is hiring the most: {hiringCompanies[0].count}+ roles
+            </li>
+          )}
+          {hiringCompanies[0]?.signals?.[0] && (
+            <li>{hiringCompanies[0].signals[0]}</li>
+          )}
+          {insights.slice(0, 2).map((insight: string, i: number) => (
+            <li key={i}>{insight}</li>
+          ))}
+        </ul>
+      </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
-          <div className="text-2xl font-semibold text-white">{stats.totalRoles}</div>
-          <div className="text-xs text-zinc-500 mt-1">Total Open Roles</div>
-        </div>
-        <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
-          <div className="text-2xl font-semibold text-green-400">{stats.weeklyChange}</div>
-          <div className="text-xs text-zinc-500 mt-1">This Week</div>
-        </div>
-        <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
-          <div className="text-2xl font-semibold text-white">{stats.companiesTracked}</div>
-          <div className="text-xs text-zinc-500 mt-1">Companies Tracked</div>
-        </div>
-        <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
-          <div className="text-2xl font-semibold text-white">72%</div>
-          <div className="text-xs text-zinc-500 mt-1">Engineering Roles</div>
-        </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+        <StatCard value={`${totalJobs}+`} label="Open Roles" />
+        <StatCard value={String(hiringCompanies.length)} label="Actively Hiring" />
+        <StatCard value={String(companies.length)} label="Companies Tracked" />
+        <StatCard value={hiringCompanies[0]?.name?.split(' ')[0] || "—"} label="Top Hiring" />
       </div>
 
-      {/* Insights */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-        {insights.map((insight) => (
-          <div key={insight.title} className="p-4 bg-white/[0.02] border border-white/[0.06] rounded-lg">
-            <div className="font-medium text-white text-sm mb-1">{insight.title}</div>
-            <div className="text-sm text-zinc-400">{insight.desc}</div>
-          </div>
-        ))}
-      </div>
-
-      {/* Table */}
-      <section className="mb-8">
+      {/* Companies */}
+      <section className="mb-10">
         <h2 className="text-xs uppercase tracking-wide text-zinc-500 mb-4 pb-2 border-b border-white/[0.08]">
-          By Company
+          All Companies
         </h2>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="text-left text-xs text-zinc-500 uppercase">
-                <th className="pb-3 pr-4">Company</th>
-                <th className="pb-3 pr-4 w-24">Open Roles</th>
-                <th className="pb-3 pr-4 w-20">Change</th>
-                <th className="pb-3 pr-4">Key Departments</th>
-                <th className="pb-3">Signal</th>
-              </tr>
-            </thead>
-            <tbody className="text-zinc-300">
-              {hiringData.map((row) => (
-                <tr key={row.company} className="border-b border-white/[0.04] hover:bg-white/[0.02]">
-                  <td className="py-3 pr-4 font-medium text-white">{row.company}</td>
-                  <td className="py-3 pr-4 font-mono">{row.roles}</td>
-                  <td className={`py-3 pr-4 font-mono ${getChangeStyle(row.change)}`}>
-                    {formatChange(row.change)}
-                  </td>
-                  <td className="py-3 pr-4 text-zinc-400">{row.departments}</td>
-                  <td className="py-3 text-zinc-500">{row.signal}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      {/* Department Breakdown */}
-      <section className="mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-zinc-500 mb-4 pb-2 border-b border-white/[0.08]">
-          By Department
-        </h2>
-        <div className="space-y-3">
-          {[
-            { dept: "Engineering", pct: 72, roles: 610 },
-            { dept: "Sales / BD", pct: 12, roles: 102 },
-            { dept: "Product", pct: 8, roles: 68 },
-            { dept: "Marketing / DevRel", pct: 5, roles: 42 },
-            { dept: "Other", pct: 3, roles: 25 },
-          ].map((d) => (
-            <div key={d.dept} className="flex items-center gap-4">
-              <div className="w-32 text-sm text-zinc-300">{d.dept}</div>
-              <div className="flex-1 h-2 bg-white/[0.05] rounded-full overflow-hidden">
-                <div className="h-full bg-blue-500/60 rounded-full" style={{ width: `${d.pct}%` }} />
+        <div className="space-y-4">
+          {companies.map((company) => (
+            <div
+              key={company.id}
+              className="p-4 bg-white/[0.02] rounded-lg border border-white/[0.04] hover:border-white/[0.08]"
+            >
+              <div className="flex items-start justify-between">
+                <div>
+                  <a
+                    href={company.careersUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-white hover:text-blue-400"
+                  >
+                    {company.name}
+                  </a>
+                  {company.signals.length > 0 && (
+                    <p className="text-sm text-green-400 mt-1">{company.signals[0]}</p>
+                  )}
+                  {company.roles.length > 0 && (
+                    <div className="mt-2 space-y-1">
+                      {company.roles.slice(0, 3).map((role: string, i: number) => (
+                        <p key={i} className="text-sm text-zinc-500">• {role}</p>
+                      ))}
+                      {company.roles.length > 3 && (
+                        <p className="text-sm text-zinc-600">+ {company.roles.length - 3} more</p>
+                      )}
+                    </div>
+                  )}
+                </div>
+                <div className="text-right">
+                  {company.count > 0 ? (
+                    <>
+                      <span className="text-2xl font-bold text-green-400">{company.count}</span>
+                      <span className="text-xs text-zinc-500 block">open roles</span>
+                    </>
+                  ) : (
+                    <span className="text-sm text-zinc-600">No data</span>
+                  )}
+                </div>
               </div>
-              <div className="w-20 text-right text-sm text-zinc-500">{d.roles} roles</div>
+              <div className="mt-3 pt-3 border-t border-white/[0.04]">
+                <a
+                  href={company.careersUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-blue-400 hover:text-blue-300"
+                >
+                  View careers page ↗
+                </a>
+              </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Methodology */}
-      <div className="text-xs text-zinc-600 border-t border-white/[0.08] pt-4">
-        <strong className="text-zinc-500">Sources:</strong> LinkedIn Jobs, company career pages, Greenhouse, Lever, Ashby.
-        Updated weekly. Some roles may be duplicates across platforms.
+      {/* Note for job seekers */}
+      <div className="bg-white/[0.02] border border-white/[0.08] rounded-lg p-5 mb-8">
+        <h3 className="text-sm font-medium text-white mb-2">🎯 For Job Seekers</h3>
+        <p className="text-sm text-zinc-400">
+          These are the hottest companies in AI coding tools right now. 
+          High role counts typically indicate rapid growth and more opportunities.
+          Click through to each careers page for current openings.
+        </p>
       </div>
+
+      {/* Footer */}
+      <div className="mt-10 pt-6 border-t border-white/[0.08] text-xs text-zinc-600">
+        <p>
+          Job data collected from company career pages. Role counts are estimates based on page content.
+          Updated daily at 05:00 UTC.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function StatCard({ value, label }: { value: string; label: string }) {
+  return (
+    <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
+      <div className="text-2xl font-semibold text-white">{value}</div>
+      <div className="text-xs text-zinc-500 mt-1">{label}</div>
     </div>
   );
 }
