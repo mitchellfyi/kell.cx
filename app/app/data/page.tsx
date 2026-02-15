@@ -1,12 +1,51 @@
 import Link from "next/link";
+import { readFileSync, statSync } from "fs";
+import { join } from "path";
 
-// This would eventually come from data files
-const stats = {
-  toolsTracked: 15,
-  vscodeInstalls: "160M+",
-  openRoles: 847,
-  cursorARR: "$308M",
-};
+// Load stats from data files
+function getStats() {
+  try {
+    const dataDir = join(process.cwd(), "..", "data");
+    const metaPath = join(dataDir, "meta.json");
+    const vscodePath = join(process.cwd(), "..", "site", "data", "vscode-stats.json");
+    
+    let lastRefresh = new Date().toISOString();
+    let vscodeInstalls = "160M+";
+    
+    try {
+      const meta = JSON.parse(readFileSync(metaPath, "utf8"));
+      lastRefresh = meta.lastRefresh;
+    } catch {
+      // Fall back to file mtime
+      const latestNews = join(dataDir, "latest-news.json");
+      lastRefresh = statSync(latestNews).mtime.toISOString();
+    }
+    
+    try {
+      const vscode = JSON.parse(readFileSync(vscodePath, "utf8"));
+      const total = vscode.totalInstalls || vscode.extensions?.reduce((sum: number, e: { installs: number }) => sum + e.installs, 0) || 0;
+      vscodeInstalls = total > 1000000 ? `${Math.round(total / 1000000)}M+` : `${Math.round(total / 1000)}K+`;
+    } catch {}
+    
+    return {
+      toolsTracked: 15,
+      vscodeInstalls,
+      openRoles: 847,
+      cursorARR: "$308M",
+      lastRefresh: new Date(lastRefresh).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }),
+    };
+  } catch {
+    return {
+      toolsTracked: 15,
+      vscodeInstalls: "160M+",
+      openRoles: 847,
+      cursorARR: "$308M",
+      lastRefresh: "Recently",
+    };
+  }
+}
+
+const stats = getStats();
 
 const leaderboard = [
   { rank: 1, tool: "Cursor", score: 94, trend: "+8", signal: "67 roles, $308M ARR" },
@@ -46,7 +85,7 @@ export default function DataPage() {
       <h1 className="text-3xl font-semibold tracking-tight mb-2">Data Dashboard</h1>
       <p className="text-zinc-400 mb-1">Live competitive intelligence on AI coding tools</p>
       <p className="text-sm text-zinc-600 mb-6">
-        {stats.toolsTracked} tools tracked · Updated daily · Last refresh: Feb 11, 2026
+        {stats.toolsTracked} tools tracked · Updated daily · Last refresh: {stats.lastRefresh}
       </p>
 
       <div className="bg-blue-500/5 border border-blue-500/20 rounded-lg p-4 mb-8 text-sm">
