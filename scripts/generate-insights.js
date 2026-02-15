@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /**
  * Generate AI-powered insights from collected data
- * Uses Claude Code CLI (if available) or falls back to rule-based insights
+ * Uses OpenAI API or falls back to rule-based insights
  */
 
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const https = require('https');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const OUTPUT_FILE = path.join(DATA_DIR, 'insights.json');
@@ -21,25 +21,67 @@ function loadJson(filename) {
   }
 }
 
-function callClaudeCode(prompt) {
-  try {
-    // Use Claude Code CLI with piped input
-    const result = execSync(`echo ${JSON.stringify(prompt)} | claude -p --output-format json`, {
-      encoding: 'utf8',
-      timeout: 60000,
-      env: {
-        ...process.env,
-        CLAUDE_CODE_OAUTH_TOKEN: process.env.CLAUDE_CODE_OAUTH_TOKEN,
-      }
-    });
-    
-    // Parse the response
-    const parsed = JSON.parse(result);
-    return parsed.result || parsed.content || result;
-  } catch (e) {
-    console.error('Claude Code CLI not available or failed:', e.message);
+async function callOpenAI(prompt) {
+  const apiKey = process.env.OPENAI_API_KEY;
+  const model = process.env.OPENAI_MODEL || 'gpt-4o-mini';
+  
+  if (!apiKey) {
+    console.error('No OPENAI_API_KEY set');
     return null;
   }
+
+  return new Promise((resolve) => {
+    const data = JSON.stringify({
+      model,
+      messages: [{ role: 'user', content: prompt }],
+      max_tokens: 1000,
+      temperature: 0.7,
+    });
+
+    const options = {
+      hostname: 'api.openai.com',
+      path: '/v1/chat/completions',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`,
+        'Content-Length': Buffer.byteLength(data)
+      }
+    };
+
+    const req = https.request(options, (res) => {
+      let body = '';
+      res.on('data', chunk => body += chunk);
+      res.on('end', () => {
+        try {
+          const result = JSON.parse(body);
+          if (result.choices && result.choices[0]?.message?.content) {
+            resolve(result.choices[0].message.content);
+          } else {
+            console.error('OpenAI response:', body.slice(0, 200));
+            resolve(null);
+          }
+        } catch (e) {
+          console.error('Failed to parse OpenAI response');
+          resolve(null);
+        }
+      });
+    });
+
+    req.on('error', (e) => {
+      console.error('OpenAI request error:', e.message);
+      resolve(null);
+    });
+    
+    req.setTimeout(30000, () => {
+      console.error('OpenAI request timeout');
+      req.destroy();
+      resolve(null);
+    });
+
+    req.write(data);
+    req.end();
+  });
 }
 
 function generateFallbackInsights(data) {
@@ -58,7 +100,6 @@ function generateFallbackInsights(data) {
     insights.vscode.push(`${top?.name || 'GitHub Copilot'} leads with ${formatNumber(top?.installs || 0)} installs`);
     insights.vscode.push(`Total installs across ${exts.length} extensions: ${formatNumber(total)}`);
     
-    // Find fastest growing
     const byTrending = [...exts].sort((a, b) => (b.trendingMonthly || 0) - (a.trendingMonthly || 0));
     if (byTrending[0]?.trendingMonthly > 5) {
       insights.vscode.push(`Fastest growing: ${byTrending[0].name} (+${byTrending[0].trendingMonthly.toFixed(1)}% this month)`);
@@ -75,7 +116,6 @@ function generateFallbackInsights(data) {
       insights.releases.push(`Most recent: ${thisWeek[0].company} ${thisWeek[0].tag}`);
     }
     
-    // Count by company
     const byCo = {};
     thisWeek.forEach(r => byCo[r.company] = (byCo[r.company] || 0) + 1);
     const mostActive = Object.entries(byCo).sort((a, b) => b[1] - a[1])[0];
@@ -92,13 +132,12 @@ function generateFallbackInsights(data) {
     
     insights.news.push(`${stories.length} AI-related stories on HN (${formatNumber(totalPoints)} total points)`);
     if (topStory) {
-      insights.news.push(`Top discussion: "${truncate(topStory.title, 50)}" (${topStory.points} pts, ${topStory.comments} comments)`);
+      insights.news.push(`Top discussion: "${truncate(topStory.title, 50)}" (${topStory.points} pts)`);
     }
     
-    // Hot topics
     const hotTopics = stories.filter(s => s.points > 100);
     if (hotTopics.length > 0) {
-      insights.news.push(`${hotTopics.length} stories with 100+ points today`);
+      insights.news.push(`${hotTopics.length} stories with 100+ points`);
     }
   }
 
@@ -125,46 +164,49 @@ async function generateInsights() {
     masterList: loadJson('master-list.json'),
   };
 
-  // Try Claude Code CLI first
   let insights = null;
   
-  if (process.env.CLAUDE_CODE_OAUTH_TOKEN) {
-    console.error('Attempting Claude Code CLI...');
+  // Try OpenAI
+  if (process.env.OPENAI_API_KEY) {
+    console.error(`Using OpenAI (model: ${process.env.OPENAI_MODEL || 'gpt-4o-mini'})...`);
     
     const prompt = `You are an AI analyst for kell.cx, a competitive intelligence service for AI coding tools.
 
-Analyze this data and generate 3-5 bullet point insights for each category. Be specific with numbers. Identify trends and surprises.
+Analyze this data and generate 3-5 concise bullet point insights for each category. Be specific with numbers. Identify trends and surprises.
 
 VS Code Extensions (${data.vscode?.extensions?.length || 0} tracked):
 ${data.vscode?.extensions?.slice(0, 8).map(e => `- ${e.name}: ${formatNumber(e.installs)} installs`).join('\n') || 'No data'}
 
-Recent Releases:
+Recent Releases (past week):
 ${data.releases?.recentReleases?.slice(0, 8).map(r => `- ${r.company} ${r.tag}`).join('\n') || 'No data'}
 
 Top HN Stories:
-${data.hn?.stories?.slice(0, 5).map(s => `- "${s.title}" (${s.points} pts)`).join('\n') || 'No data'}
+${data.hn?.stories?.slice(0, 5).map(s => `- "${s.title}" (${s.points} pts, ${s.comments} comments)`).join('\n') || 'No data'}
 
-Respond with ONLY valid JSON (no markdown):
-{"summary":"one sentence","vscode":["insight1","insight2"],"releases":["insight1"],"news":["insight1"],"market":["insight1"]}`;
+Respond with ONLY valid JSON, no markdown code blocks:
+{"summary":"one sentence market summary","vscode":["insight1","insight2"],"releases":["insight1","insight2"],"news":["insight1","insight2"],"market":["insight1","insight2"]}`;
 
-    const response = callClaudeCode(prompt);
+    const response = await callOpenAI(prompt);
     if (response) {
       try {
-        const jsonMatch = (typeof response === 'string' ? response : JSON.stringify(response)).match(/\{[\s\S]*\}/);
-        if (jsonMatch) {
-          insights = JSON.parse(jsonMatch[0]);
-          insights.source = 'claude-code';
-          console.error('✓ Generated insights via Claude Code');
-        }
+        // Extract JSON from response (handle potential markdown)
+        let jsonStr = response;
+        const jsonMatch = response.match(/\{[\s\S]*\}/);
+        if (jsonMatch) jsonStr = jsonMatch[0];
+        
+        insights = JSON.parse(jsonStr);
+        insights.source = 'openai';
+        console.error('✓ Generated insights via OpenAI');
       } catch (e) {
-        console.error('Failed to parse Claude response');
+        console.error('Failed to parse OpenAI response:', e.message);
+        console.error('Response was:', response.slice(0, 300));
       }
     }
   }
 
   // Fallback to rule-based insights
   if (!insights) {
-    console.error('Using rule-based insights (no Claude Code)');
+    console.error('Using rule-based insights');
     insights = {
       date: new Date().toISOString().split('T')[0],
       summary: 'AI coding tools market shows continued momentum across all metrics',
