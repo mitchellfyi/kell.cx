@@ -1,6 +1,6 @@
 # Kell Priorities
 
-**Last updated:** 2026-02-14 15:31 UTC
+**Last updated:** 2026-02-15 08:30 UTC
 **Goal:** First paying customer
 
 ---
@@ -23,7 +23,7 @@
 3. **Daily digest actually sends**
    - ✅ Digest generator: scripts/generate-daily-digest.js
    - ✅ Email service: ~/clawd/services/email/send.js (Resend)
-   - ⏳ Waitlist: 0 subscribers (waitlist.json empty)
+   - ⏳ Waitlist: 1 subscriber (Mitchell, for testing)
    - Status: READY - waiting on first subscriber to test end-to-end
 
 ---
