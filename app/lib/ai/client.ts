@@ -129,10 +129,16 @@ export async function generateCompletion(
   
   try {
     const response = await withRetry(async () => {
+      // Use max_completion_tokens for newer models (o1, gpt-5, etc.)
+      const isNewModel = model.includes('o1') || model.includes('gpt-5') || model.includes('o3');
+      const tokenParam = isNewModel 
+        ? { max_completion_tokens: config.maxTokens || 2000 }
+        : { max_tokens: config.maxTokens || 2000 };
+      
       return client.chat.completions.create({
         model,
         messages: [{ role: 'user', content: prompt }],
-        max_tokens: config.maxTokens || 2000,
+        ...tokenParam,
         temperature: config.temperature ?? 0.7,
       });
     });
