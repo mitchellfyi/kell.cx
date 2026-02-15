@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getGitHubReleases, sources } from "@/lib/data";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
+import { SectionNav } from "@/components/section-nav";
 
 const data = getGitHubReleases();
 
@@ -52,26 +53,11 @@ export default function ReleasesPage() {
         stats={`${insights.totalTracked} repos tracked · Updated ${lastUpdated}`}
       />
 
-      {/* Sticky Section Nav */}
-      <div className="sticky top-[57px] z-20 bg-zinc-950/95 backdrop-blur-sm -mx-6 px-6 py-3 mb-6 border-b border-white/[0.06]">
-        <div className="flex gap-2 overflow-x-auto scrollbar-hide">
-          {releasesToday.length > 0 && (
-            <a href="#today" className="px-3 py-1.5 text-xs font-medium rounded-full bg-green-500/10 text-green-400 border border-green-500/20 whitespace-nowrap">
-              🔥 Today ({releasesToday.length})
-            </a>
-          )}
-          {releasesThisWeek.length > 0 && (
-            <a href="#week" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-              This Week ({releasesThisWeek.length})
-            </a>
-          )}
-          {olderReleases.length > 0 && (
-            <a href="#older" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-              Older ({olderReleases.length})
-            </a>
-          )}
-        </div>
-      </div>
+      <SectionNav sections={[
+        ...(releasesToday.length > 0 ? [{ id: "today", label: "Today", emoji: "🔥", count: releasesToday.length, highlight: true }] : []),
+        ...(releasesThisWeek.length > 0 ? [{ id: "week", label: "This Week", count: releasesThisWeek.length }] : []),
+        ...(olderReleases.length > 0 ? [{ id: "older", label: "Older", count: olderReleases.length }] : []),
+      ]} />
 
       {/* Key Insights */}
       <div className="bg-blue-500/5 border border-blue-500/20 rounded-lg p-5 mb-8">

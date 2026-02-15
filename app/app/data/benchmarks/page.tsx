@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAiderBenchmark, getLMArenaLeaderboard, sources } from "@/lib/data";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
+import { SectionNav } from "@/components/section-nav";
 
 const aider = getAiderBenchmark();
 const lmarena = getLMArenaLeaderboard();
@@ -31,20 +32,11 @@ export default function BenchmarksPage() {
         stats={`${aider.totalModels || 0} models on Aider · ${lmarena.total_models || 0} on LMArena · Updated ${aiderUpdated}`}
       />
 
-      {/* Sticky Section Nav */}
-      <div className="sticky top-[57px] z-20 bg-zinc-950/95 backdrop-blur-sm -mx-6 px-6 py-3 mb-6 border-b border-white/[0.06]">
-        <div className="flex gap-2 overflow-x-auto scrollbar-hide">
-          <a href="#aider" className="px-3 py-1.5 text-xs font-medium rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/20 whitespace-nowrap">
-            🔧 Aider Benchmark
-          </a>
-          <a href="#lmarena" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-            🎯 LMArena Rankings
-          </a>
-          <a href="#methodology" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-            📖 Methodology
-          </a>
-        </div>
-      </div>
+      <SectionNav sections={[
+        { id: "aider", label: "Aider Benchmark", emoji: "🔧", highlight: true },
+        { id: "lmarena", label: "LMArena Rankings", emoji: "🎯" },
+        { id: "methodology", label: "Methodology", emoji: "📖" },
+      ]} />
 
       {/* Key Insights */}
       <div className="bg-yellow-500/5 border border-yellow-500/20 rounded-lg p-5 mb-8">

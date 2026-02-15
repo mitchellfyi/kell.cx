@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getHNMentions, sources } from "@/lib/data";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
+import { SectionNav } from "@/components/section-nav";
 
 const data = getHNMentions();
 
@@ -50,26 +51,11 @@ export default function HNPage() {
         stats={`${insights.totalStories} stories · ${formatNumber(insights.totalPoints)} points · Updated ${lastUpdated}`}
       />
 
-      {/* Sticky Section Nav */}
-      <div className="sticky top-[57px] z-20 bg-zinc-950/95 backdrop-blur-sm -mx-6 px-6 py-3 mb-6 border-b border-white/[0.06]">
-        <div className="flex gap-2 overflow-x-auto scrollbar-hide">
-          {hotStories.length > 0 && (
-            <a href="#hot" className="px-3 py-1.5 text-xs font-medium rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 whitespace-nowrap">
-              🔥 Hot ({hotStories.length})
-            </a>
-          )}
-          {warmStories.length > 0 && (
-            <a href="#trending" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-              📈 Trending ({warmStories.length})
-            </a>
-          )}
-          {otherStories.length > 0 && (
-            <a href="#recent" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-              Recent ({otherStories.length})
-            </a>
-          )}
-        </div>
-      </div>
+      <SectionNav sections={[
+        ...(hotStories.length > 0 ? [{ id: "hot", label: "Hot", emoji: "🔥", count: hotStories.length, highlight: true }] : []),
+        ...(warmStories.length > 0 ? [{ id: "trending", label: "Trending", emoji: "📈", count: warmStories.length }] : []),
+        ...(otherStories.length > 0 ? [{ id: "recent", label: "Recent", count: otherStories.length }] : []),
+      ]} />
 
       {/* Key Insights */}
       <div className="bg-orange-500/5 border border-orange-500/20 rounded-lg p-5 mb-8">

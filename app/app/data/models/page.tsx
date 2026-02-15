@@ -3,6 +3,7 @@ import { getLMArenaLeaderboard, getAiderBenchmark, sources } from "@/lib/data";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
+import { SectionNav } from "@/components/section-nav";
 
 // Load model releases
 function loadModelReleases() {
@@ -66,22 +67,11 @@ export default function ModelsPage() {
         stats={`${totalModels} models · ${organizations.length}+ providers · LMArena rankings`}
       />
 
-      {/* Sticky Section Nav */}
-      <div className="sticky top-[57px] z-20 bg-zinc-950/95 backdrop-blur-sm -mx-6 px-6 py-3 mb-6 border-b border-white/[0.06]">
-        <div className="flex gap-2 overflow-x-auto scrollbar-hide">
-          <a href="#rankings" className="px-3 py-1.5 text-xs font-medium rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 whitespace-nowrap">
-            🏆 Rankings
-          </a>
-          <a href="#providers" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-            🏢 By Provider
-          </a>
-          {recentReleases.length > 0 && (
-            <a href="#releases" className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap">
-              🆕 Recent Releases
-            </a>
-          )}
-        </div>
-      </div>
+      <SectionNav sections={[
+        { id: "rankings", label: "Rankings", emoji: "🏆", highlight: true },
+        { id: "providers", label: "By Provider", emoji: "🏢" },
+        ...(recentReleases.length > 0 ? [{ id: "releases", label: "Recent Releases", emoji: "🆕" }] : []),
+      ]} />
 
       {/* Key Insights */}
       <div className="bg-purple-500/5 border border-purple-500/20 rounded-lg p-5 mb-8">

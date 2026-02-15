@@ -2,6 +2,7 @@ import Link from "next/link";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
+import { SectionNav } from "@/components/section-nav";
 
 // Load pricing data
 function loadPricing() {
@@ -72,24 +73,15 @@ export default function PricingPage() {
         stats={`${stats.totalTools} tools compared · Last updated: ${lastUpdated}`}
       />
 
-      {/* Sticky Section Nav */}
       {categories.length > 0 && (
-        <div className="sticky top-[57px] z-20 bg-zinc-950/95 backdrop-blur-sm -mx-6 px-6 py-3 mb-6 border-b border-white/[0.06]">
-          <div className="flex gap-2 overflow-x-auto scrollbar-hide">
-            <a href="#insights" className="px-3 py-1.5 text-xs font-medium rounded-full bg-green-500/10 text-green-400 border border-green-500/20 whitespace-nowrap">
-              💡 Insights
-            </a>
-            {categories.map((cat: any) => (
-              <a 
-                key={cat.id}
-                href={`#${cat.id}`} 
-                className="px-3 py-1.5 text-xs font-medium rounded-full bg-white/[0.03] text-zinc-500 hover:bg-white/[0.06] hover:text-white border border-white/[0.06] whitespace-nowrap"
-              >
-                {cat.emoji} {cat.name}
-              </a>
-            ))}
-          </div>
-        </div>
+        <SectionNav sections={[
+          { id: "insights", label: "Insights", emoji: "💡", highlight: true },
+          ...categories.map((cat: any) => ({
+            id: cat.id,
+            label: cat.name,
+            emoji: cat.emoji,
+          })),
+        ]} />
       )}
 
       {/* Key Insights */}
