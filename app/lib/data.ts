@@ -227,3 +227,23 @@ function formatNumber(n: number): string {
   if (n >= 1_000) return `${(n / 1_000).toFixed(0)}K+`;
   return n.toString();
 }
+
+// AI Insights
+export interface AIInsight {
+  headline: string;
+  summary: string;
+  significance: "high" | "medium" | "low";
+  sources: string[];
+  category: string;
+}
+
+export interface AIInsightsData {
+  date: string;
+  insights: AIInsight[];
+  marketSummary: string;
+  generatedAt: string;
+}
+
+export function getAIInsights(): AIInsightsData | null {
+  return loadJson<AIInsightsData | null>("ai-insights.json", null);
+}

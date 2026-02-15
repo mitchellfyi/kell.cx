@@ -5,9 +5,11 @@ import {
   getHNMentions, 
   getAiderBenchmark,
   getLMArenaLeaderboard,
+  getAIInsights,
   sources 
 } from "@/lib/data";
 import { DataNav, PageHeader } from "@/components/data-nav";
+import { AIInsights } from "@/components/ai-insights";
 
 // Load all stats at build time
 const stats = getDashboardStats();
@@ -15,6 +17,7 @@ const releasesData = getGitHubReleases();
 const hnData = getHNMentions();
 const aiderData = getAiderBenchmark();
 const lmarenaData = getLMArenaLeaderboard();
+const aiInsights = getAIInsights();
 
 // Top coding models from Aider benchmark
 const topCodingModels = aiderData.leaderboard.slice(0, 8);
@@ -74,6 +77,9 @@ export default function DataPage() {
           href="/data/hackernews"
         />
       </div>
+
+      {/* AI-Generated Insights */}
+      <AIInsights data={aiInsights} />
 
       {/* Two Column Layout on Desktop */}
       <div className="grid lg:grid-cols-2 gap-8 mb-10">
