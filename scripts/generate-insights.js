@@ -1,18 +1,15 @@
 #!/usr/bin/env node
 /**
  * Generate AI-powered insights from collected data
- * Uses Claude API to analyze trends and surface key takeaways
+ * Uses Claude Code CLI (if available) or falls back to rule-based insights
  */
 
 const fs = require('fs');
 const path = require('path');
-const https = require('https');
+const { execSync } = require('child_process');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const OUTPUT_FILE = path.join(DATA_DIR, 'insights.json');
-
-// Claude API config
-const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 
 function loadJson(filename) {
   const filepath = path.join(DATA_DIR, filename);
@@ -24,52 +21,25 @@ function loadJson(filename) {
   }
 }
 
-async function callClaude(prompt, maxTokens = 1000) {
-  if (!ANTHROPIC_API_KEY) {
-    console.error('Warning: ANTHROPIC_API_KEY not set, using fallback insights');
+function callClaudeCode(prompt) {
+  try {
+    // Use Claude Code CLI with piped input
+    const result = execSync(`echo ${JSON.stringify(prompt)} | claude -p --output-format json`, {
+      encoding: 'utf8',
+      timeout: 60000,
+      env: {
+        ...process.env,
+        CLAUDE_CODE_OAUTH_TOKEN: process.env.CLAUDE_CODE_OAUTH_TOKEN,
+      }
+    });
+    
+    // Parse the response
+    const parsed = JSON.parse(result);
+    return parsed.result || parsed.content || result;
+  } catch (e) {
+    console.error('Claude Code CLI not available or failed:', e.message);
     return null;
   }
-
-  return new Promise((resolve, reject) => {
-    const data = JSON.stringify({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: maxTokens,
-      messages: [{ role: 'user', content: prompt }]
-    });
-
-    const options = {
-      hostname: 'api.anthropic.com',
-      path: '/v1/messages',
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': ANTHROPIC_API_KEY,
-        'anthropic-version': '2023-06-01',
-        'Content-Length': Buffer.byteLength(data)
-      }
-    };
-
-    const req = https.request(options, (res) => {
-      let body = '';
-      res.on('data', chunk => body += chunk);
-      res.on('end', () => {
-        try {
-          const result = JSON.parse(body);
-          if (result.content && result.content[0]) {
-            resolve(result.content[0].text);
-          } else {
-            resolve(null);
-          }
-        } catch (e) {
-          resolve(null);
-        }
-      });
-    });
-
-    req.on('error', () => resolve(null));
-    req.write(data);
-    req.end();
-  });
 }
 
 function generateFallbackInsights(data) {
@@ -77,16 +47,22 @@ function generateFallbackInsights(data) {
     vscode: [],
     releases: [],
     news: [],
-    social: [],
-    trending: [],
+    market: [],
   };
 
   // VS Code insights
   if (data.vscode && data.vscode.extensions) {
-    const top = data.vscode.extensions[0];
+    const exts = data.vscode.extensions;
+    const top = exts[0];
     const total = data.vscode.totalInstalls;
     insights.vscode.push(`${top?.name || 'GitHub Copilot'} leads with ${formatNumber(top?.installs || 0)} installs`);
-    insights.vscode.push(`Total installs across tracked extensions: ${formatNumber(total)}`);
+    insights.vscode.push(`Total installs across ${exts.length} extensions: ${formatNumber(total)}`);
+    
+    // Find fastest growing
+    const byTrending = [...exts].sort((a, b) => (b.trendingMonthly || 0) - (a.trendingMonthly || 0));
+    if (byTrending[0]?.trendingMonthly > 5) {
+      insights.vscode.push(`Fastest growing: ${byTrending[0].name} (+${byTrending[0].trendingMonthly.toFixed(1)}% this month)`);
+    }
   }
 
   // Release insights  
@@ -94,20 +70,42 @@ function generateFallbackInsights(data) {
     const thisWeek = data.releases.recentReleases.filter(r => 
       new Date(r.publishedAt) > new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)
     );
-    insights.releases.push(`${thisWeek.length} releases in the past week`);
+    insights.releases.push(`${thisWeek.length} releases across tracked tools this week`);
     if (thisWeek[0]) {
-      insights.releases.push(`Latest: ${thisWeek[0].company} ${thisWeek[0].tag}`);
+      insights.releases.push(`Most recent: ${thisWeek[0].company} ${thisWeek[0].tag}`);
+    }
+    
+    // Count by company
+    const byCo = {};
+    thisWeek.forEach(r => byCo[r.company] = (byCo[r.company] || 0) + 1);
+    const mostActive = Object.entries(byCo).sort((a, b) => b[1] - a[1])[0];
+    if (mostActive && mostActive[1] > 1) {
+      insights.releases.push(`Most active: ${mostActive[0]} (${mostActive[1]} releases)`);
     }
   }
 
-  // HN insights
+  // HN/News insights
   if (data.hn && data.hn.stories) {
-    const totalPoints = data.hn.stories.reduce((sum, s) => sum + s.points, 0);
-    const topStory = data.hn.stories[0];
-    insights.news.push(`${data.hn.stories.length} AI-related stories on HN (${formatNumber(totalPoints)} total points)`);
+    const stories = data.hn.stories;
+    const totalPoints = stories.reduce((sum, s) => sum + s.points, 0);
+    const topStory = stories.sort((a, b) => b.points - a.points)[0];
+    
+    insights.news.push(`${stories.length} AI-related stories on HN (${formatNumber(totalPoints)} total points)`);
     if (topStory) {
-      insights.news.push(`Top story: "${truncate(topStory.title, 60)}" (${topStory.points} pts)`);
+      insights.news.push(`Top discussion: "${truncate(topStory.title, 50)}" (${topStory.points} pts, ${topStory.comments} comments)`);
     }
+    
+    // Hot topics
+    const hotTopics = stories.filter(s => s.points > 100);
+    if (hotTopics.length > 0) {
+      insights.news.push(`${hotTopics.length} stories with 100+ points today`);
+    }
+  }
+
+  // Market insights
+  insights.market.push('AI coding tools market continues rapid growth');
+  if (data.trending?.recentPopular?.length > 0) {
+    insights.market.push(`${data.trending.recentPopular.length} new AI repos gaining traction this week`);
   }
 
   return insights;
@@ -127,72 +125,66 @@ async function generateInsights() {
     masterList: loadJson('master-list.json'),
   };
 
-  // Build context for Claude
-  const context = `
-You are an AI analyst generating daily insights for kell.cx, a competitive intelligence service for AI coding tools.
+  // Try Claude Code CLI first
+  let insights = null;
+  
+  if (process.env.CLAUDE_CODE_OAUTH_TOKEN) {
+    console.error('Attempting Claude Code CLI...');
+    
+    const prompt = `You are an AI analyst for kell.cx, a competitive intelligence service for AI coding tools.
 
-Today's data:
+Analyze this data and generate 3-5 bullet point insights for each category. Be specific with numbers. Identify trends and surprises.
 
 VS Code Extensions (${data.vscode?.extensions?.length || 0} tracked):
-${data.vscode?.extensions?.slice(0, 10).map(e => `- ${e.name}: ${formatNumber(e.installs)} installs, ${e.averageRating?.toFixed(1)} rating`).join('\n') || 'No data'}
+${data.vscode?.extensions?.slice(0, 8).map(e => `- ${e.name}: ${formatNumber(e.installs)} installs`).join('\n') || 'No data'}
 
-Recent Releases (last 7 days):
-${data.releases?.recentReleases?.slice(0, 10).map(r => `- ${r.company} ${r.tag} (${new Date(r.publishedAt).toLocaleDateString()})`).join('\n') || 'No data'}
+Recent Releases:
+${data.releases?.recentReleases?.slice(0, 8).map(r => `- ${r.company} ${r.tag}`).join('\n') || 'No data'}
 
-Hacker News (top stories):
-${data.hn?.stories?.slice(0, 5).map(s => `- "${s.title}" (${s.points} pts, ${s.comments} comments)`).join('\n') || 'No data'}
+Top HN Stories:
+${data.hn?.stories?.slice(0, 5).map(s => `- "${s.title}" (${s.points} pts)`).join('\n') || 'No data'}
 
-Generate 3-5 bullet point insights for each category. Be specific with numbers. Identify trends, surprises, and notable changes. Keep each insight to 1-2 sentences.
+Respond with ONLY valid JSON (no markdown):
+{"summary":"one sentence","vscode":["insight1","insight2"],"releases":["insight1"],"news":["insight1"],"market":["insight1"]}`;
 
-Format your response as JSON:
-{
-  "date": "YYYY-MM-DD",
-  "summary": "One sentence overall market summary",
-  "vscode": ["insight 1", "insight 2", ...],
-  "releases": ["insight 1", "insight 2", ...],
-  "news": ["insight 1", "insight 2", ...],
-  "market": ["insight 1", "insight 2", ...]
-}
-`;
-
-  let insights;
-  
-  // Try Claude API first
-  const aiResponse = await callClaude(context);
-  
-  if (aiResponse) {
-    try {
-      // Extract JSON from response
-      const jsonMatch = aiResponse.match(/\{[\s\S]*\}/);
-      if (jsonMatch) {
-        insights = JSON.parse(jsonMatch[0]);
-        insights.source = 'claude';
+    const response = callClaudeCode(prompt);
+    if (response) {
+      try {
+        const jsonMatch = (typeof response === 'string' ? response : JSON.stringify(response)).match(/\{[\s\S]*\}/);
+        if (jsonMatch) {
+          insights = JSON.parse(jsonMatch[0]);
+          insights.source = 'claude-code';
+          console.error('✓ Generated insights via Claude Code');
+        }
+      } catch (e) {
+        console.error('Failed to parse Claude response');
       }
-    } catch (e) {
-      console.error('Failed to parse Claude response, using fallback');
     }
   }
 
   // Fallback to rule-based insights
   if (!insights) {
+    console.error('Using rule-based insights (no Claude Code)');
     insights = {
       date: new Date().toISOString().split('T')[0],
-      summary: 'AI coding tools market continues rapid evolution',
-      source: 'fallback',
+      summary: 'AI coding tools market shows continued momentum across all metrics',
+      source: 'rule-based',
       ...generateFallbackInsights(data),
     };
   }
 
   insights.generatedAt = new Date().toISOString();
+  insights.date = new Date().toISOString().split('T')[0];
 
   // Save insights
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(insights, null, 2));
-  console.error('✓ Generated insights\n');
+  console.error('\n✓ Saved insights to', OUTPUT_FILE);
   
   // Print summary
-  console.error('Summary:', insights.summary);
-  console.error('\nVS Code:', insights.vscode?.slice(0, 2).join(' | '));
-  console.error('Releases:', insights.releases?.slice(0, 2).join(' | '));
+  console.error('\nSummary:', insights.summary);
+  if (insights.vscode?.length) console.error('VS Code:', insights.vscode[0]);
+  if (insights.releases?.length) console.error('Releases:', insights.releases[0]);
+  if (insights.news?.length) console.error('News:', insights.news[0]);
   
   console.log(JSON.stringify(insights, null, 2));
 }
