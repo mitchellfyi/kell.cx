@@ -47,7 +47,7 @@ jobs:
         working-directory: app
         env:
           AI_DEBUG: ${{ inputs.debug == true && 'true' || 'false' }}
-        run: node --experimental-strip-types scripts/generate-insights.ts
+        run: npx tsx scripts/generate-insights.ts
       
       - name: Commit updated insights
         run: |

@@ -13,7 +13,7 @@
 
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
-import { generateDailyInsights, DataSources, isAIAvailable } from '../lib/ai/index.js';
+import { generateDailyInsights, DataSources, isAIAvailable } from '../lib/ai';
 
 const DATA_DIR = join(process.cwd(), '..', 'data');
 const OUTPUT_PATH = join(DATA_DIR, 'ai-insights.json');
