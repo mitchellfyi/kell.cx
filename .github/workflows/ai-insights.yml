@@ -1,9 +1,7 @@
-# AI Daily Insights Workflow
 name: AI Daily Insights
 
 on:
   schedule:
-    # Run daily at 06:00 UTC (after data scrapers at 05:00)
     - cron: '0 6 * * *'
   workflow_dispatch:
     inputs:
@@ -14,8 +12,7 @@ on:
 
 env:
   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-  OPENAI_MODEL: ${{ secrets.OPENAI_MODEL || 'gpt-4o' }}
-  AI_DEBUG: ${{ inputs.debug && 'true' || 'false' }}
+  OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o' }}
 
 jobs:
   generate-insights:
@@ -25,8 +22,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -45,84 +40,24 @@ jobs:
             echo "::error::OPENAI_API_KEY not set"
             exit 1
           fi
-          echo "✓ AI configuration valid"
+          echo "AI configuration valid"
           echo "Model: ${OPENAI_MODEL:-gpt-4o}"
       
       - name: Generate AI insights
         working-directory: app
-        run: |
-          node --experimental-strip-types scripts/generate-insights.ts
+        env:
+          AI_DEBUG: ${{ inputs.debug == true && 'true' || 'false' }}
+        run: node --experimental-strip-types scripts/generate-insights.ts
       
       - name: Commit updated insights
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
           
           if [ -f "data/ai-insights.json" ]; then
             git add data/ai-insights.json
-            if git diff --staged --quiet; then
-              echo "No changes to commit"
-            else
+            if ! git diff --staged --quiet; then
               git commit -m "chore: update AI insights [skip ci]"
               git push
             fi
           fi
-      
-      - name: Report status
-        if: always()
-        run: |
-          if [ "${{ job.status }}" == "success" ]; then
-            echo "✅ AI insights generated successfully"
-          else
-            echo "❌ AI insights generation failed"
-            echo "::warning::Check logs for details"
-          fi
-
-  # Alert on failure
-  notify-failure:
-    runs-on: ubuntu-latest
-    needs: generate-insights
-    if: failure()
-    steps:
-      - name: Create failure issue
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const title = `AI Insights Generation Failed - ${new Date().toISOString().split('T')[0]}`;
-            const body = `The scheduled AI insights generation workflow failed.
-
-**Run:** https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
-**Time:** ${new Date().toISOString()}
-
-Please check the logs and fix any issues.
-
-Labels: bug, ai-integration`;
-
-            // Check if similar issue already exists
-            const issues = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              labels: 'ai-failure',
-              per_page: 1
-            });
-
-            if (issues.data.length === 0) {
-              await github.rest.issues.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                title: title,
-                body: body,
-                labels: ['bug', 'ai-failure']
-              });
-              console.log('Created failure issue');
-            } else {
-              // Add comment to existing issue
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issues.data[0].number,
-                body: `Another failure occurred:\n\n**Run:** https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}\n**Time:** ${new Date().toISOString()}`
-              });
-              console.log('Added comment to existing issue');
-            }
