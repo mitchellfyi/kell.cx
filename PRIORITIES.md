@@ -1,6 +1,6 @@
 # Kell Priorities
 
-**Last updated:** 2026-02-15 08:30 UTC
+**Last updated:** 2026-02-15 22:00 UTC
 **Goal:** First paying customer
 
 ---
@@ -11,6 +11,7 @@
    - Need 5 days of live testing before any real outreach
    - Track: Digest deliveries, site stability, subscriber flow
    - Started: 2026-02-14
+   - Day 2/5: Test subscriber added (Mitchell), digest cron verified working
 
 ---
 
@@ -23,8 +24,8 @@
 3. **Daily digest actually sends**
    - ✅ Digest generator: scripts/generate-daily-digest.js
    - ✅ Email service: ~/clawd/services/email/send.js (Resend)
-   - ⏳ Waitlist: 1 subscriber (Mitchell, for testing)
-   - Status: READY - waiting on first subscriber to test end-to-end
+   - ✅ Waitlist: 1 subscriber (Mitchell, for testing)
+   - Status: LIVE - first delivery scheduled for 06:00 UTC tomorrow
 
 ---
 
