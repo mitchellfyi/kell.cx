@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-14T06:05:55.354Z",
+  "timestamp": "2026-02-15T06:04:02.805Z",
   "ios": [
     {
       "competitor": "GitHub",
@@ -9,8 +9,8 @@
       "appId": 1477376905,
       "bundleId": "com.github.stormbreaker.prod",
       "price": "Free",
-      "rating": 4.82289,
-      "ratingCount": 29371,
+      "rating": 4.82303,
+      "ratingCount": 29485,
       "version": "1.245.1",
       "releaseDate": "2020-03-17T07:00:00Z",
       "currentVersionReleaseDate": "2026-02-11T22:26:18Z",
@@ -63,8 +63,8 @@
       "appId": 580990573,
       "bundleId": "com.amazonaws.mobileConsole",
       "price": "Free",
-      "rating": 4.72004,
-      "ratingCount": 5640,
+      "rating": 4.71969,
+      "ratingCount": 5644,
       "version": "3.15.0",
       "releaseDate": "2013-02-26T00:23:15Z",
       "currentVersionReleaseDate": "2026-02-09T21:34:52Z",
@@ -121,6 +121,6 @@
     "mostReviewsIos": "ChatGPT: 5,621,672 reviews"
   },
   "changes": [
-    "📲 ChatGPT iOS updated: v1.2026.027 → v1.2026.034"
+    "💬 GitHub iOS: +114 new reviews"
   ]
 }
