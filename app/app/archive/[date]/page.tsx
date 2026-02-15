@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import { readdirSync, readFileSync, existsSync } from "fs";
 import { join } from "path";
@@ -150,7 +151,7 @@ export default async function BriefingPage({ params }: BriefingPageProps) {
 function BriefingMarkdown({ content }: { content: string }) {
   // Simple markdown to HTML conversion for display
   const lines = content.split("\n");
-  const elements: JSX.Element[] = [];
+  const elements: React.ReactElement[] = [];
   
   let i = 0;
   for (const line of lines) {
