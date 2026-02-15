@@ -98,3 +98,9 @@ jobs:
           git commit -m "📊 Daily data refresh $(date -u +%Y-%m-%d)"
           git pull --rebase
           git push
+      
+      - name: Send daily briefing
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: node scripts/send-briefing-to-subscribers.js
+        continue-on-error: true
