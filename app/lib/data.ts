@@ -43,6 +43,13 @@ export interface VSCodeStats {
     publisher: string;
     installs: number;
     averageRating: number;
+    trendingMonthly?: number;
+    trendingWeekly?: number;
+    trendingDaily?: number;
+    version?: string;
+    lastUpdated?: string;
+    ratingCount?: number;
+    category?: string;
   }>;
 }
 
@@ -83,7 +90,7 @@ export function getVSCodeStats(): VSCodeStats {
   });
 }
 
-export function getGitHubReleases(): { recentReleases: GitHubRelease[]; generatedAt: string } {
+export function getGitHubReleases(): { recentReleases: GitHubRelease[]; generatedAt: string; reposTracked?: number } {
   return loadJson("github-releases.json", {
     generatedAt: new Date().toISOString(),
     recentReleases: [],
