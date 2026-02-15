@@ -111,18 +111,60 @@ export function getLatestNews(): { items: NewsItem[]; generatedAt: string; recen
   });
 }
 
-export function getAiderBenchmark() {
-  return loadJson("aider-benchmark.json", {
+export interface AiderBenchmarkEntry {
+  model: string;
+  score: number;
+  cost: number;
+  command: string;
+  formatScore: number;
+  rank: number;
+}
+
+export interface AiderBenchmark {
+  generatedAt: string;
+  source: string;
+  totalModels: number;
+  topScore: number;
+  topModel: string;
+  leaderboard: AiderBenchmarkEntry[];
+}
+
+export interface LMArenaModel {
+  name: string;
+  organization: string;
+  rank_overall: number;
+  rank_coding: number | null;
+  rank_math: number | null;
+  rank_creative_writing: number | null;
+  rank_instruction_following: number | null;
+  rank_multi_turn: number | null;
+}
+
+export interface LMArenaLeaderboard {
+  source: string;
+  description: string;
+  fetched_at: string;
+  total_models: number;
+  models: LMArenaModel[];
+}
+
+export function getAiderBenchmark(): AiderBenchmark {
+  return loadJson<AiderBenchmark>("aider-benchmark.json", {
     generatedAt: new Date().toISOString(),
+    source: "https://aider.chat/docs/leaderboards/",
+    totalModels: 0,
     leaderboard: [],
     topModel: "Unknown",
     topScore: 0,
   });
 }
 
-export function getLMArenaLeaderboard() {
-  return loadJson("lmarena-leaderboard.json", {
-    generatedAt: new Date().toISOString(),
+export function getLMArenaLeaderboard(): LMArenaLeaderboard {
+  return loadJson<LMArenaLeaderboard>("lmarena-leaderboard.json", {
+    source: "arena.ai",
+    description: "",
+    fetched_at: new Date().toISOString(),
+    total_models: 0,
     models: [],
   });
 }

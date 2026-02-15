@@ -1,9 +1,0 @@
-# kell.cx robots.txt
-User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://kell.cx/sitemap.xml
-
-# Crawl-delay (be nice)
-Crawl-delay: 1
