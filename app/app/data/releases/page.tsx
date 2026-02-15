@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getGitHubReleases, sources } from "@/lib/data";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 import { SectionNav } from "@/components/section-nav";

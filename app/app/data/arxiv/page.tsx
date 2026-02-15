@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 

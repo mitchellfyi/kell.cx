@@ -74,7 +74,7 @@ export function SearchBar({ placeholder = "Search AI coding tools...", onSearch 
       {/* No results */}
       {isOpen && query.length >= 2 && results.length === 0 && (
         <div className="absolute z-50 w-full mt-2 bg-zinc-900 border border-white/10 rounded-lg p-4 text-center">
-          <p className="text-sm text-zinc-500">No results found for "{query}"</p>
+          <p className="text-sm text-zinc-500">No results found for &quot;{query}&quot;</p>
         </div>
       )}
     </div>

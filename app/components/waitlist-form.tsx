@@ -25,7 +25,7 @@ export function WaitlistForm() {
   if (status === "success") {
     return (
       <div className="p-4 bg-green-500/10 border border-green-500/30 rounded-lg text-green-400">
-        ✓ You're on the list. We'll be in touch soon.
+        ✓ You&apos;re on the list. We&apos;ll be in touch soon.
       </div>
     );
   }

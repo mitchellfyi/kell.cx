@@ -14,7 +14,7 @@ export default function HomePage() {
       {/* Pitch */}
       <div className="text-left text-lg text-zinc-300 mb-10">
         <p>
-          Track what's happening in AI coding tools.{" "}
+          Track what&apos;s happening in AI coding tools.{" "}
           <strong className="text-white">
             Pricing changes, new releases, GitHub stars, VS Code installs, benchmark scores
           </strong>{" "}

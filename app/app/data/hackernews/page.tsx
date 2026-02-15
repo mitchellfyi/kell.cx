@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { getHNMentions, getHNSummaries, sources } from "@/lib/data";
+import { getHNMentions, getHNSummaries } from "@/lib/data";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 import { SectionNav } from "@/components/section-nav";
 
@@ -73,7 +72,7 @@ export default function HNPage() {
           </li>
           {insights.topStory && (
             <li>
-              Top story: <strong className="text-white">"{truncate(insights.topStory.title, 50)}"</strong> ({insights.topStory.points} pts)
+              Top story: <strong className="text-white">&quot;{truncate(insights.topStory.title, 50)}&quot;</strong> ({insights.topStory.points} pts)
             </li>
           )}
           <li>

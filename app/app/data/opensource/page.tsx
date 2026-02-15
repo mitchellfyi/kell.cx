@@ -1,11 +1,44 @@
 import Link from "next/link";
-import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
+import { DataNav, DataBreadcrumb } from "@/components/data-nav";
 import { getGitHubReleases, sources } from "@/lib/data";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 
+interface TrendingRepo {
+  name: string;
+  fullName?: string;
+  description?: string;
+  stars?: number;
+  forks?: number;
+  language?: string;
+  url?: string;
+  weeklyStars?: number;
+  starsToday?: number;
+  topics?: string[];
+}
+
+interface LanguageStat {
+  name?: string;
+  language?: string;
+  count: number;
+}
+
+interface Release {
+  repo: string;
+  company?: string;
+  tag: string;
+  publishedAt: string;
+  url: string;
+  category?: string;
+}
+
 // Load GitHub trending data
-function loadTrending() {
+function loadTrending(): { 
+  recentPopular?: TrendingRepo[]; 
+  trending?: TrendingRepo[];
+  summary?: { topLanguages?: LanguageStat[] };
+  generatedAt?: string;
+} {
   const path = join(process.cwd(), "..", "data", "github-trending.json");
   if (existsSync(path)) {
     try {
@@ -40,9 +73,9 @@ const allRepos = trending.recentPopular || [];
 // Stats
 const stats = {
   totalRepos: allRepos.length,
-  totalStars: allRepos.reduce((sum: number, r: any) => sum + (r.stars || 0), 0),
+  totalStars: allRepos.reduce((sum: number, r: TrendingRepo) => sum + (r.stars || 0), 0),
   topLanguages: trending.summary?.topLanguages || [],
-  releasesThisWeek: releases.recentReleases?.filter((r: any) => 
+  releasesThisWeek: releases.recentReleases?.filter((r: Release) => 
     new Date(r.publishedAt) > new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)
   ).length || 0,
 };
@@ -78,9 +111,9 @@ export default function OpenSourcePage() {
 
       {/* Key Insights */}
       <div className="bg-blue-500/5 border border-blue-500/20 rounded-lg p-5 mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-blue-400 mb-4">What's Hot</h2>
+        <h2 className="text-xs uppercase tracking-wide text-blue-400 mb-4">What&apos;s Hot</h2>
         <ul className="space-y-2 text-sm text-zinc-300">
-          {allRepos.slice(0, 3).map((repo: any, i: number) => (
+          {allRepos.slice(0, 3).map((repo: TrendingRepo, i: number) => (
             <li key={i}>
               <a 
                 href={repo.url} 
@@ -91,7 +124,7 @@ export default function OpenSourcePage() {
                 {repo.name}
               </a>
               <span className="text-zinc-500 ml-2">
-                {formatNumber(repo.stars)} stars — {truncate(repo.description || '', 50)}
+                {formatNumber(repo.stars || 0)} stars — {truncate(repo.description || '', 50)}
               </span>
             </li>
           ))}
@@ -120,7 +153,7 @@ export default function OpenSourcePage() {
         <section className="mb-8">
           <h2 className="text-xs uppercase tracking-wide text-zinc-500 mb-4">Languages</h2>
           <div className="flex flex-wrap gap-2">
-            {stats.topLanguages.map((lang: any) => (
+            {stats.topLanguages.map((lang: LanguageStat) => (
               <span 
                 key={lang.language} 
                 className="px-3 py-1 bg-white/[0.05] border border-white/[0.1] rounded-full text-sm text-zinc-300"
@@ -138,7 +171,7 @@ export default function OpenSourcePage() {
           Rising Stars
         </h2>
         <div className="space-y-3">
-          {allRepos.slice(0, 15).map((repo: any) => (
+          {allRepos.slice(0, 15).map((repo: TrendingRepo) => (
             <div
               key={repo.url}
               className="flex items-start justify-between p-4 bg-white/[0.02] rounded-lg border border-white/[0.04] hover:border-white/[0.08]"
@@ -157,14 +190,14 @@ export default function OpenSourcePage() {
                 </p>
                 <div className="flex gap-3 mt-2 text-xs text-zinc-500">
                   {repo.language && <span>{repo.language}</span>}
-                  {repo.forks > 0 && <span>🍴 {formatNumber(repo.forks)}</span>}
+                  {(repo.forks ?? 0) > 0 && <span>🍴 {formatNumber(repo.forks ?? 0)}</span>}
                   {repo.topics?.slice(0, 3).map((t: string) => (
                     <span key={t} className="text-zinc-600">#{t}</span>
                   ))}
                 </div>
               </div>
               <div className="text-right flex-shrink-0">
-                <span className="text-yellow-400 font-semibold">{formatNumber(repo.stars)}</span>
+                <span className="text-yellow-400 font-semibold">{formatNumber(repo.stars ?? 0)}</span>
               </div>
             </div>
           ))}
@@ -177,7 +210,7 @@ export default function OpenSourcePage() {
           Recent Releases
         </h2>
         <div className="space-y-3">
-          {releases.recentReleases?.slice(0, 10).map((release: any) => (
+          {releases.recentReleases?.slice(0, 10).map((release: Release) => (
             <div
               key={release.url}
               className="flex items-center justify-between p-3 bg-white/[0.02] rounded-lg border border-white/[0.04]"

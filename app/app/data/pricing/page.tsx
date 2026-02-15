@@ -1,8 +1,37 @@
-import Link from "next/link";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 import { SectionNav } from "@/components/section-nav";
+
+interface PricingTier {
+  price?: number;
+  unit?: string;
+  period?: string;
+  features?: string[];
+}
+
+interface PricingTool {
+  id: string;
+  name: string;
+  website?: string;
+  freeTier?: boolean;
+  individual?: PricingTier;
+  team?: PricingTier;
+  enterprise?: PricingTier;
+  notes?: string;
+}
+
+interface PricingCategory {
+  id: string;
+  name: string;
+  description?: string;
+  tools?: PricingTool[];
+}
+
+interface PricingData {
+  categories?: PricingCategory[];
+  meta?: Record<string, unknown>;
+}
 
 // Load pricing data
 function loadPricing() {
@@ -23,7 +52,7 @@ function loadPricing() {
   return { categories: [], meta: {} };
 }
 
-const pricing = loadPricing();
+const pricing = loadPricing() as PricingData;
 
 // Calculate stats
 function getStats() {
@@ -32,8 +61,8 @@ function getStats() {
   let minPrice = Infinity;
   let maxPrice = 0;
   
-  pricing.categories?.forEach((cat: any) => {
-    cat.tools?.forEach((tool: any) => {
+  pricing.categories?.forEach((cat) => {
+    cat.tools?.forEach((tool) => {
       totalTools++;
       if (tool.freeTier) freeCount++;
       const price = tool.individual?.price;
@@ -77,7 +106,7 @@ export default function PricingPage() {
       {categories.length > 0 && (
         <SectionNav sections={[
           { id: "insights", label: "Insights", highlight: true },
-          ...categories.map((cat: any) => ({
+          ...categories.map((cat: PricingCategory) => ({
             id: cat.id,
             label: cat.name,
           })),
@@ -115,7 +144,7 @@ export default function PricingPage() {
       </div>
 
       {/* Pricing Tables by Category */}
-      {categories.map((category: any) => (
+      {categories.map((category: PricingCategory) => (
         <section key={category.id} id={category.id} className="mb-10 scroll-mt-32">
           <h2 className="text-lg font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
             {category.name}
@@ -133,7 +162,7 @@ export default function PricingPage() {
                 </tr>
               </thead>
               <tbody className="text-zinc-300">
-                {category.tools?.map((tool: any) => (
+                {category.tools?.map((tool: PricingTool) => (
                   <tr key={tool.name} className="border-b border-white/[0.04] hover:bg-white/[0.02]">
                     <td className="py-3 pr-4">
                       <a
@@ -169,7 +198,7 @@ export default function PricingPage() {
                           ${tool.team.price}<span className="text-zinc-500 text-xs">/{tool.team.period}</span>
                         </span>
                       ) : tool.team ? (
-                        <span className="text-zinc-400 text-xs">{tool.team}</span>
+                        <span className="text-zinc-400 text-xs">Available</span>
                       ) : (
                         <span className="text-zinc-600">—</span>
                       )}
@@ -180,7 +209,7 @@ export default function PricingPage() {
                           ${tool.enterprise.price}<span className="text-zinc-500 text-xs">/{tool.enterprise.period}</span>
                         </span>
                       ) : tool.enterprise ? (
-                        <span className="text-zinc-400 text-xs">{tool.enterprise}</span>
+                        <span className="text-zinc-400 text-xs">Contact</span>
                       ) : (
                         <span className="text-zinc-600">—</span>
                       )}
@@ -199,7 +228,7 @@ export default function PricingPage() {
         <h2 className="text-base font-medium text-white mb-4">Pricing Patterns</h2>
         <div className="grid md:grid-cols-2 gap-4 text-sm text-zinc-400">
           <div>
-            <strong className="text-white block mb-1">The "Free" Trap</strong>
+            <strong className="text-white block mb-1">The &quot;Free&quot; Trap</strong>
             <p>Most free tiers are heavily rate-limited. Cursor gives 2,000 completions/month, Windsurf is unlimited but slower models.</p>
           </div>
           <div>
@@ -208,7 +237,7 @@ export default function PricingPage() {
           </div>
           <div>
             <strong className="text-white block mb-1">Enterprise Theater</strong>
-            <p>"Custom pricing" usually means "we'll charge as much as we think you'll pay." Expect 2-5x team pricing.</p>
+            <p>&quot;Custom pricing&quot; usually means &quot;we&apos;ll charge as much as we think you&apos;ll pay.&quot; Expect 2-5x team pricing.</p>
           </div>
           <div>
             <strong className="text-white block mb-1">BYOK Option</strong>

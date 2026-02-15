@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { getAiderBenchmark, getLMArenaLeaderboard, sources } from "@/lib/data";
+import { getAiderBenchmark, getLMArenaLeaderboard, sources, AiderBenchmarkEntry, LMArenaModel } from "@/lib/data";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 import { SectionNav } from "@/components/section-nav";
 
@@ -8,8 +7,9 @@ const lmarena = getLMArenaLeaderboard();
 
 // Get all models
 const allAiderModels = aider.leaderboard || [];
-const topCoding = lmarena.models?.filter((m: any) => m.rank_coding)
-  .sort((a: any, b: any) => a.rank_coding - b.rank_coding) || [];
+const topCoding = (lmarena.models as LMArenaModel[] || [])
+  .filter((m) => m.rank_coding)
+  .sort((a, b) => (a.rank_coding || 0) - (b.rank_coding || 0));
 
 export const metadata = {
   title: "AI Model Benchmarks — Kell",
@@ -92,7 +92,7 @@ export default function BenchmarksPage() {
               </tr>
             </thead>
             <tbody className="text-zinc-300">
-              {allAiderModels.map((model: any, i: number) => (
+              {allAiderModels.map((model: AiderBenchmarkEntry, i: number) => (
                 <tr key={i} className="border-b border-white/[0.04] hover:bg-white/[0.02]">
                   <td className={`py-2.5 pr-4 ${getRankStyle(model.rank || i + 1)}`}>{model.rank || i + 1}</td>
                   <td className="py-2.5 pr-4 font-medium text-white">{model.model}</td>
@@ -136,9 +136,9 @@ export default function BenchmarksPage() {
               </tr>
             </thead>
             <tbody className="text-zinc-300">
-              {topCoding.slice(0, 20).map((model: any, i: number) => (
+              {topCoding.slice(0, 20).map((model: LMArenaModel, i: number) => (
                 <tr key={i} className="border-b border-white/[0.04] hover:bg-white/[0.02]">
-                  <td className={`py-2.5 pr-4 ${getRankStyle(model.rank_coding)}`}>#{model.rank_coding}</td>
+                  <td className={`py-2.5 pr-4 ${getRankStyle(model.rank_coding ?? 999)}`}>#{model.rank_coding}</td>
                   <td className="py-2.5 pr-4 font-medium text-white">{model.name}</td>
                   <td className="py-2.5 pr-4">
                     <span className="px-2 py-0.5 bg-white/[0.05] text-zinc-400 rounded text-xs">

@@ -82,13 +82,6 @@ export default function GitHubPage() {
     );
   }
 
-  const releasesByCategory = data.recentReleases.reduce((acc, release) => {
-    const cat = release.category || "other";
-    if (!acc[cat]) acc[cat] = [];
-    acc[cat].push(release);
-    return acc;
-  }, {} as Record<string, Release[]>);
-
   const lastUpdated = new Date(data.generatedAt).toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",
@@ -117,7 +110,7 @@ export default function GitHubPage() {
 
       {/* Release List */}
       <div className="space-y-4">
-        {data.recentReleases.slice(0, 30).map((release, idx) => (
+        {data.recentReleases.slice(0, 30).map((release) => (
           <div 
             key={`${release.repo}-${release.tag}`}
             className="p-4 bg-white/[0.02] border border-white/[0.06] rounded-lg hover:border-white/[0.12] transition-colors"

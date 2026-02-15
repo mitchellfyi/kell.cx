@@ -5,28 +5,59 @@ import { join } from "path";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 import { SectionNav } from "@/components/section-nav";
 
+// Source-specific item types
+interface RawItem {
+  title?: string;
+  name?: string;
+  url?: string;
+  link?: string;
+  source?: string;
+  date?: string;
+  pubDate?: string;
+  published_at?: string;
+  featured_at?: string;
+  createdAt?: string;
+  description?: string;
+  tagline?: string;
+  author?: string;
+  points?: number;
+  comments?: number;
+  hnUrl?: string;
+  user?: { name?: string };
+}
+
+// News source data structure
+interface NewsSource {
+  items?: RawItem[];
+  posts?: RawItem[];
+  articles?: RawItem[];
+  products?: RawItem[];
+  recent?: RawItem[];
+  older?: RawItem[];
+}
+
 // Load all news sources
-function loadJsonFile(filename: string, defaultValue: any = { items: [], articles: [] }) {
+function loadJsonFile(filename: string): NewsSource {
   const path = join(process.cwd(), "..", "data", filename);
   if (existsSync(path)) {
     try {
       return JSON.parse(readFileSync(path, "utf8"));
     } catch {
-      return defaultValue;
+      return {};
     }
   }
-  return defaultValue;
+  return {};
 }
 
 const hnData = getHNMentions();
-const aiRssNews = loadJsonFile("ai-rss-news.json", { items: [] });
-const techCrunch = loadJsonFile("techcrunch-ai.json", { articles: [] });
-const devTo = loadJsonFile("devto-ai.json", { items: [] });
-const googleAI = loadJsonFile("google-ai-blog.json", { items: [] });
-const anthropicNews = loadJsonFile("anthropic-news.json", { items: [] });
-const deepmindNews = loadJsonFile("deepmind-news.json", { items: [] });
-const producthunt = loadJsonFile("producthunt-ai.json", { items: [] });
-const latestNews = loadJsonFile("latest-news.json", { recent: [], older: [] });
+const aiRssNews = loadJsonFile("ai-rss-news.json");
+const techCrunch = loadJsonFile("techcrunch-ai.json");
+const devTo = loadJsonFile("devto-ai.json");
+const googleAI = loadJsonFile("google-ai-blog.json");
+const anthropicNews = loadJsonFile("anthropic-news.json");
+const deepmindNews = loadJsonFile("deepmind-news.json");
+const producthunt = loadJsonFile("producthunt-ai.json");
+const latestNews = loadJsonFile("latest-news.json");
 
 // Combine all sources into unified format
 interface NewsItem {
@@ -41,88 +72,33 @@ interface NewsItem {
   author?: string;
 }
 
+// Helper to map raw items to NewsItem
+function mapToNewsItem(items: RawItem[], source: string): NewsItem[] {
+  return (items || []).map((item) => ({
+    title: item.title || item.name || "",
+    url: item.url || item.link || "",
+    source: item.source || source,
+    date: item.date || item.pubDate || item.published_at || item.createdAt || item.featured_at || "",
+    description: item.description || item.tagline,
+    points: item.points,
+    comments: item.comments,
+    hnUrl: item.hnUrl,
+    author: item.user?.name || item.author,
+  }));
+}
+
 const allNews: NewsItem[] = [
-  // HN Stories
-  ...(hnData.stories || []).map((s: any) => ({
-    title: s.title,
-    url: s.url,
-    source: "Hacker News",
-    date: s.createdAt,
-    points: s.points,
-    comments: s.comments,
-    hnUrl: s.hnUrl,
-    author: s.author,
-  })),
-  // TechCrunch
-  ...(techCrunch.articles || []).map((a: any) => ({
-    title: a.title,
-    url: a.url,
-    source: "TechCrunch",
-    date: a.date,
-    description: a.description,
-    author: a.author,
-  })),
-  // AI RSS (Hugging Face, Simon Willison, MIT Tech Review, etc.)
-  ...(aiRssNews.items || []).map((i: any) => ({
-    title: i.title,
-    url: i.link || i.url,
-    source: i.source || "RSS",
-    date: i.pubDate || i.date,
-    description: i.description,
-  })),
-  // Dev.to AI
-  ...(devTo.items || devTo.posts || []).map((p: any) => ({
-    title: p.title,
-    url: p.url || p.link,
-    source: "Dev.to",
-    date: p.published_at || p.date,
-    author: p.user?.name || p.author,
-  })),
-  // Google AI Blog
-  ...(googleAI.items || googleAI.posts || []).map((p: any) => ({
-    title: p.title,
-    url: p.link || p.url,
-    source: "Google AI",
-    date: p.pubDate || p.date,
-  })),
-  // Anthropic
-  ...(anthropicNews.items || anthropicNews.posts || []).map((p: any) => ({
-    title: p.title,
-    url: p.link || p.url,
-    source: "Anthropic",
-    date: p.pubDate || p.date,
-  })),
-  // DeepMind
-  ...(deepmindNews.items || deepmindNews.posts || []).map((p: any) => ({
-    title: p.title,
-    url: p.link || p.url,
-    source: "DeepMind",
-    date: p.pubDate || p.date,
-  })),
-  // Product Hunt
-  ...(producthunt.items || producthunt.products || []).map((p: any) => ({
-    title: p.name || p.title,
-    url: p.url || p.link,
-    source: "Product Hunt",
-    date: p.date || p.featured_at,
-    description: p.tagline || p.description,
-  })),
-  // Latest aggregated news
-  ...(latestNews.recent || []).map((n: any) => ({
-    title: n.title,
-    url: n.url,
-    source: n.source || "News",
-    date: n.date,
-    description: n.description,
-  })),
-  ...(latestNews.older || []).map((n: any) => ({
-    title: n.title,
-    url: n.url,
-    source: n.source || "News",
-    date: n.date,
-    description: n.description,
-  })),
-].filter(item => item.title && item.url) // Filter out invalid items
+  ...mapToNewsItem(hnData.stories || [], "Hacker News"),
+  ...mapToNewsItem(techCrunch.articles || [], "TechCrunch"),
+  ...mapToNewsItem(aiRssNews.items || [], "RSS"),
+  ...mapToNewsItem(devTo.items || devTo.posts || [], "Dev.to"),
+  ...mapToNewsItem(googleAI.items || googleAI.posts || [], "Google AI"),
+  ...mapToNewsItem(anthropicNews.items || anthropicNews.posts || [], "Anthropic"),
+  ...mapToNewsItem(deepmindNews.items || deepmindNews.posts || [], "DeepMind"),
+  ...mapToNewsItem(producthunt.items || producthunt.products || [], "Product Hunt"),
+  ...mapToNewsItem(latestNews.recent || [], "News"),
+  ...mapToNewsItem(latestNews.older || [], "News"),
+].filter(item => item.title && item.url)
  .sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime());
 
 // Deduplicate by URL

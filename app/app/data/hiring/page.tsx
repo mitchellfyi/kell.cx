@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
+import { DataNav, DataBreadcrumb } from "@/components/data-nav";
 import { readFileSync, existsSync, readdirSync } from "fs";
 import { join } from "path";
 
@@ -18,7 +18,7 @@ function loadJobsData() {
     
     const latestFile = join(briefingDataDir, files[0]);
     return JSON.parse(readFileSync(latestFile, "utf8"));
-  } catch (e) {
+  } catch {
     return {};
   }
 }
@@ -36,11 +36,21 @@ function loadInsights() {
   return [];
 }
 
-const jobsData = loadJobsData();
+interface JobData {
+  company: string;
+  careersUrl?: string;
+  estimatedCount?: number;
+  roles?: string[];
+  signals?: string[];
+  status?: string;
+  scrapedAt?: string;
+}
+
+const jobsData = loadJobsData() as Record<string, JobData>;
 const insights = loadInsights();
 
 // Process jobs data
-const companies = Object.entries(jobsData).map(([id, data]: [string, any]) => ({
+const companies = Object.entries(jobsData).map(([id, data]) => ({
   id,
   name: data.company,
   careersUrl: data.careersUrl,
@@ -79,7 +89,7 @@ export default function HiringPage() {
         </Link>
       </div>
 
-      <h1 className="text-3xl font-semibold tracking-tight mb-2">Who's Hiring</h1>
+      <h1 className="text-3xl font-semibold tracking-tight mb-2">Who&apos;s Hiring</h1>
       <p className="text-zinc-400 mb-1">Open roles at AI coding tool companies</p>
       <p className="text-sm text-zinc-600 mb-6">
         {companies.length} companies tracked · Last updated: {lastUpdated}

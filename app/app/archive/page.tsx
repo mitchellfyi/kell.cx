@@ -11,7 +11,6 @@ interface Briefing {
 
 function getBriefings(): Briefing[] {
   const briefingsDir = join(process.cwd(), "..", "briefing", "digests");
-  const emailsDir = join(process.cwd(), "..", "briefing", "emails");
   
   const briefings: Briefing[] = [];
   
@@ -78,10 +77,10 @@ export default function ArchivePage() {
 
       {/* What You Get */}
       <div className="bg-blue-500/5 border border-blue-500/20 rounded-lg p-5 mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-blue-400 mb-3">📬 What's in each briefing</h2>
+        <h2 className="text-xs uppercase tracking-wide text-blue-400 mb-3">What&apos;s in each briefing</h2>
         <ul className="space-y-1.5 text-sm text-zinc-300">
           <li>• Key signals: pricing changes, new releases, hiring trends</li>
-          <li>• Momentum rankings: who's growing fastest</li>
+          <li>• Momentum rankings: who&apos;s growing fastest</li>
           <li>• Hacker News mentions and community buzz</li>
           <li>• Competitor activity across 15+ tools</li>
         </ul>

@@ -1,12 +1,22 @@
-import Link from "next/link";
-import { getLMArenaLeaderboard, getAiderBenchmark, sources } from "@/lib/data";
+import { getLMArenaLeaderboard, getAiderBenchmark, sources, LMArenaModel } from "@/lib/data";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 import { SectionNav } from "@/components/section-nav";
 
+interface ModelRelease {
+  model?: string;
+  name?: string;
+  provider: string;
+  date?: string;
+  released?: string;
+  type?: string;
+  pricingInput?: number;
+  pricingOutput?: number;
+}
+
 // Load model releases
-function loadModelReleases() {
+function loadModelReleases(): { recentReleases: ModelRelease[]; byProvider: Record<string, unknown> } {
   const path = join(process.cwd(), "..", "data", "model-releases.json");
   if (existsSync(path)) {
     try {
@@ -36,7 +46,7 @@ const lmarena = getLMArenaLeaderboard();
 const aider = getAiderBenchmark();
 
 // Group LMArena by organization
-const byOrg: Record<string, any[]> = {};
+const byOrg: Record<string, LMArenaModel[]> = {};
 lmarena.models.forEach((m) => {
   if (!byOrg[m.organization]) byOrg[m.organization] = [];
   byOrg[m.organization].push(m);
@@ -121,7 +131,7 @@ export default function ModelsPage() {
               </tr>
             </thead>
             <tbody className="text-zinc-300">
-              {lmarena.models.slice(0, 20).map((model, i) => (
+              {lmarena.models.slice(0, 20).map((model) => (
                 <tr key={model.name} className="border-b border-white/[0.04] hover:bg-white/[0.02]">
                   <td className={`py-2.5 pr-4 ${getRankStyle(model.rank_overall)}`}>#{model.rank_overall}</td>
                   <td className="py-2.5 pr-4 font-medium text-white">{model.name}</td>
@@ -156,7 +166,7 @@ export default function ModelsPage() {
                 <span className="text-xs text-zinc-500">{org.count} models</span>
               </div>
               <div className="space-y-1.5">
-                {org.models.slice(0, 4).map((model: any) => (
+                {org.models.slice(0, 4).map((model: LMArenaModel) => (
                   <div key={model.name} className="flex justify-between text-sm">
                     <span className="text-zinc-300 truncate pr-2">{model.name}</span>
                     <span className="text-zinc-500 whitespace-nowrap">#{model.rank_overall}</span>
@@ -178,7 +188,7 @@ export default function ModelsPage() {
             Recent Model Releases
           </h2>
           <div className="space-y-2">
-            {recentReleases.slice(0, 8).map((model: any, i: number) => (
+            {recentReleases.slice(0, 8).map((model: ModelRelease, i: number) => (
               <div
                 key={i}
                 className="flex items-start justify-between p-3 md:p-4 bg-white/[0.02] rounded-lg border border-white/[0.04]"

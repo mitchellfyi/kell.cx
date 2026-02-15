@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
+import { DataNav, DataBreadcrumb } from "@/components/data-nav";
 import { getVSCodeStats, sources } from "@/lib/data";
 
 const data = getVSCodeStats();
