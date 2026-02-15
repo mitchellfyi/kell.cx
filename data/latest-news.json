@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-15T08:43:39.956Z",
+  "generated_at": "2026-02-15T09:42:52.368Z",
   "stats": {
     "total_sources": 8,
     "total_items": 372,
@@ -14,7 +14,7 @@
       "date": "2026-02-11T20:15:21.000Z",
       "description": "1 points, 0 comments on HN",
       "source": "hackernews",
-      "score": 18.4
+      "score": 18.2
     },
     {
       "title": "LlamaIndex: v0.14.14",
@@ -46,7 +46,7 @@
       "date": "2026-02-11T16:53:12.000Z",
       "description": "<details open>\n\ncommon : improve download error reporting (#19491)\n\nSigned-off-by: Adrien Gallouët <angt@huggingface.co>\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/",
       "source": "github-releases",
-      "score": 15.7
+      "score": 15.5
     },
     {
       "title": "How to Structure Inputs for Claude, ChatGPT, and Gemini",
@@ -54,7 +54,7 @@
       "date": "2026-02-11T16:31:39.000Z",
       "description": "1 points, 0 comments on HN",
       "source": "hackernews",
-      "score": 15.6
+      "score": 15.4
     },
     {
       "title": "llama.cpp: b7998",
@@ -62,7 +62,7 @@
       "date": "2026-02-11T15:37:00.000Z",
       "description": "<details open>\n\nhexagon: Add ARGSORT, DIV, SQR, SQRT, SUM_ROWS, GEGLU (#19406)\n\n* hexagon: add ARGSORT op\n\nCo-authored-by: Yarden Tal <yardent@qti.qualcomm.com>\n\n* hexagon: argsort reject tensors with",
       "source": "github-releases",
-      "score": 15.4
+      "score": 15.2
     },
     {
       "title": "llama.cpp: b7997",
@@ -70,7 +70,7 @@
       "date": "2026-02-11T14:06:42.000Z",
       "description": "<details open>\n\nllama : correct typos 'occured' and 'occurences' (#19414)\n\nCo-authored-by: thecaptain789 <thecaptain789@users.noreply.github.com>\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (ar",
       "source": "github-releases",
-      "score": 15.1
+      "score": 14.9
     },
     {
       "title": "llama.cpp: b7996",
@@ -78,7 +78,7 @@
       "date": "2026-02-11T12:59:08.000Z",
       "description": "<details open>\n\nmodel : fix wavtokenizer embedding notions (#19479)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b7996/llama-b799",
       "source": "github-releases",
-      "score": 14.9
+      "score": 14.7
     },
     {
       "title": "llama.cpp: b7995",
@@ -86,7 +86,7 @@
       "date": "2026-02-11T12:41:10.000Z",
       "description": "<details open>\n\nggml : extend bin bcast for permuted src1 (#19484)\n\n* tests : extend bin bcast for permuted src1\n\n* cont : extend bin support\n\n* cont : s0 is always 1\n\n* tests : simplify\n\n</details>\n\n",
       "source": "github-releases",
-      "score": 14.8
+      "score": 14.6
     },
     {
       "title": "📰 TC: Apple's Siri revamp reportedly delayed... again",
@@ -94,7 +94,7 @@
       "date": "2026-02-11T21:19:46.000Z",
       "description": "While the new Siri was expected to launch with the upcoming iOS 26.4 update in March, now, the changes are expected to roll out more slowly over time, reportedly postponing some features until the May iOS update, or even until the release of iOS 27 in September.",
       "source": "techcrunch-ai",
-      "score": 14.6
+      "score": 14.4
     },
     {
       "title": "📰 TC: Elon Musk suggests spate of xAI exits have been push, not pull",
@@ -102,7 +102,7 @@
       "date": "2026-02-11T20:47:00.000Z",
       "description": "At least nine engineers, including two co-founders, have announced their exits from xAI in the past week, fueling online speculation and raising questions about stability at Musk’s AI company amid mounting controversy.",
       "source": "techcrunch-ai",
-      "score": 14.5
+      "score": 14.3
     },
     {
       "title": "Exploring AI Driven Coding: Using Xcode 26.3 MCP Tools in Cursor, Claude, Codex",
@@ -126,15 +126,7 @@
       "date": "2026-02-11T16:13:01.000Z",
       "description": "Remember when Anthropic's Claude Opus 4.6 dropped? It wasn't just another incremental update. This...",
       "source": "devto-ai",
-      "score": 13.6
-    },
-    {
-      "title": "GLM-5: From Vibe Coding to Agentic Engineering",
-      "url": "https://simonwillison.net/2026/Feb/11/glm-5/#atom-everything",
-      "date": "2026-02-11T18:56:14.000Z",
-      "description": "<p><strong><a href=\"https://z.ai/blog/glm-5\">GLM-5: From Vibe Coding to Agentic Engineering</a></strong></p> This is a <em>huge</em> new MIT-licensed model: 754B parameters and <a href=\"https://huggin...",
-      "source": "rss-simon-willison",
-      "score": 13.1
+      "score": 13.4
     },
     {
       "title": "Microsoft: January 2026 Recovery 2",
@@ -166,6 +158,14 @@
       "date": "2026-02-10T14:48:51.000Z",
       "description": "Changes since langchain-core==1.2.9\n\nrelease(core): 1.2.10 (#35136)\nchore(deps): bump the langchain-deps group across 3 directories with 40 updates (#35129)\nchore(deps): bump the langchain-deps group ",
       "source": "github-releases",
+      "score": 13
+    },
+    {
+      "title": "🌀 Mistral: Voxtral transcribes at the speed of sound.",
+      "url": "https://mistral.ai/news/voxtral-transcribe-2",
+      "date": null,
+      "description": "",
+      "source": "mistral-blog",
       "score": 13
     }
   ]

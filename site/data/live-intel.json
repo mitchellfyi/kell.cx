@@ -1,35 +1,63 @@
 {
-  "generatedAt": "2026-02-15T08:43:51.797Z",
+  "generatedAt": "2026-02-15T09:42:52.408Z",
   "stats": [
     {
       "icon": "🔧",
-      "value": "160.9M",
+      "value": "161.0M",
       "label": "Total extensions",
       "subject": "12 tools tracked",
       "source": "vscode-total"
     },
     {
       "icon": "📊",
-      "value": "71.3M",
+      "value": "71.4M",
       "label": "VS Code installs",
       "subject": "GitHub Copilot",
       "source": "vscode"
+    },
+    {
+      "icon": "🐍",
+      "value": "41.7M",
+      "label": "Weekly downloads",
+      "subject": "OpenAI SDK",
+      "source": "pypi"
+    },
+    {
+      "icon": "🍺",
+      "value": "238.5K",
+      "label": "30-day installs",
+      "subject": "gh",
+      "source": "homebrew"
     }
   ],
   "featured": [
     {
       "icon": "🔧",
-      "value": "160.9M",
+      "value": "161.0M",
       "label": "Total extensions",
       "subject": "12 tools tracked",
       "source": "vscode-total"
     },
     {
       "icon": "📊",
-      "value": "71.3M",
+      "value": "71.4M",
       "label": "VS Code installs",
       "subject": "GitHub Copilot",
       "source": "vscode"
+    },
+    {
+      "icon": "🐍",
+      "value": "41.7M",
+      "label": "Weekly downloads",
+      "subject": "OpenAI SDK",
+      "source": "pypi"
+    },
+    {
+      "icon": "🍺",
+      "value": "238.5K",
+      "label": "30-day installs",
+      "subject": "gh",
+      "source": "homebrew"
     }
   ],
   "toolsTracked": 12
