@@ -94,9 +94,9 @@ function generateMomentumSection(momentum) {
     
     return `
       <tr style="border-bottom:1px solid #f0f0f0;">
-        <td width="30" style="padding:8px 0;color:#666;">#${i + 1}</td>
-        <td style="padding:8px 0;"><strong style="color:#111;">${escapeHtml(m.name)}</strong></td>
-        <td width="60" style="padding:8px 0;color:${color};text-align:right;">${m.score} ${arrow}${doubleArrow}</td>
+        <td style="padding:8px 0;color:#666;width:30px;">#${i + 1}</td>
+        <td style="padding:8px 0;width:auto;"><strong style="color:#111;">${escapeHtml(m.name)}</strong></td>
+        <td style="padding:8px 0;color:${color};text-align:right;width:60px;white-space:nowrap;">${m.score} ${arrow}${doubleArrow}</td>
       </tr>`;
   }).join('');
   
@@ -104,7 +104,7 @@ function generateMomentumSection(momentum) {
     <tr>
       <td style="padding:24px 32px;border-bottom:1px solid #eee;">
         <h2 style="margin:0 0 16px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:#666;">Momentum Rankings</h2>
-        <table width="100%" cellpadding="0" cellspacing="0" style="font-size:14px;border-collapse:collapse;">
+        <table style="width:100%;table-layout:fixed;font-size:14px;border-collapse:collapse;">
           ${rows}
         </table>
         <p style="margin:12px 0 0;font-size:13px;color:#888;">
@@ -130,7 +130,7 @@ function generateHiringSection(hiring) {
     <tr>
       <td style="padding:24px 32px;border-bottom:1px solid #eee;">
         <h2 style="margin:0 0 16px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:#666;">Hiring</h2>
-        <table width="100%" cellpadding="0" cellspacing="0" style="font-size:14px;border-collapse:collapse;">
+        <table style="width:100%;table-layout:fixed;font-size:14px;border-collapse:collapse;">
           ${rows}
         </table>
         <p style="margin:12px 0 0;font-size:13px;color:#888;">
@@ -334,7 +334,7 @@ function generateEmail() {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body style="margin:0;padding:0;background:#f5f5f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f5f5f5;padding:20px 0;">
+  <table style="width:100%;table-layout:fixed;background:#f5f5f5;padding:20px 0;">
     <tr>
       <td align="center">
         <table width="600" cellpadding="0" cellspacing="0" style="background:#fff;border-radius:8px;overflow:hidden;max-width:100%;">

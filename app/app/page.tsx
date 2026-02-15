@@ -96,16 +96,16 @@ export default function HomePage() {
       {/* Extra links */}
       <div className="mt-10 pt-6 border-t border-white/[0.08] text-sm text-zinc-500">
         <p>
-          <a href="/blog/state-of-ai-coding-2026" className="text-blue-400 hover:text-blue-300">
-            State of AI Coding Tools 2026
+          <a href="/data" className="text-blue-400 hover:text-blue-300">
+            Live Data Dashboard
           </a>{" "}
-          — Market analysis
+          — VS Code stats, releases, HN mentions, benchmarks
         </p>
         <p className="mt-2">
-          <a href="/blog/ai-coding-tool-pricing-2026" className="text-blue-400 hover:text-blue-300">
-            AI Coding Tool Pricing 2026
+          <a href="/data/pricing" className="text-blue-400 hover:text-blue-300">
+            AI Coding Tool Pricing
           </a>{" "}
-          — Complete comparison
+          — Compare all tools
         </p>
       </div>
     </div>
