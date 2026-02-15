@@ -76,6 +76,18 @@ jobs:
         run: node scripts/generate-live-intel.js
         continue-on-error: true
       
+      - name: Collect GitHub trending
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: node scripts/collect-github-trending.js
+        continue-on-error: true
+      
+      - name: Generate insights
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/generate-insights.js
+        continue-on-error: true
+      
       - name: Update meta timestamp
         run: |
           echo "{\"lastRefresh\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\", \"toolsTracked\": 15, \"dataVersion\": 1}" > data/meta.json

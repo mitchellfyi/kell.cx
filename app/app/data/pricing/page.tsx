@@ -2,259 +2,242 @@ import Link from "next/link";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 
-interface PriceTier {
-  price: number | string;
-  period: string;
-  note?: string;
+// Load pricing data
+function loadPricing() {
+  const paths = [
+    join(process.cwd(), "..", "data", "pricing.json"),
+    join(process.cwd(), "..", "site", "data", "pricing.json"),
+  ];
+  
+  for (const p of paths) {
+    if (existsSync(p)) {
+      try {
+        return JSON.parse(readFileSync(p, "utf8"));
+      } catch {
+        continue;
+      }
+    }
+  }
+  return { categories: [], meta: {} };
 }
 
-interface Tool {
-  name: string;
-  website: string;
-  freeTier: string | boolean | null;
-  individual: PriceTier | string | null;
-  team: PriceTier | string | null;
-  enterprise: PriceTier | string | null;
-  notes: string;
-  pricingModel: string;
-  highlight?: boolean;
-  badge?: string;
+function loadInsights() {
+  const path = join(process.cwd(), "..", "data", "insights.json");
+  if (existsSync(path)) {
+    try {
+      const data = JSON.parse(readFileSync(path, "utf8"));
+      return data.pricing || data.market || [];
+    } catch {
+      return [];
+    }
+  }
+  return [];
 }
 
-interface Category {
-  id: string;
-  name: string;
-  emoji: string;
-  tools: Tool[];
-}
+const pricing = loadPricing();
+const insights = loadInsights();
 
-interface LLMModel {
-  name: string;
-  input: number;
-  output: number;
-  unit: string;
-}
-
-interface LLMProvider {
-  name: string;
-  models: LLMModel[];
-}
-
-interface PricingData {
-  meta: {
-    lastUpdated: string;
-    description: string;
+// Calculate stats
+function getStats() {
+  let totalTools = 0;
+  let freeCount = 0;
+  let minPrice = Infinity;
+  let maxPrice = 0;
+  
+  pricing.categories?.forEach((cat: any) => {
+    cat.tools?.forEach((tool: any) => {
+      totalTools++;
+      if (tool.freeTier) freeCount++;
+      if (tool.individual?.price) {
+        minPrice = Math.min(minPrice, tool.individual.price);
+        maxPrice = Math.max(maxPrice, tool.individual.price);
+      }
+    });
+  });
+  
+  return {
+    totalTools,
+    freeCount,
+    minPrice: minPrice === Infinity ? 0 : minPrice,
+    maxPrice,
+    avgPrice: Math.round((minPrice + maxPrice) / 2),
   };
-  categories: Category[];
-  llmApiPricing?: {
-    description: string;
-    providers: LLMProvider[];
-  };
 }
 
-function getPricingData(): PricingData | null {
-  try {
-    const dataPath = join(process.cwd(), "..", "data", "pricing.json");
-    if (!existsSync(dataPath)) return null;
-    const raw = readFileSync(dataPath, "utf-8");
-    return JSON.parse(raw);
-  } catch (e) {
-    console.error("Failed to read pricing data:", e);
-    return null;
-  }
-}
-
-function formatFreeTier(freeTier: string | boolean | null): string {
-  if (freeTier === true) return "Yes";
-  if (freeTier === false || freeTier === null) return "—";
-  return freeTier;
-}
-
-function formatPrice(tier: PriceTier | string | null): string {
-  if (tier === null) return "—";
-  if (typeof tier === "string") return tier;
-  const prefix = typeof tier.price === "string" ? "" : "$";
-  return `${prefix}${tier.price}/${tier.period}`;
-}
-
-function getFreeTierStyle(freeTier: string | boolean | null): string {
-  if (freeTier === true || freeTier === "Yes" || freeTier === "Open Source") {
-    return "text-green-400";
-  }
-  if (freeTier === null || freeTier === false) {
-    return "text-zinc-600";
-  }
-  return "";
-}
-
-function getPriceStyle(tier: PriceTier | string | null): string {
-  if (tier === null) return "text-zinc-600";
-  if (typeof tier === "string") {
-    if (tier === "—") return "text-zinc-600";
-    if (tier.includes("BYOK") || tier.includes("Usage")) return "text-amber-400";
-    return "";
-  }
-  return "";
-}
+const stats = getStats();
 
 export const metadata = {
-  title: "AI Coding Tool Pricing — Kell",
-  description: "Comprehensive pricing comparison for AI coding assistants: Cursor, Copilot, Claude Code, Windsurf, and more.",
+  title: "AI Coding Tool Pricing 2026 — Kell",
+  description: "Live pricing comparison for every major AI coding tool. Updated daily.",
 };
 
 export default function PricingPage() {
-  const data = getPricingData();
-
-  if (!data) {
-    return (
-      <div className="mx-auto max-w-5xl px-6 py-12">
-        <div className="text-sm text-zinc-500 mb-4">
-          <Link href="/data" className="hover:text-white">Data</Link> → Pricing
-        </div>
-        <h1 className="text-2xl font-semibold tracking-tight mb-4">AI Coding Tool Pricing</h1>
-        <p className="text-zinc-400">Data not available. Check back soon.</p>
-      </div>
-    );
-  }
+  const lastUpdated = pricing.meta?.lastUpdated || "Recently";
 
   return (
     <div className="mx-auto max-w-5xl px-6 py-12">
-      <div className="text-sm text-zinc-500 mb-4">
-        <Link href="/data" className="hover:text-white">Data</Link> → Pricing
-      </div>
-      
-      <h1 className="text-2xl font-semibold tracking-tight mb-2">AI Coding Tool Pricing</h1>
-      <p className="text-zinc-400 mb-8">Last updated: {data.meta.lastUpdated}</p>
-
-      <div className="flex flex-wrap gap-6 mb-8 text-sm">
-        <div className="flex items-center gap-2">
-          <span className="w-3 h-3 rounded-full bg-green-500" />
-          <span className="text-zinc-400">Free tier available</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="w-3 h-3 rounded-full bg-blue-500" />
-          <span className="text-zinc-400">Subscription-based</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="w-3 h-3 rounded-full bg-amber-500" />
-          <span className="text-zinc-400">Usage/BYOK pricing</span>
-        </div>
+      <div className="mb-6">
+        <Link href="/data" className="text-sm text-zinc-500 hover:text-zinc-400">
+          ← Back to Dashboard
+        </Link>
       </div>
 
-      {/* Categories */}
-      {data.categories.map((category) => (
-        <PricingSection key={category.id} category={category} />
-      ))}
+      <h1 className="text-3xl font-semibold tracking-tight mb-2">AI Coding Tool Pricing</h1>
+      <p className="text-zinc-400 mb-1">Complete pricing comparison — updated daily</p>
+      <p className="text-sm text-zinc-600 mb-6">
+        {stats.totalTools} tools compared · Last updated: {lastUpdated}
+      </p>
 
-      {/* LLM API Pricing */}
-      {data.llmApiPricing && (
-        <section className="mb-8">
-          <h2 className="text-lg font-medium text-white mb-2">LLM API Pricing (BYOK Reference)</h2>
-          <p className="text-sm text-zinc-500 mb-4">{data.llmApiPricing.description}</p>
+      {/* Key Insights */}
+      <div className="bg-green-500/5 border border-green-500/20 rounded-lg p-5 mb-8">
+        <h2 className="text-xs uppercase tracking-wide text-green-400 mb-4">💰 Key Insights</h2>
+        <ul className="space-y-2 text-sm text-zinc-300">
+          <li>
+            <strong className="text-white">{stats.freeCount} of {stats.totalTools}</strong> tools offer a free tier
+          </li>
+          <li>
+            Individual plans range from <strong className="text-green-400">${stats.minPrice}</strong> to{" "}
+            <strong className="text-green-400">${stats.maxPrice}</strong>/month
+          </li>
+          <li>
+            Most tools follow a <strong className="text-white">Free → Pro → Team → Enterprise</strong> model
+          </li>
+          <li>
+            Team pricing typically adds <strong className="text-white">50-100%</strong> premium over individual plans
+          </li>
+          {insights.slice(0, 2).map((insight: string, i: number) => (
+            <li key={i}>{insight}</li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Summary Stats */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+        <StatCard value={String(stats.totalTools)} label="Tools Compared" />
+        <StatCard value={String(stats.freeCount)} label="Free Tiers" />
+        <StatCard value={`$${stats.minPrice}`} label="Lowest Pro" />
+        <StatCard value={`$${stats.maxPrice}`} label="Highest Pro" />
+      </div>
+
+      {/* Pricing Tables by Category */}
+      {pricing.categories?.map((category: any) => (
+        <section key={category.id} className="mb-10">
+          <h2 className="text-lg font-medium text-white mb-4 pb-2 border-b border-white/[0.08]">
+            {category.emoji} {category.name}
+          </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="text-left text-xs text-zinc-500 uppercase border-b border-white/[0.08]">
-                  <th className="pb-3 pr-4">Provider</th>
-                  <th className="pb-3 pr-4">Model</th>
-                  <th className="pb-3 pr-4">Input</th>
-                  <th className="pb-3 pr-4">Output</th>
-                  <th className="pb-3">Unit</th>
+                <tr className="text-left text-xs text-zinc-500 uppercase">
+                  <th className="pb-3 pr-4">Tool</th>
+                  <th className="pb-3 pr-4">Free</th>
+                  <th className="pb-3 pr-4">Individual</th>
+                  <th className="pb-3 pr-4">Team</th>
+                  <th className="pb-3 pr-4">Enterprise</th>
+                  <th className="pb-3">Notes</th>
                 </tr>
               </thead>
               <tbody className="text-zinc-300">
-                {data.llmApiPricing.providers.flatMap((provider) =>
-                  provider.models.map((model, idx) => (
-                    <tr key={`${provider.name}-${model.name}`} className="border-b border-white/[0.04] hover:bg-white/[0.02]">
-                      <td className="py-3 pr-4 font-medium text-white">
-                        {idx === 0 ? provider.name : ""}
-                      </td>
-                      <td className="py-3 pr-4">{model.name}</td>
-                      <td className="py-3 pr-4 text-zinc-400">${model.input.toFixed(2)}</td>
-                      <td className="py-3 pr-4 text-zinc-400">${model.output.toFixed(2)}</td>
-                      <td className="py-3 text-zinc-500">{model.unit}</td>
-                    </tr>
-                  ))
-                )}
+                {category.tools?.map((tool: any) => (
+                  <tr key={tool.name} className="border-b border-white/[0.04] hover:bg-white/[0.02]">
+                    <td className="py-3 pr-4">
+                      <a
+                        href={`https://${tool.website}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium text-white hover:text-blue-400"
+                      >
+                        {tool.name}
+                      </a>
+                    </td>
+                    <td className="py-3 pr-4">
+                      {tool.freeTier === true ? (
+                        <span className="text-green-400">✓ Free</span>
+                      ) : tool.freeTier ? (
+                        <span className="text-zinc-400">{tool.freeTier}</span>
+                      ) : (
+                        <span className="text-zinc-600">—</span>
+                      )}
+                    </td>
+                    <td className="py-3 pr-4">
+                      {tool.individual?.price ? (
+                        <span className="text-white font-medium">
+                          ${tool.individual.price}<span className="text-zinc-500 text-xs">/{tool.individual.period}</span>
+                        </span>
+                      ) : (
+                        <span className="text-zinc-600">—</span>
+                      )}
+                    </td>
+                    <td className="py-3 pr-4">
+                      {tool.team?.price ? (
+                        <span className="text-white">
+                          ${tool.team.price}<span className="text-zinc-500 text-xs">/{tool.team.period}</span>
+                        </span>
+                      ) : tool.team ? (
+                        <span className="text-zinc-400">{tool.team}</span>
+                      ) : (
+                        <span className="text-zinc-600">—</span>
+                      )}
+                    </td>
+                    <td className="py-3 pr-4">
+                      {tool.enterprise?.price ? (
+                        <span className="text-white">
+                          ${tool.enterprise.price}<span className="text-zinc-500 text-xs">/{tool.enterprise.period}</span>
+                        </span>
+                      ) : tool.enterprise ? (
+                        <span className="text-zinc-400">{tool.enterprise}</span>
+                      ) : (
+                        <span className="text-zinc-600">—</span>
+                      )}
+                    </td>
+                    <td className="py-3 text-zinc-500 text-xs">{tool.notes || "—"}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
         </section>
-      )}
+      ))}
 
-      {/* Notes */}
-      <div className="space-y-4 mt-8">
-        <div className="bg-white/[0.02] border border-white/[0.08] rounded-lg p-4 text-sm text-zinc-400">
-          <strong className="text-zinc-300">Usage-Based Pricing Notes:</strong>
-          <ul className="mt-2 space-y-1">
-            <li>• <strong className="text-white">BYOK tools:</strong> Aider, Cline, Continue let you use any LLM. Costs vary by provider.</li>
-            <li>• <strong className="text-white">Claude Code:</strong> Uses Anthropic API. Heavy coding session = $1-10+</li>
-            <li>• Annual plans typically save 15-20%. Enterprise pricing varies by seats and requirements.</li>
-          </ul>
+      {/* Pricing Observations */}
+      <section className="bg-white/[0.02] border border-white/[0.08] rounded-lg p-6 mb-8">
+        <h2 className="text-lg font-medium text-white mb-4">Pricing Patterns</h2>
+        <div className="space-y-4 text-sm text-zinc-400">
+          <p>
+            <strong className="text-white">The "Free" Trap:</strong> Most free tiers are heavily rate-limited. 
+            Cursor gives 2,000 completions/month, Windsurf is unlimited but slower models.
+          </p>
+          <p>
+            <strong className="text-white">Team vs Individual:</strong> The jump from individual to team pricing 
+            often adds minimal features (SSO, admin controls) for 50-100% more cost per seat.
+          </p>
+          <p>
+            <strong className="text-white">Enterprise Theater:</strong> "Custom pricing" usually means "we'll charge 
+            as much as we think you'll pay." Expect 2-5x team pricing for compliance checkboxes.
+          </p>
+          <p>
+            <strong className="text-white">BYOK Option:</strong> Tools like Continue, Cline, and Aider let you 
+            bring your own API keys — true $0 cost (beyond your API spend).
+          </p>
         </div>
+      </section>
 
-        <div className="bg-blue-500/5 border border-blue-500/20 rounded-lg p-4 text-sm">
-          <strong className="text-blue-400">Quick Picks:</strong>
-          <ul className="mt-2 space-y-1 text-zinc-400">
-            <li>• <strong className="text-white">Best free:</strong> Windsurf (unlimited completions)</li>
-            <li>• <strong className="text-white">Cheapest paid:</strong> Cody at $9/mo</li>
-            <li>• <strong className="text-white">Most flexible:</strong> Aider + local models (truly free)</li>
-            <li>• <strong className="text-white">Most powerful:</strong> Claude Code or Cursor Pro</li>
-          </ul>
-        </div>
+      {/* Footer */}
+      <div className="mt-10 pt-6 border-t border-white/[0.08] text-xs text-zinc-600">
+        <p>
+          Pricing data collected from official websites. Verified daily. 
+          Prices shown in USD. Some tools offer annual discounts not shown here.
+        </p>
       </div>
     </div>
   );
 }
 
-function PricingSection({ category }: { category: Category }) {
+function StatCard({ value, label }: { value: string; label: string }) {
   return (
-    <section className="mb-8">
-      <h2 className="text-lg font-medium text-white mb-4">{category.name}</h2>
-      <div className="overflow-x-auto">
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="text-left text-xs text-zinc-500 uppercase border-b border-white/[0.08]">
-              <th className="pb-3 pr-4">Tool</th>
-              <th className="pb-3 pr-4">Free Tier</th>
-              <th className="pb-3 pr-4">Individual</th>
-              <th className="pb-3 pr-4">Team</th>
-              <th className="pb-3 pr-4">Enterprise</th>
-              <th className="pb-3">Notes</th>
-            </tr>
-          </thead>
-          <tbody className="text-zinc-300">
-            {category.tools.map((tool) => (
-              <tr 
-                key={tool.name} 
-                className={`border-b border-white/[0.04] hover:bg-white/[0.02] ${tool.highlight ? "bg-blue-500/5" : ""}`}
-              >
-                <td className="py-3 pr-4 font-medium text-white">
-                  <a href={`https://${tool.website}`} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
-                    {tool.name}
-                  </a>
-                  {tool.badge && (
-                    <span className="ml-2 text-[10px] bg-blue-500 text-white px-1.5 py-0.5 rounded uppercase">{tool.badge}</span>
-                  )}
-                </td>
-                <td className={`py-3 pr-4 ${getFreeTierStyle(tool.freeTier)}`}>
-                  {formatFreeTier(tool.freeTier)}
-                </td>
-                <td className={`py-3 pr-4 ${getPriceStyle(tool.individual)}`}>
-                  {formatPrice(tool.individual)}
-                </td>
-                <td className={`py-3 pr-4 ${getPriceStyle(tool.team)}`}>
-                  {formatPrice(tool.team)}
-                </td>
-                <td className={`py-3 pr-4 ${getPriceStyle(tool.enterprise)}`}>
-                  {formatPrice(tool.enterprise)}
-                </td>
-                <td className="py-3 text-zinc-500">{tool.notes}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </section>
+    <div className="p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg text-center">
+      <div className="text-2xl font-semibold text-white">{value}</div>
+      <div className="text-xs text-zinc-500 mt-1">{label}</div>
+    </div>
   );
 }

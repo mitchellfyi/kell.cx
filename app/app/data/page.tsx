@@ -20,14 +20,14 @@ const recentReleases = releasesData.recentReleases
 const topHNStories = hnData.stories.slice(0, 5);
 
 const drillDownPages = [
-  { href: "/data/pricing", title: "Pricing", stat: "10 tools compared" },
-  { href: "/data/benchmarks", title: "Benchmarks", stat: "69 models ranked" },
-  { href: "/data/github", title: "GitHub Stars", stat: "Live data" },
-  { href: "/data/vscode", title: "VS Code", stat: stats.vscodeInstallsFormatted + " installs" },
-  { href: "/data/releases", title: "Releases", stat: `${stats.releasesThisWeek} this week` },
-  { href: "/data/hackernews", title: "Hacker News", stat: `${stats.hnMentions} mentions` },
-  { href: "/data/arxiv", title: "ArXiv Papers", stat: "50+ AI papers" },
-  { href: "/data/models", title: "Models", stat: "Foundation + coding" },
+  { href: "/data/pricing", title: "💰 Pricing", stat: "Compare all tools" },
+  { href: "/data/vscode", title: "📦 VS Code", stat: stats.vscodeInstallsFormatted + " installs" },
+  { href: "/data/releases", title: "🚀 Releases", stat: `${stats.releasesThisWeek} this week` },
+  { href: "/data/hackernews", title: "🔥 Hacker News", stat: `${stats.hnMentions} mentions` },
+  { href: "/data/news", title: "📰 News", stat: "Last 48 hours" },
+  { href: "/data/opensource", title: "⭐ Open Source", stat: "Trending repos" },
+  { href: "/data/benchmarks", title: "📊 Benchmarks", stat: "Model rankings" },
+  { href: "/data/models", title: "🤖 Models", stat: "All providers" },
 ];
 
 export const metadata = {
