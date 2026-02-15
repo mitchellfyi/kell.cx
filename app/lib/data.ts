@@ -247,3 +247,25 @@ export interface AIInsightsData {
 export function getAIInsights(): AIInsightsData | null {
   return loadJson<AIInsightsData | null>("ai-insights.json", null);
 }
+
+// HN Summaries
+export interface HNSummary {
+  storyId: string;
+  title: string;
+  summary: string;
+  sentiment: "positive" | "negative" | "mixed" | "neutral";
+  keyPoints: string[];
+  toolsMentioned: string[];
+  competitiveImplication?: string;
+  generatedAt: string;
+}
+
+export interface HNSummariesData {
+  generatedAt: string;
+  summaryCount: number;
+  summaries: HNSummary[];
+}
+
+export function getHNSummaries(): HNSummariesData | null {
+  return loadJson<HNSummariesData | null>("hn-summaries.json", null);
+}

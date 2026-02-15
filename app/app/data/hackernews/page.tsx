@@ -1,9 +1,15 @@
 import Link from "next/link";
-import { getHNMentions, sources } from "@/lib/data";
+import { getHNMentions, getHNSummaries, sources } from "@/lib/data";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 import { SectionNav } from "@/components/section-nav";
 
 const data = getHNMentions();
+const summariesData = getHNSummaries();
+
+// Create a map of story ID to summary for quick lookup
+const summaryMap = new Map(
+  (summariesData?.summaries || []).map(s => [s.storyId, s])
+);
 
 export const metadata = {
   title: "Hacker News Mentions — Kell",
@@ -129,38 +135,74 @@ export default function HNPage() {
 function StoryList({ stories }: { stories: typeof data.stories }) {
   return (
     <div className="space-y-2">
-      {stories.map((story) => (
-        <div
-          key={story.id}
-          className="flex items-start justify-between p-3 md:p-4 bg-white/[0.02] rounded-lg border border-white/[0.04] hover:border-white/10 transition-colors"
-        >
-          <div className="flex-1 pr-3 min-w-0">
-            <a
-              href={story.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-white hover:text-blue-400 line-clamp-2 text-sm md:text-base"
-            >
-              {story.title}
-            </a>
-            <p className="text-xs text-zinc-500 mt-1">
-              by {story.author} · {story.comments} comments
-            </p>
+      {stories.map((story) => {
+        const summary = summaryMap.get(story.id);
+        return (
+          <div
+            key={story.id}
+            className="p-3 md:p-4 bg-white/[0.02] rounded-lg border border-white/[0.04] hover:border-white/10 transition-colors"
+          >
+            <div className="flex items-start justify-between">
+              <div className="flex-1 pr-3 min-w-0">
+                <a
+                  href={story.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-white hover:text-blue-400 line-clamp-2 text-sm md:text-base"
+                >
+                  {story.title}
+                </a>
+                <p className="text-xs text-zinc-500 mt-1">
+                  by {story.author} · {story.comments} comments
+                </p>
+              </div>
+              <div className="text-right flex-shrink-0">
+                <span className="text-green-400 font-semibold">{story.points}</span>
+                <a
+                  href={story.hnUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-orange-400 hover:text-orange-300 block mt-0.5"
+                >
+                  HN ↗
+                </a>
+              </div>
+            </div>
+            {/* AI Summary */}
+            {summary && (
+              <div className="mt-3 pt-3 border-t border-white/[0.06]">
+                <div className="flex items-center gap-2 mb-1.5">
+                  <span className="text-xs px-1.5 py-0.5 bg-purple-500/20 text-purple-300 rounded">AI</span>
+                  <SentimentBadge sentiment={summary.sentiment} />
+                </div>
+                <p className="text-sm text-zinc-400">{summary.summary}</p>
+                {summary.keyPoints && summary.keyPoints.length > 0 && (
+                  <ul className="mt-2 space-y-1">
+                    {summary.keyPoints.slice(0, 3).map((point, i) => (
+                      <li key={i} className="text-xs text-zinc-500">• {point}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            )}
           </div>
-          <div className="text-right flex-shrink-0">
-            <span className="text-green-400 font-semibold">{story.points}</span>
-            <a
-              href={story.hnUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-orange-400 hover:text-orange-300 block mt-0.5"
-            >
-              HN ↗
-            </a>
-          </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
+  );
+}
+
+function SentimentBadge({ sentiment }: { sentiment: string }) {
+  const styles: Record<string, string> = {
+    positive: "bg-green-500/20 text-green-400",
+    negative: "bg-red-500/20 text-red-400",
+    mixed: "bg-yellow-500/20 text-yellow-400",
+    neutral: "bg-zinc-500/20 text-zinc-400",
+  };
+  return (
+    <span className={`text-xs px-1.5 py-0.5 rounded ${styles[sentiment] || styles.neutral}`}>
+      {sentiment}
+    </span>
   );
 }
 

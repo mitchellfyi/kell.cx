@@ -6,3 +6,4 @@
 
 export * from './client';
 export * from './insights';
+export * from './summarize';

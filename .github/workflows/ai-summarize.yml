@@ -1,0 +1,58 @@
+name: AI Content Summarization
+
+on:
+  schedule:
+    # Run daily at 07:00 UTC (after insights at 06:00)
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+env:
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+  OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o' }}
+
+jobs:
+  summarize-hn:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: 'app/package-lock.json'
+
+      - name: Install dependencies
+        working-directory: app
+        run: npm ci
+
+      - name: Check AI availability
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::OPENAI_API_KEY not set"
+            exit 1
+          fi
+          echo "AI configuration valid"
+
+      - name: Summarize HN stories
+        working-directory: app
+        run: npx tsx scripts/summarize-hn.ts
+
+      - name: Commit updated summaries
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+          if [ -f "data/hn-summaries.json" ]; then
+            git add data/hn-summaries.json
+            if ! git diff --staged --quiet; then
+              git commit -m "chore: update HN summaries [skip ci]"
+              git push
+            fi
+          fi
