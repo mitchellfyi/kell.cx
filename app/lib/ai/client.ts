@@ -150,7 +150,15 @@ export async function generateCompletion(
     
     const latencyMs = Date.now() - startTime;
     const usage = response.usage;
-    const content = response.choices[0]?.message?.content || '';
+    const choice = response.choices[0];
+    const content = choice?.message?.content || '';
+    
+    logger.debug('Response details', {
+      hasChoices: !!response.choices?.length,
+      finishReason: choice?.finish_reason,
+      contentLength: content.length,
+      contentPreview: content.slice(0, 100),
+    });
     
     const result: AIResponse<string> = {
       success: true,
@@ -214,6 +222,9 @@ Respond with valid JSON only. No markdown, no code blocks, just the JSON object.
   try {
     // Clean up common formatting issues
     let jsonStr = response.data.trim();
+    
+    logger.debug('Raw response before cleanup', { length: jsonStr.length, preview: jsonStr.slice(0, 200) });
+    
     if (jsonStr.startsWith('```json')) {
       jsonStr = jsonStr.slice(7);
     }
@@ -224,6 +235,15 @@ Respond with valid JSON only. No markdown, no code blocks, just the JSON object.
       jsonStr = jsonStr.slice(0, -3);
     }
     jsonStr = jsonStr.trim();
+    
+    if (!jsonStr) {
+      logger.error('Empty response after cleanup');
+      return {
+        success: false,
+        error: 'AI returned empty response',
+        latencyMs: response.latencyMs,
+      };
+    }
     
     const data = JSON.parse(jsonStr) as T;
     
@@ -236,12 +256,12 @@ Respond with valid JSON only. No markdown, no code blocks, just the JSON object.
   } catch (parseError) {
     logger.error('JSON parse failed', { 
       error: parseError instanceof Error ? parseError.message : 'Parse error',
-      rawResponse: response.data.slice(0, 200),
+      rawResponse: response.data.slice(0, 500),
     });
     
     return {
       success: false,
-      error: 'Failed to parse AI response as JSON',
+      error: `Failed to parse AI response as JSON: ${parseError instanceof Error ? parseError.message : 'Unknown error'}`,
       latencyMs: response.latencyMs,
     };
   }
