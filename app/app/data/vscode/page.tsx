@@ -56,7 +56,7 @@ export default function VSCodePage() {
 
       {/* Key Insights */}
       <div className="bg-blue-500/5 border border-blue-500/20 rounded-lg p-5 mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-blue-400 mb-4">📊 Key Insights</h2>
+        <h2 className="text-xs uppercase tracking-wide text-blue-400 mb-4">Key Insights</h2>
         <ul className="space-y-2 text-sm text-zinc-300">
           <li>
             <strong className="text-white">{insights.topExtension?.name}</strong> leads with{" "}
@@ -67,7 +67,7 @@ export default function VSCodePage() {
             <strong className="text-white">{formatNumber(insights.totalInstalls)}</strong>
           </li>
           <li>
-            Average rating: <strong className="text-white">⭐ {insights.avgRating.toFixed(1)}</strong> across {insights.extensionCount} extensions
+            Average rating: <strong className="text-white">{insights.avgRating.toFixed(1)}</strong> across {insights.extensionCount} extensions
           </li>
         </ul>
       </div>
@@ -76,7 +76,7 @@ export default function VSCodePage() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         <StatCard value={formatNumber(insights.totalInstalls)} label="Total Installs" />
         <StatCard value={String(insights.extensionCount)} label="Extensions Tracked" />
-        <StatCard value={`⭐ ${insights.avgRating.toFixed(1)}`} label="Avg Rating" />
+        <StatCard value={`${insights.avgRating.toFixed(1)}`} label="Avg Rating" />
         <StatCard value={insights.topExtension?.publisher || "-"} label="Top Publisher" />
       </div>
 
@@ -117,7 +117,7 @@ export default function VSCodePage() {
                       {formatNumber(ext.installs)}
                     </td>
                     <td className="py-3 text-right text-zinc-400">
-                      ⭐ {ext.averageRating.toFixed(1)}
+                      {ext.averageRating.toFixed(1)}
                     </td>
                   </tr>
                 ))}

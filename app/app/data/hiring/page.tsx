@@ -87,7 +87,7 @@ export default function HiringPage() {
 
       {/* Key Insights */}
       <div className="bg-green-500/5 border border-green-500/20 rounded-lg p-5 mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-green-400 mb-4">💼 Key Insights</h2>
+        <h2 className="text-xs uppercase tracking-wide text-green-400 mb-4">Key Insights</h2>
         <ul className="space-y-2 text-sm text-zinc-300">
           <li>
             <strong className="text-white">{totalJobs}+</strong> open roles across{" "}
@@ -178,7 +178,7 @@ export default function HiringPage() {
 
       {/* Note for job seekers */}
       <div className="bg-white/[0.02] border border-white/[0.08] rounded-lg p-5 mb-8">
-        <h3 className="text-sm font-medium text-white mb-2">🎯 For Job Seekers</h3>
+        <h3 className="text-sm font-medium text-white mb-2">For Job Seekers</h3>
         <p className="text-sm text-zinc-400">
           These are the hottest companies in AI coding tools right now. 
           High role counts typically indicate rapid growth and more opportunities.

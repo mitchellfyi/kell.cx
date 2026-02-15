@@ -68,14 +68,14 @@ export default function ModelsPage() {
       />
 
       <SectionNav sections={[
-        { id: "rankings", label: "Rankings", emoji: "🏆", highlight: true },
+        { id: "rankings", label: "Rankings", highlight: true },
         { id: "providers", label: "By Provider", emoji: "🏢" },
         ...(recentReleases.length > 0 ? [{ id: "releases", label: "Recent Releases", emoji: "🆕" }] : []),
       ]} />
 
       {/* Key Insights */}
       <div className="bg-purple-500/5 border border-purple-500/20 rounded-lg p-5 mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-purple-400 mb-3">🤖 Key Insights</h2>
+        <h2 className="text-xs uppercase tracking-wide text-purple-400 mb-3">Key Insights</h2>
         <ul className="space-y-2 text-sm text-zinc-300">
           <li>
             <strong className="text-white">{totalModels}</strong> models tracked across{" "}
@@ -102,7 +102,7 @@ export default function ModelsPage() {
       <section id="rankings" className="mb-10 scroll-mt-32">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 pb-2 border-b border-white/[0.08] gap-2">
           <div>
-            <h2 className="text-lg font-semibold text-white">🏆 LMArena Top 20</h2>
+            <h2 className="text-lg font-semibold text-white">LMArena Top 20</h2>
             <p className="text-sm text-zinc-500">Overall rankings from 7M+ human votes</p>
           </div>
           <a href={sources.lmarena} target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-500 hover:text-zinc-400 whitespace-nowrap">
@@ -146,7 +146,7 @@ export default function ModelsPage() {
       {/* By Provider */}
       <section id="providers" className="mb-10 scroll-mt-32">
         <h2 className="text-lg font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
-          🏢 Models by Provider
+          Models by Provider
         </h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {organizations.map((org) => (
@@ -175,7 +175,7 @@ export default function ModelsPage() {
       {recentReleases.length > 0 && (
         <section id="releases" className="mb-10 scroll-mt-32">
           <h2 className="text-lg font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
-            🆕 Recent Model Releases
+            Recent Model Releases
           </h2>
           <div className="space-y-2">
             {recentReleases.slice(0, 8).map((model: any, i: number) => (

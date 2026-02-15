@@ -167,11 +167,11 @@ export default function NewsPage() {
   
   // Build sections for nav
   const sections = [
-    ...(today.length > 0 ? [{ id: "today", label: "Today", emoji: "🔥", count: today.length, highlight: true }] : []),
+    ...(today.length > 0 ? [{ id: "today", label: "Today", count: today.length, highlight: true }] : []),
     ...(thisWeek.length > 0 ? [{ id: "week", label: "This Week", count: thisWeek.length }] : []),
-    ...(hnStories.length > 0 ? [{ id: "hn", label: "Hacker News", emoji: "🔥", count: hnStories.length }] : []),
-    ...(techNews.length > 0 ? [{ id: "tech", label: "Tech News", emoji: "📰", count: techNews.length }] : []),
-    ...(companyNews.length > 0 ? [{ id: "company", label: "Company Blogs", emoji: "🏢", count: companyNews.length }] : []),
+    ...(hnStories.length > 0 ? [{ id: "hn", label: "Hacker News", count: hnStories.length }] : []),
+    ...(techNews.length > 0 ? [{ id: "tech", label: "Tech News", count: techNews.length }] : []),
+    ...(companyNews.length > 0 ? [{ id: "company", label: "Company Blogs", count: companyNews.length }] : []),
     ...(older.length > 0 ? [{ id: "older", label: "Older", count: older.length }] : []),
   ];
   
@@ -212,7 +212,7 @@ export default function NewsPage() {
       {today.length > 0 && (
         <section id="today" className="mb-10 scroll-mt-32">
           <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
-            🔥 Today ({today.length})
+            Today ({today.length})
           </h2>
           <NewsList items={today} />
         </section>
@@ -235,7 +235,7 @@ export default function NewsPage() {
       {hnStories.length > 0 && (
         <section id="hn" className="mb-10 scroll-mt-32">
           <div className="flex justify-between items-center mb-4 pb-2 border-b border-white/[0.08]">
-            <h2 className="text-base font-semibold text-white">🔥 Hacker News ({hnStories.length})</h2>
+            <h2 className="text-base font-semibold text-white">Hacker News ({hnStories.length})</h2>
             <Link href="/data/hackernews" className="text-xs text-zinc-500 hover:text-zinc-400">
               View all →
             </Link>
@@ -248,7 +248,7 @@ export default function NewsPage() {
       {techNews.length > 0 && (
         <section id="tech" className="mb-10 scroll-mt-32">
           <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
-            📰 Tech News ({techNews.length})
+            Tech News ({techNews.length})
           </h2>
           <NewsList items={techNews.slice(0, 15)} />
         </section>
@@ -258,7 +258,7 @@ export default function NewsPage() {
       {companyNews.length > 0 && (
         <section id="company" className="mb-10 scroll-mt-32">
           <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
-            🏢 Company Blogs ({companyNews.length})
+            Company Blogs ({companyNews.length})
           </h2>
           <NewsList items={companyNews.slice(0, 15)} />
         </section>

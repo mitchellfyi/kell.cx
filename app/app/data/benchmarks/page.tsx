@@ -33,14 +33,14 @@ export default function BenchmarksPage() {
       />
 
       <SectionNav sections={[
-        { id: "aider", label: "Aider Benchmark", emoji: "🔧", highlight: true },
-        { id: "lmarena", label: "LMArena Rankings", emoji: "🎯" },
-        { id: "methodology", label: "Methodology", emoji: "📖" },
+        { id: "aider", label: "Aider Benchmark", highlight: true },
+        { id: "lmarena", label: "LMArena Rankings" },
+        { id: "methodology", label: "Methodology" },
       ]} />
 
       {/* Key Insights */}
       <div className="bg-yellow-500/5 border border-yellow-500/20 rounded-lg p-5 mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-yellow-400 mb-3">🏆 Key Insights</h2>
+        <h2 className="text-xs uppercase tracking-wide text-yellow-400 mb-3">Key Insights</h2>
         <ul className="space-y-2 text-sm text-zinc-300">
           <li>
             <strong className="text-white">{aider.topModel || "GPT-5"}</strong> leads Aider coding benchmark with{" "}
@@ -68,7 +68,7 @@ export default function BenchmarksPage() {
       <section id="aider" className="mb-10 scroll-mt-32">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 pb-2 border-b border-white/[0.08] gap-2">
           <div>
-            <h2 className="text-lg font-semibold text-white">🔧 Aider Coding Benchmark</h2>
+            <h2 className="text-lg font-semibold text-white">Aider Coding Benchmark</h2>
             <p className="text-sm text-zinc-500">Tests models on real coding tasks using the Aider AI pair programmer</p>
           </div>
           <a 
@@ -112,7 +112,7 @@ export default function BenchmarksPage() {
       <section id="lmarena" className="mb-10 scroll-mt-32">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 pb-2 border-b border-white/[0.08] gap-2">
           <div>
-            <h2 className="text-lg font-semibold text-white">🎯 LMArena Coding Rankings</h2>
+            <h2 className="text-lg font-semibold text-white">LMArena Coding Rankings</h2>
             <p className="text-sm text-zinc-500">Crowdsourced rankings from 7M+ human votes</p>
           </div>
           <a 
@@ -157,7 +157,7 @@ export default function BenchmarksPage() {
       {/* Methodology Note */}
       <section id="methodology" className="scroll-mt-32">
         <div className="bg-white/[0.02] border border-white/[0.08] rounded-lg p-5 mb-8">
-          <h3 className="text-sm font-medium text-white mb-3">📖 About These Benchmarks</h3>
+          <h3 className="text-sm font-medium text-white mb-3">About These Benchmarks</h3>
           <div className="text-sm text-zinc-500 space-y-3">
             <p>
               <strong className="text-zinc-400">Aider:</strong> Tests actual code editing ability using real GitHub repos. 

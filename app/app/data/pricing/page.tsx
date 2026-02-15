@@ -75,11 +75,10 @@ export default function PricingPage() {
 
       {categories.length > 0 && (
         <SectionNav sections={[
-          { id: "insights", label: "Insights", emoji: "💡", highlight: true },
+          { id: "insights", label: "Insights", highlight: true },
           ...categories.map((cat: any) => ({
             id: cat.id,
             label: cat.name,
-            emoji: cat.emoji,
           })),
         ]} />
       )}
@@ -87,7 +86,7 @@ export default function PricingPage() {
       {/* Key Insights */}
       <section id="insights" className="scroll-mt-32">
         <div className="bg-green-500/5 border border-green-500/20 rounded-lg p-5 mb-8">
-          <h2 className="text-xs uppercase tracking-wide text-green-400 mb-3">💰 Key Insights</h2>
+          <h2 className="text-xs uppercase tracking-wide text-green-400 mb-3">Key Insights</h2>
           <ul className="space-y-2 text-sm text-zinc-300">
             <li>
               <strong className="text-white">{stats.freeCount} of {stats.totalTools}</strong> tools offer a free tier
@@ -118,7 +117,7 @@ export default function PricingPage() {
       {categories.map((category: any) => (
         <section key={category.id} id={category.id} className="mb-10 scroll-mt-32">
           <h2 className="text-lg font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
-            {category.emoji} {category.name}
+            {category.name}
           </h2>
           <div className="overflow-x-auto -mx-6 px-6 md:mx-0 md:px-0">
             <table className="w-full text-sm min-w-[600px]">

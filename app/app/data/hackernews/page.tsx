@@ -52,14 +52,14 @@ export default function HNPage() {
       />
 
       <SectionNav sections={[
-        ...(hotStories.length > 0 ? [{ id: "hot", label: "Hot", emoji: "🔥", count: hotStories.length, highlight: true }] : []),
-        ...(warmStories.length > 0 ? [{ id: "trending", label: "Trending", emoji: "📈", count: warmStories.length }] : []),
+        ...(hotStories.length > 0 ? [{ id: "hot", label: "Hot", count: hotStories.length, highlight: true }] : []),
+        ...(warmStories.length > 0 ? [{ id: "trending", label: "Trending", count: warmStories.length }] : []),
         ...(otherStories.length > 0 ? [{ id: "recent", label: "Recent", count: otherStories.length }] : []),
       ]} />
 
       {/* Key Insights */}
       <div className="bg-orange-500/5 border border-orange-500/20 rounded-lg p-5 mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-orange-400 mb-3">🔥 Key Insights</h2>
+        <h2 className="text-xs uppercase tracking-wide text-orange-400 mb-3">Key Insights</h2>
         <ul className="space-y-2 text-sm text-zinc-300">
           <li>
             <strong className="text-green-400">{formatNumber(insights.totalPoints)}</strong> total points across{" "}
@@ -88,7 +88,7 @@ export default function HNPage() {
       {hotStories.length > 0 && (
         <section id="hot" className="mb-8 scroll-mt-32">
           <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
-            🔥 Hot Stories (100+ points)
+            Hot Stories (100+ points)
           </h2>
           <StoryList stories={hotStories} />
         </section>
@@ -98,7 +98,7 @@ export default function HNPage() {
       {warmStories.length > 0 && (
         <section id="trending" className="mb-8 scroll-mt-32">
           <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
-            📈 Trending (20-99 points)
+            Trending (20-99 points)
           </h2>
           <StoryList stories={warmStories.slice(0, 15)} />
         </section>

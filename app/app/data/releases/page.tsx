@@ -54,14 +54,14 @@ export default function ReleasesPage() {
       />
 
       <SectionNav sections={[
-        ...(releasesToday.length > 0 ? [{ id: "today", label: "Today", emoji: "🔥", count: releasesToday.length, highlight: true }] : []),
+        ...(releasesToday.length > 0 ? [{ id: "today", label: "Today", count: releasesToday.length, highlight: true }] : []),
         ...(releasesThisWeek.length > 0 ? [{ id: "week", label: "This Week", count: releasesThisWeek.length }] : []),
         ...(olderReleases.length > 0 ? [{ id: "older", label: "Older", count: olderReleases.length }] : []),
       ]} />
 
       {/* Key Insights */}
       <div className="bg-blue-500/5 border border-blue-500/20 rounded-lg p-5 mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-blue-400 mb-3">🚀 Key Insights</h2>
+        <h2 className="text-xs uppercase tracking-wide text-blue-400 mb-3">Key Insights</h2>
         <ul className="space-y-2 text-sm text-zinc-300">
           <li>
             <strong className="text-green-400">{insights.thisWeekCount}</strong> releases in the past week
@@ -91,7 +91,7 @@ export default function ReleasesPage() {
       {releasesToday.length > 0 && (
         <section id="today" className="mb-8 scroll-mt-32">
           <h2 className="text-base font-semibold text-white mb-4 pb-2 border-b border-white/[0.08]">
-            🔥 Today
+            Today
           </h2>
           <ReleaseList releases={releasesToday} />
         </section>

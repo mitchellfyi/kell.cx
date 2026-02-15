@@ -49,17 +49,6 @@ function formatTimeAgo(dateStr: string): string {
   return `${Math.floor(diffDays / 30)}mo ago`;
 }
 
-function getCategoryEmoji(category: string): string {
-  const emojis: Record<string, string> = {
-    proxy: "🔀",
-    inference: "⚡",
-    agent: "🤖",
-    tool: "🔧",
-    ide: "💻",
-    model: "🧠",
-  };
-  return emojis[category] || "📦";
-}
 
 function getCategoryColor(category: string): string {
   const colors: Record<string, string> = {
@@ -137,7 +126,7 @@ export default function GitHubPage() {
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className={`text-xs px-2 py-0.5 rounded ${getCategoryColor(release.category)} bg-white/[0.05]`}>
-                    {getCategoryEmoji(release.category)} {release.category}
+                    {release.category}
                   </span>
                   <span className="text-xs text-zinc-600">{release.company}</span>
                 </div>

@@ -81,7 +81,7 @@ export default function DataPage() {
         <section id="aider">
           <div className="flex justify-between items-center mb-4 pb-2 border-b border-white/[0.08]">
             <div>
-              <h2 className="text-base font-semibold text-white">🏆 Coding Leaderboard</h2>
+              <h2 className="text-base font-semibold text-white">Coding Leaderboard</h2>
               <p className="text-xs text-zinc-500 mt-0.5">Aider polyglot benchmark</p>
             </div>
             <a href={sources.aider} target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 hover:text-zinc-400">
@@ -123,7 +123,7 @@ export default function DataPage() {
         <section id="lmarena">
           <div className="flex justify-between items-center mb-4 pb-2 border-b border-white/[0.08]">
             <div>
-              <h2 className="text-base font-semibold text-white">⚔️ LMArena Rankings</h2>
+              <h2 className="text-base font-semibold text-white">LMArena Rankings</h2>
               <p className="text-xs text-zinc-500 mt-0.5">7M+ human votes</p>
             </div>
             <a href={sources.lmarena} target="_blank" rel="noopener noreferrer" className="text-xs text-zinc-600 hover:text-zinc-400">
@@ -163,7 +163,7 @@ export default function DataPage() {
         {/* Recent Releases */}
         <section id="releases">
           <div className="flex justify-between items-center mb-4 pb-2 border-b border-white/[0.08]">
-            <h2 className="text-base font-semibold text-white">🚀 Recent Releases</h2>
+            <h2 className="text-base font-semibold text-white">Recent Releases</h2>
             <Link href="/data/releases" className="text-xs text-zinc-600 hover:text-zinc-400">
               View all →
             </Link>
@@ -196,7 +196,7 @@ export default function DataPage() {
         {/* Hacker News Mentions */}
         <section id="hackernews">
           <div className="flex justify-between items-center mb-4 pb-2 border-b border-white/[0.08]">
-            <h2 className="text-base font-semibold text-white">🔥 Hacker News</h2>
+            <h2 className="text-base font-semibold text-white">Hacker News</h2>
             <Link href="/data/hackernews" className="text-xs text-zinc-600 hover:text-zinc-400">
               View all →
             </Link>
@@ -228,14 +228,14 @@ export default function DataPage() {
           Explore More Data
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-          <QuickLink href="/data/pricing" emoji="💰" title="Pricing" stat="Compare plans" />
-          <QuickLink href="/data/benchmarks" emoji="🏆" title="Benchmarks" stat={`${aiderData.totalModels} models`} />
-          <QuickLink href="/data/news" emoji="📰" title="News" stat="Last 48h" />
-          <QuickLink href="/data/opensource" emoji="⭐" title="Open Source" stat="Trending" />
-          <QuickLink href="/data/hiring" emoji="💼" title="Hiring" stat="Who's growing" />
-          <QuickLink href="/data/models" emoji="🤖" title="Models" stat="All providers" />
-          <QuickLink href="/data/releases" emoji="🚀" title="Releases" stat={`${stats.releasesThisWeek} this week`} />
-          <QuickLink href="/data/hackernews" emoji="🔥" title="HN" stat={`${stats.hnMentions} mentions`} />
+          <QuickLink href="/data/pricing" title="Pricing" stat="Compare plans" />
+          <QuickLink href="/data/benchmarks" title="Benchmarks" stat={`${aiderData.totalModels} models`} />
+          <QuickLink href="/data/news" title="News" stat="Last 48h" />
+          <QuickLink href="/data/opensource" title="Open Source" stat="Trending" />
+          <QuickLink href="/data/hiring" title="Hiring" stat="Who's growing" />
+          <QuickLink href="/data/models" title="Models" stat="All providers" />
+          <QuickLink href="/data/releases" title="Releases" stat={`${stats.releasesThisWeek} this week`} />
+          <QuickLink href="/data/hackernews" title="HN" stat={`${stats.hnMentions} mentions`} />
         </div>
       </section>
 
@@ -276,16 +276,13 @@ function StatCard({ value, label, sublabel, href }: {
   return content;
 }
 
-function QuickLink({ href, emoji, title, stat }: { href: string; emoji: string; title: string; stat: string }) {
+function QuickLink({ href, title, stat }: { href: string; title: string; stat: string }) {
   return (
     <Link
       href={href}
       className="block p-3 md:p-4 bg-white/[0.02] border border-white/[0.08] rounded-lg hover:border-white/20 hover:bg-white/[0.04] transition-all"
     >
-      <div className="font-medium text-white text-sm mb-0.5">
-        <span className="mr-1.5">{emoji}</span>
-        {title}
-      </div>
+      <div className="font-medium text-white text-sm mb-0.5">{title}</div>
       <div className="text-xs text-zinc-500">{stat}</div>
     </Link>
   );

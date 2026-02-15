@@ -78,7 +78,7 @@ export default function OpenSourcePage() {
 
       {/* Key Insights */}
       <div className="bg-blue-500/5 border border-blue-500/20 rounded-lg p-5 mb-8">
-        <h2 className="text-xs uppercase tracking-wide text-blue-400 mb-4">🔥 What's Hot</h2>
+        <h2 className="text-xs uppercase tracking-wide text-blue-400 mb-4">What's Hot</h2>
         <ul className="space-y-2 text-sm text-zinc-300">
           {allRepos.slice(0, 3).map((repo: any, i: number) => (
             <li key={i}>
@@ -91,7 +91,7 @@ export default function OpenSourcePage() {
                 {repo.name}
               </a>
               <span className="text-zinc-500 ml-2">
-                ⭐ {formatNumber(repo.stars)} — {truncate(repo.description || '', 50)}
+                {formatNumber(repo.stars)} stars — {truncate(repo.description || '', 50)}
               </span>
             </li>
           ))}
@@ -135,7 +135,7 @@ export default function OpenSourcePage() {
       {/* Trending Repos */}
       <section className="mb-10">
         <h2 className="text-xs uppercase tracking-wide text-zinc-500 mb-4 pb-2 border-b border-white/[0.08]">
-          🚀 Rising Stars (New repos gaining traction)
+          Rising Stars
         </h2>
         <div className="space-y-3">
           {allRepos.slice(0, 15).map((repo: any) => (
@@ -164,7 +164,7 @@ export default function OpenSourcePage() {
                 </div>
               </div>
               <div className="text-right flex-shrink-0">
-                <span className="text-yellow-400 font-semibold">⭐ {formatNumber(repo.stars)}</span>
+                <span className="text-yellow-400 font-semibold">{formatNumber(repo.stars)}</span>
               </div>
             </div>
           ))}
@@ -174,7 +174,7 @@ export default function OpenSourcePage() {
       {/* Recent Releases */}
       <section className="mb-10">
         <h2 className="text-xs uppercase tracking-wide text-zinc-500 mb-4 pb-2 border-b border-white/[0.08]">
-          📦 Recent Releases
+          Recent Releases
         </h2>
         <div className="space-y-3">
           {releases.recentReleases?.slice(0, 10).map((release: any) => (
