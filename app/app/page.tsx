@@ -6,16 +6,19 @@ export default function HomePage() {
     <div className="mx-auto max-w-xl px-6 py-16 text-center">
       {/* Hero */}
       <h1 className="text-4xl font-semibold tracking-tight mb-2">Kell</h1>
-      <p className="text-xl text-zinc-400 mb-8">Daily Competitive Intelligence</p>
+      <p className="text-xl text-zinc-400 mb-2">AI Coding Tools Intelligence</p>
+      <p className="text-sm text-zinc-600 mb-8">
+        Cursor · Copilot · Claude Code · Windsurf · Cline · Aider · and 10+ more
+      </p>
 
       {/* Pitch */}
       <div className="text-left text-lg text-zinc-300 mb-10">
         <p>
-          Wake up to a briefing on your competitors' moves.{" "}
+          Track what's happening in AI coding tools.{" "}
           <strong className="text-white">
-            Pricing changes, new hires, product launches, changelog updates
+            Pricing changes, new releases, GitHub stars, VS Code installs, benchmark scores
           </strong>{" "}
-          — delivered to your inbox before your morning coffee.
+          — live data updated daily, delivered to your inbox.
         </p>
       </div>
 

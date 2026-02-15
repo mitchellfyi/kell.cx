@@ -94,6 +94,7 @@ jobs:
         run: |
           git config user.name "Kell"
           git config user.email "hi@kell.cx"
-          git add data/
+          git add data/ site/data/
           git commit -m "📊 Daily data refresh $(date -u +%Y-%m-%d)"
+          git pull --rebase
           git push
