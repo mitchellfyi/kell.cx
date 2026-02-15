@@ -269,3 +269,24 @@ export interface HNSummariesData {
 export function getHNSummaries(): HNSummariesData | null {
   return loadJson<HNSummariesData | null>("hn-summaries.json", null);
 }
+
+// Market Analysis
+export interface MarketAnalysis {
+  date: string;
+  marketLeaders: string[];
+  emergingThreats: string[];
+  pricingTrends: string;
+  hiringSignals: string;
+  strategicOutlook: string;
+  generatedAt: string;
+}
+
+export interface MarketAnalysisData {
+  current: MarketAnalysis | null;
+  history: MarketAnalysis[];
+  generatedAt: string;
+}
+
+export function getMarketAnalysis(): MarketAnalysisData | null {
+  return loadJson<MarketAnalysisData | null>("market-analysis.json", null);
+}

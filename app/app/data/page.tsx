@@ -6,10 +6,12 @@ import {
   getAiderBenchmark,
   getLMArenaLeaderboard,
   getAIInsights,
+  getMarketAnalysis,
   sources 
 } from "@/lib/data";
 import { DataNav, PageHeader } from "@/components/data-nav";
 import { AIInsights } from "@/components/ai-insights";
+import { MarketAnalysis } from "@/components/market-analysis";
 
 // Load all stats at build time
 const stats = getDashboardStats();
@@ -18,6 +20,7 @@ const hnData = getHNMentions();
 const aiderData = getAiderBenchmark();
 const lmarenaData = getLMArenaLeaderboard();
 const aiInsights = getAIInsights();
+const marketAnalysis = getMarketAnalysis();
 
 // Top coding models from Aider benchmark
 const topCodingModels = aiderData.leaderboard.slice(0, 8);
@@ -80,6 +83,9 @@ export default function DataPage() {
 
       {/* AI-Generated Insights */}
       <AIInsights data={aiInsights} />
+
+      {/* Market Intelligence */}
+      <MarketAnalysis data={marketAnalysis} />
 
       {/* Two Column Layout on Desktop */}
       <div className="grid lg:grid-cols-2 gap-8 mb-10">

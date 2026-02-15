@@ -20,22 +20,22 @@ jobs:
     timeout-minutes: 10
     permissions:
       contents: write
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'npm'
           cache-dependency-path: 'app/package-lock.json'
-      
+
       - name: Install dependencies
         working-directory: app
         run: npm ci
-      
+
       - name: Check AI availability
         run: |
           if [ -z "$OPENAI_API_KEY" ]; then
@@ -44,22 +44,28 @@ jobs:
           fi
           echo "AI configuration valid"
           echo "Model: ${OPENAI_MODEL:-gpt-4o}"
-      
+
       - name: Generate AI insights
         working-directory: app
         env:
           AI_DEBUG: ${{ inputs.debug == true && 'true' || 'false' }}
         run: npx tsx scripts/generate-insights.ts
-      
-      - name: Commit updated insights
+
+      - name: Generate competitive analysis
+        working-directory: app
+        env:
+          AI_DEBUG: ${{ inputs.debug == true && 'true' || 'false' }}
+        run: npx tsx scripts/competitive-analysis.ts
+
+      - name: Commit updated data
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
+
+          # Add any generated AI data files
+          git add data/ai-insights.json data/market-analysis.json 2>/dev/null || true
           
-          if [ -f "data/ai-insights.json" ]; then
-            git add data/ai-insights.json
-            if ! git diff --staged --quiet; then
-              git commit -m "chore: update AI insights [skip ci]"
-              git push
-            fi
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update AI insights & analysis [skip ci]"
+            git push
           fi
