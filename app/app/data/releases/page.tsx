@@ -33,11 +33,14 @@ function getKeyInsights() {
   // Latest release
   const latest = allReleases[0];
   
+  // Count unique repos
+  const uniqueRepos = new Set(allReleases.map(r => r.repo)).size;
+
   return {
     thisWeekCount,
     mostActive,
     latest,
-    totalTracked: data.reposTracked || allReleases.length,
+    totalTracked: uniqueRepos,
   };
 }
 
