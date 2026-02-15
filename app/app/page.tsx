@@ -1,5 +1,6 @@
 import { WaitlistForm } from "@/components/waitlist-form";
 import { LiveIntel } from "@/components/live-intel";
+import { AISearch } from "@/components/ai-search";
 
 export default function HomePage() {
   return (
@@ -47,6 +48,12 @@ export default function HomePage() {
             <span>Delivered 6am UTC, every day</span>
           </li>
         </ul>
+      </div>
+
+      {/* AI Search */}
+      <div className="mb-10 p-6 bg-white/[0.02] rounded-xl border border-white/[0.08]">
+        <h3 className="text-xs uppercase tracking-wide text-zinc-500 mb-4">Ask AI About Tools</h3>
+        <AISearch />
       </div>
 
       {/* Live Intel */}
@@ -106,6 +113,12 @@ export default function HomePage() {
             AI Coding Tool Pricing
           </a>{" "}
           — Compare all tools
+        </p>
+        <p className="mt-2">
+          <a href="/search" className="text-blue-400 hover:text-blue-300">
+            AI Search
+          </a>{" "}
+          — Ask questions in natural language
         </p>
       </div>
     </div>
