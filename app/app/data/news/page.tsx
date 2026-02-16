@@ -4,6 +4,7 @@ import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 import { SectionNav } from "@/components/section-nav";
+import { TIME_CONSTANTS } from "@/lib/constants";
 
 // Source-specific item types
 interface RawItem {
@@ -49,16 +50,6 @@ function loadJsonFile(filename: string): NewsSource {
   return {};
 }
 
-const hnData = getHNMentions();
-const aiRssNews = loadJsonFile("ai-rss-news.json");
-const techCrunch = loadJsonFile("techcrunch-ai.json");
-const devTo = loadJsonFile("devto-ai.json");
-const googleAI = loadJsonFile("google-ai-blog.json");
-const anthropicNews = loadJsonFile("anthropic-news.json");
-const deepmindNews = loadJsonFile("deepmind-news.json");
-const producthunt = loadJsonFile("producthunt-ai.json");
-const latestNews = loadJsonFile("latest-news.json");
-
 // Combine all sources into unified format
 interface NewsItem {
   title: string;
@@ -87,51 +78,74 @@ function mapToNewsItem(items: RawItem[], source: string): NewsItem[] {
   }));
 }
 
-const allNews: NewsItem[] = [
-  ...mapToNewsItem(hnData.stories || [], "Hacker News"),
-  ...mapToNewsItem(techCrunch.articles || [], "TechCrunch"),
-  ...mapToNewsItem(aiRssNews.items || [], "RSS"),
-  ...mapToNewsItem(devTo.items || devTo.posts || [], "Dev.to"),
-  ...mapToNewsItem(googleAI.items || googleAI.posts || [], "Google AI"),
-  ...mapToNewsItem(anthropicNews.items || anthropicNews.posts || [], "Anthropic"),
-  ...mapToNewsItem(deepmindNews.items || deepmindNews.posts || [], "DeepMind"),
-  ...mapToNewsItem(producthunt.items || producthunt.products || [], "Product Hunt"),
-  ...mapToNewsItem(latestNews.recent || [], "News"),
-  ...mapToNewsItem(latestNews.older || [], "News"),
-].filter(item => item.title && item.url)
- .sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime());
+// Load and aggregate all news data
+function loadAllNews(): NewsItem[] {
+  const hnData = getHNMentions();
+  const aiRssNews = loadJsonFile("ai-rss-news.json");
+  const techCrunch = loadJsonFile("techcrunch-ai.json");
+  const devTo = loadJsonFile("devto-ai.json");
+  const googleAI = loadJsonFile("google-ai-blog.json");
+  const anthropicNews = loadJsonFile("anthropic-news.json");
+  const deepmindNews = loadJsonFile("deepmind-news.json");
+  const producthunt = loadJsonFile("producthunt-ai.json");
+  const latestNews = loadJsonFile("latest-news.json");
 
-// Deduplicate by URL
-const seen = new Set<string>();
-const uniqueNews = allNews.filter(item => {
-  if (seen.has(item.url)) return false;
-  seen.add(item.url);
-  return true;
-});
+  const allNews: NewsItem[] = [
+    ...mapToNewsItem(hnData.stories || [], "Hacker News"),
+    ...mapToNewsItem(techCrunch.articles || [], "TechCrunch"),
+    ...mapToNewsItem(aiRssNews.items || [], "RSS"),
+    ...mapToNewsItem(devTo.items || devTo.posts || [], "Dev.to"),
+    ...mapToNewsItem(googleAI.items || googleAI.posts || [], "Google AI"),
+    ...mapToNewsItem(anthropicNews.items || anthropicNews.posts || [], "Anthropic"),
+    ...mapToNewsItem(deepmindNews.items || deepmindNews.posts || [], "DeepMind"),
+    ...mapToNewsItem(producthunt.items || producthunt.products || [], "Product Hunt"),
+    ...mapToNewsItem(latestNews.recent || [], "News"),
+    ...mapToNewsItem(latestNews.older || [], "News"),
+  ].filter(item => item.title && item.url)
+   .sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime());
 
-// Group by time
-const now = new Date();
-const cutoff24h = new Date(now.getTime() - 24 * 60 * 60 * 1000);
-const cutoff7d = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+  // Deduplicate by URL
+  const seen = new Set<string>();
+  return allNews.filter(item => {
+    if (seen.has(item.url)) return false;
+    seen.add(item.url);
+    return true;
+  });
+}
 
-const today = uniqueNews.filter(item => new Date(item.date) > cutoff24h);
-const thisWeek = uniqueNews.filter(item => {
-  const d = new Date(item.date);
-  return d <= cutoff24h && d > cutoff7d;
-});
-const older = uniqueNews.filter(item => new Date(item.date) <= cutoff7d).slice(0, 30);
+// Group news by time periods
+function groupNewsByTime(news: NewsItem[]) {
+  const now = new Date();
+  const cutoff24h = new Date(now.getTime() - TIME_CONSTANTS.DAY_MS);
+  const cutoff7d = new Date(now.getTime() - TIME_CONSTANTS.WEEK_MS);
 
-// Group by source
-const hnStories = uniqueNews.filter(i => i.source === "Hacker News");
-const techNews = uniqueNews.filter(i => ["TechCrunch", "MIT Tech Review AI", "The Verge"].includes(i.source));
-const companyNews = uniqueNews.filter(i => ["Google AI", "Anthropic", "DeepMind", "OpenAI"].includes(i.source));
+  return {
+    today: news.filter(item => new Date(item.date) > cutoff24h),
+    thisWeek: news.filter(item => {
+      const d = new Date(item.date);
+      return d <= cutoff24h && d > cutoff7d;
+    }),
+    older: news.filter(item => new Date(item.date) <= cutoff7d).slice(0, 30),
+  };
+}
 
-// Count sources
-const sourceCounts: Record<string, number> = {};
-uniqueNews.forEach(item => {
-  sourceCounts[item.source] = (sourceCounts[item.source] || 0) + 1;
-});
-const topSources = Object.entries(sourceCounts).sort((a, b) => b[1] - a[1]).slice(0, 8);
+// Group news by source categories
+function groupNewsBySource(news: NewsItem[]) {
+  return {
+    hnStories: news.filter(i => i.source === "Hacker News"),
+    techNews: news.filter(i => ["TechCrunch", "MIT Tech Review AI", "The Verge"].includes(i.source)),
+    companyNews: news.filter(i => ["Google AI", "Anthropic", "DeepMind", "OpenAI"].includes(i.source)),
+  };
+}
+
+// Count news sources
+function getSourceCounts(news: NewsItem[]): Array<[string, number]> {
+  const sourceCounts: Record<string, number> = {};
+  news.forEach(item => {
+    sourceCounts[item.source] = (sourceCounts[item.source] || 0) + 1;
+  });
+  return Object.entries(sourceCounts).sort((a, b) => b[1] - a[1]).slice(0, 8);
+}
 
 export const metadata = {
   title: "AI News — Kell",
@@ -139,8 +153,13 @@ export const metadata = {
 };
 
 export default function NewsPage() {
+  const uniqueNews = loadAllNews();
+  const { today, thisWeek, older } = groupNewsByTime(uniqueNews);
+  const { hnStories, techNews, companyNews } = groupNewsBySource(uniqueNews);
+  const topSources = getSourceCounts(uniqueNews);
+
   const totalHNPoints = hnStories.reduce((sum, s) => sum + (s.points || 0), 0);
-  
+
   // Build sections for nav
   const sections = [
     ...(today.length > 0 ? [{ id: "today", label: "Today", count: today.length, highlight: true }] : []),
@@ -332,10 +351,10 @@ function formatRelativeTime(dateStr: string): string {
   const now = new Date();
   const date = new Date(dateStr);
   if (isNaN(date.getTime())) return "";
-  
-  const hours = Math.floor((now.getTime() - date.getTime()) / (1000 * 60 * 60));
+
+  const hours = Math.floor((now.getTime() - date.getTime()) / TIME_CONSTANTS.HOUR_MS);
   const days = Math.floor(hours / 24);
-  
+
   if (hours < 1) return "Just now";
   if (hours < 24) return `${hours}h ago`;
   if (days === 1) return "Yesterday";
