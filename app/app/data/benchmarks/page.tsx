@@ -1,6 +1,7 @@
 import { getAiderBenchmark, getLMArenaLeaderboard, sources, AiderBenchmarkEntry, LMArenaModel } from "@/lib/data";
 import { DataNav, PageHeader, DataBreadcrumb } from "@/components/data-nav";
 import { SectionNav } from "@/components/section-nav";
+import { SCORE_THRESHOLDS } from "@/lib/constants";
 
 const aider = getAiderBenchmark();
 const lmarena = getLMArenaLeaderboard();
@@ -205,8 +206,8 @@ function getRankStyle(rank: number): string {
 }
 
 function getScoreColor(score: number): string {
-  if (score >= 80) return "text-green-400";
-  if (score >= 70) return "text-emerald-400";
-  if (score >= 60) return "text-amber-400";
+  if (score >= SCORE_THRESHOLDS.EXCELLENT) return "text-green-400";
+  if (score >= SCORE_THRESHOLDS.VERY_GOOD) return "text-emerald-400";
+  if (score >= SCORE_THRESHOLDS.GOOD) return "text-amber-400";
   return "text-zinc-400";
 }

@@ -1,17 +1,18 @@
 import Link from "next/link";
-import { 
-  getDashboardStats, 
-  getGitHubReleases, 
-  getHNMentions, 
+import {
+  getDashboardStats,
+  getGitHubReleases,
+  getHNMentions,
   getAiderBenchmark,
   getLMArenaLeaderboard,
   getAIInsights,
   getMarketAnalysis,
-  sources 
+  sources
 } from "@/lib/data";
 import { DataNav, PageHeader } from "@/components/data-nav";
 import { AIInsights } from "@/components/ai-insights";
 import { MarketAnalysis } from "@/components/market-analysis";
+import { TIME_CONSTANTS, SCORE_THRESHOLDS } from "@/lib/constants";
 
 // Load all stats at build time
 const stats = getDashboardStats();
@@ -31,7 +32,7 @@ const topLMArenaModels = lmarenaData.models
   .slice(0, 8);
 
 // Recent releases (last 7 days)
-const oneWeekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+const oneWeekAgo = new Date(Date.now() - TIME_CONSTANTS.WEEK_MS);
 const recentReleases = releasesData.recentReleases
   .filter((r) => new Date(r.publishedAt) > oneWeekAgo)
   .slice(0, 4);
@@ -308,8 +309,8 @@ function getRankStyle(rank: number): string {
 }
 
 function getScoreColor(score: number): string {
-  if (score >= 80) return "text-green-400";
-  if (score >= 70) return "text-emerald-400";
-  if (score >= 60) return "text-amber-400";
+  if (score >= SCORE_THRESHOLDS.EXCELLENT) return "text-green-400";
+  if (score >= SCORE_THRESHOLDS.VERY_GOOD) return "text-emerald-400";
+  if (score >= SCORE_THRESHOLDS.GOOD) return "text-amber-400";
   return "text-zinc-400";
 }
