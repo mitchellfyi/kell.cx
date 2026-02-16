@@ -11,7 +11,8 @@
    - Need 5 days of live testing before any real outreach
    - Track: Digest deliveries, site stability, subscriber flow
    - Started: 2026-02-14
-   - Day 2/5: Test subscriber added (Mitchell), digest cron verified working
+   - Day 3/5: Site stable (HTTP 200), digest cron healthy (last run 2026-02-15 06:00 UTC, OK)
+   - Checked 2026-02-16 05:30 UTC: All systems nominal (site 200, digest cron OK, next digest at 06:00 UTC)
 
 ---
 
