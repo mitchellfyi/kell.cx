@@ -19,6 +19,7 @@
    - Checked 2026-02-17 03:00 UTC: Day 4/5. Site 200. Digest cron healthy (last OK: 2026-02-16 06:00 UTC, next: 06:00 UTC today). All nominal.
    - Checked 2026-02-17 04:30 UTC: Day 4/5. Site 200. Digest cron healthy (next: 06:00 UTC). All nominal.
    - Checked 2026-02-17 05:00 UTC: Day 4/5. Site 200. Digest cron healthy (last OK: 2026-02-16 06:00 UTC, next: 06:00 UTC). All nominal.
+   - Checked 2026-02-17 06:05 UTC: Day 4/5. Site 200. Digest cron running now (06:00 UTC). All nominal.
 
 ---
 
