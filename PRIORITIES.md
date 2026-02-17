@@ -11,8 +11,14 @@
    - Need 5 days of live testing before any real outreach
    - Track: Digest deliveries, site stability, subscriber flow
    - Started: 2026-02-14
-   - Day 3/5: Site stable (HTTP 200), digest cron healthy (last run 2026-02-15 06:00 UTC, OK)
-   - Checked 2026-02-16 05:30 UTC: All systems nominal (site 200, digest cron OK, next digest at 06:00 UTC)
+   - Day 3/5: Site stable (HTTP 200), digest cron healthy (last run 2026-02-16 06:00 UTC, OK)
+   - Checked 2026-02-16 23:00 UTC: Day 3/5. Site 200. Digest cron healthy (last OK: 06:00 UTC). All nominal.
+   - Checked 2026-02-17 00:00 UTC: Day 4/5. Site 200. Digest cron healthy (last OK: 2026-02-16 06:00 UTC). All nominal.
+   - Checked 2026-02-17 01:30 UTC: Day 4/5. Site 200. Digest cron healthy (last OK: 2026-02-16 06:00 UTC). All nominal.
+   - Checked 2026-02-17 02:00 UTC: Day 4/5. Site 200. Digest cron healthy (last OK: 2026-02-16 06:00 UTC). All nominal.
+   - Checked 2026-02-17 03:00 UTC: Day 4/5. Site 200. Digest cron healthy (last OK: 2026-02-16 06:00 UTC, next: 06:00 UTC today). All nominal.
+   - Checked 2026-02-17 04:30 UTC: Day 4/5. Site 200. Digest cron healthy (next: 06:00 UTC). All nominal.
+   - Checked 2026-02-17 05:00 UTC: Day 4/5. Site 200. Digest cron healthy (last OK: 2026-02-16 06:00 UTC, next: 06:00 UTC). All nominal.
 
 ---
 

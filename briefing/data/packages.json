@@ -1,16 +1,16 @@
 {
-  "scrapedAt": "2026-02-16T06:02:02.772Z",
+  "scrapedAt": "2026-02-17T06:04:48.524Z",
   "npm": [
     {
       "name": "@anthropic-ai/claude-code",
       "registry": "npm",
-      "version": "2.1.42",
+      "version": "2.1.44",
       "weeklyDownloads": 6647213,
       "monthlyDownloads": 29782664,
       "description": "Use Claude, Anthropic's AI assistant, right from your terminal. Claude can understand your codebase, edit files, run terminal commands, and handle entire workflows for you.",
       "homepage": "https://github.com/anthropics/claude-code",
       "repository": "",
-      "publishedAt": "2026-02-13T18:56:56.084Z",
+      "publishedAt": "2026-02-16T20:51:18.785Z",
       "license": "SEE LICENSE IN README.md",
       "maintainers": "zak-anthropic, dylanc-anthropic, benjmann, nikhil-anthropic, ejlangev-ant, jv-anthropic, ollie-ant-2025, packy-anthropic, noahz-anthropic, sbidasaria, wolffiex, igorkofman, felixrieseberg-anthropic, joan-anthropic",
       "competitor": "Claude Code",

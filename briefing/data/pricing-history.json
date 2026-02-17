@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-16T06:00:49.681Z",
+  "lastUpdated": "2026-02-17T06:03:36.653Z",
   "competitors": {
     "cursor": {
       "prices": [
@@ -21,7 +21,7 @@
         "team"
       ],
       "contentHash": "0fb1820976e780101b703b879577e70f",
-      "lastChecked": "2026-02-16T06:00:46.195Z"
+      "lastChecked": "2026-02-17T06:03:33.806Z"
     },
     "replit": {
       "prices": [
@@ -41,7 +41,7 @@
         "basic"
       ],
       "contentHash": "e94d43876f102ae4b0332c4b39fb9083",
-      "lastChecked": "2026-02-16T06:00:46.503Z"
+      "lastChecked": "2026-02-17T06:03:34.069Z"
     },
     "cognition": {
       "prices": [],
@@ -52,7 +52,7 @@
         "team"
       ],
       "contentHash": "c3e4c42c5eff2fa748a2c28ddf88676c",
-      "lastChecked": "2026-02-16T06:00:46.732Z"
+      "lastChecked": "2026-02-17T06:03:34.199Z"
     },
     "windsurf": {
       "prices": [
@@ -74,8 +74,8 @@
         "team",
         "premium"
       ],
-      "contentHash": "09d13fe25fc819977541eda8214a01a0",
-      "lastChecked": "2026-02-16T06:00:47.135Z"
+      "contentHash": "692c03c8fae7021a79a3c3c9dc72b77e",
+      "lastChecked": "2026-02-17T06:03:34.240Z"
     },
     "copilot": {
       "prices": [
@@ -97,7 +97,7 @@
         "basic"
       ],
       "contentHash": "3509a614a0fb04d355cc80f35b0ff748",
-      "lastChecked": "2026-02-16T06:00:47.347Z"
+      "lastChecked": "2026-02-17T06:03:34.522Z"
     },
     "tabnine": {
       "prices": [],
@@ -109,7 +109,7 @@
         "team"
       ],
       "contentHash": "3e7ef5e4ce9a29f36cd15e8428130928",
-      "lastChecked": "2026-02-16T06:00:47.782Z"
+      "lastChecked": "2026-02-17T06:03:34.973Z"
     },
     "amazonq": {
       "prices": [
@@ -131,7 +131,7 @@
         "basic"
       ],
       "contentHash": "136c8dff57f15b8945cc7de9f3945c09",
-      "lastChecked": "2026-02-16T06:00:47.853Z"
+      "lastChecked": "2026-02-17T06:03:35.028Z"
     },
     "cody": {
       "prices": [
@@ -145,19 +145,20 @@
         "basic"
       ],
       "contentHash": "99753e8e31209b7151cffa8d66739b4c",
-      "lastChecked": "2026-02-16T06:00:47.984Z"
+      "lastChecked": "2026-02-17T06:03:35.147Z"
     },
     "continue": {
       "prices": [
         "$1",
-        "$19"
+        "$9",
+        "$16"
       ],
       "tiers": [
         "pro",
         "team"
       ],
       "contentHash": "ebd9bf034260127343f9dfa8b5f0efb6",
-      "lastChecked": "2026-02-16T06:00:48.056Z"
+      "lastChecked": "2026-02-17T06:03:35.212Z"
     },
     "supermaven": {
       "prices": [
@@ -172,7 +173,7 @@
         "team"
       ],
       "contentHash": "b0b9679945fa0975232c11cddb494adb",
-      "lastChecked": "2026-02-16T06:00:48.539Z"
+      "lastChecked": "2026-02-17T06:03:35.523Z"
     },
     "augment": {
       "prices": [
@@ -191,7 +192,7 @@
         "team"
       ],
       "contentHash": "87330147124682dafb026861f6539d5c",
-      "lastChecked": "2026-02-16T06:00:48.551Z"
+      "lastChecked": "2026-02-17T06:03:35.534Z"
     },
     "lovable": {
       "prices": [
@@ -207,7 +208,7 @@
         "team"
       ],
       "contentHash": "72578a93a254e06f6d7b771de2555c5e",
-      "lastChecked": "2026-02-16T06:00:48.870Z"
+      "lastChecked": "2026-02-17T06:03:35.773Z"
     },
     "poolside": {
       "prices": [],
@@ -218,7 +219,7 @@
         "team"
       ],
       "contentHash": "388d89b64f4fdc918a1b1c2d79d0fb80",
-      "lastChecked": "2026-02-16T06:00:49.517Z"
+      "lastChecked": "2026-02-17T06:03:36.522Z"
     },
     "bolt": {
       "prices": [],
@@ -229,7 +230,7 @@
         "team"
       ],
       "contentHash": "db2e314b9a89138bc5cc98e37730db1b",
-      "lastChecked": "2026-02-16T06:00:49.533Z"
+      "lastChecked": "2026-02-17T06:03:36.538Z"
     },
     "v0": {
       "prices": [
@@ -253,7 +254,7 @@
         "premium"
       ],
       "contentHash": "3414b09978073d2d251e3203bb873610",
-      "lastChecked": "2026-02-16T06:00:49.571Z"
+      "lastChecked": "2026-02-17T06:03:36.587Z"
     }
   }
 }
