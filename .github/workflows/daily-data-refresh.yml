@@ -20,83 +20,160 @@ jobs:
         with:
           node-version: '20'
       
-      - name: Install dependencies
-        run: |
-          cd scripts
-          npm install --prefix .. 2>/dev/null || true
+      - name: Install root dependencies
+        run: npm install
       
+      # ═══════════════════════════════════════════════════════════════
+      # CRITICAL DATA (used directly by pages)
+      # ═══════════════════════════════════════════════════════════════
       - name: Collect GitHub releases
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
-        run: node scripts/collect-releases.js
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        run: node scrapers/github-releases.js
         continue-on-error: true
       
-      - name: Collect GitHub stats
-        env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
-        run: node scripts/collect-github-stats.js
+      - name: Collect LMArena leaderboard
+        run: node scrapers/lmarena-leaderboard.js
         continue-on-error: true
       
-      - name: Collect HN mentions
-        run: node scripts/collect-hn-mentions.js
+      - name: Collect Aider benchmark
+        run: node scrapers/aider-benchmark.js
         continue-on-error: true
       
+      - name: Collect HN AI mentions
+        run: node scrapers/hn-ai-mentions.js
+        continue-on-error: true
+      
+      - name: Collect SWE-Bench
+        run: node scrapers/swe-bench.js
+        continue-on-error: true
+      
+      # ═══════════════════════════════════════════════════════════════
+      # NEWS & FEEDS
+      # ═══════════════════════════════════════════════════════════════
+      - name: Collect AI RSS feeds
+        run: node scrapers/ai-rss-feeds.js
+        continue-on-error: true
+      
+      - name: Collect Reddit AI
+        run: node scrapers/reddit-ai.js
+        continue-on-error: true
+      
+      - name: Collect Bluesky AI
+        run: node scrapers/bluesky-ai.js
+        continue-on-error: true
+      
+      - name: Collect Dev.to AI
+        run: node scrapers/devto-ai.js
+        continue-on-error: true
+      
+      - name: Collect TechCrunch AI
+        run: node scrapers/techcrunch-ai.js
+        continue-on-error: true
+      
+      - name: Collect ProductHunt AI
+        run: node scrapers/producthunt-ai.js
+        continue-on-error: true
+      
+      # ═══════════════════════════════════════════════════════════════
+      # COMPANY NEWS
+      # ═══════════════════════════════════════════════════════════════
+      - name: Collect OpenAI news
+        run: node scrapers/openai-news.js
+        continue-on-error: true
+      
+      - name: Collect Anthropic news
+        run: node scrapers/anthropic-news.js
+        continue-on-error: true
+      
+      - name: Collect Google AI blog
+        run: node scrapers/google-ai-blog.js
+        continue-on-error: true
+      
+      - name: Collect DeepMind news
+        run: node scrapers/deepmind-news.js
+        continue-on-error: true
+      
+      - name: Collect Mistral news
+        run: node scrapers/mistral-news.js
+        continue-on-error: true
+      
+      # ═══════════════════════════════════════════════════════════════
+      # RESEARCH & MODELS
+      # ═══════════════════════════════════════════════════════════════
+      - name: Collect ArXiv AI
+        run: node scrapers/arxiv-ai.js
+        continue-on-error: true
+      
+      - name: Collect HuggingFace trending
+        run: node scrapers/huggingface-trending.js
+        continue-on-error: true
+      
+      - name: Collect Model releases
+        run: node scrapers/model-releases.js
+        continue-on-error: true
+      
+      # ═══════════════════════════════════════════════════════════════
+      # STATS & METRICS
+      # ═══════════════════════════════════════════════════════════════
       - name: Collect VS Code stats
         run: node scripts/collect-vscode-stats.js
         continue-on-error: true
       
-      - name: Collect npm downloads
-        run: node scripts/collect-npm-downloads.js
-        continue-on-error: true
-      
-      - name: Collect PyPI stats
-        run: node scripts/collect-pypi-stats.js
-        continue-on-error: true
-      
-      - name: Collect Homebrew stats
-        run: node scripts/collect-homebrew-stats.js
-        continue-on-error: true
-      
-      - name: Collect Reddit stats
-        run: node scripts/collect-reddit-stats.js
-        continue-on-error: true
-      
-      - name: Collect StackOverflow trends
-        run: node scripts/collect-stackoverflow-trends.js
-        continue-on-error: true
-      
-      - name: Collect G2 reviews
-        run: node scripts/collect-g2-reviews.js
-        continue-on-error: true
-      
-      - name: Aggregate news
-        run: node scripts/aggregate-news.js
-      
-      - name: Generate live intel
-        run: node scripts/generate-live-intel.js
-        continue-on-error: true
-      
       - name: Collect GitHub trending
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: node scripts/collect-github-trending.js
         continue-on-error: true
       
+      - name: Collect Pricing
+        run: node scrapers/pricing-monitor.js
+        continue-on-error: true
+      
+      # ═══════════════════════════════════════════════════════════════
+      # GENERATORS
+      # ═══════════════════════════════════════════════════════════════
+      - name: Aggregate news
+        run: node scripts/aggregate-news.js
+        continue-on-error: true
+      
       - name: Generate insights
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
         run: node scripts/generate-insights.js
         continue-on-error: true
       
+      # ═══════════════════════════════════════════════════════════════
+      # UPDATE META & COPY TO APP
+      # ═══════════════════════════════════════════════════════════════
       - name: Update meta timestamp
         run: |
-          echo "{\"lastRefresh\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\", \"toolsTracked\": 15, \"dataVersion\": 1}" > data/meta.json
+          echo "{\"lastRefresh\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\", \"toolsTracked\": 15, \"dataVersion\": 2}" > data/meta.json
       
+      - name: Copy data to app content directory
+        run: |
+          mkdir -p app/content/data
+          mkdir -p app/content/briefings
+          mkdir -p app/content/briefings/html
+          mkdir -p app/content/briefings/data
+          
+          # Copy main data files
+          cp data/*.json app/content/data/ 2>/dev/null || true
+          cp site/data/*.json app/content/data/ 2>/dev/null || true
+          
+          # Copy briefing files
+          cp briefing/digests/briefing-*.md app/content/briefings/ 2>/dev/null || true
+          cp briefing/emails/briefing-*.html app/content/briefings/html/ 2>/dev/null || true
+          cp briefing/data/*.json app/content/briefings/data/ 2>/dev/null || true
+          
+          echo "✓ Copied data to app/content"
+      
+      # ═══════════════════════════════════════════════════════════════
+      # COMMIT & PUSH
+      # ═══════════════════════════════════════════════════════════════
       - name: Check for changes
         id: changes
         run: |
-          if git diff --quiet data/; then
+          git add -A
+          if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -107,15 +184,20 @@ jobs:
         run: |
           git config user.name "Kell"
           git config user.email "hi@kell.cx"
-          git add -A
-          git commit -m "📊 Daily data refresh $(date -u +%Y-%m-%d)" || true
-          git pull --rebase origin main || git pull origin main
+          git commit -m "📊 Daily data refresh $(date -u +%Y-%m-%d)"
           git push origin main
+      
+      # ═══════════════════════════════════════════════════════════════
+      # BUILD & DEPLOY
+      # ═══════════════════════════════════════════════════════════════
+      - name: Install app dependencies
+        run: |
+          cd app
+          npm ci
       
       - name: Build Next.js app
         run: |
           cd app
-          npm ci
           npm run build
       
       - name: Deploy to Vercel
@@ -124,12 +206,5 @@ jobs:
         run: |
           npm i -g vercel
           cd app
-          # Link to project (creates if needed) then deploy
           vercel link --yes --token=$VERCEL_TOKEN 2>/dev/null || true
           vercel deploy --prod --yes --token=$VERCEL_TOKEN
-      
-      - name: Send daily briefing
-        env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-        run: node scripts/send-briefing-to-subscribers.js
-        continue-on-error: true
