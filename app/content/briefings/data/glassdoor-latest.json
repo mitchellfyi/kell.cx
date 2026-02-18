@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Cursor",
+    "slug": "anysphere",
+    "blocked": true,
+    "note": "Glassdoor blocking automated access - may need manual check",
+    "scrapedAt": "2026-02-11T13:31:59.455Z",
+    "changes": []
+  },
+  {
+    "name": "Cognition AI",
+    "slug": "cognition-ai",
+    "blocked": true,
+    "note": "Glassdoor blocking automated access - may need manual check",
+    "scrapedAt": "2026-02-11T13:32:01.516Z",
+    "changes": []
+  },
+  {
+    "name": "Replit",
+    "slug": "replit",
+    "blocked": true,
+    "note": "Glassdoor blocking automated access - may need manual check",
+    "scrapedAt": "2026-02-11T13:32:03.568Z",
+    "changes": []
+  },
+  {
+    "name": "Codeium",
+    "slug": "codeium",
+    "blocked": true,
+    "note": "Glassdoor blocking automated access - may need manual check",
+    "scrapedAt": "2026-02-11T13:32:05.603Z",
+    "changes": []
+  },
+  {
+    "name": "GitHub",
+    "slug": "github",
+    "blocked": true,
+    "note": "Glassdoor blocking automated access - may need manual check",
+    "scrapedAt": "2026-02-11T13:32:07.636Z",
+    "changes": []
+  },
+  {
+    "name": "Tabnine",
+    "slug": "tabnine",
+    "blocked": true,
+    "note": "Glassdoor blocking automated access - may need manual check",
+    "scrapedAt": "2026-02-11T13:32:09.677Z",
+    "changes": []
+  },
+  {
+    "name": "Sourcegraph",
+    "slug": "sourcegraph",
+    "blocked": true,
+    "note": "Glassdoor blocking automated access - may need manual check",
+    "scrapedAt": "2026-02-11T13:32:11.711Z",
+    "changes": []
+  },
+  {
+    "name": "Augment Code",
+    "slug": "augment-code",
+    "blocked": true,
+    "note": "Glassdoor blocking automated access - may need manual check",
+    "scrapedAt": "2026-02-11T13:32:13.744Z",
+    "changes": []
+  },
+  {
+    "name": "Poolside AI",
+    "slug": "poolside-ai",
+    "blocked": true,
+    "note": "Glassdoor blocking automated access - may need manual check",
+    "scrapedAt": "2026-02-11T13:32:15.790Z",
+    "changes": []
+  },
+  {
+    "name": "StackBlitz",
+    "slug": "stackblitz",
+    "blocked": true,
+    "note": "Glassdoor blocking automated access - may need manual check",
+    "scrapedAt": "2026-02-11T13:32:17.822Z",
+    "changes": []
+  },
+  {
+    "name": "Vercel",
+    "slug": "vercel",
+    "blocked": true,
+    "note": "Glassdoor blocking automated access - may need manual check",
+    "scrapedAt": "2026-02-11T13:32:19.857Z",
+    "changes": []
+  },
+  {
+    "name": "Lovable",
+    "slug": "lovable",
+    "blocked": true,
+    "note": "Glassdoor blocking automated access - may need manual check",
+    "scrapedAt": "2026-02-11T13:32:21.884Z",
+    "changes": []
+  }
+]

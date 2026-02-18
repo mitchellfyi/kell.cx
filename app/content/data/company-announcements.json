@@ -1,0 +1,497 @@
+{
+  "meta": {
+    "collected_at": "2026-02-11T21:32:55.296Z",
+    "sources": 9,
+    "total_posts": 30
+  },
+  "companies": [
+    {
+      "company": "Google DeepMind",
+      "logo": "🔷",
+      "url": "https://deepmind.google/blog",
+      "posts": [
+        {
+          "title": "Accelerating Mathematical and Scientific Discovery with Gemini Deep Think",
+          "link": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
+          "date": "2026-02-09T16:12:06.000Z",
+          "description": "Research papers point to the growing impact of Deep Think across fields"
+        },
+        {
+          "title": "Project Genie: Experimenting with infinite, interactive worlds",
+          "link": "https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/",
+          "date": "2026-01-29T17:01:05.000Z",
+          "description": "Google AI Ultra subscribers in the U.S. can try out Project Genie, an experimental research prototype that lets you create and explore worlds."
+        },
+        {
+          "title": "D4RT: Teaching AI to see the world in four dimensions",
+          "link": "https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions/",
+          "date": "2026-01-16T10:39:00.000Z",
+          "description": "D4RT: Unified, efficient 4D reconstruction and tracking up to 300x faster than prior methods."
+        },
+        {
+          "title": "Veo 3.1 Ingredients to Video: More consistency, creativity and control",
+          "link": "https://deepmind.google/blog/veo-3-1-ingredients-to-video-more-consistency-creativity-and-control/",
+          "date": "2026-01-13T17:00:18.000Z",
+          "description": "Our latest Veo update generates lively, dynamic clips that feel natural and engaging — and supports vertical video generation."
+        },
+        {
+          "title": "Google's year in review: 8 areas with research breakthroughs in 2025",
+          "link": "https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/",
+          "date": "2025-12-23T17:01:02.000Z",
+          "description": "Google 2025 recap: Research breakthroughs of the year"
+        },
+        {
+          "title": "Gemini 3 Flash: frontier intelligence built for speed",
+          "link": "https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/",
+          "date": "2025-12-17T11:58:17.000Z",
+          "description": "Gemini 3 Flash offers frontier intelligence built for speed at a fraction of the cost."
+        },
+        {
+          "title": "Gemma Scope 2: helping the AI safety community deepen understanding of complex language model behavior",
+          "link": "https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/",
+          "date": "2025-12-16T10:14:24.000Z",
+          "description": "Open interpretability tools for language models are now available across the entire Gemma 3 family with the release of Gemma Scope 2."
+        },
+        {
+          "title": "Improved Gemini audio models for powerful voice experiences",
+          "link": "https://deepmind.google/blog/improved-gemini-audio-models-for-powerful-voice-experiences/",
+          "date": "2025-12-12T17:50:50.000Z",
+          "description": null
+        },
+        {
+          "title": "Deepening our partnership with the UK AI Security Institute",
+          "link": "https://deepmind.google/blog/deepening-our-partnership-with-the-uk-ai-security-institute/",
+          "date": "2025-12-11T00:06:40.000Z",
+          "description": "Google DeepMind and UK AI Security Institute (AISI) strengthen collaboration on critical AI safety and security research"
+        },
+        {
+          "title": "Strengthening our partnership with the UK government to support prosperity and security in the AI era",
+          "link": "https://deepmind.google/blog/strengthening-our-partnership-with-the-uk-government-to-support-prosperity-and-security-in-the-ai-era/",
+          "date": "2025-12-10T14:59:21.000Z",
+          "description": "Deepening our partnership with the UK government to support prosperity and security in the AI era"
+        }
+      ],
+      "fetched_at": "2026-02-11T21:32:54.688Z"
+    },
+    {
+      "company": "Cohere",
+      "logo": "🧲",
+      "url": "https://cohere.com/blog",
+      "posts": [],
+      "fetched_at": "2026-02-11T21:32:55.296Z"
+    },
+    {
+      "company": "Hugging Face",
+      "logo": "🤗",
+      "url": "https://huggingface.co/blog",
+      "posts": [
+        {
+          "title": "Transformers.js v4 Preview: Now Available on NPM!",
+          "link": "https://huggingface.co/blog/transformersjs-v4",
+          "date": "2026-02-09T00:00:00.000Z",
+          "description": null
+        },
+        {
+          "title": "Introducing SyGra Studio",
+          "link": "https://huggingface.co/blog/ServiceNow-AI/sygra-studio",
+          "date": "2026-02-05T16:52:28.000Z",
+          "description": null
+        },
+        {
+          "title": "Nemotron ColEmbed V2: Raising the Bar for Multimodal Retrieval with ViDoRe V3’s Top Model",
+          "link": "https://huggingface.co/blog/nvidia/nemotron-colembed-v2",
+          "date": "2026-02-04T15:00:40.000Z",
+          "description": null
+        },
+        {
+          "title": "Community Evals: Because we&apos;re done trusting black-box leaderboards over the community",
+          "link": "https://huggingface.co/blog/community-evals",
+          "date": "2026-02-04T00:00:00.000Z",
+          "description": null
+        },
+        {
+          "title": "H Company&apos;s new Holo2 model takes the lead in UI Localization",
+          "link": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b",
+          "date": "2026-02-03T17:40:14.000Z",
+          "description": null
+        },
+        {
+          "title": "The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+",
+          "link": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3",
+          "date": "2026-02-03T15:03:19.000Z",
+          "description": null
+        },
+        {
+          "title": "Training Design for Text-to-Image Models: Lessons from Ablations",
+          "link": "https://huggingface.co/blog/Photoroom/prx-part2",
+          "date": "2026-02-03T11:25:53.000Z",
+          "description": null
+        },
+        {
+          "title": "Introducing Daggr: Chain apps programmatically, inspect visually",
+          "link": "https://huggingface.co/blog/daggr",
+          "date": "2026-01-29T00:00:00.000Z",
+          "description": null
+        },
+        {
+          "title": "We Got Claude to Build CUDA Kernels and teach open models!",
+          "link": "https://huggingface.co/blog/upskill",
+          "date": "2026-01-28T00:00:00.000Z",
+          "description": null
+        },
+        {
+          "title": "Architectural Choices in China&apos;s Open-Source AI Ecosystem: Building Beyond DeepSeek",
+          "link": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-2",
+          "date": "2026-01-27T15:01:45.000Z",
+          "description": null
+        }
+      ],
+      "fetched_at": "2026-02-11T21:32:54.767Z"
+    },
+    {
+      "company": "Together AI",
+      "logo": "🤝",
+      "url": "https://www.together.ai/blog",
+      "posts": [
+        {
+          "title": "Cache-aware disaggregated inference for up to 40% faster long-context LLM serving",
+          "link": "https://www.together.ai/blog/cache-aware-disaggregated-inference",
+          "date": "2026-02-11T00:00:00.000Z",
+          "description": "Serving long prompts doesn't have to mean slow responses. Learn how Together AI's CPD architecture separates warm and cold inference workloads to deliver 40% higher throughput and dramatically lower time-to-first-token for long-context LLM serving."
+        },
+        {
+          "title": "What do LLMs think when you don't tell them what to think about?",
+          "link": "https://www.together.ai/blog/what-llms-think",
+          "date": "2026-02-06T00:00:00.000Z",
+          "description": "What do language models generate when you don't tell them what to generate? New research reveals that LLM families have distinct 'knowledge priors'—GPT models default to code and math, Llama favors narratives, DeepSeek generates religious content, and Qwen outputs exam questions."
+        },
+        {
+          "title": "Rime Arcana V3 Turbo and Rime Arcana V3 now available on Together AI",
+          "link": "https://www.together.ai/blog/rime-arcana-v3-turbo-and-rime-arcana-v3-now-available-on-together-ai",
+          "date": "2026-02-04T00:00:00.000Z",
+          "description": ""
+        },
+        {
+          "title": "Together AI welcomes Alon Gavrielov as VP of Infrastructure Strategy",
+          "link": "https://www.together.ai/blog/alon-gavrielov-as-vp-of-infrastructure-strategy",
+          "date": "2026-02-03T00:00:00.000Z",
+          "description": "Hiring Alon Gavrielov further deepens Together AI’s commitment to building AI factories that deliver the most reliable, efficient, and scalable infrastructure for AI-native teams."
+        },
+        {
+          "title": "Together Evaluations now supports comparing top commercial APIs vs. open source models",
+          "link": "https://www.together.ai/blog/together-evaluations-v2",
+          "date": "2026-02-02T00:00:00.000Z",
+          "description": "Together Evaluations now supports OpenAI, Anthropic, and Google models for cross-provider benchmarking. Compare open-source, fine-tuned, and proprietary models side-by-side to make data-driven decisions on quality, cost, and performance—all in one platform."
+        },
+        {
+          "title": "Fine-tuning open LLM judges to outperform GPT-5.2",
+          "link": "https://www.together.ai/blog/fine-tuning-open-llm-judges-to-outperform-gpt-5-2",
+          "date": "2026-02-02T00:00:00.000Z",
+          "description": "Fine-tuned open-source LLM judges can outperform GPT-5.2 at evaluating model outputs. Using Direct Preference Optimization on just 5,400 preference pairs, we trained GPT-OSS 120B to beat GPT-5.2 on human preference alignment—at 15x lower cost and 14x faster inference speeds."
+        },
+        {
+          "title": "DSGym: A holistic framework for evaluating and training data science agents",
+          "link": "https://www.together.ai/blog/dsgym",
+          "date": "2026-01-26T00:00:00.000Z",
+          "description": "Introducing DSGym—a holisti evaluation and training framework for LLM-based data science agents. Features 90+ bioinformatics tasks, 92 Kaggle competitions, and synthetic trajectory generation. Our 4B model achieves state-of-the-art performance among open-source models through exe"
+        },
+        {
+          "title": "Optimizing inference speed and costs: Lessons learned from large-scale deployments",
+          "link": "https://www.together.ai/blog/optimizing-inference-speed-and-costs",
+          "date": "2026-01-22T00:00:00.000Z",
+          "description": "Learn how to reduce inference latency without massive cost using proven inference optimization tactics — improving throughput, GPU utilization, and cost efficiency while balancing throughput vs. latency tradeoffs."
+        },
+        {
+          "title": "Learn how Cursor partnered with Together AI to deliver real-time, low-latency inference at scale",
+          "link": "https://www.together.ai/blog/learn-how-cursor-partnered-with-together-ai-to-deliver-real-time-low-latency-inference-at-scale",
+          "date": "2026-01-13T00:00:00.000Z",
+          "description": "Together AI teamed with Cursor to build the real-time inference stack that keeps in-editor agents fast and reliable. They productionized NVIDIA Blackwell (B200/GB200), tuning ARM hosts, kernels, and FP4/TensorRT quantization for low latency and rapid model rollouts."
+        },
+        {
+          "title": "Inside multi-node training: How to scale model training across GPU clusters",
+          "link": "https://www.together.ai/blog/multi-node-gpu-training",
+          "date": "2026-01-12T00:00:00.000Z",
+          "description": "Learn how foundation models are trained at scale using multi-node GPU clusters, including distributed training techniques, infrastructure requirements, and practical steps to scale training efficiently."
+        }
+      ],
+      "fetched_at": "2026-02-11T21:32:54.710Z"
+    },
+    {
+      "company": "Groq",
+      "logo": "⚡",
+      "url": "https://groq.com/blog",
+      "posts": [],
+      "fetched_at": "2026-02-11T21:32:54.938Z"
+    },
+    {
+      "company": "Stability AI",
+      "logo": "🎨",
+      "url": "https://stability.ai/blog",
+      "posts": [],
+      "error": "HTTP 404"
+    },
+    {
+      "company": "Perplexity",
+      "logo": "🔍",
+      "url": "https://blog.perplexity.ai",
+      "posts": [],
+      "error": "HTTP 403"
+    },
+    {
+      "company": "Anthropic",
+      "logo": "🅰️",
+      "url": "https://www.anthropic.com/news",
+      "posts": [],
+      "error": "No RSS feed available"
+    },
+    {
+      "company": "OpenAI",
+      "logo": "⬡",
+      "url": "https://openai.com/blog",
+      "posts": [],
+      "error": "No RSS feed available"
+    }
+  ],
+  "recent": [
+    {
+      "title": "Cache-aware disaggregated inference for up to 40% faster long-context LLM serving",
+      "link": "https://www.together.ai/blog/cache-aware-disaggregated-inference",
+      "date": "2026-02-11T00:00:00.000Z",
+      "description": "Serving long prompts doesn't have to mean slow responses. Learn how Together AI's CPD architecture separates warm and cold inference workloads to deliver 40% higher throughput and dramatically lower time-to-first-token for long-context LLM serving.",
+      "company": "Together AI",
+      "logo": "🤝"
+    },
+    {
+      "title": "Accelerating Mathematical and Scientific Discovery with Gemini Deep Think",
+      "link": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
+      "date": "2026-02-09T16:12:06.000Z",
+      "description": "Research papers point to the growing impact of Deep Think across fields",
+      "company": "Google DeepMind",
+      "logo": "🔷"
+    },
+    {
+      "title": "Transformers.js v4 Preview: Now Available on NPM!",
+      "link": "https://huggingface.co/blog/transformersjs-v4",
+      "date": "2026-02-09T00:00:00.000Z",
+      "description": null,
+      "company": "Hugging Face",
+      "logo": "🤗"
+    },
+    {
+      "title": "What do LLMs think when you don't tell them what to think about?",
+      "link": "https://www.together.ai/blog/what-llms-think",
+      "date": "2026-02-06T00:00:00.000Z",
+      "description": "What do language models generate when you don't tell them what to generate? New research reveals that LLM families have distinct 'knowledge priors'—GPT models default to code and math, Llama favors narratives, DeepSeek generates religious content, and Qwen outputs exam questions.",
+      "company": "Together AI",
+      "logo": "🤝"
+    },
+    {
+      "title": "Introducing SyGra Studio",
+      "link": "https://huggingface.co/blog/ServiceNow-AI/sygra-studio",
+      "date": "2026-02-05T16:52:28.000Z",
+      "description": null,
+      "company": "Hugging Face",
+      "logo": "🤗"
+    },
+    {
+      "title": "Nemotron ColEmbed V2: Raising the Bar for Multimodal Retrieval with ViDoRe V3’s Top Model",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-colembed-v2",
+      "date": "2026-02-04T15:00:40.000Z",
+      "description": null,
+      "company": "Hugging Face",
+      "logo": "🤗"
+    },
+    {
+      "title": "Community Evals: Because we&apos;re done trusting black-box leaderboards over the community",
+      "link": "https://huggingface.co/blog/community-evals",
+      "date": "2026-02-04T00:00:00.000Z",
+      "description": null,
+      "company": "Hugging Face",
+      "logo": "🤗"
+    },
+    {
+      "title": "Rime Arcana V3 Turbo and Rime Arcana V3 now available on Together AI",
+      "link": "https://www.together.ai/blog/rime-arcana-v3-turbo-and-rime-arcana-v3-now-available-on-together-ai",
+      "date": "2026-02-04T00:00:00.000Z",
+      "description": "",
+      "company": "Together AI",
+      "logo": "🤝"
+    },
+    {
+      "title": "H Company&apos;s new Holo2 model takes the lead in UI Localization",
+      "link": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b",
+      "date": "2026-02-03T17:40:14.000Z",
+      "description": null,
+      "company": "Hugging Face",
+      "logo": "🤗"
+    },
+    {
+      "title": "The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+",
+      "link": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3",
+      "date": "2026-02-03T15:03:19.000Z",
+      "description": null,
+      "company": "Hugging Face",
+      "logo": "🤗"
+    },
+    {
+      "title": "Training Design for Text-to-Image Models: Lessons from Ablations",
+      "link": "https://huggingface.co/blog/Photoroom/prx-part2",
+      "date": "2026-02-03T11:25:53.000Z",
+      "description": null,
+      "company": "Hugging Face",
+      "logo": "🤗"
+    },
+    {
+      "title": "Together AI welcomes Alon Gavrielov as VP of Infrastructure Strategy",
+      "link": "https://www.together.ai/blog/alon-gavrielov-as-vp-of-infrastructure-strategy",
+      "date": "2026-02-03T00:00:00.000Z",
+      "description": "Hiring Alon Gavrielov further deepens Together AI’s commitment to building AI factories that deliver the most reliable, efficient, and scalable infrastructure for AI-native teams.",
+      "company": "Together AI",
+      "logo": "🤝"
+    },
+    {
+      "title": "Together Evaluations now supports comparing top commercial APIs vs. open source models",
+      "link": "https://www.together.ai/blog/together-evaluations-v2",
+      "date": "2026-02-02T00:00:00.000Z",
+      "description": "Together Evaluations now supports OpenAI, Anthropic, and Google models for cross-provider benchmarking. Compare open-source, fine-tuned, and proprietary models side-by-side to make data-driven decisions on quality, cost, and performance—all in one platform.",
+      "company": "Together AI",
+      "logo": "🤝"
+    },
+    {
+      "title": "Fine-tuning open LLM judges to outperform GPT-5.2",
+      "link": "https://www.together.ai/blog/fine-tuning-open-llm-judges-to-outperform-gpt-5-2",
+      "date": "2026-02-02T00:00:00.000Z",
+      "description": "Fine-tuned open-source LLM judges can outperform GPT-5.2 at evaluating model outputs. Using Direct Preference Optimization on just 5,400 preference pairs, we trained GPT-OSS 120B to beat GPT-5.2 on human preference alignment—at 15x lower cost and 14x faster inference speeds.",
+      "company": "Together AI",
+      "logo": "🤝"
+    },
+    {
+      "title": "Project Genie: Experimenting with infinite, interactive worlds",
+      "link": "https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/",
+      "date": "2026-01-29T17:01:05.000Z",
+      "description": "Google AI Ultra subscribers in the U.S. can try out Project Genie, an experimental research prototype that lets you create and explore worlds.",
+      "company": "Google DeepMind",
+      "logo": "🔷"
+    },
+    {
+      "title": "Introducing Daggr: Chain apps programmatically, inspect visually",
+      "link": "https://huggingface.co/blog/daggr",
+      "date": "2026-01-29T00:00:00.000Z",
+      "description": null,
+      "company": "Hugging Face",
+      "logo": "🤗"
+    },
+    {
+      "title": "We Got Claude to Build CUDA Kernels and teach open models!",
+      "link": "https://huggingface.co/blog/upskill",
+      "date": "2026-01-28T00:00:00.000Z",
+      "description": null,
+      "company": "Hugging Face",
+      "logo": "🤗"
+    },
+    {
+      "title": "Architectural Choices in China&apos;s Open-Source AI Ecosystem: Building Beyond DeepSeek",
+      "link": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-2",
+      "date": "2026-01-27T15:01:45.000Z",
+      "description": null,
+      "company": "Hugging Face",
+      "logo": "🤗"
+    },
+    {
+      "title": "DSGym: A holistic framework for evaluating and training data science agents",
+      "link": "https://www.together.ai/blog/dsgym",
+      "date": "2026-01-26T00:00:00.000Z",
+      "description": "Introducing DSGym—a holisti evaluation and training framework for LLM-based data science agents. Features 90+ bioinformatics tasks, 92 Kaggle competitions, and synthetic trajectory generation. Our 4B model achieves state-of-the-art performance among open-source models through exe",
+      "company": "Together AI",
+      "logo": "🤝"
+    },
+    {
+      "title": "Optimizing inference speed and costs: Lessons learned from large-scale deployments",
+      "link": "https://www.together.ai/blog/optimizing-inference-speed-and-costs",
+      "date": "2026-01-22T00:00:00.000Z",
+      "description": "Learn how to reduce inference latency without massive cost using proven inference optimization tactics — improving throughput, GPU utilization, and cost efficiency while balancing throughput vs. latency tradeoffs.",
+      "company": "Together AI",
+      "logo": "🤝"
+    },
+    {
+      "title": "D4RT: Teaching AI to see the world in four dimensions",
+      "link": "https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions/",
+      "date": "2026-01-16T10:39:00.000Z",
+      "description": "D4RT: Unified, efficient 4D reconstruction and tracking up to 300x faster than prior methods.",
+      "company": "Google DeepMind",
+      "logo": "🔷"
+    },
+    {
+      "title": "Veo 3.1 Ingredients to Video: More consistency, creativity and control",
+      "link": "https://deepmind.google/blog/veo-3-1-ingredients-to-video-more-consistency-creativity-and-control/",
+      "date": "2026-01-13T17:00:18.000Z",
+      "description": "Our latest Veo update generates lively, dynamic clips that feel natural and engaging — and supports vertical video generation.",
+      "company": "Google DeepMind",
+      "logo": "🔷"
+    },
+    {
+      "title": "Learn how Cursor partnered with Together AI to deliver real-time, low-latency inference at scale",
+      "link": "https://www.together.ai/blog/learn-how-cursor-partnered-with-together-ai-to-deliver-real-time-low-latency-inference-at-scale",
+      "date": "2026-01-13T00:00:00.000Z",
+      "description": "Together AI teamed with Cursor to build the real-time inference stack that keeps in-editor agents fast and reliable. They productionized NVIDIA Blackwell (B200/GB200), tuning ARM hosts, kernels, and FP4/TensorRT quantization for low latency and rapid model rollouts.",
+      "company": "Together AI",
+      "logo": "🤝"
+    },
+    {
+      "title": "Inside multi-node training: How to scale model training across GPU clusters",
+      "link": "https://www.together.ai/blog/multi-node-gpu-training",
+      "date": "2026-01-12T00:00:00.000Z",
+      "description": "Learn how foundation models are trained at scale using multi-node GPU clusters, including distributed training techniques, infrastructure requirements, and practical steps to scale training efficiently.",
+      "company": "Together AI",
+      "logo": "🤝"
+    },
+    {
+      "title": "Google's year in review: 8 areas with research breakthroughs in 2025",
+      "link": "https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/",
+      "date": "2025-12-23T17:01:02.000Z",
+      "description": "Google 2025 recap: Research breakthroughs of the year",
+      "company": "Google DeepMind",
+      "logo": "🔷"
+    },
+    {
+      "title": "Gemini 3 Flash: frontier intelligence built for speed",
+      "link": "https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/",
+      "date": "2025-12-17T11:58:17.000Z",
+      "description": "Gemini 3 Flash offers frontier intelligence built for speed at a fraction of the cost.",
+      "company": "Google DeepMind",
+      "logo": "🔷"
+    },
+    {
+      "title": "Gemma Scope 2: helping the AI safety community deepen understanding of complex language model behavior",
+      "link": "https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/",
+      "date": "2025-12-16T10:14:24.000Z",
+      "description": "Open interpretability tools for language models are now available across the entire Gemma 3 family with the release of Gemma Scope 2.",
+      "company": "Google DeepMind",
+      "logo": "🔷"
+    },
+    {
+      "title": "Improved Gemini audio models for powerful voice experiences",
+      "link": "https://deepmind.google/blog/improved-gemini-audio-models-for-powerful-voice-experiences/",
+      "date": "2025-12-12T17:50:50.000Z",
+      "description": null,
+      "company": "Google DeepMind",
+      "logo": "🔷"
+    },
+    {
+      "title": "Deepening our partnership with the UK AI Security Institute",
+      "link": "https://deepmind.google/blog/deepening-our-partnership-with-the-uk-ai-security-institute/",
+      "date": "2025-12-11T00:06:40.000Z",
+      "description": "Google DeepMind and UK AI Security Institute (AISI) strengthen collaboration on critical AI safety and security research",
+      "company": "Google DeepMind",
+      "logo": "🔷"
+    },
+    {
+      "title": "Strengthening our partnership with the UK government to support prosperity and security in the AI era",
+      "link": "https://deepmind.google/blog/strengthening-our-partnership-with-the-uk-government-to-support-prosperity-and-security-in-the-ai-era/",
+      "date": "2025-12-10T14:59:21.000Z",
+      "description": "Deepening our partnership with the UK government to support prosperity and security in the AI era",
+      "company": "Google DeepMind",
+      "logo": "🔷"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "results": [
+    {
+      "name": "GitHub Copilot",
+      "id": "gjnjmfghjjdlamholfehfnhfhghknkca",
+      "competitor": "copilot",
+      "found": true,
+      "url": "https://chromewebstore.google.com/detail/gjnjmfghjjdlamholfehfnhfhghknkca",
+      "rating": null,
+      "users": null,
+      "userCountStr": null,
+      "reviewCount": null,
+      "version": null,
+      "scrapedAt": "2026-02-15T06:03:46.503Z",
+      "changes": []
+    },
+    {
+      "name": "Codeium",
+      "id": "hobjkcpmjhlegmobgonaagepfckjkceh",
+      "competitor": "windsurf",
+      "found": true,
+      "url": "https://chromewebstore.google.com/detail/hobjkcpmjhlegmobgonaagepfckjkceh",
+      "rating": 4.8,
+      "users": 60000,
+      "userCountStr": "60,000",
+      "reviewCount": 197,
+      "version": null,
+      "scrapedAt": "2026-02-15T06:03:47.172Z",
+      "changes": []
+    },
+    {
+      "name": "Tabnine",
+      "id": "hcjjlaldokddkmhaoehokfpiaioomema",
+      "competitor": "tabnine",
+      "found": true,
+      "url": "https://chromewebstore.google.com/detail/hcjjlaldokddkmhaoehokfpiaioomema",
+      "rating": null,
+      "users": null,
+      "userCountStr": null,
+      "reviewCount": null,
+      "version": null,
+      "scrapedAt": "2026-02-15T06:03:47.839Z",
+      "changes": []
+    },
+    {
+      "name": "Continue",
+      "id": "codeaccelerate",
+      "competitor": "continue",
+      "found": true,
+      "url": "https://chromewebstore.google.com/detail/codeaccelerate",
+      "rating": 3.8,
+      "users": null,
+      "userCountStr": null,
+      "reviewCount": null,
+      "version": null,
+      "scrapedAt": "2026-02-15T06:03:48.552Z",
+      "changes": []
+    },
+    {
+      "name": "Amazon Q",
+      "id": "fabekkagncfkmdfhoklfokfokhoommcc",
+      "competitor": "amazonq",
+      "found": true,
+      "url": "https://chromewebstore.google.com/detail/fabekkagncfkmdfhoklfokfokhoommcc",
+      "rating": null,
+      "users": null,
+      "userCountStr": null,
+      "reviewCount": null,
+      "version": null,
+      "scrapedAt": "2026-02-15T06:03:49.220Z",
+      "changes": []
+    },
+    {
+      "name": "Sourcegraph Cody",
+      "id": "nnpcmdgfpanfaoifkgbgccabjjamhddj",
+      "competitor": "cody",
+      "found": true,
+      "url": "https://chromewebstore.google.com/detail/nnpcmdgfpanfaoifkgbgccabjjamhddj",
+      "rating": null,
+      "users": null,
+      "userCountStr": null,
+      "reviewCount": null,
+      "version": null,
+      "scrapedAt": "2026-02-15T06:03:49.895Z",
+      "changes": []
+    },
+    {
+      "name": "Cursor",
+      "id": "kcfibkpgpmfolpdmhphjpobjfmdafbhm",
+      "competitor": "cursor",
+      "found": true,
+      "url": "https://chromewebstore.google.com/detail/kcfibkpgpmfolpdmhphjpobjfmdafbhm",
+      "rating": null,
+      "users": null,
+      "userCountStr": null,
+      "reviewCount": null,
+      "version": null,
+      "scrapedAt": "2026-02-15T06:03:50.571Z",
+      "changes": []
+    }
+  ],
+  "changes": []
+}

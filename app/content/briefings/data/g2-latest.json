@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Cursor",
+    "slug": "cursor-ai",
+    "url": "https://www.g2.com/products/cursor-ai/reviews",
+    "rating": null,
+    "reviewCount": null,
+    "recentReviews": [],
+    "scrapedAt": "2026-02-11T12:32:47.993Z",
+    "changes": []
+  },
+  {
+    "name": "GitHub Copilot",
+    "slug": "github-copilot",
+    "url": "https://www.g2.com/products/github-copilot/reviews",
+    "rating": null,
+    "reviewCount": null,
+    "recentReviews": [],
+    "scrapedAt": "2026-02-11T12:32:49.039Z",
+    "changes": []
+  },
+  {
+    "name": "Replit",
+    "slug": "replit",
+    "url": "https://www.g2.com/products/replit/reviews",
+    "rating": null,
+    "reviewCount": null,
+    "recentReviews": [],
+    "scrapedAt": "2026-02-11T12:32:50.086Z",
+    "changes": []
+  },
+  {
+    "name": "Tabnine",
+    "slug": "tabnine",
+    "url": "https://www.g2.com/products/tabnine/reviews",
+    "rating": null,
+    "reviewCount": null,
+    "recentReviews": [],
+    "scrapedAt": "2026-02-11T12:32:51.138Z",
+    "changes": []
+  },
+  {
+    "name": "Amazon Q",
+    "slug": "amazon-codewhisperer",
+    "url": "https://www.g2.com/products/amazon-codewhisperer/reviews",
+    "rating": null,
+    "reviewCount": null,
+    "recentReviews": [],
+    "scrapedAt": "2026-02-11T12:32:52.180Z",
+    "changes": []
+  },
+  {
+    "name": "Sourcegraph Cody",
+    "slug": "sourcegraph-cody",
+    "url": "https://www.g2.com/products/sourcegraph-cody/reviews",
+    "rating": null,
+    "reviewCount": null,
+    "recentReviews": [],
+    "scrapedAt": "2026-02-11T12:32:53.222Z",
+    "changes": []
+  },
+  {
+    "name": "Windsurf",
+    "slug": "codeium",
+    "url": "https://www.g2.com/products/codeium/reviews",
+    "rating": null,
+    "reviewCount": null,
+    "recentReviews": [],
+    "scrapedAt": "2026-02-11T12:32:54.273Z",
+    "changes": []
+  },
+  {
+    "name": "Continue",
+    "slug": "continue-dev",
+    "url": "https://www.g2.com/products/continue-dev/reviews",
+    "rating": null,
+    "reviewCount": null,
+    "recentReviews": [],
+    "scrapedAt": "2026-02-11T12:32:55.319Z",
+    "changes": []
+  }
+]

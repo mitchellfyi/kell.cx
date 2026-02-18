@@ -1,0 +1,444 @@
+{
+  "generatedAt": "2026-02-18T06:19:12.656Z",
+  "source": "GitHub API",
+  "summary": {
+    "recentPopularCount": 33,
+    "trendingCount": 0,
+    "topLanguages": [
+      {
+        "language": "TypeScript",
+        "count": 10
+      },
+      {
+        "language": "Python",
+        "count": 6
+      },
+      {
+        "language": "Shell",
+        "count": 3
+      },
+      {
+        "language": "Rust",
+        "count": 2
+      },
+      {
+        "language": "HTML",
+        "count": 2
+      }
+    ]
+  },
+  "recentPopular": [
+    {
+      "name": "zeroclaw-labs/zeroclaw",
+      "url": "https://github.com/zeroclaw-labs/zeroclaw",
+      "description": "Fast, small, and fully autonomous AI assistant infrastructure — deploy anywhere, swap anything 🦀",
+      "stars": 10944,
+      "forks": 1091,
+      "language": "Rust",
+      "topics": [],
+      "createdAt": "2026-02-13T08:56:04Z",
+      "pushedAt": "2026-02-18T06:17:59Z"
+    },
+    {
+      "name": "HKUDS/ClawWork",
+      "url": "https://github.com/HKUDS/ClawWork",
+      "description": "\"ClawWork: OpenClaw as Your AI Coworker - 💰 $10K earned in 7 Hours\"",
+      "stars": 1713,
+      "forks": 226,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-15T16:41:38Z",
+      "pushedAt": "2026-02-17T17:00:49Z"
+    },
+    {
+      "name": "vercel-labs/portless",
+      "url": "https://github.com/vercel-labs/portless",
+      "description": "Replace port numbers with stable, named .localhost URLs. For humans and agents.",
+      "stars": 960,
+      "forks": 33,
+      "language": "TypeScript",
+      "topics": [],
+      "createdAt": "2026-02-15T14:43:03Z",
+      "pushedAt": "2026-02-17T18:30:27Z"
+    },
+    {
+      "name": "millionco/react-doctor",
+      "url": "https://github.com/millionco/react-doctor",
+      "description": "Let coding agents diagnose and fix your React code",
+      "stars": 946,
+      "forks": 25,
+      "language": "TypeScript",
+      "topics": [
+        "agents",
+        "code-review",
+        "doctor",
+        "react",
+        "skill"
+      ],
+      "createdAt": "2026-02-13T09:02:13Z",
+      "pushedAt": "2026-02-18T06:05:44Z"
+    },
+    {
+      "name": "HKUDS/FastCode",
+      "url": "https://github.com/HKUDS/FastCode",
+      "description": "\"FastCode: Accelerating and Streamlining Your Code Understanding\"",
+      "stars": 799,
+      "forks": 94,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-13T06:43:54Z",
+      "pushedAt": "2026-02-13T10:29:53Z"
+    },
+    {
+      "name": "vigorX777/ai-daily-digest",
+      "url": "https://github.com/vigorX777/ai-daily-digest",
+      "description": "从 Andrej Karpathy 推荐的 90 顶级技术博客中抓取最新文章，AI 多维评分筛选，生成一份每日精选日报。更多可见公众号：懂点儿AI",
+      "stars": 742,
+      "forks": 78,
+      "language": "TypeScript",
+      "topics": [],
+      "createdAt": "2026-02-14T07:27:52Z",
+      "pushedAt": "2026-02-15T15:29:40Z"
+    },
+    {
+      "name": "MooseGoose0701/skill-compose",
+      "url": "https://github.com/MooseGoose0701/skill-compose",
+      "description": "Skill Compose is an open-source agent builder and runtime platform for skill-powered agents. No workflow graphs. No CLI.",
+      "stars": 644,
+      "forks": 42,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-12T14:11:39Z",
+      "pushedAt": "2026-02-18T04:44:23Z"
+    },
+    {
+      "name": "nicobailon/visual-explainer",
+      "url": "https://github.com/nicobailon/visual-explainer",
+      "description": "Agent skill + prompt templates that generate rich HTML pages for visual diff reviews, architecture overviews, plan audits, data tables, and project recaps",
+      "stars": 584,
+      "forks": 38,
+      "language": "HTML",
+      "topics": [],
+      "createdAt": "2026-02-16T19:33:52Z",
+      "pushedAt": "2026-02-16T20:26:09Z"
+    },
+    {
+      "name": "AlexsJones/llmfit",
+      "url": "https://github.com/AlexsJones/llmfit",
+      "description": "94 models. 30 providers. One command to find what runs on your hardware.",
+      "stars": 492,
+      "forks": 33,
+      "language": "Rust",
+      "topics": [
+        "llm",
+        "openclaw",
+        "skill"
+      ],
+      "createdAt": "2026-02-15T16:11:31Z",
+      "pushedAt": "2026-02-18T06:19:09Z"
+    },
+    {
+      "name": "klawsh/klaw.sh",
+      "url": "https://github.com/klawsh/klaw.sh",
+      "description": "kubectl for AI Agents",
+      "stars": 436,
+      "forks": 22,
+      "language": "Go",
+      "topics": [
+        "agents",
+        "ai-agents",
+        "orchestration"
+      ],
+      "createdAt": "2026-02-15T04:18:19Z",
+      "pushedAt": "2026-02-17T17:46:31Z"
+    },
+    {
+      "name": "Conway-Research/automaton",
+      "url": "https://github.com/Conway-Research/automaton",
+      "description": "The first AI that can earn its own existence, replicate, and evolve — without needing a human",
+      "stars": 431,
+      "forks": 84,
+      "language": "TypeScript",
+      "topics": [],
+      "createdAt": "2026-02-14T20:46:44Z",
+      "pushedAt": "2026-02-18T03:04:12Z"
+    },
+    {
+      "name": "davidhariri/life-system",
+      "url": "https://github.com/davidhariri/life-system",
+      "description": "A plain-text life operating system powered by Claude Code. Inspired by Carmack's .plan files and Franklin's systematic self-improvement.",
+      "stars": 354,
+      "forks": 17,
+      "language": "Shell",
+      "topics": [],
+      "createdAt": "2026-02-15T18:50:03Z",
+      "pushedAt": "2026-02-18T01:14:52Z"
+    },
+    {
+      "name": "andyhuo520/openclaw-assistant-mvp",
+      "url": "https://github.com/andyhuo520/openclaw-assistant-mvp",
+      "description": "OpenClaw Desktop Assistant MVP - Electron-based AI voice assistant with Live2D character animations, real-time speech recognition, and text-to-speech",
+      "stars": 353,
+      "forks": 48,
+      "language": "JavaScript",
+      "topics": [],
+      "createdAt": "2026-02-13T13:14:54Z",
+      "pushedAt": "2026-02-13T13:15:26Z"
+    },
+    {
+      "name": "tomascupr/sandstorm",
+      "url": "https://github.com/tomascupr/sandstorm",
+      "description": "One API call. Full Claude agent. Completely sandboxed.",
+      "stars": 304,
+      "forks": 29,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-14T14:26:15Z",
+      "pushedAt": "2026-02-17T23:37:35Z"
+    },
+    {
+      "name": "Zaneham/BarraCUDA",
+      "url": "https://github.com/Zaneham/BarraCUDA",
+      "description": "Open-source CUDA compiler targeting AMD GPUs (and more in the future!). Compiles .cu to GFX11 machine code.",
+      "stars": 282,
+      "forks": 10,
+      "language": "C",
+      "topics": [
+        "c99",
+        "compiler",
+        "cuda",
+        "gpu",
+        "ml"
+      ],
+      "createdAt": "2026-02-16T10:46:52Z",
+      "pushedAt": "2026-02-18T06:14:54Z"
+    },
+    {
+      "name": "craigsc/cmux",
+      "url": "https://github.com/craigsc/cmux",
+      "description": "cmux: tmux for Claude Code",
+      "stars": 277,
+      "forks": 11,
+      "language": "Shell",
+      "topics": [
+        "claude",
+        "claude-code",
+        "git",
+        "terminal"
+      ],
+      "createdAt": "2026-02-13T18:35:24Z",
+      "pushedAt": "2026-02-17T19:57:30Z"
+    },
+    {
+      "name": "agenticnotetaking/arscontexta",
+      "url": "https://github.com/agenticnotetaking/arscontexta",
+      "description": "Claude Code plugin that generates individualized knowledge systems from conversation. You describe how you think and work, have a conversation and get a complete second brain as markdown files you own.",
+      "stars": 265,
+      "forks": 11,
+      "language": "Shell",
+      "topics": [
+        "claude-code",
+        "claude-code-plugin",
+        "knowledge-base",
+        "knowledge-management",
+        "markdown",
+        "second-brain"
+      ],
+      "createdAt": "2026-02-15T17:26:41Z",
+      "pushedAt": "2026-02-17T21:44:20Z"
+    },
+    {
+      "name": "DataExpert-io/ai-engineer-handbook",
+      "url": "https://github.com/DataExpert-io/ai-engineer-handbook",
+      "description": "All the links, books, and creators you need to follow to stay up to date with AI!",
+      "stars": 259,
+      "forks": 37,
+      "language": null,
+      "topics": [],
+      "createdAt": "2026-02-16T19:32:35Z",
+      "pushedAt": "2026-02-17T23:09:53Z"
+    },
+    {
+      "name": "SamuelQZQ/auto-coding-agent-demo",
+      "url": "https://github.com/SamuelQZQ/auto-coding-agent-demo",
+      "description": "一个长达 10 小时的 AI 全自动编程实验",
+      "stars": 246,
+      "forks": 87,
+      "language": "TypeScript",
+      "topics": [],
+      "createdAt": "2026-02-13T19:25:20Z",
+      "pushedAt": "2026-02-13T19:25:47Z"
+    },
+    {
+      "name": "Nasiko-Labs/nasiko",
+      "url": "https://github.com/Nasiko-Labs/nasiko",
+      "description": "AI-powered development platform for the future",
+      "stars": 229,
+      "forks": 41,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-12T10:45:29Z",
+      "pushedAt": "2026-02-12T19:09:11Z"
+    },
+    {
+      "name": "FireRedTeam/FireRedASR2S",
+      "url": "https://github.com/FireRedTeam/FireRedASR2S",
+      "description": "FireRedASR2S is a SOTA Industrial-Grade All-in-One ASR system with ASR, VAD, LID, and Punc modules. FireRedASR2 supports Chinese (Mandarin, 20+ dialects/accents), English, code-switching, and singing lyrics recognition. FireRedVAD supports speech/singing/music in 100+ langs. FireRedLID supports 100+ langs and 20+ zh dialects.",
+      "stars": 219,
+      "forks": 8,
+      "language": "Python",
+      "topics": [
+        "asr",
+        "asr-pipeline",
+        "audio-event-classification",
+        "audio-event-detection",
+        "automatic-speech-recognition",
+        "industrial-grade",
+        "language-identification",
+        "lid",
+        "llm",
+        "multimodal-llm",
+        "open-source",
+        "punctuation-prediction",
+        "punctuation-restoration",
+        "sota",
+        "speech-recognition",
+        "speechllm",
+        "vad",
+        "voice-activity-detection"
+      ],
+      "createdAt": "2026-02-12T04:23:46Z",
+      "pushedAt": "2026-02-13T09:31:05Z"
+    },
+    {
+      "name": "marswei/seaseed-clawerse",
+      "url": "https://github.com/marswei/seaseed-clawerse",
+      "description": "Open-source implementation of SeaSeed.ai v1.0 (codename: Clawerse). AI ocean world platform for multi-agent social, tasks and compute collaboration.",
+      "stars": 195,
+      "forks": 11,
+      "language": "JavaScript",
+      "topics": [],
+      "createdAt": "2026-02-14T18:13:42Z",
+      "pushedAt": "2026-02-15T03:31:19Z"
+    },
+    {
+      "name": "vixhal-baraiya/microgpt-c",
+      "url": "https://github.com/vixhal-baraiya/microgpt-c",
+      "description": "The most atomic way to train and inference a GPT in pure, dependency-free C",
+      "stars": 175,
+      "forks": 32,
+      "language": "C",
+      "topics": [
+        "artificial-intelligence",
+        "c",
+        "c-programming",
+        "deep-learning",
+        "gpt",
+        "llm",
+        "machine-learning",
+        "microgpt"
+      ],
+      "createdAt": "2026-02-14T17:29:50Z",
+      "pushedAt": "2026-02-15T11:58:54Z"
+    },
+    {
+      "name": "myinvestpilot/ai-architecture",
+      "url": "https://github.com/myinvestpilot/ai-architecture",
+      "description": "Design notes, architecture, and trade-offs for MyInvestPilot — an AI-native investment OS built with agent-driven development, DSL engine, and solo company tech stack.",
+      "stars": 174,
+      "forks": 13,
+      "language": null,
+      "topics": [
+        "agent-driven-development",
+        "agentic-ai",
+        "ai-native",
+        "cloud-native",
+        "dsl",
+        "fintech",
+        "indie-hacker",
+        "investment",
+        "multi-agent",
+        "one-person-company",
+        "serverless"
+      ],
+      "createdAt": "2026-02-14T13:51:46Z",
+      "pushedAt": "2026-02-16T17:38:28Z"
+    },
+    {
+      "name": "jayminwest/overstory",
+      "url": "https://github.com/jayminwest/overstory",
+      "description": "Project-agnostic swarm system for Claude Code agent orchestration",
+      "stars": 172,
+      "forks": 37,
+      "language": "TypeScript",
+      "topics": [
+        "agent-swarms",
+        "ai-agents",
+        "claude-code",
+        "tmux"
+      ],
+      "createdAt": "2026-02-12T14:53:58Z",
+      "pushedAt": "2026-02-17T18:45:53Z"
+    },
+    {
+      "name": "Doriandarko/webmcp-starter",
+      "url": "https://github.com/Doriandarko/webmcp-starter",
+      "description": "WebMCP starter demo — a DoorDash-style food delivery app with 9 AI agent tools (imperative + declarative)",
+      "stars": 172,
+      "forks": 13,
+      "language": "HTML",
+      "topics": [],
+      "createdAt": "2026-02-12T18:41:00Z",
+      "pushedAt": "2026-02-12T19:07:18Z"
+    },
+    {
+      "name": "Gentleman-Programming/engram",
+      "url": "https://github.com/Gentleman-Programming/engram",
+      "description": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.",
+      "stars": 168,
+      "forks": 9,
+      "language": "Go",
+      "topics": [],
+      "createdAt": "2026-02-16T13:38:41Z",
+      "pushedAt": "2026-02-17T12:56:43Z"
+    },
+    {
+      "name": "IAmUnbounded/devctx",
+      "url": "https://github.com/IAmUnbounded/devctx",
+      "description": "Carry context across coding agents/editors/IDEs - Cursor/Windsurf/Claude Code/Antigravity",
+      "stars": 160,
+      "forks": 26,
+      "language": "TypeScript",
+      "topics": [],
+      "createdAt": "2026-02-14T19:10:45Z",
+      "pushedAt": "2026-02-15T19:33:36Z"
+    },
+    {
+      "name": "AvdLee/Swift-Testing-Agent-Skill",
+      "url": "https://github.com/AvdLee/Swift-Testing-Agent-Skill",
+      "description": "An agent skill focused entirely on Swift Testing, helping you write better tests, migrate from XCTest, improve test architecture, and adopt modern Swift testing patterns with confidence.",
+      "stars": 139,
+      "forks": 5,
+      "language": null,
+      "topics": [
+        "agent-skills",
+        "swift",
+        "swift-testing"
+      ],
+      "createdAt": "2026-02-12T16:15:38Z",
+      "pushedAt": "2026-02-17T09:22:15Z"
+    },
+    {
+      "name": "keanucz/detour",
+      "url": "https://github.com/keanucz/detour",
+      "description": "On-board AI agents autonomously saving satellites from orbital debris @ treehacks 2026",
+      "stars": 132,
+      "forks": 14,
+      "language": "TypeScript",
+      "topics": [],
+      "createdAt": "2026-02-14T18:15:27Z",
+      "pushedAt": "2026-02-16T00:55:38Z"
+    }
+  ],
+  "trending": []
+}

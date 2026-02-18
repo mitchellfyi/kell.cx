@@ -1,0 +1,126 @@
+{
+  "timestamp": "2026-02-15T06:04:02.805Z",
+  "ios": [
+    {
+      "competitor": "GitHub",
+      "found": true,
+      "name": "GitHub",
+      "developer": "GitHub",
+      "appId": 1477376905,
+      "bundleId": "com.github.stormbreaker.prod",
+      "price": "Free",
+      "rating": 4.82303,
+      "ratingCount": 29485,
+      "version": "1.245.1",
+      "releaseDate": "2020-03-17T07:00:00Z",
+      "currentVersionReleaseDate": "2026-02-11T22:26:18Z",
+      "description": "There’s a lot you can do on GitHub that doesn’t require a complex development environment – like sharing feedback on a design discussion, or reviewing a few lines of code. GitHub for iOS lets you move...",
+      "url": "https://apps.apple.com/us/app/github/id1477376905?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/59/de/df/59dedfcf-65b7-8eac-86f0-d59af065a581/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/100x100bb.jpg",
+      "size": "140 MB"
+    },
+    {
+      "competitor": "Replit",
+      "found": true,
+      "name": "Replit: Vibe Code Apps",
+      "developer": "Replit",
+      "appId": 1614022293,
+      "bundleId": "com.replit.app",
+      "price": "Free",
+      "rating": 4.68546,
+      "ratingCount": 11522,
+      "version": "2.170.0",
+      "releaseDate": "2022-10-18T07:00:00Z",
+      "currentVersionReleaseDate": "2026-01-08T05:33:44Z",
+      "description": "Replit is the best way to create and ship real projects, apps, games, and more right from your phone. With Replit, you can create anything, anywhere. Make apps & sites with natural language prompts. N...",
+      "url": "https://apps.apple.com/us/app/replit-vibe-code-apps/id1614022293?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a6/4a/0f/a64a0f4d-4b9c-6420-162a-0c7df9e34a1b/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+      "size": "48 MB"
+    },
+    {
+      "competitor": "ChatGPT",
+      "found": true,
+      "name": "ChatGPT",
+      "developer": "OpenAI OpCo, LLC",
+      "appId": 6448311069,
+      "bundleId": "com.openai.chat",
+      "price": "Free",
+      "rating": 4.85613,
+      "ratingCount": 5621672,
+      "version": "1.2026.034",
+      "releaseDate": "2023-05-18T07:00:00Z",
+      "currentVersionReleaseDate": "2026-02-12T16:59:29Z",
+      "description": "Introducing ChatGPT for iOS: OpenAI’s latest advancements at your fingertips.\n\nThis official app is free, syncs your history across devices, and brings you the latest from OpenAI, including the new im...",
+      "url": "https://apps.apple.com/us/app/chatgpt/id6448311069?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/71/ff/6c/71ff6c58-6537-dea4-40b3-17704932c02f/AppIcon-0-0-1x_U007epad-0-0-0-1-0-P3-85-220.png/100x100bb.jpg",
+      "size": "151 MB"
+    },
+    {
+      "competitor": "AWS Console",
+      "found": true,
+      "name": "AWS Console",
+      "developer": "AMZN Mobile LLC",
+      "appId": 580990573,
+      "bundleId": "com.amazonaws.mobileConsole",
+      "price": "Free",
+      "rating": 4.71969,
+      "ratingCount": 5644,
+      "version": "3.15.0",
+      "releaseDate": "2013-02-26T00:23:15Z",
+      "currentVersionReleaseDate": "2026-02-09T21:34:52Z",
+      "description": "The AWS Console Mobile Application, provided by Amazon Web Services, lets you view and manage a select set of resources and receive push notifications to stay informed and connected with your AWS reso...",
+      "url": "https://apps.apple.com/us/app/aws-console/id580990573?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2b/9b/05/2b9b053e-0cef-c070-e436-955dade229e2/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/100x100bb.jpg",
+      "size": "144 MB"
+    },
+    {
+      "competitor": "Mimo",
+      "found": true,
+      "name": "Mimo: Learn Coding/Programming",
+      "developer": "Mimo GmbH",
+      "appId": 1133960732,
+      "bundleId": "com.getmimo.mimo",
+      "price": "Free",
+      "rating": 4.85374,
+      "ratingCount": 104863,
+      "version": "12.0.0",
+      "releaseDate": "2016-08-22T06:17:39Z",
+      "currentVersionReleaseDate": "2026-02-10T07:45:16Z",
+      "description": "Learn Python, JavaScript, HTML, CSS, or SQL, and master modern AI-assisted development to become a developer in the age of AI. Mimo is a coding app that takes you from zero to building projects with A...",
+      "url": "https://apps.apple.com/us/app/mimo-learn-coding-programming/id1133960732?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/84/0c/a0/840ca044-6c49-7705-2f76-331e2b97aa05/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/100x100bb.jpg",
+      "size": "151 MB"
+    }
+  ],
+  "android": [
+    {
+      "competitor": "Replit",
+      "found": true,
+      "packageName": "com.replit.app",
+      "name": "Unknown",
+      "rating": 4.5,
+      "installs": "Unknown",
+      "url": "https://play.google.com/store/apps/details?id=com.replit.app",
+      "platform": "android"
+    },
+    {
+      "competitor": "GitHub",
+      "found": true,
+      "packageName": "com.github.android",
+      "name": "Unknown",
+      "rating": 4.4,
+      "installs": "Unknown",
+      "url": "https://play.google.com/store/apps/details?id=com.github.android",
+      "platform": "android"
+    }
+  ],
+  "summary": {
+    "iosAppsFound": 5,
+    "androidAppsFound": 2,
+    "highestRatedIos": "ChatGPT: 4.9★",
+    "mostReviewsIos": "ChatGPT: 5,621,672 reviews"
+  },
+  "changes": [
+    "💬 GitHub iOS: +114 new reviews"
+  ]
+}

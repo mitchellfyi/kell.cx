@@ -1,12 +1,14 @@
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 
-// Data directories
+// Data directories - try content dir first (Vercel), then parent dirs (local dev)
+const CONTENT_DATA = join(process.cwd(), "content", "data");
 const ROOT_DATA = join(process.cwd(), "..", "data");
 const SITE_DATA = join(process.cwd(), "..", "site", "data");
 
 function loadJson<T>(filename: string, defaultValue: T): T {
   const paths = [
+    join(CONTENT_DATA, filename),
     join(ROOT_DATA, filename),
     join(SITE_DATA, filename),
   ];

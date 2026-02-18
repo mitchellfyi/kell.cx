@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "lastUpdated": "2026-02-11",
+    "description": "AI coding tool pricing comparison data"
+  },
+  "categories": [
+    {
+      "id": "ide-assistants",
+      "name": "IDE-Based Assistants",
+      "emoji": "🖥️",
+      "tools": [
+        {
+          "name": "Cursor",
+          "website": "cursor.com",
+          "freeTier": "2wk trial",
+          "individual": { "price": 20, "period": "mo" },
+          "team": { "price": 40, "period": "user/mo" },
+          "enterprise": "Custom",
+          "notes": "500 fast reqs/mo on Pro",
+          "pricingModel": "subscription"
+        },
+        {
+          "name": "GitHub Copilot",
+          "website": "github.com/features/copilot",
+          "freeTier": null,
+          "individual": { "price": 10, "period": "mo" },
+          "team": { "price": 19, "period": "user/mo" },
+          "enterprise": { "price": 39, "period": "user/mo" },
+          "notes": "Free for students/OSS",
+          "pricingModel": "subscription"
+        },
+        {
+          "name": "Windsurf (Codeium)",
+          "website": "codeium.com",
+          "freeTier": true,
+          "individual": { "price": 10, "period": "mo" },
+          "team": { "price": 25, "period": "user/mo" },
+          "enterprise": "Custom",
+          "notes": "Unlimited completions on free",
+          "pricingModel": "subscription"
+        },
+        {
+          "name": "Zed AI",
+          "website": "zed.dev",
+          "freeTier": "BYOK",
+          "individual": { "price": 15, "period": "mo" },
+          "team": null,
+          "enterprise": null,
+          "notes": "Built into Zed editor",
+          "pricingModel": "subscription"
+        },
+        {
+          "name": "Tabnine",
+          "website": "tabnine.com",
+          "freeTier": true,
+          "individual": { "price": 12, "period": "mo" },
+          "team": { "price": 39, "period": "user/mo" },
+          "enterprise": "Custom",
+          "notes": "Self-hosted option for Enterprise",
+          "pricingModel": "subscription"
+        },
+        {
+          "name": "Sourcegraph Cody",
+          "website": "sourcegraph.com/cody",
+          "freeTier": true,
+          "individual": { "price": 9, "period": "mo" },
+          "team": { "price": 19, "period": "user/mo" },
+          "enterprise": "Custom",
+          "notes": "Codebase-aware",
+          "pricingModel": "subscription"
+        },
+        {
+          "name": "Amazon Q Developer",
+          "website": "aws.amazon.com/q/developer",
+          "freeTier": true,
+          "individual": null,
+          "team": { "price": 19, "period": "user/mo" },
+          "enterprise": { "price": 25, "period": "user/mo" },
+          "notes": "AWS integration",
+          "pricingModel": "subscription"
+        },
+        {
+          "name": "JetBrains AI",
+          "website": "jetbrains.com/ai",
+          "freeTier": null,
+          "individual": { "price": 10, "period": "mo" },
+          "team": { "price": 20, "period": "user/mo" },
+          "enterprise": "Custom",
+          "notes": "Bundled w/ All Products",
+          "pricingModel": "subscription"
+        }
+      ]
+    },
+    {
+      "id": "cli-agents",
+      "name": "Terminal/CLI Agents",
+      "emoji": "🤖",
+      "tools": [
+        {
+          "name": "Claude Code",
+          "website": "anthropic.com",
+          "freeTier": null,
+          "individual": { "price": "~15-50", "period": "mo", "note": "API usage" },
+          "team": "Usage-based",
+          "enterprise": "Usage-based",
+          "notes": "Pay for Claude API usage",
+          "pricingModel": "usage",
+          "highlight": true,
+          "badge": "New"
+        },
+        {
+          "name": "Aider",
+          "website": "aider.chat",
+          "freeTier": "Open Source",
+          "individual": "BYOK",
+          "team": null,
+          "enterprise": null,
+          "notes": "Bring your own API keys",
+          "pricingModel": "byok"
+        },
+        {
+          "name": "Cline (VS Code)",
+          "website": "github.com/clinebot/cline",
+          "freeTier": "Open Source",
+          "individual": "BYOK",
+          "team": null,
+          "enterprise": null,
+          "notes": "Bring your own API keys",
+          "pricingModel": "byok"
+        },
+        {
+          "name": "Continue.dev",
+          "website": "continue.dev",
+          "freeTier": "Open Source",
+          "individual": "BYOK",
+          "team": null,
+          "enterprise": null,
+          "notes": "Supports local models",
+          "pricingModel": "byok"
+        },
+        {
+          "name": "Codex CLI (OpenAI)",
+          "website": "openai.com",
+          "freeTier": null,
+          "individual": "Usage-based",
+          "team": null,
+          "enterprise": null,
+          "notes": "OpenAI API pricing",
+          "pricingModel": "usage"
+        }
+      ]
+    },
+    {
+      "id": "web-builders",
+      "name": "Web-Based Builders",
+      "emoji": "🌐",
+      "tools": [
+        {
+          "name": "Replit Agent",
+          "website": "replit.com",
+          "freeTier": true,
+          "individual": { "price": 25, "period": "mo" },
+          "team": { "price": 40, "period": "user/mo" },
+          "enterprise": "Custom",
+          "notes": "Full deployment included",
+          "pricingModel": "subscription"
+        },
+        {
+          "name": "Bolt.new (StackBlitz)",
+          "website": "bolt.new",
+          "freeTier": true,
+          "individual": { "price": 20, "period": "mo" },
+          "team": "Custom",
+          "enterprise": "Custom",
+          "notes": "WebContainer-based",
+          "pricingModel": "subscription"
+        },
+        {
+          "name": "Lovable",
+          "website": "lovable.dev",
+          "freeTier": true,
+          "individual": { "price": 20, "period": "mo" },
+          "team": { "price": 30, "period": "user/mo" },
+          "enterprise": "Custom",
+          "notes": "AI-first app builder",
+          "pricingModel": "subscription"
+        },
+        {
+          "name": "v0.dev (Vercel)",
+          "website": "v0.dev",
+          "freeTier": true,
+          "individual": { "price": 20, "period": "mo" },
+          "team": null,
+          "enterprise": null,
+          "notes": "UI component generation",
+          "pricingModel": "subscription"
+        },
+        {
+          "name": "Codex Cloud (OpenAI)",
+          "website": "openai.com/codex",
+          "freeTier": "ChatGPT Pro",
+          "individual": { "price": 200, "period": "mo", "note": "ChatGPT Pro" },
+          "team": "Custom",
+          "enterprise": "Custom",
+          "notes": "Full cloud IDE",
+          "pricingModel": "subscription",
+          "highlight": true,
+          "badge": "New"
+        }
+      ]
+    },
+    {
+      "id": "autonomous-agents",
+      "name": "Autonomous Agents",
+      "emoji": "🦾",
+      "tools": [
+        {
+          "name": "Devin (Cognition)",
+          "website": "cognition.ai",
+          "freeTier": null,
+          "individual": { "price": 500, "period": "mo" },
+          "team": "Custom",
+          "enterprise": "Custom",
+          "notes": "Full autonomous agent",
+          "pricingModel": "subscription"
+        },
+        {
+          "name": "Cosine Genie",
+          "website": "cosine.sh",
+          "freeTier": "Waitlist",
+          "individual": "TBA",
+          "team": "TBA",
+          "enterprise": "TBA",
+          "notes": "Codebase-trained agent",
+          "pricingModel": "unknown"
+        },
+        {
+          "name": "OpenHands",
+          "website": "all-hands.dev",
+          "freeTier": "Open Source",
+          "individual": "BYOK",
+          "team": null,
+          "enterprise": null,
+          "notes": "OSS autonomous agent",
+          "pricingModel": "byok"
+        },
+        {
+          "name": "Factory.ai",
+          "website": "factory.ai",
+          "freeTier": null,
+          "individual": null,
+          "team": "Enterprise",
+          "enterprise": "Custom",
+          "notes": "Enterprise-focused",
+          "pricingModel": "enterprise"
+        }
+      ]
+    }
+  ],
+  "llmApiPricing": {
+    "description": "Underlying model API costs for BYOK tools",
+    "providers": [
+      {
+        "name": "Anthropic",
+        "models": [
+          { "name": "Claude Opus 4.6", "input": 15.00, "output": 75.00, "unit": "1M tokens" },
+          { "name": "Claude Sonnet 4.0", "input": 3.00, "output": 15.00, "unit": "1M tokens" },
+          { "name": "Claude Haiku 4.0", "input": 0.25, "output": 1.25, "unit": "1M tokens" }
+        ]
+      },
+      {
+        "name": "OpenAI",
+        "models": [
+          { "name": "GPT-5.3-Codex", "input": 2.00, "output": 8.00, "unit": "1M tokens" },
+          { "name": "GPT-5.2", "input": 5.00, "output": 15.00, "unit": "1M tokens" },
+          { "name": "o3", "input": 10.00, "output": 40.00, "unit": "1M tokens" }
+        ]
+      },
+      {
+        "name": "Google",
+        "models": [
+          { "name": "Gemini 2.5 Pro", "input": 1.25, "output": 5.00, "unit": "1M tokens" },
+          { "name": "Gemini 2.5 Flash", "input": 0.075, "output": 0.30, "unit": "1M tokens" }
+        ]
+      }
+    ]
+  }
+}

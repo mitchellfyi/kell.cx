@@ -5,9 +5,15 @@ import { join } from "path";
 
 // Load latest jobs data
 function loadJobsData() {
-  const briefingDataDir = join(process.cwd(), "..", "briefing", "data");
+  // Try content directory first (Vercel), then parent directory (local dev)
+  const contentDir = join(process.cwd(), "content", "briefings", "data");
+  const legacyDir = join(process.cwd(), "..", "briefing", "data");
+  
+  const briefingDataDir = existsSync(contentDir) ? contentDir : legacyDir;
   
   try {
+    if (!existsSync(briefingDataDir)) return {};
+    
     // Find the latest jobs file
     const files = readdirSync(briefingDataDir)
       .filter(f => f.startsWith('jobs-') && f.endsWith('.json'))
@@ -24,7 +30,12 @@ function loadJobsData() {
 }
 
 function loadInsights() {
-  const path = join(process.cwd(), "..", "data", "insights.json");
+  // Try content directory first (Vercel), then parent directory (local dev)
+  const contentPath = join(process.cwd(), "content", "data", "insights.json");
+  const legacyPath = join(process.cwd(), "..", "data", "insights.json");
+  
+  const path = existsSync(contentPath) ? contentPath : legacyPath;
+  
   if (existsSync(path)) {
     try {
       const data = JSON.parse(readFileSync(path, "utf8"));

@@ -1,0 +1,360 @@
+{
+  "description": "Comprehensive list of AI companies and products to track for Briefing",
+  "lastUpdated": "2026-02-11",
+  "companies": [
+    {
+      "name": "Anthropic",
+      "website": "anthropic.com",
+      "category": "model-provider",
+      "products": {
+        "models": [
+          { "name": "Claude Opus 4.6", "status": "current", "type": "flagship" },
+          { "name": "Claude Opus 4.5", "status": "current", "type": "flagship" },
+          { "name": "Claude Sonnet 4.0", "status": "current", "type": "balanced" },
+          { "name": "Claude Haiku 4.0", "status": "current", "type": "fast" }
+        ],
+        "tools": [
+          { "name": "Claude Code", "repo": "anthropics/claude-code", "type": "CLI" }
+        ]
+      },
+      "trackingSources": ["blog", "api changelog", "GitHub releases"]
+    },
+    {
+      "name": "OpenAI",
+      "website": "openai.com",
+      "category": "model-provider",
+      "products": {
+        "models": [
+          { "name": "GPT-5.3-Codex", "status": "current", "releasedAt": "2026-02-04", "type": "coding" },
+          { "name": "GPT-5.2", "status": "current", "type": "general" },
+          { "name": "o3", "status": "current", "type": "reasoning" },
+          { "name": "o3-mini", "status": "current", "type": "reasoning-fast" }
+        ],
+        "tools": [
+          { "name": "Codex (product)", "type": "cloud IDE" },
+          { "name": "ChatGPT", "type": "chat" }
+        ]
+      },
+      "trackingSources": ["blog", "changelog", "platform status"]
+    },
+    {
+      "name": "Google",
+      "website": "ai.google",
+      "category": "model-provider",
+      "products": {
+        "models": [
+          { "name": "Gemini 2.5 Pro", "status": "current", "type": "flagship" },
+          { "name": "Gemini 2.5 Flash", "status": "current", "type": "fast" },
+          { "name": "Gemini 2.5 Flash Lite", "status": "current", "type": "lightweight" }
+        ],
+        "tools": [
+          { "name": "AI Studio", "type": "playground" },
+          { "name": "Vertex AI", "type": "platform" },
+          { "name": "Jules", "type": "coding agent" }
+        ]
+      },
+      "trackingSources": ["Google AI blog", "Vertex changelog"]
+    },
+    {
+      "name": "Meta",
+      "website": "ai.meta.com",
+      "category": "model-provider",
+      "products": {
+        "models": [
+          { "name": "Llama 4 Scout", "status": "current", "type": "efficient" },
+          { "name": "Llama 4 Maverick", "status": "current", "type": "flagship" }
+        ]
+      },
+      "trackingSources": ["Meta AI blog", "Hugging Face"]
+    },
+    {
+      "name": "xAI",
+      "website": "x.ai",
+      "category": "model-provider",
+      "products": {
+        "models": [
+          { "name": "Grok 4", "status": "current", "type": "flagship" },
+          { "name": "Grok 3", "status": "current", "type": "previous" }
+        ]
+      },
+      "trackingSources": ["x.ai blog", "Twitter/X announcements"]
+    },
+    {
+      "name": "Mistral",
+      "website": "mistral.ai",
+      "category": "model-provider",
+      "products": {
+        "models": [
+          { "name": "Mistral Large", "status": "current", "type": "flagship" },
+          { "name": "Codestral", "status": "current", "type": "coding" }
+        ]
+      },
+      "trackingSources": ["Mistral blog", "Hugging Face"]
+    },
+    {
+      "name": "DeepSeek",
+      "website": "deepseek.com",
+      "category": "model-provider",
+      "products": {
+        "models": [
+          { "name": "DeepSeek V3", "status": "current", "type": "flagship" },
+          { "name": "DeepSeek Coder V2", "status": "current", "type": "coding" },
+          { "name": "DeepSeek R1", "status": "current", "type": "reasoning" }
+        ]
+      },
+      "trackingSources": ["deepseek.com", "Hugging Face", "GitHub"]
+    },
+    {
+      "name": "Cursor",
+      "website": "cursor.com",
+      "category": "ide",
+      "funding": { "total": "$400M+", "lastRound": "Series B", "date": "2025-08" },
+      "products": {
+        "tools": [
+          { "name": "Cursor IDE", "type": "IDE", "pricing": "$20/mo Pro" }
+        ]
+      },
+      "trackingSources": ["changelog", "blog", "pricing page"]
+    },
+    {
+      "name": "GitHub",
+      "website": "github.com",
+      "category": "extension",
+      "products": {
+        "tools": [
+          { "name": "GitHub Copilot", "type": "extension", "vscodeId": "GitHub.copilot", "pricing": "$10/mo individual" },
+          { "name": "GitHub Copilot Chat", "type": "extension" },
+          { "name": "GitHub Copilot Workspace", "type": "cloud IDE", "status": "preview" }
+        ]
+      },
+      "trackingSources": ["GitHub blog", "Changelog"]
+    },
+    {
+      "name": "Codeium/Windsurf",
+      "website": "codeium.com",
+      "category": "ide",
+      "funding": { "total": "$150M+", "lastRound": "Series C", "date": "2024-08" },
+      "products": {
+        "tools": [
+          { "name": "Windsurf IDE", "type": "IDE", "pricing": "Free tier available" },
+          { "name": "Codeium", "type": "extension", "pricing": "Free for individuals" }
+        ]
+      },
+      "trackingSources": ["blog", "changelog"]
+    },
+    {
+      "name": "Sourcegraph",
+      "website": "sourcegraph.com",
+      "category": "extension",
+      "products": {
+        "tools": [
+          { "name": "Cody", "repo": "sourcegraph/cody", "type": "extension" }
+        ]
+      },
+      "trackingSources": ["blog", "GitHub releases"]
+    },
+    {
+      "name": "JetBrains",
+      "website": "jetbrains.com",
+      "category": "ide",
+      "products": {
+        "tools": [
+          { "name": "JetBrains AI Assistant", "type": "built-in", "pricing": "$10/mo with IDE subscription" },
+          { "name": "Junie", "type": "coding agent", "status": "preview" }
+        ]
+      },
+      "trackingSources": ["JetBrains blog", "changelog", "release notes"]
+    },
+    {
+      "name": "Amazon",
+      "website": "aws.amazon.com/q/developer",
+      "category": "extension",
+      "products": {
+        "tools": [
+          { "name": "Amazon Q Developer", "type": "extension", "pricing": "Free tier + $19/mo Pro" },
+          { "name": "Amazon Q Developer Agent", "type": "coding agent" }
+        ]
+      },
+      "trackingSources": ["AWS blog", "What's New", "changelog"]
+    },
+    {
+      "name": "Replit",
+      "website": "replit.com",
+      "category": "cloud-ide",
+      "funding": { "total": "$200M+", "lastRound": "Series B", "date": "2023-04" },
+      "products": {
+        "tools": [
+          { "name": "Replit Agent", "type": "coding agent" },
+          { "name": "Ghostwriter", "type": "built-in", "status": "deprecated" }
+        ]
+      },
+      "trackingSources": ["blog", "changelog"]
+    },
+    {
+      "name": "Tabnine",
+      "website": "tabnine.com",
+      "category": "extension",
+      "funding": { "total": "$55M", "lastRound": "Series B", "date": "2022-06" },
+      "products": {
+        "tools": [
+          { "name": "Tabnine", "type": "extension", "pricing": "$12/mo Pro" },
+          { "name": "Tabnine Enterprise", "type": "self-hosted" }
+        ]
+      },
+      "trackingSources": ["blog", "changelog"]
+    },
+    {
+      "name": "Continue",
+      "website": "continue.dev",
+      "category": "extension",
+      "products": {
+        "tools": [
+          { "name": "Continue", "repo": "continuedev/continue", "type": "extension", "pricing": "Open source" }
+        ]
+      },
+      "trackingSources": ["GitHub releases", "Discord", "blog"]
+    },
+    {
+      "name": "Aider",
+      "website": "aider.chat",
+      "category": "cli",
+      "products": {
+        "tools": [
+          { "name": "Aider", "repo": "paul-gauthier/aider", "type": "CLI", "pricing": "Open source" }
+        ]
+      },
+      "trackingSources": ["GitHub releases", "changelog", "aider.chat/blog"]
+    },
+    {
+      "name": "Zed",
+      "website": "zed.dev",
+      "category": "ide",
+      "funding": { "total": "$60M", "lastRound": "Series A", "date": "2024-01" },
+      "products": {
+        "tools": [
+          { "name": "Zed", "repo": "zed-industries/zed", "type": "IDE", "pricing": "Free + cloud features" },
+          { "name": "Zed AI", "type": "built-in" }
+        ]
+      },
+      "trackingSources": ["blog", "GitHub releases", "Discord"]
+    },
+    {
+      "name": "Supermaven",
+      "website": "supermaven.com",
+      "category": "extension",
+      "products": {
+        "tools": [
+          { "name": "Supermaven", "type": "extension", "pricing": "$10/mo Pro" }
+        ]
+      },
+      "trackingSources": ["blog", "changelog"]
+    },
+    {
+      "name": "Cognition",
+      "website": "cognition.ai",
+      "category": "autonomous-agent",
+      "funding": { "total": "$175M", "lastRound": "Series A", "date": "2024-03" },
+      "products": {
+        "tools": [
+          { "name": "Devin", "type": "autonomous agent", "pricing": "$500/mo" }
+        ]
+      },
+      "trackingSources": ["blog", "Twitter/X", "changelog"]
+    },
+    {
+      "name": "Augment",
+      "website": "augmentcode.com",
+      "category": "extension",
+      "funding": { "total": "$252M", "lastRound": "Series B", "date": "2024-09" },
+      "products": {
+        "tools": [
+          { "name": "Augment Code", "type": "extension" }
+        ]
+      },
+      "trackingSources": ["blog", "changelog"]
+    },
+    {
+      "name": "Magic",
+      "website": "magic.dev",
+      "category": "autonomous-agent",
+      "funding": { "total": "$465M", "lastRound": "Series B", "date": "2024-08" },
+      "products": {
+        "models": [
+          { "name": "LTM-2-mini", "status": "current", "type": "long-context" }
+        ]
+      },
+      "trackingSources": ["blog", "Twitter/X"]
+    },
+    {
+      "name": "Poolside",
+      "website": "poolside.ai",
+      "category": "model-provider",
+      "funding": { "total": "$500M", "lastRound": "Series B", "date": "2024-10" },
+      "products": {
+        "models": [
+          { "name": "malibu", "status": "current", "type": "coding" }
+        ]
+      },
+      "trackingSources": ["blog", "Twitter/X"]
+    },
+    {
+      "name": "Codestory",
+      "website": "codestory.ai",
+      "category": "ide",
+      "products": {
+        "tools": [
+          { "name": "Aide", "repo": "codestory-ai/aide", "type": "IDE", "pricing": "Open source" }
+        ]
+      },
+      "trackingSources": ["GitHub releases", "blog"]
+    },
+    {
+      "name": "Void",
+      "website": "voideditor.com",
+      "category": "ide",
+      "products": {
+        "tools": [
+          { "name": "Void", "repo": "voideditor/void", "type": "IDE", "pricing": "Open source" }
+        ]
+      },
+      "trackingSources": ["GitHub releases"]
+    },
+    {
+      "name": "PearAI",
+      "website": "trypear.ai",
+      "category": "ide",
+      "products": {
+        "tools": [
+          { "name": "PearAI", "repo": "trypear/pearai-app", "type": "IDE", "pricing": "Open source" }
+        ]
+      },
+      "trackingSources": ["GitHub releases", "Discord"]
+    },
+    {
+      "name": "Qodo",
+      "website": "qodo.ai",
+      "category": "extension",
+      "products": {
+        "tools": [
+          { "name": "Qodo Gen", "type": "extension", "previousName": "CodiumAI" },
+          { "name": "Qodo Merge", "type": "PR agent" }
+        ]
+      },
+      "trackingSources": ["blog", "changelog"]
+    }
+  ],
+  "categories": {
+    "model-provider": "Companies primarily selling LLM API access",
+    "ide": "Full IDE products with AI built-in",
+    "extension": "Extensions/plugins for existing IDEs",
+    "cli": "Command-line tools for AI coding",
+    "cloud-ide": "Browser-based development environments",
+    "autonomous-agent": "Fully autonomous coding agents"
+  },
+  "monitoringFrequency": {
+    "models": "daily",
+    "tools": "daily",
+    "pricing": "weekly",
+    "funding": "monthly"
+  }
+}

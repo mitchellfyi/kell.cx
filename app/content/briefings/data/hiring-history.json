@@ -1,0 +1,305 @@
+{
+  "entries": [
+    {
+      "date": "2026-02-11",
+      "companies": {
+        "cursor": {
+          "name": "Cursor",
+          "count": 67,
+          "trend": null
+        },
+        "cognition": {
+          "name": "Cognition (Devin)",
+          "count": 0,
+          "trend": null
+        },
+        "replit": {
+          "name": "Replit",
+          "count": 0,
+          "trend": null
+        },
+        "windsurf": {
+          "name": "Codeium (Windsurf)",
+          "count": 0,
+          "trend": null
+        },
+        "copilot": {
+          "name": "GitHub Copilot",
+          "count": 0,
+          "trend": null
+        },
+        "tabnine": {
+          "name": "Tabnine",
+          "count": 5,
+          "trend": null
+        },
+        "amazonq": {
+          "name": "Amazon Q Developer",
+          "count": 1,
+          "trend": null
+        },
+        "cody": {
+          "name": "Sourcegraph (Cody)",
+          "count": 7,
+          "trend": null
+        },
+        "continue": {
+          "name": "Continue.dev",
+          "count": 0,
+          "trend": null
+        },
+        "supermaven": {
+          "name": "Supermaven",
+          "count": 0,
+          "trend": null
+        },
+        "augment": {
+          "name": "Augment Code",
+          "count": 0,
+          "trend": null
+        }
+      }
+    },
+    {
+      "date": "2026-02-13",
+      "companies": {
+        "cursor": {
+          "name": "Cursor",
+          "count": 67,
+          "trend": 0
+        },
+        "cognition": {
+          "name": "Cognition (Devin)",
+          "count": 0,
+          "trend": null
+        },
+        "replit": {
+          "name": "Replit",
+          "count": 0,
+          "trend": null
+        },
+        "windsurf": {
+          "name": "Codeium (Windsurf)",
+          "count": 0,
+          "trend": null
+        },
+        "copilot": {
+          "name": "GitHub Copilot",
+          "count": 0,
+          "trend": null
+        },
+        "tabnine": {
+          "name": "Tabnine",
+          "count": 5,
+          "trend": 0
+        },
+        "amazonq": {
+          "name": "Amazon Q Developer",
+          "count": 1,
+          "trend": 0
+        },
+        "cody": {
+          "name": "Sourcegraph (Cody)",
+          "count": 7,
+          "trend": 0
+        },
+        "continue": {
+          "name": "Continue.dev",
+          "count": 0,
+          "trend": null
+        },
+        "supermaven": {
+          "name": "Supermaven",
+          "count": 0,
+          "trend": null
+        },
+        "augment": {
+          "name": "Augment Code",
+          "count": 0,
+          "trend": null
+        },
+        "lovable": {
+          "name": "Lovable",
+          "count": 93,
+          "trend": null
+        },
+        "poolside": {
+          "name": "Poolside",
+          "count": 0,
+          "trend": null
+        },
+        "bolt": {
+          "name": "Bolt (StackBlitz)",
+          "count": 0,
+          "trend": null
+        },
+        "v0": {
+          "name": "v0 (Vercel)",
+          "count": 40,
+          "trend": null
+        }
+      }
+    },
+    {
+      "date": "2026-02-14",
+      "companies": {
+        "cursor": {
+          "name": "Cursor",
+          "count": 67,
+          "trend": 0
+        },
+        "cognition": {
+          "name": "Cognition (Devin)",
+          "count": 0,
+          "trend": null
+        },
+        "replit": {
+          "name": "Replit",
+          "count": 0,
+          "trend": null
+        },
+        "windsurf": {
+          "name": "Codeium (Windsurf)",
+          "count": 0,
+          "trend": null
+        },
+        "copilot": {
+          "name": "GitHub Copilot",
+          "count": 0,
+          "trend": null
+        },
+        "tabnine": {
+          "name": "Tabnine",
+          "count": 5,
+          "trend": 0
+        },
+        "amazonq": {
+          "name": "Amazon Q Developer",
+          "count": 1,
+          "trend": 0
+        },
+        "cody": {
+          "name": "Sourcegraph (Cody)",
+          "count": 7,
+          "trend": 0
+        },
+        "continue": {
+          "name": "Continue.dev",
+          "count": 0,
+          "trend": null
+        },
+        "supermaven": {
+          "name": "Supermaven",
+          "count": 0,
+          "trend": null
+        },
+        "augment": {
+          "name": "Augment Code",
+          "count": 0,
+          "trend": null
+        },
+        "lovable": {
+          "name": "Lovable",
+          "count": 93,
+          "trend": 0
+        },
+        "poolside": {
+          "name": "Poolside",
+          "count": 0,
+          "trend": null
+        },
+        "bolt": {
+          "name": "Bolt (StackBlitz)",
+          "count": 0,
+          "trend": null
+        },
+        "v0": {
+          "name": "v0 (Vercel)",
+          "count": 39,
+          "trend": -2.5
+        }
+      }
+    },
+    {
+      "date": "2026-02-15",
+      "companies": {
+        "cursor": {
+          "name": "Cursor",
+          "count": 67,
+          "trend": 0
+        },
+        "cognition": {
+          "name": "Cognition (Devin)",
+          "count": 0,
+          "trend": null
+        },
+        "replit": {
+          "name": "Replit",
+          "count": 0,
+          "trend": null
+        },
+        "windsurf": {
+          "name": "Codeium (Windsurf)",
+          "count": 0,
+          "trend": null
+        },
+        "copilot": {
+          "name": "GitHub Copilot",
+          "count": 0,
+          "trend": null
+        },
+        "tabnine": {
+          "name": "Tabnine",
+          "count": 5,
+          "trend": 0
+        },
+        "amazonq": {
+          "name": "Amazon Q Developer",
+          "count": 1,
+          "trend": 0
+        },
+        "cody": {
+          "name": "Sourcegraph (Cody)",
+          "count": 7,
+          "trend": 0
+        },
+        "continue": {
+          "name": "Continue.dev",
+          "count": 0,
+          "trend": null
+        },
+        "supermaven": {
+          "name": "Supermaven",
+          "count": 0,
+          "trend": null
+        },
+        "augment": {
+          "name": "Augment Code",
+          "count": 0,
+          "trend": null
+        },
+        "lovable": {
+          "name": "Lovable",
+          "count": 93,
+          "trend": 0
+        },
+        "poolside": {
+          "name": "Poolside",
+          "count": 0,
+          "trend": null
+        },
+        "bolt": {
+          "name": "Bolt (StackBlitz)",
+          "count": 0,
+          "trend": null
+        },
+        "v0": {
+          "name": "v0 (Vercel)",
+          "count": 39,
+          "trend": 0
+        }
+      }
+    }
+  ],
+  "lastUpdate": "2026-02-15T06:00:20.464Z"
+}

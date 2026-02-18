@@ -2,11 +2,19 @@
 /**
  * GitHub Releases Scraper
  * Monitors releases from key AI coding tool repositories
- * Uses GitHub API (unauthenticated, 60 req/hour limit)
+ * Uses GitHub API (authenticated via GITHUB_TOKEN for 5000 req/hour)
  */
 
 const fs = require('fs');
 const path = require('path');
+
+// GitHub token from environment (set by refresh-all.sh or manually)
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+if (GITHUB_TOKEN) {
+  console.log('Using authenticated GitHub API (5000 req/hour)');
+} else {
+  console.log('Warning: No GITHUB_TOKEN set, using unauthenticated API (60 req/hour)');
+}
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const OUTPUT_FILE = path.join(DATA_DIR, 'github-releases.json');
@@ -44,18 +52,24 @@ const REPOS = [
   { owner: 'JetBrains', repo: 'intellij-community', category: 'ide', company: 'JetBrains' },
 ];
 
+function getGitHubHeaders() {
+  const headers = {
+    'Accept': 'application/vnd.github+json',
+    'User-Agent': 'Kell/1.0 (+https://kell.cx)',
+    'X-GitHub-Api-Version': '2022-11-28'
+  };
+  if (GITHUB_TOKEN) {
+    headers['Authorization'] = `Bearer ${GITHUB_TOKEN}`;
+  }
+  return headers;
+}
+
 async function fetchReleases(repoInfo) {
   const { owner, repo, category, company } = repoInfo;
   const url = `https://api.github.com/repos/${owner}/${repo}/releases?per_page=5`;
   
   try {
-    const res = await fetch(url, {
-      headers: {
-        'Accept': 'application/vnd.github+json',
-        'User-Agent': 'Briefing/1.0 (+https://kell.cx)',
-        'X-GitHub-Api-Version': '2022-11-28'
-      }
-    });
+    const res = await fetch(url, { headers: getGitHubHeaders() });
     
     if (res.status === 404) {
       console.log(`  ${owner}/${repo}: Not found (may be private)`);
@@ -105,13 +119,7 @@ async function fetchTags(repoInfo) {
   const url = `https://api.github.com/repos/${owner}/${repo}/tags?per_page=5`;
   
   try {
-    const res = await fetch(url, {
-      headers: {
-        'Accept': 'application/vnd.github+json',
-        'User-Agent': 'Briefing/1.0 (+https://kell.cx)',
-        'X-GitHub-Api-Version': '2022-11-28'
-      }
-    });
+    const res = await fetch(url, { headers: getGitHubHeaders() });
     
     if (!res.ok) return [];
     

@@ -1,0 +1,115 @@
+{
+  "generatedAt": "2026-02-15T09:32:28.223Z",
+  "packageCount": 4,
+  "packages": [
+    {
+      "package": "openai",
+      "tool": "OpenAI SDK",
+      "category": "llm-sdk",
+      "version": "2.21.0",
+      "summary": "The official Python library for the openai API",
+      "lastDay": 4144886,
+      "lastWeek": 41706935,
+      "lastMonth": 154197931
+    },
+    {
+      "package": "anthropic",
+      "tool": "Anthropic SDK",
+      "category": "llm-sdk",
+      "version": "0.79.0",
+      "summary": "The official Python library for the anthropic API",
+      "lastDay": 1103914,
+      "lastWeek": 13062458,
+      "lastMonth": 47433928
+    },
+    {
+      "package": "dspy-ai",
+      "tool": "DSPy",
+      "category": "framework",
+      "version": "3.1.3",
+      "summary": "DSPy",
+      "lastDay": 27992,
+      "lastWeek": 309211,
+      "lastMonth": 1151121
+    },
+    {
+      "package": "mentat",
+      "tool": "Mentat",
+      "category": "ai-coding",
+      "version": "1.0.19",
+      "summary": "AI coding assistant on your command line",
+      "lastDay": 4,
+      "lastWeek": 249,
+      "lastMonth": 545
+    }
+  ],
+  "byCategory": {
+    "ai-coding": [
+      {
+        "package": "mentat",
+        "tool": "Mentat",
+        "category": "ai-coding",
+        "version": "1.0.19",
+        "summary": "AI coding assistant on your command line",
+        "lastDay": 4,
+        "lastWeek": 249,
+        "lastMonth": 545
+      }
+    ],
+    "llm-sdk": [
+      {
+        "package": "openai",
+        "tool": "OpenAI SDK",
+        "category": "llm-sdk",
+        "version": "2.21.0",
+        "summary": "The official Python library for the openai API",
+        "lastDay": 4144886,
+        "lastWeek": 41706935,
+        "lastMonth": 154197931
+      },
+      {
+        "package": "anthropic",
+        "tool": "Anthropic SDK",
+        "category": "llm-sdk",
+        "version": "0.79.0",
+        "summary": "The official Python library for the anthropic API",
+        "lastDay": 1103914,
+        "lastWeek": 13062458,
+        "lastMonth": 47433928
+      }
+    ],
+    "framework": [
+      {
+        "package": "dspy-ai",
+        "tool": "DSPy",
+        "category": "framework",
+        "version": "3.1.3",
+        "summary": "DSPy",
+        "lastDay": 27992,
+        "lastWeek": 309211,
+        "lastMonth": 1151121
+      }
+    ],
+    "agents": []
+  },
+  "summary": {
+    "aiCodingDownloads": 545,
+    "sdkDownloads": 201631859,
+    "frameworkDownloads": 1151121,
+    "totalMonthly": 202783525
+  },
+  "errors": [
+    "aider-chat: No data",
+    "aider-install: No data",
+    "langchain: No data",
+    "llama-index: No data",
+    "litellm: No data",
+    "pydantic-ai: No data",
+    "instructor: No data",
+    "marvin: No data",
+    "autogen: No data",
+    "crewai: No data",
+    "guidance: No data",
+    "outlines: No data"
+  ]
+}

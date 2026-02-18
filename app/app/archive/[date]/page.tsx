@@ -9,7 +9,11 @@ interface BriefingPageProps {
 }
 
 function getBriefingDates(): string[] {
-  const briefingsDir = join(process.cwd(), "..", "briefing", "digests");
+  // Try content directory first (for Vercel builds), then parent directory (for local dev)
+  const contentDir = join(process.cwd(), "content", "briefings");
+  const legacyDir = join(process.cwd(), "..", "briefing", "digests");
+  
+  const briefingsDir = existsSync(contentDir) ? contentDir : legacyDir;
   
   if (!existsSync(briefingsDir)) return [];
   
@@ -22,8 +26,18 @@ function getBriefingDates(): string[] {
 }
 
 function getBriefingContent(date: string): { markdown: string; html: string | null } | null {
-  const mdPath = join(process.cwd(), "..", "briefing", "digests", `briefing-${date}.md`);
-  const htmlPath = join(process.cwd(), "..", "briefing", "emails", `briefing-${date}.html`);
+  // Try content directory first (for Vercel builds), then parent directory (for local dev)
+  const contentDir = join(process.cwd(), "content", "briefings");
+  const legacyDir = join(process.cwd(), "..", "briefing");
+  
+  const useContent = existsSync(contentDir);
+  
+  const mdPath = useContent 
+    ? join(contentDir, `briefing-${date}.md`)
+    : join(legacyDir, "digests", `briefing-${date}.md`);
+  const htmlPath = useContent
+    ? join(contentDir, "html", `briefing-${date}.html`)
+    : join(legacyDir, "emails", `briefing-${date}.html`);
   
   if (!existsSync(mdPath)) return null;
   
@@ -35,6 +49,11 @@ function getBriefingContent(date: string): { markdown: string; html: string | nu
 
 export async function generateStaticParams() {
   const dates = getBriefingDates();
+  // Must return at least one param for static export when using dynamic routes
+  // If no briefings found, return a placeholder that will show 404
+  if (dates.length === 0) {
+    return [{ date: 'no-briefings' }];
+  }
   return dates.map(date => ({ date }));
 }
 

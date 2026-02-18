@@ -1,0 +1,303 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-02-11T15:33:31.615Z",
+      "period": {
+        "start": "20260112",
+        "end": "20260211"
+      },
+      "competitors": {
+        "GitHub Copilot": {
+          "articles": [
+            {
+              "article": "GitHub_Copilot",
+              "total": 16384,
+              "dailyAvg": 546,
+              "recentTrend": 653,
+              "weeklyChange": 30.2,
+              "dataPoints": 30
+            }
+          ],
+          "totalViews": 16384,
+          "dailyAvg": 546,
+          "weeklyChange": 30.2,
+          "checkedAt": "2026-02-11T15:33:32.019Z"
+        },
+        "Tabnine": {
+          "articles": [
+            {
+              "article": "Tabnine",
+              "total": 2771,
+              "dailyAvg": 92,
+              "recentTrend": 90,
+              "weeklyChange": -4.6,
+              "dataPoints": 30
+            }
+          ],
+          "totalViews": 2771,
+          "dailyAvg": 92,
+          "weeklyChange": -4.6,
+          "checkedAt": "2026-02-11T15:33:32.366Z"
+        },
+        "Replit": {
+          "articles": [
+            {
+              "article": "Replit",
+              "total": 20145,
+              "dailyAvg": 672,
+              "recentTrend": 582,
+              "weeklyChange": -2.8,
+              "dataPoints": 30
+            }
+          ],
+          "totalViews": 20145,
+          "dailyAvg": 672,
+          "weeklyChange": -2.8,
+          "checkedAt": "2026-02-11T15:33:32.704Z"
+        },
+        "Cursor": {
+          "note": "No Wikipedia article exists",
+          "totalViews": 0,
+          "dailyAvg": 0
+        },
+        "Devin": {
+          "articles": [],
+          "totalViews": 0,
+          "dailyAvg": 0,
+          "weeklyChange": 0,
+          "checkedAt": "2026-02-11T15:33:33.031Z"
+        },
+        "Amazon Q": {
+          "articles": [
+            {
+              "article": "Amazon_Q",
+              "total": 2214,
+              "dailyAvg": 74,
+              "recentTrend": 87,
+              "weeklyChange": 27.1,
+              "dataPoints": 30
+            }
+          ],
+          "totalViews": 2214,
+          "dailyAvg": 74,
+          "weeklyChange": 27.1,
+          "checkedAt": "2026-02-11T15:33:33.372Z"
+        },
+        "Codeium": {
+          "articles": [
+            {
+              "article": "Codeium",
+              "total": 1,
+              "dailyAvg": 1,
+              "recentTrend": 0,
+              "weeklyChange": 0,
+              "dataPoints": 1
+            }
+          ],
+          "totalViews": 1,
+          "dailyAvg": 1,
+          "weeklyChange": 0,
+          "checkedAt": "2026-02-11T15:33:33.705Z"
+        },
+        "Sourcegraph": {
+          "articles": [
+            {
+              "article": "Sourcegraph",
+              "total": 3883,
+              "dailyAvg": 129,
+              "recentTrend": 169,
+              "weeklyChange": 54.8,
+              "dataPoints": 30
+            }
+          ],
+          "totalViews": 3883,
+          "dailyAvg": 129,
+          "weeklyChange": 54.8,
+          "checkedAt": "2026-02-11T15:33:34.041Z"
+        },
+        "AI Coding (general)": {
+          "articles": [
+            {
+              "article": "GitHub_Copilot",
+              "total": 16384,
+              "dailyAvg": 546,
+              "recentTrend": 653,
+              "weeklyChange": 30.2,
+              "dataPoints": 30
+            },
+            {
+              "article": "Tabnine",
+              "total": 2771,
+              "dailyAvg": 92,
+              "recentTrend": 90,
+              "weeklyChange": -4.6,
+              "dataPoints": 30
+            },
+            {
+              "article": "Codeium",
+              "total": 1,
+              "dailyAvg": 1,
+              "recentTrend": 0,
+              "weeklyChange": 0,
+              "dataPoints": 1
+            }
+          ],
+          "totalViews": 19156,
+          "dailyAvg": 213,
+          "weeklyChange": 8.5,
+          "checkedAt": "2026-02-11T15:33:34.673Z"
+        }
+      }
+    }
+  ],
+  "latest": {
+    "timestamp": "2026-02-11T15:33:31.615Z",
+    "period": {
+      "start": "20260112",
+      "end": "20260211"
+    },
+    "competitors": {
+      "GitHub Copilot": {
+        "articles": [
+          {
+            "article": "GitHub_Copilot",
+            "total": 16384,
+            "dailyAvg": 546,
+            "recentTrend": 653,
+            "weeklyChange": 30.2,
+            "dataPoints": 30
+          }
+        ],
+        "totalViews": 16384,
+        "dailyAvg": 546,
+        "weeklyChange": 30.2,
+        "checkedAt": "2026-02-11T15:33:32.019Z"
+      },
+      "Tabnine": {
+        "articles": [
+          {
+            "article": "Tabnine",
+            "total": 2771,
+            "dailyAvg": 92,
+            "recentTrend": 90,
+            "weeklyChange": -4.6,
+            "dataPoints": 30
+          }
+        ],
+        "totalViews": 2771,
+        "dailyAvg": 92,
+        "weeklyChange": -4.6,
+        "checkedAt": "2026-02-11T15:33:32.366Z"
+      },
+      "Replit": {
+        "articles": [
+          {
+            "article": "Replit",
+            "total": 20145,
+            "dailyAvg": 672,
+            "recentTrend": 582,
+            "weeklyChange": -2.8,
+            "dataPoints": 30
+          }
+        ],
+        "totalViews": 20145,
+        "dailyAvg": 672,
+        "weeklyChange": -2.8,
+        "checkedAt": "2026-02-11T15:33:32.704Z"
+      },
+      "Cursor": {
+        "note": "No Wikipedia article exists",
+        "totalViews": 0,
+        "dailyAvg": 0
+      },
+      "Devin": {
+        "articles": [],
+        "totalViews": 0,
+        "dailyAvg": 0,
+        "weeklyChange": 0,
+        "checkedAt": "2026-02-11T15:33:33.031Z"
+      },
+      "Amazon Q": {
+        "articles": [
+          {
+            "article": "Amazon_Q",
+            "total": 2214,
+            "dailyAvg": 74,
+            "recentTrend": 87,
+            "weeklyChange": 27.1,
+            "dataPoints": 30
+          }
+        ],
+        "totalViews": 2214,
+        "dailyAvg": 74,
+        "weeklyChange": 27.1,
+        "checkedAt": "2026-02-11T15:33:33.372Z"
+      },
+      "Codeium": {
+        "articles": [
+          {
+            "article": "Codeium",
+            "total": 1,
+            "dailyAvg": 1,
+            "recentTrend": 0,
+            "weeklyChange": 0,
+            "dataPoints": 1
+          }
+        ],
+        "totalViews": 1,
+        "dailyAvg": 1,
+        "weeklyChange": 0,
+        "checkedAt": "2026-02-11T15:33:33.705Z"
+      },
+      "Sourcegraph": {
+        "articles": [
+          {
+            "article": "Sourcegraph",
+            "total": 3883,
+            "dailyAvg": 129,
+            "recentTrend": 169,
+            "weeklyChange": 54.8,
+            "dataPoints": 30
+          }
+        ],
+        "totalViews": 3883,
+        "dailyAvg": 129,
+        "weeklyChange": 54.8,
+        "checkedAt": "2026-02-11T15:33:34.041Z"
+      },
+      "AI Coding (general)": {
+        "articles": [
+          {
+            "article": "GitHub_Copilot",
+            "total": 16384,
+            "dailyAvg": 546,
+            "recentTrend": 653,
+            "weeklyChange": 30.2,
+            "dataPoints": 30
+          },
+          {
+            "article": "Tabnine",
+            "total": 2771,
+            "dailyAvg": 92,
+            "recentTrend": 90,
+            "weeklyChange": -4.6,
+            "dataPoints": 30
+          },
+          {
+            "article": "Codeium",
+            "total": 1,
+            "dailyAvg": 1,
+            "recentTrend": 0,
+            "weeklyChange": 0,
+            "dataPoints": 1
+          }
+        ],
+        "totalViews": 19156,
+        "dailyAvg": 213,
+        "weeklyChange": 8.5,
+        "checkedAt": "2026-02-11T15:33:34.673Z"
+      }
+    }
+  },
+  "updatedAt": "2026-02-11T15:33:34.673Z"
+}
