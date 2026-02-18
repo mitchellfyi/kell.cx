@@ -3,9 +3,9 @@
   "summary": "AI coding tools market shows continued momentum across all metrics",
   "source": "rule-based",
   "vscode": [
-    "GitHub Copilot leads with 71.4M installs",
-    "Total installs across 12 extensions: 161.0M",
-    "Fastest growing: Continue - open-source AI code agent (+7.4% this month)"
+    "GitHub Copilot leads with 71.5M installs",
+    "Total installs across 12 extensions: 161.5M",
+    "Fastest growing: Continue - open-source AI code agent (+7.6% this month)"
   ],
   "releases": [
     "20 releases across tracked tools this week",
@@ -13,13 +13,13 @@
     "Most active: LiteLLM (5 releases)"
   ],
   "news": [
-    "209 AI-related stories on HN (3K total points)",
-    "Top discussion: \"Claude Sonnet 4.6\" (1008 pts)",
+    "210 AI-related stories on HN (4K total points)",
+    "Top discussion: \"Claude Sonnet 4.6\" (1022 pts)",
     "8 stories with 100+ points"
   ],
   "market": [
     "AI coding tools market continues rapid growth",
     "30 new AI repos gaining traction this week"
   ],
-  "generatedAt": "2026-02-18T06:18:19.628Z"
+  "generatedAt": "2026-02-18T06:40:35.938Z"
 }

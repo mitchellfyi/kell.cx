@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-18T06:18:19.038Z",
+  "scraped_at": "2026-02-18T06:40:06.485Z",
   "source": "huggingface.co",
   "summary": {
     "total_top_models": 30,
@@ -180,7 +180,7 @@
       "type": "model",
       "pipeline": "text-generation",
       "downloads": 5837840,
-      "likes": 5466,
+      "likes": 5467,
       "tags": [
         "transformers",
         "safetensors",
@@ -1350,164 +1350,164 @@
   ],
   "recent_models_24h": [
     {
-      "id": "mrchrisrenton/medgemma-1.5-4b-annotation-lora",
+      "id": "JingweiNi/ue_manager_Qwen3-32B_hs_5e_on_stqa",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-18T06:17:59.000Z",
-      "url": "https://huggingface.co/mrchrisrenton/medgemma-1.5-4b-annotation-lora"
-    },
-    {
-      "id": "isumenuka/medgemma-4b-nail-clinical",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-18T06:17:57.000Z",
-      "url": "https://huggingface.co/isumenuka/medgemma-4b-nail-clinical"
-    },
-    {
-      "id": "mradermacher/Apriel-Nemotron-15b-Thinker-Magic_decensored-v2_MPOA-i1-GGUF",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-18T06:17:56.000Z",
-      "url": "https://huggingface.co/mradermacher/Apriel-Nemotron-15b-Thinker-Magic_decensored-v2_MPOA-i1-GGUF"
-    },
-    {
-      "id": "15luna/whisper-small-lora",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-18T06:17:43.000Z",
-      "url": "https://huggingface.co/15luna/whisper-small-lora"
-    },
-    {
-      "id": "tussiiiii/Qwen3-4B-AgentBench-Merged",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-18T06:17:33.000Z",
-      "url": "https://huggingface.co/tussiiiii/Qwen3-4B-AgentBench-Merged"
-    },
-    {
-      "id": "JingweiNi/ue_manager_Qwen3-32B_hs_5e_on_gsm8k",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-18T06:17:22.000Z",
-      "url": "https://huggingface.co/JingweiNi/ue_manager_Qwen3-32B_hs_5e_on_gsm8k"
-    },
-    {
-      "id": "mradermacher/Jackdaw-3-Ministral-GGUF",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-18T06:17:14.000Z",
-      "url": "https://huggingface.co/mradermacher/Jackdaw-3-Ministral-GGUF"
-    },
-    {
-      "id": "blackfxs/eVpYzrtF",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-18T06:17:08.000Z",
-      "url": "https://huggingface.co/blackfxs/eVpYzrtF"
-    },
-    {
-      "id": "albertuspekerti/whispertiny_buah25sil_v1_0",
-      "pipeline": "unknown",
-      "downloads": 13,
-      "likes": 0,
-      "lastModified": "2026-02-18T06:17:04.000Z",
-      "url": "https://huggingface.co/albertuspekerti/whispertiny_buah25sil_v1_0"
-    },
-    {
-      "id": "FIRSTACCOUNT69/import-test-2",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-18T06:16:45.000Z",
-      "url": "https://huggingface.co/FIRSTACCOUNT69/import-test-2"
-    },
-    {
-      "id": "FIRSTACCOUNT69/import-test",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-18T06:16:29.000Z",
-      "url": "https://huggingface.co/FIRSTACCOUNT69/import-test"
-    },
-    {
-      "id": "nkkbr/whisper-large-v3-zatoichi-ja-JDG_ver_20260217_lr_1.4e-5",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-18T06:16:25.000Z",
-      "url": "https://huggingface.co/nkkbr/whisper-large-v3-zatoichi-ja-JDG_ver_20260217_lr_1.4e-5"
-    },
-    {
-      "id": "dariushh/Comic_Flux2_V1_lora",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-18T06:16:16.000Z",
-      "url": "https://huggingface.co/dariushh/Comic_Flux2_V1_lora"
-    },
-    {
-      "id": "yilunhao/algsteer",
-      "pipeline": "text-generation",
-      "downloads": 580,
-      "likes": 1,
-      "lastModified": "2026-02-18T06:16:11.000Z",
-      "url": "https://huggingface.co/yilunhao/algsteer"
-    },
-    {
-      "id": "mradermacher/LEMA-llama-2-7b-i1-GGUF",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-18T06:16:10.000Z",
-      "url": "https://huggingface.co/mradermacher/LEMA-llama-2-7b-i1-GGUF"
-    },
-    {
-      "id": "FIRSTACCOUNT69/discussion-test",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-18T06:15:54.000Z",
-      "url": "https://huggingface.co/FIRSTACCOUNT69/discussion-test"
+      "lastModified": "2026-02-18T06:39:50.000Z",
+      "url": "https://huggingface.co/JingweiNi/ue_manager_Qwen3-32B_hs_5e_on_stqa"
     },
     {
       "id": "johnnyboycurtis/ModernBERT-small-v2",
       "pipeline": "sentence-similarity",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-18T06:15:49.000Z",
+      "lastModified": "2026-02-18T06:39:44.000Z",
       "url": "https://huggingface.co/johnnyboycurtis/ModernBERT-small-v2"
     },
     {
-      "id": "Meilol/Taeha",
+      "id": "snoovn20267/QgvXBJGz8aMlZ1Dd",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-18T06:15:28.000Z",
-      "url": "https://huggingface.co/Meilol/Taeha"
+      "lastModified": "2026-02-18T06:39:35.000Z",
+      "url": "https://huggingface.co/snoovn20267/QgvXBJGz8aMlZ1Dd"
     },
     {
-      "id": "mradermacher/Ostrich-32B-Qwen3-260217-GGUF",
+      "id": "snoovn20267/OtnqrUEOZu4SeHo6",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-18T06:15:27.000Z",
-      "url": "https://huggingface.co/mradermacher/Ostrich-32B-Qwen3-260217-GGUF"
+      "lastModified": "2026-02-18T06:39:33.000Z",
+      "url": "https://huggingface.co/snoovn20267/OtnqrUEOZu4SeHo6"
     },
     {
-      "id": "a-b-15/DCGAN",
+      "id": "nebulaisgreen/nebu-text-classifier",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-18T06:15:17.000Z",
-      "url": "https://huggingface.co/a-b-15/DCGAN"
+      "lastModified": "2026-02-18T06:39:31.000Z",
+      "url": "https://huggingface.co/nebulaisgreen/nebu-text-classifier"
+    },
+    {
+      "id": "Wwayu/Qwen3-235B-A22B-abliterated-mlx-2Bit",
+      "pipeline": "unknown",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-18T06:39:31.000Z",
+      "url": "https://huggingface.co/Wwayu/Qwen3-235B-A22B-abliterated-mlx-2Bit"
+    },
+    {
+      "id": "mradermacher/Mira-v1.25.1-27B-DPO-GGUF",
+      "pipeline": "unknown",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-18T06:39:29.000Z",
+      "url": "https://huggingface.co/mradermacher/Mira-v1.25.1-27B-DPO-GGUF"
+    },
+    {
+      "id": "duongve/Testing_model_data",
+      "pipeline": "unknown",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-18T06:39:25.000Z",
+      "url": "https://huggingface.co/duongve/Testing_model_data"
+    },
+    {
+      "id": "snoovn20267/uOnpzgLL553U6mpK",
+      "pipeline": "unknown",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-18T06:39:24.000Z",
+      "url": "https://huggingface.co/snoovn20267/uOnpzgLL553U6mpK"
+    },
+    {
+      "id": "DewiBrynJones/whisper-large-v2-ft-cy-2601",
+      "pipeline": "automatic-speech-recognition",
+      "downloads": 106,
+      "likes": 0,
+      "lastModified": "2026-02-18T06:39:22.000Z",
+      "url": "https://huggingface.co/DewiBrynJones/whisper-large-v2-ft-cy-2601"
+    },
+    {
+      "id": "branague01/S3HzNYD3",
+      "pipeline": "unknown",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-18T06:39:20.000Z",
+      "url": "https://huggingface.co/branague01/S3HzNYD3"
+    },
+    {
+      "id": "yilunhao/algsteer",
+      "pipeline": "text-generation",
+      "downloads": 580,
+      "likes": 1,
+      "lastModified": "2026-02-18T06:39:10.000Z",
+      "url": "https://huggingface.co/yilunhao/algsteer"
+    },
+    {
+      "id": "JingweiNi/ue_manager_Qwen3-32B_hs_5e_on_calendar",
+      "pipeline": "unknown",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-18T06:39:10.000Z",
+      "url": "https://huggingface.co/JingweiNi/ue_manager_Qwen3-32B_hs_5e_on_calendar"
+    },
+    {
+      "id": "mradermacher/LEMA-llama-2-7b-i1-GGUF",
+      "pipeline": "unknown",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-18T06:39:09.000Z",
+      "url": "https://huggingface.co/mradermacher/LEMA-llama-2-7b-i1-GGUF"
+    },
+    {
+      "id": "abduazizovanozima7/uzbek-trocr-final-v2",
+      "pipeline": "image-text-to-text",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-18T06:39:05.000Z",
+      "url": "https://huggingface.co/abduazizovanozima7/uzbek-trocr-final-v2"
+    },
+    {
+      "id": "Kush0610/whisper-small-hi-uncurated-reverse-mft-1-1-1",
+      "pipeline": "automatic-speech-recognition",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-18T06:38:58.000Z",
+      "url": "https://huggingface.co/Kush0610/whisper-small-hi-uncurated-reverse-mft-1-1-1"
+    },
+    {
+      "id": "rcdoug03/sd35-lora-none-none-Berthe_Morisot",
+      "pipeline": "text-to-image",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-18T06:38:57.000Z",
+      "url": "https://huggingface.co/rcdoug03/sd35-lora-none-none-Berthe_Morisot"
+    },
+    {
+      "id": "Aki-1010/llm-course-advanced-2025-main-v20260218-1346",
+      "pipeline": "text-generation",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-18T06:38:36.000Z",
+      "url": "https://huggingface.co/Aki-1010/llm-course-advanced-2025-main-v20260218-1346"
+    },
+    {
+      "id": "ldeath131416/crypto",
+      "pipeline": "unknown",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-18T06:38:23.000Z",
+      "url": "https://huggingface.co/ldeath131416/crypto"
+    },
+    {
+      "id": "Rudi193/Jane",
+      "pipeline": "unknown",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-18T06:38:12.000Z",
+      "url": "https://huggingface.co/Rudi193/Jane"
     }
   ]
 }

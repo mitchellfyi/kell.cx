@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-15T06:04:02.805Z",
+  "timestamp": "2026-02-18T06:04:14.917Z",
   "ios": [
     {
       "competitor": "GitHub",
@@ -9,8 +9,8 @@
       "appId": 1477376905,
       "bundleId": "com.github.stormbreaker.prod",
       "price": "Free",
-      "rating": 4.82303,
-      "ratingCount": 29485,
+      "rating": 4.82319,
+      "ratingCount": 29591,
       "version": "1.245.1",
       "releaseDate": "2020-03-17T07:00:00Z",
       "currentVersionReleaseDate": "2026-02-11T22:26:18Z",
@@ -27,8 +27,8 @@
       "appId": 1614022293,
       "bundleId": "com.replit.app",
       "price": "Free",
-      "rating": 4.68546,
-      "ratingCount": 11522,
+      "rating": 4.68656,
+      "ratingCount": 11814,
       "version": "2.170.0",
       "releaseDate": "2022-10-18T07:00:00Z",
       "currentVersionReleaseDate": "2026-01-08T05:33:44Z",
@@ -45,15 +45,15 @@
       "appId": 6448311069,
       "bundleId": "com.openai.chat",
       "price": "Free",
-      "rating": 4.85613,
-      "ratingCount": 5621672,
-      "version": "1.2026.034",
+      "rating": 4.85579,
+      "ratingCount": 5695900,
+      "version": "1.2026.041",
       "releaseDate": "2023-05-18T07:00:00Z",
-      "currentVersionReleaseDate": "2026-02-12T16:59:29Z",
+      "currentVersionReleaseDate": "2026-02-17T20:34:05Z",
       "description": "Introducing ChatGPT for iOS: OpenAI’s latest advancements at your fingertips.\n\nThis official app is free, syncs your history across devices, and brings you the latest from OpenAI, including the new im...",
       "url": "https://apps.apple.com/us/app/chatgpt/id6448311069?uo=4",
-      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/71/ff/6c/71ff6c58-6537-dea4-40b3-17704932c02f/AppIcon-0-0-1x_U007epad-0-0-0-1-0-P3-85-220.png/100x100bb.jpg",
-      "size": "151 MB"
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e4/1a/2d/e41a2d45-a488-19db-f05c-8c5ccec48e7f/AppIcon-0-0-1x_U007epad-0-0-0-1-0-P3-85-220.png/100x100bb.jpg",
+      "size": "153 MB"
     },
     {
       "competitor": "AWS Console",
@@ -63,8 +63,8 @@
       "appId": 580990573,
       "bundleId": "com.amazonaws.mobileConsole",
       "price": "Free",
-      "rating": 4.71969,
-      "ratingCount": 5644,
+      "rating": 4.71971,
+      "ratingCount": 5648,
       "version": "3.15.0",
       "releaseDate": "2013-02-26T00:23:15Z",
       "currentVersionReleaseDate": "2026-02-09T21:34:52Z",
@@ -81,8 +81,8 @@
       "appId": 1133960732,
       "bundleId": "com.getmimo.mimo",
       "price": "Free",
-      "rating": 4.85374,
-      "ratingCount": 104863,
+      "rating": 4.85384,
+      "ratingCount": 105014,
       "version": "12.0.0",
       "releaseDate": "2016-08-22T06:17:39Z",
       "currentVersionReleaseDate": "2026-02-10T07:45:16Z",
@@ -98,7 +98,7 @@
       "found": true,
       "packageName": "com.replit.app",
       "name": "Unknown",
-      "rating": 4.5,
+      "rating": 4.6,
       "installs": "Unknown",
       "url": "https://play.google.com/store/apps/details?id=com.replit.app",
       "platform": "android"
@@ -118,9 +118,9 @@
     "iosAppsFound": 5,
     "androidAppsFound": 2,
     "highestRatedIos": "ChatGPT: 4.9★",
-    "mostReviewsIos": "ChatGPT: 5,621,672 reviews"
+    "mostReviewsIos": "ChatGPT: 5,695,900 reviews"
   },
   "changes": [
-    "💬 GitHub iOS: +114 new reviews"
+    "📲 ChatGPT iOS updated: v1.2026.034 → v1.2026.041"
   ]
 }

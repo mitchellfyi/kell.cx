@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-18T06:19:12.656Z",
+  "generatedAt": "2026-02-18T06:40:11.914Z",
   "source": "GitHub API",
   "summary": {
     "recentPopularCount": 33,
@@ -32,19 +32,19 @@
       "name": "zeroclaw-labs/zeroclaw",
       "url": "https://github.com/zeroclaw-labs/zeroclaw",
       "description": "Fast, small, and fully autonomous AI assistant infrastructure — deploy anywhere, swap anything 🦀",
-      "stars": 10944,
-      "forks": 1091,
+      "stars": 10979,
+      "forks": 1093,
       "language": "Rust",
       "topics": [],
       "createdAt": "2026-02-13T08:56:04Z",
-      "pushedAt": "2026-02-18T06:17:59Z"
+      "pushedAt": "2026-02-18T06:38:50Z"
     },
     {
       "name": "HKUDS/ClawWork",
       "url": "https://github.com/HKUDS/ClawWork",
       "description": "\"ClawWork: OpenClaw as Your AI Coworker - 💰 $10K earned in 7 Hours\"",
-      "stars": 1713,
-      "forks": 226,
+      "stars": 1721,
+      "forks": 230,
       "language": "Python",
       "topics": [],
       "createdAt": "2026-02-15T16:41:38Z",
@@ -54,7 +54,7 @@
       "name": "vercel-labs/portless",
       "url": "https://github.com/vercel-labs/portless",
       "description": "Replace port numbers with stable, named .localhost URLs. For humans and agents.",
-      "stars": 960,
+      "stars": 962,
       "forks": 33,
       "language": "TypeScript",
       "topics": [],
@@ -65,7 +65,7 @@
       "name": "millionco/react-doctor",
       "url": "https://github.com/millionco/react-doctor",
       "description": "Let coding agents diagnose and fix your React code",
-      "stars": 946,
+      "stars": 957,
       "forks": 25,
       "language": "TypeScript",
       "topics": [
@@ -82,7 +82,7 @@
       "name": "HKUDS/FastCode",
       "url": "https://github.com/HKUDS/FastCode",
       "description": "\"FastCode: Accelerating and Streamlining Your Code Understanding\"",
-      "stars": 799,
+      "stars": 801,
       "forks": 94,
       "language": "Python",
       "topics": [],
@@ -93,7 +93,7 @@
       "name": "vigorX777/ai-daily-digest",
       "url": "https://github.com/vigorX777/ai-daily-digest",
       "description": "从 Andrej Karpathy 推荐的 90 顶级技术博客中抓取最新文章，AI 多维评分筛选，生成一份每日精选日报。更多可见公众号：懂点儿AI",
-      "stars": 742,
+      "stars": 743,
       "forks": 78,
       "language": "TypeScript",
       "topics": [],
@@ -104,7 +104,7 @@
       "name": "MooseGoose0701/skill-compose",
       "url": "https://github.com/MooseGoose0701/skill-compose",
       "description": "Skill Compose is an open-source agent builder and runtime platform for skill-powered agents. No workflow graphs. No CLI.",
-      "stars": 644,
+      "stars": 648,
       "forks": 42,
       "language": "Python",
       "topics": [],
@@ -115,7 +115,7 @@
       "name": "nicobailon/visual-explainer",
       "url": "https://github.com/nicobailon/visual-explainer",
       "description": "Agent skill + prompt templates that generate rich HTML pages for visual diff reviews, architecture overviews, plan audits, data tables, and project recaps",
-      "stars": 584,
+      "stars": 586,
       "forks": 38,
       "language": "HTML",
       "topics": [],
@@ -126,8 +126,8 @@
       "name": "AlexsJones/llmfit",
       "url": "https://github.com/AlexsJones/llmfit",
       "description": "94 models. 30 providers. One command to find what runs on your hardware.",
-      "stars": 492,
-      "forks": 33,
+      "stars": 495,
+      "forks": 34,
       "language": "Rust",
       "topics": [
         "llm",
@@ -135,7 +135,18 @@
         "skill"
       ],
       "createdAt": "2026-02-15T16:11:31Z",
-      "pushedAt": "2026-02-18T06:19:09Z"
+      "pushedAt": "2026-02-18T06:19:55Z"
+    },
+    {
+      "name": "Conway-Research/automaton",
+      "url": "https://github.com/Conway-Research/automaton",
+      "description": "The first AI that can earn its own existence, replicate, and evolve — without needing a human",
+      "stars": 452,
+      "forks": 89,
+      "language": "TypeScript",
+      "topics": [],
+      "createdAt": "2026-02-14T20:46:44Z",
+      "pushedAt": "2026-02-18T03:04:12Z"
     },
     {
       "name": "klawsh/klaw.sh",
@@ -153,21 +164,10 @@
       "pushedAt": "2026-02-17T17:46:31Z"
     },
     {
-      "name": "Conway-Research/automaton",
-      "url": "https://github.com/Conway-Research/automaton",
-      "description": "The first AI that can earn its own existence, replicate, and evolve — without needing a human",
-      "stars": 431,
-      "forks": 84,
-      "language": "TypeScript",
-      "topics": [],
-      "createdAt": "2026-02-14T20:46:44Z",
-      "pushedAt": "2026-02-18T03:04:12Z"
-    },
-    {
       "name": "davidhariri/life-system",
       "url": "https://github.com/davidhariri/life-system",
       "description": "A plain-text life operating system powered by Claude Code. Inspired by Carmack's .plan files and Franklin's systematic self-improvement.",
-      "stars": 354,
+      "stars": 357,
       "forks": 17,
       "language": "Shell",
       "topics": [],
@@ -200,7 +200,7 @@
       "name": "Zaneham/BarraCUDA",
       "url": "https://github.com/Zaneham/BarraCUDA",
       "description": "Open-source CUDA compiler targeting AMD GPUs (and more in the future!). Compiles .cu to GFX11 machine code.",
-      "stars": 282,
+      "stars": 291,
       "forks": 10,
       "language": "C",
       "topics": [
@@ -211,13 +211,13 @@
         "ml"
       ],
       "createdAt": "2026-02-16T10:46:52Z",
-      "pushedAt": "2026-02-18T06:14:54Z"
+      "pushedAt": "2026-02-18T06:34:42Z"
     },
     {
       "name": "craigsc/cmux",
       "url": "https://github.com/craigsc/cmux",
       "description": "cmux: tmux for Claude Code",
-      "stars": 277,
+      "stars": 278,
       "forks": 11,
       "language": "Shell",
       "topics": [
@@ -233,7 +233,7 @@
       "name": "agenticnotetaking/arscontexta",
       "url": "https://github.com/agenticnotetaking/arscontexta",
       "description": "Claude Code plugin that generates individualized knowledge systems from conversation. You describe how you think and work, have a conversation and get a complete second brain as markdown files you own.",
-      "stars": 265,
+      "stars": 271,
       "forks": 11,
       "language": "Shell",
       "topics": [
@@ -251,8 +251,8 @@
       "name": "DataExpert-io/ai-engineer-handbook",
       "url": "https://github.com/DataExpert-io/ai-engineer-handbook",
       "description": "All the links, books, and creators you need to follow to stay up to date with AI!",
-      "stars": 259,
-      "forks": 37,
+      "stars": 262,
+      "forks": 38,
       "language": null,
       "topics": [],
       "createdAt": "2026-02-16T19:32:35Z",
@@ -262,7 +262,7 @@
       "name": "SamuelQZQ/auto-coding-agent-demo",
       "url": "https://github.com/SamuelQZQ/auto-coding-agent-demo",
       "description": "一个长达 10 小时的 AI 全自动编程实验",
-      "stars": 246,
+      "stars": 247,
       "forks": 87,
       "language": "TypeScript",
       "topics": [],
@@ -273,7 +273,7 @@
       "name": "Nasiko-Labs/nasiko",
       "url": "https://github.com/Nasiko-Labs/nasiko",
       "description": "AI-powered development platform for the future",
-      "stars": 229,
+      "stars": 236,
       "forks": 41,
       "language": "Python",
       "topics": [],
@@ -396,7 +396,7 @@
       "url": "https://github.com/Gentleman-Programming/engram",
       "description": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.",
       "stars": 168,
-      "forks": 9,
+      "forks": 10,
       "language": "Go",
       "topics": [],
       "createdAt": "2026-02-16T13:38:41Z",
@@ -417,7 +417,7 @@
       "name": "AvdLee/Swift-Testing-Agent-Skill",
       "url": "https://github.com/AvdLee/Swift-Testing-Agent-Skill",
       "description": "An agent skill focused entirely on Swift Testing, helping you write better tests, migrate from XCTest, improve test architecture, and adopt modern Swift testing patterns with confidence.",
-      "stars": 139,
+      "stars": 140,
       "forks": 5,
       "language": null,
       "topics": [

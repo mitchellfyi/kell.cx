@@ -1,51 +1,58 @@
 {
   "GitHub.copilot": {
-    "installs": 71341231,
+    "installs": 71458280,
     "averageRating": "4.11",
     "ratingCount": 1044,
     "latestVersion": "1.388.0",
-    "lastChecked": "2026-02-15T06:03:46.365Z"
+    "lastChecked": "2026-02-18T06:03:58.156Z"
+  },
+  "GitHub.copilot-chat": {
+    "installs": 61738662,
+    "averageRating": "3.59",
+    "ratingCount": 223,
+    "latestVersion": "0.38.2026021801",
+    "lastChecked": "2026-02-18T06:03:58.157Z"
   },
   "Codeium.codeium": {
-    "installs": 3462978,
+    "installs": 3471194,
     "averageRating": "4.76",
     "ratingCount": 1455,
     "latestVersion": "1.49.2",
-    "lastChecked": "2026-02-15T06:03:46.365Z"
+    "lastChecked": "2026-02-18T06:03:58.157Z"
   },
   "TabNine.tabnine-vscode": {
-    "installs": 9476191,
+    "installs": 9478711,
     "averageRating": "4.03",
     "ratingCount": 614,
     "latestVersion": "3.335.0",
-    "lastChecked": "2026-02-15T06:03:46.365Z"
+    "lastChecked": "2026-02-18T06:03:58.157Z"
   },
   "AmazonWebServices.amazon-q-vscode": {
-    "installs": 1505486,
+    "installs": 1510729,
     "averageRating": "4.11",
     "ratingCount": 47,
-    "latestVersion": "1.109.0",
-    "lastChecked": "2026-02-15T06:03:46.366Z"
+    "latestVersion": "1.110.0",
+    "lastChecked": "2026-02-18T06:03:58.157Z"
   },
   "sourcegraph.cody-ai": {
-    "installs": 797458,
+    "installs": 798496,
     "averageRating": "3.98",
     "ratingCount": 149,
     "latestVersion": "1.142.0",
-    "lastChecked": "2026-02-15T06:03:46.366Z"
+    "lastChecked": "2026-02-18T06:03:58.157Z"
   },
   "Continue.continue": {
-    "installs": 2141188,
+    "installs": 2159191,
     "averageRating": "3.76",
-    "ratingCount": 121,
-    "latestVersion": "1.3.31",
-    "lastChecked": "2026-02-15T06:03:46.366Z"
+    "ratingCount": 123,
+    "latestVersion": "1.3.32",
+    "lastChecked": "2026-02-18T06:03:58.157Z"
   },
   "supermaven.supermaven": {
-    "installs": 360506,
+    "installs": 361248,
     "averageRating": "3.77",
     "ratingCount": 44,
     "latestVersion": "1.1.12",
-    "lastChecked": "2026-02-15T06:03:46.366Z"
+    "lastChecked": "2026-02-18T06:03:58.157Z"
   }
 }

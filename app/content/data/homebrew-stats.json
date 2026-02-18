@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-15T09:32:32.527Z",
+  "generatedAt": "2026-02-18T05:29:05.154Z",
   "toolCount": 6,
   "tools": [
     {
@@ -9,34 +9,34 @@
       "version": "2.86.0",
       "description": "GitHub command-line tool",
       "homepage": "https://cli.github.com/",
-      "installs30d": 238461,
-      "installs90d": 517953,
-      "installs365d": 1926879,
-      "recentMomentum": 138
+      "installs30d": 241947,
+      "installs90d": 522927,
+      "installs365d": 1939328,
+      "recentMomentum": 139
     },
     {
       "name": "Ollama",
       "formula": "ollama",
       "category": "Local LLM",
-      "version": "0.15.6",
+      "version": "0.16.2",
       "description": "Create, run, and share large language models (LLMs)",
       "homepage": "https://ollama.com/",
-      "installs30d": 53150,
-      "installs90d": 110057,
-      "installs365d": 355318,
-      "recentMomentum": 145
+      "installs30d": 52248,
+      "installs90d": 112135,
+      "installs365d": 357220,
+      "recentMomentum": 140
     },
     {
       "name": "glab",
       "formula": "glab",
       "category": "Dev Tool",
-      "version": "1.85.1",
+      "version": "1.85.3",
       "description": "Open-source GitLab command-line tool",
       "homepage": "https://gitlab.com/gitlab-org/cli",
-      "installs30d": 25618,
-      "installs90d": 54928,
-      "installs365d": 177350,
-      "recentMomentum": 140
+      "installs30d": 30783,
+      "installs90d": 59575,
+      "installs365d": 181705,
+      "recentMomentum": 155
     },
     {
       "name": "llm",
@@ -45,10 +45,10 @@
       "version": "0.28",
       "description": "Access large language models from the command-line",
       "homepage": "https://llm.datasette.io/",
-      "installs30d": 1065,
-      "installs90d": 3735,
-      "installs365d": 16283,
-      "recentMomentum": 86
+      "installs30d": 1043,
+      "installs90d": 3721,
+      "installs365d": 16016,
+      "recentMomentum": 84
     },
     {
       "name": "Aider",
@@ -57,10 +57,10 @@
       "version": "0.86.1",
       "description": "AI pair programming in your terminal",
       "homepage": "https://aider.chat/",
-      "installs30d": 597,
-      "installs90d": 1947,
-      "installs365d": 19339,
-      "recentMomentum": 92
+      "installs30d": 610,
+      "installs90d": 1900,
+      "installs365d": 19290,
+      "recentMomentum": 96
     },
     {
       "name": "Fabric",
@@ -69,10 +69,10 @@
       "version": "3.2.2",
       "description": "Library and command-line tool for SSH",
       "homepage": "https://www.fabfile.org/",
-      "installs30d": 123,
-      "installs90d": 345,
-      "installs365d": 1233,
-      "recentMomentum": 107
+      "installs30d": 117,
+      "installs90d": 349,
+      "installs365d": 1223,
+      "recentMomentum": 101
     }
   ],
   "errors": [
@@ -83,10 +83,10 @@
     "sgpt: Not found on Homebrew"
   ],
   "summary": {
-    "total30d": 319014,
-    "total90d": 688965,
-    "total365d": 2496402,
+    "total30d": 326748,
+    "total90d": 700607,
+    "total365d": 2514782,
     "topByInstalls": "gh",
-    "fastestGrowing": "Ollama"
+    "fastestGrowing": "glab"
   }
 }

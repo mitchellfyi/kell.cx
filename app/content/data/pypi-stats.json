@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-15T09:32:28.223Z",
-  "packageCount": 4,
+  "generatedAt": "2026-02-18T05:28:59.551Z",
+  "packageCount": 8,
   "packages": [
     {
       "package": "openai",
@@ -8,29 +8,69 @@
       "category": "llm-sdk",
       "version": "2.21.0",
       "summary": "The official Python library for the openai API",
-      "lastDay": 4144886,
-      "lastWeek": 41706935,
-      "lastMonth": 154197931
+      "lastDay": 6430194,
+      "lastWeek": 40064582,
+      "lastMonth": 159287520
     },
     {
-      "package": "anthropic",
-      "tool": "Anthropic SDK",
-      "category": "llm-sdk",
-      "version": "0.79.0",
-      "summary": "The official Python library for the anthropic API",
-      "lastDay": 1103914,
-      "lastWeek": 13062458,
-      "lastMonth": 47433928
-    },
-    {
-      "package": "dspy-ai",
-      "tool": "DSPy",
+      "package": "pydantic-ai",
+      "tool": "Pydantic AI",
       "category": "framework",
-      "version": "3.1.3",
-      "summary": "DSPy",
-      "lastDay": 27992,
-      "lastWeek": 309211,
-      "lastMonth": 1151121
+      "version": "1.61.0",
+      "summary": "Agent Framework / shim to use Pydantic with LLMs",
+      "lastDay": 456700,
+      "lastWeek": 3054611,
+      "lastMonth": 10968205
+    },
+    {
+      "package": "instructor",
+      "tool": "Instructor",
+      "category": "framework",
+      "version": "1.14.5",
+      "summary": "structured outputs for llm",
+      "lastDay": 327565,
+      "lastWeek": 1944446,
+      "lastMonth": 8792196
+    },
+    {
+      "package": "llama-index",
+      "tool": "LlamaIndex",
+      "category": "framework",
+      "version": "0.14.14",
+      "summary": "Interface between LLMs and your data",
+      "lastDay": 380537,
+      "lastWeek": 2186227,
+      "lastMonth": 8103601
+    },
+    {
+      "package": "crewai",
+      "tool": "CrewAI",
+      "category": "agents",
+      "version": "1.9.3",
+      "summary": "Cutting-edge framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
+      "lastDay": 188262,
+      "lastWeek": 1115589,
+      "lastMonth": 5095033
+    },
+    {
+      "package": "aider-chat",
+      "tool": "Aider",
+      "category": "ai-coding",
+      "version": "0.86.2",
+      "summary": "Aider is AI pair programming in your terminal",
+      "lastDay": 22839,
+      "lastWeek": 152945,
+      "lastMonth": 553918
+    },
+    {
+      "package": "aider-install",
+      "tool": "Aider",
+      "category": "ai-coding",
+      "version": "0.2.0",
+      "summary": "Installer for the aider AI pair programming CLI tool.",
+      "lastDay": 1035,
+      "lastWeek": 6867,
+      "lastMonth": 28304
     },
     {
       "package": "mentat",
@@ -38,22 +78,42 @@
       "category": "ai-coding",
       "version": "1.0.19",
       "summary": "AI coding assistant on your command line",
-      "lastDay": 4,
-      "lastWeek": 249,
-      "lastMonth": 545
+      "lastDay": 28,
+      "lastWeek": 208,
+      "lastMonth": 556
     }
   ],
   "byCategory": {
     "ai-coding": [
+      {
+        "package": "aider-chat",
+        "tool": "Aider",
+        "category": "ai-coding",
+        "version": "0.86.2",
+        "summary": "Aider is AI pair programming in your terminal",
+        "lastDay": 22839,
+        "lastWeek": 152945,
+        "lastMonth": 553918
+      },
+      {
+        "package": "aider-install",
+        "tool": "Aider",
+        "category": "ai-coding",
+        "version": "0.2.0",
+        "summary": "Installer for the aider AI pair programming CLI tool.",
+        "lastDay": 1035,
+        "lastWeek": 6867,
+        "lastMonth": 28304
+      },
       {
         "package": "mentat",
         "tool": "Mentat",
         "category": "ai-coding",
         "version": "1.0.19",
         "summary": "AI coding assistant on your command line",
-        "lastDay": 4,
-        "lastWeek": 249,
-        "lastMonth": 545
+        "lastDay": 28,
+        "lastWeek": 208,
+        "lastMonth": 556
       }
     ],
     "llm-sdk": [
@@ -63,52 +123,69 @@
         "category": "llm-sdk",
         "version": "2.21.0",
         "summary": "The official Python library for the openai API",
-        "lastDay": 4144886,
-        "lastWeek": 41706935,
-        "lastMonth": 154197931
-      },
-      {
-        "package": "anthropic",
-        "tool": "Anthropic SDK",
-        "category": "llm-sdk",
-        "version": "0.79.0",
-        "summary": "The official Python library for the anthropic API",
-        "lastDay": 1103914,
-        "lastWeek": 13062458,
-        "lastMonth": 47433928
+        "lastDay": 6430194,
+        "lastWeek": 40064582,
+        "lastMonth": 159287520
       }
     ],
     "framework": [
       {
-        "package": "dspy-ai",
-        "tool": "DSPy",
+        "package": "pydantic-ai",
+        "tool": "Pydantic AI",
         "category": "framework",
-        "version": "3.1.3",
-        "summary": "DSPy",
-        "lastDay": 27992,
-        "lastWeek": 309211,
-        "lastMonth": 1151121
+        "version": "1.61.0",
+        "summary": "Agent Framework / shim to use Pydantic with LLMs",
+        "lastDay": 456700,
+        "lastWeek": 3054611,
+        "lastMonth": 10968205
+      },
+      {
+        "package": "instructor",
+        "tool": "Instructor",
+        "category": "framework",
+        "version": "1.14.5",
+        "summary": "structured outputs for llm",
+        "lastDay": 327565,
+        "lastWeek": 1944446,
+        "lastMonth": 8792196
+      },
+      {
+        "package": "llama-index",
+        "tool": "LlamaIndex",
+        "category": "framework",
+        "version": "0.14.14",
+        "summary": "Interface between LLMs and your data",
+        "lastDay": 380537,
+        "lastWeek": 2186227,
+        "lastMonth": 8103601
       }
     ],
-    "agents": []
+    "agents": [
+      {
+        "package": "crewai",
+        "tool": "CrewAI",
+        "category": "agents",
+        "version": "1.9.3",
+        "summary": "Cutting-edge framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
+        "lastDay": 188262,
+        "lastWeek": 1115589,
+        "lastMonth": 5095033
+      }
+    ]
   },
   "summary": {
-    "aiCodingDownloads": 545,
-    "sdkDownloads": 201631859,
-    "frameworkDownloads": 1151121,
-    "totalMonthly": 202783525
+    "aiCodingDownloads": 582778,
+    "sdkDownloads": 159287520,
+    "frameworkDownloads": 27864002,
+    "totalMonthly": 192829333
   },
   "errors": [
-    "aider-chat: No data",
-    "aider-install: No data",
+    "anthropic: No data",
     "langchain: No data",
-    "llama-index: No data",
     "litellm: No data",
-    "pydantic-ai: No data",
-    "instructor: No data",
     "marvin: No data",
+    "dspy-ai: No data",
     "autogen: No data",
-    "crewai: No data",
     "guidance: No data",
     "outlines: No data"
   ]

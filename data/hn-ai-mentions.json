@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-18T06:17:11.063Z",
+  "generatedAt": "2026-02-18T06:39:03.035Z",
   "source": "Hacker News (Algolia API)",
   "timeRange": "24 hours",
   "stories": [
@@ -8,8 +8,8 @@
       "title": "Claude Sonnet 4.6",
       "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
       "author": "adocomplete",
-      "points": 1008,
-      "comments": 892,
+      "points": 1022,
+      "comments": 901,
       "createdAt": "2026-02-17T17:48:52.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47050488",
       "matchedQuery": "Claude"
@@ -30,8 +30,8 @@
       "title": "Thousands of CEOs just admitted AI had no impact on employment or productivity",
       "url": "https://fortune.com/2026/02/17/ai-productivity-paradox-ceo-study-robert-solow-information-technology-age/",
       "author": "virgildotcodes",
-      "points": 314,
-      "comments": 206,
+      "points": 326,
+      "comments": 230,
       "createdAt": "2026-02-18T01:40:52.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47055979",
       "isTopStory": true
@@ -41,8 +41,8 @@
       "title": "Tesla Sales Down 55% UK, 58% Spain, 59% Germany, 81% Netherlands, 93% Norway",
       "url": "https://cleantechnica.com/2026/02/15/tesla-sales-down-tremendously-in-uk-norway-netherlands-germany-spain-sweden-denmark-portugal-switzerland/",
       "author": "whynotmaybe",
-      "points": 179,
-      "comments": 110,
+      "points": 193,
+      "comments": 143,
       "createdAt": "2026-02-17T14:47:26.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47048052",
       "isTopStory": true
@@ -52,7 +52,7 @@
       "title": "Async/Await on the GPU",
       "url": "https://www.vectorware.com/blog/async-await-on-gpu/",
       "author": "Philpax",
-      "points": 177,
+      "points": 179,
       "comments": 51,
       "createdAt": "2026-02-17T16:53:05.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47049628",
@@ -85,7 +85,7 @@
       "title": "Show HN: I taught LLMs to play Magic: The Gathering against each other",
       "url": "https://mage-bench.com/",
       "author": "GregorStocks",
-      "points": 101,
+      "points": 102,
       "comments": 78,
       "createdAt": "2026-02-17T16:22:49.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47049227",
@@ -140,7 +140,7 @@
       "title": "Reverse Engineering Sid Meier's Railroad Tycoon for DOS from 1990",
       "url": "https://www.vogons.org/viewtopic.php?t=105451",
       "author": "LowLevelMahn",
-      "points": 57,
+      "points": 60,
       "comments": 7,
       "createdAt": "2026-02-14T15:17:46.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47015138",
@@ -200,6 +200,17 @@
       "matchedQuery": "Claude"
     },
     {
+      "id": "47018675",
+      "title": "Show HN: Box of Rain - Auto-Layouted ASCII Diagrams",
+      "url": "https://github.com/switz/box-of-rain",
+      "author": "switz",
+      "points": 21,
+      "comments": 11,
+      "createdAt": "2026-02-14T21:42:11.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47018675",
+      "isTopStory": true
+    },
+    {
       "id": "47049984",
       "title": "OpenAI axes exec for \"sexual discrimination\" after she objected GPT erotica plan",
       "url": "https://nypost.com/2026/02/11/business/openai-axes-exec-for-alleged-sexual-discrimination-after-she-objected-to-chatgpt-erotica-plan-report/",
@@ -209,17 +220,6 @@
       "createdAt": "2026-02-17T17:16:24.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47049984",
       "matchedQuery": "ChatGPT"
-    },
-    {
-      "id": "47018675",
-      "title": "Show HN: Box of Rain - Auto-Layouted ASCII Diagrams",
-      "url": "https://github.com/switz/box-of-rain",
-      "author": "switz",
-      "points": 19,
-      "comments": 11,
-      "createdAt": "2026-02-14T21:42:11.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47018675",
-      "isTopStory": true
     },
     {
       "id": "47041285",
@@ -276,6 +276,17 @@
       "matchedQuery": "language model"
     },
     {
+      "id": "47020879",
+      "title": "Quamina and Claude, Case 1",
+      "url": "https://www.tbray.org/ongoing/When/202x/2026/02/06/Q-Plus-C-Ch1",
+      "author": "zdw",
+      "points": 9,
+      "comments": 1,
+      "createdAt": "2026-02-15T03:52:03.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47020879",
+      "isTopStory": true
+    },
+    {
       "id": "47049519",
       "title": "FSQ Spatial Agent and FSQ H3 Hub – an AI agent for geospatial analysis workflows",
       "url": "https://foursquare.com/resources/blog/ad-tech/introducing-fsq-spatial-agent-your-geospatial-ai-analyst/",
@@ -317,17 +328,6 @@
       "createdAt": "2026-02-17T04:56:56.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47043852",
       "matchedQuery": "copilot"
-    },
-    {
-      "id": "47020879",
-      "title": "Quamina and Claude, Case 1",
-      "url": "https://www.tbray.org/ongoing/When/202x/2026/02/06/Q-Plus-C-Ch1",
-      "author": "zdw",
-      "points": 7,
-      "comments": 0,
-      "createdAt": "2026-02-15T03:52:03.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47020879",
-      "isTopStory": true
     },
     {
       "id": "47049307",
@@ -396,6 +396,17 @@
       "matchedQuery": "Anthropic"
     },
     {
+      "id": "47046640",
+      "title": "Anthropic and the Government of Rwanda sign MOU for AI in health and education",
+      "url": "https://www.anthropic.com/news/anthropic-rwanda-mou",
+      "author": "surprisetalk",
+      "points": 6,
+      "comments": 0,
+      "createdAt": "2026-02-17T12:10:16.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47046640",
+      "matchedQuery": "Anthropic"
+    },
+    {
       "id": "47038451",
       "title": "Tadpole the Language for Scraping 0.2.0 – Complex Control Flow, Stealth and More",
       "author": "zachperkitny",
@@ -446,17 +457,6 @@
       "comments": 0,
       "createdAt": "2026-02-17T18:11:51.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47050822",
-      "matchedQuery": "Anthropic"
-    },
-    {
-      "id": "47046640",
-      "title": "Anthropic and the Government of Rwanda sign MOU for AI in health and education",
-      "url": "https://www.anthropic.com/news/anthropic-rwanda-mou",
-      "author": "surprisetalk",
-      "points": 5,
-      "comments": 0,
-      "createdAt": "2026-02-17T12:10:16.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47046640",
       "matchedQuery": "Anthropic"
     },
     {
@@ -690,6 +690,17 @@
       "matchedQuery": "Claude"
     },
     {
+      "id": "47053534",
+      "title": "Show HN: Persistent memory for Claude Code with self-hosted Qdrant and Ollama",
+      "url": "https://github.com/elvismdev/mem0-mcp-selfhosted",
+      "author": "elvismdev",
+      "points": 3,
+      "comments": 0,
+      "createdAt": "2026-02-17T21:21:25.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47053534",
+      "matchedQuery": "Claude"
+    },
+    {
       "id": "47051761",
       "title": "From Claude Code to Figma",
       "url": "https://www.figma.com/blog/introducing-claude-code-to-figma/",
@@ -698,17 +709,6 @@
       "comments": 0,
       "createdAt": "2026-02-17T19:18:33.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47051761",
-      "matchedQuery": "Claude"
-    },
-    {
-      "id": "47047484",
-      "title": "Show HN: Rm-MCP – Give Claude/OpenClaw access to your reMarkable tablet",
-      "url": "https://github.com/wavyrai/rm-mcp",
-      "author": "thijsverreck",
-      "points": 3,
-      "comments": 0,
-      "createdAt": "2026-02-17T13:52:53.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47047484",
       "matchedQuery": "Claude"
     },
     {
@@ -1095,6 +1095,16 @@
       "matchedQuery": "ChatGPT"
     },
     {
+      "id": "47057752",
+      "title": "Anthropic's pricing wall is routing enterprise revenue to OpenAI",
+      "author": "luckygreen",
+      "points": 2,
+      "comments": 0,
+      "createdAt": "2026-02-18T06:08:49.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47057752",
+      "matchedQuery": "ChatGPT"
+    },
+    {
       "id": "47037709",
       "title": "Show HN: AsdPrompt – Vimium-style keyboard navigation for AI chat responses",
       "url": "https://asdprompt.com/",
@@ -1421,17 +1431,6 @@
       "matchedQuery": "agentic"
     },
     {
-      "id": "47031595",
-      "title": "A procedural prompting framework for building and deploying agentic systems",
-      "url": "https://diyclaw.dev/",
-      "author": "kordlessagain",
-      "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-16T06:33:52.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47031595",
-      "matchedQuery": "agentic"
-    },
-    {
       "id": "47051517",
       "title": "Slagent – a self-learning tool for AI coding agents (Claude Code, Codex)",
       "url": "https://github.com/daegwang/self-learning-agent",
@@ -1668,16 +1667,6 @@
       "matchedQuery": "ChatGPT"
     },
     {
-      "id": "47057752",
-      "title": "Anthropic's pricing wall is routing enterprise revenue to OpenAI",
-      "author": "luckygreen",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-18T06:08:49.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47057752",
-      "matchedQuery": "ChatGPT"
-    },
-    {
       "id": "47049841",
       "title": "Show HN: Agent Breadcrumbs – Unified Work Log Across Claude, Codex, OpenClaw",
       "url": "https://github.com/ejcho623/agent-breadcrumbs",
@@ -1895,6 +1884,17 @@
       "matchedQuery": "language model"
     },
     {
+      "id": "47057926",
+      "title": "Show HN: H.e.i.m.d.a.l.l – Telemetry-to-insight pipeline for fleet telemetry",
+      "url": "https://github.com/KarthikSriramGit/H.E.I.M.D.A.L.L",
+      "author": "starksriram",
+      "points": 1,
+      "comments": 0,
+      "createdAt": "2026-02-18T06:35:33.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47057926",
+      "matchedQuery": "language model"
+    },
+    {
       "id": "47035894",
       "title": "Ask HN: In a blind coding test, could you identify an LLM strictly off vibes?",
       "author": "Rperry2174",
@@ -2045,6 +2045,17 @@
       "comments": 0,
       "createdAt": "2026-02-16T17:16:39.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47037580",
+      "matchedQuery": "agentic"
+    },
+    {
+      "id": "47037205",
+      "title": "Architecting AI-ready infrastructure for the agentic era",
+      "url": "https://thenewstack.io/ai-ready-infrastructure/",
+      "author": "dmk",
+      "points": 1,
+      "comments": 0,
+      "createdAt": "2026-02-16T16:46:29.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47037205",
       "matchedQuery": "agentic"
     },
     {
@@ -2279,7 +2290,7 @@
   "byCompany": {
     "Anthropic": {
       "mentions": 10,
-      "totalPoints": 504,
+      "totalPoints": 505,
       "topStory": {
         "title": "Anthropic tries to hide Claude's AI actions. Devs hate it",
         "points": 391,
@@ -2335,8 +2346,8 @@
       "title": "Claude Sonnet 4.6",
       "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
       "author": "adocomplete",
-      "points": 1008,
-      "comments": 892,
+      "points": 1022,
+      "comments": 901,
       "createdAt": "2026-02-17T17:48:52.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47050488",
       "matchedQuery": "Claude"
@@ -2346,8 +2357,8 @@
       "title": "Thousands of CEOs just admitted AI had no impact on employment or productivity",
       "url": "https://fortune.com/2026/02/17/ai-productivity-paradox-ceo-study-robert-solow-information-technology-age/",
       "author": "virgildotcodes",
-      "points": 314,
-      "comments": 206,
+      "points": 326,
+      "comments": 230,
       "createdAt": "2026-02-18T01:40:52.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47055979",
       "isTopStory": true
@@ -2357,8 +2368,8 @@
       "title": "Tesla Sales Down 55% UK, 58% Spain, 59% Germany, 81% Netherlands, 93% Norway",
       "url": "https://cleantechnica.com/2026/02/15/tesla-sales-down-tremendously-in-uk-norway-netherlands-germany-spain-sweden-denmark-portugal-switzerland/",
       "author": "whynotmaybe",
-      "points": 179,
-      "comments": 110,
+      "points": 193,
+      "comments": 143,
       "createdAt": "2026-02-17T14:47:26.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47048052",
       "isTopStory": true
@@ -2368,7 +2379,7 @@
       "title": "Async/Await on the GPU",
       "url": "https://www.vectorware.com/blog/async-await-on-gpu/",
       "author": "Philpax",
-      "points": 177,
+      "points": 179,
       "comments": 51,
       "createdAt": "2026-02-17T16:53:05.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47049628",
@@ -2390,7 +2401,7 @@
       "title": "Show HN: I taught LLMs to play Magic: The Gathering against each other",
       "url": "https://mage-bench.com/",
       "author": "GregorStocks",
-      "points": 101,
+      "points": 102,
       "comments": 78,
       "createdAt": "2026-02-17T16:22:49.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47049227",
@@ -2441,17 +2452,17 @@
     }
   ],
   "summary": {
-    "totalStories": 209,
-    "last24h": 121,
-    "totalPoints": 3497,
-    "totalComments": 1999,
+    "totalStories": 210,
+    "last24h": 122,
+    "totalPoints": 3549,
+    "totalComments": 2066,
     "topStory": {
       "id": "47050488",
       "title": "Claude Sonnet 4.6",
       "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
       "author": "adocomplete",
-      "points": 1008,
-      "comments": 892,
+      "points": 1022,
+      "comments": 901,
       "createdAt": "2026-02-17T17:48:52.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47050488",
       "matchedQuery": "Claude"

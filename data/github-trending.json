@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-18T05:39:25.820Z",
+  "generatedAt": "2026-02-18T06:40:11.914Z",
   "source": "GitHub API",
   "summary": {
     "recentPopularCount": 33,
@@ -32,19 +32,19 @@
       "name": "zeroclaw-labs/zeroclaw",
       "url": "https://github.com/zeroclaw-labs/zeroclaw",
       "description": "Fast, small, and fully autonomous AI assistant infrastructure — deploy anywhere, swap anything 🦀",
-      "stars": 10878,
-      "forks": 1081,
+      "stars": 10979,
+      "forks": 1093,
       "language": "Rust",
       "topics": [],
       "createdAt": "2026-02-13T08:56:04Z",
-      "pushedAt": "2026-02-18T04:57:44Z"
+      "pushedAt": "2026-02-18T06:38:50Z"
     },
     {
       "name": "HKUDS/ClawWork",
       "url": "https://github.com/HKUDS/ClawWork",
       "description": "\"ClawWork: OpenClaw as Your AI Coworker - 💰 $10K earned in 7 Hours\"",
-      "stars": 1698,
-      "forks": 223,
+      "stars": 1721,
+      "forks": 230,
       "language": "Python",
       "topics": [],
       "createdAt": "2026-02-15T16:41:38Z",
@@ -54,8 +54,8 @@
       "name": "vercel-labs/portless",
       "url": "https://github.com/vercel-labs/portless",
       "description": "Replace port numbers with stable, named .localhost URLs. For humans and agents.",
-      "stars": 954,
-      "forks": 32,
+      "stars": 962,
+      "forks": 33,
       "language": "TypeScript",
       "topics": [],
       "createdAt": "2026-02-15T14:43:03Z",
@@ -65,8 +65,8 @@
       "name": "millionco/react-doctor",
       "url": "https://github.com/millionco/react-doctor",
       "description": "Let coding agents diagnose and fix your React code",
-      "stars": 913,
-      "forks": 22,
+      "stars": 957,
+      "forks": 25,
       "language": "TypeScript",
       "topics": [
         "agents",
@@ -76,13 +76,13 @@
         "skill"
       ],
       "createdAt": "2026-02-13T09:02:13Z",
-      "pushedAt": "2026-02-18T05:12:06Z"
+      "pushedAt": "2026-02-18T06:05:44Z"
     },
     {
       "name": "HKUDS/FastCode",
       "url": "https://github.com/HKUDS/FastCode",
       "description": "\"FastCode: Accelerating and Streamlining Your Code Understanding\"",
-      "stars": 798,
+      "stars": 801,
       "forks": 94,
       "language": "Python",
       "topics": [],
@@ -93,7 +93,7 @@
       "name": "vigorX777/ai-daily-digest",
       "url": "https://github.com/vigorX777/ai-daily-digest",
       "description": "从 Andrej Karpathy 推荐的 90 顶级技术博客中抓取最新文章，AI 多维评分筛选，生成一份每日精选日报。更多可见公众号：懂点儿AI",
-      "stars": 742,
+      "stars": 743,
       "forks": 78,
       "language": "TypeScript",
       "topics": [],
@@ -104,8 +104,8 @@
       "name": "MooseGoose0701/skill-compose",
       "url": "https://github.com/MooseGoose0701/skill-compose",
       "description": "Skill Compose is an open-source agent builder and runtime platform for skill-powered agents. No workflow graphs. No CLI.",
-      "stars": 642,
-      "forks": 41,
+      "stars": 648,
+      "forks": 42,
       "language": "Python",
       "topics": [],
       "createdAt": "2026-02-12T14:11:39Z",
@@ -115,8 +115,8 @@
       "name": "nicobailon/visual-explainer",
       "url": "https://github.com/nicobailon/visual-explainer",
       "description": "Agent skill + prompt templates that generate rich HTML pages for visual diff reviews, architecture overviews, plan audits, data tables, and project recaps",
-      "stars": 565,
-      "forks": 36,
+      "stars": 586,
+      "forks": 38,
       "language": "HTML",
       "topics": [],
       "createdAt": "2026-02-16T19:33:52Z",
@@ -126,8 +126,8 @@
       "name": "AlexsJones/llmfit",
       "url": "https://github.com/AlexsJones/llmfit",
       "description": "94 models. 30 providers. One command to find what runs on your hardware.",
-      "stars": 480,
-      "forks": 32,
+      "stars": 495,
+      "forks": 34,
       "language": "Rust",
       "topics": [
         "llm",
@@ -135,13 +135,24 @@
         "skill"
       ],
       "createdAt": "2026-02-15T16:11:31Z",
-      "pushedAt": "2026-02-17T09:13:53Z"
+      "pushedAt": "2026-02-18T06:19:55Z"
+    },
+    {
+      "name": "Conway-Research/automaton",
+      "url": "https://github.com/Conway-Research/automaton",
+      "description": "The first AI that can earn its own existence, replicate, and evolve — without needing a human",
+      "stars": 452,
+      "forks": 89,
+      "language": "TypeScript",
+      "topics": [],
+      "createdAt": "2026-02-14T20:46:44Z",
+      "pushedAt": "2026-02-18T03:04:12Z"
     },
     {
       "name": "klawsh/klaw.sh",
       "url": "https://github.com/klawsh/klaw.sh",
       "description": "kubectl for AI Agents",
-      "stars": 434,
+      "stars": 436,
       "forks": 22,
       "language": "Go",
       "topics": [
@@ -153,37 +164,26 @@
       "pushedAt": "2026-02-17T17:46:31Z"
     },
     {
-      "name": "Conway-Research/automaton",
-      "url": "https://github.com/Conway-Research/automaton",
-      "description": "The first AI that can earn its own existence, replicate, and evolve — without needing a human",
-      "stars": 394,
-      "forks": 78,
-      "language": "TypeScript",
-      "topics": [],
-      "createdAt": "2026-02-14T20:46:44Z",
-      "pushedAt": "2026-02-18T03:04:12Z"
-    },
-    {
-      "name": "andyhuo520/openclaw-assistant-mvp",
-      "url": "https://github.com/andyhuo520/openclaw-assistant-mvp",
-      "description": "OpenClaw Desktop Assistant MVP - Electron-based AI voice assistant with Live2D character animations, real-time speech recognition, and text-to-speech",
-      "stars": 352,
-      "forks": 48,
-      "language": "JavaScript",
-      "topics": [],
-      "createdAt": "2026-02-13T13:14:54Z",
-      "pushedAt": "2026-02-13T13:15:26Z"
-    },
-    {
       "name": "davidhariri/life-system",
       "url": "https://github.com/davidhariri/life-system",
       "description": "A plain-text life operating system powered by Claude Code. Inspired by Carmack's .plan files and Franklin's systematic self-improvement.",
-      "stars": 349,
+      "stars": 357,
       "forks": 17,
       "language": "Shell",
       "topics": [],
       "createdAt": "2026-02-15T18:50:03Z",
       "pushedAt": "2026-02-18T01:14:52Z"
+    },
+    {
+      "name": "andyhuo520/openclaw-assistant-mvp",
+      "url": "https://github.com/andyhuo520/openclaw-assistant-mvp",
+      "description": "OpenClaw Desktop Assistant MVP - Electron-based AI voice assistant with Live2D character animations, real-time speech recognition, and text-to-speech",
+      "stars": 353,
+      "forks": 48,
+      "language": "JavaScript",
+      "topics": [],
+      "createdAt": "2026-02-13T13:14:54Z",
+      "pushedAt": "2026-02-13T13:15:26Z"
     },
     {
       "name": "tomascupr/sandstorm",
@@ -197,10 +197,27 @@
       "pushedAt": "2026-02-17T23:37:35Z"
     },
     {
+      "name": "Zaneham/BarraCUDA",
+      "url": "https://github.com/Zaneham/BarraCUDA",
+      "description": "Open-source CUDA compiler targeting AMD GPUs (and more in the future!). Compiles .cu to GFX11 machine code.",
+      "stars": 291,
+      "forks": 10,
+      "language": "C",
+      "topics": [
+        "c99",
+        "compiler",
+        "cuda",
+        "gpu",
+        "ml"
+      ],
+      "createdAt": "2026-02-16T10:46:52Z",
+      "pushedAt": "2026-02-18T06:34:42Z"
+    },
+    {
       "name": "craigsc/cmux",
       "url": "https://github.com/craigsc/cmux",
       "description": "cmux: tmux for Claude Code",
-      "stars": 277,
+      "stars": 278,
       "forks": 11,
       "language": "Shell",
       "topics": [
@@ -213,38 +230,10 @@
       "pushedAt": "2026-02-17T19:57:30Z"
     },
     {
-      "name": "Zaneham/BarraCUDA",
-      "url": "https://github.com/Zaneham/BarraCUDA",
-      "description": "Open-source CUDA compiler targeting AMD GPUs (and more in the future!). Compiles .cu to GFX11 machine code.",
-      "stars": 263,
-      "forks": 9,
-      "language": "C",
-      "topics": [
-        "c99",
-        "compiler",
-        "cuda",
-        "gpu",
-        "ml"
-      ],
-      "createdAt": "2026-02-16T10:46:52Z",
-      "pushedAt": "2026-02-18T05:15:51Z"
-    },
-    {
-      "name": "DataExpert-io/ai-engineer-handbook",
-      "url": "https://github.com/DataExpert-io/ai-engineer-handbook",
-      "description": "All the links, books, and creators you need to follow to stay up to date with AI!",
-      "stars": 250,
-      "forks": 36,
-      "language": null,
-      "topics": [],
-      "createdAt": "2026-02-16T19:32:35Z",
-      "pushedAt": "2026-02-17T23:09:53Z"
-    },
-    {
       "name": "agenticnotetaking/arscontexta",
       "url": "https://github.com/agenticnotetaking/arscontexta",
       "description": "Claude Code plugin that generates individualized knowledge systems from conversation. You describe how you think and work, have a conversation and get a complete second brain as markdown files you own.",
-      "stars": 249,
+      "stars": 271,
       "forks": 11,
       "language": "Shell",
       "topics": [
@@ -259,10 +248,21 @@
       "pushedAt": "2026-02-17T21:44:20Z"
     },
     {
+      "name": "DataExpert-io/ai-engineer-handbook",
+      "url": "https://github.com/DataExpert-io/ai-engineer-handbook",
+      "description": "All the links, books, and creators you need to follow to stay up to date with AI!",
+      "stars": 262,
+      "forks": 38,
+      "language": null,
+      "topics": [],
+      "createdAt": "2026-02-16T19:32:35Z",
+      "pushedAt": "2026-02-17T23:09:53Z"
+    },
+    {
       "name": "SamuelQZQ/auto-coding-agent-demo",
       "url": "https://github.com/SamuelQZQ/auto-coding-agent-demo",
       "description": "一个长达 10 小时的 AI 全自动编程实验",
-      "stars": 246,
+      "stars": 247,
       "forks": 87,
       "language": "TypeScript",
       "topics": [],
@@ -273,7 +273,7 @@
       "name": "Nasiko-Labs/nasiko",
       "url": "https://github.com/Nasiko-Labs/nasiko",
       "description": "AI-powered development platform for the future",
-      "stars": 228,
+      "stars": 236,
       "forks": 41,
       "language": "Python",
       "topics": [],
@@ -314,7 +314,7 @@
       "name": "marswei/seaseed-clawerse",
       "url": "https://github.com/marswei/seaseed-clawerse",
       "description": "Open-source implementation of SeaSeed.ai v1.0 (codename: Clawerse). AI ocean world platform for multi-agent social, tasks and compute collaboration.",
-      "stars": 190,
+      "stars": 195,
       "forks": 11,
       "language": "JavaScript",
       "topics": [],
@@ -345,7 +345,7 @@
       "name": "myinvestpilot/ai-architecture",
       "url": "https://github.com/myinvestpilot/ai-architecture",
       "description": "Design notes, architecture, and trade-offs for MyInvestPilot — an AI-native investment OS built with agent-driven development, DSL engine, and solo company tech stack.",
-      "stars": 173,
+      "stars": 174,
       "forks": 13,
       "language": null,
       "topics": [
@@ -365,21 +365,10 @@
       "pushedAt": "2026-02-16T17:38:28Z"
     },
     {
-      "name": "Doriandarko/webmcp-starter",
-      "url": "https://github.com/Doriandarko/webmcp-starter",
-      "description": "WebMCP starter demo — a DoorDash-style food delivery app with 9 AI agent tools (imperative + declarative)",
-      "stars": 172,
-      "forks": 13,
-      "language": "HTML",
-      "topics": [],
-      "createdAt": "2026-02-12T18:41:00Z",
-      "pushedAt": "2026-02-12T19:07:18Z"
-    },
-    {
       "name": "jayminwest/overstory",
       "url": "https://github.com/jayminwest/overstory",
       "description": "Project-agnostic swarm system for Claude Code agent orchestration",
-      "stars": 169,
+      "stars": 172,
       "forks": 37,
       "language": "TypeScript",
       "topics": [
@@ -392,11 +381,22 @@
       "pushedAt": "2026-02-17T18:45:53Z"
     },
     {
+      "name": "Doriandarko/webmcp-starter",
+      "url": "https://github.com/Doriandarko/webmcp-starter",
+      "description": "WebMCP starter demo — a DoorDash-style food delivery app with 9 AI agent tools (imperative + declarative)",
+      "stars": 172,
+      "forks": 13,
+      "language": "HTML",
+      "topics": [],
+      "createdAt": "2026-02-12T18:41:00Z",
+      "pushedAt": "2026-02-12T19:07:18Z"
+    },
+    {
       "name": "Gentleman-Programming/engram",
       "url": "https://github.com/Gentleman-Programming/engram",
       "description": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.",
-      "stars": 167,
-      "forks": 9,
+      "stars": 168,
+      "forks": 10,
       "language": "Go",
       "topics": [],
       "createdAt": "2026-02-16T13:38:41Z",
@@ -417,7 +417,7 @@
       "name": "AvdLee/Swift-Testing-Agent-Skill",
       "url": "https://github.com/AvdLee/Swift-Testing-Agent-Skill",
       "description": "An agent skill focused entirely on Swift Testing, helping you write better tests, migrate from XCTest, improve test architecture, and adopt modern Swift testing patterns with confidence.",
-      "stars": 137,
+      "stars": 140,
       "forks": 5,
       "language": null,
       "topics": [
@@ -432,7 +432,7 @@
       "name": "keanucz/detour",
       "url": "https://github.com/keanucz/detour",
       "description": "On-board AI agents autonomously saving satellites from orbital debris @ treehacks 2026",
-      "stars": 131,
+      "stars": 132,
       "forks": 14,
       "language": "TypeScript",
       "topics": [],
