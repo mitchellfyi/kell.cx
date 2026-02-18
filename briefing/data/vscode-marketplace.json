@@ -1,58 +1,58 @@
 {
   "GitHub.copilot": {
-    "installs": 71409235,
+    "installs": 71458280,
     "averageRating": "4.11",
     "ratingCount": 1044,
     "latestVersion": "1.388.0",
-    "lastChecked": "2026-02-17T06:04:43.692Z"
+    "lastChecked": "2026-02-18T06:03:58.156Z"
   },
   "GitHub.copilot-chat": {
-    "installs": 61582897,
-    "averageRating": "3.60",
-    "ratingCount": 222,
-    "latestVersion": "0.38.2026021701",
-    "lastChecked": "2026-02-17T06:04:43.692Z"
+    "installs": 61738662,
+    "averageRating": "3.59",
+    "ratingCount": 223,
+    "latestVersion": "0.38.2026021801",
+    "lastChecked": "2026-02-18T06:03:58.157Z"
   },
   "Codeium.codeium": {
-    "installs": 3468844,
+    "installs": 3471194,
     "averageRating": "4.76",
     "ratingCount": 1455,
     "latestVersion": "1.49.2",
-    "lastChecked": "2026-02-17T06:04:43.692Z"
+    "lastChecked": "2026-02-18T06:03:58.157Z"
   },
   "TabNine.tabnine-vscode": {
-    "installs": 9478151,
+    "installs": 9478711,
     "averageRating": "4.03",
     "ratingCount": 614,
     "latestVersion": "3.335.0",
-    "lastChecked": "2026-02-17T06:04:43.692Z"
+    "lastChecked": "2026-02-18T06:03:58.157Z"
   },
   "AmazonWebServices.amazon-q-vscode": {
-    "installs": 1509367,
+    "installs": 1510729,
     "averageRating": "4.11",
     "ratingCount": 47,
     "latestVersion": "1.110.0",
-    "lastChecked": "2026-02-17T06:04:43.692Z"
+    "lastChecked": "2026-02-18T06:03:58.157Z"
   },
   "sourcegraph.cody-ai": {
-    "installs": 798251,
+    "installs": 798496,
     "averageRating": "3.98",
     "ratingCount": 149,
     "latestVersion": "1.142.0",
-    "lastChecked": "2026-02-17T06:04:43.692Z"
+    "lastChecked": "2026-02-18T06:03:58.157Z"
   },
   "Continue.continue": {
-    "installs": 2152637,
-    "averageRating": "3.75",
-    "ratingCount": 122,
-    "latestVersion": "1.3.31",
-    "lastChecked": "2026-02-17T06:04:43.692Z"
+    "installs": 2159191,
+    "averageRating": "3.76",
+    "ratingCount": 123,
+    "latestVersion": "1.3.32",
+    "lastChecked": "2026-02-18T06:03:58.157Z"
   },
   "supermaven.supermaven": {
-    "installs": 361033,
+    "installs": 361248,
     "averageRating": "3.77",
     "ratingCount": 44,
     "latestVersion": "1.1.12",
-    "lastChecked": "2026-02-17T06:04:43.692Z"
+    "lastChecked": "2026-02-18T06:03:58.157Z"
   }
 }
