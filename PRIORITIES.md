@@ -7,14 +7,17 @@
 
 ## P0 — Do Now
 
-1. **Live testing phase** ✅ COMPLETING TODAY
-   - Need 5 days of live testing before any real outreach
-   - Track: Digest deliveries, site stability, subscriber flow
-   - Started: 2026-02-14
-   - **Day 5/5 (2026-02-18)**: Final day of testing
-   - Status: Site 200 ✓, Digest cron healthy (last OK: 2026-02-17 06:00 UTC)
-   - All 4 previous days: No incidents, all digests delivered
-   - Outreach unlocks after today's 06:00 UTC digest completes successfully
+_Nothing blocking. Ready for next priorities._
+
+---
+
+## ✅ Completed: Live Testing Phase
+
+**5/5 days complete — all digests delivered successfully**
+- Started: 2026-02-14
+- Completed: 2026-02-18 06:04 UTC
+- Final digest: Sent to 1 subscriber, all systems healthy
+- No incidents across entire testing period
 
 ---
 
@@ -40,13 +43,13 @@
 
 ---
 
-## P4 → P1 (unlocks 2026-02-18 after 06:00 UTC digest)
+## P1 — Unlocked (awaiting Mitchell's go-ahead)
 
 4. **Outreach to potential customers**
    - ✅ Swyx draft ready (outreach/drafts/swyx-latentspace.md)
-   - ⏳ Unlocks after 5-day test completes (today, after 06:00 UTC digest)
-   - Mitchell explicitly asked for this delay on 2026-02-14
-   - When unlocked: Confirm with Mitchell before sending first outreach
+   - ✅ Testing phase complete (2026-02-18 06:04 UTC)
+   - ⏳ Awaiting Mitchell's explicit approval before sending
+   - Note: Do not proceed without confirmation
 
 ---
 
