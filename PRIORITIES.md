@@ -39,7 +39,7 @@ _Nothing blocking. Ready for next priorities._
 
 5. **Content that drives signups**
    - Blog posts, comparisons, analysis
-   - Status: 3 posts live (added "Cursor vs Windsurf vs Copilot" comparison 2026-02-14)
+   - Status: 4 posts live (added "Which AI Model Is Best for Coding in 2026" 2026-02-18)
 
 ---
 
