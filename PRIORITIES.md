@@ -39,7 +39,7 @@ _Nothing blocking. Ready for next priorities._
 
 5. **Content that drives signups**
    - Blog posts, comparisons, analysis
-   - Status: 4 posts live (added "Which AI Model Is Best for Coding in 2026" 2026-02-18)
+   - Status: 5 posts live (added "Free AI Coding Tools 2026" 2026-02-18)
 
 ---
 
