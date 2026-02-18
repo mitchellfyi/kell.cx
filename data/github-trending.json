@@ -1,209 +1,207 @@
 {
-  "generatedAt": "2026-02-15T09:42:54.045Z",
+  "generatedAt": "2026-02-18T05:39:25.820Z",
   "source": "GitHub API",
   "summary": {
-    "recentPopularCount": 34,
+    "recentPopularCount": 33,
     "trendingCount": 0,
     "topLanguages": [
       {
-        "language": "Python",
-        "count": 9
+        "language": "TypeScript",
+        "count": 10
       },
       {
-        "language": "TypeScript",
-        "count": 8
+        "language": "Python",
+        "count": 6
       },
       {
         "language": "Shell",
-        "count": 7
+        "count": 3
+      },
+      {
+        "language": "Rust",
+        "count": 2
       },
       {
         "language": "HTML",
         "count": 2
-      },
-      {
-        "language": "Swift",
-        "count": 1
       }
     ]
   },
   "recentPopular": [
     {
-      "name": "PeonPing/peon-ping",
-      "url": "https://github.com/PeonPing/peon-ping",
-      "description": "Warcraft III Peon voice notifications (+ more!) for Claude Code, Codex, and other IDEs. Stop babysitting your terminal.",
-      "stars": 2068,
-      "forks": 141,
-      "language": "Shell",
-      "topics": [
-        "ai",
-        "ai-engineering",
-        "antigravity",
-        "claude-code",
-        "codex",
-        "cursor",
-        "opencode",
-        "terminal"
-      ],
-      "createdAt": "2026-02-09T23:12:48Z",
-      "pushedAt": "2026-02-15T04:26:50Z"
+      "name": "zeroclaw-labs/zeroclaw",
+      "url": "https://github.com/zeroclaw-labs/zeroclaw",
+      "description": "Fast, small, and fully autonomous AI assistant infrastructure — deploy anywhere, swap anything 🦀",
+      "stars": 10878,
+      "forks": 1081,
+      "language": "Rust",
+      "topics": [],
+      "createdAt": "2026-02-13T08:56:04Z",
+      "pushedAt": "2026-02-18T04:57:44Z"
     },
     {
-      "name": "jlia0/tinyclaw",
-      "url": "https://github.com/jlia0/tinyclaw",
-      "description": "TinyClaw is a team of personal agents that collaborate with each other",
-      "stars": 1527,
-      "forks": 206,
+      "name": "HKUDS/ClawWork",
+      "url": "https://github.com/HKUDS/ClawWork",
+      "description": "\"ClawWork: OpenClaw as Your AI Coworker - 💰 $10K earned in 7 Hours\"",
+      "stars": 1698,
+      "forks": 223,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-15T16:41:38Z",
+      "pushedAt": "2026-02-17T17:00:49Z"
+    },
+    {
+      "name": "vercel-labs/portless",
+      "url": "https://github.com/vercel-labs/portless",
+      "description": "Replace port numbers with stable, named .localhost URLs. For humans and agents.",
+      "stars": 954,
+      "forks": 32,
       "language": "TypeScript",
       "topics": [],
-      "createdAt": "2026-02-09T00:34:11Z",
-      "pushedAt": "2026-02-15T06:21:00Z"
+      "createdAt": "2026-02-15T14:43:03Z",
+      "pushedAt": "2026-02-17T18:30:27Z"
     },
     {
-      "name": "zai-org/GLM-5",
-      "url": "https://github.com/zai-org/GLM-5",
-      "description": "GLM-5: From Vibe Coding to Agentic Engineering",
-      "stars": 827,
-      "forks": 73,
-      "language": null,
-      "topics": [
-        "agentic-ai",
-        "coding",
-        "glm",
-        "llm"
-      ],
-      "createdAt": "2026-02-09T08:17:02Z",
-      "pushedAt": "2026-02-14T07:48:36Z"
-    },
-    {
-      "name": "vigorX777/ai-daily-digest",
-      "url": "https://github.com/vigorX777/ai-daily-digest",
-      "description": "从 Andrej Karpathy 推荐的 90 顶级技术博客中抓取最新文章，AI 多维评分筛选，生成一份每日精选日报。更多可见公众号：懂点儿AI",
-      "stars": 518,
-      "forks": 51,
+      "name": "millionco/react-doctor",
+      "url": "https://github.com/millionco/react-doctor",
+      "description": "Let coding agents diagnose and fix your React code",
+      "stars": 913,
+      "forks": 22,
       "language": "TypeScript",
-      "topics": [],
-      "createdAt": "2026-02-14T07:27:52Z",
-      "pushedAt": "2026-02-14T13:47:13Z"
+      "topics": [
+        "agents",
+        "code-review",
+        "doctor",
+        "react",
+        "skill"
+      ],
+      "createdAt": "2026-02-13T09:02:13Z",
+      "pushedAt": "2026-02-18T05:12:06Z"
     },
     {
       "name": "HKUDS/FastCode",
       "url": "https://github.com/HKUDS/FastCode",
-      "description": "FastCode: Accelerating and Streamlining Your Code Understanding",
-      "stars": 517,
-      "forks": 57,
+      "description": "\"FastCode: Accelerating and Streamlining Your Code Understanding\"",
+      "stars": 798,
+      "forks": 94,
       "language": "Python",
       "topics": [],
       "createdAt": "2026-02-13T06:43:54Z",
       "pushedAt": "2026-02-13T10:29:53Z"
     },
     {
-      "name": "aeromomo/claw-compactor",
-      "url": "https://github.com/aeromomo/claw-compactor",
-      "description": "🦞 Claw Compactor — The 98% Crusher. Cut your AI agent token spend in half with 5 layered compression techniques.",
-      "stars": 483,
-      "forks": 42,
-      "language": "Python",
-      "topics": [],
-      "createdAt": "2026-02-10T00:27:08Z",
-      "pushedAt": "2026-02-12T03:08:57Z"
-    },
-    {
-      "name": "rebornix/Agmente",
-      "url": "https://github.com/rebornix/Agmente",
-      "description": "iOS client for coding agents via ACP",
-      "stars": 410,
-      "forks": 33,
-      "language": "Swift",
-      "topics": [],
-      "createdAt": "2026-02-10T05:07:29Z",
-      "pushedAt": "2026-02-14T23:24:40Z"
-    },
-    {
-      "name": "zilliztech/memsearch",
-      "url": "https://github.com/zilliztech/memsearch",
-      "description": "A Markdown-first memory system, a standalone library for any AI agent. Inspired by OpenClaw.",
-      "stars": 409,
-      "forks": 41,
-      "language": "Python",
-      "topics": [
-        "agent",
-        "agent-memory",
-        "claude-code",
-        "claude-code-plugin",
-        "clawdbot",
-        "embeddings",
-        "memory",
-        "milvus",
-        "openclaw",
-        "progressive-disclosure",
-        "rag",
-        "semantic-search"
-      ],
-      "createdAt": "2026-02-09T02:29:16Z",
-      "pushedAt": "2026-02-15T06:38:08Z"
-    },
-    {
-      "name": "MemeCalculate/moyin-creator",
-      "url": "https://github.com/MemeCalculate/moyin-creator",
-      "description": "AI 影视生产级工具 | 支持 Seedance 2.0 | 剧本到成片全流程批量化 | AI-powered film production tool with Seedance 2.0 support",
-      "stars": 355,
-      "forks": 113,
+      "name": "vigorX777/ai-daily-digest",
+      "url": "https://github.com/vigorX777/ai-daily-digest",
+      "description": "从 Andrej Karpathy 推荐的 90 顶级技术博客中抓取最新文章，AI 多维评分筛选，生成一份每日精选日报。更多可见公众号：懂点儿AI",
+      "stars": 742,
+      "forks": 78,
       "language": "TypeScript",
       "topics": [],
-      "createdAt": "2026-02-09T17:01:11Z",
-      "pushedAt": "2026-02-12T12:10:56Z"
-    },
-    {
-      "name": "zts212653/cat-cafe-tutorials",
-      "url": "https://github.com/zts212653/cat-cafe-tutorials",
-      "description": "从零搭建 AI 猫猫协作系统 — 一个真实项目的完整复盘",
-      "stars": 258,
-      "forks": 23,
-      "language": null,
-      "topics": [],
-      "createdAt": "2026-02-11T18:00:41Z",
-      "pushedAt": "2026-02-14T01:47:49Z"
-    },
-    {
-      "name": "openhome-dev/abilities",
-      "url": "https://github.com/openhome-dev/abilities",
-      "description": "Open-source abilities for OpenHome agents. ",
-      "stars": 256,
-      "forks": 239,
-      "language": "Python",
-      "topics": [],
-      "createdAt": "2026-02-09T22:56:13Z",
-      "pushedAt": "2026-02-15T09:42:24Z"
+      "createdAt": "2026-02-14T07:27:52Z",
+      "pushedAt": "2026-02-15T15:29:40Z"
     },
     {
       "name": "MooseGoose0701/skill-compose",
       "url": "https://github.com/MooseGoose0701/skill-compose",
       "description": "Skill Compose is an open-source agent builder and runtime platform for skill-powered agents. No workflow graphs. No CLI.",
-      "stars": 250,
-      "forks": 15,
+      "stars": 642,
+      "forks": 41,
       "language": "Python",
       "topics": [],
       "createdAt": "2026-02-12T14:11:39Z",
-      "pushedAt": "2026-02-12T14:11:58Z"
+      "pushedAt": "2026-02-18T04:44:23Z"
     },
     {
-      "name": "yan5xu/code-relay",
-      "url": "https://github.com/yan5xu/code-relay",
-      "description": "AI Coding Agent 工作协议 — 跨会话记忆、多仓库全局视野、结构化上下文管理",
-      "stars": 246,
-      "forks": 18,
-      "language": null,
+      "name": "nicobailon/visual-explainer",
+      "url": "https://github.com/nicobailon/visual-explainer",
+      "description": "Agent skill + prompt templates that generate rich HTML pages for visual diff reviews, architecture overviews, plan audits, data tables, and project recaps",
+      "stars": 565,
+      "forks": 36,
+      "language": "HTML",
       "topics": [],
-      "createdAt": "2026-02-10T07:58:02Z",
-      "pushedAt": "2026-02-10T08:31:06Z"
+      "createdAt": "2026-02-16T19:33:52Z",
+      "pushedAt": "2026-02-16T20:26:09Z"
+    },
+    {
+      "name": "AlexsJones/llmfit",
+      "url": "https://github.com/AlexsJones/llmfit",
+      "description": "94 models. 30 providers. One command to find what runs on your hardware.",
+      "stars": 480,
+      "forks": 32,
+      "language": "Rust",
+      "topics": [
+        "llm",
+        "openclaw",
+        "skill"
+      ],
+      "createdAt": "2026-02-15T16:11:31Z",
+      "pushedAt": "2026-02-17T09:13:53Z"
+    },
+    {
+      "name": "klawsh/klaw.sh",
+      "url": "https://github.com/klawsh/klaw.sh",
+      "description": "kubectl for AI Agents",
+      "stars": 434,
+      "forks": 22,
+      "language": "Go",
+      "topics": [
+        "agents",
+        "ai-agents",
+        "orchestration"
+      ],
+      "createdAt": "2026-02-15T04:18:19Z",
+      "pushedAt": "2026-02-17T17:46:31Z"
+    },
+    {
+      "name": "Conway-Research/automaton",
+      "url": "https://github.com/Conway-Research/automaton",
+      "description": "The first AI that can earn its own existence, replicate, and evolve — without needing a human",
+      "stars": 394,
+      "forks": 78,
+      "language": "TypeScript",
+      "topics": [],
+      "createdAt": "2026-02-14T20:46:44Z",
+      "pushedAt": "2026-02-18T03:04:12Z"
+    },
+    {
+      "name": "andyhuo520/openclaw-assistant-mvp",
+      "url": "https://github.com/andyhuo520/openclaw-assistant-mvp",
+      "description": "OpenClaw Desktop Assistant MVP - Electron-based AI voice assistant with Live2D character animations, real-time speech recognition, and text-to-speech",
+      "stars": 352,
+      "forks": 48,
+      "language": "JavaScript",
+      "topics": [],
+      "createdAt": "2026-02-13T13:14:54Z",
+      "pushedAt": "2026-02-13T13:15:26Z"
+    },
+    {
+      "name": "davidhariri/life-system",
+      "url": "https://github.com/davidhariri/life-system",
+      "description": "A plain-text life operating system powered by Claude Code. Inspired by Carmack's .plan files and Franklin's systematic self-improvement.",
+      "stars": 349,
+      "forks": 17,
+      "language": "Shell",
+      "topics": [],
+      "createdAt": "2026-02-15T18:50:03Z",
+      "pushedAt": "2026-02-18T01:14:52Z"
+    },
+    {
+      "name": "tomascupr/sandstorm",
+      "url": "https://github.com/tomascupr/sandstorm",
+      "description": "One API call. Full Claude agent. Completely sandboxed.",
+      "stars": 304,
+      "forks": 29,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-14T14:26:15Z",
+      "pushedAt": "2026-02-17T23:37:35Z"
     },
     {
       "name": "craigsc/cmux",
       "url": "https://github.com/craigsc/cmux",
       "description": "cmux: tmux for Claude Code",
-      "stars": 213,
-      "forks": 4,
+      "stars": 277,
+      "forks": 11,
       "language": "Shell",
       "topics": [
         "claude",
@@ -212,28 +210,81 @@
         "terminal"
       ],
       "createdAt": "2026-02-13T18:35:24Z",
-      "pushedAt": "2026-02-13T21:40:21Z"
+      "pushedAt": "2026-02-17T19:57:30Z"
     },
     {
-      "name": "win4r/team-tasks",
-      "url": "https://github.com/win4r/team-tasks",
-      "description": "Multi-agent pipeline coordination: Linear, DAG, and Debate modes for AI agent orchestration",
-      "stars": 210,
-      "forks": 42,
-      "language": "Python",
+      "name": "Zaneham/BarraCUDA",
+      "url": "https://github.com/Zaneham/BarraCUDA",
+      "description": "Open-source CUDA compiler targeting AMD GPUs (and more in the future!). Compiles .cu to GFX11 machine code.",
+      "stars": 263,
+      "forks": 9,
+      "language": "C",
       "topics": [
-        "openclaw",
-        "openclaw-skill",
-        "openclaw-skills"
+        "c99",
+        "compiler",
+        "cuda",
+        "gpu",
+        "ml"
       ],
-      "createdAt": "2026-02-09T05:33:11Z",
-      "pushedAt": "2026-02-09T05:55:40Z"
+      "createdAt": "2026-02-16T10:46:52Z",
+      "pushedAt": "2026-02-18T05:15:51Z"
+    },
+    {
+      "name": "DataExpert-io/ai-engineer-handbook",
+      "url": "https://github.com/DataExpert-io/ai-engineer-handbook",
+      "description": "All the links, books, and creators you need to follow to stay up to date with AI!",
+      "stars": 250,
+      "forks": 36,
+      "language": null,
+      "topics": [],
+      "createdAt": "2026-02-16T19:32:35Z",
+      "pushedAt": "2026-02-17T23:09:53Z"
+    },
+    {
+      "name": "agenticnotetaking/arscontexta",
+      "url": "https://github.com/agenticnotetaking/arscontexta",
+      "description": "Claude Code plugin that generates individualized knowledge systems from conversation. You describe how you think and work, have a conversation and get a complete second brain as markdown files you own.",
+      "stars": 249,
+      "forks": 11,
+      "language": "Shell",
+      "topics": [
+        "claude-code",
+        "claude-code-plugin",
+        "knowledge-base",
+        "knowledge-management",
+        "markdown",
+        "second-brain"
+      ],
+      "createdAt": "2026-02-15T17:26:41Z",
+      "pushedAt": "2026-02-17T21:44:20Z"
+    },
+    {
+      "name": "SamuelQZQ/auto-coding-agent-demo",
+      "url": "https://github.com/SamuelQZQ/auto-coding-agent-demo",
+      "description": "一个长达 10 小时的 AI 全自动编程实验",
+      "stars": 246,
+      "forks": 87,
+      "language": "TypeScript",
+      "topics": [],
+      "createdAt": "2026-02-13T19:25:20Z",
+      "pushedAt": "2026-02-13T19:25:47Z"
+    },
+    {
+      "name": "Nasiko-Labs/nasiko",
+      "url": "https://github.com/Nasiko-Labs/nasiko",
+      "description": "AI-powered development platform for the future",
+      "stars": 228,
+      "forks": 41,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-12T10:45:29Z",
+      "pushedAt": "2026-02-12T19:09:11Z"
     },
     {
       "name": "FireRedTeam/FireRedASR2S",
       "url": "https://github.com/FireRedTeam/FireRedASR2S",
       "description": "FireRedASR2S is a SOTA Industrial-Grade All-in-One ASR system with ASR, VAD, LID, and Punc modules. FireRedASR2 supports Chinese (Mandarin, 20+ dialects/accents), English, code-switching, and singing lyrics recognition. FireRedVAD supports speech/singing/music in 100+ langs. FireRedLID supports 100+ langs and 20+ zh dialects.",
-      "stars": 208,
+      "stars": 219,
       "forks": 8,
       "language": "Python",
       "topics": [
@@ -260,182 +311,133 @@
       "pushedAt": "2026-02-13T09:31:05Z"
     },
     {
-      "name": "aarondfrancis/counselors",
-      "url": "https://github.com/aarondfrancis/counselors",
-      "description": "Fan out prompts to multiple AI coding agents in parallel",
-      "stars": 203,
-      "forks": 6,
-      "language": "TypeScript",
-      "topics": [],
-      "createdAt": "2026-02-09T21:32:01Z",
-      "pushedAt": "2026-02-15T04:43:41Z"
-    },
-    {
-      "name": "hallucinogen/agent-viewer",
-      "url": "https://github.com/hallucinogen/agent-viewer",
-      "description": "Kanban board for managing Claude Code agents in tmux",
-      "stars": 200,
-      "forks": 24,
-      "language": "HTML",
-      "topics": [],
-      "createdAt": "2026-02-09T06:27:50Z",
-      "pushedAt": "2026-02-11T04:00:38Z"
-    },
-    {
-      "name": "andyhuo520/openclaw-assistant-mvp",
-      "url": "https://github.com/andyhuo520/openclaw-assistant-mvp",
-      "description": "OpenClaw Desktop Assistant MVP - Electron-based AI voice assistant with Live2D character animations, real-time speech recognition, and text-to-speech",
-      "stars": 193,
-      "forks": 26,
+      "name": "marswei/seaseed-clawerse",
+      "url": "https://github.com/marswei/seaseed-clawerse",
+      "description": "Open-source implementation of SeaSeed.ai v1.0 (codename: Clawerse). AI ocean world platform for multi-agent social, tasks and compute collaboration.",
+      "stars": 190,
+      "forks": 11,
       "language": "JavaScript",
       "topics": [],
-      "createdAt": "2026-02-13T13:14:54Z",
-      "pushedAt": "2026-02-13T13:15:26Z"
+      "createdAt": "2026-02-14T18:13:42Z",
+      "pushedAt": "2026-02-15T03:31:19Z"
     },
     {
-      "name": "sharbelxyz/x-bookmarks",
-      "url": "https://github.com/sharbelxyz/x-bookmarks",
-      "description": "OpenClaw skill: turn your X bookmarks into agent actions. Stop hoarding. Start applying.",
-      "stars": 187,
-      "forks": 21,
-      "language": "Python",
-      "topics": [],
-      "createdAt": "2026-02-11T09:16:40Z",
-      "pushedAt": "2026-02-15T08:44:03Z"
-    },
-    {
-      "name": "mosaxiv/clawlet",
-      "url": "https://github.com/mosaxiv/clawlet",
-      "description": "Ultra-Lightweight&Efficient Personal AI Assistant",
-      "stars": 183,
-      "forks": 30,
-      "language": "Go",
+      "name": "vixhal-baraiya/microgpt-c",
+      "url": "https://github.com/vixhal-baraiya/microgpt-c",
+      "description": "The most atomic way to train and inference a GPT in pure, dependency-free C",
+      "stars": 175,
+      "forks": 32,
+      "language": "C",
       "topics": [
-        "ai",
-        "assistant",
-        "personal"
+        "artificial-intelligence",
+        "c",
+        "c-programming",
+        "deep-learning",
+        "gpt",
+        "llm",
+        "machine-learning",
+        "microgpt"
       ],
-      "createdAt": "2026-02-09T10:48:17Z",
-      "pushedAt": "2026-02-14T17:32:16Z"
+      "createdAt": "2026-02-14T17:29:50Z",
+      "pushedAt": "2026-02-15T11:58:54Z"
     },
     {
-      "name": "lijigang/ljg-explain-concept",
-      "url": "https://github.com/lijigang/ljg-explain-concept",
-      "description": "Claude Code skill: 8-dimensional concept anatomist. Deconstructs any concept into epiphany.",
-      "stars": 161,
-      "forks": 5,
+      "name": "myinvestpilot/ai-architecture",
+      "url": "https://github.com/myinvestpilot/ai-architecture",
+      "description": "Design notes, architecture, and trade-offs for MyInvestPilot — an AI-native investment OS built with agent-driven development, DSL engine, and solo company tech stack.",
+      "stars": 173,
+      "forks": 13,
       "language": null,
-      "topics": [],
-      "createdAt": "2026-02-09T08:02:57Z",
-      "pushedAt": "2026-02-09T08:03:00Z"
-    },
-    {
-      "name": "SamuelQZQ/auto-coding-agent-demo",
-      "url": "https://github.com/SamuelQZQ/auto-coding-agent-demo",
-      "description": "一个长达 10 小时的 AI 全自动编程实验",
-      "stars": 148,
-      "forks": 56,
-      "language": "TypeScript",
-      "topics": [],
-      "createdAt": "2026-02-13T19:25:20Z",
-      "pushedAt": "2026-02-13T19:25:47Z"
+      "topics": [
+        "agent-driven-development",
+        "agentic-ai",
+        "ai-native",
+        "cloud-native",
+        "dsl",
+        "fintech",
+        "indie-hacker",
+        "investment",
+        "multi-agent",
+        "one-person-company",
+        "serverless"
+      ],
+      "createdAt": "2026-02-14T13:51:46Z",
+      "pushedAt": "2026-02-16T17:38:28Z"
     },
     {
       "name": "Doriandarko/webmcp-starter",
       "url": "https://github.com/Doriandarko/webmcp-starter",
       "description": "WebMCP starter demo — a DoorDash-style food delivery app with 9 AI agent tools (imperative + declarative)",
-      "stars": 148,
-      "forks": 10,
+      "stars": 172,
+      "forks": 13,
       "language": "HTML",
       "topics": [],
       "createdAt": "2026-02-12T18:41:00Z",
       "pushedAt": "2026-02-12T19:07:18Z"
     },
     {
-      "name": "blader/taskmaster",
-      "url": "https://github.com/blader/taskmaster",
-      "description": "Stop hook for Claude Code that keeps the agent working until all plans and user requests are 100% complete",
-      "stars": 144,
-      "forks": 10,
-      "language": "Shell",
-      "topics": [],
-      "createdAt": "2026-02-10T05:53:29Z",
-      "pushedAt": "2026-02-10T05:53:30Z"
-    },
-    {
-      "name": "HKUDS/MoChat",
-      "url": "https://github.com/HKUDS/MoChat",
-      "description": "\"MoChat: Reconnecting the World through AI Agents (OpenClaw & nanobot & ClaudeCode) https://mochat.io\"",
-      "stars": 134,
-      "forks": 22,
+      "name": "jayminwest/overstory",
+      "url": "https://github.com/jayminwest/overstory",
+      "description": "Project-agnostic swarm system for Claude Code agent orchestration",
+      "stars": 169,
+      "forks": 37,
       "language": "TypeScript",
-      "topics": [],
-      "createdAt": "2026-02-10T04:08:03Z",
-      "pushedAt": "2026-02-12T11:57:48Z"
-    },
-    {
-      "name": "owengretzinger/constellagent",
-      "url": "https://github.com/owengretzinger/constellagent",
-      "description": "Desktop app for running multiple AI agents in parallel. Each agent gets its own terminal, editor, and git worktree, all in one window.",
-      "stars": 134,
-      "forks": 11,
-      "language": "TypeScript",
-      "topics": [],
-      "createdAt": "2026-02-10T03:52:03Z",
-      "pushedAt": "2026-02-14T04:49:26Z"
-    },
-    {
-      "name": "harrymunro/nelson",
-      "url": "https://github.com/harrymunro/nelson",
-      "description": "Coordinate agent teams in Claude Code using a Royal Navy inspired command structure and operating procedures. It provides structured sailing orders, battle plans, action stations, and a captain's log to manage complex tasks; from single-session work through to multi-agent squadrons.",
-      "stars": 134,
-      "forks": 11,
-      "language": "Shell",
       "topics": [
-        "agent-coordination",
+        "agent-swarms",
         "ai-agents",
-        "anthropic",
         "claude-code",
-        "claude-code-skill"
+        "tmux"
       ],
-      "createdAt": "2026-02-09T15:29:44Z",
-      "pushedAt": "2026-02-14T01:34:40Z"
+      "createdAt": "2026-02-12T14:53:58Z",
+      "pushedAt": "2026-02-17T18:45:53Z"
     },
     {
-      "name": "mbeijen/andrej-karpathy-skills-cursor-vscode",
-      "url": "https://github.com/mbeijen/andrej-karpathy-skills-cursor-vscode",
-      "description": "Andrej Karpathy skills for your Cursor or VS Code editor",
-      "stars": 133,
-      "forks": 8,
+      "name": "Gentleman-Programming/engram",
+      "url": "https://github.com/Gentleman-Programming/engram",
+      "description": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.",
+      "stars": 167,
+      "forks": 9,
+      "language": "Go",
+      "topics": [],
+      "createdAt": "2026-02-16T13:38:41Z",
+      "pushedAt": "2026-02-17T12:56:43Z"
+    },
+    {
+      "name": "IAmUnbounded/devctx",
+      "url": "https://github.com/IAmUnbounded/devctx",
+      "description": "Carry context across coding agents/editors/IDEs - Cursor/Windsurf/Claude Code/Antigravity",
+      "stars": 160,
+      "forks": 26,
       "language": "TypeScript",
-      "topics": [
-        "ai",
-        "cursor-ide",
-        "cursor-rules",
-        "vscode-extension"
-      ],
-      "createdAt": "2026-02-11T09:57:52Z",
-      "pushedAt": "2026-02-11T12:13:43Z"
+      "topics": [],
+      "createdAt": "2026-02-14T19:10:45Z",
+      "pushedAt": "2026-02-15T19:33:36Z"
     },
     {
-      "name": "VoltAgent/awesome-ai-agent-papers",
-      "url": "https://github.com/VoltAgent/awesome-ai-agent-papers",
-      "description": "A curated collection of AI agent research papers released in 2026, covering agent engineering, memory, evaluation, workflows, and autonomous systems.",
-      "stars": 129,
-      "forks": 8,
+      "name": "AvdLee/Swift-Testing-Agent-Skill",
+      "url": "https://github.com/AvdLee/Swift-Testing-Agent-Skill",
+      "description": "An agent skill focused entirely on Swift Testing, helping you write better tests, migrate from XCTest, improve test architecture, and adopt modern Swift testing patterns with confidence.",
+      "stars": 137,
+      "forks": 5,
       "language": null,
       "topics": [
-        "ai-agents",
-        "awesome",
-        "awesome-list",
-        "llm",
-        "llm-agents",
-        "memory",
-        "rag",
-        "research-paper"
+        "agent-skills",
+        "swift",
+        "swift-testing"
       ],
-      "createdAt": "2026-02-10T10:58:31Z",
-      "pushedAt": "2026-02-13T13:55:22Z"
+      "createdAt": "2026-02-12T16:15:38Z",
+      "pushedAt": "2026-02-17T09:22:15Z"
+    },
+    {
+      "name": "keanucz/detour",
+      "url": "https://github.com/keanucz/detour",
+      "description": "On-board AI agents autonomously saving satellites from orbital debris @ treehacks 2026",
+      "stars": 131,
+      "forks": 14,
+      "language": "TypeScript",
+      "topics": [],
+      "createdAt": "2026-02-14T18:15:27Z",
+      "pushedAt": "2026-02-16T00:55:38Z"
     }
   ],
   "trending": []
