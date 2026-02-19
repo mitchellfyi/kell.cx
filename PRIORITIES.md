@@ -1,6 +1,6 @@
 # Kell Priorities
 
-**Last updated:** 2026-02-15 22:00 UTC
+**Last updated:** 2026-02-19 00:30 UTC
 **Goal:** First paying customer
 
 ---
@@ -39,7 +39,11 @@ _Nothing blocking. Ready for next priorities._
 
 5. **Content that drives signups**
    - Blog posts, comparisons, analysis
-   - Status: 5 posts live (added "Free AI Coding Tools 2026" 2026-02-18)
+   - Status: 6 posts live (added "Claude Sonnet 4.6 Coding Guide" 2026-02-19)
+
+6. **Models page verified live** ✅
+   - 307 models tracked, LMArena + Aider data
+   - Marked complete in ROADMAP.md (2026-02-18)
 
 ---
 
