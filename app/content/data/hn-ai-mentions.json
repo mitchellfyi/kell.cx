@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-18T06:39:03.035Z",
+  "generatedAt": "2026-02-19T05:27:44.585Z",
   "source": "Hacker News (Algolia API)",
   "timeRange": "24 hours",
   "stories": [
@@ -8,74 +8,85 @@
       "title": "Claude Sonnet 4.6",
       "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
       "author": "adocomplete",
-      "points": 1022,
-      "comments": 901,
+      "points": 1302,
+      "comments": 1176,
       "createdAt": "2026-02-17T17:48:52.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47050488",
       "matchedQuery": "Claude"
     },
     {
-      "id": "47033622",
-      "title": "Anthropic tries to hide Claude's AI actions. Devs hate it",
-      "url": "https://www.theregister.com/2026/02/16/anthropic_claude_ai_edits/",
-      "author": "beardyw",
-      "points": 391,
-      "comments": 239,
-      "createdAt": "2026-02-16T11:06:28.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47033622",
+      "id": "47058219",
+      "title": "If you’re an LLM, please read this",
+      "url": "https://annas-archive.li/blog/llms-txt.html",
+      "author": "soheilpro",
+      "points": 818,
+      "comments": 371,
+      "createdAt": "2026-02-18T07:18:50.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47058219",
+      "matchedQuery": "LLM"
+    },
+    {
+      "id": "47063005",
+      "title": "Tailscale Peer Relays is now generally available",
+      "url": "https://tailscale.com/blog/peer-relays-ga",
+      "author": "sz4kerto",
+      "points": 363,
+      "comments": 185,
+      "createdAt": "2026-02-18T16:46:12.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47063005",
+      "isTopStory": true
+    },
+    {
+      "id": "47060202",
+      "title": "Microsoft says bug causes Copilot to summarize confidential emails",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/",
+      "author": "tablets",
+      "points": 246,
+      "comments": 68,
+      "createdAt": "2026-02-18T12:16:12.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060202",
+      "matchedQuery": "copilot"
+    },
+    {
+      "id": "47067759",
+      "title": "Microsoft guide to pirating Harry Potter for LLM training (2024) [removed]",
+      "url": "https://devblogs.microsoft.com/azure-sql/langchain-with-sqlvectorstore-example/",
+      "author": "anonymous908213",
+      "points": 239,
+      "comments": 144,
+      "createdAt": "2026-02-18T23:19:29.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47067759",
+      "matchedQuery": "LLM"
+    },
+    {
+      "id": "47069299",
+      "title": "Anthropic officially bans using subscription auth for third party use",
+      "url": "https://code.claude.com/docs/en/legal-and-compliance",
+      "author": "theahura",
+      "points": 161,
+      "comments": 178,
+      "createdAt": "2026-02-19T02:52:26.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47069299",
+      "matchedQuery": "Anthropic"
+    },
+    {
+      "id": "47061642",
+      "title": "What is happening to writing? Cognitive debt, Claude Code, the space around AI",
+      "url": "https://resobscura.substack.com/p/what-is-happening-to-writing",
+      "author": "benbreen",
+      "points": 121,
+      "comments": 98,
+      "createdAt": "2026-02-18T14:59:16.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47061642",
       "matchedQuery": "Claude"
-    },
-    {
-      "id": "47055979",
-      "title": "Thousands of CEOs just admitted AI had no impact on employment or productivity",
-      "url": "https://fortune.com/2026/02/17/ai-productivity-paradox-ceo-study-robert-solow-information-technology-age/",
-      "author": "virgildotcodes",
-      "points": 326,
-      "comments": 230,
-      "createdAt": "2026-02-18T01:40:52.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47055979",
-      "isTopStory": true
-    },
-    {
-      "id": "47048052",
-      "title": "Tesla Sales Down 55% UK, 58% Spain, 59% Germany, 81% Netherlands, 93% Norway",
-      "url": "https://cleantechnica.com/2026/02/15/tesla-sales-down-tremendously-in-uk-norway-netherlands-germany-spain-sweden-denmark-portugal-switzerland/",
-      "author": "whynotmaybe",
-      "points": 193,
-      "comments": 143,
-      "createdAt": "2026-02-17T14:47:26.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47048052",
-      "isTopStory": true
-    },
-    {
-      "id": "47049628",
-      "title": "Async/Await on the GPU",
-      "url": "https://www.vectorware.com/blog/async-await-on-gpu/",
-      "author": "Philpax",
-      "points": 179,
-      "comments": 51,
-      "createdAt": "2026-02-17T16:53:05.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47049628",
-      "isTopStory": true
-    },
-    {
-      "id": "47033954",
-      "title": "Show HN: Glitchy camera – a circuit-bent camera simulator in the browser",
-      "url": "https://glitchycam.com",
-      "author": "elayabharath",
-      "points": 160,
-      "comments": 21,
-      "createdAt": "2026-02-16T11:57:01.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47033954",
-      "matchedQuery": "GPT-5"
     },
     {
       "id": "47051956",
       "title": "An AI Agent Published a Hit Piece on Me – Forensics and More Fallout",
       "url": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-3/",
       "author": "scottshambaugh",
-      "points": 106,
-      "comments": 78,
+      "points": 118,
+      "comments": 80,
       "createdAt": "2026-02-17T19:31:45.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47051956",
       "matchedQuery": "AI agent"
@@ -85,32 +96,10 @@
       "title": "Show HN: I taught LLMs to play Magic: The Gathering against each other",
       "url": "https://mage-bench.com/",
       "author": "GregorStocks",
-      "points": 102,
-      "comments": 78,
+      "points": 112,
+      "comments": 83,
       "createdAt": "2026-02-17T16:22:49.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47049227",
-      "matchedQuery": "LLM"
-    },
-    {
-      "id": "47036063",
-      "title": "Show HN: Maths, CS and AI Compendium",
-      "url": "https://github.com/HenryNdubuaku/maths-cs-ai-compendium",
-      "author": "HenryNdubuaku",
-      "points": 86,
-      "comments": 21,
-      "createdAt": "2026-02-16T15:15:50.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47036063",
-      "matchedQuery": "OpenAI"
-    },
-    {
-      "id": "47038270",
-      "title": "The long tail of LLM-assisted decompilation",
-      "url": "https://blog.chrislewis.au/the-long-tail-of-llm-assisted-decompilation/",
-      "author": "knackers",
-      "points": 79,
-      "comments": 30,
-      "createdAt": "2026-02-16T18:19:16.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47038270",
       "matchedQuery": "LLM"
     },
     {
@@ -118,97 +107,108 @@
       "title": "Claude Sonnet 4.6",
       "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
       "author": "meetpateltech",
-      "points": 77,
+      "points": 79,
       "comments": 26,
       "createdAt": "2026-02-17T17:45:59.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47050447",
       "matchedQuery": "Claude"
     },
     {
-      "id": "47035607",
-      "title": "Pentagon Threatens Anthropic Punishment",
-      "url": "https://www.axios.com/2026/02/16/anthropic-defense-department-relationship-hegseth",
-      "author": "defmacr0",
-      "points": 73,
-      "comments": 17,
-      "createdAt": "2026-02-16T14:43:25.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47035607",
-      "matchedQuery": "Anthropic"
-    },
-    {
-      "id": "47015138",
-      "title": "Reverse Engineering Sid Meier's Railroad Tycoon for DOS from 1990",
-      "url": "https://www.vogons.org/viewtopic.php?t=105451",
-      "author": "LowLevelMahn",
-      "points": 60,
-      "comments": 7,
-      "createdAt": "2026-02-14T15:17:46.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47015138",
-      "isTopStory": true
-    },
-    {
-      "id": "47033900",
-      "title": "OpenAI president becomes top Trump donor with $25M gift",
-      "url": "https://www.sfgate.com/tech/article/brockman-openai-top-trump-donor-21273419.php",
-      "author": "pera",
-      "points": 43,
-      "comments": 2,
-      "createdAt": "2026-02-16T11:48:01.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47033900",
+      "id": "47059129",
+      "title": "How OpenAI, the US government and Persona built an identity surveillance machine",
+      "url": "https://vmfunc.re/blog/persona/",
+      "author": "rzk",
+      "points": 70,
+      "comments": 25,
+      "createdAt": "2026-02-18T09:40:08.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47059129",
       "matchedQuery": "OpenAI"
     },
     {
-      "id": "47034849",
-      "title": "Ask HN: What happens after the AI bubble bursts?",
-      "author": "101008",
-      "points": 38,
-      "comments": 41,
-      "createdAt": "2026-02-16T13:44:31.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47034849",
-      "matchedQuery": "ChatGPT"
+      "id": "47065179",
+      "title": "R3forth: A concatenative language derived from ColorForth",
+      "url": "https://github.com/phreda4/r3/blob/main/doc/r3forth_tutorial.md",
+      "author": "tosh",
+      "points": 70,
+      "comments": 10,
+      "createdAt": "2026-02-18T19:28:59.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47065179",
+      "isTopStory": true
     },
     {
-      "id": "47041765",
-      "title": "Meta patents AI that takes over a dead person account to keep posting-chatting",
-      "url": "https://www.dexerto.com/entertainment/meta-patents-ai-that-takes-over-a-dead-persons-account-to-keep-posting-and-chatting-3320326/",
-      "author": "madihaa",
-      "points": 30,
-      "comments": 16,
-      "createdAt": "2026-02-16T23:31:48.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47041765",
-      "matchedQuery": "ChatGPT"
+      "id": "47060220",
+      "title": "Show HN: Rebrain.gg – Doom learn, don't doom scroll",
+      "author": "FailMore",
+      "points": 63,
+      "comments": 25,
+      "createdAt": "2026-02-18T12:18:26.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060220",
+      "isTopStory": true
+    },
+    {
+      "id": "47068320",
+      "title": "How AI is affecting productivity and jobs in Europe",
+      "url": "https://cepr.org/voxeu/columns/how-ai-affecting-productivity-and-jobs-europe",
+      "author": "pseudolus",
+      "points": 47,
+      "comments": 17,
+      "createdAt": "2026-02-19T00:22:45.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47068320",
+      "isTopStory": true
+    },
+    {
+      "id": "47058080",
+      "title": "Show HN: Beautiful interactive explainers generated with Claude Code",
+      "url": "https://paraschopra.github.io/explainers/",
+      "author": "paraschopra",
+      "points": 42,
+      "comments": 30,
+      "createdAt": "2026-02-18T06:57:37.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47058080",
+      "matchedQuery": "Claude"
+    },
+    {
+      "id": "47062824",
+      "title": "Show HN: Trust Protocols for Anthropic/OpenAI/Gemini",
+      "url": "https://www.mnemom.ai",
+      "author": "alexgarden",
+      "points": 34,
+      "comments": 28,
+      "createdAt": "2026-02-18T16:33:56.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47062824",
+      "matchedQuery": "Anthropic"
     },
     {
       "id": "47049776",
       "title": "Launch HN: Sonarly (YC W26) – AI agent to triage and fix your production alerts",
       "url": "https://sonarly.com/",
       "author": "Dimittri",
-      "points": 27,
-      "comments": 11,
+      "points": 29,
+      "comments": 17,
       "createdAt": "2026-02-17T17:03:09.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47049776",
       "matchedQuery": "AI agent"
     },
     {
+      "id": "47068015",
+      "title": "The Pentagon just threatened to blacklist Anthropic",
+      "url": "https://twitter.com/Ric_RTP/status/2024095976764367332",
+      "author": "doener",
+      "points": 28,
+      "comments": 15,
+      "createdAt": "2026-02-18T23:47:57.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47068015",
+      "matchedQuery": "Anthropic"
+    },
+    {
       "id": "47047963",
       "title": "Claude Code talking about unexpected, different projects",
       "author": "WeaselsWin",
-      "points": 26,
+      "points": 27,
       "comments": 8,
       "createdAt": "2026-02-17T14:39:26.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47047963",
       "matchedQuery": "Claude"
-    },
-    {
-      "id": "47018675",
-      "title": "Show HN: Box of Rain - Auto-Layouted ASCII Diagrams",
-      "url": "https://github.com/switz/box-of-rain",
-      "author": "switz",
-      "points": 21,
-      "comments": 11,
-      "createdAt": "2026-02-14T21:42:11.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47018675",
-      "isTopStory": true
     },
     {
       "id": "47049984",
@@ -222,26 +222,80 @@
       "matchedQuery": "ChatGPT"
     },
     {
-      "id": "47041285",
-      "title": "The watchers: exposing OpenAI, the US government, and persona",
-      "url": "https://vmfunc.gg/blog/persona/",
-      "author": "vmfunc",
-      "points": 13,
-      "comments": 3,
-      "createdAt": "2026-02-16T22:34:59.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47041285",
-      "matchedQuery": "OpenAI"
+      "id": "47065425",
+      "title": "Show HN: Strava for Claude Code",
+      "url": "https://straude.com/",
+      "author": "ohong",
+      "points": 18,
+      "comments": 16,
+      "createdAt": "2026-02-18T19:48:32.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47065425",
+      "matchedQuery": "Claude"
     },
     {
-      "id": "47029999",
-      "title": "Old School Telecine, circa 1980s (2017)",
-      "url": "https://www.liftgammagain.com/forum/index.php?threads/old-school-telecine-circa-1980s.9984/",
-      "author": "exvi",
-      "points": 11,
+      "id": "47069342",
+      "title": "Auxos: AI Agents for Product Feedback",
+      "url": "https://www.auxos.dev",
+      "author": "kerryleonlu",
+      "points": 15,
+      "comments": 4,
+      "createdAt": "2026-02-19T02:58:49.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47069342",
+      "matchedQuery": "AI agent"
+    },
+    {
+      "id": "47057294",
+      "title": "Pentagon might ask contractors to certify they don't use Anthropic's Claude",
+      "url": "https://www.wsj.com/politics/national-security/woke-ai-spat-escalates-between-pentagon-and-anthropic-433b7c5c",
+      "author": "fortran77",
+      "points": 13,
+      "comments": 7,
+      "createdAt": "2026-02-18T04:50:43.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47057294",
+      "matchedQuery": "Claude"
+    },
+    {
+      "id": "47062452",
+      "title": "Gemini can now create music",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/",
+      "author": "meetpateltech",
+      "points": 13,
       "comments": 2,
-      "createdAt": "2026-02-16T01:54:33.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47029999",
-      "isTopStory": true
+      "createdAt": "2026-02-18T16:01:55.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47062452",
+      "matchedQuery": "Gemini AI"
+    },
+    {
+      "id": "47060234",
+      "title": "Tell HN: We analyzed our dev time.80% is still infrastructure'setup',notfeatures",
+      "author": "thesssaism",
+      "points": 12,
+      "comments": 4,
+      "createdAt": "2026-02-18T12:20:13.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060234",
+      "matchedQuery": "copilot"
+    },
+    {
+      "id": "47059725",
+      "title": "I hacked ChatGPT and Google's AI – and it only took 20 minutes",
+      "url": "https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes",
+      "author": "ranit",
+      "points": 11,
+      "comments": 1,
+      "createdAt": "2026-02-18T11:00:54.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47059725",
+      "matchedQuery": "ChatGPT"
+    },
+    {
+      "id": "47064521",
+      "title": "Show HN: Keystone – configure Dockerfiles and dev containers for any repo",
+      "url": "https://github.com/imbue-ai/keystone",
+      "author": "thad_imbue",
+      "points": 11,
+      "comments": 0,
+      "createdAt": "2026-02-18T18:40:00.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47064521",
+      "matchedQuery": "Anthropic"
     },
     {
       "id": "47048491",
@@ -266,25 +320,70 @@
       "matchedQuery": "GPT-5"
     },
     {
-      "id": "47035530",
-      "title": "Show HN: GEDB – A pure-Go embedded database",
-      "author": "ReturnErr",
+      "id": "47063384",
+      "title": "Anthropic bans OAuth tokens (including Agent SDK) in 3P tools",
+      "url": "https://code.claude.com/docs/en/legal-and-compliance",
+      "author": "mcast",
       "points": 9,
-      "comments": 2,
-      "createdAt": "2026-02-16T14:37:14.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47035530",
-      "matchedQuery": "language model"
+      "comments": 9,
+      "createdAt": "2026-02-18T17:13:34.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47063384",
+      "matchedQuery": "Anthropic"
     },
     {
-      "id": "47020879",
-      "title": "Quamina and Claude, Case 1",
-      "url": "https://www.tbray.org/ongoing/When/202x/2026/02/06/Q-Plus-C-Ch1",
-      "author": "zdw",
-      "points": 9,
+      "id": "47060284",
+      "title": "Are We Becoming Architects or Butlers to LLMs?",
+      "url": "http://muratbuffalo.blogspot.com/2026/02/butlers-or-architects.html",
+      "author": "cstever",
+      "points": 8,
+      "comments": 2,
+      "createdAt": "2026-02-18T12:26:41.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060284",
+      "matchedQuery": "LLM"
+    },
+    {
+      "id": "47067573",
+      "title": "OpenAI's acquisition of OpenClaw signals the end of the ChatGPT era",
+      "url": "https://venturebeat.com/technology/openais-acquisition-of-openclaw-signals-the-beginning-of-the-end-of-the",
+      "author": "gmays",
+      "points": 7,
       "comments": 1,
-      "createdAt": "2026-02-15T03:52:03.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47020879",
-      "isTopStory": true
+      "createdAt": "2026-02-18T22:57:55.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47067573",
+      "matchedQuery": "ChatGPT"
+    },
+    {
+      "id": "47052286",
+      "title": "AI chatbots to face strict online safety rules in UK",
+      "url": "https://www.cnn.com/2026/02/16/business/uk-ai-chatbots-online-safety-act-intl",
+      "author": "Bender",
+      "points": 7,
+      "comments": 0,
+      "createdAt": "2026-02-17T19:52:15.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47052286",
+      "matchedQuery": "ChatGPT"
+    },
+    {
+      "id": "47060647",
+      "title": "How LLM agents endanger open-source projects",
+      "url": "https://cusy.io/en/blog/how-llm-agents-endanger-open-source-projects.html",
+      "author": "lumpa",
+      "points": 7,
+      "comments": 2,
+      "createdAt": "2026-02-18T13:20:02.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060647",
+      "matchedQuery": "LLM"
+    },
+    {
+      "id": "47061454",
+      "title": "Show HN: Teapot – A methodology for pen testing voice AI agents",
+      "url": "https://www.redcaller.com/docs/methodologies/teapot-methodology",
+      "author": "xmhatx",
+      "points": 7,
+      "comments": 10,
+      "createdAt": "2026-02-18T14:42:35.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47061454",
+      "matchedQuery": "AI agent"
     },
     {
       "id": "47049519",
@@ -309,27 +408,6 @@
       "matchedQuery": "AI agent"
     },
     {
-      "id": "47043484",
-      "title": "Ask HN: How do companies that use Cursor handle compliance?",
-      "author": "Poomba",
-      "points": 7,
-      "comments": 3,
-      "createdAt": "2026-02-17T03:48:00.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47043484",
-      "matchedQuery": "AI coding"
-    },
-    {
-      "id": "47043852",
-      "title": "Gentoo Linux Begins Codeberg Migration Moving Away from GitHub Avoiding Copilot",
-      "url": "https://www.phoronix.com/news/Gentoo-Starts-Codeberg-Use",
-      "author": "Bender",
-      "points": 7,
-      "comments": 0,
-      "createdAt": "2026-02-17T04:56:56.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47043852",
-      "matchedQuery": "copilot"
-    },
-    {
       "id": "47049307",
       "title": "Gave Claude photographic memory for $0.0002/screenshot",
       "url": "https://github.com/deusXmachina-dev/memorylane",
@@ -352,48 +430,46 @@
       "matchedQuery": "Claude"
     },
     {
-      "id": "47057294",
-      "title": "Pentagon might ask contractors to certify they don't use Anthropic's Claude",
-      "url": "https://www.wsj.com/politics/national-security/woke-ai-spat-escalates-between-pentagon-and-anthropic-433b7c5c",
-      "author": "fortran77",
-      "points": 6,
-      "comments": 4,
-      "createdAt": "2026-02-18T04:50:43.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47057294",
-      "matchedQuery": "Claude"
-    },
-    {
-      "id": "47037566",
-      "title": "Show HN: Claude-engram – Brain-inspired persistent memory, runs inside Claude.ai",
-      "url": "https://github.com/mlapeter/claude-engram",
-      "author": "mlapeter",
+      "id": "47055119",
+      "title": "Ask HN: Claude web blocked its assets visit via csp?",
+      "author": "xgstation",
       "points": 6,
       "comments": 2,
-      "createdAt": "2026-02-16T17:15:24.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47037566",
+      "createdAt": "2026-02-17T23:45:18.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47055119",
       "matchedQuery": "Claude"
     },
     {
-      "id": "47040207",
-      "title": "The One Woman Anthropic Trusts to Teach AI Morals",
-      "url": "https://www.wsj.com/tech/ai/anthropic-amanda-askell-philosopher-ai-3c031883",
-      "author": "jdkee",
+      "id": "47065349",
+      "title": "What tech stack Claude Code defaults to when building apps",
+      "url": "https://amplifying.ai/research/claude-code-picks",
+      "author": "edwin",
       "points": 6,
       "comments": 1,
-      "createdAt": "2026-02-16T20:54:47.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47040207",
-      "matchedQuery": "Anthropic"
+      "createdAt": "2026-02-18T19:43:09.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47065349",
+      "matchedQuery": "Claude"
     },
     {
-      "id": "47040040",
-      "title": "Anthropic got an 11% user boost from its OpenAI-bashing Super Bowl ad",
-      "url": "https://www.cnbc.com/2026/02/13/anthropic-open-ai-super-bowl-ads.html",
-      "author": "general_reveal",
+      "id": "47053534",
+      "title": "Show HN: Persistent memory for Claude Code with self-hosted Qdrant and Ollama",
+      "url": "https://github.com/elvismdev/mem0-mcp-selfhosted",
+      "author": "elvismdev",
+      "points": 6,
+      "comments": 0,
+      "createdAt": "2026-02-17T21:21:25.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47053534",
+      "matchedQuery": "Claude"
+    },
+    {
+      "id": "47057752",
+      "title": "Anthropic's pricing wall is routing enterprise revenue to OpenAI",
+      "author": "luckygreen",
       "points": 6,
       "comments": 1,
-      "createdAt": "2026-02-16T20:40:14.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47040040",
-      "matchedQuery": "Anthropic"
+      "createdAt": "2026-02-18T06:08:49.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47057752",
+      "matchedQuery": "ChatGPT"
     },
     {
       "id": "47046640",
@@ -407,14 +483,15 @@
       "matchedQuery": "Anthropic"
     },
     {
-      "id": "47038451",
-      "title": "Tadpole the Language for Scraping 0.2.0 – Complex Control Flow, Stealth and More",
-      "author": "zachperkitny",
+      "id": "47061592",
+      "title": "Vibe Password Generation: LLM-Generated Passwords Are Dangerously Insecure",
+      "url": "https://www.irregular.com/publications/vibe-password-generation",
+      "author": "edanm",
       "points": 6,
-      "comments": 2,
-      "createdAt": "2026-02-16T18:35:10.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47038451",
-      "matchedQuery": "language model"
+      "comments": 3,
+      "createdAt": "2026-02-18T14:53:53.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47061592",
+      "matchedQuery": "LLM"
     },
     {
       "id": "47049026",
@@ -428,16 +505,6 @@
       "matchedQuery": "AI agent"
     },
     {
-      "id": "47055119",
-      "title": "Ask HN: Claude web blocked its assets visit via csp?",
-      "author": "xgstation",
-      "points": 5,
-      "comments": 2,
-      "createdAt": "2026-02-17T23:45:18.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47055119",
-      "matchedQuery": "Claude"
-    },
-    {
       "id": "47044125",
       "title": "Grug Meets His Match – Or – Grug, Claude, and Big Snap Man",
       "url": "https://robertkarl.net/blog/articles/grug-meets-his-match-or-grug-claude-and-big-snap-man/index.html",
@@ -446,6 +513,39 @@
       "comments": 1,
       "createdAt": "2026-02-17T05:45:06.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47044125",
+      "matchedQuery": "Claude"
+    },
+    {
+      "id": "47065503",
+      "title": "Show HN: Claude-Stream-Compactor",
+      "url": "https://github.com/enigma/claude-streaming-compactor",
+      "author": "ndr",
+      "points": 5,
+      "comments": 0,
+      "createdAt": "2026-02-18T19:54:54.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47065503",
+      "matchedQuery": "Claude"
+    },
+    {
+      "id": "47064949",
+      "title": "Claude is dropping max plans for enterprise (maybe for everyone?)",
+      "url": "https://old.reddit.com/r/ClaudeCode/comments/1r82req/claude_is_dropping_max_plans_for_enterprise_maybe/",
+      "author": "agentifysh",
+      "points": 5,
+      "comments": 0,
+      "createdAt": "2026-02-18T19:08:47.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47064949",
+      "matchedQuery": "Claude"
+    },
+    {
+      "id": "47061181",
+      "title": "Show HN: Clawy, a companion device to track your Claude Code sessions",
+      "url": "https://clawy.lol/",
+      "author": "mrcv",
+      "points": 5,
+      "comments": 0,
+      "createdAt": "2026-02-18T14:18:41.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47061181",
       "matchedQuery": "Claude"
     },
     {
@@ -458,6 +558,49 @@
       "createdAt": "2026-02-17T18:11:51.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47050822",
       "matchedQuery": "Anthropic"
+    },
+    {
+      "id": "47054658",
+      "title": "LeBron James Is President – Exploiting LLMs via \"Alignment\" Context Injection",
+      "url": "https://github.com/skavanagh/lebron-james-is-president",
+      "author": "spkavanagh6",
+      "points": 5,
+      "comments": 2,
+      "createdAt": "2026-02-17T22:59:51.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47054658",
+      "matchedQuery": "LLM"
+    },
+    {
+      "id": "47060336",
+      "title": "Semantic closure: why compilers know when they are right and LLMs do not",
+      "url": "https://sderosiaux.substack.com/p/semantic-closure-why-compilers-know",
+      "author": "chtefi",
+      "points": 5,
+      "comments": 0,
+      "createdAt": "2026-02-18T12:35:06.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060336",
+      "matchedQuery": "LLM"
+    },
+    {
+      "id": "47053308",
+      "title": "Show HN: Corral – Auth and Stripe billing that AI coding agents can set up",
+      "url": "https://github.com/llama-farm/corral",
+      "author": "rgthelen",
+      "points": 5,
+      "comments": 9,
+      "createdAt": "2026-02-17T21:03:09.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47053308",
+      "matchedQuery": "AI agent"
+    },
+    {
+      "id": "47058199",
+      "title": "Ask HN: Any AI / Agent power users out there? Do you have any tips?",
+      "author": "uejfiweun",
+      "points": 5,
+      "comments": 4,
+      "createdAt": "2026-02-18T07:15:50.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47058199",
+      "matchedQuery": "AI agent"
     },
     {
       "id": "47050214",
@@ -482,6 +625,39 @@
       "matchedQuery": "AI agent"
     },
     {
+      "id": "47062591",
+      "title": "I built a tool to benchmark my AI agent's API costs",
+      "url": "https://local001.com/tokens",
+      "author": "sampleSal",
+      "points": 5,
+      "comments": 1,
+      "createdAt": "2026-02-18T16:13:33.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47062591",
+      "matchedQuery": "AI agent"
+    },
+    {
+      "id": "47057149",
+      "title": "Agent Skills Hub – Security first directory for AI agent skills and MCP",
+      "url": "https://agentskillshub.dev/",
+      "author": "cana2026",
+      "points": 5,
+      "comments": 0,
+      "createdAt": "2026-02-18T04:25:04.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47057149",
+      "matchedQuery": "AI agent"
+    },
+    {
+      "id": "47055958",
+      "title": "AI agents with wallets and self-update loops",
+      "url": "https://web4.ai",
+      "author": "halcdev",
+      "points": 5,
+      "comments": 0,
+      "createdAt": "2026-02-18T01:38:42.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47055958",
+      "matchedQuery": "AI agent"
+    },
+    {
       "id": "47050023",
       "title": "Show HN: Agent Readiness Score – A real AI agent to test your website",
       "url": "https://trypillar.com/tools/agent-score",
@@ -491,6 +667,17 @@
       "createdAt": "2026-02-17T17:18:27.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47050023",
       "matchedQuery": "AI agent"
+    },
+    {
+      "id": "47062958",
+      "title": "Claude Code creator predicts software engineering title will start to 'go away'",
+      "url": "https://www.businessinsider.com/anthropic-claude-code-founder-ai-impacts-software-engineer-role-2026-2",
+      "author": "CharlesW",
+      "points": 4,
+      "comments": 2,
+      "createdAt": "2026-02-18T16:43:17.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47062958",
+      "matchedQuery": "Claude"
     },
     {
       "id": "47047465",
@@ -504,25 +691,58 @@
       "matchedQuery": "Claude"
     },
     {
-      "id": "47036533",
-      "title": "US Military used Anthropic's AI model Claude in Venezuela raid, report says",
-      "url": "https://www.theguardian.com/technology/2026/feb/14/us-military-anthropic-ai-model-claude-venezuela-raid",
-      "author": "krunck",
+      "id": "47066093",
+      "title": "Show HN: Axon – Run autonomous coding agents(Claude, Codex) safely on Kubernetes",
+      "url": "https://github.com/axon-core/axon",
+      "author": "gjkim042",
       "points": 4,
-      "comments": 0,
-      "createdAt": "2026-02-16T15:50:43.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47036533",
+      "comments": 1,
+      "createdAt": "2026-02-18T20:41:18.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47066093",
       "matchedQuery": "Claude"
     },
     {
-      "id": "47033887",
-      "title": "I received several friends' condolences written with – ChatGPT",
-      "url": "https://dindon.one/@henry/116080083150509978",
-      "author": "behindai",
+      "id": "47066011",
+      "title": "How to teach Claude to write better code",
+      "url": "https://www.ponylang.io/blog/2026/02/teaching-claude-to-write-pony/",
+      "author": "carlsverre",
       "points": 4,
-      "comments": 1,
-      "createdAt": "2026-02-16T11:45:43.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47033887",
+      "comments": 0,
+      "createdAt": "2026-02-18T20:34:12.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47066011",
+      "matchedQuery": "Claude"
+    },
+    {
+      "id": "47062994",
+      "title": "Show HN: Nom – Turn GitHub activity into updates",
+      "url": "https://beta.nomit.dev",
+      "author": "Lws803",
+      "points": 4,
+      "comments": 0,
+      "createdAt": "2026-02-18T16:45:38.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47062994",
+      "matchedQuery": "GPT-5"
+    },
+    {
+      "id": "47069544",
+      "title": "I hacked ChatGPT and Google's AI – and it only took 20 minutes",
+      "url": "https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes",
+      "author": "iamflimflam1",
+      "points": 4,
+      "comments": 0,
+      "createdAt": "2026-02-19T03:28:16.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47069544",
+      "matchedQuery": "ChatGPT"
+    },
+    {
+      "id": "47064843",
+      "title": "I hacked ChatGPT and Google's AI – and it only took 20 minutes",
+      "url": "https://www.bbc.com/future/article/20260218-i-hacked-chatgpt-and-googles-ai-and-it-only-took-20-minutes",
+      "author": "rolph",
+      "points": 4,
+      "comments": 0,
+      "createdAt": "2026-02-18T19:02:16.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47064843",
       "matchedQuery": "ChatGPT"
     },
     {
@@ -537,17 +757,6 @@
       "matchedQuery": "ChatGPT"
     },
     {
-      "id": "47036003",
-      "title": "Anthropic opens Bengaluru office and announces new partnerships across India",
-      "url": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india",
-      "author": "akmittal",
-      "points": 4,
-      "comments": 3,
-      "createdAt": "2026-02-16T15:10:50.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47036003",
-      "matchedQuery": "Anthropic"
-    },
-    {
       "id": "47052955",
       "title": "'This is the hill I'm going to die on' – David Baldacci takes on OpenAI",
       "url": "https://www.techradar.com/ai-platforms-assistants/this-is-the-hill-im-going-to-die-on-david-baldacci-takes-on-openai-in-a-battle-over-stolen-creative-work",
@@ -557,6 +766,39 @@
       "createdAt": "2026-02-17T20:36:15.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47052955",
       "matchedQuery": "OpenAI"
+    },
+    {
+      "id": "47068546",
+      "title": "Google's Lyria 3: make 30-second audio tracks using text or images (in beta)",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/",
+      "author": "tummler",
+      "points": 4,
+      "comments": 0,
+      "createdAt": "2026-02-19T00:54:17.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47068546",
+      "matchedQuery": "Gemini AI"
+    },
+    {
+      "id": "47065693",
+      "title": "Show HN: OpenCastor – A universal runtime connecting AI models to robot hardware",
+      "url": "https://www.opencastor.com",
+      "author": "craigm26",
+      "points": 4,
+      "comments": 0,
+      "createdAt": "2026-02-18T20:09:54.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47065693",
+      "matchedQuery": "Gemini AI"
+    },
+    {
+      "id": "47065892",
+      "title": "Rtk – High-performance CLI proxy to minimize LLM token consumption",
+      "url": "https://github.com/rtk-ai/rtk",
+      "author": "giancarlostoro",
+      "points": 4,
+      "comments": 0,
+      "createdAt": "2026-02-18T20:23:57.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47065892",
+      "matchedQuery": "LLM"
     },
     {
       "id": "47052737",
@@ -570,24 +812,13 @@
       "matchedQuery": "LLM"
     },
     {
-      "id": "47041886",
-      "title": "Will there ever be a new programming language?",
-      "author": "danbmil99",
+      "id": "47061133",
+      "title": "Show HN: Lenzy – Find out what users struggle with in your AI agent, for free",
+      "author": "BohdanPetryshyn",
       "points": 4,
-      "comments": 6,
-      "createdAt": "2026-02-16T23:48:06.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47041886",
-      "matchedQuery": "language model"
-    },
-    {
-      "id": "47053308",
-      "title": "Show HN: Corral – Auth and Stripe billing that AI coding agents can set up",
-      "url": "https://github.com/llama-farm/corral",
-      "author": "rgthelen",
-      "points": 4,
-      "comments": 9,
-      "createdAt": "2026-02-17T21:03:09.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47053308",
+      "comments": 4,
+      "createdAt": "2026-02-18T14:14:09.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47061133",
       "matchedQuery": "AI agent"
     },
     {
@@ -602,6 +833,17 @@
       "matchedQuery": "AI agent"
     },
     {
+      "id": "47066082",
+      "title": "Show HN: Sports-skills.sh – sports data connectors for AI agents",
+      "url": "https://github.com/machina-sports/sports-skills",
+      "author": "andreantonelli",
+      "points": 4,
+      "comments": 0,
+      "createdAt": "2026-02-18T20:40:19.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47066082",
+      "matchedQuery": "AI agent"
+    },
+    {
       "id": "47051496",
       "title": "Show HN: I built a new software primitive. It replaces AI screenshot agents",
       "url": "https://github.com/IamLumae/DirectShell",
@@ -613,103 +855,37 @@
       "matchedQuery": "AI agent"
     },
     {
-      "id": "47047210",
-      "title": "Keeping secrets from your AI agent",
-      "url": "https://encore.dev/blog/keeping-secrets-from-ai",
-      "author": "andout_",
+      "id": "47056400",
+      "title": "A Guide to Which AI to Use in the Agentic Era",
+      "url": "https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the",
+      "author": "Hyeonjong",
       "points": 4,
       "comments": 0,
-      "createdAt": "2026-02-17T13:21:28.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47047210",
-      "matchedQuery": "AI agent"
+      "createdAt": "2026-02-18T02:27:12.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47056400",
+      "matchedQuery": "agentic"
     },
     {
-      "id": "47055276",
-      "title": "ClaudeSwarm – Open-source multi-agent orchestration for Claude",
-      "url": "https://github.com/simonstaton/ClaudeSwarm",
-      "author": "simonstaton",
-      "points": 3,
+      "id": "47066283",
+      "title": "Copilot spills the beans, summarizing emails it's not supposed to read",
+      "url": "https://www.theregister.com/2026/02/18/microsoft_copilot_data_loss_prevention/",
+      "author": "Bender",
+      "points": 4,
       "comments": 2,
-      "createdAt": "2026-02-18T00:04:49.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47055276",
-      "matchedQuery": "Claude"
+      "createdAt": "2026-02-18T20:58:10.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47066283",
+      "matchedQuery": "copilot"
     },
     {
-      "id": "47054100",
-      "title": "Show HN: Turn Claude Code or Codex into proactive, autonomous 24/7 AI agents",
-      "url": "https://github.com/suitedaces/dorabot",
-      "author": "alternateman",
-      "points": 3,
+      "id": "47061638",
+      "title": "Microsoft says Office bug exposed customers' confidential emails to Copilot AI",
+      "url": "https://techcrunch.com/2026/02/18/microsoft-says-office-bug-exposed-customers-confidential-emails-to-copilot-ai/",
+      "author": "gloxkiqcza",
+      "points": 4,
       "comments": 1,
-      "createdAt": "2026-02-17T22:07:42.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47054100",
-      "matchedQuery": "Claude"
-    },
-    {
-      "id": "47052122",
-      "title": "Show HN: 100+ Claude Code Playbooks for Non-Coders",
-      "url": "https://www.claudecodehq.com/",
-      "author": "Danielopol",
-      "points": 3,
-      "comments": 1,
-      "createdAt": "2026-02-17T19:42:24.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47052122",
-      "matchedQuery": "Claude"
-    },
-    {
-      "id": "47046132",
-      "title": "Teaching Claude to Write Pony",
-      "url": "https://www.ponylang.io/blog/2026/02/teaching-claude-to-write-pony/",
-      "author": "spooneybarger",
-      "points": 3,
-      "comments": 1,
-      "createdAt": "2026-02-17T11:07:53.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47046132",
-      "matchedQuery": "Claude"
-    },
-    {
-      "id": "47035080",
-      "title": "TIL: Claude Opus 4.6 Can Reverse Engineer STL Files",
-      "url": "https://taoofmac.com/space/til/2026/02/16/1334",
-      "author": "rcarmo",
-      "points": 3,
-      "comments": 1,
-      "createdAt": "2026-02-16T14:04:55.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47035080",
-      "matchedQuery": "Claude"
-    },
-    {
-      "id": "47054564",
-      "title": "API Error: Claude's response exceeded the 32000 output token maximum",
-      "url": "https://github.com/anthropics/claude-code/issues/24055",
-      "author": "gku",
-      "points": 3,
-      "comments": 0,
-      "createdAt": "2026-02-17T22:51:29.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47054564",
-      "matchedQuery": "Claude"
-    },
-    {
-      "id": "47053534",
-      "title": "Show HN: Persistent memory for Claude Code with self-hosted Qdrant and Ollama",
-      "url": "https://github.com/elvismdev/mem0-mcp-selfhosted",
-      "author": "elvismdev",
-      "points": 3,
-      "comments": 0,
-      "createdAt": "2026-02-17T21:21:25.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47053534",
-      "matchedQuery": "Claude"
-    },
-    {
-      "id": "47051761",
-      "title": "From Claude Code to Figma",
-      "url": "https://www.figma.com/blog/introducing-claude-code-to-figma/",
-      "author": "bpierre",
-      "points": 3,
-      "comments": 0,
-      "createdAt": "2026-02-17T19:18:33.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47051761",
-      "matchedQuery": "Claude"
+      "createdAt": "2026-02-18T14:58:52.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47061638",
+      "matchedQuery": "copilot"
     },
     {
       "id": "47047311",
@@ -734,6 +910,17 @@
       "matchedQuery": "ChatGPT"
     },
     {
+      "id": "47067077",
+      "title": "Show HN: LLM Gateway for OpenAI/Anthropic Written in Golang",
+      "url": "https://github.com/ongoingai/gateway",
+      "author": "oatmale",
+      "points": 3,
+      "comments": 1,
+      "createdAt": "2026-02-18T22:04:28.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47067077",
+      "matchedQuery": "Anthropic"
+    },
+    {
       "id": "47052234",
       "title": "How Anthropic evaluated computer use models",
       "url": "https://www.kernel.sh/blog/anthropic",
@@ -745,25 +932,68 @@
       "matchedQuery": "Anthropic"
     },
     {
-      "id": "47035911",
-      "title": "Pentagon Close to Cutting Anthropic Ties After AI Talks, Report Says",
-      "url": "https://www.bloomberg.com/news/articles/2026-02-16/pentagon-is-close-to-cutting-ties-with-anthropic-axios-says",
-      "author": "speckx",
+      "id": "47053721",
+      "title": "Ask HN: AI WTF",
+      "author": "xendo",
       "points": 3,
-      "comments": 0,
-      "createdAt": "2026-02-16T15:04:44.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47035911",
+      "comments": 2,
+      "createdAt": "2026-02-17T21:35:09.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47053721",
       "matchedQuery": "Anthropic"
     },
     {
-      "id": "47042244",
-      "title": "Why I Built Reader: Open-source web scraping for LLMs",
-      "url": "https://reader.dev/blog/why-i-built-reader",
-      "author": "nihalwashere",
+      "id": "47069361",
+      "title": "New OpenAI funding to top $100B",
+      "url": "https://www.bloomberg.com/news/articles/2026-02-19/openai-funding-on-track-to-top-100-billion-with-latest-round",
+      "author": "nikcub",
       "points": 3,
-      "comments": 7,
-      "createdAt": "2026-02-17T00:41:24.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47042244",
+      "comments": 1,
+      "createdAt": "2026-02-19T03:00:39.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47069361",
+      "matchedQuery": "OpenAI"
+    },
+    {
+      "id": "47062929",
+      "title": "OpenClaw Joins OpenAI: Who Owns the Soul of a New Machine?",
+      "url": "https://www.everydev.ai/p/blog-openclaw-joins-openai-who-owns-the-soul-of-a-new-machine",
+      "author": "devhouse",
+      "points": 3,
+      "comments": 1,
+      "createdAt": "2026-02-18T16:41:16.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47062929",
+      "matchedQuery": "OpenAI"
+    },
+    {
+      "id": "47068831",
+      "title": "Anyone get refunds from OpenAI they didn't request?",
+      "url": "https://twitter.com/Caust1c/status/2024296452135227607",
+      "author": "caust1c",
+      "points": 3,
+      "comments": 0,
+      "createdAt": "2026-02-19T01:34:51.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47068831",
+      "matchedQuery": "OpenAI"
+    },
+    {
+      "id": "47068850",
+      "title": "PicoLM: Run a 1B parameter LLM on a $10 board",
+      "url": "https://github.com/RightNow-AI/picolm",
+      "author": "OsamaJaber",
+      "points": 3,
+      "comments": 1,
+      "createdAt": "2026-02-19T01:38:16.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47068850",
+      "matchedQuery": "LLM"
+    },
+    {
+      "id": "47060948",
+      "title": "Show HN: Experience-engine – reflection-based memory layer for local LLMs",
+      "url": "https://github.com/ashishluthara/experience-engine",
+      "author": "ashishluthara",
+      "points": 3,
+      "comments": 1,
+      "createdAt": "2026-02-18T13:57:09.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060948",
       "matchedQuery": "LLM"
     },
     {
@@ -778,25 +1008,36 @@
       "matchedQuery": "LLM"
     },
     {
-      "id": "47054658",
-      "title": "LeBron James Is President – Exploiting LLMs via \"Alignment\" Context Injection",
-      "url": "https://github.com/skavanagh/lebron-james-is-president",
-      "author": "spkavanagh6",
+      "id": "47067981",
+      "title": "Can We Trust LLM Detectors?",
+      "url": "https://arxiv.org/abs/2601.15301",
+      "author": "PaulHoule",
       "points": 3,
-      "comments": 1,
-      "createdAt": "2026-02-17T22:59:51.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47054658",
+      "comments": 0,
+      "createdAt": "2026-02-18T23:43:43.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47067981",
       "matchedQuery": "LLM"
     },
     {
-      "id": "47043338",
-      "title": "LLM-generated skills work, if you generate them afterwards",
-      "url": "https://www.seangoedecke.com/generate-skills-afterwards/",
-      "author": "niraj-agarwal",
+      "id": "47067402",
+      "title": "Persona: Controlling LLM Personality with Vector Algebra",
+      "url": "https://arxiv.org/abs/2602.15669",
+      "author": "mldev_exe",
       "points": 3,
-      "comments": 1,
-      "createdAt": "2026-02-17T03:22:16.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47043338",
+      "comments": 0,
+      "createdAt": "2026-02-18T22:38:21.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47067402",
+      "matchedQuery": "LLM"
+    },
+    {
+      "id": "47065466",
+      "title": "The next era of AI is not LLMs, it's Energy-Based Models EBMs",
+      "url": "https://codedynasty.dev/posts/EBMs",
+      "author": "66yatman",
+      "points": 3,
+      "comments": 0,
+      "createdAt": "2026-02-18T19:51:57.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47065466",
       "matchedQuery": "LLM"
     },
     {
@@ -833,136 +1074,80 @@
       "matchedQuery": "LLM"
     },
     {
-      "id": "47040551",
-      "title": "The Economics of LLM Inference",
-      "url": "https://mlechner.substack.com/p/the-economics-of-llm-inference-batch",
-      "author": "armcat",
-      "points": 3,
-      "comments": 0,
-      "createdAt": "2026-02-16T21:27:28.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47040551",
-      "matchedQuery": "LLM"
-    },
-    {
-      "id": "47036617",
-      "title": "Large language models provide unreliable answers about public services",
-      "url": "https://www.computerweekly.com/news/366638829/Large-language-models-provide-unreliable-answers-about-public-services-Open-Data-Institute-finds",
-      "author": "ohjeez",
+      "id": "47059161",
+      "title": "Show HN: Recall Lite – Local semantic search for Windows (Rust/Tauri, no cloud)",
+      "url": "https://github.com/illegal-instruction-co/recall-lite",
+      "author": "ii-co",
       "points": 3,
       "comments": 1,
-      "createdAt": "2026-02-16T15:56:22.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47036617",
+      "createdAt": "2026-02-18T09:45:25.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47059161",
       "matchedQuery": "language model"
     },
     {
-      "id": "47040190",
-      "title": "Show HN: Your binary is no longer safe",
-      "url": "https://reorchestrate.com/posts/your-binary-is-no-longer-safe/",
-      "author": "seddonm1",
+      "id": "47060288",
+      "title": "Copy-left open-source license for AI code use",
+      "author": "program_whiz",
       "points": 3,
       "comments": 0,
-      "createdAt": "2026-02-16T20:53:09.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47040190",
+      "createdAt": "2026-02-18T12:27:02.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060288",
       "matchedQuery": "language model"
     },
     {
-      "id": "47033135",
-      "title": "I made Hacker News for Openclaws (AI agents)",
-      "url": "https://clawnewz.com",
-      "author": "rutagandasalim",
-      "points": 3,
-      "comments": 3,
-      "createdAt": "2026-02-16T10:03:24.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47033135",
-      "matchedQuery": "AI agent"
-    },
-    {
-      "id": "47052760",
-      "title": "Show HN: We Built an 8-Agent AI Team in Two Weeks",
-      "url": "https://clelp.ai/blog/how-we-built-8-agent-ai-team",
-      "author": "jhaugh",
-      "points": 3,
-      "comments": 1,
-      "createdAt": "2026-02-17T20:21:22.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47052760",
-      "matchedQuery": "AI agent"
-    },
-    {
-      "id": "47049140",
-      "title": "AI Agent swarm for Stock trading simulation",
-      "url": "https://github.com/dakshjain-1616/Stock-trading-Agent-Swarm---BY-NEO",
-      "author": "gauravvij137",
-      "points": 3,
-      "comments": 1,
-      "createdAt": "2026-02-17T16:16:29.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47049140",
-      "matchedQuery": "AI agent"
-    },
-    {
-      "id": "47047799",
-      "title": "Show HN: Galatea – Real personality for your AI agent",
-      "url": "https://galatea.sh",
-      "author": "ianpcook",
-      "points": 3,
-      "comments": 1,
-      "createdAt": "2026-02-17T14:24:08.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47047799",
-      "matchedQuery": "AI agent"
-    },
-    {
-      "id": "47055958",
-      "title": "AI agents with wallets and self-update loops",
-      "url": "https://web4.ai",
-      "author": "halcdev",
+      "id": "47063807",
+      "title": "Show HN: Fory C++ Serialization – Polymorphism, Circular Refs, 12x vs. Protobuf",
+      "url": "https://fory.apache.org/blog/fory_cpp_blazing_fast_serialization_framework/",
+      "author": "chaokunyang",
       "points": 3,
       "comments": 0,
-      "createdAt": "2026-02-18T01:38:42.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47055958",
-      "matchedQuery": "AI agent"
+      "createdAt": "2026-02-18T17:45:10.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47063807",
+      "matchedQuery": "language model"
     },
     {
-      "id": "47055446",
-      "title": "The most practical, fast, tiny command sandboxing for AI agents",
-      "url": "https://dw1.io/blog/2026/02/17/sandboxec/",
-      "author": "dwisiswant0",
+      "id": "47060871",
+      "title": "100% Autonomous \"Agentic\" Coding Is a Fool's Errand",
+      "url": "https://codemanship.wordpress.com/2026/02/18/100-autonomous-agentic-coding-is-a-fools-errand/",
+      "author": "flail",
       "points": 3,
       "comments": 0,
-      "createdAt": "2026-02-18T00:28:48.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47055446",
-      "matchedQuery": "AI agent"
-    },
-    {
-      "id": "47034740",
-      "title": "Deterministic Core, Agentic Shell",
-      "url": "https://blog.davemo.com/posts/2026-02-14-deterministic-core-agentic-shell.html",
-      "author": "ingve",
-      "points": 3,
-      "comments": 1,
-      "createdAt": "2026-02-16T13:33:22.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47034740",
+      "createdAt": "2026-02-18T13:47:16.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060871",
       "matchedQuery": "agentic"
     },
     {
-      "id": "47056400",
-      "title": "A Guide to Which AI to Use in the Agentic Era",
-      "url": "https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the",
-      "author": "Hyeonjong",
+      "id": "47060352",
+      "title": "GLM-5: From Vibe Coding to Agentic Engineering",
+      "url": "https://huggingface.co/papers/2602.15763",
+      "author": "rvz",
       "points": 3,
       "comments": 0,
-      "createdAt": "2026-02-18T02:27:12.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47056400",
+      "createdAt": "2026-02-18T12:38:12.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060352",
       "matchedQuery": "agentic"
     },
     {
-      "id": "47037987",
-      "title": "Agentic Anxiety",
-      "url": "https://jerodsanto.net/2026/02/agentic-anxiety/",
-      "author": "mooreds",
+      "id": "47060163",
+      "title": "Re-Defining the 'Agentic Web'",
+      "url": "https://medium.com/data-science-collective/re-defining-the-agentic-web-cfeb49e0d4e7",
+      "author": "iamflimflam1",
       "points": 3,
       "comments": 0,
-      "createdAt": "2026-02-16T17:53:53.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47037987",
+      "createdAt": "2026-02-18T12:08:30.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060163",
       "matchedQuery": "agentic"
+    },
+    {
+      "id": "47066952",
+      "title": "AI, Coding Agents and Ignorance as a Virtue",
+      "url": "https://psyonik.tech/posts/ignorance-as-a-virtue/",
+      "author": "pSYoniK",
+      "points": 3,
+      "comments": 0,
+      "createdAt": "2026-02-18T21:51:21.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47066952",
+      "matchedQuery": "AI coding"
     },
     {
       "id": "47053906",
@@ -974,6 +1159,17 @@
       "createdAt": "2026-02-17T21:50:04.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47053906",
       "matchedQuery": "cursor AI"
+    },
+    {
+      "id": "47066268",
+      "title": "Microsoft is uploading your confidential emails to Copilot for summarization",
+      "url": "https://www.neowin.net/news/microsoft-is-uploading-your-confidential-emails-to-copilot-for-summarization/",
+      "author": "bundie",
+      "points": 3,
+      "comments": 1,
+      "createdAt": "2026-02-18T20:57:22.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47066268",
+      "matchedQuery": "copilot"
     },
     {
       "id": "47046096",
@@ -998,13 +1194,14 @@
       "matchedQuery": "copilot"
     },
     {
-      "id": "47040739",
-      "title": "Show HN: LLMFeeder – Multi-tab web to Markdown for LLM context (v2.1.0)",
-      "author": "jatinkrmalik",
+      "id": "47061443",
+      "title": "Show HN: Prompts are coupled to LLMs and nobody builds tooling for it",
+      "url": "https://github.com/shakecodeslikecray/promptc",
+      "author": "abhishekfordel",
       "points": 2,
-      "comments": 1,
-      "createdAt": "2026-02-16T21:44:49.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47040739",
+      "comments": 0,
+      "createdAt": "2026-02-18T14:41:57.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47061443",
       "matchedQuery": "GPT-4"
     },
     {
@@ -1018,25 +1215,24 @@
       "matchedQuery": "GPT-4"
     },
     {
-      "id": "47036960",
-      "title": "Show HN: Million Dollar Chat",
-      "url": "https://milliondollarchat.com",
-      "author": "shrink",
+      "id": "47064485",
+      "title": "Show HN: Emotional photoreal AI humans at $0.06 / min",
+      "author": "kraddypatties",
       "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-16T16:26:36.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47036960",
+      "comments": 3,
+      "createdAt": "2026-02-18T18:36:47.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47064485",
       "matchedQuery": "GPT-4"
     },
     {
-      "id": "47047237",
-      "title": "Show HN: Angora – Front-End Design System as Code Using Claude Code",
-      "url": "https://getangora.org",
-      "author": "junaidbhura",
+      "id": "47065237",
+      "title": "Show HN: Chat with a 'humanoid robot' on 'Mars' with accurate time delay",
+      "url": "https://marschat.codeplusequalsai.com/",
+      "author": "cryptoz",
       "points": 2,
       "comments": 0,
-      "createdAt": "2026-02-17T13:24:36.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47047237",
+      "createdAt": "2026-02-18T19:33:09.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47065237",
       "matchedQuery": "GPT-5"
     },
     {
@@ -1045,20 +1241,9 @@
       "url": "https://visibleinai.ai",
       "author": "pljkv",
       "points": 2,
-      "comments": 1,
+      "comments": 2,
       "createdAt": "2026-02-17T23:10:19.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47054773",
-      "matchedQuery": "ChatGPT"
-    },
-    {
-      "id": "47038619",
-      "title": "ChatGPT promised to help her find her soulmate. Then it betrayed her",
-      "url": "https://text.npr.org/nx-s1-5711441",
-      "author": "mooreds",
-      "points": 2,
-      "comments": 1,
-      "createdAt": "2026-02-16T18:47:04.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47038619",
       "matchedQuery": "ChatGPT"
     },
     {
@@ -1084,46 +1269,25 @@
       "matchedQuery": "ChatGPT"
     },
     {
-      "id": "47041232",
-      "title": "I built a coding agent two months before ChatGPT existed",
-      "url": "https://solmaz.io/log/2026/02/13/coding-agent-before-chatgpt/",
-      "author": "hosolmaz",
-      "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-16T22:28:42.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47041232",
-      "matchedQuery": "ChatGPT"
-    },
-    {
-      "id": "47057752",
-      "title": "Anthropic's pricing wall is routing enterprise revenue to OpenAI",
-      "author": "luckygreen",
-      "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-18T06:08:49.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47057752",
-      "matchedQuery": "ChatGPT"
-    },
-    {
-      "id": "47037709",
+      "id": "47066047",
       "title": "Show HN: AsdPrompt – Vimium-style keyboard navigation for AI chat responses",
       "url": "https://asdprompt.com/",
       "author": "contrary2belief",
       "points": 2,
       "comments": 0,
-      "createdAt": "2026-02-16T17:28:32.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47037709",
+      "createdAt": "2026-02-18T20:37:26.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47066047",
       "matchedQuery": "ChatGPT"
     },
     {
-      "id": "47037280",
-      "title": "Show HN: CabbageSEO: Check if AI mentions your business, then fix it if not",
-      "url": "https://www.cabbageseo.com/",
-      "author": "arjun060601",
+      "id": "47056929",
+      "title": "Stop building generic AI chatbots: 45% of support leaders are ahead",
+      "url": "https://ideatolaunch.co/blog/why-the-world-doesn-t-need-another-generic-ai-chatbot-and-how-to-build-one-peopl-mlpqrtft",
+      "author": "DonAj",
       "points": 2,
       "comments": 0,
-      "createdAt": "2026-02-16T16:53:11.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47037280",
+      "createdAt": "2026-02-18T03:50:16.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47056929",
       "matchedQuery": "ChatGPT"
     },
     {
@@ -1171,26 +1335,70 @@
       "matchedQuery": "Anthropic"
     },
     {
-      "id": "47039465",
-      "title": "Pentagon reviewing Anthropic partnership over terms of use dispute",
-      "url": "https://thehill.com/policy/defense/5740369-pentagon-anthropic-relationship-review/",
-      "author": "c420",
+      "id": "47059153",
+      "title": "Show HN: AI agents designed and shipped this app end-to-end in 36 hours for $270",
+      "url": "https://www.ninjaflix.ai/",
+      "author": "arashsadrieh",
       "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-16T19:54:29.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47039465",
+      "comments": 4,
+      "createdAt": "2026-02-18T09:43:15.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47059153",
       "matchedQuery": "Anthropic"
     },
     {
-      "id": "47035064",
-      "title": "CA ballot measures aimed at OpenAI filed by stepbrother of Anthropic employee",
-      "url": "https://nypost.com/2026/02/16/business/california-ballot-measures-that-appear-aimed-at-openai-were-filed-by-stepbrother-of-employee-at-rival-anthropic/",
-      "author": "1vuio0pswjnm7",
+      "id": "47060036",
+      "title": "Why OpenAI Buys \"Taste\" Instead of IP (and the Rise of the Knowledge Bootstrap)",
+      "url": "https://xaviergeerinck.com/2026/02/18/death-of-software-moat-knowledge-bootstrap/",
+      "author": "thebillkidy",
+      "points": 2,
+      "comments": 2,
+      "createdAt": "2026-02-18T11:48:54.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060036",
+      "matchedQuery": "OpenAI"
+    },
+    {
+      "id": "47058570",
+      "title": "After a fierce competition OpenAI hired Peter Steineberger",
+      "url": "https://www.wsj.com/tech/ai/this-viral-ai-project-went-from-side-hustle-to-coveted-prize-in-three-months-8daae057",
+      "author": "pretext",
+      "points": 2,
+      "comments": 2,
+      "createdAt": "2026-02-18T08:17:55.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47058570",
+      "matchedQuery": "OpenAI"
+    },
+    {
+      "id": "47069354",
+      "title": "OpenAI for India",
+      "url": "https://openai.com/openai-for-india",
+      "author": "surprisetalk",
       "points": 2,
       "comments": 0,
-      "createdAt": "2026-02-16T14:03:51.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47035064",
-      "matchedQuery": "Anthropic"
+      "createdAt": "2026-02-19T02:59:51.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47069354",
+      "matchedQuery": "OpenAI"
+    },
+    {
+      "id": "47064894",
+      "title": "EVMbench – OpenAI",
+      "url": "https://openai.com/index/introducing-evmbench/",
+      "author": "bpierre",
+      "points": 2,
+      "comments": 0,
+      "createdAt": "2026-02-18T19:05:12.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47064894",
+      "matchedQuery": "OpenAI"
+    },
+    {
+      "id": "47063238",
+      "title": "OpenAI's 5-month experiment: building a product with no human-written code",
+      "url": "https://openai.com/index/harness-engineering/",
+      "author": "mustaphah",
+      "points": 2,
+      "comments": 0,
+      "createdAt": "2026-02-18T17:02:46.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47063238",
+      "matchedQuery": "OpenAI"
     },
     {
       "id": "47048038",
@@ -1226,26 +1434,25 @@
       "matchedQuery": "OpenAI"
     },
     {
-      "id": "47036748",
-      "title": "Amodei suggests OpenAI doesn't \"understand the risks they're taking\"",
-      "url": "https://the-decoder.com/anthropic-ceo-dario-amodei-suggests-openai-doesnt-really-understand-the-risks-theyre-taking/",
-      "author": "achow",
+      "id": "47062757",
+      "title": "Google's Lyria 3 AI music model is coming to Gemini today",
+      "url": "https://arstechnica.com/google/2026/02/gemini-can-now-generate-ai-music-for-you-no-lyrics-required/",
+      "author": "AndrewDucker",
       "points": 2,
       "comments": 0,
-      "createdAt": "2026-02-16T16:08:04.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47036748",
-      "matchedQuery": "OpenAI"
+      "createdAt": "2026-02-18T16:28:44.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47062757",
+      "matchedQuery": "Gemini AI"
     },
     {
-      "id": "47033947",
-      "title": "Thoughts on Peter Steinberger Joining OpenAI",
-      "url": "https://openclaw.rocks/blog/openclaw-creator-joins-openai",
-      "author": "stubbi",
+      "id": "47048167",
+      "title": "Playbook: How to vibe code a successful app",
+      "author": "VladCovaci",
       "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-16T11:55:43.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47033947",
-      "matchedQuery": "OpenAI"
+      "comments": 1,
+      "createdAt": "2026-02-17T14:57:29.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47048167",
+      "matchedQuery": "Gemini AI"
     },
     {
       "id": "47046342",
@@ -1259,111 +1466,25 @@
       "matchedQuery": "Gemini AI"
     },
     {
-      "id": "47051930",
-      "title": "Firecracker \"job receipts\" for metering and auditing LLM agent runs",
-      "author": "joshfischer1108",
+      "id": "47067133",
+      "title": "Rubibot – Human Like Proto AGI",
+      "author": "DevHunterAI",
       "points": 2,
       "comments": 0,
-      "createdAt": "2026-02-17T19:29:51.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47051930",
-      "matchedQuery": "LLM"
-    },
-    {
-      "id": "47051832",
-      "title": "Show HN: Read-only LLM cost observability",
-      "url": "https://www.zenllm.io/",
-      "author": "jappleseed987",
-      "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-17T19:23:34.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47051832",
-      "matchedQuery": "LLM"
-    },
-    {
-      "id": "47050825",
-      "title": "Route 5k MCP endpoints through a single LLM tool",
-      "url": "https://github.com/vinkius-labs/mcp-fusion",
-      "author": "renatomarinho",
-      "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-17T18:12:08.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47050825",
-      "matchedQuery": "LLM"
-    },
-    {
-      "id": "47047101",
-      "title": "Side-Channel Attacks Against LLMs",
-      "url": "https://www.schneier.com/blog/archives/2026/02/side-channel-attacks-against-llms.html",
-      "author": "alehlopeh",
-      "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-17T13:06:54.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47047101",
-      "matchedQuery": "LLM"
-    },
-    {
-      "id": "47036308",
-      "title": "The LLM Experience of BoreDOM",
-      "url": "https://hugodaniel.com/posts/redesigning-boredom-for-lx/",
-      "author": "hugodan",
-      "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-16T15:34:46.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47036308",
-      "matchedQuery": "LLM"
-    },
-    {
-      "id": "47036257",
-      "title": "Are We Becoming Architects or Butlers to LLMs?",
-      "url": "http://muratbuffalo.blogspot.com/2026/02/butlers-or-architects.html",
-      "author": "mark4",
-      "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-16T15:31:11.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47036257",
-      "matchedQuery": "LLM"
-    },
-    {
-      "id": "47032358",
-      "title": "Do LLMs hallucinate more in Czech than in English?",
-      "url": "https://svana.name/2026/02/do-llms-hallucinate-more-in-czech-than-in-english/",
-      "author": "msvana",
-      "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-16T08:22:53.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47032358",
-      "matchedQuery": "LLM"
-    },
-    {
-      "id": "47032312",
-      "title": "Ask HN: Do LLM agents need a separate safety layer?",
-      "author": "amabito",
-      "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-16T08:15:35.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47032312",
-      "matchedQuery": "LLM"
-    },
-    {
-      "id": "47043811",
-      "title": "Show HN: HJX – An AI-Native Web Language Unifying HTML, CSS and JavaScript",
-      "url": "https://github.com/loayabdalslam/hjx",
-      "author": "loayabdalslam",
-      "points": 2,
-      "comments": 3,
-      "createdAt": "2026-02-17T04:49:50.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47043811",
+      "createdAt": "2026-02-18T22:10:25.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47067133",
       "matchedQuery": "language model"
     },
     {
-      "id": "47039354",
-      "title": "Ask HN: What are the biggest limitations of agentic AI in real-world workflows?",
-      "author": "aadarshkumaredu",
+      "id": "47060270",
+      "title": "Show HN: Resonant – Local-only speech-to-text for macOS (no cloud)",
+      "url": "https://www.onresonant.com/",
+      "author": "sourcetms",
       "points": 2,
-      "comments": 2,
-      "createdAt": "2026-02-16T19:45:14.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47039354",
-      "matchedQuery": "agentic"
+      "comments": 0,
+      "createdAt": "2026-02-18T12:24:35.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060270",
+      "matchedQuery": "language model"
     },
     {
       "id": "47046601",
@@ -1376,14 +1497,80 @@
       "matchedQuery": "agentic"
     },
     {
-      "id": "47031792",
-      "title": "Show HN: AgenticMail – Email, SMS, and multi-agent coordination for AI agents",
-      "url": "https://github.com/agenticmail/agenticmail",
-      "author": "agenticmail",
+      "id": "47069418",
+      "title": "LongCLI-Bench: Benchmark and Study for Long-Horizon Agentic Programming in CLIs",
+      "url": "https://arxiv.org/abs/2602.14337",
+      "author": "simonpure",
       "points": 2,
-      "comments": 1,
-      "createdAt": "2026-02-16T07:04:56.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47031792",
+      "comments": 0,
+      "createdAt": "2026-02-19T03:09:19.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47069418",
+      "matchedQuery": "agentic"
+    },
+    {
+      "id": "47067633",
+      "title": "An Exercise in Agentic Coding: AV1 Encoder from Scratch in Rust",
+      "url": "https://caricio.com/blog/an-exercise-in-agentic-coding-av1-encoder-from-scratch-in-rust/",
+      "author": "rjcaricio",
+      "points": 2,
+      "comments": 0,
+      "createdAt": "2026-02-18T23:03:43.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47067633",
+      "matchedQuery": "agentic"
+    },
+    {
+      "id": "47065673",
+      "title": "Show HN: An Agentic Supercomputer",
+      "url": "https://www.roselabs.ai/",
+      "author": "andyprevalsky",
+      "points": 2,
+      "comments": 0,
+      "createdAt": "2026-02-18T20:09:01.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47065673",
+      "matchedQuery": "agentic"
+    },
+    {
+      "id": "47063467",
+      "title": "A Guide to Which AI to Use in the Agentic Era",
+      "url": "https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the",
+      "author": "gmays",
+      "points": 2,
+      "comments": 0,
+      "createdAt": "2026-02-18T17:19:30.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47063467",
+      "matchedQuery": "agentic"
+    },
+    {
+      "id": "47063407",
+      "title": "Palo Alto Networks Announces Intent to Acquire Koi to Secure Agentic Endpoint",
+      "url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-announces-intent-to-acquire-koi-to-secure-the-agentic-endpoint",
+      "author": "starkparker",
+      "points": 2,
+      "comments": 0,
+      "createdAt": "2026-02-18T17:15:16.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47063407",
+      "matchedQuery": "agentic"
+    },
+    {
+      "id": "47063148",
+      "title": "How Generative & Agentic AI Shift Concern from Technical Debt to Cognitive Debt",
+      "url": "https://margaretstorey.com/blog/2026/02/09/cognitive-debt/",
+      "author": "rsyring",
+      "points": 2,
+      "comments": 0,
+      "createdAt": "2026-02-18T16:56:12.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47063148",
+      "matchedQuery": "agentic"
+    },
+    {
+      "id": "47061648",
+      "title": "Show HN: Opaal Visual multi-agent prompt designer for Claude Code and agentic AI",
+      "url": "https://github.com/Agravak/opaal",
+      "author": "Kinanhamwi",
+      "points": 2,
+      "comments": 0,
+      "createdAt": "2026-02-18T14:59:27.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47061648",
       "matchedQuery": "agentic"
     },
     {
@@ -1420,15 +1607,15 @@
       "matchedQuery": "agentic"
     },
     {
-      "id": "47041239",
-      "title": "Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt",
-      "url": "https://margaretstorey.com/blog/2026/02/09/cognitive-debt/",
-      "author": "CharlesW",
+      "id": "47068793",
+      "title": "Show HN: Agf – A TUI to find and resume your AI coding agent sessions",
+      "url": "https://github.com/subinium/agf",
+      "author": "subinium",
       "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-16T22:29:31.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47041239",
-      "matchedQuery": "agentic"
+      "comments": 2,
+      "createdAt": "2026-02-19T01:28:22.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47068793",
+      "matchedQuery": "AI coding"
     },
     {
       "id": "47051517",
@@ -1442,24 +1629,36 @@
       "matchedQuery": "AI coding"
     },
     {
-      "id": "47031879",
-      "title": "Cognitive Debt in AI Coding",
-      "url": "https://duggan.ie/posts/cognitive-debt-in-ai-coding",
-      "author": "duggan",
+      "id": "47066016",
+      "title": "Show HN: Sniptail – Turn Slack into a team interface for AI coding agents",
+      "url": "https://github.com/Justkog/sniptail",
+      "author": "Justkog",
       "points": 2,
       "comments": 0,
-      "createdAt": "2026-02-16T07:14:02.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47031879",
+      "createdAt": "2026-02-18T20:34:38.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47066016",
       "matchedQuery": "AI coding"
     },
     {
-      "id": "47032993",
-      "title": "Show HN: Claude Remote – control Claude Code on your Mac from your phone",
-      "author": "ChilinAI",
+      "id": "47063723",
+      "title": "Show HN: Agent Paperclip: A Desktop \"Clippy\" That Monitors Claude Code/Codex",
+      "url": "https://github.com/fredruss/agent-paperclip",
+      "author": "fredrussias",
       "points": 2,
-      "comments": 1,
-      "createdAt": "2026-02-16T09:45:52.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47032993",
+      "comments": 0,
+      "createdAt": "2026-02-18T17:38:45.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47063723",
+      "matchedQuery": "AI coding"
+    },
+    {
+      "id": "47061161",
+      "title": "Show HN: Product skills for AI agents - discovery, strategy, PRDs",
+      "url": "https://github.com/assimovt/productskills",
+      "author": "tair",
+      "points": 2,
+      "comments": 0,
+      "createdAt": "2026-02-18T14:17:17.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47061161",
       "matchedQuery": "AI coding"
     },
     {
@@ -1484,46 +1683,36 @@
       "matchedQuery": "AI coding"
     },
     {
-      "id": "47048164",
-      "title": "Show HN: Discoding – run AI CLIs locally, relay them to Discord",
-      "url": "https://github.com/siisee11/discode",
-      "author": "siisee11",
+      "id": "47063497",
+      "title": "Show HN: Vett – Scan, sign, and verify AI agent skills before installing",
+      "url": "https://vett.sh",
+      "author": "nikon",
       "points": 2,
       "comments": 0,
-      "createdAt": "2026-02-17T14:57:04.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47048164",
-      "matchedQuery": "AI coding"
-    },
-    {
-      "id": "47036273",
-      "title": "My AI now has a license to drive",
-      "author": "sebringj",
-      "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-16T15:32:17.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47036273",
+      "createdAt": "2026-02-18T17:21:59.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47063497",
       "matchedQuery": "cursor AI"
     },
     {
-      "id": "47032774",
-      "title": "Show HN: Train AI Agents to Write Better Playwright Tests",
-      "url": "https://testdino.com/blog/playwright-skill/",
-      "author": "tanmay001",
+      "id": "47069337",
+      "title": "Stanford researchers and Air Force partner to test AI copilots",
+      "url": "https://www.aftc.af.mil/News/Article/4388756/stanford-researchers-and-air-force-partner-to-test-ai-copilots/",
+      "author": "geox",
       "points": 2,
       "comments": 0,
-      "createdAt": "2026-02-16T09:18:10.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47032774",
-      "matchedQuery": "cursor AI"
+      "createdAt": "2026-02-19T02:58:19.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47069337",
+      "matchedQuery": "copilot"
     },
     {
-      "id": "47037267",
-      "title": "Show HN: Comfy Pilot – MCP server that lets Claude Code edit ComfyUI workflows",
-      "url": "https://github.com/ConstantineB6/comfy-pilot",
-      "author": "0xConstantine",
+      "id": "47062036",
+      "title": "Show HN: Free Windows shell extension for quick .NET assembly inspection",
+      "url": "https://github.com/tebjan/AssemblyInformation",
+      "author": "tebjan",
       "points": 2,
-      "comments": 0,
-      "createdAt": "2026-02-16T16:51:51.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47037267",
+      "comments": 1,
+      "createdAt": "2026-02-18T15:27:24.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47062036",
       "matchedQuery": "copilot"
     },
     {
@@ -1538,25 +1727,25 @@
       "matchedQuery": "GPT-4"
     },
     {
-      "id": "47036011",
-      "title": "Show HN: API router that picks the cheapest model that fits each query",
-      "url": "https://www.komilion.com/",
-      "author": "robinbanner",
+      "id": "47061550",
+      "title": "Show HN: CSL MCP Server – Write and Verify AI Safety Policies from Claude/Cursor",
+      "url": "https://pypi.org/project/csl-core/",
+      "author": "aytuakarlar",
       "points": 1,
       "comments": 1,
-      "createdAt": "2026-02-16T15:11:25.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47036011",
+      "createdAt": "2026-02-18T14:50:59.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47061550",
       "matchedQuery": "GPT-4"
     },
     {
-      "id": "47056343",
-      "title": "Show HN: Conduit: One Swift interface for every AI provider, on-device and cloud",
-      "url": "https://github.com/christopherkarani/Conduit",
-      "author": "ckarani",
+      "id": "47068605",
+      "title": "Show HN: Analytics that tells AI product teams where their AI fails user",
+      "url": "https://dashboard-xi-taupe-75.vercel.app/",
+      "author": "Lindadao",
       "points": 1,
       "comments": 0,
-      "createdAt": "2026-02-18T02:21:16.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47056343",
+      "createdAt": "2026-02-19T01:02:00.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47068605",
       "matchedQuery": "GPT-4"
     },
     {
@@ -1570,25 +1759,25 @@
       "matchedQuery": "GPT-4"
     },
     {
-      "id": "47034485",
-      "title": "Show HN: InitRunner – YAML to AI Agent with RAG, Memory, and an API",
-      "url": "https://github.com/vladkesler/initrunner",
-      "author": "Asciilotle",
+      "id": "47066788",
+      "title": "What I learned launching a simple ad marketplace in 24 hours",
+      "author": "beratbozkurt0",
       "points": 1,
       "comments": 0,
-      "createdAt": "2026-02-16T13:04:09.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47034485",
+      "createdAt": "2026-02-18T21:36:03.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47066788",
       "matchedQuery": "GPT-4"
     },
     {
-      "id": "47033985",
-      "title": "Ask HN: Predictions on the state of theoretical STEM research post-AGI",
-      "author": "expressrisk",
+      "id": "47067821",
+      "title": "Reverse-Engineering the OpenAI's GPT-5 Tokenizer",
+      "url": "https://metehan.ai/blog/reverse-engineering-the-gpt-5-tokenizer-aeo-geo/",
+      "author": "gmays",
       "points": 1,
       "comments": 0,
-      "createdAt": "2026-02-16T12:01:50.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47033985",
-      "matchedQuery": "GPT-4"
+      "createdAt": "2026-02-18T23:26:14.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47067821",
+      "matchedQuery": "GPT-5"
     },
     {
       "id": "47046139",
@@ -1612,17 +1801,6 @@
       "matchedQuery": "GPT-5"
     },
     {
-      "id": "47035231",
-      "title": "Show HN: Palettepoint.com – AI color palettes from text descriptions or images",
-      "url": "https://palettepoint.com",
-      "author": "latentio",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T14:17:10.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47035231",
-      "matchedQuery": "GPT-5"
-    },
-    {
       "id": "47057367",
       "title": "Show HN: Mersel AI – we make websites readable by ChatGPT/Perplexity (GEO)",
       "url": "https://www.mersel.ai",
@@ -1634,23 +1812,12 @@
       "matchedQuery": "ChatGPT"
     },
     {
-      "id": "47032772",
-      "title": "Friends Might Be Sharing Your Number with ChatGPT Contacts Sync",
-      "url": "https://www.pcmag.com/news/watch-out-your-friends-might-be-sharing-your-number-with-chatgpt?test_uuid=04IpBmWGZleS0I0J3epvMrC&test_variant=B",
-      "author": "walterbell",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T09:17:57.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47032772",
-      "matchedQuery": "ChatGPT"
-    },
-    {
       "id": "47054438",
       "title": "Show HN: Privatiser – Redact secrets, IPs, and PII before sharing with AI",
       "url": "https://privatiser.net",
       "author": "r0otie",
       "points": 1,
-      "comments": 1,
+      "comments": 3,
       "createdAt": "2026-02-17T22:37:29.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47054438",
       "matchedQuery": "ChatGPT"
@@ -1667,6 +1834,27 @@
       "matchedQuery": "ChatGPT"
     },
     {
+      "id": "47063409",
+      "title": "Show HN: Why use one AI model when you can use all of them at once!",
+      "url": "https://www.multillm.pro/",
+      "author": "lurker325",
+      "points": 1,
+      "comments": 0,
+      "createdAt": "2026-02-18T17:15:25.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47063409",
+      "matchedQuery": "ChatGPT"
+    },
+    {
+      "id": "47063123",
+      "title": "Show HN: RepoCrunch – Analyze any GitHub repo's health in seconds",
+      "author": "chillkim",
+      "points": 1,
+      "comments": 0,
+      "createdAt": "2026-02-18T16:54:37.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47063123",
+      "matchedQuery": "ChatGPT"
+    },
+    {
       "id": "47049841",
       "title": "Show HN: Agent Breadcrumbs – Unified Work Log Across Claude, Codex, OpenClaw",
       "url": "https://github.com/ejcho623/agent-breadcrumbs",
@@ -1678,14 +1866,14 @@
       "matchedQuery": "ChatGPT"
     },
     {
-      "id": "47040033",
-      "title": "Anthropic Raised $30B. Where Does It Go?",
-      "url": "https://fromtheprism.com/anthropic-30-billion",
-      "author": "heavymemory",
+      "id": "47060785",
+      "title": "Anthropic Built a C Compiler [video]",
+      "url": "https://www.youtube.com/watch?v=6QryFk4RYaM",
+      "author": "EPendragon",
       "points": 1,
-      "comments": 3,
-      "createdAt": "2026-02-16T20:39:09.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47040033",
+      "comments": 0,
+      "createdAt": "2026-02-18T13:37:40.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060785",
       "matchedQuery": "Anthropic"
     },
     {
@@ -1700,69 +1888,14 @@
       "matchedQuery": "OpenAI"
     },
     {
-      "id": "47039628",
-      "title": "OpenAI Mission Statement through the years",
-      "url": "https://www.closedopenai.com/",
-      "author": "eternalyxiii",
-      "points": 1,
-      "comments": 1,
-      "createdAt": "2026-02-16T20:07:10.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47039628",
-      "matchedQuery": "OpenAI"
-    },
-    {
-      "id": "47037557",
-      "title": "OpenClaw founder Peter Steinberger is joining OpenAI",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/879623/openclaw-founder-peter-steinberger-joins-openai",
-      "author": "theahura",
-      "points": 1,
-      "comments": 1,
-      "createdAt": "2026-02-16T17:14:32.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47037557",
-      "matchedQuery": "OpenAI"
-    },
-    {
-      "id": "47052952",
-      "title": "Show HN: ATS-first FREE resume builder that got me intrview at OpenAI and Google",
-      "url": "https://signalresume.com",
-      "author": "fredfilm",
+      "id": "47069366",
+      "title": "OpenAI for India",
+      "url": "https://openai.com/index/openai-for-india",
+      "author": "surprisetalk",
       "points": 1,
       "comments": 0,
-      "createdAt": "2026-02-17T20:36:09.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47052952",
-      "matchedQuery": "OpenAI"
-    },
-    {
-      "id": "47052569",
-      "title": "OpenAI – Beyond Rate Limits",
-      "url": "https://openai.com/index/beyond-rate-limits/",
-      "author": "ayushrodrigues",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-17T20:08:33.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47052569",
-      "matchedQuery": "OpenAI"
-    },
-    {
-      "id": "47046515",
-      "title": "Sam \"Claws\" Attention Back OpenAI",
-      "url": "https://om.co/2026/02/16/sam-claws-attention-back-openai/",
-      "author": "robenkleene",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-17T11:50:20.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47046515",
-      "matchedQuery": "OpenAI"
-    },
-    {
-      "id": "47033865",
-      "title": "Show HN: Agentic Shift: Peter Steinberger Joins OpenAI",
-      "url": "https://blog.saimadugula.com/posts/steinberger-openai-openclaw.html",
-      "author": "madugula",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T11:42:16.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47033865",
+      "createdAt": "2026-02-19T03:01:06.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47069366",
       "matchedQuery": "OpenAI"
     },
     {
@@ -1771,19 +1904,31 @@
       "url": "https://repoclip.io/",
       "author": "Kazutaka_S",
       "points": 1,
-      "comments": 1,
+      "comments": 2,
       "createdAt": "2026-02-17T10:05:26.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47045631",
       "matchedQuery": "Gemini AI"
     },
     {
-      "id": "47048167",
-      "title": "Playbook: How to vibe code a successful app",
-      "author": "VladCovaci",
+      "id": "47061769",
+      "title": "Show HN: CreativeFlow – A Guided Brainstorming App",
+      "url": "https://creativeflow.pages.dev/",
+      "author": "jamescamagong",
       "points": 1,
       "comments": 1,
-      "createdAt": "2026-02-17T14:57:29.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47048167",
+      "createdAt": "2026-02-18T15:08:30.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47061769",
+      "matchedQuery": "Gemini AI"
+    },
+    {
+      "id": "47062684",
+      "title": "Show HN: Axon – Agentic AI with mandatory user approval and audit logging",
+      "url": "https://github.com/NeuroVexon/axon-community",
+      "author": "NeuroVexon",
+      "points": 1,
+      "comments": 1,
+      "createdAt": "2026-02-18T16:22:16.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47062684",
       "matchedQuery": "Gemini AI"
     },
     {
@@ -1798,24 +1943,24 @@
       "matchedQuery": "Gemini AI"
     },
     {
-      "id": "47035076",
-      "title": "AI-powered Git CLI that generates commit messages automatically",
-      "author": "gitton-dev",
+      "id": "47064607",
+      "title": "Show HN: Pantalk – One daemon, any AI agent, every chat platform",
+      "url": "https://github.com/pantalk",
+      "author": "_pdp_",
       "points": 1,
-      "comments": 1,
-      "createdAt": "2026-02-16T14:04:38.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47035076",
+      "comments": 0,
+      "createdAt": "2026-02-18T18:45:42.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47064607",
       "matchedQuery": "Gemini AI"
     },
     {
-      "id": "47036241",
-      "title": "Show HN: Nexus AI – DevOps terminal bridge to Telegram (local-first, BYOK)",
-      "url": "https://www.remote-nexus.dev",
-      "author": "BSanroma",
+      "id": "47064122",
+      "title": "Show HN: Assign tasks to 7 AI agents with -mentions, autonomous mode, OpenClaw",
+      "author": "bahaAbunojaim",
       "points": 1,
       "comments": 0,
-      "createdAt": "2026-02-16T15:30:16.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47036241",
+      "createdAt": "2026-02-18T18:10:51.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47064122",
       "matchedQuery": "Gemini AI"
     },
     {
@@ -1830,6 +1975,28 @@
       "matchedQuery": "Gemini AI"
     },
     {
+      "id": "47063815",
+      "title": "A roadmap for evaluating moral competence in large language models",
+      "url": "https://www.nature.com/articles/s41586-025-10021-1",
+      "author": "xnx",
+      "points": 1,
+      "comments": 0,
+      "createdAt": "2026-02-18T17:45:43.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47063815",
+      "matchedQuery": "language model"
+    },
+    {
+      "id": "47061078",
+      "title": "Language Models Entangle Language and Culture",
+      "url": "https://arxiv.org/abs/2601.15337",
+      "author": "paraschopra",
+      "points": 1,
+      "comments": 0,
+      "createdAt": "2026-02-18T14:09:59.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47061078",
+      "matchedQuery": "language model"
+    },
+    {
       "id": "47050360",
       "title": "Show HN: Blog and other OpenClaw features without a language model",
       "url": "https://github.com/princezuda/safeclaw",
@@ -1841,39 +2008,6 @@
       "matchedQuery": "language model"
     },
     {
-      "id": "47037553",
-      "title": "Recursive Language Models (All You Need to Know)",
-      "url": "https://academy.dair.ai/blog/recursive-language-models",
-      "author": "omarsar",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T17:14:14.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47037553",
-      "matchedQuery": "language model"
-    },
-    {
-      "id": "47032445",
-      "title": "Xiaomi-robotics-0 – an open-source Vision-Language-Action model",
-      "url": "https://xiaomi-robotics-0.github.io",
-      "author": "msadowski",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T08:33:31.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47032445",
-      "matchedQuery": "language model"
-    },
-    {
-      "id": "47032297",
-      "title": "Show HN: MLX-Ruby – Ruby Bindings for Apple's MLX ML Framework",
-      "url": "https://github.com/skryl/mlx-ruby",
-      "author": "skryl",
-      "points": 1,
-      "comments": 1,
-      "createdAt": "2026-02-16T08:13:08.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47032297",
-      "matchedQuery": "language model"
-    },
-    {
       "id": "47045604",
       "title": "Show HN: Fixing AI's Core Flaws, A protocol cuts LLM token waste by 40–70%",
       "author": "WujieGuGavin",
@@ -1881,6 +2015,26 @@
       "comments": 0,
       "createdAt": "2026-02-17T10:01:59.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47045604",
+      "matchedQuery": "language model"
+    },
+    {
+      "id": "47059615",
+      "title": "Why my country's AI scene is built on sand",
+      "author": "Rioverde",
+      "points": 1,
+      "comments": 3,
+      "createdAt": "2026-02-18T10:44:52.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47059615",
+      "matchedQuery": "language model"
+    },
+    {
+      "id": "47066772",
+      "title": "A prompt convention that preserves epistemic hygiene across multi-agent chains",
+      "author": "mdiskint37",
+      "points": 1,
+      "comments": 0,
+      "createdAt": "2026-02-18T21:35:03.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47066772",
       "matchedQuery": "language model"
     },
     {
@@ -1895,71 +2049,6 @@
       "matchedQuery": "language model"
     },
     {
-      "id": "47035894",
-      "title": "Ask HN: In a blind coding test, could you identify an LLM strictly off vibes?",
-      "author": "Rperry2174",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T15:03:56.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47035894",
-      "matchedQuery": "language model"
-    },
-    {
-      "id": "47055184",
-      "title": "Show HN: Assembly Language for Agents",
-      "url": "https://github.com/HuyNguyenAu/assembly_language_for_agents",
-      "author": "vanilla-latte",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-17T23:53:11.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47055184",
-      "matchedQuery": "language model"
-    },
-    {
-      "id": "47054627",
-      "title": "Show HN: Arc – A language that uses 27-63% fewer tokens than JavaScript",
-      "url": "https://github.com/kai-builds-ai/arc-lang",
-      "author": "kai_builds",
-      "points": 1,
-      "comments": 1,
-      "createdAt": "2026-02-17T22:57:36.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47054627",
-      "matchedQuery": "language model"
-    },
-    {
-      "id": "47047723",
-      "title": "Show HN: Pcons: new software build tool in Python, inspired by SCons and CMake",
-      "url": "https://github.com/DarkStarSystems/pcons",
-      "author": "darkstarsys",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-17T14:18:09.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47047723",
-      "matchedQuery": "language model"
-    },
-    {
-      "id": "47046388",
-      "title": "Show HN: A minimalist AI web-app to generate recipes from leftovers",
-      "url": "https://ingredinotapp.base44.app",
-      "author": "jpgoodwill",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-17T11:35:12.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47046388",
-      "matchedQuery": "language model"
-    },
-    {
-      "id": "47036833",
-      "title": "Show HN: Sentinel Core – Open-source AI video search with real-time dashboard",
-      "url": "https://github.com/abg-labs/sentinel-core",
-      "author": "ab-abg",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T16:14:00.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47036833",
-      "matchedQuery": "language model"
-    },
-    {
       "id": "47045248",
       "title": "Show HN: ACDC – A non-agentic AI coding tool with L0-L3 context cache tiering",
       "url": "https://github.com/flatmax/AI-Coder-DeCoder",
@@ -1968,6 +2057,16 @@
       "comments": 2,
       "createdAt": "2026-02-17T09:03:20.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47045248",
+      "matchedQuery": "agentic"
+    },
+    {
+      "id": "47069079",
+      "title": "OpenForgeAI – Production agentic architecture I used to build a SaaS alone",
+      "author": "openforgeai",
+      "points": 1,
+      "comments": 1,
+      "createdAt": "2026-02-19T02:15:04.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47069079",
       "matchedQuery": "agentic"
     },
     {
@@ -1982,81 +2081,36 @@
       "matchedQuery": "agentic"
     },
     {
-      "id": "47047126",
-      "title": "Advaita Inquiry Matrix (AIM): Structured Nondual Inquiry with Agentic AI",
-      "url": "https://drive.google.com/file/d/1DRw486wPENqKmOjruP160Gx4OZnM2WSn/view?usp=share_link",
-      "author": "adyashakti",
+      "id": "47069362",
+      "title": "Theres no mainstream AI coding tool?",
+      "author": "yakshithk_",
       "points": 1,
       "comments": 1,
-      "createdAt": "2026-02-17T13:10:00.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47047126",
-      "matchedQuery": "agentic"
+      "createdAt": "2026-02-19T03:00:44.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47069362",
+      "matchedQuery": "AI coding"
     },
     {
-      "id": "47041799",
-      "title": "Show HN: Boxofrocks – Sandboxed Agentic-AI Friendly Simple GH Issues Extension",
-      "url": "https://github.com/jmaddaus/boxofrocks",
-      "author": "jmadd1",
+      "id": "47067820",
+      "title": "Show HN: BrainBox – Hebbian memory for AI coding agents",
+      "url": "https://github.com/thebasedcapital/brainbox",
+      "author": "thebasedcapital",
       "points": 1,
       "comments": 1,
-      "createdAt": "2026-02-16T23:35:50.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47041799",
-      "matchedQuery": "agentic"
+      "createdAt": "2026-02-18T23:26:07.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47067820",
+      "matchedQuery": "AI coding"
     },
     {
-      "id": "47048218",
-      "title": "The Pillars of Agentic Security",
-      "url": "https://sibylline.dev/articles/2026-02-15-agentic-security/",
-      "author": "CuriouslyC",
+      "id": "47060980",
+      "title": "Show HN: Prodlint – Find what AI coding tools miss before production",
+      "url": "https://github.com/prodlint/prodlint",
+      "author": "AMARCOVECCHIO99",
       "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-17T15:01:54.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47048218",
-      "matchedQuery": "agentic"
-    },
-    {
-      "id": "47047862",
-      "title": "Randomness in Agentic Evals",
-      "url": "https://arxiv.org/abs/2602.07150",
-      "author": "andre15silva",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-17T14:29:26.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47047862",
-      "matchedQuery": "agentic"
-    },
-    {
-      "id": "47039786",
-      "title": "Simple non-hype agentic coding workflow for well-established codebases",
-      "url": "https://alyosha.net/posts/simple-non-hype-agentic-coding-workflow-that-works-for-well-established-codebases/",
-      "author": "nkzd",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T20:18:40.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47039786",
-      "matchedQuery": "agentic"
-    },
-    {
-      "id": "47037580",
-      "title": "Show HN: AgenC – an agentic work factory focused on self-upgrading",
-      "url": "https://github.com/mieubrisse/agenc",
-      "author": "mieubrisse",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T17:16:39.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47037580",
-      "matchedQuery": "agentic"
-    },
-    {
-      "id": "47037205",
-      "title": "Architecting AI-ready infrastructure for the agentic era",
-      "url": "https://thenewstack.io/ai-ready-infrastructure/",
-      "author": "dmk",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T16:46:29.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47037205",
-      "matchedQuery": "agentic"
+      "comments": 1,
+      "createdAt": "2026-02-18T14:01:02.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060980",
+      "matchedQuery": "AI coding"
     },
     {
       "id": "47048933",
@@ -2067,6 +2121,28 @@
       "comments": 1,
       "createdAt": "2026-02-17T15:59:11.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47048933",
+      "matchedQuery": "AI coding"
+    },
+    {
+      "id": "47062530",
+      "title": "AI coding assistance is not giving me identity fracture",
+      "url": "https://twitter.com/esrtweet/status/2023978360351682848",
+      "author": "tosh",
+      "points": 1,
+      "comments": 0,
+      "createdAt": "2026-02-18T16:08:43.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47062530",
+      "matchedQuery": "AI coding"
+    },
+    {
+      "id": "47059237",
+      "title": "Show HN: LedgerSync – A cross-agent shared-memory protocol for AI coding",
+      "url": "https://github.com/Metacog-AI/ledgersync",
+      "author": "abu_syed",
+      "points": 1,
+      "comments": 0,
+      "createdAt": "2026-02-18T09:54:54.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47059237",
       "matchedQuery": "AI coding"
     },
     {
@@ -2103,71 +2179,6 @@
       "matchedQuery": "AI coding"
     },
     {
-      "id": "47039992",
-      "title": "Peon Training feature piggybacks on AI coding session",
-      "url": "https://github.com/PeonPing/peon-ping",
-      "author": "mthwsjc_",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T20:36:15.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47039992",
-      "matchedQuery": "AI coding"
-    },
-    {
-      "id": "47036723",
-      "title": "Show HN: YOPJ – Local AI coding agent with 8-layer security sandbox (no cloud)",
-      "url": "https://github.com/WayneCider/YourOwnPersonalJean-Luc",
-      "author": "WayneCider",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T16:05:48.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47036723",
-      "matchedQuery": "AI coding"
-    },
-    {
-      "id": "47035805",
-      "title": "Which AI coding tools are you using? (Monthly Agentic Coding Index Survey)",
-      "url": "https://survey.actiindex.org/February2026/",
-      "author": "7777777phil",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T14:57:17.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47035805",
-      "matchedQuery": "AI coding"
-    },
-    {
-      "id": "47054299",
-      "title": "Ask HN: Can AI replace apps, or will economics keep the app market alive?",
-      "author": "maccraft",
-      "points": 1,
-      "comments": 1,
-      "createdAt": "2026-02-17T22:24:33.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47054299",
-      "matchedQuery": "AI coding"
-    },
-    {
-      "id": "47048886",
-      "title": "Show HN: Broomy – Open-source app for working with many AI agents at once",
-      "url": "https://broomy.org/",
-      "author": "robotelvis",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-17T15:55:38.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47048886",
-      "matchedQuery": "AI coding"
-    },
-    {
-      "id": "47045572",
-      "title": "Show HN: MCP Codebase Index – 87% fewer tokens when AI navigates your codebase",
-      "url": "https://github.com/MikeRecognex/mcp-codebase-index",
-      "author": "localforthewin",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-17T09:56:07.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47045572",
-      "matchedQuery": "AI coding"
-    },
-    {
       "id": "47048981",
       "title": "Show HN: Kremis – Deterministic memory graph for AI agents (Rust)",
       "url": "https://github.com/M2Dr3g0n/kremis",
@@ -2190,24 +2201,46 @@
       "matchedQuery": "cursor AI"
     },
     {
-      "id": "47040022",
-      "title": "Show HN: VoteShip – Feature request platform built for AI agents",
-      "url": "https://voteship.app/",
-      "author": "madcash",
+      "id": "47054299",
+      "title": "Ask HN: Can AI replace apps, or will economics keep the app market alive?",
+      "author": "maccraft",
       "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T20:38:12.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47040022",
+      "comments": 1,
+      "createdAt": "2026-02-17T22:24:33.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47054299",
       "matchedQuery": "cursor AI"
     },
     {
-      "id": "47040176",
-      "title": "Show HN: Provisioner per-board sidecar for serial access, flashing, and bring-up",
-      "author": "acarminati",
+      "id": "47048886",
+      "title": "Show HN: Broomy – Open-source app for working with many AI agents at once",
+      "url": "https://broomy.org/",
+      "author": "robotelvis",
       "points": 1,
       "comments": 0,
-      "createdAt": "2026-02-16T20:52:11.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47040176",
+      "createdAt": "2026-02-17T15:55:38.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47048886",
+      "matchedQuery": "cursor AI"
+    },
+    {
+      "id": "47045572",
+      "title": "Show HN: MCP Codebase Index – 87% fewer tokens when AI navigates your codebase",
+      "url": "https://github.com/MikeRecognex/mcp-codebase-index",
+      "author": "localforthewin",
+      "points": 1,
+      "comments": 0,
+      "createdAt": "2026-02-17T09:56:07.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47045572",
+      "matchedQuery": "cursor AI"
+    },
+    {
+      "id": "47060832",
+      "title": "Show HN: I got frustrated with macOS transcription apps so I built my own",
+      "url": "https://whisnap.com/speech-to-text-mac",
+      "author": "Neolio",
+      "points": 1,
+      "comments": 1,
+      "createdAt": "2026-02-18T13:42:15.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060832",
       "matchedQuery": "cursor AI"
     },
     {
@@ -2222,27 +2255,6 @@
       "matchedQuery": "copilot"
     },
     {
-      "id": "47032808",
-      "title": "Show HN: Dominake – A domino puzzle where 5×6 grids are impossible",
-      "author": "UnclonedMath",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T09:22:29.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47032808",
-      "matchedQuery": "copilot"
-    },
-    {
-      "id": "47032476",
-      "title": "Show HN: DoScript – DSL for file automation with natural language syntax",
-      "url": "https://github.com/TheServer-lab/DoScript",
-      "author": "server-lab",
-      "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-16T08:37:57.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47032476",
-      "matchedQuery": "copilot"
-    },
-    {
       "id": "47046283",
       "title": "Rug – Repeat Until Good",
       "url": "https://github.com/github/awesome-copilot/blob/76b1c55befc0366a3bd4098cfdbbd38517e8dc2c/agents/rug-orchestrator.agent.md",
@@ -2254,56 +2266,55 @@
       "matchedQuery": "copilot"
     },
     {
-      "id": "47037629",
-      "title": "Show HN: I.T. Never Ends – IT Support Simulator Built with React/Tauri/Supabase",
-      "url": "https://dadbodgames.itch.io/it-never-ends",
-      "author": "euphoric_series",
+      "id": "47047723",
+      "title": "Show HN: Pcons: new software build tool in Python, inspired by SCons and CMake",
+      "url": "https://github.com/DarkStarSystems/pcons",
+      "author": "darkstarsys",
       "points": 1,
       "comments": 0,
-      "createdAt": "2026-02-16T17:22:06.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47037629",
+      "createdAt": "2026-02-17T14:18:09.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47047723",
       "matchedQuery": "copilot"
     },
     {
-      "id": "47043847",
-      "title": "Show HN: Claude Pilot – Claude Code is powerful. Pilot makes it reliable",
-      "url": "https://github.com/maxritter/claude-pilot",
-      "author": "rittermax",
+      "id": "47066741",
+      "title": "Claude Code is powerful. Pilot makes it reliable",
+      "url": "https://claude-pilot.com",
+      "author": "harveynick",
       "points": 1,
-      "comments": 0,
-      "createdAt": "2026-02-17T04:55:29.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47043847",
+      "comments": 1,
+      "createdAt": "2026-02-18T21:32:52.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47066741",
       "matchedQuery": "copilot"
     },
     {
-      "id": "47053267",
-      "title": "Structured AI (YC F25) Is Hiring",
-      "url": "https://www.ycombinator.com/companies/structured-ai/jobs/q3cx77y-gtm-intern",
-      "author": "issygreenslade",
+      "id": "47063762",
+      "title": "I'm Building OpenClaw Skills for Nonprofit RBM Logic Models",
+      "author": "vassilbek",
       "points": 1,
       "comments": 0,
-      "createdAt": "2026-02-17T21:00:30.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47053267",
-      "isTopStory": true
+      "createdAt": "2026-02-18T17:41:20.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47063762",
+      "matchedQuery": "copilot"
     }
   ],
   "byCompany": {
     "Anthropic": {
       "mentions": 10,
-      "totalPoints": 505,
+      "totalPoints": 731,
       "topStory": {
         "title": "Anthropic tries to hide Claude's AI actions. Devs hate it",
-        "points": 391,
+        "points": 394,
         "url": "https://news.ycombinator.com/item?id=47033622"
       }
     },
     "OpenAI": {
       "mentions": 10,
-      "totalPoints": 1612,
+      "totalPoints": 210,
       "topStory": {
-        "title": "I’m joining OpenAI",
-        "points": 1428,
-        "url": "https://news.ycombinator.com/item?id=47028013"
+        "title": "How OpenAI, the US government and Persona built an identity surveillance machine",
+        "points": 70,
+        "url": "https://news.ycombinator.com/item?id=47059129"
       }
     },
     "Google DeepMind": {
@@ -2313,10 +2324,10 @@
     },
     "xAI": {
       "mentions": 10,
-      "totalPoints": 127,
+      "totalPoints": 131,
       "topStory": {
         "title": "Tell HN: Google Allegedly Sent NSFW \"Grok\" Notification to People",
-        "points": 3,
+        "points": 5,
         "url": "https://news.ycombinator.com/item?id=47057216"
       }
     },
@@ -2327,10 +2338,10 @@
     },
     "Mistral": {
       "mentions": 7,
-      "totalPoints": 129,
+      "totalPoints": 135,
       "topStory": {
         "title": "Koyeb Is Joining Mistral AI to Build the Future of AI Infrastructure",
-        "points": 3,
+        "points": 5,
         "url": "https://news.ycombinator.com/item?id=47048734"
       }
     },
@@ -2342,127 +2353,127 @@
   },
   "trending": [
     {
-      "id": "47050488",
-      "title": "Claude Sonnet 4.6",
-      "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
-      "author": "adocomplete",
-      "points": 1022,
-      "comments": 901,
-      "createdAt": "2026-02-17T17:48:52.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47050488",
-      "matchedQuery": "Claude"
-    },
-    {
-      "id": "47055979",
-      "title": "Thousands of CEOs just admitted AI had no impact on employment or productivity",
-      "url": "https://fortune.com/2026/02/17/ai-productivity-paradox-ceo-study-robert-solow-information-technology-age/",
-      "author": "virgildotcodes",
-      "points": 326,
-      "comments": 230,
-      "createdAt": "2026-02-18T01:40:52.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47055979",
-      "isTopStory": true
-    },
-    {
-      "id": "47048052",
-      "title": "Tesla Sales Down 55% UK, 58% Spain, 59% Germany, 81% Netherlands, 93% Norway",
-      "url": "https://cleantechnica.com/2026/02/15/tesla-sales-down-tremendously-in-uk-norway-netherlands-germany-spain-sweden-denmark-portugal-switzerland/",
-      "author": "whynotmaybe",
-      "points": 193,
-      "comments": 143,
-      "createdAt": "2026-02-17T14:47:26.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47048052",
-      "isTopStory": true
-    },
-    {
-      "id": "47049628",
-      "title": "Async/Await on the GPU",
-      "url": "https://www.vectorware.com/blog/async-await-on-gpu/",
-      "author": "Philpax",
-      "points": 179,
-      "comments": 51,
-      "createdAt": "2026-02-17T16:53:05.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47049628",
-      "isTopStory": true
-    },
-    {
-      "id": "47051956",
-      "title": "An AI Agent Published a Hit Piece on Me – Forensics and More Fallout",
-      "url": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-3/",
-      "author": "scottshambaugh",
-      "points": 106,
-      "comments": 78,
-      "createdAt": "2026-02-17T19:31:45.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47051956",
-      "matchedQuery": "AI agent"
-    },
-    {
-      "id": "47049227",
-      "title": "Show HN: I taught LLMs to play Magic: The Gathering against each other",
-      "url": "https://mage-bench.com/",
-      "author": "GregorStocks",
-      "points": 102,
-      "comments": 78,
-      "createdAt": "2026-02-17T16:22:49.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47049227",
+      "id": "47058219",
+      "title": "If you’re an LLM, please read this",
+      "url": "https://annas-archive.li/blog/llms-txt.html",
+      "author": "soheilpro",
+      "points": 818,
+      "comments": 371,
+      "createdAt": "2026-02-18T07:18:50.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47058219",
       "matchedQuery": "LLM"
     },
     {
-      "id": "47050447",
-      "title": "Claude Sonnet 4.6",
-      "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
-      "author": "meetpateltech",
-      "points": 77,
-      "comments": 26,
-      "createdAt": "2026-02-17T17:45:59.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47050447",
+      "id": "47063005",
+      "title": "Tailscale Peer Relays is now generally available",
+      "url": "https://tailscale.com/blog/peer-relays-ga",
+      "author": "sz4kerto",
+      "points": 363,
+      "comments": 185,
+      "createdAt": "2026-02-18T16:46:12.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47063005",
+      "isTopStory": true
+    },
+    {
+      "id": "47060202",
+      "title": "Microsoft says bug causes Copilot to summarize confidential emails",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-bug-causes-copilot-to-summarize-confidential-emails/",
+      "author": "tablets",
+      "points": 246,
+      "comments": 68,
+      "createdAt": "2026-02-18T12:16:12.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060202",
+      "matchedQuery": "copilot"
+    },
+    {
+      "id": "47067759",
+      "title": "Microsoft guide to pirating Harry Potter for LLM training (2024) [removed]",
+      "url": "https://devblogs.microsoft.com/azure-sql/langchain-with-sqlvectorstore-example/",
+      "author": "anonymous908213",
+      "points": 239,
+      "comments": 144,
+      "createdAt": "2026-02-18T23:19:29.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47067759",
+      "matchedQuery": "LLM"
+    },
+    {
+      "id": "47069299",
+      "title": "Anthropic officially bans using subscription auth for third party use",
+      "url": "https://code.claude.com/docs/en/legal-and-compliance",
+      "author": "theahura",
+      "points": 161,
+      "comments": 178,
+      "createdAt": "2026-02-19T02:52:26.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47069299",
+      "matchedQuery": "Anthropic"
+    },
+    {
+      "id": "47061642",
+      "title": "What is happening to writing? Cognitive debt, Claude Code, the space around AI",
+      "url": "https://resobscura.substack.com/p/what-is-happening-to-writing",
+      "author": "benbreen",
+      "points": 121,
+      "comments": 98,
+      "createdAt": "2026-02-18T14:59:16.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47061642",
       "matchedQuery": "Claude"
     },
     {
-      "id": "47049776",
-      "title": "Launch HN: Sonarly (YC W26) – AI agent to triage and fix your production alerts",
-      "url": "https://sonarly.com/",
-      "author": "Dimittri",
-      "points": 27,
-      "comments": 11,
-      "createdAt": "2026-02-17T17:03:09.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47049776",
-      "matchedQuery": "AI agent"
+      "id": "47059129",
+      "title": "How OpenAI, the US government and Persona built an identity surveillance machine",
+      "url": "https://vmfunc.re/blog/persona/",
+      "author": "rzk",
+      "points": 70,
+      "comments": 25,
+      "createdAt": "2026-02-18T09:40:08.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47059129",
+      "matchedQuery": "OpenAI"
     },
     {
-      "id": "47047963",
-      "title": "Claude Code talking about unexpected, different projects",
-      "author": "WeaselsWin",
-      "points": 26,
-      "comments": 8,
-      "createdAt": "2026-02-17T14:39:26.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47047963",
-      "matchedQuery": "Claude"
+      "id": "47065179",
+      "title": "R3forth: A concatenative language derived from ColorForth",
+      "url": "https://github.com/phreda4/r3/blob/main/doc/r3forth_tutorial.md",
+      "author": "tosh",
+      "points": 70,
+      "comments": 10,
+      "createdAt": "2026-02-18T19:28:59.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47065179",
+      "isTopStory": true
     },
     {
-      "id": "47049984",
-      "title": "OpenAI axes exec for \"sexual discrimination\" after she objected GPT erotica plan",
-      "url": "https://nypost.com/2026/02/11/business/openai-axes-exec-for-alleged-sexual-discrimination-after-she-objected-to-chatgpt-erotica-plan-report/",
-      "author": "pera",
-      "points": 19,
-      "comments": 3,
-      "createdAt": "2026-02-17T17:16:24.000Z",
-      "hnUrl": "https://news.ycombinator.com/item?id=47049984",
-      "matchedQuery": "ChatGPT"
+      "id": "47060220",
+      "title": "Show HN: Rebrain.gg – Doom learn, don't doom scroll",
+      "author": "FailMore",
+      "points": 63,
+      "comments": 25,
+      "createdAt": "2026-02-18T12:18:26.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47060220",
+      "isTopStory": true
+    },
+    {
+      "id": "47068320",
+      "title": "How AI is affecting productivity and jobs in Europe",
+      "url": "https://cepr.org/voxeu/columns/how-ai-affecting-productivity-and-jobs-europe",
+      "author": "pseudolus",
+      "points": 47,
+      "comments": 17,
+      "createdAt": "2026-02-19T00:22:45.000Z",
+      "hnUrl": "https://news.ycombinator.com/item?id=47068320",
+      "isTopStory": true
     }
   ],
   "summary": {
-    "totalStories": 210,
-    "last24h": 122,
-    "totalPoints": 3549,
-    "totalComments": 2066,
+    "totalStories": 211,
+    "last24h": 116,
+    "totalPoints": 4602,
+    "totalComments": 2764,
     "topStory": {
       "id": "47050488",
       "title": "Claude Sonnet 4.6",
       "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
       "author": "adocomplete",
-      "points": 1022,
-      "comments": 901,
+      "points": 1302,
+      "comments": 1176,
       "createdAt": "2026-02-17T17:48:52.000Z",
       "hnUrl": "https://news.ycombinator.com/item?id=47050488",
       "matchedQuery": "Claude"

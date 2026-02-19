@@ -1,184 +1,160 @@
 {
   "source": "TechCrunch",
   "url": "https://techcrunch.com",
-  "fetched_at": "2026-02-18T06:39:42.500Z",
+  "fetched_at": "2026-02-19T05:28:20.531Z",
   "total_parsed": 20,
-  "ai_filtered": 12,
+  "ai_filtered": 10,
   "articles": [
     {
-      "title": "Mistral AI buys Koyeb in first acquisition to back its cloud ambitions",
-      "url": "https://techcrunch.com/2026/02/17/mistral-ai-buys-koyeb-in-first-acquisition-to-back-its-cloud-ambitions/",
-      "date": "2026-02-17T17:22:09.000Z",
-      "description": "Mistral AI has agreed to buy Koyeb, a Paris-based startup that simplifies AI app deployment at scale and manages the infrastructure behind it.",
-      "author": "Anna Heim",
+      "title": "Kana emerges from stealth with $15M to build flexible AI agents for marketers",
+      "url": "https://techcrunch.com/2026/02/18/kana-emerges-from-stealth-with-15m-to-build-flexible-ai-agents-for-marketers/",
+      "date": "2026-02-18T15:08:40.000Z",
+      "description": "Kana, a new AI marketing startup from the founders of Rapt and Krux, has raised $15 million to build customizable, agent-based marketing tools.",
+      "author": "Ram Iyer",
       "categories": [
         "AI",
+        "Commerce",
         "Startups",
-        "Koyeb",
-        "Mergers and Acquisitions",
-        "Mistral AI",
-        "serverless computing"
-      ]
-    },
-    {
-      "title": "Here are the 17 US-based AI companies that have raised $100M or more in 2026",
-      "url": "https://techcrunch.com/2026/02/17/here-are-the-17-us-based-ai-companies-that-have-raised-100m-or-more-in-2026/",
-      "date": "2026-02-17T14:58:09.000Z",
-      "description": "Three U.S.-based AI companies raised rounds larger than $1 billion so far in 2026, with 14 others raising rounds of $100 million or more.",
-      "author": "Rebecca Szkutak",
-      "categories": [
-        "AI",
-        "Enterprise",
-        "Anthropic",
-        "artificial intelligence",
-        "evergreen",
-        "nvidia",
-        "xAI"
-      ]
-    },
-    {
-      "title": "Apple is reportedly cooking up a trio of AI wearables",
-      "url": "https://techcrunch.com/2026/02/17/apple-is-reportedly-cooking-up-a-trio-of-ai-wearables/",
-      "date": "2026-02-17T20:14:00.000Z",
-      "description": "As the AI hardware space heats up, the iPhone maker has multiple smart products in development.",
-      "author": "Lucas Ropek",
-      "categories": [
-        "AI",
-        "Hardware",
-        "Apple",
-        "In Brief",
-        "iPhone",
-        "wearables"
-      ]
-    },
-    {
-      "title": "Running AI models is turning into a memory game",
-      "url": "https://techcrunch.com/2026/02/17/running-ai-models-is-turning-into-a-memory-game/",
-      "date": "2026-02-17T16:44:14.000Z",
-      "description": "When we talk about the cost of AI infrastructure, the focus is usually on Nvidia and GPUs -- but memory is an increasingly important part of the picture.",
-      "author": "Russell Brandom",
-      "categories": [
-        "AI",
-        "Anthropic",
-        "Claude",
-        "dram",
+        "AI agents",
         "Exclusive",
-        "inference costs"
+        "Marketing",
+        "martech",
+        "mayfield",
+        "mayfield fund"
       ]
     },
     {
-      "title": "WordPress.com adds an AI Assistant that can edit, adjust styles, create images, and more",
-      "url": "https://techcrunch.com/2026/02/17/wordpress-com-adds-an-ai-assistant-that-can-edit-adjust-styles-create-images-and-more/",
-      "date": "2026-02-17T16:10:44.000Z",
-      "description": "The feature is designed to work inside the website to understand its content and layout, allowing site owners to make changes with natural language commands. The WordPress AI assistant doesn't need precisely tailored prompts, either.",
-      "author": "Sarah Perez",
-      "categories": [
-        "AI",
-        "WordPress",
-        "wordpress.com"
-      ]
-    },
-    {
-      "title": "European Parliament blocks AI on lawmakers' devices, citing security risks",
-      "url": "https://techcrunch.com/2026/02/17/european-parliament-blocks-ai-on-lawmakers-devices-citing-security-risks/",
-      "date": "2026-02-17T16:30:43.000Z",
-      "description": "EU lawmakers found their government-issued devices were blocked from using the baked-in AI tools, amid fears that sensitive information could turn up on the U.S. servers of AI companies.",
+      "title": "Microsoft says Office bug exposed customers' confidential emails to Copilot AI",
+      "url": "https://techcrunch.com/2026/02/18/microsoft-says-office-bug-exposed-customers-confidential-emails-to-copilot-ai/",
+      "date": "2026-02-18T14:44:28.000Z",
+      "description": "Microsoft said the bug meant that its Copilot AI chatbot was reading and summarizing paying customers' confidential emails, bypassing data-protection policies.",
       "author": "Zack Whittaker",
       "categories": [
         "AI",
         "Security",
+        "chatbot",
+        "Copilot",
         "cybersecurity",
         "data protection",
-        "Europe",
-        "european union"
+        "In Brief",
+        "Microsoft"
       ]
     },
     {
-      "title": "India bids to attract over $200B in AI infrastructure investment by 2028",
-      "url": "https://techcrunch.com/2026/02/17/india-bids-to-attract-over-200b-in-ai-infrastructure-investment-by-2028/",
-      "date": "2026-02-17T14:13:54.000Z",
-      "description": "India is ramping up shared AI compute, adding 20,000 GPUs as part of a broader push to attract global AI investment.",
+      "title": "OpenAI pushes into higher education as India seeks to scale AI skills",
+      "url": "https://techcrunch.com/2026/02/18/openai-pushes-into-higher-education-as-india-seeks-to-scale-ai-skills/",
+      "date": "2026-02-18T14:32:42.000Z",
+      "description": "OpenAI says its India education partnerships aim to reach more than 100,000 students, faculty, and staff over the next year.",
       "author": "Jagmeet Singh",
       "categories": [
         "AI",
-        "Government & Policy",
-        "data centers",
-        "India",
-        "ai infrastructure",
-        "India AI Impact Summit"
+        "ChatGPT Edu",
+        "EdTech",
+        "Education",
+        "OpenAI"
       ]
     },
     {
-      "title": "SpaceX vets raise $50M Series A for data center links",
-      "url": "https://techcrunch.com/2026/02/17/spacex-vets-raise-50m-series-a-for-data-center-links/",
-      "date": "2026-02-17T17:00:00.000Z",
-      "description": "Mesh aims to mass-produce optical transceivers for AI data centers.",
-      "author": "Tim Fernholz",
+      "title": "OpenAI deepens India push with Pine Labs fintech partnership",
+      "url": "https://techcrunch.com/2026/02/18/openai-deepens-india-push-with-pine-labs-fintech-partnership/",
+      "date": "2026-02-19T03:30:00.000Z",
+      "description": "OpenAI moves beyond ChatGPT in India with a Pine Labs deal targeting enterprise payments and AI-driven commerce.",
+      "author": "Jagmeet Singh",
+      "categories": [
+        "Enterprise",
+        "Fintech",
+        "AI",
+        "OpenAI",
+        "pine labs"
+      ]
+    },
+    {
+      "title": "Is your startup's check engine light on? Google Cloud's VP explains what to do",
+      "url": "https://techcrunch.com/video/is-your-startups-check-engine-light-on-google-clouds-vp-explains-what-to-do/",
+      "date": "2026-02-18T21:07:00.000Z",
+      "description": "Startup founders are being pushed to move faster than ever, using AI while facing tighter funding, rising infrastructure costs, and more pressure to show real traction early. Cloud credits, access to GPUs, and foundation models have made it easier to get started, but those early infrastructure choices can have unforeseen consequences once startups move beyond [...]",
+      "author": "Theresa Loconsolo",
+      "categories": [
+        "Startups",
+        "AI",
+        "Fundraising",
+        "infrastructure",
+        "google cloud",
+        "startup building",
+        "Cloud credits"
+      ]
+    },
+    {
+      "title": "Canva gets to $4B in revenue as LLM referral traffic rises",
+      "url": "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises/",
+      "date": "2026-02-18T14:00:00.000Z",
+      "description": "The creative company's monthly active users increased 20%, growth that was partially propelled by adoption of its AI tools.",
+      "author": "Ivan Mehta",
+      "categories": [
+        "Apps",
+        "Adobe",
+        "canva",
+        "Creative Suite",
+        "Exclusive"
+      ]
+    },
+    {
+      "title": "Google adds music-generation capabilities to the Gemini app",
+      "url": "https://techcrunch.com/2026/02/18/google-adds-music-generation-capabilities-to-the-gemini-app/",
+      "date": "2026-02-18T16:00:00.000Z",
+      "description": "Users will be able to use text, images, and videos as a reference to generate music.",
+      "author": "Ivan Mehta",
+      "categories": [
+        "AI",
+        "Apps",
+        "Media & Entertainment",
+        "ai music",
+        "gemini",
+        "Google"
+      ]
+    },
+    {
+      "title": "Amazon halts Blue Jay robotics project after less than 6 months",
+      "url": "https://techcrunch.com/2026/02/18/amazon-halts-blue-jay-robotics-project-after-less-than-six-months/",
+      "date": "2026-02-18T18:27:10.000Z",
+      "description": "Amazon said Blue Jay's core tech will be used for other robotics projects and the employees who worked on it were moved to other projects.",
+      "author": "Rebecca Szkutak",
+      "categories": [
+        "AI",
+        "Robotics",
+        "Amazon",
+        "warehouse robotics"
+      ]
+    },
+    {
+      "title": "Mastodon, a decentralized alternative to X, plans to target creators with new features",
+      "url": "https://techcrunch.com/2026/02/18/mastodon-a-decentralized-alternative-to-x-plans-to-target-creators-with-new-features/",
+      "date": "2026-02-18T18:19:14.000Z",
+      "description": "Mastodon is looking to grow its open source, decentralized social network with new features aimed at creators.",
+      "author": "Sarah Perez",
+      "categories": [
+        "Apps",
+        "Social",
+        "decentralized",
+        "fediverse",
+        "Mastodon",
+        "social media"
+      ]
+    },
+    {
+      "title": "World Labs lands $1B, with $200M from Autodesk, to bring world models into 3D workflows",
+      "url": "https://techcrunch.com/2026/02/18/world-labs-lands-200m-from-autodesk-to-bring-world-models-into-3d-workflows/",
+      "date": "2026-02-18T18:07:16.000Z",
+      "description": "The partnership will see the two companies exploring how World Labs’ models can work alongside Autodesk’s tools, and vice versa, starting with a focus on entertainment use cases.",
+      "author": "Rebecca Bellan",
       "categories": [
         "AI",
         "Fundraising",
-        "Startups",
-        "Mesh Optical Technologies",
-        "SpaceX",
-        "Thrive Capital"
-      ]
-    },
-    {
-      "title": "Anthropic releases Sonnet 4.6",
-      "url": "https://techcrunch.com/2026/02/17/anthropic-releases-sonnet-4-6/",
-      "date": "2026-02-17T18:00:00.000Z",
-      "description": "Anthropic has released a new version of its midsized Sonnet model, keeping pace with the company's four-month update cycle.",
-      "author": "Russell Brandom",
-      "categories": [
-        "AI",
-        "Anthropic",
-        "In Brief",
-        "Sonnet"
-      ]
-    },
-    {
-      "title": "These are the countries moving to ban social media for children",
-      "url": "https://techcrunch.com/2026/02/17/social-media-ban-children-countries-list/",
-      "date": "2026-02-17T15:59:38.000Z",
-      "description": "Australia was the first country to issue a ban in late 2025, aiming to reduce the pressures and risks that young users may face on social media, including cyberbullying, social media addiction, and exposure to predators.",
-      "author": "Aisha Malik",
-      "categories": [
-        "Apps",
-        "Government & Policy",
-        "Social",
-        "evergreens",
-        "social media bans"
-      ]
-    },
-    {
-      "title": "Apple Podcasts is getting an enhanced video experience this spring",
-      "url": "https://techcrunch.com/2026/02/17/apple-podcasts-is-getting-an-enhanced-video-experience-this-spring/",
-      "date": "2026-02-17T15:06:48.000Z",
-      "description": "By bringing an enhanced video podcast viewing experience to its app, Apple is aiming to keep users from turning to rival platforms to watch their favorite shows.",
-      "author": "Aisha Malik",
-      "categories": [
-        "Apps",
-        "Media & Entertainment",
-        "Apple",
-        "apple podcasts"
-      ]
-    },
-    {
-      "title": "Amazon Fire TV's new interface is now rolling out in the US",
-      "url": "https://techcrunch.com/2026/02/17/amazon-fire-tvs-new-interface-is-now-rolling-out-in-the-u-s/",
-      "date": "2026-02-17T15:58:43.000Z",
-      "description": "Fire TV's new interface simplifies its layout and navigation and adds Alexa+.",
-      "author": "Sarah Perez",
-      "categories": [
-        "AI",
-        "Apps",
-        "Media & Entertainment",
-        "alexa+",
-        "Amazon",
-        "Amazon Fire TV",
-        "Fire TV",
-        "streaming",
-        "tv"
+        "autodesk",
+        "CAD",
+        "Fei-Fei Li",
+        "World Labs",
+        "world models"
       ]
     }
   ]

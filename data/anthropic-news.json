@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-18T06:39:48.525Z",
+  "scraped_at": "2026-02-19T05:28:26.188Z",
   "source": "anthropic.com",
   "stats": {
     "news_count": 3,
@@ -45,7 +45,7 @@
     },
     {
       "title": "Products",
-      "url": "https://www.anthropic.com/research/india-brief-economic-index",
+      "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
       "source": "anthropic-research",
       "category": "announcement"
     }

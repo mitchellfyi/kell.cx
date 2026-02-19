@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-18T06:39:22.044Z",
+  "scraped_at": "2026-02-19T05:28:01.169Z",
   "feeds": [
     {
       "name": "Hugging Face Blog",
@@ -24,6 +24,126 @@
   ],
   "total_count": 40,
   "items": [
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "SWE-bench February 2026 leaderboard update",
+      "url": "https://simonwillison.net/2026/Feb/19/swe-bench/#atom-everything",
+      "date": "2026-02-19T04:48:47.000Z",
+      "description": "<p><strong><a href=\"https://www.swebench.com/\">SWE-bench February 2026 leaderboard update</a></strong></p> SWE-bench is one of the benchmarks that the labs love to list in their model releases. The of..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "“No technology has me dreaming bigger than AI”",
+      "url": "https://blog.google/company-news/inside-google/message-ceo/sundar-pichai-ai-impact-summit-2026/",
+      "date": "2026-02-19T04:30:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI-Google_2.max-600x600.format-webp.webp\">CEO Sundar Pichai’s remarks at the opening ceremony of the AI Impact Summit 2026"
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "AI Impact Summit 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-impact-summit-2026-collection/",
+      "date": "2026-02-19T04:30:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Collection_Hero-2.max-600x600.format-webp.webp\">A look at the partnerships and investments Google announced at the AI Impact S..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "LadybirdBrowser/ladybird: Abandon Swift adoption",
+      "url": "https://simonwillison.net/2026/Feb/19/ladybird/#atom-everything",
+      "date": "2026-02-19T01:25:33.000Z",
+      "description": "<p><strong><a href=\"https://github.com/LadybirdBrowser/ladybird/commit/e87f889e31afbb5fa32c910603c7f5e781c97afd\">LadybirdBrowser/ladybird: Abandon Swift adoption</a></strong></p> Back <a href=\"https:/..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Typing without having to type",
+      "url": "https://simonwillison.net/2026/Feb/18/typing/#atom-everything",
+      "date": "2026-02-18T18:56:56.000Z",
+      "description": "<p>25+ years into my career as a programmer I think I may <em>finally</em> be coming around to preferring type hints or even strong typing. I resisted those in the past because they slowed down the ra..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "The A.I. Disruption We’ve Been Waiting for Has Arrived",
+      "url": "https://simonwillison.net/2026/Feb/18/the-ai-disruption/#atom-everything",
+      "date": "2026-02-18T17:07:31.000Z",
+      "description": "<p><strong><a href=\"https://www.nytimes.com/2026/02/18/opinion/ai-software.html?unlocked_article_code=1.NFA.UkLv.r-XczfzYRdXJ&amp;smid=url-share\">The A.I. Disruption We’ve Been Waiting for Has Arrived..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Quoting Martin Fowler",
+      "url": "https://simonwillison.net/2026/Feb/18/martin-fowler/#atom-everything",
+      "date": "2026-02-18T16:50:07.000Z",
+      "description": "<blockquote cite=\"https://martinfowler.com/fragments/2026-02-18.html\"><p>LLMs are eating specialty skills. There will be less use of specialist front-end and back-end developers as the LLM-driving ski..."
+    },
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "IBM and UC Berkeley Diagnose Why Enterprise Agents Fail Using IT-Bench and MAST",
+      "url": "https://huggingface.co/blog/ibm-research/itbenchandmast",
+      "date": "2026-02-18T16:15:45.000Z",
+      "description": null
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Google DeepMind wants to know if chatbots are just virtue signaling",
+      "url": "https://www.technologyreview.com/2026/02/18/1133299/google-deepmind-wants-to-know-if-chatbots-are-just-virtue-signaling/",
+      "date": "2026-02-18T16:00:22.000Z",
+      "description": "Google DeepMind is calling for the moral behavior of large language models—such as what they do when called on to act as companions, therapists, medical advisors, and so on—to be scrutinized with the ..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "A new way to express yourself: Gemini can now create music",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/",
+      "date": "2026-02-18T16:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/0217_KeywordHeaderFinalc.max-600x600.format-webp.webp\">Lyria 3 is now available in the Gemini app. Create custom, high-quality..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "The Download: a blockchain enigma, and the algorithms governing our lives",
+      "url": "https://www.technologyreview.com/2026/02/18/1133291/the-download-a-blockchain-enigma-and-the-algorithms-governing-our-lives/",
+      "date": "2026-02-18T13:10:00.000Z",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Welcome to the dark side of crypto’s permissionles..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "The robots who predict the future",
+      "url": "https://www.technologyreview.com/2026/02/18/1132579/robots-predict-future-book-review/",
+      "date": "2026-02-18T11:00:00.000Z",
+      "description": "To be human is, fundamentally, to be a forecaster. Occasionally a pretty good one. Trying to see the future, whether through the lens of past experience or the logic of cause and effect, has helped us..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Welcome to the dark side of crypto’s permissionless dream",
+      "url": "https://www.technologyreview.com/2026/02/18/1132587/jean-paul-thorbjornsen-dark-side-crypto-permissionless-dream/",
+      "date": "2026-02-18T11:00:00.000Z",
+      "description": "“We’re out of airspace now. We can do whatever we want,” Jean-Paul Thorbjornsen tells me from the pilot’s seat of his Aston Martin helicopter. As we fly over suburbs outside Melbourne, Australia, it’s..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "AI Impact Summit 2026: How we’re partnering to make AI work for everyone",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-impact-summit-2026-india/",
+      "date": "2026-02-18T10:30:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI-Summit-Hero.max-600x600.format-webp.webp\">An overview of Google’s new global partnerships and funding announcements at the ..."
+    },
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "One-Shot Any Web App with Gradio&apos;s gr.HTML",
+      "url": "https://huggingface.co/blog/gradio-html-one-shot-apps",
+      "date": "2026-02-18T00:00:00.000Z",
+      "description": null
+    },
     {
       "source": "Simon Willison",
       "category": "technical",
@@ -97,38 +217,6 @@
       "description": "When Sam Zahr first saw the gray Rolls-Royce Dawn convertible with orange interior and orange roof, he knew he’d found a perfect addition to his fleet. “It was very appealing to our clientele,” he tol..."
     },
     {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Nano Banana Pro diff to webcomic",
-      "url": "https://simonwillison.net/2026/Feb/17/release-notes-webcomic/#atom-everything",
-      "date": "2026-02-17T04:51:58.000Z",
-      "description": "<p>Given the threat of <a href=\"https://simonwillison.net/tags/cognitive-debt/\">cognitive debt</a> brought on by AI-accelerated software development leading to more projects and less deep understandin..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Qwen3.5: Towards Native Multimodal Agents",
-      "url": "https://simonwillison.net/2026/Feb/17/qwen35/#atom-everything",
-      "date": "2026-02-17T04:30:57.000Z",
-      "description": "<p><strong><a href=\"https://qwen.ai/blog?id=qwen3.5\">Qwen3.5: Towards Native Multimodal Agents</a></strong></p> Alibaba's Qwen just released the first two models in the Qwen 3.5 series - one open weig..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Two new Showboat tools: Chartroom and datasette-showboat",
-      "url": "https://simonwillison.net/2026/Feb/17/chartroom-and-datasette-showboat/#atom-everything",
-      "date": "2026-02-17T00:43:45.000Z",
-      "description": "<p>I <a href=\"https://simonwillison.net/2026/Feb/10/showboat-and-rodney/\">introduced Showboat</a> a week ago - my CLI tool that helps coding agents create Markdown documents that demonstrate the code ..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Rodney and Claude Code for Desktop",
-      "url": "https://simonwillison.net/2026/Feb/16/rodney-claude-code/#atom-everything",
-      "date": "2026-02-16T16:38:57.000Z",
-      "description": "<p>I'm a very heavy user of <a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\">Claude Code on the web</a>, Anthropic's excellent but poorly named cloud version of Claude Code where every..."
-    },
-    {
       "source": "MIT Tech Review AI",
       "category": "news",
       "title": "Tuning into the future of collaboration",
@@ -159,46 +247,6 @@
       "url": "https://www.technologyreview.com/2026/02/16/1132526/allison-nixon-hackers-security-researcher/",
       "date": "2026-02-16T11:00:00.000Z",
       "description": "The threats started in spring.&#160; In April 2024, a mysterious someone using the online handles “Waifu” and “Judische” began posting death threats on Telegram and Discord channels aimed at a cyberse..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "The AI Vampire",
-      "url": "https://simonwillison.net/2026/Feb/15/the-ai-vampire/#atom-everything",
-      "date": "2026-02-15T23:59:36.000Z",
-      "description": "<p><strong><a href=\"https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163\">The AI Vampire</a></strong></p> Steve Yegge's take on agent fatigue, and its relationship to burnout.</p> <blockquote> <..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "ALS stole this musician’s voice. AI let him sing again.",
-      "url": "https://www.technologyreview.com/2026/02/13/1132913/als-stole-this-musicians-voice-ai-sing/",
-      "date": "2026-02-13T17:17:28.000Z",
-      "description": "There are tears in the audience as Patrick Darling’s song begins to play. It’s a heartfelt song written for his great-grandfather, whom he never got the chance to meet. But this performance is emotion..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "The Download: an exclusive chat with Jim O’Neill, and the surprising truth about heists",
-      "url": "https://www.technologyreview.com/2026/02/13/1132896/the-download-an-exclusive-chat-with-jim-oneill-and-the-surprising-truth-about-heists/",
-      "date": "2026-02-13T13:10:00.000Z",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. US deputy health secretary: Vaccine guidelines are..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "The myth of the high-tech heist",
-      "url": "https://www.technologyreview.com/2026/02/13/1132397/myth-of-high-tech-heist/",
-      "date": "2026-02-13T11:00:00.000Z",
-      "description": "Making a movie is a lot like pulling off a heist. That’s what Steven Soderbergh—director of the Ocean’s franchise, among other heist-y classics—said a few years ago. You come up with a creative angle,..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "US deputy health secretary: Vaccine guidelines are still subject to change",
-      "url": "https://www.technologyreview.com/2026/02/13/1132889/us-deputy-health-secretary-vaccine-guidelines-longevity-arpa-h-cdc-nih/",
-      "date": "2026-02-13T10:37:40.000Z",
-      "description": "Following publication of this story, Politico reported Jim O’Neill would be leaving his current roles within the Department of Health and Human Services. Over the past year, Jim O’Neill has become one..."
     },
     {
       "source": "Hugging Face Blog",
@@ -273,22 +321,6 @@
       "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/helping_Team_USA_Hero.max-600x600.format-webp.webp\">Google Cloud built an industry-first AI tool to help U.S. Ski and Snowboar..."
     },
     {
-      "source": "AI News (Google)",
-      "category": "industry",
-      "title": "Watch our new Gemini ad ahead of football’s biggest weekend",
-      "url": "https://blog.google/company-news/inside-google/company-announcements/gemini-ad-new-home/",
-      "date": "2026-02-05T14:30:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SB_2026_New_Home_16_9_Thumbnail.max-600x600.format-webp.webp\">Learn more about Google’s new ad that will run during football’s..."
-    },
-    {
-      "source": "AI News (Google)",
-      "category": "industry",
-      "title": "The latest AI news we announced in January",
-      "url": "https://blog.google/innovation-and-ai/products/google-ai-updates-january-2026/",
-      "date": "2026-02-04T16:55:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/LatestAI_v5.max-600x600.format-webp.webp\">Google AI announcements from January"
-    },
-    {
       "source": "Hugging Face Blog",
       "category": "industry",
       "title": "Community Evals: Because we&apos;re done trusting black-box leaderboards over the community",
@@ -310,38 +342,6 @@
       "title": "The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+",
       "url": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3",
       "date": "2026-02-03T15:03:19.000Z",
-      "description": null
-    },
-    {
-      "source": "Hugging Face Blog",
-      "category": "industry",
-      "title": "Training Design for Text-to-Image Models: Lessons from Ablations",
-      "url": "https://huggingface.co/blog/Photoroom/prx-part2",
-      "date": "2026-02-03T11:25:53.000Z",
-      "description": null
-    },
-    {
-      "source": "AI News (Google)",
-      "category": "industry",
-      "title": "How we’re helping preserve the genetic information of endangered species with AI",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-to-preserve-endangered-species/",
-      "date": "2026-02-02T18:00:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Terria-Clay_Collage_hero.max-600x600.format-webp.webp\">Scientists are working to sequence the genome of every known species on..."
-    },
-    {
-      "source": "AI News (Google)",
-      "category": "industry",
-      "title": "Advancing AI benchmarking with Game Arena",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/",
-      "date": "2026-02-02T17:00:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/kaggle_Gsmes_Hero.png\">We’re expanding Game Arena with Poker and Werewolf, while Gemini 3 Pro and Flash top our chess..."
-    },
-    {
-      "source": "Hugging Face Blog",
-      "category": "industry",
-      "title": "Introducing Daggr: Chain apps programmatically, inspect visually",
-      "url": "https://huggingface.co/blog/daggr",
-      "date": "2026-01-29T00:00:00.000Z",
       "description": null
     }
   ]

@@ -1,8 +1,22 @@
 {
   "source": "deepmind",
-  "fetched_at": "2026-02-18T06:40:05.006Z",
-  "count": 3,
+  "fetched_at": "2026-02-19T05:28:42.055Z",
+  "count": 5,
   "items": [
+    {
+      "title": "A new way to express yourself: Gemini can now create music",
+      "url": "https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/",
+      "date": "2026-02-18T16:01:38.000Z",
+      "description": "The Gemini app now features our most advanced music generation model Lyria 3, empowering anyone to make 30-second tracks using text or images.",
+      "source": "deepmind-blog"
+    },
+    {
+      "title": "Accelerating discovery in India through AI-powered science and education",
+      "url": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
+      "date": "2026-02-17T13:42:20.000Z",
+      "description": "Google DeepMind brings National Partnerships for AI initiative to India, scaling AI for science and education",
+      "source": "deepmind-blog"
+    },
     {
       "title": "Gemini 3 Deep Think: Advancing science, research and engineering",
       "url": "https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/",

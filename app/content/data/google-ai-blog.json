@@ -1,9 +1,57 @@
 {
   "source": "google-ai",
   "description": "Official Google AI blog posts and announcements",
-  "fetched_at": "2026-02-18T06:39:49.638Z",
+  "fetched_at": "2026-02-19T05:28:26.767Z",
   "count": 20,
   "items": [
+    {
+      "title": "“No technology has me dreaming bigger than AI”",
+      "url": "https://blog.google/company-news/inside-google/message-ceo/sundar-pichai-ai-impact-summit-2026/",
+      "date": "2026-02-19T04:30:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI-Google_2.max-600x600.format-webp.webp\">CEO Sundar Pichai’s remarks at the opening ceremony of the AI Impact Summit 2026",
+      "categories": [
+        "a message from our ceo",
+        "ai"
+      ],
+      "source": "google-ai-blog",
+      "relevanceScore": 4
+    },
+    {
+      "title": "AI Impact Summit 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-impact-summit-2026-collection/",
+      "date": "2026-02-19T04:30:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Collection_Hero-2.max-600x600.format-webp.webp\">A look at the partnerships and investments Google announced at the AI Impact Summit 2026.",
+      "categories": [
+        "ai"
+      ],
+      "source": "google-ai-blog",
+      "relevanceScore": 4
+    },
+    {
+      "title": "A new way to express yourself: Gemini can now create music",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/",
+      "date": "2026-02-18T16:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/0217_KeywordHeaderFinalc.max-600x600.format-webp.webp\">Lyria 3 is now available in the Gemini app. Create custom, high-quality 30-second tracks from text and images.",
+      "categories": [
+        "gemini app",
+        "ai"
+      ],
+      "source": "google-ai-blog",
+      "relevanceScore": 15
+    },
+    {
+      "title": "AI Impact Summit 2026: How we’re partnering to make AI work for everyone",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-impact-summit-2026-india/",
+      "date": "2026-02-18T10:30:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI-Summit-Hero.max-600x600.format-webp.webp\">An overview of Google’s new global partnerships and funding announcements at the AI Impact Summit in India.",
+      "categories": [
+        "google.org",
+        "google in asia",
+        "ai"
+      ],
+      "source": "google-ai-blog",
+      "relevanceScore": 4
+    },
     {
       "title": "Our 2026 Responsible AI Progress Report",
       "url": "https://blog.google/innovation-and-ai/products/responsible-ai-2026-report-ongoing-work/",
@@ -210,55 +258,6 @@
       "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/DUN_poster_16x9_v02.max-600x600.format-webp.webp\">Today, our animated short film, “Dear Upstairs Neighbors,” previews at the Sundance Film Festival.",
       "categories": [
         "google deepmind",
-        "ai"
-      ],
-      "source": "google-ai-blog",
-      "relevanceScore": 4
-    },
-    {
-      "title": "Personal Intelligence in AI Mode in Search: Help that's uniquely yours",
-      "url": "https://blog.google/products-and-platforms/products/search/personal-intelligence-ai-mode-search/",
-      "date": "2026-01-22T16:00:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/pcontext_sizzle_thumbnail.max-600x600.format-webp.webp\">Personal Intelligence lets you tap into your context from Gmail and Photos to deliver tailored responses in Search, just for you.",
-      "categories": [
-        "search",
-        "google one",
-        "ai"
-      ],
-      "source": "google-ai-blog",
-      "relevanceScore": 4
-    },
-    {
-      "title": "Building a community-led future for AI in film with Sundance Institute",
-      "url": "https://blog.google/company-news/outreach-and-initiatives/google-org/sundance-institute-ai-education/",
-      "date": "2026-01-20T20:30:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Building_a_community-led_future.max-600x600.format-webp.webp\">A look at how Sundance Institute will build a community-led ecosystem for AI education and empowerment, to support creatives.",
-      "categories": [
-        "google.org",
-        "ai"
-      ],
-      "source": "google-ai-blog",
-      "relevanceScore": 4
-    },
-    {
-      "title": "How Nano Banana got its name",
-      "url": "https://blog.google/products-and-platforms/products/gemini/how-nano-banana-got-its-name/",
-      "date": "2026-01-15T16:06:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NanoBananaName_Hero.max-600x600.format-webp.webp\">We’re peeling back the origin story of Nano Banana, one of Google DeepMind’s most popular models.",
-      "categories": [
-        "gemini",
-        "ai"
-      ],
-      "source": "google-ai-blog",
-      "relevanceScore": 7
-    },
-    {
-      "title": "Learners and educators are AI’s new “super users”",
-      "url": "https://blog.google/products-and-platforms/products/education/our-life-with-ai-2025/",
-      "date": "2026-01-15T11:00:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/aiineducatiuonJan2026_hero_v2.max-600x600.format-webp.webp\">Google’s 2025 Our Life with AI survey found people are using AI tools to learn new things.",
-      "categories": [
-        "learning &amp; education",
         "ai"
       ],
       "source": "google-ai-blog",

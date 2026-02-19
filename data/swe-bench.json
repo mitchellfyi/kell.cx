@@ -1,13 +1,85 @@
 {
-  "scraped_at": "2026-02-18T06:39:20.661Z",
+  "scraped_at": "2026-02-19T05:28:00.592Z",
   "source": "https://www.swebench.com/",
   "source_repo": "https://github.com/SWE-bench/swe-bench.github.io",
   "leaderboard_count": 4,
   "leaderboards": {
     "bash-only": {
       "name": "bash-only",
-      "entry_count": 34,
+      "entry_count": 45,
       "top_10": [
+        {
+          "name": "Claude 4.5 Opus (high reasoning)",
+          "date": "2026-02-17",
+          "resolved_pct": 76.8,
+          "cost": 376.9539985,
+          "instance_cost": 0.753907997,
+          "logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://www.anthropic.com/claude",
+          "tags": [
+            "Model: claude-4-5-opus",
+            "Org: Anthropic",
+            "System: Attempts - 1",
+            "Mini: 2.0.0"
+          ],
+          "rank": 1
+        },
+        {
+          "name": "Gemini 3 Flash (high reasoning)",
+          "date": "2026-02-17",
+          "resolved_pct": 75.8,
+          "cost": 177.98206539999998,
+          "instance_cost": 0.35596413079999994,
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Google-gemini-icon.svg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://ai.google.dev/gemini-api/docs/models",
+          "tags": [
+            "Model: gemini-3-flash-preview",
+            "Org: Google DeepMind",
+            "System: Attempts - 1",
+            "Mini: 2.0.0"
+          ],
+          "rank": 2
+        },
+        {
+          "name": "MiniMax M2.5 (high reasoning)",
+          "date": "2026-02-17",
+          "resolved_pct": 75.8,
+          "cost": 36.644993922,
+          "instance_cost": 0.073289987844,
+          "logo": "https://filecdn.minimax.chat/public/58eca777-e31f-448a-9823-e2220e49b426.png",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://www.minimax.io",
+          "tags": [
+            "Model: minimax-m2.5",
+            "Org: Minimax",
+            "System: Attempts - 1",
+            "Mini: 2.0.0"
+          ],
+          "rank": 3
+        },
+        {
+          "name": "Claude Opus 4.6",
+          "date": "2026-02-17",
+          "resolved_pct": 75.6,
+          "cost": 275.76132225,
+          "instance_cost": 0.5515226445,
+          "logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://www.anthropic.com/claude",
+          "tags": [
+            "Model: claude-opus-4-6",
+            "Org: Anthropic",
+            "System: Attempts - 1",
+            "Mini: 2.0.0"
+          ],
+          "rank": 4
+        },
         {
           "name": "Claude 4.5 Opus medium (20251101)",
           "date": "2025-11-24",
@@ -21,9 +93,10 @@
           "tags": [
             "Model: claude-opus-4-5-20251101",
             "Org: Anthropic",
-            "System: Attempts - 1"
+            "System: Attempts - 1",
+            "Mini: 1.16.0"
           ],
-          "rank": 1
+          "rank": 5
         },
         {
           "name": "Gemini 3 Pro Preview (2025-11-18)",
@@ -38,9 +111,46 @@
           "tags": [
             "Model: gemini-3-pro-preview",
             "Org: Google DeepMind",
-            "System: Attempts - 1"
+            "System: Attempts - 1",
+            "Mini: 1.15.0"
           ],
-          "rank": 2
+          "rank": 6
+        },
+        {
+          "name": "GLM-5 (high reasoning)",
+          "date": "2026-02-17",
+          "resolved_pct": 72.8,
+          "cost": 267.19456811,
+          "instance_cost": 0.53438913622,
+          "logo": "https://z-cdn.chatglm.cn/z-blog/z-icon.svg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://z.ai",
+          "tags": [
+            "Model: glm-5",
+            "Org: Z-AI",
+            "System: Attempts - 1",
+            "Mini: 2.0.0"
+          ],
+          "rank": 7
+        },
+        {
+          "name": "GPT-5-2 (high reasoning)",
+          "date": "2026-02-17",
+          "resolved_pct": 72.8,
+          "cost": 236.78350885,
+          "instance_cost": 0.4735670177,
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://platform.openai.com",
+          "tags": [
+            "Model: gpt-5-2",
+            "Org: OpenAI",
+            "System: Attempts - 1",
+            "Mini: 2.0.0"
+          ],
+          "rank": 8
         },
         {
           "name": "GPT-5.2 (2025-12-11) (high reasoning)",
@@ -55,136 +165,53 @@
           "tags": [
             "Model: gpt-5.2-2025-12-11",
             "Org: OpenAI",
-            "System: Attempts - 1"
-          ],
-          "rank": 3
-        },
-        {
-          "name": "Claude 4.5 Sonnet (20250929)",
-          "date": "2025-09-29",
-          "resolved_pct": 70.6,
-          "cost": 279.16737045,
-          "instance_cost": 0.5583347409,
-          "logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
-          "os_model": false,
-          "os_system": true,
-          "site": "https://www.anthropic.com/news/claude-sonnet-4-5",
-          "tags": [
-            "Model: claude-sonnet-4-5-20250929",
-            "Org: Anthropic",
-            "System: Attempts - 1"
-          ],
-          "rank": 4
-        },
-        {
-          "name": "GPT-5.2 (2025-12-11)",
-          "date": "2025-12-11",
-          "resolved_pct": 69,
-          "cost": 134.8337487,
-          "instance_cost": 0.2696674974,
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg",
-          "os_model": false,
-          "os_system": true,
-          "site": "https://platform.openai.com/docs/models/",
-          "tags": [
-            "Model: gpt-5.2-2025-12-11",
-            "Org: OpenAI",
-            "System: Attempts - 1"
-          ],
-          "rank": 5
-        },
-        {
-          "name": "Claude 4 Opus (20250514)",
-          "date": "2025-08-02",
-          "resolved_pct": 67.6,
-          "cost": 565.6352234999999,
-          "instance_cost": 1.131270447,
-          "logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
-          "os_model": false,
-          "os_system": true,
-          "site": "https://www.anthropic.com/news/claude-4",
-          "tags": [
-            "Model: claude-4-opus-20250514",
-            "Org: Anthropic",
-            "System: Attempts - 1"
-          ],
-          "rank": 6
-        },
-        {
-          "name": "GPT-5.1-codex (medium reasoning)",
-          "date": "2025-11-24",
-          "resolved_pct": 66,
-          "cost": 294.44117500000004,
-          "instance_cost": 0.5888823500000001,
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg",
-          "os_model": false,
-          "os_system": true,
-          "site": "https://platform.openai.com/docs/models/gpt-5",
-          "tags": [
-            "Model: gpt-5.1-codex",
-            "Org: OpenAI",
-            "System: Attempts - 1"
-          ],
-          "rank": 7
-        },
-        {
-          "name": "GPT-5.1 (2025-11-13) (medium reasoning)",
-          "date": "2025-11-20",
-          "resolved_pct": 66,
-          "cost": 153.07773625000002,
-          "instance_cost": 0.3061554725,
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg",
-          "os_model": false,
-          "os_system": true,
-          "site": "https://platform.openai.com/docs/models/gpt-5",
-          "tags": [
-            "Model: gpt-5.1-2025-11-13",
-            "Org: OpenAI",
-            "System: Attempts - 1"
-          ],
-          "rank": 8
-        },
-        {
-          "name": "GPT-5 (2025-08-07) (medium reasoning)",
-          "date": "2025-08-07",
-          "resolved_pct": 65,
-          "cost": 140.19150875,
-          "instance_cost": 0.2803830175,
-          "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg",
-          "os_model": false,
-          "os_system": true,
-          "site": "https://platform.openai.com/docs/models/gpt-5",
-          "tags": [
-            "Model: gpt-5-2025-08-07",
-            "Org: OpenAI",
-            "System: Attempts - 1"
+            "System: Attempts - 1",
+            "Mini: 1.17.2"
           ],
           "rank": 9
         },
         {
-          "name": "Claude 4 Sonnet (20250514)",
-          "date": "2025-07-26",
-          "resolved_pct": 64.93,
-          "cost": 185.7265839,
-          "instance_cost": 0.37145316780000004,
+          "name": "Claude 4.5 Sonnet (high reasoning)",
+          "date": "2026-02-17",
+          "resolved_pct": 71.4,
+          "cost": 328.9482492,
+          "instance_cost": 0.6578964984000001,
           "logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
           "os_model": false,
           "os_system": true,
-          "site": "https://www.anthropic.com/news/claude-4",
+          "site": "https://www.anthropic.com/claude",
           "tags": [
-            "Model: claude-4-sonnet-20250514",
+            "Model: claude-sonnet-4-5-20250929",
             "Org: Anthropic",
-            "System: Attempts - 1"
+            "System: Attempts - 1",
+            "Mini: 2.0.0"
           ],
           "rank": 10
         }
       ],
-      "updated": "2025-11-24"
+      "updated": "2026-02-17"
     },
     "test": {
       "name": "Test",
-      "entry_count": 23,
+      "entry_count": 24,
       "top_10": [
+        {
+          "name": "Sonar Foundation Agent + Claude 4.5 Opus",
+          "date": "2025-12-19",
+          "resolved_pct": 52.62,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://assets-eu-01.kc-usercontent.com/55017e37-262d-017b-afd6-daa9468cbc30/8e59bcad-6e39-41dc-abd9-a0e251e8d63f/Sonar%20%282%29.svg?w=128&h=32&dpr=2&fit=crop&q=80",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://www.sonarsource.com",
+          "tags": [
+            "Model: claude-opus-4-5",
+            "Org: Sonar",
+            "System: Attempts - 1"
+          ],
+          "rank": 1
+        },
         {
           "name": "Salesforce AI Research SAGE (bash-only)",
           "date": "2025-10-27",
@@ -201,7 +228,7 @@
             "Org: Salesforce AI Research",
             "System: Attempts - 2+"
           ],
-          "rank": 1
+          "rank": 2
         },
         {
           "name": "Atlassian Rovo Dev (2025-06-05)",
@@ -217,7 +244,7 @@
             "Org: Atlassian",
             "System: Attempts - 1"
           ],
-          "rank": 2
+          "rank": 3
         },
         {
           "name": "Amazon Q Developer Agent (v20250405-dev)",
@@ -233,7 +260,7 @@
             "Org: AWS",
             "System: Attempts - 2+"
           ],
-          "rank": 3
+          "rank": 4
         },
         {
           "name": "SWE-agent 1.0 (Claude 3.7 Sonnet)",
@@ -250,7 +277,7 @@
             "Org: SWE-agent",
             "System: Attempts - 1"
           ],
-          "rank": 4
+          "rank": 5
         },
         {
           "name": "Amazon Q Developer Agent (v20241202-dev)",
@@ -266,7 +293,7 @@
             "Org: AWS",
             "System: Attempts - 1"
           ],
-          "rank": 5
+          "rank": 6
         },
         {
           "name": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
@@ -282,7 +309,7 @@
             "Org: OpenHands",
             "System: Attempts - 1"
           ],
-          "rank": 6
+          "rank": 7
         },
         {
           "name": "AutoCodeRover-v2.0 (Claude-3.5-Sonnet-20241022)",
@@ -298,7 +325,7 @@
             "Model: claude-3-5-sonnet-20241022",
             "System: Attempts - 1"
           ],
-          "rank": 7
+          "rank": 8
         },
         {
           "name": "Honeycomb",
@@ -313,7 +340,7 @@
           "tags": [
             "System: Attempts - 1"
           ],
-          "rank": 8
+          "rank": 9
         },
         {
           "name": "Amazon Q Developer Agent (v20240719-dev)",
@@ -329,30 +356,49 @@
             "Org: AWS",
             "System: Attempts - 1"
           ],
-          "rank": 9
-        },
-        {
-          "name": "Factory Code Droid",
-          "date": "2024-06-17",
-          "resolved_pct": 19.27,
-          "cost": null,
-          "instance_cost": null,
-          "logo": "https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_400x400.jpg",
-          "os_model": false,
-          "os_system": false,
-          "site": "https://www.factory.ai/",
-          "tags": [
-            "System: Attempts - 1"
-          ],
           "rank": 10
         }
       ],
-      "updated": "2025-10-27"
+      "updated": "2025-12-19"
     },
     "verified": {
       "name": "Verified",
-      "entry_count": 165,
+      "entry_count": 178,
       "top_10": [
+        {
+          "name": "live-SWE-agent + Claude 4.5 Opus medium (20251101)",
+          "date": "2025-12-15",
+          "resolved_pct": 79.2,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://brand.illinois.edu/wp-content/uploads/2024/02/Color-Variation-Orange-Block-I-White-Background.png",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://github.com/OpenAutoCoder/live-swe-agent",
+          "tags": [
+            "Model: claude-opus-4-5-20251101",
+            "Org: UIUC",
+            "System: Attempts - 1"
+          ],
+          "rank": 1
+        },
+        {
+          "name": "Sonar Foundation Agent + Claude 4.5 Opus",
+          "date": "2025-12-05",
+          "resolved_pct": 79.2,
+          "cost": null,
+          "instance_cost": null,
+          "logo": "https://assets-eu-01.kc-usercontent.com/55017e37-262d-017b-afd6-daa9468cbc30/8e59bcad-6e39-41dc-abd9-a0e251e8d63f/Sonar%20%282%29.svg?w=128&h=32&dpr=2&fit=crop&q=80",
+          "os_model": false,
+          "os_system": false,
+          "site": "https://www.sonarsource.com",
+          "tags": [
+            "Model: claude-opus-4-5",
+            "Org: Sonar",
+            "System: Attempts - 1"
+          ],
+          "rank": 2
+        },
         {
           "name": "TRAE + Doubao-Seed-Code",
           "date": "2025-09-28",
@@ -372,7 +418,7 @@
             "Org: ByteDance",
             "System: Attempts - 2+"
           ],
-          "rank": 1
+          "rank": 3
         },
         {
           "name": "live-SWE-agent + Gemini 3 Pro Preview (2025-11-18)",
@@ -389,7 +435,7 @@
             "Org: UIUC",
             "System: Attempts - 1"
           ],
-          "rank": 2
+          "rank": 4
         },
         {
           "name": "Atlassian Rovo Dev (2025-09-02)",
@@ -407,7 +453,7 @@
             "Org: Atlassian",
             "System: Attempts - 2"
           ],
-          "rank": 3
+          "rank": 5
         },
         {
           "name": "EPAM AI/Run Developer Agent v20250719 + Claude 4 Sonnet",
@@ -424,7 +470,26 @@
             "Org: EPAM Systems, Inc.",
             "System: Attempts - 2+"
           ],
-          "rank": 4
+          "rank": 6
+        },
+        {
+          "name": "mini-SWE-agent + Claude 4.5 Opus (high reasoning)",
+          "date": "2026-02-17",
+          "resolved_pct": 76.8,
+          "cost": 376.9539985,
+          "instance_cost": 0.753907997,
+          "logo": "https://mini-swe-agent.com/latest/assets/mini_square.svg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://mini-swe-agent.com/latest/",
+          "tags": [
+            "Model: claude-4-5-opus",
+            "Org: Anthropic",
+            "System: Attempts - 1",
+            "Mini: 2.0.0",
+            "Org: SWE-agent"
+          ],
+          "rank": 7
         },
         {
           "name": "ACoder",
@@ -444,99 +509,48 @@
             "Org: ACoder",
             "System: Attempts - 2+"
           ],
-          "rank": 5
-        },
-        {
-          "name": "Warp",
-          "date": "2025-09-01",
-          "resolved_pct": 75.6,
-          "cost": null,
-          "instance_cost": null,
-          "logo": "https://storage.googleapis.com/warp-static-assets/logo/logo--black.png",
-          "os_model": false,
-          "os_system": false,
-          "site": "https://www.warp.dev",
-          "tags": [
-            "Model: gpt-5",
-            "Model: claude-sonnet-4-20250514",
-            "Org: Warp",
-            "System: Attempts - 2+"
-          ],
-          "rank": 6
-        },
-        {
-          "name": "TRAE",
-          "date": "2025-06-12",
-          "resolved_pct": 75.2,
-          "cost": null,
-          "instance_cost": null,
-          "logo": "https://se-research.bytedance.com/logos/trae.png",
-          "os_model": false,
-          "os_system": true,
-          "site": "https://github.com/bytedance/trae-agent",
-          "tags": [
-            "Model: claude-4-sonnet-20250522",
-            "Model: claude-4-opus-20250522",
-            "Model: claude-3-7-sonnet-20250219",
-            "Model: gemini-2.5-pro-preview-06-05",
-            "Org: TRAE",
-            "System: Attempts - 2+"
-          ],
-          "rank": 7
-        },
-        {
-          "name": "Harness AI",
-          "date": "2025-07-31",
-          "resolved_pct": 74.8,
-          "cost": null,
-          "instance_cost": null,
-          "logo": "https://cdn.prod.website-files.com/6222ca42ea87e1bd1aa1d10c/64f8ea8d154732b5e6bfff97_harness-logo-icon.svg",
-          "os_model": false,
-          "os_system": false,
-          "site": "https://www.harness.io/",
-          "tags": [
-            "Model: claude-sonnet-4-20250514",
-            "Org: Harness",
-            "System: Attempts - 1"
-          ],
           "rank": 8
         },
         {
-          "name": "Sonar Foundation Agent + Claude 4.5 Sonnet",
-          "date": "2025-11-03",
-          "resolved_pct": 74.8,
-          "cost": null,
-          "instance_cost": null,
-          "logo": "https://assets-eu-01.kc-usercontent.com/55017e37-262d-017b-afd6-daa9468cbc30/8e59bcad-6e39-41dc-abd9-a0e251e8d63f/Sonar%20%282%29.svg?w=128&h=32&dpr=2&fit=crop&q=80",
+          "name": "mini-SWE-agent + Gemini 3 Flash (high reasoning)",
+          "date": "2026-02-17",
+          "resolved_pct": 75.8,
+          "cost": 177.98206539999998,
+          "instance_cost": 0.35596413079999994,
+          "logo": "https://mini-swe-agent.com/latest/assets/mini_square.svg",
           "os_model": false,
-          "os_system": false,
-          "site": "https://www.sonarsource.com",
+          "os_system": true,
+          "site": "https://mini-swe-agent.com/latest/",
           "tags": [
-            "Model: claude-sonnet-4-5",
-            "Org: Sonar",
-            "System: Attempts - 1"
+            "Model: gemini-3-flash-preview",
+            "Org: Google DeepMind",
+            "System: Attempts - 1",
+            "Mini: 2.0.0",
+            "Org: SWE-agent"
           ],
           "rank": 9
         },
         {
-          "name": "Lingxi-v1.5_claude-4-sonnet-20250514",
-          "date": "2025-07-20",
-          "resolved_pct": 74.6,
-          "cost": null,
-          "instance_cost": null,
-          "logo": "https://imgur.com/a/VMuwi7n",
+          "name": "mini-SWE-agent + MiniMax M2.5 (high reasoning)",
+          "date": "2026-02-17",
+          "resolved_pct": 75.8,
+          "cost": 36.644993922,
+          "instance_cost": 0.073289987844,
+          "logo": "https://mini-swe-agent.com/latest/assets/mini_square.svg",
           "os_model": false,
           "os_system": true,
-          "site": "https://github.com/nimasteryang/Lingxi",
+          "site": "https://mini-swe-agent.com/latest/",
           "tags": [
-            "Model: claude-4-sonnet-20250514",
-            "Org: Lingxi",
-            "System: Attempts - 1"
+            "Model: minimax-m2.5",
+            "Org: Minimax",
+            "System: Attempts - 1",
+            "Mini: 2.0.0",
+            "Org: SWE-agent"
           ],
           "rank": 10
         }
       ],
-      "updated": "2025-09-28"
+      "updated": "2025-12-15"
     },
     "lite": {
       "name": "Lite",
