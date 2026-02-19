@@ -39,7 +39,7 @@ _Nothing blocking. Ready for next priorities._
 
 5. **Content that drives signups**
    - Blog posts, comparisons, analysis
-   - Status: 6 posts live (added "Claude Sonnet 4.6 Coding Guide" 2026-02-19)
+   - Status: 7 posts live (added "GitHub Copilot Alternatives 2026" 2026-02-19)
 
 6. **Models page verified live** ✅
    - 307 models tracked, LMArena + Aider data
