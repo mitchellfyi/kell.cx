@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-18T06:02:49.443Z",
+  "lastUpdated": "2026-02-19T06:02:37.181Z",
   "competitors": {
     "cursor": {
       "prices": [
@@ -7,6 +7,7 @@
         "$60",
         "$200",
         "$40",
+        "$70",
         "$0",
         "$1",
         "$3",
@@ -20,8 +21,8 @@
         "enterprise",
         "team"
       ],
-      "contentHash": "6150c066e07d3dc4d02badb60c03e77b",
-      "lastChecked": "2026-02-18T06:02:46.700Z"
+      "contentHash": "089a95f9ca8c0e2047ab97f26b34ff88",
+      "lastChecked": "2026-02-19T06:02:34.560Z"
     },
     "replit": {
       "prices": [
@@ -40,8 +41,8 @@
         "starter",
         "basic"
       ],
-      "contentHash": "e94d43876f102ae4b0332c4b39fb9083",
-      "lastChecked": "2026-02-18T06:02:46.890Z"
+      "contentHash": "4c698b436ddaaeda1d55b7ae93ffac31",
+      "lastChecked": "2026-02-19T06:02:34.750Z"
     },
     "cognition": {
       "prices": [],
@@ -52,7 +53,7 @@
         "team"
       ],
       "contentHash": "c3e4c42c5eff2fa748a2c28ddf88676c",
-      "lastChecked": "2026-02-18T06:02:47.208Z"
+      "lastChecked": "2026-02-19T06:02:35.033Z"
     },
     "windsurf": {
       "prices": [
@@ -75,7 +76,7 @@
         "premium"
       ],
       "contentHash": "692c03c8fae7021a79a3c3c9dc72b77e",
-      "lastChecked": "2026-02-18T06:02:47.237Z"
+      "lastChecked": "2026-02-19T06:02:35.061Z"
     },
     "copilot": {
       "prices": [
@@ -97,7 +98,7 @@
         "basic"
       ],
       "contentHash": "8dcc922974d9e288a7c98ffdde2e98b6",
-      "lastChecked": "2026-02-18T06:02:47.459Z"
+      "lastChecked": "2026-02-19T06:02:35.357Z"
     },
     "tabnine": {
       "prices": [],
@@ -108,8 +109,8 @@
         "enterprise",
         "team"
       ],
-      "contentHash": "3e7ef5e4ce9a29f36cd15e8428130928",
-      "lastChecked": "2026-02-18T06:02:47.791Z"
+      "contentHash": "b0a749d26e88126a12712dae441049ef",
+      "lastChecked": "2026-02-19T06:02:35.677Z"
     },
     "amazonq": {
       "prices": [
@@ -131,7 +132,7 @@
         "basic"
       ],
       "contentHash": "136c8dff57f15b8945cc7de9f3945c09",
-      "lastChecked": "2026-02-18T06:02:47.917Z"
+      "lastChecked": "2026-02-19T06:02:35.753Z"
     },
     "cody": {
       "prices": [
@@ -145,7 +146,7 @@
         "basic"
       ],
       "contentHash": "99753e8e31209b7151cffa8d66739b4c",
-      "lastChecked": "2026-02-18T06:02:48.036Z"
+      "lastChecked": "2026-02-19T06:02:35.886Z"
     },
     "continue": {
       "prices": [
@@ -158,7 +159,7 @@
         "team"
       ],
       "contentHash": "5dfed9bede72f113f17c3c1e164b3f3d",
-      "lastChecked": "2026-02-18T06:02:48.115Z"
+      "lastChecked": "2026-02-19T06:02:35.961Z"
     },
     "supermaven": {
       "prices": [
@@ -173,7 +174,7 @@
         "team"
       ],
       "contentHash": "b0b9679945fa0975232c11cddb494adb",
-      "lastChecked": "2026-02-18T06:02:48.578Z"
+      "lastChecked": "2026-02-19T06:02:36.316Z"
     },
     "augment": {
       "prices": [
@@ -192,7 +193,7 @@
         "team"
       ],
       "contentHash": "87330147124682dafb026861f6539d5c",
-      "lastChecked": "2026-02-18T06:02:48.596Z"
+      "lastChecked": "2026-02-19T06:02:36.420Z"
     },
     "lovable": {
       "prices": [
@@ -208,7 +209,7 @@
         "team"
       ],
       "contentHash": "72578a93a254e06f6d7b771de2555c5e",
-      "lastChecked": "2026-02-18T06:02:48.792Z"
+      "lastChecked": "2026-02-19T06:02:36.663Z"
     },
     "poolside": {
       "prices": [],
@@ -219,18 +220,22 @@
         "team"
       ],
       "contentHash": "388d89b64f4fdc918a1b1c2d79d0fb80",
-      "lastChecked": "2026-02-18T06:02:49.026Z"
+      "lastChecked": "2026-02-19T06:02:36.890Z"
     },
     "bolt": {
-      "prices": [],
+      "prices": [
+        "$0",
+        "$25",
+        "$30"
+      ],
       "tiers": [
         "free",
         "pro",
         "enterprise",
         "team"
       ],
-      "contentHash": "db2e314b9a89138bc5cc98e37730db1b",
-      "lastChecked": "2026-02-18T06:02:49.046Z"
+      "contentHash": "4f5777b57b5f406dac40dc4d49e37d9d",
+      "lastChecked": "2026-02-19T06:02:36.943Z"
     },
     "v0": {
       "prices": [
@@ -253,8 +258,8 @@
         "team",
         "premium"
       ],
-      "contentHash": "b3d331aa017c848bc974a7a13f0255de",
-      "lastChecked": "2026-02-18T06:02:49.321Z"
+      "contentHash": "5d2baefb521a8d91d5930da44da5bcf2",
+      "lastChecked": "2026-02-19T06:02:37.058Z"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-18T06:04:14.917Z",
+  "timestamp": "2026-02-19T06:04:01.491Z",
   "ios": [
     {
       "competitor": "GitHub",
@@ -9,15 +9,15 @@
       "appId": 1477376905,
       "bundleId": "com.github.stormbreaker.prod",
       "price": "Free",
-      "rating": 4.82319,
-      "ratingCount": 29591,
-      "version": "1.245.1",
+      "rating": 4.82326,
+      "ratingCount": 29602,
+      "version": "1.246.1",
       "releaseDate": "2020-03-17T07:00:00Z",
-      "currentVersionReleaseDate": "2026-02-11T22:26:18Z",
+      "currentVersionReleaseDate": "2026-02-18T14:15:10Z",
       "description": "There’s a lot you can do on GitHub that doesn’t require a complex development environment – like sharing feedback on a design discussion, or reviewing a few lines of code. GitHub for iOS lets you move...",
       "url": "https://apps.apple.com/us/app/github/id1477376905?uo=4",
-      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/59/de/df/59dedfcf-65b7-8eac-86f0-d59af065a581/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/100x100bb.jpg",
-      "size": "140 MB"
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5c/32/0f/5c320f69-6f58-3070-a916-ba038d9450d6/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/100x100bb.jpg",
+      "size": "141 MB"
     },
     {
       "competitor": "Replit",
@@ -27,8 +27,8 @@
       "appId": 1614022293,
       "bundleId": "com.replit.app",
       "price": "Free",
-      "rating": 4.68656,
-      "ratingCount": 11814,
+      "rating": 4.68635,
+      "ratingCount": 11937,
       "version": "2.170.0",
       "releaseDate": "2022-10-18T07:00:00Z",
       "currentVersionReleaseDate": "2026-01-08T05:33:44Z",
@@ -45,8 +45,8 @@
       "appId": 6448311069,
       "bundleId": "com.openai.chat",
       "price": "Free",
-      "rating": 4.85579,
-      "ratingCount": 5695900,
+      "rating": 4.85559,
+      "ratingCount": 5730557,
       "version": "1.2026.041",
       "releaseDate": "2023-05-18T07:00:00Z",
       "currentVersionReleaseDate": "2026-02-17T20:34:05Z",
@@ -63,8 +63,8 @@
       "appId": 580990573,
       "bundleId": "com.amazonaws.mobileConsole",
       "price": "Free",
-      "rating": 4.71971,
-      "ratingCount": 5648,
+      "rating": 4.71915,
+      "ratingCount": 5651,
       "version": "3.15.0",
       "releaseDate": "2013-02-26T00:23:15Z",
       "currentVersionReleaseDate": "2026-02-09T21:34:52Z",
@@ -81,8 +81,8 @@
       "appId": 1133960732,
       "bundleId": "com.getmimo.mimo",
       "price": "Free",
-      "rating": 4.85384,
-      "ratingCount": 105014,
+      "rating": 4.85389,
+      "ratingCount": 105089,
       "version": "12.0.0",
       "releaseDate": "2016-08-22T06:17:39Z",
       "currentVersionReleaseDate": "2026-02-10T07:45:16Z",
@@ -118,9 +118,11 @@
     "iosAppsFound": 5,
     "androidAppsFound": 2,
     "highestRatedIos": "ChatGPT: 4.9★",
-    "mostReviewsIos": "ChatGPT: 5,695,900 reviews"
+    "mostReviewsIos": "ChatGPT: 5,730,557 reviews"
   },
   "changes": [
-    "📲 ChatGPT iOS updated: v1.2026.034 → v1.2026.041"
+    "📲 GitHub iOS updated: v1.245.1 → v1.246.1",
+    "💬 Replit iOS: +123 new reviews",
+    "💬 ChatGPT iOS: +34,657 new reviews"
   ]
 }

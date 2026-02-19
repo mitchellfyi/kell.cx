@@ -559,6 +559,86 @@
           "version": "1.2.10"
         }
       ]
+    },
+    {
+      "date": "2026-02-19",
+      "npm": [
+        {
+          "name": "@anthropic-ai/claude-code",
+          "weeklyDownloads": 6515721,
+          "version": "2.1.47"
+        },
+        {
+          "name": "cursor",
+          "weeklyDownloads": 2836,
+          "version": "0.1.5"
+        },
+        {
+          "name": "continue",
+          "weeklyDownloads": 115,
+          "version": "0.1.0"
+        },
+        {
+          "name": "@continuedev/core",
+          "weeklyDownloads": 115,
+          "version": "1.1.0"
+        },
+        {
+          "name": "copilot-node-server",
+          "weeklyDownloads": 361,
+          "version": "1.41.0"
+        },
+        {
+          "name": "sourcegraph",
+          "weeklyDownloads": 567,
+          "version": "25.7.0"
+        },
+        {
+          "name": "@sourcegraph/cody-shared",
+          "weeklyDownloads": 391,
+          "version": "0.0.10"
+        },
+        {
+          "name": "aider",
+          "weeklyDownloads": 35,
+          "version": "1.0.1"
+        },
+        {
+          "name": "@replit/ai",
+          "weeklyDownloads": 42,
+          "version": "0.0.6"
+        }
+      ],
+      "pypi": [
+        {
+          "name": "anthropic",
+          "version": "0.82.0"
+        },
+        {
+          "name": "aider-chat",
+          "version": "0.86.2"
+        },
+        {
+          "name": "sourcegraph",
+          "version": "0.0.7"
+        },
+        {
+          "name": "replit",
+          "version": "4.1.2"
+        },
+        {
+          "name": "openai",
+          "version": "2.21.0"
+        },
+        {
+          "name": "cohere",
+          "version": "5.20.6"
+        },
+        {
+          "name": "langchain",
+          "version": "1.2.10"
+        }
+      ]
     }
   ]
 }

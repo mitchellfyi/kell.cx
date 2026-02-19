@@ -1,58 +1,58 @@
 {
   "GitHub.copilot": {
-    "installs": 71458280,
+    "installs": 71495769,
     "averageRating": "4.11",
     "ratingCount": 1044,
     "latestVersion": "1.388.0",
-    "lastChecked": "2026-02-18T06:03:58.156Z"
+    "lastChecked": "2026-02-19T06:03:44.841Z"
   },
   "GitHub.copilot-chat": {
-    "installs": 61738662,
+    "installs": 61893207,
     "averageRating": "3.59",
     "ratingCount": 223,
-    "latestVersion": "0.38.2026021801",
-    "lastChecked": "2026-02-18T06:03:58.157Z"
+    "latestVersion": "0.38.2026021901",
+    "lastChecked": "2026-02-19T06:03:44.841Z"
   },
   "Codeium.codeium": {
-    "installs": 3471194,
+    "installs": 3473522,
     "averageRating": "4.76",
     "ratingCount": 1455,
     "latestVersion": "1.49.2",
-    "lastChecked": "2026-02-18T06:03:58.157Z"
+    "lastChecked": "2026-02-19T06:03:44.841Z"
   },
   "TabNine.tabnine-vscode": {
-    "installs": 9478711,
+    "installs": 9479760,
     "averageRating": "4.03",
     "ratingCount": 614,
     "latestVersion": "3.335.0",
-    "lastChecked": "2026-02-18T06:03:58.157Z"
+    "lastChecked": "2026-02-19T06:03:44.841Z"
   },
   "AmazonWebServices.amazon-q-vscode": {
-    "installs": 1510729,
+    "installs": 1515092,
     "averageRating": "4.11",
     "ratingCount": 47,
     "latestVersion": "1.110.0",
-    "lastChecked": "2026-02-18T06:03:58.157Z"
+    "lastChecked": "2026-02-19T06:03:44.841Z"
   },
   "sourcegraph.cody-ai": {
-    "installs": 798496,
+    "installs": 799094,
     "averageRating": "3.98",
     "ratingCount": 149,
     "latestVersion": "1.142.0",
-    "lastChecked": "2026-02-18T06:03:58.157Z"
+    "lastChecked": "2026-02-19T06:03:44.841Z"
   },
   "Continue.continue": {
-    "installs": 2159191,
+    "installs": 2161761,
     "averageRating": "3.76",
     "ratingCount": 123,
     "latestVersion": "1.3.32",
-    "lastChecked": "2026-02-18T06:03:58.157Z"
+    "lastChecked": "2026-02-19T06:03:44.841Z"
   },
   "supermaven.supermaven": {
-    "installs": 361248,
+    "installs": 361411,
     "averageRating": "3.77",
     "ratingCount": 44,
     "latestVersion": "1.1.12",
-    "lastChecked": "2026-02-18T06:03:58.157Z"
+    "lastChecked": "2026-02-19T06:03:44.841Z"
   }
 }
