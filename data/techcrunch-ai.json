@@ -1,160 +1,150 @@
 {
   "source": "TechCrunch",
   "url": "https://techcrunch.com",
-  "fetched_at": "2026-02-19T05:28:20.531Z",
+  "fetched_at": "2026-02-20T05:24:48.832Z",
   "total_parsed": 20,
   "ai_filtered": 10,
   "articles": [
     {
-      "title": "Kana emerges from stealth with $15M to build flexible AI agents for marketers",
-      "url": "https://techcrunch.com/2026/02/18/kana-emerges-from-stealth-with-15m-to-build-flexible-ai-agents-for-marketers/",
-      "date": "2026-02-18T15:08:40.000Z",
-      "description": "Kana, a new AI marketing startup from the founders of Rapt and Krux, has raised $15 million to build customizable, agent-based marketing tools.",
-      "author": "Ram Iyer",
-      "categories": [
-        "AI",
-        "Commerce",
-        "Startups",
-        "AI agents",
-        "Exclusive",
-        "Marketing",
-        "martech",
-        "mayfield",
-        "mayfield fund"
-      ]
-    },
-    {
-      "title": "Microsoft says Office bug exposed customers' confidential emails to Copilot AI",
-      "url": "https://techcrunch.com/2026/02/18/microsoft-says-office-bug-exposed-customers-confidential-emails-to-copilot-ai/",
-      "date": "2026-02-18T14:44:28.000Z",
-      "description": "Microsoft said the bug meant that its Copilot AI chatbot was reading and summarizing paying customers' confidential emails, bypassing data-protection policies.",
-      "author": "Zack Whittaker",
-      "categories": [
-        "AI",
-        "Security",
-        "chatbot",
-        "Copilot",
-        "cybersecurity",
-        "data protection",
-        "In Brief",
-        "Microsoft"
-      ]
-    },
-    {
-      "title": "OpenAI pushes into higher education as India seeks to scale AI skills",
-      "url": "https://techcrunch.com/2026/02/18/openai-pushes-into-higher-education-as-india-seeks-to-scale-ai-skills/",
-      "date": "2026-02-18T14:32:42.000Z",
-      "description": "OpenAI says its India education partnerships aim to reach more than 100,000 students, faculty, and staff over the next year.",
+      "title": "Nvidia deepens early-stage push into India's AI startup ecosystem",
+      "url": "https://techcrunch.com/2026/02/19/nvidia-deepens-early-stage-push-into-indias-ai-startup-ecosystem/",
+      "date": "2026-02-20T00:30:00.000Z",
+      "description": "Nvidia is working with investors, nonprofits, and venture firms to build earlier ties with India's fast-growing AI founder ecosystem.",
       "author": "Jagmeet Singh",
       "categories": [
         "AI",
-        "ChatGPT Edu",
-        "EdTech",
-        "Education",
-        "OpenAI"
-      ]
-    },
-    {
-      "title": "OpenAI deepens India push with Pine Labs fintech partnership",
-      "url": "https://techcrunch.com/2026/02/18/openai-deepens-india-push-with-pine-labs-fintech-partnership/",
-      "date": "2026-02-19T03:30:00.000Z",
-      "description": "OpenAI moves beyond ChatGPT in India with a Pine Labs deal targeting enterprise payments and AI-driven commerce.",
-      "author": "Jagmeet Singh",
-      "categories": [
-        "Enterprise",
-        "Fintech",
-        "AI",
-        "OpenAI",
-        "pine labs"
-      ]
-    },
-    {
-      "title": "Is your startup's check engine light on? Google Cloud's VP explains what to do",
-      "url": "https://techcrunch.com/video/is-your-startups-check-engine-light-on-google-clouds-vp-explains-what-to-do/",
-      "date": "2026-02-18T21:07:00.000Z",
-      "description": "Startup founders are being pushed to move faster than ever, using AI while facing tighter funding, rising infrastructure costs, and more pressure to show real traction early. Cloud credits, access to GPUs, and foundation models have made it easier to get started, but those early infrastructure choices can have unforeseen consequences once startups move beyond [...]",
-      "author": "Theresa Loconsolo",
-      "categories": [
         "Startups",
-        "AI",
-        "Fundraising",
-        "infrastructure",
-        "google cloud",
-        "startup building",
-        "Cloud credits"
+        "activate",
+        "nvidia"
       ]
     },
     {
-      "title": "Canva gets to $4B in revenue as LLM referral traffic rises",
-      "url": "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises/",
-      "date": "2026-02-18T14:00:00.000Z",
-      "description": "The creative company's monthly active users increased 20%, growth that was partially propelled by adoption of its AI tools.",
-      "author": "Ivan Mehta",
-      "categories": [
-        "Apps",
-        "Adobe",
-        "canva",
-        "Creative Suite",
-        "Exclusive"
-      ]
-    },
-    {
-      "title": "Google adds music-generation capabilities to the Gemini app",
-      "url": "https://techcrunch.com/2026/02/18/google-adds-music-generation-capabilities-to-the-gemini-app/",
-      "date": "2026-02-18T16:00:00.000Z",
-      "description": "Users will be able to use text, images, and videos as a reference to generate music.",
-      "author": "Ivan Mehta",
-      "categories": [
-        "AI",
-        "Apps",
-        "Media & Entertainment",
-        "ai music",
-        "gemini",
-        "Google"
-      ]
-    },
-    {
-      "title": "Amazon halts Blue Jay robotics project after less than 6 months",
-      "url": "https://techcrunch.com/2026/02/18/amazon-halts-blue-jay-robotics-project-after-less-than-six-months/",
-      "date": "2026-02-18T18:27:10.000Z",
-      "description": "Amazon said Blue Jay's core tech will be used for other robotics projects and the employees who worked on it were moved to other projects.",
-      "author": "Rebecca Szkutak",
-      "categories": [
-        "AI",
-        "Robotics",
-        "Amazon",
-        "warehouse robotics"
-      ]
-    },
-    {
-      "title": "Mastodon, a decentralized alternative to X, plans to target creators with new features",
-      "url": "https://techcrunch.com/2026/02/18/mastodon-a-decentralized-alternative-to-x-plans-to-target-creators-with-new-features/",
-      "date": "2026-02-18T18:19:14.000Z",
-      "description": "Mastodon is looking to grow its open source, decentralized social network with new features aimed at creators.",
-      "author": "Sarah Perez",
-      "categories": [
-        "Apps",
-        "Social",
-        "decentralized",
-        "fediverse",
-        "Mastodon",
-        "social media"
-      ]
-    },
-    {
-      "title": "World Labs lands $1B, with $200M from Autodesk, to bring world models into 3D workflows",
-      "url": "https://techcrunch.com/2026/02/18/world-labs-lands-200m-from-autodesk-to-bring-world-models-into-3d-workflows/",
-      "date": "2026-02-18T18:07:16.000Z",
-      "description": "The partnership will see the two companies exploring how World Labs’ models can work alongside Autodesk’s tools, and vice versa, starting with a focus on entertainment use cases.",
+      "title": "OpenAI reportedly finalizing $100B deal at more than $850B valuation",
+      "url": "https://techcrunch.com/2026/02/19/openai-reportedly-finalizing-100b-deal-at-more-than-850b-valuation/",
+      "date": "2026-02-19T15:35:58.000Z",
+      "description": "OpenAI is reportedly getting close to closing a $100 billion deal, with backers including Amazon, Nvidia, SoftBank, and Microsoft. The deal would value the ChatGPT-maker at $850 billion.",
       "author": "Rebecca Bellan",
       "categories": [
         "AI",
         "Fundraising",
-        "autodesk",
-        "CAD",
-        "Fei-Fei Li",
-        "World Labs",
-        "world models"
+        "OpenAI",
+        "In Brief"
+      ]
+    },
+    {
+      "title": "Google says its AI systems helped deter Play Store malware in 2025",
+      "url": "https://techcrunch.com/2026/02/19/google-says-its-ai-systems-helped-deter-play-store-malware-in-2025/",
+      "date": "2026-02-19T21:27:39.000Z",
+      "description": "Google said it prevented 1.75 million bad apps from going live on Google Play during 2025, a figure that's down from previous years.",
+      "author": "Sarah Perez",
+      "categories": [
+        "Apps",
+        "Security",
+        "Android",
+        "Google Play",
+        "malware",
+        "Mobile",
+        "security"
+      ]
+    },
+    {
+      "title": "An AI data center boom is fueling Redwood's energy storage business",
+      "url": "https://techcrunch.com/2026/02/19/an-ai-data-center-boom-is-fueling-redwoods-energy-storage-business/",
+      "date": "2026-02-19T21:10:13.000Z",
+      "description": "Redwood Materials says its new energy storage business is the fastest growing unit within the company.",
+      "author": "Kirsten Korosec",
+      "categories": [
+        "Climate",
+        "TC",
+        "Transportation",
+        "AI",
+        "data centers",
+        "EVs",
+        "Exclusive",
+        "redwood energy",
+        "Redwood Materials"
+      ]
+    },
+    {
+      "title": "Why these startup CEOs don't think AI will replace human roles",
+      "url": "https://techcrunch.com/2026/02/19/web-summit-qatar-read-ai-lucidya-notetakers-customer-support/",
+      "date": "2026-02-19T20:47:22.000Z",
+      "description": "The CEOs of Read AI and Lucidya told TechCrunch at Web Summit Qatar that they see AI tools replacing tasks, rather than workers.",
+      "author": "Ivan Mehta",
+      "categories": [
+        "AI",
+        "Startups",
+        "AI assistant",
+        "Customer success",
+        "Read AI"
+      ]
+    },
+    {
+      "title": "YouTube’s latest experiment brings its conversational AI tool to TVs",
+      "url": "https://techcrunch.com/2026/02/19/youtubes-latest-experiment-brings-its-conversational-ai-tool-to-tvs/",
+      "date": "2026-02-19T20:30:19.000Z",
+      "description": "YouTube is testing conversational AI on smart TVs, allowing viewers to ask the assistant questions related to the video they're watching on the big screen.",
+      "author": "Lauren Forristal",
+      "categories": [
+        "AI",
+        "Apps",
+        "Media & Entertainment",
+        "conversational AI",
+        "YouTube"
+      ]
+    },
+    {
+      "title": "Reddit is testing a new AI search feature for shopping",
+      "url": "https://techcrunch.com/2026/02/19/reddit-is-testing-a-new-ai-search-feature-for-shopping/",
+      "date": "2026-02-19T18:22:51.000Z",
+      "description": "A small group of users in the U.S. will start to see search results that include interactive product carousels with pricing, images, and direct where-to-buy links.",
+      "author": "Aisha Malik",
+      "categories": [
+        "AI",
+        "Apps",
+        "Reddit"
+      ]
+    },
+    {
+      "title": "Google's new Gemini Pro model has record benchmark scores — again",
+      "url": "https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/",
+      "date": "2026-02-20T00:55:22.000Z",
+      "description": "Gemini 3.1 Pro promises a Google LLM capable of handling more complex forms of work.",
+      "author": "Lucas Ropek",
+      "categories": [
+        "AI",
+        "TC",
+        "Gemini Pro 3.1",
+        "Google",
+        "In Brief",
+        "Mercor"
+      ]
+    },
+    {
+      "title": "Toyota contracts seven Agility humanoid robots for Canadian factory",
+      "url": "https://techcrunch.com/2026/02/19/toyota-hires-seven-agility-humanoid-robots-for-canadian-factory/",
+      "date": "2026-02-19T20:29:02.000Z",
+      "description": "The robots will be unloading totes full of auto parts from an automated warehouse tugger.",
+      "author": "Tim Fernholz",
+      "categories": [
+        "Robotics",
+        "agility robotics",
+        "humanoid robots",
+        "Toyota"
+      ]
+    },
+    {
+      "title": "New York hits the brakes on robotaxi expansion plan",
+      "url": "https://techcrunch.com/2026/02/19/new-york-hits-the-brakes-on-robotaxi-expansion-plan/",
+      "date": "2026-02-19T16:53:05.000Z",
+      "description": "The governor of New York pulled a robotaxi expansion proposal that was viewed as a win for Waymo.",
+      "author": "Kirsten Korosec",
+      "categories": [
+        "TC",
+        "Transportation",
+        "autonomous vehicles",
+        "robotaxis",
+        "Waymo"
       ]
     }
   ]

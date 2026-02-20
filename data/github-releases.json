@@ -1,53 +1,174 @@
 {
-  "generatedAt": "2026-02-19T05:27:42.876Z",
+  "generatedAt": "2026-02-20T05:24:08.235Z",
   "source": "GitHub API",
   "reposTracked": 18,
-  "recentCount": 31,
+  "recentCount": 32,
   "totalReleasesFound": 80,
   "recentReleases": [
     {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "litellm_1.81.13-dev",
-      "tag": "litellm_1.81.13-dev",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/litellm_1.81.13-dev",
-      "publishedAt": "2026-02-19T04:10:49Z",
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8115",
+      "tag": "b8115",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8115",
+      "publishedAt": "2026-02-20T05:05:10Z",
       "isPrerelease": false,
-      "body": "## What's Changed\n* Prompt Management API - new API to interact with Prompt Management integrations (no PR required) by @krrishdholakia in https://github.com/BerriAI/litellm/pull/17800\n* [Feature] UI - Keys/Teams: Add Access Group Selector to Create and Edit Flow by @yuneng-jiang in https://github.c..."
-    },
-    {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "1.81.3-stable.dev.oauth",
-      "tag": "1.81.3-stable.dev.oauth",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/1.81.3-stable.dev.oauth",
-      "publishedAt": "2026-02-19T02:28:49Z",
-      "isPrerelease": false,
-      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.3-stable...1.81.3-stable.dev.oauth"
-    },
-    {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "v1.80.15-stable.2",
-      "tag": "v1.80.15-stable.2",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.80.15-stable.2",
-      "publishedAt": "2026-02-19T01:02:11Z",
-      "isPrerelease": false,
-      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/1.80.15-stable.1...v1.80.15-stable.2"
+      "body": "<details open>\n\ntest: mul_mat tests with huge batch size (#19519)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8115/llama-b8115-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/downloa..."
     },
     {
       "repo": "ggerganov/llama.cpp",
       "company": "llama.cpp",
       "category": "inference",
-      "name": "b8095",
-      "tag": "b8095",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8095",
-      "publishedAt": "2026-02-19T00:52:50Z",
+      "name": "b8113",
+      "tag": "b8113",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8113",
+      "publishedAt": "2026-02-20T05:03:46Z",
       "isPrerelease": false,
-      "body": "<details open>\n\nggml webgpu: Fix bug in dispatching large matrix-vector multiplication (#19535)\n\n* Fix bug in dispatching large matrix-vector multiplication\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8095/llama-b8095-bin-macos..."
+      "body": "<details open>\n\ncommon : fix Step-3.5-Flash format detection and thinking support (#19635)\n\n* common : fix Step-3.5-Flash format detection and thinking support\n\nStep-3.5-Flash uses the same XML-style tool call format as Qwen3-Coder\n(<tool_call><function=...><parameter=...>) but its Jinja template la..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8112",
+      "tag": "b8112",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8112",
+      "publishedAt": "2026-02-20T04:54:11Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\ncommon : fix gpt-oss Jinja error when assistant message has both content and thinking with tool calls (#19704)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8112/llama-b8112-bin-macos-arm64.tar.gz)\n- [macOS Intel ..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.9-stable.gemini.3.1-pro-patch",
+      "tag": "v1.81.9-stable.gemini.3.1-pro-patch",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.gemini.3.1-pro-patch",
+      "publishedAt": "2026-02-20T04:46:06Z",
+      "isPrerelease": false,
+      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.9-stable.gemini.3.1-pro...v1.81.9-stable.gemini.3.1-pro-patch"
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8111",
+      "tag": "b8111",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8111",
+      "publishedAt": "2026-02-20T04:29:09Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nggml-webgpu: Add unary op (SQR, SQRT, SIN, COS) support. (#19700)\n\n* ggml-webgpu: Add unary op (SQR, SQRT, SIN, COS) support.\n\n* Fix to cast the src value to f32 before sin/cos computing.\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cp..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8110",
+      "tag": "b8110",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8110",
+      "publishedAt": "2026-02-20T04:04:36Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nmodel: Add PaddleOCR-VL model support (#18825)\n\n* support PaddleOCR-VL\n\n* clip: update PaddleOCR model loader parameters to prevent OOM during warmup\n\n* [update] add paddleocr vl text model instead of ernie4.5\n\n* [update] restore change of minicpmv\n\n* [update] format\n\n* [update] form..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.9-stable.patch.1",
+      "tag": "v1.81.9-stable.patch.1",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.patch.1",
+      "publishedAt": "2026-02-20T01:04:07Z",
+      "isPrerelease": false,
+      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.9-nightly...v1.81.9-stable.patch.1"
+    },
+    {
+      "repo": "microsoft/vscode",
+      "company": "Microsoft",
+      "category": "ide",
+      "name": "January 2026 Recovery 5",
+      "tag": "1.109.5",
+      "url": "https://github.com/microsoft/vscode/releases/tag/1.109.5",
+      "publishedAt": "2026-02-20T00:20:02Z",
+      "isPrerelease": false,
+      "body": "The update addresses these [issues\n](https://github.com/microsoft/vscode/milestone/378?closed=1).\n\nFor the complete release notes go to [Updates](https://code.visualstudio.com/updates/v1_109) on [code.visualstudio.com](https://code.visualstudio.com/)."
+    },
+    {
+      "repo": "anthropics/claude-code",
+      "company": "Anthropic",
+      "category": "cli",
+      "name": "v2.1.49",
+      "tag": "v2.1.49",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.49",
+      "publishedAt": "2026-02-19T23:28:27Z",
+      "isPrerelease": false,
+      "body": "## What's changed\n\n- Fixed Ctrl+C and ESC being silently ignored when background agents are running and the main thread is idle. Pressing twice within 3 seconds now kills all background agents.\n- Fixed prompt suggestion cache regression that reduced cache hit rates.\n- Fixed `plugin enable` and `plug..."
+    },
+    {
+      "repo": "ollama/ollama",
+      "company": "Ollama",
+      "category": "local",
+      "name": "v0.16.3",
+      "tag": "v0.16.3",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.16.3",
+      "publishedAt": "2026-02-19T22:11:27Z",
+      "isPrerelease": true,
+      "body": "## What's Changed\n* Update: download link in README for macOS (#1) by @hellosaumil in https://github.com/ollama/ollama/pull/14271\n* model: add gemma3 to the mlxrunner by @pdevine in https://github.com/ollama/ollama/pull/14276\n* model: add llama3 architecture to mlxrunner by @pdevine in https://githu..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.13.dev1",
+      "tag": "v1.81.13.dev1",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.13.dev1",
+      "publishedAt": "2026-02-19T20:07:33Z",
+      "isPrerelease": false,
+      "body": "## What's Changed\n* Generic Guardrails: Add a configurable fallback to handle generic guardrail endpoint connection failures by @itayov in https://github.com/BerriAI/litellm/pull/21245\n* fix: preserve metadata for custom callbacks on codex/responses path (… by @saneroen in https://github.com/BerriAI..."
+    },
+    {
+      "repo": "anthropics/anthropic-sdk-python",
+      "company": "Anthropic",
+      "category": "sdk",
+      "name": "v0.83.0",
+      "tag": "v0.83.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.83.0",
+      "publishedAt": "2026-02-19T19:26:11Z",
+      "isPrerelease": false,
+      "body": "## 0.83.0 (2026-02-19)\n\nFull Changelog: [v0.82.0...v0.83.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.82.0...v0.83.0)\n\n### Features\n\n* **api:** Add top-level cache control (automatic caching) ([a940123](https://github.com/anthropics/anthropic-sdk-python/commit/a940123da34ac33f0b6..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.9-stable.gemini.3.1-pro",
+      "tag": "v1.81.9-stable.gemini.3.1-pro",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.gemini.3.1-pro",
+      "publishedAt": "2026-02-19T19:19:32Z",
+      "isPrerelease": false,
+      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.9-nightly...v1.81.9-stable.gemini.3.1-pro"
+    },
+    {
+      "repo": "langchain-ai/langchain",
+      "company": "LangChain",
+      "category": "framework",
+      "name": "langchain-core==1.2.14",
+      "tag": "langchain-core==1.2.14",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.14",
+      "publishedAt": "2026-02-19T14:22:50Z",
+      "isPrerelease": false,
+      "body": "Changes since langchain-core==1.2.13\n\nrelease(core): 1.2.14 (#35328)\nchore(core): remove `langserve` from sys info util, add `deepagents` (#35325)\nfix(core): fix merge_lists incorrectly merging parallel tool calls (#35281)\nfix(core): accept int temperature in _get_ls_params for LangSmith tracing (#3..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.3.oauth.dev",
+      "tag": "v1.81.3.oauth.dev",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.3.oauth.dev",
+      "publishedAt": "2026-02-19T09:09:54Z",
+      "isPrerelease": false,
+      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.3-stable...v1.81.3.oauth.dev"
     },
     {
       "repo": "langchain-ai/langchain",
@@ -70,39 +191,6 @@
       "publishedAt": "2026-02-18T21:38:45Z",
       "isPrerelease": false,
       "body": "## What's changed\n\n- Fixed FileWriteTool line counting to preserve intentional trailing blank lines instead of stripping them with `trimEnd()`.\n- Fixed Windows terminal rendering bugs caused by `os.EOL` (`\\r\\n`) in display code — line counts now show correct values instead of always showing 1 on Win..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8094",
-      "tag": "b8094",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8094",
-      "publishedAt": "2026-02-18T21:22:52Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nserver: save generated text for the /slots endpoint (for LLAMA_SERVER_SLOTS_DEBUG=1) (#19622)\n\n* save generated text for the /slots endpoint\n\n* update debug_generated_text only when LLAMA_SERVER_SLOTS_DEBUG > 0\n\n* Apply suggestions from code review\n\n---------\n\nCo-authored-by: Matteo ..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8091",
-      "tag": "b8091",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8091",
-      "publishedAt": "2026-02-18T21:07:56Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nggml webgpu: shader library organization (#19530)\n\n* Basic JIT compilation for mul_mat, get_rows, and scale (#17)\n\n* scale jit working\n\n* preliminary working jit for getrows and mulmat, needs refining\n\n* simplified mul_mat preprocessing switch statement\n\n* get_rows fixes, mul_mat ref..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8093",
-      "tag": "b8093",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8093",
-      "publishedAt": "2026-02-18T20:38:03Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nmodel: support GLM-OCR (#19677)\n\n* model: support GLM-OCR\n\n* Update convert_hf_to_gguf.py\n\nCo-authored-by: Sigbjørn Skjæret <sigbjorn.skjaeret@scala.com>\n\n---------\n\nCo-authored-by: Sigbjørn Skjæret <sigbjorn.skjaeret@scala.com>\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm..."
     },
     {
       "repo": "anthropics/anthropic-sdk-python",
@@ -136,140 +224,173 @@
       "publishedAt": "2026-02-18T16:08:44Z",
       "isPrerelease": false,
       "body": "Changes since langchain-tests==1.1.4\n\nchore: bump the other-deps group across 3 directories with 2 updates (#35255)\nstyle: bump ruff version to 0.15 (#35042)\nchore(deps): bump langsmith from 0.4.56 to 0.6.3 in /libs/standard-tests (#35157)\nrelease(standard-tests): release 1.1.5 (#35139)\nchore(deps):..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8089",
-      "tag": "b8089",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8089",
-      "publishedAt": "2026-02-18T11:15:30Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nvulkan: split mul_mat into multiple dispatches to avoid overflow (#19509)\n\n* vulkan: split mul_mat into multiple dispatches to avoid overflow\n\nThe batch dimensions can be greater than the max workgroup count limit,\nin which case we need to split into multiple dispatches and pass the ..."
-    },
-    {
-      "repo": "anthropics/anthropic-sdk-python",
-      "company": "Anthropic",
-      "category": "sdk",
-      "name": "v0.81.0",
-      "tag": "v0.81.0",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.81.0",
-      "publishedAt": "2026-02-18T04:00:28Z",
-      "isPrerelease": false,
-      "body": "## 0.81.0 (2026-02-18)\n\nFull Changelog: [v0.80.0...v0.81.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.80.0...v0.81.0)\n\n### Features\n\n* **api:** Make new tool versions available as top level tool types ([0a385c2](https://github.com/anthropics/anthropic-sdk-python/commit/0a385c29d2..."
-    },
-    {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "v1.80.11.gemini-metadata.dev",
-      "tag": "v1.80.11.gemini-metadata.dev",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.80.11.gemini-metadata.dev",
-      "publishedAt": "2026-02-18T03:50:00Z",
-      "isPrerelease": false,
-      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.80.11-nightly...v1.80.11.gemini-metadata.dev"
-    },
-    {
-      "repo": "continuedev/continue",
-      "company": "Continue",
-      "category": "extension",
-      "name": "v1.2.16-vscode",
-      "tag": "v1.2.16-vscode",
-      "url": "https://github.com/continuedev/continue/releases/tag/v1.2.16-vscode",
-      "publishedAt": "2026-02-17T20:54:38Z",
-      "isPrerelease": false,
-      "body": "## What's Changed\n* .continue/agents by @sestinj in https://github.com/continuedev/continue/pull/10233\n* .continue/agents p2 by @sestinj in https://github.com/continuedev/continue/pull/10235\n* feat: limited MCP App support by @RomneyDa in https://github.com/continuedev/continue/pull/10132\n* feat(cli..."
-    },
-    {
-      "repo": "continuedev/continue",
-      "company": "Continue",
-      "category": "extension",
-      "name": "v1.0.61-jetbrains",
-      "tag": "v1.0.61-jetbrains",
-      "url": "https://github.com/continuedev/continue/releases/tag/v1.0.61-jetbrains",
-      "publishedAt": "2026-02-17T20:35:59Z",
-      "isPrerelease": true,
-      "body": "## What's Changed\n* .continue/agents by @sestinj in https://github.com/continuedev/continue/pull/10233\n* .continue/agents p2 by @sestinj in https://github.com/continuedev/continue/pull/10235\n* feat: limited MCP App support by @RomneyDa in https://github.com/continuedev/continue/pull/10132\n* feat(cli..."
-    },
-    {
-      "repo": "continuedev/continue",
-      "company": "Continue",
-      "category": "extension",
-      "name": "v1.3.32-vscode",
-      "tag": "v1.3.32-vscode",
-      "url": "https://github.com/continuedev/continue/releases/tag/v1.3.32-vscode",
-      "publishedAt": "2026-02-17T20:35:24Z",
-      "isPrerelease": true,
-      "body": "## What's Changed\n* .continue/agents by @sestinj in https://github.com/continuedev/continue/pull/10233\n* .continue/agents p2 by @sestinj in https://github.com/continuedev/continue/pull/10235\n* feat: limited MCP App support by @RomneyDa in https://github.com/continuedev/continue/pull/10132\n* feat(cli..."
-    },
-    {
-      "repo": "anthropics/anthropic-sdk-python",
-      "company": "Anthropic",
-      "category": "sdk",
-      "name": "v0.80.0",
-      "tag": "v0.80.0",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.80.0",
-      "publishedAt": "2026-02-17T19:25:53Z",
-      "isPrerelease": false,
-      "body": "## 0.80.0 (2026-02-17)\n\nFull Changelog: [v0.79.0...v0.80.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.79.0...v0.80.0)\n\n### Features\n\n* **api:** Releasing claude-sonnet-4-6 ([d518d6e](https://github.com/anthropics/anthropic-sdk-python/commit/d518d6ecede3d0638f0b14950dc2be8efa0b4ff..."
-    },
-    {
-      "repo": "anthropics/claude-code",
-      "company": "Anthropic",
-      "category": "cli",
-      "name": "v2.1.45",
-      "tag": "v2.1.45",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.45",
-      "publishedAt": "2026-02-17T18:53:52Z",
-      "isPrerelease": false,
-      "body": "## What's changed\n\n- Added support for Claude Sonnet 4.6\n- Added support for reading `enabledPlugins` and `extraKnownMarketplaces` from `--add-dir` directories\n- Added `spinnerTipsOverride` setting to customize spinner tips — configure `tips` with an array of custom tip strings, and optionally set `..."
     }
   ],
   "allReleases": [
     {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "litellm_1.81.13-dev",
-      "tag": "litellm_1.81.13-dev",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/litellm_1.81.13-dev",
-      "publishedAt": "2026-02-19T04:10:49Z",
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8115",
+      "tag": "b8115",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8115",
+      "publishedAt": "2026-02-20T05:05:10Z",
       "isPrerelease": false,
-      "body": "## What's Changed\n* Prompt Management API - new API to interact with Prompt Management integrations (no PR required) by @krrishdholakia in https://github.com/BerriAI/litellm/pull/17800\n* [Feature] UI - Keys/Teams: Add Access Group Selector to Create and Edit Flow by @yuneng-jiang in https://github.c..."
-    },
-    {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "1.81.3-stable.dev.oauth",
-      "tag": "1.81.3-stable.dev.oauth",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/1.81.3-stable.dev.oauth",
-      "publishedAt": "2026-02-19T02:28:49Z",
-      "isPrerelease": false,
-      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.3-stable...1.81.3-stable.dev.oauth"
-    },
-    {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "v1.80.15-stable.2",
-      "tag": "v1.80.15-stable.2",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.80.15-stable.2",
-      "publishedAt": "2026-02-19T01:02:11Z",
-      "isPrerelease": false,
-      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/1.80.15-stable.1...v1.80.15-stable.2"
+      "body": "<details open>\n\ntest: mul_mat tests with huge batch size (#19519)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8115/llama-b8115-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/downloa..."
     },
     {
       "repo": "ggerganov/llama.cpp",
       "company": "llama.cpp",
       "category": "inference",
-      "name": "b8095",
-      "tag": "b8095",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8095",
-      "publishedAt": "2026-02-19T00:52:50Z",
+      "name": "b8113",
+      "tag": "b8113",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8113",
+      "publishedAt": "2026-02-20T05:03:46Z",
       "isPrerelease": false,
-      "body": "<details open>\n\nggml webgpu: Fix bug in dispatching large matrix-vector multiplication (#19535)\n\n* Fix bug in dispatching large matrix-vector multiplication\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8095/llama-b8095-bin-macos..."
+      "body": "<details open>\n\ncommon : fix Step-3.5-Flash format detection and thinking support (#19635)\n\n* common : fix Step-3.5-Flash format detection and thinking support\n\nStep-3.5-Flash uses the same XML-style tool call format as Qwen3-Coder\n(<tool_call><function=...><parameter=...>) but its Jinja template la..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8112",
+      "tag": "b8112",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8112",
+      "publishedAt": "2026-02-20T04:54:11Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\ncommon : fix gpt-oss Jinja error when assistant message has both content and thinking with tool calls (#19704)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8112/llama-b8112-bin-macos-arm64.tar.gz)\n- [macOS Intel ..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.9-stable.gemini.3.1-pro-patch",
+      "tag": "v1.81.9-stable.gemini.3.1-pro-patch",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.gemini.3.1-pro-patch",
+      "publishedAt": "2026-02-20T04:46:06Z",
+      "isPrerelease": false,
+      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.9-stable.gemini.3.1-pro...v1.81.9-stable.gemini.3.1-pro-patch"
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8111",
+      "tag": "b8111",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8111",
+      "publishedAt": "2026-02-20T04:29:09Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nggml-webgpu: Add unary op (SQR, SQRT, SIN, COS) support. (#19700)\n\n* ggml-webgpu: Add unary op (SQR, SQRT, SIN, COS) support.\n\n* Fix to cast the src value to f32 before sin/cos computing.\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cp..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8110",
+      "tag": "b8110",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8110",
+      "publishedAt": "2026-02-20T04:04:36Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nmodel: Add PaddleOCR-VL model support (#18825)\n\n* support PaddleOCR-VL\n\n* clip: update PaddleOCR model loader parameters to prevent OOM during warmup\n\n* [update] add paddleocr vl text model instead of ernie4.5\n\n* [update] restore change of minicpmv\n\n* [update] format\n\n* [update] form..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.9-stable.patch.1",
+      "tag": "v1.81.9-stable.patch.1",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.patch.1",
+      "publishedAt": "2026-02-20T01:04:07Z",
+      "isPrerelease": false,
+      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.9-nightly...v1.81.9-stable.patch.1"
+    },
+    {
+      "repo": "microsoft/vscode",
+      "company": "Microsoft",
+      "category": "ide",
+      "name": "January 2026 Recovery 5",
+      "tag": "1.109.5",
+      "url": "https://github.com/microsoft/vscode/releases/tag/1.109.5",
+      "publishedAt": "2026-02-20T00:20:02Z",
+      "isPrerelease": false,
+      "body": "The update addresses these [issues\n](https://github.com/microsoft/vscode/milestone/378?closed=1).\n\nFor the complete release notes go to [Updates](https://code.visualstudio.com/updates/v1_109) on [code.visualstudio.com](https://code.visualstudio.com/)."
+    },
+    {
+      "repo": "anthropics/claude-code",
+      "company": "Anthropic",
+      "category": "cli",
+      "name": "v2.1.49",
+      "tag": "v2.1.49",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.49",
+      "publishedAt": "2026-02-19T23:28:27Z",
+      "isPrerelease": false,
+      "body": "## What's changed\n\n- Fixed Ctrl+C and ESC being silently ignored when background agents are running and the main thread is idle. Pressing twice within 3 seconds now kills all background agents.\n- Fixed prompt suggestion cache regression that reduced cache hit rates.\n- Fixed `plugin enable` and `plug..."
+    },
+    {
+      "repo": "ollama/ollama",
+      "company": "Ollama",
+      "category": "local",
+      "name": "v0.16.3",
+      "tag": "v0.16.3",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.16.3",
+      "publishedAt": "2026-02-19T22:11:27Z",
+      "isPrerelease": true,
+      "body": "## What's Changed\n* Update: download link in README for macOS (#1) by @hellosaumil in https://github.com/ollama/ollama/pull/14271\n* model: add gemma3 to the mlxrunner by @pdevine in https://github.com/ollama/ollama/pull/14276\n* model: add llama3 architecture to mlxrunner by @pdevine in https://githu..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.13.dev1",
+      "tag": "v1.81.13.dev1",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.13.dev1",
+      "publishedAt": "2026-02-19T20:07:33Z",
+      "isPrerelease": false,
+      "body": "## What's Changed\n* Generic Guardrails: Add a configurable fallback to handle generic guardrail endpoint connection failures by @itayov in https://github.com/BerriAI/litellm/pull/21245\n* fix: preserve metadata for custom callbacks on codex/responses path (… by @saneroen in https://github.com/BerriAI..."
+    },
+    {
+      "repo": "anthropics/anthropic-sdk-python",
+      "company": "Anthropic",
+      "category": "sdk",
+      "name": "v0.83.0",
+      "tag": "v0.83.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.83.0",
+      "publishedAt": "2026-02-19T19:26:11Z",
+      "isPrerelease": false,
+      "body": "## 0.83.0 (2026-02-19)\n\nFull Changelog: [v0.82.0...v0.83.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.82.0...v0.83.0)\n\n### Features\n\n* **api:** Add top-level cache control (automatic caching) ([a940123](https://github.com/anthropics/anthropic-sdk-python/commit/a940123da34ac33f0b6..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.9-stable.gemini.3.1-pro",
+      "tag": "v1.81.9-stable.gemini.3.1-pro",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.gemini.3.1-pro",
+      "publishedAt": "2026-02-19T19:19:32Z",
+      "isPrerelease": false,
+      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.9-nightly...v1.81.9-stable.gemini.3.1-pro"
+    },
+    {
+      "repo": "langchain-ai/langchain",
+      "company": "LangChain",
+      "category": "framework",
+      "name": "langchain-core==1.2.14",
+      "tag": "langchain-core==1.2.14",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.14",
+      "publishedAt": "2026-02-19T14:22:50Z",
+      "isPrerelease": false,
+      "body": "Changes since langchain-core==1.2.13\n\nrelease(core): 1.2.14 (#35328)\nchore(core): remove `langserve` from sys info util, add `deepagents` (#35325)\nfix(core): fix merge_lists incorrectly merging parallel tool calls (#35281)\nfix(core): accept int temperature in _get_ls_params for LangSmith tracing (#3..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.3.oauth.dev",
+      "tag": "v1.81.3.oauth.dev",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.3.oauth.dev",
+      "publishedAt": "2026-02-19T09:09:54Z",
+      "isPrerelease": false,
+      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.3-stable...v1.81.3.oauth.dev"
     },
     {
       "repo": "langchain-ai/langchain",
@@ -292,39 +413,6 @@
       "publishedAt": "2026-02-18T21:38:45Z",
       "isPrerelease": false,
       "body": "## What's changed\n\n- Fixed FileWriteTool line counting to preserve intentional trailing blank lines instead of stripping them with `trimEnd()`.\n- Fixed Windows terminal rendering bugs caused by `os.EOL` (`\\r\\n`) in display code — line counts now show correct values instead of always showing 1 on Win..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8094",
-      "tag": "b8094",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8094",
-      "publishedAt": "2026-02-18T21:22:52Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nserver: save generated text for the /slots endpoint (for LLAMA_SERVER_SLOTS_DEBUG=1) (#19622)\n\n* save generated text for the /slots endpoint\n\n* update debug_generated_text only when LLAMA_SERVER_SLOTS_DEBUG > 0\n\n* Apply suggestions from code review\n\n---------\n\nCo-authored-by: Matteo ..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8091",
-      "tag": "b8091",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8091",
-      "publishedAt": "2026-02-18T21:07:56Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nggml webgpu: shader library organization (#19530)\n\n* Basic JIT compilation for mul_mat, get_rows, and scale (#17)\n\n* scale jit working\n\n* preliminary working jit for getrows and mulmat, needs refining\n\n* simplified mul_mat preprocessing switch statement\n\n* get_rows fixes, mul_mat ref..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8093",
-      "tag": "b8093",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8093",
-      "publishedAt": "2026-02-18T20:38:03Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nmodel: support GLM-OCR (#19677)\n\n* model: support GLM-OCR\n\n* Update convert_hf_to_gguf.py\n\nCo-authored-by: Sigbjørn Skjæret <sigbjorn.skjaeret@scala.com>\n\n---------\n\nCo-authored-by: Sigbjørn Skjæret <sigbjorn.skjaeret@scala.com>\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm..."
     },
     {
       "repo": "anthropics/anthropic-sdk-python",
@@ -360,17 +448,6 @@
       "body": "Changes since langchain-tests==1.1.4\n\nchore: bump the other-deps group across 3 directories with 2 updates (#35255)\nstyle: bump ruff version to 0.15 (#35042)\nchore(deps): bump langsmith from 0.4.56 to 0.6.3 in /libs/standard-tests (#35157)\nrelease(standard-tests): release 1.1.5 (#35139)\nchore(deps):..."
     },
     {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8089",
-      "tag": "b8089",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8089",
-      "publishedAt": "2026-02-18T11:15:30Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nvulkan: split mul_mat into multiple dispatches to avoid overflow (#19509)\n\n* vulkan: split mul_mat into multiple dispatches to avoid overflow\n\nThe batch dimensions can be greater than the max workgroup count limit,\nin which case we need to split into multiple dispatches and pass the ..."
-    },
-    {
       "repo": "anthropics/anthropic-sdk-python",
       "company": "Anthropic",
       "category": "sdk",
@@ -380,17 +457,6 @@
       "publishedAt": "2026-02-18T04:00:28Z",
       "isPrerelease": false,
       "body": "## 0.81.0 (2026-02-18)\n\nFull Changelog: [v0.80.0...v0.81.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.80.0...v0.81.0)\n\n### Features\n\n* **api:** Make new tool versions available as top level tool types ([0a385c2](https://github.com/anthropics/anthropic-sdk-python/commit/0a385c29d2..."
-    },
-    {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "v1.80.11.gemini-metadata.dev",
-      "tag": "v1.80.11.gemini-metadata.dev",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.80.11.gemini-metadata.dev",
-      "publishedAt": "2026-02-18T03:50:00Z",
-      "isPrerelease": false,
-      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.80.11-nightly...v1.80.11.gemini-metadata.dev"
     },
     {
       "repo": "continuedev/continue",
@@ -459,17 +525,6 @@
       "body": "Changes since langchain-openai==1.1.9\n\nrelease(openai): 1.1.10 (#35292)\nfeat(openai): support automatic server-side compaction (#35212)\nfix(openai): add `model` property (#35284)\nfix(nomic,openai,perplexity): update pillow version to >= 12.1.1, <13.0.0 (#35254)\ndocs(openai): more nits (#35277)\ndocs(..."
     },
     {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "v1.81.13-nightly",
-      "tag": "v1.81.13-nightly",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.13-nightly",
-      "publishedAt": "2026-02-17T04:37:57Z",
-      "isPrerelease": false,
-      "body": "## What's Changed\n* [Feature] UI - Keys/Teams: Add Access Group Selector to Create and Edit Flow by @yuneng-jiang in https://github.com/BerriAI/litellm/pull/21234\n* [Fix] Preserve key_alias and team_id metadata in /user/daily/activity/aggregated after key deletion or regeneration by @shivamrawat1 in..."
-    },
-    {
       "repo": "anthropics/claude-code",
       "company": "Anthropic",
       "category": "cli",
@@ -490,17 +545,6 @@
       "publishedAt": "2026-02-15T08:50:46Z",
       "isPrerelease": false,
       "body": "Changes since langchain-openrouter==0.0.1\n\nchore(openrouter): bump core ver, silence warning (#35231)"
-    },
-    {
-      "repo": "langchain-ai/langchain",
-      "company": "LangChain",
-      "category": "framework",
-      "name": "langchain-core==1.2.13",
-      "tag": "langchain-core==1.2.13",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.13",
-      "publishedAt": "2026-02-15T07:46:09Z",
-      "isPrerelease": false,
-      "body": "Changes since langchain-core==1.2.12\n\nrelease(core): 1.2.13 (#35230)\ndocs(core): expanded `get_lc_namespace` docstring (#35229)\nfeat(openrouter): add `langchain-openrouter` provider package (#35211)\nstyle: bump ruff version to 0.15 (#35042)"
     },
     {
       "repo": "ollama/ollama",
@@ -534,17 +578,6 @@
       "publishedAt": "2026-02-13T19:56:33Z",
       "isPrerelease": false,
       "body": "## What's changed\n\n- Fixed /resume showing interrupt messages as session titles\n- Fixed Opus 4.6 launch announcement showing for Bedrock/Vertex/Foundry users\n- Improved error message for many-image dimension limit errors with /compact suggestion"
-    },
-    {
-      "repo": "anthropics/claude-code",
-      "company": "Anthropic",
-      "category": "cli",
-      "name": "v2.1.41",
-      "tag": "v2.1.41",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.41",
-      "publishedAt": "2026-02-13T06:08:49Z",
-      "isPrerelease": false,
-      "body": "## What's changed\n\n- Fixed AWS auth refresh hanging indefinitely by adding a 3-minute timeout\n- Added `claude auth login`, `claude auth status`, and `claude auth logout` CLI subcommands\n- Added Windows ARM64 (win32-arm64) native binary support\n- Improved `/rename` to auto-generate session name from ..."
     },
     {
       "repo": "vllm-project/vllm",
@@ -679,17 +712,6 @@
       "body": "## What's Changed\n* Fixed context limits when running `ollama launch droid`\n* `ollama launch` will now download missing models instead of erroring\n* Fixed bug where `ollama launch claude` would cause context compaction when providing images\n\n**Full Changelog**: https://github.com/ollama/ollama/compa..."
     },
     {
-      "repo": "anthropics/anthropic-sdk-python",
-      "company": "Anthropic",
-      "category": "sdk",
-      "name": "v0.78.0",
-      "tag": "v0.78.0",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.78.0",
-      "publishedAt": "2026-02-05T17:51:33Z",
-      "isPrerelease": false,
-      "body": "## 0.78.0 (2026-02-05)\n\nFull Changelog: [v0.77.1...v0.78.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.77.1...v0.78.0)\n\n### Features\n\n* **api:** Release Claude Opus 4.6, adaptive thinking, and other features ([3ef1529](https://github.com/anthropics/anthropic-sdk-python/commit/3ef1..."
-    },
-    {
       "repo": "openai/openai-python",
       "company": "OpenAI",
       "category": "sdk",
@@ -745,17 +767,6 @@
       "body": "v0.15.1 is a patch release with security fixes, RTX Blackwell GPU fixes support, and bug fixes.\n\n## Security\n\n- **CVE-2025-69223**: Updated aiohttp dependency (#33621)\n- **CVE-2026-0994**: Updated Protobuf dependency (#33619)\n\n## Highlights\n\n### Bugfix Hardware Support\n- **RTX Blackwell (SM120)**: F..."
     },
     {
-      "repo": "ollama/ollama",
-      "company": "Ollama",
-      "category": "local",
-      "name": "v0.15.5",
-      "tag": "v0.15.5",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.15.5",
-      "publishedAt": "2026-02-03T01:21:21Z",
-      "isPrerelease": false,
-      "body": "## New models\n- [Qwen3-Coder-Next](https://ollama.com/library/qwen3-coder-next): a coding-focused language model from Alibaba's Qwen team, optimized for agentic coding workflows and local development.\n- [GLM-OCR](https://ollama.com/library/glm-ocr): GLM-OCR is a multimodal OCR model for complex docu..."
-    },
-    {
       "repo": "JetBrains/intellij-community",
       "company": "JetBrains",
       "category": "ide",
@@ -765,54 +776,57 @@
       "publishedAt": "2026-02-02T15:05:51Z",
       "isPrerelease": false,
       "body": "Release notes are available [here](https://youtrack.jetbrains.com/articles/PY-A-233538509)"
-    },
-    {
-      "repo": "JetBrains/intellij-community",
-      "company": "JetBrains",
-      "category": "ide",
-      "name": "pycharm/2025.3.2",
-      "tag": "pycharm/2025.3.2",
-      "url": "https://github.com/JetBrains/intellij-community/releases/tag/pycharm/2025.3.2",
-      "publishedAt": "2026-01-30T13:05:57Z",
-      "isPrerelease": false,
-      "body": "Release notes are available [here](https://youtrack.jetbrains.com/articles/PY-A-233538505)"
     }
   ],
   "repoStats": [
     {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "latestRelease": "1.81.3-stable.dev.oauth",
-      "latestDate": "2026-02-19T02:28:49Z"
-    },
-    {
       "repo": "ggerganov/llama.cpp",
       "company": "llama.cpp",
       "category": "inference",
-      "latestRelease": "b8095",
-      "latestDate": "2026-02-19T00:52:50Z"
+      "latestRelease": "b8115",
+      "latestDate": "2026-02-20T05:05:10Z"
     },
     {
-      "repo": "langchain-ai/langchain",
-      "company": "LangChain",
-      "category": "framework",
-      "latestRelease": "langchain-text-splitters==1.1.1",
-      "latestDate": "2026-02-18T23:03:00Z"
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "latestRelease": "v1.81.9-stable.patch.1",
+      "latestDate": "2026-02-20T01:04:07Z"
+    },
+    {
+      "repo": "microsoft/vscode",
+      "company": "Microsoft",
+      "category": "ide",
+      "latestRelease": "1.109.5",
+      "latestDate": "2026-02-20T00:20:02Z"
     },
     {
       "repo": "anthropics/claude-code",
       "company": "Anthropic",
       "category": "cli",
-      "latestRelease": "v2.1.47",
-      "latestDate": "2026-02-18T21:38:45Z"
+      "latestRelease": "v2.1.49",
+      "latestDate": "2026-02-19T23:28:27Z"
+    },
+    {
+      "repo": "ollama/ollama",
+      "company": "Ollama",
+      "category": "local",
+      "latestRelease": "v0.16.3",
+      "latestDate": "2026-02-19T22:11:27Z"
     },
     {
       "repo": "anthropics/anthropic-sdk-python",
       "company": "Anthropic",
       "category": "sdk",
-      "latestRelease": "v0.82.0",
-      "latestDate": "2026-02-18T20:24:48Z"
+      "latestRelease": "v0.83.0",
+      "latestDate": "2026-02-19T19:26:11Z"
+    },
+    {
+      "repo": "langchain-ai/langchain",
+      "company": "LangChain",
+      "category": "framework",
+      "latestRelease": "langchain-core==1.2.14",
+      "latestDate": "2026-02-19T14:22:50Z"
     },
     {
       "repo": "run-llama/llama_index",
@@ -829,13 +843,6 @@
       "latestDate": "2026-02-17T20:35:24Z"
     },
     {
-      "repo": "ollama/ollama",
-      "company": "Ollama",
-      "category": "local",
-      "latestRelease": "v0.16.2",
-      "latestDate": "2026-02-14T08:43:11Z"
-    },
-    {
       "repo": "openai/openai-python",
       "company": "OpenAI",
       "category": "sdk",
@@ -848,13 +855,6 @@
       "category": "inference",
       "latestRelease": "v0.16.0",
       "latestDate": "2026-02-13T00:35:21Z"
-    },
-    {
-      "repo": "microsoft/vscode",
-      "company": "Microsoft",
-      "category": "ide",
-      "latestRelease": "1.109.2",
-      "latestDate": "2026-02-11T03:24:57Z"
     },
     {
       "repo": "JetBrains/intellij-community",

@@ -1,20 +1,67 @@
 {
-  "scraped_at": "2026-02-19T05:28:20.751Z",
+  "scraped_at": "2026-02-20T05:24:49.052Z",
   "source": "Product Hunt",
   "stats": {
     "total_fetched": 50,
     "ai_products": 38,
-    "high_confidence": 16,
+    "high_confidence": 19,
     "categories": {
-      "agentic": 12,
+      "general": 15,
+      "agentic": 14,
       "developer-tools": 3,
-      "general": 17,
       "customer-service": 2,
-      "research": 1,
-      "creative": 3
+      "creative": 4
     }
   },
   "ai_products": [
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1081436",
+      "title": "CertNode Reflex",
+      "description": "AI-powered chargeback defense. Pay only when you win.",
+      "link": "https://www.producthunt.com/products/certnode-reflex",
+      "author": "Steven Bryant",
+      "published": "2026-02-18T02:47:04-08:00",
+      "updated": "2026-02-19T21:19:27-08:00",
+      "ai_confidence": "high",
+      "matched_keyword": "ai-powered",
+      "category": "general"
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1081407",
+      "title": "AgentReady",
+      "description": "Cut your AI token costs by 40-60% with one API call",
+      "link": "https://www.producthunt.com/products/agentready-2",
+      "author": "christian b.",
+      "published": "2026-02-18T01:40:58-08:00",
+      "updated": "2026-02-19T21:19:27-08:00",
+      "ai_confidence": "high",
+      "matched_keyword": "agent",
+      "category": "agentic"
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1081381",
+      "title": "Kollect Voice Agent",
+      "description": "No Boring Forms. Just Voice Conversations",
+      "link": "https://www.producthunt.com/products/kollect-voice-agent",
+      "author": "Admildo Manuel",
+      "published": "2026-02-18T00:38:44-08:00",
+      "updated": "2026-02-19T21:19:25-08:00",
+      "ai_confidence": "high",
+      "matched_keyword": "agent",
+      "category": "agentic"
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1081361",
+      "title": "Reloop",
+      "description": "Create winning ads without prompts or skills",
+      "link": "https://www.producthunt.com/products/reloop",
+      "author": "Clément Janssens",
+      "published": "2026-02-17T23:49:43-08:00",
+      "updated": "2026-02-19T21:19:14-08:00",
+      "ai_confidence": "high",
+      "matched_keyword": "prompt",
+      "category": "general"
+    },
     {
       "id": "tag:www.producthunt.com,2005:Post/1081207",
       "title": "ClawMetry for OpenClaw",
@@ -22,7 +69,7 @@
       "link": "https://www.producthunt.com/products/clawmetry",
       "author": "Vivek Chand",
       "published": "2026-02-17T15:04:59-08:00",
-      "updated": "2026-02-18T21:08:47-08:00",
+      "updated": "2026-02-19T21:02:54-08:00",
       "ai_confidence": "high",
       "matched_keyword": "agent",
       "category": "agentic"
@@ -34,7 +81,7 @@
       "link": "https://www.producthunt.com/products/yottocode",
       "author": "Muhamad Jawdat Akoum",
       "published": "2026-02-17T13:23:16-08:00",
-      "updated": "2026-02-18T19:22:06-08:00",
+      "updated": "2026-02-19T17:02:39-08:00",
       "ai_confidence": "high",
       "matched_keyword": "claude",
       "category": "developer-tools"
@@ -46,7 +93,7 @@
       "link": "https://www.producthunt.com/products/cencurity",
       "author": "Vlad",
       "published": "2026-02-17T12:25:52-08:00",
-      "updated": "2026-02-18T21:22:36-08:00",
+      "updated": "2026-02-19T17:02:39-08:00",
       "ai_confidence": "high",
       "matched_keyword": "llm",
       "category": "agentic"
@@ -58,7 +105,7 @@
       "link": "https://www.producthunt.com/products/spectre-2",
       "author": "Joe Fernandez",
       "published": "2026-02-17T07:49:15-08:00",
-      "updated": "2026-02-18T20:38:48-08:00",
+      "updated": "2026-02-19T20:03:23-08:00",
       "ai_confidence": "high",
       "matched_keyword": "agent",
       "category": "agentic"
@@ -70,7 +117,7 @@
       "link": "https://www.producthunt.com/products/claude-devtools",
       "author": "matt",
       "published": "2026-02-16T22:07:18-08:00",
-      "updated": "2026-02-18T20:02:18-08:00",
+      "updated": "2026-02-19T15:47:33-08:00",
       "ai_confidence": "high",
       "matched_keyword": "claude",
       "category": "developer-tools"
@@ -82,7 +129,7 @@
       "link": "https://www.producthunt.com/products/design-rails-ai-native-brand-in-mins",
       "author": "Garry Tan",
       "published": "2026-02-16T15:26:45-08:00",
-      "updated": "2026-02-18T21:02:19-08:00",
+      "updated": "2026-02-19T16:56:39-08:00",
       "ai_confidence": "high",
       "matched_keyword": "agent",
       "category": "agentic"
@@ -94,7 +141,7 @@
       "link": "https://www.producthunt.com/products/agent-monitor-track-ai-traffic",
       "author": "Marcin Kamiński",
       "published": "2026-02-16T10:40:53-08:00",
-      "updated": "2026-02-18T21:02:19-08:00",
+      "updated": "2026-02-19T19:02:41-08:00",
       "ai_confidence": "high",
       "matched_keyword": "agent",
       "category": "agentic"
@@ -106,7 +153,7 @@
       "link": "https://www.producthunt.com/products/qwen3",
       "author": "Zac Zuo",
       "published": "2026-02-16T05:47:06-08:00",
-      "updated": "2026-02-18T19:58:35-08:00",
+      "updated": "2026-02-19T21:15:33-08:00",
       "ai_confidence": "high",
       "matched_keyword": "agent",
       "category": "agentic"
@@ -118,22 +165,10 @@
       "link": "https://www.producthunt.com/products/vidclaw",
       "author": "Lukasz Madrzak",
       "published": "2026-02-16T05:29:35-08:00",
-      "updated": "2026-02-18T18:02:20-08:00",
+      "updated": "2026-02-19T17:02:39-08:00",
       "ai_confidence": "high",
       "matched_keyword": "agent",
       "category": "agentic"
-    },
-    {
-      "id": "tag:www.producthunt.com,2005:Post/1079643",
-      "title": "Synra",
-      "description": "Connect Claude to your database in 60 seconds",
-      "link": "https://www.producthunt.com/products/synra-managed-mcp-server",
-      "author": "Sam H",
-      "published": "2026-02-14T23:21:33-08:00",
-      "updated": "2026-02-18T19:02:32-08:00",
-      "ai_confidence": "high",
-      "matched_keyword": "claude",
-      "category": "general"
     },
     {
       "id": "tag:www.producthunt.com,2005:Post/1079087",
@@ -142,31 +177,7 @@
       "link": "https://www.producthunt.com/products/doxmind",
       "author": "wangzhang wu",
       "published": "2026-02-13T13:54:21-08:00",
-      "updated": "2026-02-18T14:02:40-08:00",
-      "ai_confidence": "high",
-      "matched_keyword": "agent",
-      "category": "agentic"
-    },
-    {
-      "id": "tag:www.producthunt.com,2005:Post/1078858",
-      "title": "JDoodle.ai MCP",
-      "description": "Build and deploy web apps straight from ChatGPT/Claude",
-      "link": "https://www.producthunt.com/products/jdoodle-ai",
-      "author": "fmerian",
-      "published": "2026-02-13T03:26:34-08:00",
-      "updated": "2026-02-18T20:12:07-08:00",
-      "ai_confidence": "high",
-      "matched_keyword": "gpt",
-      "category": "customer-service"
-    },
-    {
-      "id": "tag:www.producthunt.com,2005:Post/1078605",
-      "title": "Layers",
-      "description": "Marketing agents that know your code for better messaging",
-      "link": "https://www.producthunt.com/products/layers-6",
-      "author": "Ben Lang",
-      "published": "2026-02-12T14:40:24-08:00",
-      "updated": "2026-02-18T21:26:56-08:00",
+      "updated": "2026-02-19T07:03:38-08:00",
       "ai_confidence": "high",
       "matched_keyword": "agent",
       "category": "agentic"
@@ -178,7 +189,7 @@
       "link": "https://www.producthunt.com/products/boost-space",
       "author": "Rohan Chaubey",
       "published": "2026-02-11T01:45:53-08:00",
-      "updated": "2026-02-18T20:28:38-08:00",
+      "updated": "2026-02-19T20:51:53-08:00",
       "ai_confidence": "high",
       "matched_keyword": "agent",
       "category": "agentic"
@@ -190,10 +201,22 @@
       "link": "https://www.producthunt.com/products/brainstream",
       "author": "Asad Mumtaz",
       "published": "2026-02-10T03:37:39-08:00",
-      "updated": "2026-02-18T21:26:56-08:00",
+      "updated": "2026-02-19T21:02:54-08:00",
       "ai_confidence": "high",
       "matched_keyword": "agent",
       "category": "agentic"
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1074235",
+      "title": "Origami.chat",
+      "description": "Find your perfect leads with one prompt",
+      "link": "https://www.producthunt.com/products/origami-chat",
+      "author": "Garry Tan",
+      "published": "2026-02-05T14:43:11-08:00",
+      "updated": "2026-02-19T21:23:37-08:00",
+      "ai_confidence": "high",
+      "matched_keyword": "prompt",
+      "category": "customer-service"
     },
     {
       "id": "tag:www.producthunt.com,2005:Post/1070028",
@@ -202,10 +225,58 @@
       "link": "https://www.producthunt.com/products/ai-hotkeys",
       "author": "Mihey Mik",
       "published": "2026-01-29T08:33:49-08:00",
-      "updated": "2026-02-18T13:03:01-08:00",
+      "updated": "2026-02-19T13:02:52-08:00",
       "ai_confidence": "high",
       "matched_keyword": "gpt",
       "category": "customer-service"
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1067315",
+      "title": "Ningenie",
+      "description": "One chat to control all your apps with Agentic AI",
+      "link": "https://www.producthunt.com/products/ningenie",
+      "author": "Nalanda N",
+      "published": "2026-01-23T14:44:58-08:00",
+      "updated": "2026-02-19T21:19:27-08:00",
+      "ai_confidence": "high",
+      "matched_keyword": "agent",
+      "category": "agentic"
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1081899",
+      "title": "Decks For Good",
+      "description": "Get fundraising advice when you give to charity",
+      "link": "https://www.producthunt.com/products/decks-for-good",
+      "author": "Roger Dickey",
+      "published": "2026-02-18T19:40:31-08:00",
+      "updated": "2026-02-19T21:19:27-08:00",
+      "ai_confidence": "medium",
+      "matched_keyword": "ai",
+      "category": "general"
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1081454",
+      "title": "Mengram",
+      "description": "AI memory API with 3 types: facts, events, and workflows",
+      "link": "https://www.producthunt.com/products/mengram",
+      "author": "Ali Baizhanov",
+      "published": "2026-02-18T03:14:59-08:00",
+      "updated": "2026-02-19T21:19:27-08:00",
+      "ai_confidence": "medium",
+      "matched_keyword": "ai",
+      "category": "agentic"
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1081371",
+      "title": "Feedix",
+      "description": "Your YouTube subscriptions, summarized and delivered by AI",
+      "link": "https://www.producthunt.com/products/feedix",
+      "author": "sk. J",
+      "published": "2026-02-18T00:14:01-08:00",
+      "updated": "2026-02-19T21:19:27-08:00",
+      "ai_confidence": "medium",
+      "matched_keyword": "ai",
+      "category": "general"
     },
     {
       "id": "tag:www.producthunt.com,2005:Post/1081234",
@@ -214,10 +285,22 @@
       "link": "https://www.producthunt.com/products/baseline-core",
       "author": "Trent Mitchell",
       "published": "2026-02-17T16:40:30-08:00",
-      "updated": "2026-02-18T20:29:42-08:00",
+      "updated": "2026-02-19T17:02:39-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "ai",
       "category": "general"
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1081168",
+      "title": "FF Designer",
+      "description": "Generate beautiful UI designs that you can instantly edit",
+      "link": "https://www.producthunt.com/products/flutterflow",
+      "author": "Garry Tan",
+      "published": "2026-02-17T13:45:11-08:00",
+      "updated": "2026-02-19T21:19:24-08:00",
+      "ai_confidence": "medium",
+      "matched_keyword": "generat",
+      "category": "creative"
     },
     {
       "id": "tag:www.producthunt.com,2005:Post/1081155",
@@ -226,7 +309,7 @@
       "link": "https://www.producthunt.com/products/your-ai-clone",
       "author": "Shaun",
       "published": "2026-02-17T13:13:09-08:00",
-      "updated": "2026-02-18T21:09:33-08:00",
+      "updated": "2026-02-19T17:03:35-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "ai",
       "category": "general"
@@ -238,7 +321,7 @@
       "link": "https://www.producthunt.com/products/omnia-2",
       "author": "Ben Lang",
       "published": "2026-02-17T10:19:59-08:00",
-      "updated": "2026-02-18T21:25:31-08:00",
+      "updated": "2026-02-19T21:22:00-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "ai",
       "category": "general"
@@ -250,7 +333,7 @@
       "link": "https://www.producthunt.com/products/botbot",
       "author": "Nicolas de Camaret",
       "published": "2026-02-17T05:56:00-08:00",
-      "updated": "2026-02-18T21:22:09-08:00",
+      "updated": "2026-02-19T11:30:20-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "ai",
       "category": "general"
@@ -262,31 +345,19 @@
       "link": "https://www.producthunt.com/products/hunter",
       "author": "Jeanro Krupa",
       "published": "2026-02-16T23:18:28-08:00",
-      "updated": "2026-02-18T21:02:20-08:00",
+      "updated": "2026-02-19T21:02:54-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "api",
       "category": "developer-tools"
     },
     {
-      "id": "tag:www.producthunt.com,2005:Post/1080688",
-      "title": "OpenGraph+",
-      "description": "Automatic Open Graph images for every page",
-      "link": "https://www.producthunt.com/products/opengraph",
-      "author": "Brad Gessler",
-      "published": "2026-02-16T22:44:16-08:00",
-      "updated": "2026-02-18T17:02:26-08:00",
-      "ai_confidence": "medium",
-      "matched_keyword": "automat",
-      "category": "agentic"
-    },
-    {
-      "id": "tag:www.producthunt.com,2005:Post/1080556",
-      "title": "Subterranean",
-      "description": "AI technical cofounder to build your app",
-      "link": "https://www.producthunt.com/products/subterranean-3",
-      "author": "Gordon Wu",
-      "published": "2026-02-16T14:11:01-08:00",
-      "updated": "2026-02-18T13:03:01-08:00",
+      "id": "tag:www.producthunt.com,2005:Post/1080597",
+      "title": "Clawi.ai",
+      "description": "OpenClaw in the Cloud with Zero Setup and on 24/7",
+      "link": "https://www.producthunt.com/products/clawi-ai",
+      "author": "Raghav Mehra",
+      "published": "2026-02-16T17:08:45-08:00",
+      "updated": "2026-02-19T21:22:23-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "ai",
       "category": "general"
@@ -298,19 +369,7 @@
       "link": "https://www.producthunt.com/products/deckary",
       "author": "Deckary",
       "published": "2026-02-16T10:55:30-08:00",
-      "updated": "2026-02-18T18:11:39-08:00",
-      "ai_confidence": "medium",
-      "matched_keyword": "ai",
-      "category": "general"
-    },
-    {
-      "id": "tag:www.producthunt.com,2005:Post/1080289",
-      "title": "Figr AI",
-      "description": "Product-aware AI that thinks through UX",
-      "link": "https://www.producthunt.com/products/figr-design-research-simplified",
-      "author": "Kevin William David",
-      "published": "2026-02-16T06:06:32-08:00",
-      "updated": "2026-02-18T19:58:32-08:00",
+      "updated": "2026-02-19T21:02:08-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "ai",
       "category": "general"
@@ -322,7 +381,7 @@
       "link": "https://www.producthunt.com/products/hostedclaws",
       "author": "Anagh Kanungo",
       "published": "2026-02-16T02:47:57-08:00",
-      "updated": "2026-02-18T20:02:19-08:00",
+      "updated": "2026-02-19T18:58:24-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "ai",
       "category": "general"
@@ -334,19 +393,7 @@
       "link": "https://www.producthunt.com/products/vela-4",
       "author": "Garry Tan",
       "published": "2026-02-15T17:47:04-08:00",
-      "updated": "2026-02-18T21:02:19-08:00",
-      "ai_confidence": "medium",
-      "matched_keyword": "ai",
-      "category": "general"
-    },
-    {
-      "id": "tag:www.producthunt.com,2005:Post/1079988",
-      "title": "NVIDIA PersonaPlex",
-      "description": "Natural Conversational AI With Any Role and Voice",
-      "link": "https://www.producthunt.com/products/nvidia",
-      "author": "Chris Messina",
-      "published": "2026-02-15T17:13:31-08:00",
-      "updated": "2026-02-18T20:12:07-08:00",
+      "updated": "2026-02-19T12:13:22-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "ai",
       "category": "general"
@@ -358,19 +405,7 @@
       "link": "https://www.producthunt.com/products/auden",
       "author": "Mahmoud Bassam",
       "published": "2026-02-15T02:48:48-08:00",
-      "updated": "2026-02-18T14:02:40-08:00",
-      "ai_confidence": "medium",
-      "matched_keyword": "ai",
-      "category": "general"
-    },
-    {
-      "id": "tag:www.producthunt.com,2005:Post/1079657",
-      "title": "PenguinBot AI",
-      "description": "Your AI-Employee Working 24/7",
-      "link": "https://www.producthunt.com/products/penguinbot-ai",
-      "author": "Aryan Bains",
-      "published": "2026-02-14T23:59:40-08:00",
-      "updated": "2026-02-18T21:02:19-08:00",
+      "updated": "2026-02-19T17:53:02-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "ai",
       "category": "general"
@@ -382,33 +417,9 @@
       "link": "https://www.producthunt.com/products/empirical-health",
       "author": "Wyatt Chang",
       "published": "2026-02-13T12:25:36-08:00",
-      "updated": "2026-02-18T21:26:03-08:00",
+      "updated": "2026-02-19T21:02:54-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "ai",
-      "category": "general"
-    },
-    {
-      "id": "tag:www.producthunt.com,2005:Post/1079003",
-      "title": "SearchSeal",
-      "description": "Track what AI says about your brand. Get recommended.",
-      "link": "https://www.producthunt.com/products/searchseal",
-      "author": "Michael Mustopo",
-      "published": "2026-02-13T09:54:38-08:00",
-      "updated": "2026-02-18T21:02:19-08:00",
-      "ai_confidence": "medium",
-      "matched_keyword": "ai",
-      "category": "research"
-    },
-    {
-      "id": "tag:www.producthunt.com,2005:Post/1078989",
-      "title": "Drivebase",
-      "description": "Unified file manager for all your cloud storage",
-      "link": "https://www.producthunt.com/products/drivebase",
-      "author": "Monawwar Abdullah",
-      "published": "2026-02-13T09:13:44-08:00",
-      "updated": "2026-02-18T16:02:18-08:00",
-      "ai_confidence": "medium",
-      "matched_keyword": "rag",
       "category": "general"
     },
     {
@@ -418,7 +429,7 @@
       "link": "https://www.producthunt.com/products/flixier",
       "author": "Paul Ruscior",
       "published": "2026-02-13T01:28:39-08:00",
-      "updated": "2026-02-18T21:18:04-08:00",
+      "updated": "2026-02-19T21:02:54-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "ai",
       "category": "creative"
@@ -430,7 +441,7 @@
       "link": "https://www.producthunt.com/products/justscribe",
       "author": "Antoni Silvestrovic",
       "published": "2026-02-12T11:25:41-08:00",
-      "updated": "2026-02-18T20:02:19-08:00",
+      "updated": "2026-02-19T19:02:41-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "transcription",
       "category": "general"
@@ -442,7 +453,7 @@
       "link": "https://www.producthunt.com/products/ai-tech-packs",
       "author": "Garry Tan",
       "published": "2026-02-11T07:45:55-08:00",
-      "updated": "2026-02-18T20:17:56-08:00",
+      "updated": "2026-02-19T19:09:32-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "ai",
       "category": "creative"
@@ -454,33 +465,30 @@
       "link": "https://www.producthunt.com/products/moda-2",
       "author": "Ben Lang",
       "published": "2026-02-10T08:09:57-08:00",
-      "updated": "2026-02-18T21:27:01-08:00",
+      "updated": "2026-02-19T21:16:18-08:00",
       "ai_confidence": "medium",
       "matched_keyword": "ai",
       "category": "creative"
-    },
-    {
-      "id": "tag:www.producthunt.com,2005:Post/1069996",
-      "title": "Base44 Backend Platform",
-      "description": "The Backend for the age of AI",
-      "link": "https://www.producthunt.com/products/base44",
-      "author": "MS",
-      "published": "2026-01-29T06:41:00-08:00",
-      "updated": "2026-02-18T15:55:45-08:00",
-      "ai_confidence": "medium",
-      "matched_keyword": "ai",
-      "category": "general"
     }
   ],
   "other_products": [
     {
-      "id": "tag:www.producthunt.com,2005:Post/1079916",
-      "title": "STUD",
-      "description": "Cursor for Roblox Studio",
-      "link": "https://www.producthunt.com/products/stud",
-      "author": "Shaurya Gupta",
-      "published": "2026-02-15T13:14:43-08:00",
-      "updated": "2026-02-18T21:21:33-08:00"
+      "id": "tag:www.producthunt.com,2005:Post/1081243",
+      "title": "Monologue for iOS",
+      "description": "Turn your voice into polished writing—wherever you go.",
+      "link": "https://www.producthunt.com/products/monologue-2",
+      "author": "Chris Messina",
+      "published": "2026-02-17T16:55:55-08:00",
+      "updated": "2026-02-19T21:19:24-08:00"
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1080908",
+      "title": "HyperCaps for macOS",
+      "description": "Turn CapsLock into a Super Key & Boost Productivity",
+      "link": "https://www.producthunt.com/products/hypercaps-for-macos",
+      "author": "AuraMark Studio",
+      "published": "2026-02-17T05:43:25-08:00",
+      "updated": "2026-02-19T21:19:27-08:00"
     },
     {
       "id": "tag:www.producthunt.com,2005:Post/1080940",
@@ -489,16 +497,7 @@
       "link": "https://www.producthunt.com/products/konta",
       "author": "Taly",
       "published": "2026-02-17T06:54:49-08:00",
-      "updated": "2026-02-18T21:22:36-08:00"
-    },
-    {
-      "id": "tag:www.producthunt.com,2005:Post/1080341",
-      "title": "Calendarly",
-      "description": "Turn your calendar into a live Lock Screen wallpaper",
-      "link": "https://www.producthunt.com/products/calendarly-calendar-on-lock-screen",
-      "author": "Dmytro Katyukha",
-      "published": "2026-02-16T07:55:48-08:00",
-      "updated": "2026-02-18T21:19:31-08:00"
+      "updated": "2026-02-19T17:02:39-08:00"
     },
     {
       "id": "tag:www.producthunt.com,2005:Post/1081319",
@@ -507,34 +506,16 @@
       "link": "https://www.producthunt.com/products/reflex-rooster",
       "author": "Lokesh Choudhary",
       "published": "2026-02-17T22:18:07-08:00",
-      "updated": "2026-02-18T21:18:26-08:00"
+      "updated": "2026-02-19T17:02:39-08:00"
     },
     {
-      "id": "tag:www.producthunt.com,2005:Post/1081286",
-      "title": "Open blivz",
-      "description": "Customizable Open-source alternative to Clay",
-      "link": "https://www.producthunt.com/products/blivz",
-      "author": "Houssam Mansour",
-      "published": "2026-02-17T20:33:19-08:00",
-      "updated": "2026-02-18T19:59:19-08:00"
-    },
-    {
-      "id": "tag:www.producthunt.com,2005:Post/1080157",
-      "title": "Travel Animator",
-      "description": "Name every stop your way with Place Labels",
-      "link": "https://www.producthunt.com/products/travel-animator",
-      "author": "Cherian Thomas",
-      "published": "2026-02-16T01:35:18-08:00",
-      "updated": "2026-02-18T21:00:42-08:00"
-    },
-    {
-      "id": "tag:www.producthunt.com,2005:Post/1081019",
-      "title": "OpenFlowKit",
-      "description": "100% Free and Open Source Diagram Creator with Total Control",
-      "link": "https://www.producthunt.com/products/openflowkit",
-      "author": "Varun",
-      "published": "2026-02-17T09:29:51-08:00",
-      "updated": "2026-02-18T21:18:21-08:00"
+      "id": "tag:www.producthunt.com,2005:Post/1080341",
+      "title": "Calendarly",
+      "description": "Turn your calendar into a live Lock Screen wallpaper",
+      "link": "https://www.producthunt.com/products/calendarly-calendar-on-lock-screen",
+      "author": "Dmytro Katyukha",
+      "published": "2026-02-16T07:55:48-08:00",
+      "updated": "2026-02-19T18:54:21-08:00"
     },
     {
       "id": "tag:www.producthunt.com,2005:Post/1081071",
@@ -543,25 +524,43 @@
       "link": "https://www.producthunt.com/products/claude",
       "author": "Chris Messina",
       "published": "2026-02-17T10:50:32-08:00",
-      "updated": "2026-02-18T21:26:22-08:00"
+      "updated": "2026-02-19T21:22:50-08:00"
     },
     {
-      "id": "tag:www.producthunt.com,2005:Post/1080654",
-      "title": "MetMe",
-      "description": "Remember everyone you meet, save contacts with context fast",
-      "link": "https://www.producthunt.com/products/metme",
-      "author": "Mattan Ingram",
-      "published": "2026-02-16T20:53:00-08:00",
-      "updated": "2026-02-18T19:02:32-08:00"
+      "id": "tag:www.producthunt.com,2005:Post/1080157",
+      "title": "Travel Animator",
+      "description": "Name every stop your way with Place Labels",
+      "link": "https://www.producthunt.com/products/travel-animator",
+      "author": "Cherian Thomas",
+      "published": "2026-02-16T01:35:18-08:00",
+      "updated": "2026-02-19T21:04:46-08:00"
     },
     {
-      "id": "tag:www.producthunt.com,2005:Post/1080141",
-      "title": "MiniMax-M2.5",
-      "description": "The first open model to beat Sonnet made for productivity",
-      "link": "https://www.producthunt.com/products/minimax-m2-5",
-      "author": "fmerian",
-      "published": "2026-02-16T00:54:03-08:00",
-      "updated": "2026-02-18T16:41:15-08:00"
+      "id": "tag:www.producthunt.com,2005:Post/1079916",
+      "title": "STUD",
+      "description": "Cursor for Roblox Studio",
+      "link": "https://www.producthunt.com/products/stud",
+      "author": "Shaurya Gupta",
+      "published": "2026-02-15T13:14:43-08:00",
+      "updated": "2026-02-19T19:37:42-08:00"
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1081286",
+      "title": "Open blivz",
+      "description": "Open-source tool for GTM.",
+      "link": "https://www.producthunt.com/products/blivz",
+      "author": "Houssam Mansour",
+      "published": "2026-02-17T20:33:19-08:00",
+      "updated": "2026-02-19T17:02:39-08:00"
+    },
+    {
+      "id": "tag:www.producthunt.com,2005:Post/1081019",
+      "title": "OpenFlowKit",
+      "description": "100% Free and Open Source Diagram Creator with Total Control",
+      "link": "https://www.producthunt.com/products/openflowkit",
+      "author": "Varun",
+      "published": "2026-02-17T09:29:51-08:00",
+      "updated": "2026-02-19T21:02:54-08:00"
     }
   ]
 }

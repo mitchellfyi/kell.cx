@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-19T05:28:01.169Z",
+  "scraped_at": "2026-02-20T05:24:28.916Z",
   "feeds": [
     {
       "name": "Hugging Face Blog",
@@ -24,6 +24,86 @@
   ],
   "total_count": 40,
   "items": [
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "Train AI models with Unsloth and Hugging Face Jobs for FREE",
+      "url": "https://huggingface.co/blog/unsloth-jobs",
+      "date": "2026-02-20T00:00:00.000Z",
+      "description": null
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Gemini 3.1 Pro",
+      "url": "https://simonwillison.net/2026/Feb/19/gemini-31-pro/#atom-everything",
+      "date": "2026-02-19T17:58:37.000Z",
+      "description": "<p><strong><a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/\">Gemini 3.1 Pro</a></strong></p> The first in the Gemini 3.1 series, priced the same as Gemi..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Microsoft has a new plan to prove what’s real and what’s AI online",
+      "url": "https://www.technologyreview.com/2026/02/19/1133360/microsoft-has-a-new-plan-to-prove-whats-real-and-whats-ai-online/",
+      "date": "2026-02-19T16:00:00.000Z",
+      "description": "AI-enabled deception now permeates our online lives. There are the high-profile cases you may easily spot, like when White House officials recently shared a manipulated image of a protester in Minneso..."
+    },
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "「データ不足」の壁を越える：合成ペルソナが日本のAI開発を加速",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-personas-japan-nttdata-ja",
+      "date": "2026-02-19T15:32:38.000Z",
+      "description": null
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "The Download: autonomous narco submarines, and virtue signaling chatbots",
+      "url": "https://www.technologyreview.com/2026/02/19/1133339/the-download-autonomous-narco-submarines-and-virtue-signaling-chatbots/",
+      "date": "2026-02-19T13:10:00.000Z",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How uncrewed narco subs could transform the Colomb..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "How uncrewed narco subs could transform the Colombian drug trade",
+      "url": "https://www.technologyreview.com/2026/02/19/1132619/uncrewed-narco-subs-transform-columbian-drug-trade/",
+      "date": "2026-02-19T11:00:00.000Z",
+      "description": "On a bright morning last April, a surveillance plane operated by the Colombian military spotted a 40-foot-long shark-like silhouette idling in the ocean just off Tayrona National Park. It was, unmista..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "The building legal case for global climate justice",
+      "url": "https://www.technologyreview.com/2026/02/19/1132877/legal-climate-justice/",
+      "date": "2026-02-19T11:00:00.000Z",
+      "description": "The United States and the European Union grew into economic superpowers by committing climate atrocities. They have burned a wildly disproportionate share of the world’s oil and gas, planting carbon t..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "What it takes to make agentic AI work in retail",
+      "url": "https://www.technologyreview.com/2026/02/19/1133324/what-it-takes-to-make-agentic-ai-work-in-retail/",
+      "date": "2026-02-19T08:54:41.000Z",
+      "description": "Thank you for joining us on the &#8220;Enterprise AI hub.&#8221; In this episode of the Infosys Knowledge Institute Podcast, Dylan Cosper speaks with Prasad Banala, director of software engineering at..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "From integration chaos to digital clarity: Nutrien Ag Solutions’ post-acquisition reset",
+      "url": "https://www.technologyreview.com/2026/02/19/1133320/from-integration-chaos-to-digital-clarity-nutrien-ag-solutions-post-acquisition-reset/",
+      "date": "2026-02-19T08:48:53.000Z",
+      "description": "Thank you for joining us on the &#8220;Enterprise AI hub.&#8221; In this episode of the Infosys Knowledge Institute Podcast, Dylan Cosper speaks with Sriram Kalyan, head of applications and data at Nu..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Experimenting with sponsorship for my blog and newsletter",
+      "url": "https://simonwillison.net/2026/Feb/19/sponsorship/#atom-everything",
+      "date": "2026-02-19T05:44:29.000Z",
+      "description": "<p>I've long been resistant to the idea of accepting sponsorship for my blog. I value my credibility as an independent voice, and I don't want to risk compromising that reputation.</p> <p>Then I learn..."
+    },
     {
       "source": "Simon Willison",
       "category": "technical",
@@ -153,14 +233,6 @@
       "description": "<p><strong><a href=\"https://www.anthropic.com/news/claude-sonnet-4-6\">Introducing Claude Sonnet 4.6</a></strong></p> Sonnet 4.6 is out today, and Anthropic claim it offers similar performance to <a hr..."
     },
     {
-      "source": "Hugging Face Blog",
-      "category": "industry",
-      "title": "NVIDIA Nemotron 2 Nano 9B Japanese: 日本のソブリンAIを支える最先端小規模言語モデル",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-nano-9b-v2-japanese-ja",
-      "date": "2026-02-17T23:28:52.000Z",
-      "description": null
-    },
-    {
       "source": "Simon Willison",
       "category": "technical",
       "title": "Rodney v0.4.0",
@@ -183,70 +255,6 @@
       "url": "https://simonwillison.net/2026/Feb/17/rough-draft-8266/#atom-everything",
       "date": "2026-02-17T14:49:04.000Z",
       "description": "<blockquote cite=\"https://www.neatorama.com/2026/02/11/The-Original-Drafts-for-Star-Treks-Opening-Narration/\"><p>This is the story of the United Space Ship Enterprise. Assigned a five year patrol of o..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "First kākāpō chick in four years hatches on Valentine's Day",
-      "url": "https://simonwillison.net/2026/Feb/17/first-kakapo-chick-in-four-years/#atom-everything",
-      "date": "2026-02-17T14:09:43.000Z",
-      "description": "<p><strong><a href=\"https://www.doc.govt.nz/news/media-releases/2026-media-releases/first-kakapo-chick-in-four-years-hatches-on-valentines-day/\">First kākāpō chick in four years hatches on Valentine&#..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Quoting Dimitris Papailiopoulos",
-      "url": "https://simonwillison.net/2026/Feb/17/dimitris-papailiopoulos/#atom-everything",
-      "date": "2026-02-17T14:04:44.000Z",
-      "description": "<blockquote cite=\"https://twitter.com/dimitrispapail/status/2023080289828831349\"><p>But the intellectually interesting part for me is something else. <strong>I now have something close to a magic box ..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "The Download: the rise of luxury car theft, and fighting antimicrobial resistance",
-      "url": "https://www.technologyreview.com/2026/02/17/1133018/the-download-the-rise-of-luxury-car-theft-and-fighting-antimicrobial-resistance/",
-      "date": "2026-02-17T13:10:00.000Z",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The curious case of the disappearing Lamborghinis ..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "The curious case of the disappearing Lamborghinis",
-      "url": "https://www.technologyreview.com/2026/02/17/1132538/curious-case-disappearing-lambhorghinis/",
-      "date": "2026-02-17T11:00:00.000Z",
-      "description": "When Sam Zahr first saw the gray Rolls-Royce Dawn convertible with orange interior and orange roof, he knew he’d found a perfect addition to his fleet. “It was very appealing to our clientele,” he tol..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Tuning into the future of collaboration",
-      "url": "https://www.technologyreview.com/2026/02/16/1125881/tuning-into-the-future-of-collaboration/",
-      "date": "2026-02-16T15:00:00.000Z",
-      "description": "When work went remote, the sound of business changed. What began as a scramble to make home offices functional has evolved into a revolution in how people hear and are heard. From education to enterpr..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "The Download: unraveling a death threat mystery, and AI voice recreation for musicians",
-      "url": "https://www.technologyreview.com/2026/02/16/1133008/the-download-unraveling-a-death-threat-mystery-and-ai-voice-recreation-for-musicians/",
-      "date": "2026-02-16T13:10:00.000Z",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Hackers made death threats against this security r..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "The scientist using AI to hunt for antibiotics just about everywhere",
-      "url": "https://www.technologyreview.com/2026/02/16/1132516/cesar-de-la-fuente-using-ai-antibiotics-hunt/",
-      "date": "2026-02-16T11:00:00.000Z",
-      "description": "When he was just a teenager trying to decide what to do with his life, César de la Fuente compiled a list of the world’s biggest problems. He ranked them inversely by how much money governments were s..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Hackers made death threats against this security researcher. Big mistake.",
-      "url": "https://www.technologyreview.com/2026/02/16/1132526/allison-nixon-hackers-security-researcher/",
-      "date": "2026-02-16T11:00:00.000Z",
-      "description": "The threats started in spring.&#160; In April 2024, a mysterious someone using the online handles “Waifu” and “Judische” began posting death threats on Telegram and Discord channels aimed at a cyberse..."
     },
     {
       "source": "Hugging Face Blog",
@@ -334,14 +342,6 @@
       "title": "H Company&apos;s new Holo2 model takes the lead in UI Localization",
       "url": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b",
       "date": "2026-02-03T17:40:14.000Z",
-      "description": null
-    },
-    {
-      "source": "Hugging Face Blog",
-      "category": "industry",
-      "title": "The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+",
-      "url": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3",
-      "date": "2026-02-03T15:03:19.000Z",
       "description": null
     }
   ]

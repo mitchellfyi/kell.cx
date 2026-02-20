@@ -1,8 +1,15 @@
 {
   "source": "deepmind",
-  "fetched_at": "2026-02-19T05:28:42.055Z",
-  "count": 5,
+  "fetched_at": "2026-02-20T05:25:07.907Z",
+  "count": 6,
   "items": [
+    {
+      "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
+      "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
+      "date": "2026-02-19T16:06:14.000Z",
+      "description": "3.1 Pro is designed for tasks where a simple answer isn’t enough.",
+      "source": "deepmind-blog"
+    },
     {
       "title": "A new way to express yourself: Gemini can now create music",
       "url": "https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/",

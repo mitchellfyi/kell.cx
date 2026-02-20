@@ -1,301 +1,333 @@
 {
-  "generated_at": "2026-02-19T05:29:10.397Z",
+  "generated_at": "2026-02-20T05:25:37.006Z",
   "stats": {
     "total_sources": 8,
-    "total_items": 380,
+    "total_items": 389,
     "recent_count": 30,
     "older_count": 20
   },
   "recent": [
+    {
+      "title": "llama.cpp: b8112",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8112",
+      "date": "2026-02-20T04:54:11.000Z",
+      "description": "<details open>\n\ncommon : fix gpt-oss Jinja error when assistant message has both content and thinking with tool calls (#19704)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://githu",
+      "source": "github-releases",
+      "score": 38.9
+    },
+    {
+      "title": "📰 TC: Google's new Gemini Pro model has record benchmark scores — again",
+      "url": "https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/",
+      "date": "2026-02-20T00:55:22.000Z",
+      "description": "Gemini 3.1 Pro promises a Google LLM capable of handling more complex forms of work.",
+      "source": "techcrunch-ai",
+      "score": 35.1
+    },
+    {
+      "title": "llama.cpp: b8115",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8115",
+      "date": "2026-02-20T05:05:10.000Z",
+      "description": "<details open>\n\ntest: mul_mat tests with huge batch size (#19519)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8115/llama-b8115-",
+      "source": "github-releases",
+      "score": 33.9
+    },
+    {
+      "title": "llama.cpp: b8113",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8113",
+      "date": "2026-02-20T05:03:46.000Z",
+      "description": "<details open>\n\ncommon : fix Step-3.5-Flash format detection and thinking support (#19635)\n\n* common : fix Step-3.5-Flash format detection and thinking support\n\nStep-3.5-Flash uses the same XML-style ",
+      "source": "github-releases",
+      "score": 33.9
+    },
+    {
+      "title": "LiteLLM: v1.81.9-stable.gemini.3.1-pro-patch",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.gemini.3.1-pro-patch",
+      "date": "2026-02-20T04:46:06.000Z",
+      "description": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.9-stable.gemini.3.1-pro...v1.81.9-stable.gemini.3.1-pro-patch",
+      "source": "github-releases",
+      "score": 33.9
+    },
+    {
+      "title": "llama.cpp: b8111",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8111",
+      "date": "2026-02-20T04:29:09.000Z",
+      "description": "<details open>\n\nggml-webgpu: Add unary op (SQR, SQRT, SIN, COS) support. (#19700)\n\n* ggml-webgpu: Add unary op (SQR, SQRT, SIN, COS) support.\n\n* Fix to cast the src value to f32 before sin/cos computi",
+      "source": "github-releases",
+      "score": 33.8
+    },
+    {
+      "title": "llama.cpp: b8110",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8110",
+      "date": "2026-02-20T04:04:36.000Z",
+      "description": "<details open>\n\nmodel: Add PaddleOCR-VL model support (#18825)\n\n* support PaddleOCR-VL\n\n* clip: update PaddleOCR model loader parameters to prevent OOM during warmup\n\n* [update] add paddleocr vl text ",
+      "source": "github-releases",
+      "score": 33.7
+    },
+    {
+      "title": "📝 Claude Code Skills Not Triggering? 2 Fixes for 100% Activation",
+      "url": "https://dev.to/oluwawunmiadesewa/claude-code-skills-not-triggering-2-fixes-for-100-activation-3b57",
+      "date": "2026-02-20T04:12:57.000Z",
+      "description": "'Fix Claude Code skills not triggering. Learn 2 proven methods to force skill activation using hooks and Valibot evaluation for reliable AI coding.",
+      "source": "devto-ai",
+      "score": 33.7
+    },
+    {
+      "title": "📝 Cursor vs Windsurf vs Claude Code in 2026: The Honest Comparison After Using All Three",
+      "url": "https://dev.to/pockit_tools/cursor-vs-windsurf-vs-claude-code-in-2026-the-honest-comparison-after-using-all-three-3gof",
+      "date": "2026-02-19T14:14:00.000Z",
+      "description": "A deep, no-BS comparison of the three dominant AI coding tools in 2026. We tested Cursor, Windsurf, and Claude Code on real projects to compare their architecture, context handling, code quality, pricing, and ideal use cases.",
+      "source": "devto-ai",
+      "score": 32.8
+    },
+    {
+      "title": "Microsoft: January 2026 Recovery 5",
+      "url": "https://github.com/microsoft/vscode/releases/tag/1.109.5",
+      "date": "2026-02-20T00:20:02.000Z",
+      "description": "The update addresses these [issues\n](https://github.com/microsoft/vscode/milestone/378?closed=1).\n\nFor the complete release notes go to [Updates](https://code.visualstudio.com/updates/v1_109) on [code",
+      "source": "github-releases",
+      "score": 31.9
+    },
+    {
+      "title": "LiteLLM: v1.81.9-stable.gemini.3.1-pro",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.gemini.3.1-pro",
+      "date": "2026-02-19T19:19:32.000Z",
+      "description": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.9-nightly...v1.81.9-stable.gemini.3.1-pro",
+      "source": "github-releases",
+      "score": 31.9
+    },
     {
       "title": "LlamaIndex: v0.14.15",
       "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.15",
       "date": "2026-02-18T19:06:42.000Z",
       "description": "# Release Notes\n\n## [2026-02-18]\n\n### llama-index-agent-agentmesh [0.1.0]\n\n- [Integration] AgentMesh: Trust Layer for LlamaIndex Agents ([#20644](https://github.com/run-llama/llama_index/pull/20644))\n",
       "source": "github-releases",
-      "score": 36.8
+      "score": 31.9
     },
     {
-      "title": "llama.cpp: b8095",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8095",
-      "date": "2026-02-19T00:52:50.000Z",
-      "description": "<details open>\n\nggml webgpu: Fix bug in dispatching large matrix-vector multiplication (#19535)\n\n* Fix bug in dispatching large matrix-vector multiplication\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple ",
-      "source": "github-releases",
-      "score": 33
-    },
-    {
-      "title": "llama.cpp: b8094",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8094",
-      "date": "2026-02-18T21:22:52.000Z",
-      "description": "<details open>\n\nserver: save generated text for the /slots endpoint (for LLAMA_SERVER_SLOTS_DEBUG=1) (#19622)\n\n* save generated text for the /slots endpoint\n\n* update debug_generated_text only when LL",
-      "source": "github-releases",
-      "score": 32.3
-    },
-    {
-      "title": "llama.cpp: b8091",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8091",
-      "date": "2026-02-18T21:07:56.000Z",
-      "description": "<details open>\n\nggml webgpu: shader library organization (#19530)\n\n* Basic JIT compilation for mul_mat, get_rows, and scale (#17)\n\n* scale jit working\n\n* preliminary working jit for getrows and mulmat",
-      "source": "github-releases",
-      "score": 32.3
-    },
-    {
-      "title": "Show HN: Axon – Run autonomous coding agents(Claude, Codex) safely on Kubernetes",
-      "url": "https://github.com/axon-core/axon",
-      "date": "2026-02-18T20:41:18.000Z",
-      "description": "4 points, 1 comments on HN",
+      "title": "Show HN:`npx continues` – resume same session Claude, Gemini, Codex when limited",
+      "url": "https://github.com/yigitkonur/cli-continues",
+      "date": "2026-02-19T15:50:19.000Z",
+      "description": "9 points, 8 comments on HN",
       "source": "hackernews",
-      "score": 32.2
+      "score": 31.2
     },
     {
-      "title": "llama.cpp: b8093",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8093",
-      "date": "2026-02-18T20:38:03.000Z",
-      "description": "<details open>\n\nmodel: support GLM-OCR (#19677)\n\n* model: support GLM-OCR\n\n* Update convert_hf_to_gguf.py\n\nCo-authored-by: Sigbjørn Skjæret <sigbjorn.skjaeret@scala.com>\n\n---------\n\nCo-authored-by: Si",
+      "title": "Anthropic: v2.1.49",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.49",
+      "date": "2026-02-19T23:28:27.000Z",
+      "description": "## What's changed\n\n- Fixed Ctrl+C and ESC being silently ignored when background agents are running and the main thread is idle. Pressing twice within 3 seconds now kills all background agents.\n- Fixe",
       "source": "github-releases",
-      "score": 32.2
+      "score": 30.8
     },
     {
-      "title": "LangChain: langchain-text-splitters==1.1.1",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-text-splitters%3D%3D1.1.1",
-      "date": "2026-02-18T23:03:00.000Z",
-      "description": "Changes since langchain-text-splitters==1.1.0\n\nrelease(text-splitters): 1.1.1 (#35318)\nfix(text-splitters): prevent JSFrameworkTextSplitter from mutating self._separators on each split_text() call (#3",
-      "source": "github-releases",
-      "score": 31.7
-    },
-    {
-      "title": "📝 Ran out of Cursor tokens and switched to GitHub Copilot: Side-by-Side",
-      "url": "https://dev.to/maximsaplin/ran-out-of-cursor-tokens-and-switched-to-github-copilot-side-by-side-2n5p",
-      "date": "2026-02-18T17:38:27.000Z",
-      "description": "DISCLAIMER! The best AI coding tool is the one available to you, that gives you the best model and...",
-      "source": "devto-ai",
-      "score": 30.5
-    },
-    {
-      "title": "llama.cpp: b8089",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8089",
-      "date": "2026-02-18T11:15:30.000Z",
-      "description": "<details open>\n\nvulkan: split mul_mat into multiple dispatches to avoid overflow (#19509)\n\n* vulkan: split mul_mat into multiple dispatches to avoid overflow\n\nThe batch dimensions can be greater than ",
-      "source": "github-releases",
-      "score": 30.2
-    },
-    {
-      "title": "🧠 DeepMind: A new way to express yourself: Gemini can now create music",
-      "url": "https://deepmind.google/blog/a-new-way-to-express-yourself-gemini-can-now-create-music/",
-      "date": "2026-02-18T16:01:38.000Z",
-      "description": "The Gemini app now features our most advanced music generation model Lyria 3, empowering anyone to make 30-second tracks using text or images.",
+      "title": "🧠 DeepMind: Gemini 3.1 Pro: A smarter model for your most complex tasks",
+      "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
+      "date": "2026-02-19T16:06:14.000Z",
+      "description": "3.1 Pro is designed for tasks where a simple answer isn’t enough.",
       "source": "deepmind-blog",
       "score": 30.2
     },
     {
-      "title": "📰 TC: Google adds music-generation capabilities to the Gemini app",
-      "url": "https://techcrunch.com/2026/02/18/google-adds-music-generation-capabilities-to-the-gemini-app/",
-      "date": "2026-02-18T16:00:00.000Z",
-      "description": "Users will be able to use text, images, and videos as a reference to generate music.",
-      "source": "techcrunch-ai",
-      "score": 30.2
-    },
-    {
-      "title": "LiteLLM: litellm_1.81.13-dev",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/litellm_1.81.13-dev",
-      "date": "2026-02-19T04:10:49.000Z",
-      "description": "## What's Changed\n* Prompt Management API - new API to interact with Prompt Management integrations (no PR required) by @krrishdholakia in https://github.com/BerriAI/litellm/pull/17800\n* [Feature] UI ",
+      "title": "LangChain: langchain-core==1.2.14",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.14",
+      "date": "2026-02-19T14:22:50.000Z",
+      "description": "Changes since langchain-core==1.2.13\n\nrelease(core): 1.2.14 (#35328)\nchore(core): remove `langserve` from sys info util, add `deepagents` (#35325)\nfix(core): fix merge_lists incorrectly merging parall",
       "source": "github-releases",
-      "score": 29.7
+      "score": 29.9
     },
     {
-      "title": "LongCLI-Bench: Benchmark and Study for Long-Horizon Agentic Programming in CLIs",
-      "url": "https://arxiv.org/abs/2602.14337",
-      "date": "2026-02-19T03:09:19.000Z",
-      "description": "2 points, 0 comments on HN",
+      "title": "Show HN: Foolery – a web UI for orchestrating Claude Code agents on top of Beads",
+      "url": "https://github.com/acartine/foolery",
+      "date": "2026-02-19T16:54:28.000Z",
+      "description": "5 points, 1 comments on HN",
       "source": "hackernews",
-      "score": 29.5
-    },
-    {
-      "title": "Show HN: Agent Paperclip: A Desktop \"Clippy\" That Monitors Claude Code/Codex",
-      "url": "https://github.com/fredruss/agent-paperclip",
-      "date": "2026-02-18T17:38:45.000Z",
-      "description": "2 points, 0 comments on HN",
-      "source": "hackernews",
-      "score": 29.5
-    },
-    {
-      "title": "LiteLLM: 1.81.3-stable.dev.oauth",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/1.81.3-stable.dev.oauth",
-      "date": "2026-02-19T02:28:49.000Z",
-      "description": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.3-stable...1.81.3-stable.dev.oauth",
-      "source": "github-releases",
       "score": 29.4
     },
     {
-      "title": "LiteLLM: v1.80.15-stable.2",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.80.15-stable.2",
-      "date": "2026-02-19T01:02:11.000Z",
-      "description": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/1.80.15-stable.1...v1.80.15-stable.2",
+      "title": "Anthropic legal request: OpenCode removes Claude subscription support",
+      "url": "https://github.com/anomalyco/opencode/commit/973715f3da1839ef2eba62d4140fe7441d539411",
+      "date": "2026-02-20T02:04:05.000Z",
+      "description": "3 points, 1 comments on HN",
+      "source": "hackernews",
+      "score": 29.3
+    },
+    {
+      "title": "Show HN: Use SQL to Query Your Claude/Copilot Data via DuckDB",
+      "url": "https://duckdb.org/community_extensions/extensions/agent_data",
+      "date": "2026-02-19T16:36:37.000Z",
+      "description": "1 points, 0 comments on HN",
+      "source": "hackernews",
+      "score": 29.3
+    },
+    {
+      "title": "LiteLLM: v1.81.9-stable.patch.1",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.9-stable.patch.1",
+      "date": "2026-02-20T01:04:07.000Z",
+      "description": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.9-nightly...v1.81.9-stable.patch.1",
       "source": "github-releases",
       "score": 29.1
     },
     {
-      "title": "Show HN: Opaal Visual multi-agent prompt designer for Claude Code and agentic AI",
-      "url": "https://github.com/Agravak/opaal",
-      "date": "2026-02-18T14:59:27.000Z",
-      "description": "2 points, 0 comments on HN",
-      "source": "hackernews",
-      "score": 29
-    },
-    {
-      "title": "Show HN: CSL MCP Server – Write and Verify AI Safety Policies from Claude/Cursor",
-      "url": "https://pypi.org/project/csl-core/",
-      "date": "2026-02-18T14:50:59.000Z",
-      "description": "1 points, 1 comments on HN",
-      "source": "hackernews",
-      "score": 29
-    },
-    {
-      "title": "Reverse-Engineering the OpenAI's GPT-5 Tokenizer",
-      "url": "https://metehan.ai/blog/reverse-engineering-the-gpt-5-tokenizer-aeo-geo/",
-      "date": "2026-02-18T23:26:14.000Z",
+      "title": "Show HN: Claude.md templates based on Anthropic's advice",
+      "url": "https://github.com/abhishekray07/claude-md-templates",
+      "date": "2026-02-19T23:58:40.000Z",
       "description": "1 points, 0 comments on HN",
       "source": "hackernews",
-      "score": 28.7
+      "score": 28.9
     },
     {
-      "title": "LiteLLM: v1.80.11.gemini-metadata.dev",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.80.11.gemini-metadata.dev",
-      "date": "2026-02-18T03:50:00.000Z",
-      "description": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.80.11-nightly...v1.80.11.gemini-metadata.dev",
-      "source": "github-releases",
-      "score": 28.7
-    },
-    {
-      "title": "📝 How to Position Yourself as an AI Expert Without Coding Everything",
-      "url": "https://dev.to/jaideepparashar/how-to-position-yourself-as-an-ai-expert-without-coding-everything-d05",
-      "date": "2026-02-19T04:11:06.000Z",
-      "description": "There’s a quiet misconception in tech right now:  To be seen as an “AI expert,” you must be writing...",
+      "title": "📝 5 AI Tools Every Developer Should Integrate into Their Daily Workflow",
+      "url": "https://dev.to/jaideepparashar/5-ai-tools-every-developer-should-integrate-into-their-daily-workflow-4272",
+      "date": "2026-02-20T04:39:31.000Z",
+      "description": "Most productivity gains don’t come from heroic bursts of coding.  They come from removing friction...",
       "source": "devto-ai",
-      "score": 28.7
+      "score": 28.8
     },
     {
-      "title": "📝 Positioning yourself as an AI expert is not just about branding; it's more than the branding. In the AI era, expertise is not about doing more implementation. It’s about owning better outcomes.",
-      "url": "https://dev.to/jaideepparashar/positioning-yourself-as-an-ai-expert-is-not-just-about-branding-its-more-than-the-branding-in-2hf0",
-      "date": "2026-02-19T04:14:36.000Z",
-      "description": "How to Position Yourself as an AI Expert Without Coding...",
+      "title": "📝 Most productivity gains don’t come from heroic bursts of coding. They come from removing friction from the work you repeat every day. Actually, AI is a magnifier; if your system has some problems, then it will magnify them.",
+      "url": "https://dev.to/jaideepparashar/most-productivity-gains-dont-come-from-heroic-bursts-of-coding-they-come-from-removing-friction-17gl",
+      "date": "2026-02-20T04:41:56.000Z",
+      "description": "5 AI Tools Every Developer Should Integrate into Their Daily...",
       "source": "devto-ai",
-      "score": 28.7
+      "score": 28.8
     },
     {
-      "title": "📝 I Built an AI Agent to Apply to 1,000 Jobs While I Kept Building Things",
-      "url": "https://dev.to/picklepixel/i-built-an-ai-agent-to-apply-to-1000-jobs-while-i-kept-building-things-3j64",
-      "date": "2026-02-19T03:44:05.000Z",
-      "description": "Job searching is a full-time job. That's the actual problem. It competes directly with the work I...",
-      "source": "devto-ai",
+      "title": "Gemini 3.1 Pro",
+      "url": "https://simonwillison.net/2026/Feb/19/gemini-31-pro/#atom-everything",
+      "date": "2026-02-19T17:58:37.000Z",
+      "description": "<p><strong><a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/\">Gemini 3.1 Pro</a></strong></p> The first in the Gemini 3.1 series, priced the same as Gemi...",
+      "source": "rss-simon-willison",
       "score": 28.6
     },
     {
-      "title": "📰 TC: OpenAI deepens India push with Pine Labs fintech partnership",
-      "url": "https://techcrunch.com/2026/02/18/openai-deepens-india-push-with-pine-labs-fintech-partnership/",
-      "date": "2026-02-19T03:30:00.000Z",
-      "description": "OpenAI moves beyond ChatGPT in India with a Pine Labs deal targeting enterprise payments and AI-driven commerce.",
-      "source": "techcrunch-ai",
-      "score": 28.6
+      "title": "Claude just gave me access to another user's legal documents",
+      "url": "https://old.reddit.com/r/ClaudeAI/comments/1r97osm/claude_just_gave_me_access_to_another_users_legal/",
+      "date": "2026-02-19T22:15:29.000Z",
+      "description": "13 points, 4 comments on HN",
+      "source": "hackernews",
+      "score": 28.5
     },
     {
-      "title": "Anthropic: v2.1.47",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.47",
-      "date": "2026-02-18T21:38:45.000Z",
-      "description": "## What's changed\n\n- Fixed FileWriteTool line counting to preserve intentional trailing blank lines instead of stripping them with `trimEnd()`.\n- Fixed Windows terminal rendering bugs caused by `os.EO",
+      "title": "Ollama: v0.16.3",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.16.3",
+      "date": "2026-02-19T22:11:27.000Z",
+      "description": "## What's Changed\n* Update: download link in README for macOS (#1) by @hellosaumil in https://github.com/ollama/ollama/pull/14271\n* model: add gemma3 to the mlxrunner by @pdevine in https://github.com",
       "source": "github-releases",
-      "score": 28.4
+      "score": 28.5
     },
     {
-      "title": "Claude Code is powerful. Pilot makes it reliable",
-      "url": "https://claude-pilot.com",
-      "date": "2026-02-18T21:32:52.000Z",
-      "description": "1 points, 1 comments on HN",
-      "source": "hackernews",
-      "score": 28.3
-    },
-    {
-      "title": "Show HN: Agf – A TUI to find and resume your AI coding agent sessions",
-      "url": "https://github.com/subinium/agf",
-      "date": "2026-02-19T01:28:22.000Z",
-      "description": "2 points, 2 comments on HN",
-      "source": "hackernews",
-      "score": 28.2
-    },
-    {
-      "title": "How to teach Claude to write better code",
-      "url": "https://www.ponylang.io/blog/2026/02/teaching-claude-to-write-pony/",
-      "date": "2026-02-18T20:34:12.000Z",
-      "description": "4 points, 0 comments on HN",
-      "source": "hackernews",
-      "score": 28.1
-    },
-    {
-      "title": "Anthropic: v0.82.0",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.82.0",
-      "date": "2026-02-18T20:24:48.000Z",
-      "description": "## 0.82.0 (2026-02-18)\n\nFull Changelog: [v0.81.0...v0.82.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.81.0...v0.82.0)\n\n### Features\n\n* **api:** fix shared UserLocation and error co",
+      "title": "LiteLLM: v1.81.13.dev1",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.13.dev1",
+      "date": "2026-02-19T20:07:33.000Z",
+      "description": "## What's Changed\n* Generic Guardrails: Add a configurable fallback to handle generic guardrail endpoint connection failures by @itayov in https://github.com/BerriAI/litellm/pull/21245\n* fix: preserve",
       "source": "github-releases",
       "score": 28.1
     },
     {
-      "title": "Show HN: Strava for Claude Code",
-      "url": "https://straude.com/",
-      "date": "2026-02-18T19:48:32.000Z",
-      "description": "18 points, 16 comments on HN",
+      "title": "Tracekit: Find what your AI coding agent wastes money on and fix it",
+      "url": "https://github.com/0xKoda/tracekit",
+      "date": "2026-02-20T00:38:29.000Z",
+      "description": "1 points, 0 comments on HN",
       "source": "hackernews",
       "score": 28
+    },
+    {
+      "title": "📰 TC: Nvidia deepens early-stage push into India's AI startup ecosystem",
+      "url": "https://techcrunch.com/2026/02/19/nvidia-deepens-early-stage-push-into-indias-ai-startup-ecosystem/",
+      "date": "2026-02-20T00:30:00.000Z",
+      "description": "Nvidia is working with investors, nonprofits, and venture firms to build earlier ties with India's fast-growing AI founder ecosystem.",
+      "source": "techcrunch-ai",
+      "score": 28
+    },
+    {
+      "title": "Show HN: Matrix OS – An AI operating system where Claude is the kernel",
+      "url": "https://matrix-os.com/",
+      "date": "2026-02-19T19:27:19.000Z",
+      "description": "4 points, 1 comments on HN",
+      "source": "hackernews",
+      "score": 27.9
     }
   ],
   "older": [
     {
-      "title": "📝 I kept hitting the \"quota wall\" with AI coding tools. So I built a router.",
-      "url": "https://dev.to/dor_amir_dbb52baafff7ca5b/i-kept-hitting-the-quota-wall-with-ai-coding-tools-so-i-built-a-router-5lj",
-      "date": "2026-02-17T03:47:33.000Z",
-      "description": "If you use OpenClaw, Codex, Cursor, or Claude Code, you've probably seen the same thing: your premium...",
-      "source": "devto-ai",
-      "score": 25.6
+      "title": "🚀 yottoCode",
+      "url": "https://www.producthunt.com/products/yottocode",
+      "date": "2026-02-17T21:23:16.000Z",
+      "description": "Claude Code, meet Telegram.",
+      "source": "producthunt-ai",
+      "score": 21.3
     },
     {
-      "title": "🚀 Design Rails",
-      "url": "https://www.producthunt.com/products/design-rails-ai-native-brand-in-mins",
-      "date": "2026-02-16T23:26:45.000Z",
-      "description": "Get an agent-ready brand in minutes",
+      "title": "Introducing Claude Sonnet 4.6",
+      "url": "https://simonwillison.net/2026/Feb/17/claude-sonnet-46/#atom-everything",
+      "date": "2026-02-17T23:58:58.000Z",
+      "description": "<p><strong><a href=\"https://www.anthropic.com/news/claude-sonnet-4-6\">Introducing Claude Sonnet 4.6</a></strong></p> Sonnet 4.6 is out today, and Anthropic claim it offers similar performance to <a hr...",
+      "source": "rss-simon-willison",
+      "score": 20.9
+    },
+    {
+      "title": "🚀 SPECTRE",
+      "url": "https://www.producthunt.com/products/spectre-2",
+      "date": "2026-02-17T15:49:15.000Z",
+      "description": "An agentic coding workflow for product builders",
+      "source": "producthunt-ai",
+      "score": 19.2
+    },
+    {
+      "title": "🚀 ClawMetry for OpenClaw",
+      "url": "https://www.producthunt.com/products/clawmetry",
+      "date": "2026-02-17T23:04:59.000Z",
+      "description": "Real-time observability dashboard for OpenClaw AI agents",
       "source": "producthunt-ai",
       "score": 18.7
     },
     {
-      "title": "🚀 Agent Monitor",
-      "url": "https://www.producthunt.com/products/agent-monitor-track-ai-traffic",
-      "date": "2026-02-16T18:40:53.000Z",
-      "description": "Server-side analytics for AI & bot traffic",
+      "title": "🚀 Cencurity",
+      "url": "https://www.producthunt.com/products/cencurity",
+      "date": "2026-02-17T20:25:52.000Z",
+      "description": "Security gateway for LLM agents",
       "source": "producthunt-ai",
-      "score": 17.7
+      "score": 18.1
     },
     {
-      "title": "🚀 Qwen3.5",
-      "url": "https://www.producthunt.com/products/qwen3",
-      "date": "2026-02-16T13:47:06.000Z",
-      "description": "The 397B native multimodal agent with 17B active params",
+      "title": "🚀 claude-devtools",
+      "url": "https://www.producthunt.com/products/claude-devtools",
+      "date": "2026-02-17T06:07:18.000Z",
+      "description": "See everything Claude Code hides from your terminal",
       "source": "producthunt-ai",
-      "score": 16.7
+      "score": 18.1
     },
     {
-      "title": "🚀 VidClaw",
-      "url": "https://www.producthunt.com/products/vidclaw",
-      "date": "2026-02-16T13:29:35.000Z",
-      "description": "An open-source, self-hosted Kanban for your OpenClaw agent.",
-      "source": "producthunt-ai",
-      "score": 16.7
+      "title": "📝 10 top Claude Code plugins to use in 2026",
+      "url": "https://dev.to/composiodev/10-top-claude-code-plugins-to-use-in-2026-4gn6",
+      "date": "2026-02-17T10:06:44.000Z",
+      "description": "If you're building MVPs or production-grade apps with Claude Code, plugin’s is your secret...",
+      "source": "devto-ai",
+      "score": 18
     },
     {
-      "title": "🚀 Subterranean",
-      "url": "https://www.producthunt.com/products/subterranean-3",
-      "date": "2026-02-16T22:11:01.000Z",
-      "description": "AI technical cofounder to build your app",
+      "title": "🚀 Baseline Core",
+      "url": "https://www.producthunt.com/products/baseline-core",
+      "date": "2026-02-18T00:40:30.000Z",
+      "description": "Open-source skills system that wires your business into AI",
       "source": "producthunt-ai",
-      "score": 16.5
+      "score": 17
+    },
+    {
+      "title": "🚀 FF Designer",
+      "url": "https://www.producthunt.com/products/flutterflow",
+      "date": "2026-02-17T21:45:11.000Z",
+      "description": "Generate beautiful UI designs that you can instantly edit",
+      "source": "producthunt-ai",
+      "score": 16.4
+    },
+    {
+      "title": "🚀 Your AI Clone",
+      "url": "https://www.producthunt.com/products/your-ai-clone",
+      "date": "2026-02-17T21:13:09.000Z",
+      "description": "Your clone remembers people you've never met",
+      "source": "producthunt-ai",
+      "score": 16.3
     },
     {
       "title": "📝 Command Center for AI Coding Agents (Claude Code + Codex)",
@@ -314,100 +346,68 @@
       "score": 16
     },
     {
-      "title": "🚀 Deckary",
-      "url": "https://www.producthunt.com/products/deckary",
-      "date": "2026-02-16T18:55:30.000Z",
-      "description": "The AI consulting toolkit for PowerPoint",
-      "source": "producthunt-ai",
-      "score": 15.8
+      "title": "Rodney v0.4.0",
+      "url": "https://simonwillison.net/2026/Feb/17/rodney/#atom-everything",
+      "date": "2026-02-17T23:02:33.000Z",
+      "description": "<p><strong><a href=\"https://github.com/simonw/rodney/releases/tag/v0.4.0\">Rodney v0.4.0</a></strong></p> My <a href=\"https://github.com/simonw/rodney\">Rodney</a> CLI tool for browser automation attrac...",
+      "source": "rss-simon-willison",
+      "score": 15.7
     },
     {
-      "title": "🚀 Figr AI",
-      "url": "https://www.producthunt.com/products/figr-design-research-simplified",
-      "date": "2026-02-16T14:06:32.000Z",
-      "description": "Product-aware AI that thinks through UX",
+      "title": "🚀 Omnia",
+      "url": "https://www.producthunt.com/products/omnia-2",
+      "date": "2026-02-17T18:19:59.000Z",
+      "description": "Become the brand AI recommends",
+      "source": "producthunt-ai",
+      "score": 15.7
+    },
+    {
+      "title": "🧠 DeepMind: Accelerating discovery in India through AI-powered science and education",
+      "url": "https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
+      "date": "2026-02-17T13:42:20.000Z",
+      "description": "Google DeepMind brings National Partnerships for AI initiative to India, scaling AI for science and education",
+      "source": "deepmind-blog",
+      "score": 15.7
+    },
+    {
+      "title": "🚀 BotBot",
+      "url": "https://www.producthunt.com/products/botbot",
+      "date": "2026-02-17T13:56:00.000Z",
+      "description": "The open-source brain for any legged robot",
       "source": "producthunt-ai",
       "score": 14.8
     },
     {
-      "title": "🚀 HostedClaws",
-      "url": "https://www.producthunt.com/products/hostedclaws",
-      "date": "2026-02-16T10:47:57.000Z",
-      "description": "Your own AI employee that runs 24/7 with no set up",
-      "source": "producthunt-ai",
-      "score": 14.1
+      "title": "Quoting ROUGH DRAFT 8/2/66",
+      "url": "https://simonwillison.net/2026/Feb/17/rough-draft-8266/#atom-everything",
+      "date": "2026-02-17T14:49:04.000Z",
+      "description": "<blockquote cite=\"https://www.neatorama.com/2026/02/11/The-Original-Drafts-for-Star-Treks-Opening-Narration/\"><p>This is the story of the United Space Ship Enterprise. Assigned a five year patrol of o...",
+      "source": "rss-simon-willison",
+      "score": 14
     },
     {
-      "title": "🚀 Synra",
-      "url": "https://www.producthunt.com/products/synra-managed-mcp-server",
-      "date": "2026-02-15T07:21:33.000Z",
-      "description": "Connect Claude to your database in 60 seconds",
+      "title": "📝 Cursor vs Claude Code: Why I Switched After a $500 Bill",
+      "url": "https://dev.to/akromdev/cursor-vs-claude-code-why-i-switched-after-a-500-bill-33jp",
+      "date": "2026-02-10T22:26:26.000Z",
+      "description": "An honest comparison of Cursor and Claude Code after my monthly AI bill hit $500. What each tool does better, and the $120/month setup that gives you the best of both.",
+      "source": "devto-ai",
+      "score": 14
+    },
+    {
+      "title": "🚀 Design Rails",
+      "url": "https://www.producthunt.com/products/design-rails-ai-native-brand-in-mins",
+      "date": "2026-02-16T23:26:45.000Z",
+      "description": "Get an agent-ready brand in minutes",
+      "source": "producthunt-ai",
+      "score": 13.8
+    },
+    {
+      "title": "🚀 Company logo API",
+      "url": "https://www.producthunt.com/products/hunter",
+      "date": "2026-02-17T07:18:28.000Z",
+      "description": "Find any company logo for free",
       "source": "producthunt-ai",
       "score": 13.4
-    },
-    {
-      "title": "🚀 JDoodle.ai MCP",
-      "url": "https://www.producthunt.com/products/jdoodle-ai",
-      "date": "2026-02-13T11:26:34.000Z",
-      "description": "Build and deploy web apps straight from ChatGPT/Claude",
-      "source": "producthunt-ai",
-      "score": 13
-    },
-    {
-      "title": "🧠 DeepMind: Gemini 3 Deep Think: Advancing science, research and engineering",
-      "url": "https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/",
-      "date": "2026-02-12T16:15:09.000Z",
-      "description": "Our most specialized reasoning mode is now updated to solve modern science, research and engineering challenges.",
-      "source": "deepmind-blog",
-      "score": 13
-    },
-    {
-      "title": "🌀 Mistral: Voxtral transcribes at the speed of sound.",
-      "url": "https://mistral.ai/news/voxtral-transcribe-2",
-      "date": null,
-      "description": "",
-      "source": "mistral-blog",
-      "score": 13
-    },
-    {
-      "title": "🔷 Google AI: Watch our new Gemini ad ahead of football’s biggest weekend",
-      "url": "https://blog.google/company-news/inside-google/company-announcements/gemini-ad-new-home/",
-      "date": "2026-02-05T14:30:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SB_2026_New_Home_16_9_Thumbnail.max-600x600.format-webp.webp\">Learn more about Google’s new ad that will run during football’s Big Game on February 8.",
-      "source": "google-ai-blog",
-      "score": 13
-    },
-    {
-      "title": "🔷 Google AI: Advancing AI benchmarking with Game Arena",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/",
-      "date": "2026-02-02T17:00:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/kaggle_Gsmes_Hero.png\">We’re expanding Game Arena with Poker and Werewolf, while Gemini 3 Pro and Flash top our chess leaderboard.",
-      "source": "google-ai-blog",
-      "score": 13
-    },
-    {
-      "title": "🚀 Vela",
-      "url": "https://www.producthunt.com/products/vela-4",
-      "date": "2026-02-16T01:47:04.000Z",
-      "description": "AI scheduling that works the way a great EA does",
-      "source": "producthunt-ai",
-      "score": 12.2
-    },
-    {
-      "title": "🚀 NVIDIA PersonaPlex",
-      "url": "https://www.producthunt.com/products/nvidia",
-      "date": "2026-02-16T01:13:31.000Z",
-      "description": "Natural Conversational AI With Any Role and Voice",
-      "source": "producthunt-ai",
-      "score": 12.1
-    },
-    {
-      "title": "📝 Opus 4.6 first impress(ive)ions",
-      "url": "https://dev.to/j0kic0de/opus-46-first-impressiveions-kl3",
-      "date": "2026-02-10T21:00:27.000Z",
-      "description": "Title says it all but I am using Opus 4.6 with my Claude Pro subscription I am stunned how it helps...",
-      "source": "devto-ai",
-      "score": 12
     }
   ]
 }

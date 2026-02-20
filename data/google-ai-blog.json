@@ -1,7 +1,7 @@
 {
   "source": "google-ai",
   "description": "Official Google AI blog posts and announcements",
-  "fetched_at": "2026-02-19T05:28:26.767Z",
+  "fetched_at": "2026-02-20T05:24:52.616Z",
   "count": 20,
   "items": [
     {
@@ -179,7 +179,7 @@
       "title": "Advancing AI benchmarking with Game Arena",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/kaggle-game-arena-updates/",
       "date": "2026-02-02T17:00:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/kaggle_Gsmes_Hero.png\">We’re expanding Game Arena with Poker and Werewolf, while Gemini 3 Pro and Flash top our chess leaderboard.",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/kaggle_Gsmes_Hero.max-600x600.format-webp.webp\">We’re expanding Game Arena with Poker and Werewolf, while Gemini 3 Pro and Flash top our chess leaderboard.",
       "categories": [
         "google deepmind",
         "ai"
