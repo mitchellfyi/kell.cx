@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-20T05:24:51.741Z",
+  "scraped_at": "2026-02-21T05:18:07.808Z",
   "source": "anthropic.com",
   "stats": {
     "news_count": 3,
@@ -21,7 +21,7 @@
     },
     {
       "title": "Products",
-      "url": "https://www.anthropic.com/news/anthropic-rwanda-mou",
+      "url": "https://www.anthropic.com/news/claude-code-security",
       "source": "anthropic-news",
       "category": "announcement"
     },

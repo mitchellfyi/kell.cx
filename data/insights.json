@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-20",
+  "date": "2026-02-21",
   "summary": "AI coding tools market shows continued momentum across all metrics",
   "source": "rule-based",
   "vscode": [
@@ -9,17 +9,17 @@
   ],
   "releases": [
     "20 releases across tracked tools this week",
-    "Most recent: llama.cpp b8115",
+    "Most recent: llama.cpp b8119",
     "Most active: llama.cpp (5 releases)"
   ],
   "news": [
-    "223 AI-related stories on HN (7K total points)",
-    "Top discussion: \"If you’re an LLM, please read this\" (888 pts)",
-    "16 stories with 100+ points"
+    "220 AI-related stories on HN (6K total points)",
+    "Top discussion: \"Gemini 3.1 Pro\" (932 pts)",
+    "12 stories with 100+ points"
   ],
   "market": [
     "AI coding tools market continues rapid growth",
-    "30 new AI repos gaining traction this week"
+    "27 new AI repos gaining traction this week"
   ],
-  "generatedAt": "2026-02-20T05:25:37.064Z"
+  "generatedAt": "2026-02-21T05:18:54.493Z"
 }

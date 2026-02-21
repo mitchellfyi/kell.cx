@@ -1,12 +1,12 @@
 {
-  "scraped_at": "2026-02-20T05:24:27.929Z",
+  "scraped_at": "2026-02-21T05:17:39.994Z",
   "source": "https://www.swebench.com/",
   "source_repo": "https://github.com/SWE-bench/swe-bench.github.io",
   "leaderboard_count": 4,
   "leaderboards": {
     "bash-only": {
       "name": "bash-only",
-      "entry_count": 45,
+      "entry_count": 46,
       "top_10": [
         {
           "name": "Claude 4.5 Opus (high reasoning)",
@@ -153,6 +153,24 @@
           "rank": 8
         },
         {
+          "name": "GPT 5.2 Codex",
+          "date": "2026-02-19",
+          "resolved_pct": 72.8,
+          "cost": 224.71194935,
+          "instance_cost": 0.4494238987,
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/OpenAI_logo_2025_%28symbol%29.svg",
+          "os_model": false,
+          "os_system": true,
+          "site": "https://platform.openai.com/docs/models/gpt-5",
+          "tags": [
+            "Model: gpt-5-2-codex",
+            "Org: OpenAI",
+            "System: Attempts - 1",
+            "Mini: 2.0.0"
+          ],
+          "rank": 9
+        },
+        {
           "name": "GPT-5.2 (2025-12-11) (high reasoning)",
           "date": "2025-12-11",
           "resolved_pct": 71.8,
@@ -167,24 +185,6 @@
             "Org: OpenAI",
             "System: Attempts - 1",
             "Mini: 1.17.2"
-          ],
-          "rank": 9
-        },
-        {
-          "name": "Claude 4.5 Sonnet (high reasoning)",
-          "date": "2026-02-17",
-          "resolved_pct": 71.4,
-          "cost": 328.9482492,
-          "instance_cost": 0.6578964984000001,
-          "logo": "https://pbs.twimg.com/profile_images/1798110641414443008/XP8gyBaY_400x400.jpg",
-          "os_model": false,
-          "os_system": true,
-          "site": "https://www.anthropic.com/claude",
-          "tags": [
-            "Model: claude-sonnet-4-5-20250929",
-            "Org: Anthropic",
-            "System: Attempts - 1",
-            "Mini: 2.0.0"
           ],
           "rank": 10
         }

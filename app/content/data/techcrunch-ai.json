@@ -1,150 +1,225 @@
 {
   "source": "TechCrunch",
   "url": "https://techcrunch.com",
-  "fetched_at": "2026-02-20T05:24:48.832Z",
+  "fetched_at": "2026-02-21T05:18:02.396Z",
   "total_parsed": 20,
-  "ai_filtered": 10,
+  "ai_filtered": 13,
   "articles": [
     {
-      "title": "Nvidia deepens early-stage push into India's AI startup ecosystem",
-      "url": "https://techcrunch.com/2026/02/19/nvidia-deepens-early-stage-push-into-indias-ai-startup-ecosystem/",
-      "date": "2026-02-20T00:30:00.000Z",
-      "description": "Nvidia is working with investors, nonprofits, and venture firms to build earlier ties with India's fast-growing AI founder ecosystem.",
-      "author": "Jagmeet Singh",
-      "categories": [
-        "AI",
-        "Startups",
-        "activate",
-        "nvidia"
-      ]
-    },
-    {
-      "title": "OpenAI reportedly finalizing $100B deal at more than $850B valuation",
-      "url": "https://techcrunch.com/2026/02/19/openai-reportedly-finalizing-100b-deal-at-more-than-850b-valuation/",
-      "date": "2026-02-19T15:35:58.000Z",
-      "description": "OpenAI is reportedly getting close to closing a $100 billion deal, with backers including Amazon, Nvidia, SoftBank, and Microsoft. The deal would value the ChatGPT-maker at $850 billion.",
+      "title": "Anthropic-funded group backs candidate attacked by rival AI super PAC",
+      "url": "https://techcrunch.com/2026/02/20/anthropic-funded-group-backs-candidate-attacked-by-rival-ai-super-pac/",
+      "date": "2026-02-20T20:52:48.000Z",
+      "description": "Dueling pro-AI PACs have centered around backing or targeting one New York congressional bid: Alex Bores, whose RAISE Act requires AI developers to disclose safety protocols and report serious system misuse.",
       "author": "Rebecca Bellan",
       "categories": [
         "AI",
-        "Fundraising",
-        "OpenAI",
-        "In Brief"
+        "Government & Policy",
+        "alex bores",
+        "In Brief",
+        "leading the future",
+        "public first action",
+        "raise act"
       ]
     },
     {
-      "title": "Google says its AI systems helped deter Play Store malware in 2025",
-      "url": "https://techcrunch.com/2026/02/19/google-says-its-ai-systems-helped-deter-play-store-malware-in-2025/",
-      "date": "2026-02-19T21:27:39.000Z",
-      "description": "Google said it prevented 1.75 million bad apps from going live on Google Play during 2025, a figure that's down from previous years.",
-      "author": "Sarah Perez",
+      "title": "India's Sarvam launches Indus AI chat app as competition heats up",
+      "url": "https://techcrunch.com/2026/02/20/indias-sarvam-launches-indus-ai-chat-app-as-competition-heats-up/",
+      "date": "2026-02-21T01:00:00.000Z",
+      "description": "Sarvam's Indus chat app is currently available in beta.",
+      "author": "Jagmeet Singh",
+      "categories": [
+        "AI",
+        "Apps",
+        "Startups",
+        "chat apps",
+        "Indus app",
+        "Sarvam",
+        "Sarvam 105B",
+        "Sarvam AI"
+      ]
+    },
+    {
+      "title": "The creator economy's ad revenue problem and India's AI ambitions",
+      "url": "https://techcrunch.com/video/the-creator-economys-ad-revenue-problem-and-indias-ai-ambitions/",
+      "date": "2026-02-20T23:00:00.000Z",
+      "description": "The&#160;creator&#160;economy is evolving fast, and ad revenue alone&#160;isn't&#160;cutting it anymore.&#160;YouTubers are launching product lines,&#160;acquiring&#160;startups, and building actual business empires.&#160;In fact,&#160;MrBeast's company&#160;bought fintech startup Step, and his chocolate business is outearning his media arm. This&#160;isn't&#160;just&#160;one&#160;creator's&#160;strategy.&#160;For&#160;many,&#160;it's&#160;the&#160;new playbook.&#160; On this episode of TechCrunch's Equity podcast, hosts Kirsten Korosec, Anthony Ha, and Rebecca Bellan unpack how creators are diversifying beyond ads, [...]",
+      "author": "Theresa Loconsolo",
+      "categories": [
+        "Startups",
+        "Media & Entertainment",
+        "AI",
+        "Roundup",
+        "OpenAI",
+        "creator economy",
+        "Anthropic",
+        "Equity Video",
+        "India AI Impact Summit 2026"
+      ]
+    },
+    {
+      "title": "Apple's iOS 26.4 arrives in public beta with AI music playlists, video podcasts, and more",
+      "url": "https://techcrunch.com/2026/02/20/apples-ios-26-4-arrives-in-public-beta-with-ai-music-playlists-video-podcasts-and-more/",
+      "date": "2026-02-20T19:44:22.000Z",
+      "description": "Several updates are introduced in iOS 26.4, including an AI-powered playlist-generation feature in Apple Music, support for video content in the Podcasts app, end-to-end encryption (E2EE) for RCS messages, and more.",
+      "author": "Lauren Forristal, Sarah Perez",
       "categories": [
         "Apps",
-        "Security",
-        "Android",
-        "Google Play",
-        "malware",
-        "Mobile",
-        "security"
+        "Apple",
+        "beta",
+        "iOS",
+        "ios 26",
+        "ios 26.4",
+        "iphone updates"
       ]
     },
     {
-      "title": "An AI data center boom is fueling Redwood's energy storage business",
-      "url": "https://techcrunch.com/2026/02/19/an-ai-data-center-boom-is-fueling-redwoods-energy-storage-business/",
-      "date": "2026-02-19T21:10:13.000Z",
-      "description": "Redwood Materials says its new energy storage business is the fastest growing unit within the company.",
-      "author": "Kirsten Korosec",
+      "title": "&#8216;Toy Story 5' takes aim at creepy AI toys: &#8216;I'm always listening'",
+      "url": "https://techcrunch.com/2026/02/20/toy-story-5-takes-aim-at-creepy-ai-toys-im-always-listening/",
+      "date": "2026-02-20T16:25:54.000Z",
+      "description": "Addictive, AI-enabled tablets are taking over, and also, Woody is balding in the new Toy Story movie, out June 19.",
+      "author": "Amanda Silberling",
       "categories": [
-        "Climate",
-        "TC",
-        "Transportation",
         "AI",
-        "data centers",
-        "EVs",
-        "Exclusive",
-        "redwood energy",
-        "Redwood Materials"
+        "Media & Entertainment",
+        "In Brief",
+        "Pixar",
+        "toy story",
+        "trailer"
       ]
     },
     {
-      "title": "Why these startup CEOs don't think AI will replace human roles",
-      "url": "https://techcrunch.com/2026/02/19/web-summit-qatar-read-ai-lucidya-notetakers-customer-support/",
-      "date": "2026-02-19T20:47:22.000Z",
-      "description": "The CEOs of Read AI and Lucidya told TechCrunch at Web Summit Qatar that they see AI tools replacing tasks, rather than workers.",
+      "title": "AI’s promise to indie filmmakers: Faster, cheaper, lonelier",
+      "url": "https://techcrunch.com/2026/02/20/ais-promise-to-indie-filmmakers-faster-cheaper-lonelier/",
+      "date": "2026-02-20T15:30:00.000Z",
+      "description": "AI expands access to filmmaking for resource-constrained creators. But as efficiency becomes the industry’s north star, creativity risks being overwhelmed by a deluge of low-effort, AI-generated content.",
+      "author": "Rebecca Bellan",
+      "categories": [
+        "AI",
+        "Media & Entertainment",
+        "ai video",
+        "Exclusive",
+        "google flow",
+        "nano banana pro",
+        "Veo"
+      ]
+    },
+    {
+      "title": "Peak XV raises $1.3B, doubles down on AI as global VC rivalry in India heats up",
+      "url": "https://techcrunch.com/2026/02/20/peak-xv-raises-1-3b-doubles-down-on-ai-as-global-vc-rivalry-in-india-heats-up/",
+      "date": "2026-02-20T15:10:40.000Z",
+      "description": "Peak XV says most of its new capital will target India as the firm prioritizes AI, fintech and cross-border bets while navigating recent partner departures.",
+      "author": "Jagmeet Singh",
+      "categories": [
+        "AI",
+        "Fintech",
+        "Startups",
+        "Venture",
+        "Exclusive",
+        "Peak XV",
+        "Sequoia Capital",
+        "shailendra singh"
+      ]
+    },
+    {
+      "title": "The OpenAI mafia: 18 startups founded by alumni",
+      "url": "https://techcrunch.com/2026/02/20/the-openai-mafia-15-of-the-most-notable-startups-founded-by-alumni/",
+      "date": "2026-02-20T12:45:55.000Z",
+      "description": "Many employees have come and gone since OpenAI first launched a decade ago, and some have launched startups of their own. Among these, some have become top rivals (like Anthropic), while others, just on investor interest alone, have managed to raise billions without even launching a product.",
+      "author": "Charles Rollet, Dominic-Madori Davis",
+      "categories": [
+        "Startups",
+        "Anthropic",
+        "ChatGPT",
+        "evergreens",
+        "OpenAI",
+        "Perplexity",
+        "xAI"
+      ]
+    },
+    {
+      "title": "OpenAI says 18- to 24-year-olds account for nearly 50% of ChatGPT usage in India",
+      "url": "https://techcrunch.com/2026/02/20/openai-says-18-to-24-year-olds-account-for-nearly-50-of-chatgpt-usage-in-india/",
+      "date": "2026-02-20T13:57:03.000Z",
+      "description": "The company said on Friday that users between 18 and 24 years of age account for nearly 50% of all messages sent by Indians to ChatGPT, and users under 30 account for 80% of usage in the country.",
       "author": "Ivan Mehta",
       "categories": [
         "AI",
+        "ChatGPT",
+        "codex",
+        "India AI Impact Summit 2026",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "Great news for xAI: Grok is now pretty good at answering questions about Baldur’s Gate",
+      "url": "https://techcrunch.com/2026/02/20/great-news-for-xai-grok-is-now-pretty-good-at-answering-questions-about-baldurs-gate/",
+      "date": "2026-02-20T18:26:54.000Z",
+      "description": "A new report from Business Insider reveals that high-level engineers at xAI were pulled off other projects to make sure Grok could answer detailed questions about the video game Baldur's Gate.",
+      "author": "Russell Brandom",
+      "categories": [
+        "AI",
+        "Elon Musk",
+        "Exclusive",
+        "Grok",
+        "video games"
+      ]
+    },
+    {
+      "title": "InScope nabs $14.5M to solve the pain of financial reporting",
+      "url": "https://techcrunch.com/2026/02/20/inscope-nabs-14-5m-to-solve-the-pain-of-financial-reporting/",
+      "date": "2026-02-20T19:24:57.000Z",
+      "description": "The startup, founded by accountants who worked at Flexport, Miro, Hopin and Thrive Global, automates the difficulties of prepping financial statements.",
+      "author": "Marina Temkin",
+      "categories": [
+        "AI",
+        "Fintech",
         "Startups",
-        "AI assistant",
-        "Customer success",
-        "Read AI"
+        "Venture",
+        "accounting",
+        "Better Tomorrow Ventures",
+        "financial reporting",
+        "InScope",
+        "norwest venture partners"
       ]
     },
     {
-      "title": "YouTube’s latest experiment brings its conversational AI tool to TVs",
-      "url": "https://techcrunch.com/2026/02/19/youtubes-latest-experiment-brings-its-conversational-ai-tool-to-tvs/",
-      "date": "2026-02-19T20:30:19.000Z",
-      "description": "YouTube is testing conversational AI on smart TVs, allowing viewers to ask the assistant questions related to the video they're watching on the big screen.",
-      "author": "Lauren Forristal",
+      "title": "Why investors are going gaga over solid-state transformers",
+      "url": "https://techcrunch.com/2026/02/20/why-investors-are-going-gaga-over-solid-state-transformers/",
+      "date": "2026-02-20T14:30:00.000Z",
+      "description": "The technology promises to replace several parts of the grid with one device that’s both controllable and updatable.",
+      "author": "Tim De Chant",
+      "categories": [
+        "Climate",
+        "Amperesand",
+        "DG Matrix",
+        "electrical grid",
+        "Exclusive",
+        "Heron Power",
+        "solid-state transformers"
+      ]
+    },
+    {
+      "title": "TechCrunch Disrupt 2026 Super Early Bird rates end in 1 week",
+      "url": "https://techcrunch.com/2026/02/20/techcrunch-disrupt-2026-super-early-bird-rates-end-in-1-week/",
+      "date": "2026-02-20T15:00:00.000Z",
+      "description": "The lowest ticket rates of the year for TechCrunch Disrupt 2026 end next Friday, February 27. Save up to $680 on your pass. Register now before prices increase.",
+      "author": "TechCrunch Events",
       "categories": [
         "AI",
         "Apps",
+        "Biotech & Health",
+        "Climate",
+        "Fintech",
+        "Fundraising",
+        "Gadgets",
+        "Hardware",
         "Media & Entertainment",
-        "conversational AI",
-        "YouTube"
-      ]
-    },
-    {
-      "title": "Reddit is testing a new AI search feature for shopping",
-      "url": "https://techcrunch.com/2026/02/19/reddit-is-testing-a-new-ai-search-feature-for-shopping/",
-      "date": "2026-02-19T18:22:51.000Z",
-      "description": "A small group of users in the U.S. will start to see search results that include interactive product carousels with pricing, images, and direct where-to-buy links.",
-      "author": "Aisha Malik",
-      "categories": [
-        "AI",
-        "Apps",
-        "Reddit"
-      ]
-    },
-    {
-      "title": "Google's new Gemini Pro model has record benchmark scores — again",
-      "url": "https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/",
-      "date": "2026-02-20T00:55:22.000Z",
-      "description": "Gemini 3.1 Pro promises a Google LLM capable of handling more complex forms of work.",
-      "author": "Lucas Ropek",
-      "categories": [
-        "AI",
-        "TC",
-        "Gemini Pro 3.1",
-        "Google",
-        "In Brief",
-        "Mercor"
-      ]
-    },
-    {
-      "title": "Toyota contracts seven Agility humanoid robots for Canadian factory",
-      "url": "https://techcrunch.com/2026/02/19/toyota-hires-seven-agility-humanoid-robots-for-canadian-factory/",
-      "date": "2026-02-19T20:29:02.000Z",
-      "description": "The robots will be unloading totes full of auto parts from an automated warehouse tugger.",
-      "author": "Tim Fernholz",
-      "categories": [
         "Robotics",
-        "agility robotics",
-        "humanoid robots",
-        "Toyota"
-      ]
-    },
-    {
-      "title": "New York hits the brakes on robotaxi expansion plan",
-      "url": "https://techcrunch.com/2026/02/19/new-york-hits-the-brakes-on-robotaxi-expansion-plan/",
-      "date": "2026-02-19T16:53:05.000Z",
-      "description": "The governor of New York pulled a robotaxi expansion proposal that was viewed as a win for Waymo.",
-      "author": "Kirsten Korosec",
-      "categories": [
-        "TC",
+        "Space",
+        "Startups",
         "Transportation",
-        "autonomous vehicles",
-        "robotaxis",
-        "Waymo"
+        "Venture",
+        "TechCrunch Disrupt 2026"
       ]
     }
   ]
