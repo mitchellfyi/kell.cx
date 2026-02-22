@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-21T05:18:03.097Z",
+  "scraped_at": "2026-02-22T05:24:13.952Z",
   "source": "openai.com/news/rss",
   "stats": {
     "total": 850,
@@ -181,17 +181,6 @@
       "parsedDate": "2026-02-05T06:00:00.000Z"
     },
     {
-      "title": "Navigating health questions with ChatGPT",
-      "description": "A family shares how ChatGPT helped them prepare for critical cancer treatment decisions for their son alongside expert guidance from his doctors.",
-      "url": "https://openai.com/index/navigating-health-questions",
-      "category": "ChatGPT",
-      "date": "Thu, 05 Feb 2026 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "chatgpt",
-      "importance": "normal",
-      "parsedDate": "2026-02-05T00:00:00.000Z"
-    },
-    {
       "title": "GPT-5.3-Codex System Card",
       "description": "GPT‑5.3-Codex is the most capable agentic coding model to date, combining the frontier coding performance of GPT‑5.2-Codex with the reasoning and professional knowledge capabilities of GPT‑5.2.",
       "url": "https://openai.com/index/gpt-5-3-codex-system-card",
@@ -200,6 +189,17 @@
       "source": "openai-rss",
       "normalizedCategory": "research",
       "importance": "high",
+      "parsedDate": "2026-02-05T00:00:00.000Z"
+    },
+    {
+      "title": "Navigating health questions with ChatGPT",
+      "description": "A family shares how ChatGPT helped them prepare for critical cancer treatment decisions for their son alongside expert guidance from his doctors.",
+      "url": "https://openai.com/index/navigating-health-questions",
+      "category": "ChatGPT",
+      "date": "Thu, 05 Feb 2026 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "chatgpt",
+      "importance": "normal",
       "parsedDate": "2026-02-05T00:00:00.000Z"
     },
     {
@@ -544,17 +544,6 @@
       "parsedDate": "2026-01-16T12:00:00.000Z"
     },
     {
-      "title": "Introducing ChatGPT Go, now available worldwide",
-      "description": "ChatGPT Go is now available worldwide, offering expanded access to GPT-5.2 Instant, higher usage limits, and longer memory—making advanced AI more affordable globally.",
-      "url": "https://openai.com/index/introducing-chatgpt-go",
-      "category": "News",
-      "date": "Fri, 16 Jan 2026 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "announcement",
-      "importance": "high",
-      "parsedDate": "2026-01-16T00:00:00.000Z"
-    },
-    {
       "title": "Our approach to advertising and expanding access to ChatGPT",
       "description": "OpenAI plans to test advertising in the U.S. for ChatGPT’s free and Go tiers to expand affordable access to AI worldwide, while protecting privacy, trust, and answer quality.",
       "url": "https://openai.com/index/our-approach-to-advertising-and-expanding-access",
@@ -563,6 +552,17 @@
       "source": "openai-rss",
       "normalizedCategory": "company",
       "importance": "normal",
+      "parsedDate": "2026-01-16T00:00:00.000Z"
+    },
+    {
+      "title": "Introducing ChatGPT Go, now available worldwide",
+      "description": "ChatGPT Go is now available worldwide, offering expanded access to GPT-5.2 Instant, higher usage limits, and longer memory—making advanced AI more affordable globally.",
+      "url": "https://openai.com/index/introducing-chatgpt-go",
+      "category": "News",
+      "date": "Fri, 16 Jan 2026 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
+      "importance": "high",
       "parsedDate": "2026-01-16T00:00:00.000Z"
     },
     {
@@ -863,17 +863,6 @@
       "parsedDate": "2025-12-16T00:00:00.000Z"
     },
     {
-      "title": "BBVA and OpenAI collaborate to transform global banking",
-      "description": "BBVA is expanding its work with OpenAI through a multi-year AI transformation program, rolling out ChatGPT Enterprise to all 120,000 employees. Together, the companies will develop AI solutions that enhance customer interactions, streamline operations, and help build an AI-native banking experience.",
-      "url": "https://openai.com/index/bbva-collaboration-expansion",
-      "category": "News",
-      "date": "Fri, 12 Dec 2025 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "announcement",
-      "importance": "normal",
-      "parsedDate": "2025-12-12T00:00:00.000Z"
-    },
-    {
       "title": "BNY builds “AI for everyone, everywhere” with OpenAI",
       "description": "BNY is using OpenAI technology to expand AI adoption enterprise-wide. Through its Eliza platform, 20,000+ employees are building AI agents that enhance efficiency and improve client outcomes.",
       "url": "https://openai.com/index/bny",
@@ -881,6 +870,17 @@
       "date": "Fri, 12 Dec 2025 00:00:00 GMT",
       "source": "openai-rss",
       "normalizedCategory": "chatgpt",
+      "importance": "normal",
+      "parsedDate": "2025-12-12T00:00:00.000Z"
+    },
+    {
+      "title": "BBVA and OpenAI collaborate to transform global banking",
+      "description": "BBVA is expanding its work with OpenAI through a multi-year AI transformation program, rolling out ChatGPT Enterprise to all 120,000 employees. Together, the companies will develop AI solutions that enhance customer interactions, streamline operations, and help build an AI-native banking experience.",
+      "url": "https://openai.com/index/bbva-collaboration-expansion",
+      "category": "News",
+      "date": "Fri, 12 Dec 2025 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
       "importance": "normal",
       "parsedDate": "2025-12-12T00:00:00.000Z"
     },
@@ -907,6 +907,17 @@
       "parsedDate": "2025-12-11T10:00:00.000Z"
     },
     {
+      "title": "The Walt Disney Company and OpenAI reach landmark agreement to bring beloved characters to Sora",
+      "description": "Disney and OpenAI have reached an agreement to bring more than 200 Disney, Marvel, Pixar and Star Wars characters to Sora for fan-inspired short videos. The agreement emphasizes responsible AI in entertainment and includes Disney’s company-wide use of ChatGPT Enterprise and the OpenAI API.",
+      "url": "https://openai.com/index/disney-sora-agreement",
+      "category": "News",
+      "date": "Thu, 11 Dec 2025 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
+      "importance": "normal",
+      "parsedDate": "2025-12-11T00:00:00.000Z"
+    },
+    {
       "title": "Update to GPT-5 System Card: GPT-5.2",
       "description": "GPT-5.2 is the latest model family in the GPT-5 series. The comprehensive safety mitigation approach for these models is largely the same as that described in the GPT-5 System Card and GPT-5.1 System Card. Like OpenAI’s other models, the GPT-5.2 models were trained on diverse datasets, including information that is publicly available on the internet, information that we partner with third parties to access, and information that our users or human trainers and researchers provide or generate.",
       "url": "https://openai.com/index/gpt-5-system-card-update-gpt-5-2",
@@ -915,28 +926,6 @@
       "source": "openai-rss",
       "normalizedCategory": "announcement",
       "importance": "high",
-      "parsedDate": "2025-12-11T00:00:00.000Z"
-    },
-    {
-      "title": "Introducing GPT-5.2",
-      "description": "GPT-5.2 is our most advanced frontier model for everyday professional work, with state-of-the-art reasoning, long-context understanding, coding, and vision. Use it in ChatGPT and the OpenAI API to power faster, more reliable agentic workflows.",
-      "url": "https://openai.com/index/introducing-gpt-5-2",
-      "category": "Product",
-      "date": "Thu, 11 Dec 2025 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "product",
-      "importance": "high",
-      "parsedDate": "2025-12-11T00:00:00.000Z"
-    },
-    {
-      "title": "Increasing revenue 300% by bringing AI to SMBs",
-      "description": "Discover how Podium used OpenAI’s GPT-5 to build “Jerry,” an AI teammate driving 300% growth and transforming how Main Street businesses serve customers.",
-      "url": "https://openai.com/index/podium",
-      "category": "ChatGPT",
-      "date": "Thu, 11 Dec 2025 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "chatgpt",
-      "importance": "normal",
       "parsedDate": "2025-12-11T00:00:00.000Z"
     },
     {
@@ -951,14 +940,25 @@
       "parsedDate": "2025-12-11T00:00:00.000Z"
     },
     {
-      "title": "The Walt Disney Company and OpenAI reach landmark agreement to bring beloved characters to Sora",
-      "description": "Disney and OpenAI have reached an agreement to bring more than 200 Disney, Marvel, Pixar and Star Wars characters to Sora for fan-inspired short videos. The agreement emphasizes responsible AI in entertainment and includes Disney’s company-wide use of ChatGPT Enterprise and the OpenAI API.",
-      "url": "https://openai.com/index/disney-sora-agreement",
-      "category": "News",
+      "title": "Increasing revenue 300% by bringing AI to SMBs",
+      "description": "Discover how Podium used OpenAI’s GPT-5 to build “Jerry,” an AI teammate driving 300% growth and transforming how Main Street businesses serve customers.",
+      "url": "https://openai.com/index/podium",
+      "category": "ChatGPT",
       "date": "Thu, 11 Dec 2025 00:00:00 GMT",
       "source": "openai-rss",
-      "normalizedCategory": "announcement",
+      "normalizedCategory": "chatgpt",
       "importance": "normal",
+      "parsedDate": "2025-12-11T00:00:00.000Z"
+    },
+    {
+      "title": "Introducing GPT-5.2",
+      "description": "GPT-5.2 is our most advanced frontier model for everyday professional work, with state-of-the-art reasoning, long-context understanding, coding, and vision. Use it in ChatGPT and the OpenAI API to power faster, more reliable agentic workflows.",
+      "url": "https://openai.com/index/introducing-gpt-5-2",
+      "category": "Product",
+      "date": "Thu, 11 Dec 2025 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "product",
+      "importance": "high",
       "parsedDate": "2025-12-11T00:00:00.000Z"
     },
     {
@@ -1017,9 +1017,9 @@
       "parsedDate": "2025-12-09T00:00:00.000Z"
     },
     {
-      "title": "OpenAI appoints Denise Dresser as Chief Revenue Officer",
-      "description": "Denise Dresser is joining as Chief Revenue Officer, overseeing OpenAI’s global revenue strategy across enterprise and customer success. She will help more businesses put AI to work in their day-to-day operations as OpenAI continues to scale.",
-      "url": "https://openai.com/index/openai-appoints-denise-dresser",
+      "title": "Bringing powerful AI to millions across Europe with Deutsche Telekom",
+      "description": "OpenAI is collaborating with Deutsche Telekom to bring advanced, multilingual AI experiences to millions of people across Europe. ChatGPT Enterprise will also be deployed to help employees at Deutsche Telekom improve workflows and accelerate innovation.",
+      "url": "https://openai.com/index/deutsche-telekom-collaboration",
       "category": "News",
       "date": "Tue, 09 Dec 2025 00:00:00 GMT",
       "source": "openai-rss",
@@ -1028,9 +1028,9 @@
       "parsedDate": "2025-12-09T00:00:00.000Z"
     },
     {
-      "title": "Bringing powerful AI to millions across Europe with Deutsche Telekom",
-      "description": "OpenAI is collaborating with Deutsche Telekom to bring advanced, multilingual AI experiences to millions of people across Europe. ChatGPT Enterprise will also be deployed to help employees at Deutsche Telekom improve workflows and accelerate innovation.",
-      "url": "https://openai.com/index/deutsche-telekom-collaboration",
+      "title": "OpenAI appoints Denise Dresser as Chief Revenue Officer",
+      "description": "Denise Dresser is joining as Chief Revenue Officer, overseeing OpenAI’s global revenue strategy across enterprise and customer success. She will help more businesses put AI to work in their day-to-day operations as OpenAI continues to scale.",
+      "url": "https://openai.com/index/openai-appoints-denise-dresser",
       "category": "News",
       "date": "Tue, 09 Dec 2025 00:00:00 GMT",
       "source": "openai-rss",
@@ -1303,28 +1303,6 @@
       "parsedDate": "2025-11-19T06:00:00.000Z"
     },
     {
-      "title": "A free version of ChatGPT built for teachers",
-      "description": "ChatGPT for Teachers is a secure workspace with education‑grade privacy and admin controls. Free for verified U.S. K–12 educators through June 2027.",
-      "url": "https://openai.com/index/chatgpt-for-teachers",
-      "category": "Product",
-      "date": "Wed, 19 Nov 2025 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "product",
-      "importance": "normal",
-      "parsedDate": "2025-11-19T00:00:00.000Z"
-    },
-    {
-      "title": "How Scania is accelerating work with AI across its global workforce",
-      "description": "Description: Global manufacturer Scania is scaling AI with ChatGPT Enterprise. With team-based onboarding and strong guardrails, AI is boosting productivity, quality, and innovation.",
-      "url": "https://openai.com/index/scania",
-      "category": "ChatGPT",
-      "date": "Wed, 19 Nov 2025 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "chatgpt",
-      "importance": "normal",
-      "parsedDate": "2025-11-19T00:00:00.000Z"
-    },
-    {
       "title": "GPT-5.1-Codex-Max System Card",
       "description": "This system card outlines the comprehensive safety measures implemented for GPT‑5.1-CodexMax. It details both model-level mitigations, such as specialized safety training for harmful tasks and prompt injections, and product-level mitigations like agent sandboxing and configurable network access.",
       "url": "https://openai.com/index/gpt-5-1-codex-max-system-card",
@@ -1344,6 +1322,28 @@
       "source": "openai-rss",
       "normalizedCategory": "product",
       "importance": "high",
+      "parsedDate": "2025-11-19T00:00:00.000Z"
+    },
+    {
+      "title": "How Scania is accelerating work with AI across its global workforce",
+      "description": "Description: Global manufacturer Scania is scaling AI with ChatGPT Enterprise. With team-based onboarding and strong guardrails, AI is boosting productivity, quality, and innovation.",
+      "url": "https://openai.com/index/scania",
+      "category": "ChatGPT",
+      "date": "Wed, 19 Nov 2025 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "chatgpt",
+      "importance": "normal",
+      "parsedDate": "2025-11-19T00:00:00.000Z"
+    },
+    {
+      "title": "A free version of ChatGPT built for teachers",
+      "description": "ChatGPT for Teachers is a secure workspace with education‑grade privacy and admin controls. Free for verified U.S. K–12 educators through June 2027.",
+      "url": "https://openai.com/index/chatgpt-for-teachers",
+      "category": "Product",
+      "date": "Wed, 19 Nov 2025 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "product",
+      "importance": "normal",
       "parsedDate": "2025-11-19T00:00:00.000Z"
     },
     {
@@ -1391,6 +1391,17 @@
       "parsedDate": "2025-11-13T10:00:00.000Z"
     },
     {
+      "title": "Introducing group chats in ChatGPT",
+      "description": "We’re piloting group chats in ChatGPT to make collaboration simple. Bring others—and ChatGPT—into one shared conversation to plan, brainstorm, and create together.",
+      "url": "https://openai.com/index/group-chats-in-chatgpt",
+      "category": "News",
+      "date": "Thu, 13 Nov 2025 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
+      "importance": "high",
+      "parsedDate": "2025-11-13T00:00:00.000Z"
+    },
+    {
       "title": "Introducing GPT-5.1 for developers",
       "description": "GPT-5.1 is now available in the API, bringing faster adaptive reasoning, extended prompt caching, improved coding performance, and new apply_patch and shell tools.",
       "url": "https://openai.com/index/gpt-5-1-for-developers",
@@ -1410,17 +1421,6 @@
       "source": "openai-rss",
       "normalizedCategory": "chatgpt",
       "importance": "normal",
-      "parsedDate": "2025-11-13T00:00:00.000Z"
-    },
-    {
-      "title": "Introducing group chats in ChatGPT",
-      "description": "We’re piloting group chats in ChatGPT to make collaboration simple. Bring others—and ChatGPT—into one shared conversation to plan, brainstorm, and create together.",
-      "url": "https://openai.com/index/group-chats-in-chatgpt",
-      "category": "News",
-      "date": "Thu, 13 Nov 2025 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "announcement",
-      "importance": "high",
       "parsedDate": "2025-11-13T00:00:00.000Z"
     },
     {
@@ -1446,9 +1446,9 @@
       "parsedDate": "2025-11-12T06:00:00.000Z"
     },
     {
-      "title": "GPT-5.1 Instant and GPT-5.1 Thinking System Card Addendum",
-      "description": "This GPT-5 system card addendum provides updated safety metrics for GPT-5.1 Instant and Thinking, including new evaluations for mental health and emotional reliance.",
-      "url": "https://openai.com/index/gpt-5-system-card-addendum-gpt-5-1",
+      "title": "GPT-5.1: A smarter, more conversational ChatGPT",
+      "description": "We’re upgrading the GPT-5 series with warmer, more capable models and new ways to customize ChatGPT’s tone and style. GPT-5.1 starts rolling out today to paid users.",
+      "url": "https://openai.com/index/gpt-5-1",
       "category": "News",
       "date": "Wed, 12 Nov 2025 00:00:00 GMT",
       "source": "openai-rss",
@@ -1457,9 +1457,9 @@
       "parsedDate": "2025-11-12T00:00:00.000Z"
     },
     {
-      "title": "GPT-5.1: A smarter, more conversational ChatGPT",
-      "description": "We’re upgrading the GPT-5 series with warmer, more capable models and new ways to customize ChatGPT’s tone and style. GPT-5.1 starts rolling out today to paid users.",
-      "url": "https://openai.com/index/gpt-5-1",
+      "title": "GPT-5.1 Instant and GPT-5.1 Thinking System Card Addendum",
+      "description": "This GPT-5 system card addendum provides updated safety metrics for GPT-5.1 Instant and Thinking, including new evaluations for mental health and emotional reliance.",
+      "url": "https://openai.com/index/gpt-5-system-card-addendum-gpt-5-1",
       "category": "News",
       "date": "Wed, 12 Nov 2025 00:00:00 GMT",
       "source": "openai-rss",
@@ -1765,17 +1765,6 @@
       "parsedDate": "2025-10-23T09:00:00.000Z"
     },
     {
-      "title": "AI in South Korea—OpenAI’s Economic Blueprint",
-      "description": "OpenAI's Korea Economic Blueprint outlines how South Korea can scale trusted AI through sovereign capabilities and strategic partnerships to drive growth.",
-      "url": "https://openai.com/index/south-korea-economic-blueprint",
-      "category": "Company",
-      "date": "Thu, 23 Oct 2025 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "company",
-      "importance": "normal",
-      "parsedDate": "2025-10-23T00:00:00.000Z"
-    },
-    {
       "title": "Work smarter with your company knowledge in ChatGPT",
       "description": "Company knowledge brings context from your apps into ChatGPT for answers specific to your business, with clear citations, security, privacy, and admin controls. Available now for Business, Enterprise, and Edu users.",
       "url": "https://openai.com/index/introducing-company-knowledge",
@@ -1783,6 +1772,17 @@
       "date": "Thu, 23 Oct 2025 00:00:00 GMT",
       "source": "openai-rss",
       "normalizedCategory": "announcement",
+      "importance": "normal",
+      "parsedDate": "2025-10-23T00:00:00.000Z"
+    },
+    {
+      "title": "AI in South Korea—OpenAI’s Economic Blueprint",
+      "description": "OpenAI's Korea Economic Blueprint outlines how South Korea can scale trusted AI through sovereign capabilities and strategic partnerships to drive growth.",
+      "url": "https://openai.com/index/south-korea-economic-blueprint",
+      "category": "Company",
+      "date": "Thu, 23 Oct 2025 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "company",
       "importance": "normal",
       "parsedDate": "2025-10-23T00:00:00.000Z"
     },
@@ -2018,6 +2018,17 @@
       "parsedDate": "2025-09-30T00:00:00.000Z"
     },
     {
+      "title": "Sora 2 System Card",
+      "description": "Sora 2 is our new state of the art video and audio generation model. Building on the foundation of Sora, this new model introduces capabilities that have been difficult for prior video models to achieve– such as more accurate physics, sharper realism, synchronized audio, enhanced steerability, and an expanded stylistic range.",
+      "url": "https://openai.com/index/sora-2-system-card",
+      "category": "News",
+      "date": "Tue, 30 Sep 2025 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
+      "importance": "medium",
+      "parsedDate": "2025-09-30T00:00:00.000Z"
+    },
+    {
       "title": "Sora 2 is here",
       "description": "Our latest video generation model is more physically accurate, realistic, and controllable than prior systems. It also features synchronized dialogue and sound effects. Create with it in the new Sora app.",
       "url": "https://openai.com/index/sora-2",
@@ -2029,15 +2040,26 @@
       "parsedDate": "2025-09-30T00:00:00.000Z"
     },
     {
-      "title": "Sora 2 System Card",
-      "description": "Sora 2 is our new state of the art video and audio generation model. Building on the foundation of Sora, this new model introduces capabilities that have been difficult for prior video models to achieve– such as more accurate physics, sharper realism, synchronized audio, enhanced steerability, and an expanded stylistic range.",
-      "url": "https://openai.com/index/sora-2-system-card",
+      "title": "Empowering teams to unlock insights faster at OpenAI",
+      "description": "OpenAI’s research assistant helps teams analyze millions of support tickets, surface insights faster, and scale curiosity across the company.",
+      "url": "https://openai.com/index/openai-research-assistant",
       "category": "News",
-      "date": "Tue, 30 Sep 2025 00:00:00 GMT",
+      "date": "Mon, 29 Sep 2025 13:30:00 GMT",
       "source": "openai-rss",
       "normalizedCategory": "announcement",
-      "importance": "medium",
-      "parsedDate": "2025-09-30T00:00:00.000Z"
+      "importance": "normal",
+      "parsedDate": "2025-09-29T13:30:00.000Z"
+    },
+    {
+      "title": "Building OpenAI with OpenAI",
+      "description": "At OpenAI, we rely on our own technology to help streamline work, scale expertise, and drive outcomes. In our new series, OpenAI on OpenAI, we share lessons to help other organizations do the same.",
+      "url": "https://openai.com/index/building-openai-with-openai",
+      "category": "News",
+      "date": "Mon, 29 Sep 2025 13:30:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
+      "importance": "normal",
+      "parsedDate": "2025-09-29T13:30:00.000Z"
     },
     {
       "title": "Converting inbound leads into customers at OpenAI",
@@ -2065,28 +2087,6 @@
       "title": "Turning contracts into searchable data at OpenAI",
       "description": "OpenAI built a system to extract contract data quickly, cutting turnaround times and making it easier for teams to access the details they need.",
       "url": "https://openai.com/index/openai-contract-data-agent",
-      "category": "News",
-      "date": "Mon, 29 Sep 2025 13:30:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "announcement",
-      "importance": "normal",
-      "parsedDate": "2025-09-29T13:30:00.000Z"
-    },
-    {
-      "title": "Empowering teams to unlock insights faster at OpenAI",
-      "description": "OpenAI’s research assistant helps teams analyze millions of support tickets, surface insights faster, and scale curiosity across the company.",
-      "url": "https://openai.com/index/openai-research-assistant",
-      "category": "News",
-      "date": "Mon, 29 Sep 2025 13:30:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "announcement",
-      "importance": "normal",
-      "parsedDate": "2025-09-29T13:30:00.000Z"
-    },
-    {
-      "title": "Building OpenAI with OpenAI",
-      "description": "At OpenAI, we rely on our own technology to help streamline work, scale expertise, and drive outcomes. In our new series, OpenAI on OpenAI, we share lessons to help other organizations do the same.",
-      "url": "https://openai.com/index/building-openai-with-openai",
       "category": "News",
       "date": "Mon, 29 Sep 2025 13:30:00 GMT",
       "source": "openai-rss",
@@ -2293,9 +2293,9 @@
       "parsedDate": "2025-09-16T14:30:00.000Z"
     },
     {
-      "title": "Building towards age prediction",
-      "description": "Learn how OpenAI is building age prediction and parental controls in ChatGPT to create safer, age-appropriate experiences for teens while supporting families with new tools.",
-      "url": "https://openai.com/index/building-towards-age-prediction",
+      "title": "Teen safety, freedom, and privacy",
+      "description": "Explore OpenAI’s approach to balancing teen safety, freedom, and privacy in AI use.",
+      "url": "https://openai.com/index/teen-safety-freedom-and-privacy",
       "category": "Safety",
       "date": "Tue, 16 Sep 2025 06:00:00 GMT",
       "source": "openai-rss",
@@ -2304,9 +2304,9 @@
       "parsedDate": "2025-09-16T06:00:00.000Z"
     },
     {
-      "title": "Teen safety, freedom, and privacy",
-      "description": "Explore OpenAI’s approach to balancing teen safety, freedom, and privacy in AI use.",
-      "url": "https://openai.com/index/teen-safety-freedom-and-privacy",
+      "title": "Building towards age prediction",
+      "description": "Learn how OpenAI is building age prediction and parental controls in ChatGPT to create safer, age-appropriate experiences for teens while supporting families with new tools.",
+      "url": "https://openai.com/index/building-towards-age-prediction",
       "category": "Safety",
       "date": "Tue, 16 Sep 2025 06:00:00 GMT",
       "source": "openai-rss",
@@ -2579,17 +2579,6 @@
       "parsedDate": "2025-08-18T00:00:00.000Z"
     },
     {
-      "title": "OpenAI’s letter to Governor Newsom on harmonized regulation",
-      "description": "We’ve just sent a letter to Gov. Gavin Newsom calling for California to lead the way in harmonizing state-based AI regulation with national—and, by virtue of US leadership, emerging global—standards.",
-      "url": "https://openai.com/global-affairs/letter-to-governor-newsom-on-harmonized-regulation",
-      "category": "News",
-      "date": "Tue, 12 Aug 2025 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "announcement",
-      "importance": "normal",
-      "parsedDate": "2025-08-12T00:00:00.000Z"
-    },
-    {
       "title": "Scaling accounting capacity with OpenAI",
       "description": "Built with OpenAI o3, o3-Pro, GPT-4.1, and GPT-5, Basis’ AI agents help accounting firms save up to 30% of their time and expand capacity for advisory and growth.",
       "url": "https://openai.com/index/basis",
@@ -2601,9 +2590,20 @@
       "parsedDate": "2025-08-12T00:00:00.000Z"
     },
     {
-      "title": "GPT-5 and the new era of work",
-      "description": "GPT-5 is OpenAI’s most advanced model—transforming enterprise AI, automation, and workforce productivity in the new era of intelligent work.",
-      "url": "https://openai.com/index/gpt-5-new-era-of-work",
+      "title": "OpenAI’s letter to Governor Newsom on harmonized regulation",
+      "description": "We’ve just sent a letter to Gov. Gavin Newsom calling for California to lead the way in harmonizing state-based AI regulation with national—and, by virtue of US leadership, emerging global—standards.",
+      "url": "https://openai.com/global-affairs/letter-to-governor-newsom-on-harmonized-regulation",
+      "category": "News",
+      "date": "Tue, 12 Aug 2025 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
+      "importance": "normal",
+      "parsedDate": "2025-08-12T00:00:00.000Z"
+    },
+    {
+      "title": "Introducing GPT-5 for developers",
+      "description": "Introducing GPT-5 in our API platform—offering high reasoning performance, new controls for devs, and best-in-class results on real coding tasks.",
+      "url": "https://openai.com/index/introducing-gpt-5-for-developers",
       "category": "News",
       "date": "Thu, 07 Aug 2025 10:00:00 GMT",
       "source": "openai-rss",
@@ -2612,9 +2612,9 @@
       "parsedDate": "2025-08-07T10:00:00.000Z"
     },
     {
-      "title": "Introducing GPT-5 for developers",
-      "description": "Introducing GPT-5 in our API platform—offering high reasoning performance, new controls for devs, and best-in-class results on real coding tasks.",
-      "url": "https://openai.com/index/introducing-gpt-5-for-developers",
+      "title": "GPT-5 and the new era of work",
+      "description": "GPT-5 is OpenAI’s most advanced model—transforming enterprise AI, automation, and workforce productivity in the new era of intelligent work.",
+      "url": "https://openai.com/index/gpt-5-new-era-of-work",
       "category": "News",
       "date": "Thu, 07 Aug 2025 10:00:00 GMT",
       "source": "openai-rss",
@@ -2656,9 +2656,20 @@
       "parsedDate": "2025-08-07T00:01:00.000Z"
     },
     {
-      "title": "How Amgen uses GPT-5",
-      "description": "Learn how Amgen uses GPT-5.",
-      "url": "https://openai.com/index/gpt-5-amgen",
+      "title": "From hard refusals to safe-completions: toward output-centric safety training",
+      "description": "Discover how OpenAI's new safe-completions approach in GPT-5 improves both safety and helpfulness in AI responses—moving beyond hard refusals to nuanced, output-centric safety training for handling dual-use prompts.",
+      "url": "https://openai.com/index/gpt-5-safe-completions",
+      "category": "News",
+      "date": "Thu, 07 Aug 2025 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
+      "importance": "normal",
+      "parsedDate": "2025-08-07T00:00:00.000Z"
+    },
+    {
+      "title": "How Cursor uses GPT-5",
+      "description": "Learn how Cursor uses GPT-5.",
+      "url": "https://openai.com/index/gpt-5-cursor",
       "category": "News",
       "date": "Thu, 07 Aug 2025 00:00:00 GMT",
       "source": "openai-rss",
@@ -2700,25 +2711,14 @@
       "parsedDate": "2025-08-07T00:00:00.000Z"
     },
     {
-      "title": "How Cursor uses GPT-5",
-      "description": "Learn how Cursor uses GPT-5.",
-      "url": "https://openai.com/index/gpt-5-cursor",
+      "title": "How Amgen uses GPT-5",
+      "description": "Learn how Amgen uses GPT-5.",
+      "url": "https://openai.com/index/gpt-5-amgen",
       "category": "News",
       "date": "Thu, 07 Aug 2025 00:00:00 GMT",
       "source": "openai-rss",
       "normalizedCategory": "announcement",
       "importance": "high",
-      "parsedDate": "2025-08-07T00:00:00.000Z"
-    },
-    {
-      "title": "From hard refusals to safe-completions: toward output-centric safety training",
-      "description": "Discover how OpenAI's new safe-completions approach in GPT-5 improves both safety and helpfulness in AI responses—moving beyond hard refusals to nuanced, output-centric safety training for handling dual-use prompts.",
-      "url": "https://openai.com/index/gpt-5-safe-completions",
-      "category": "News",
-      "date": "Thu, 07 Aug 2025 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "announcement",
-      "importance": "normal",
       "parsedDate": "2025-08-07T00:00:00.000Z"
     },
     {
@@ -2876,17 +2876,6 @@
       "parsedDate": "2025-07-22T10:00:00.000Z"
     },
     {
-      "title": "Stargate advances with 4.5 GW partnership with Oracle",
-      "description": "Oracle and OpenAI have entered an agreement to develop 4.5 gigawatts of additional Stargate data center capacity in the U.S. This investment will create new jobs, accelerate America’s reindustrialization, and help advance U.S. AI leadership. It also marks a major milestone for Stargate, OpenAI’s AI infrastructure platform and long-term vision to deliver the benefits of AI to everyone.",
-      "url": "https://openai.com/index/stargate-advances-with-partnership-with-oracle",
-      "category": "News",
-      "date": "Tue, 22 Jul 2025 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "announcement",
-      "importance": "medium",
-      "parsedDate": "2025-07-22T00:00:00.000Z"
-    },
-    {
       "title": "OpenAI’s new economic analysis",
       "description": "Analysis provides insights into ChatGPT’s impact on the economy. OpenAI also launches new research collaboration to study AI’s broader effects on the labor market and productivity.",
       "url": "https://openai.com/global-affairs/new-economic-analysis",
@@ -2895,6 +2884,17 @@
       "source": "openai-rss",
       "normalizedCategory": "announcement",
       "importance": "normal",
+      "parsedDate": "2025-07-22T00:00:00.000Z"
+    },
+    {
+      "title": "Stargate advances with 4.5 GW partnership with Oracle",
+      "description": "Oracle and OpenAI have entered an agreement to develop 4.5 gigawatts of additional Stargate data center capacity in the U.S. This investment will create new jobs, accelerate America’s reindustrialization, and help advance U.S. AI leadership. It also marks a major milestone for Stargate, OpenAI’s AI infrastructure platform and long-term vision to deliver the benefits of AI to everyone.",
+      "url": "https://openai.com/index/stargate-advances-with-partnership-with-oracle",
+      "category": "News",
+      "date": "Tue, 22 Jul 2025 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
+      "importance": "medium",
       "parsedDate": "2025-07-22T00:00:00.000Z"
     },
     {
@@ -2953,10 +2953,10 @@
       "parsedDate": "2025-07-17T10:00:00.000Z"
     },
     {
-      "title": "Statement from the OpenAI Board of Directors on the Nonprofit Commission Report",
-      "description": "The Board of Directors thanks the members of the independent OpenAI Nonprofit Commission for their extensive work and engagement.",
-      "url": "https://openai.com/index/nonprofit-commission-report",
-      "category": "News",
+      "title": "Invideo AI uses OpenAI models to create videos 10x faster",
+      "description": "Invideo AI uses OpenAI’s GPT-4.1, gpt-image-1, and text-to-speech models to transform creative ideas into professional videos in minutes.",
+      "url": "https://openai.com/index/invideo-ai",
+      "category": "API",
       "date": "Thu, 17 Jul 2025 00:00:00 GMT",
       "source": "openai-rss",
       "normalizedCategory": "announcement",
@@ -2975,9 +2975,9 @@
       "parsedDate": "2025-07-17T00:00:00.000Z"
     },
     {
-      "title": "OpenAI nonprofit jam",
-      "description": "At OpenAI, we build tools to help people solve hard problems—including nonprofits working on the frontlines of their communities. The OpenAI Academy is teaming up with the Walton Family Foundation, Emerson Collective, and a network of local nonprofit organizations to host the Nonprofit Jam—a one-day, nationwide event bringing together more than 1,000 nonprofit leaders across 10 locations.",
-      "url": "https://openai.com/global-affairs/openai-nonprofit-jam",
+      "title": "Statement from the OpenAI Board of Directors on the Nonprofit Commission Report",
+      "description": "The Board of Directors thanks the members of the independent OpenAI Nonprofit Commission for their extensive work and engagement.",
+      "url": "https://openai.com/index/nonprofit-commission-report",
       "category": "News",
       "date": "Thu, 17 Jul 2025 00:00:00 GMT",
       "source": "openai-rss",
@@ -2986,10 +2986,10 @@
       "parsedDate": "2025-07-17T00:00:00.000Z"
     },
     {
-      "title": "Invideo AI uses OpenAI models to create videos 10x faster",
-      "description": "Invideo AI uses OpenAI’s GPT-4.1, gpt-image-1, and text-to-speech models to transform creative ideas into professional videos in minutes.",
-      "url": "https://openai.com/index/invideo-ai",
-      "category": "API",
+      "title": "OpenAI nonprofit jam",
+      "description": "At OpenAI, we build tools to help people solve hard problems—including nonprofits working on the frontlines of their communities. The OpenAI Academy is teaming up with the Walton Family Foundation, Emerson Collective, and a network of local nonprofit organizations to host the Nonprofit Jam—a one-day, nationwide event bringing together more than 1,000 nonprofit leaders across 10 locations.",
+      "url": "https://openai.com/global-affairs/openai-nonprofit-jam",
+      "category": "News",
       "date": "Thu, 17 Jul 2025 00:00:00 GMT",
       "source": "openai-rss",
       "normalizedCategory": "announcement",
@@ -4075,17 +4075,6 @@
       "parsedDate": "2025-02-04T00:00:00.000Z"
     },
     {
-      "title": "Creating nail art with ChatGPT",
-      "description": "Using ChatGPT to find inspiration for nail art",
-      "url": "https://openai.com/index/ten-tiny-canvases",
-      "category": "Story",
-      "date": "Tue, 04 Feb 2025 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "announcement",
-      "importance": "normal",
-      "parsedDate": "2025-02-04T00:00:00.000Z"
-    },
-    {
       "title": "Catching halibut with ChatGPT",
       "description": "Using ChatGPT to catch halibut",
       "url": "https://openai.com/index/fishing-for-first-timers",
@@ -4097,15 +4086,15 @@
       "parsedDate": "2025-02-04T00:00:00.000Z"
     },
     {
-      "title": "Understanding complex trends with deep research",
-      "description": "How OpenAI deep research helps Bain & Company understand complex industry trends.",
-      "url": "https://openai.com/index/deep-research",
+      "title": "Creating nail art with ChatGPT",
+      "description": "Using ChatGPT to find inspiration for nail art",
+      "url": "https://openai.com/index/ten-tiny-canvases",
       "category": "Story",
-      "date": "Sun, 02 Feb 2025 16:00:00 GMT",
+      "date": "Tue, 04 Feb 2025 00:00:00 GMT",
       "source": "openai-rss",
       "normalizedCategory": "announcement",
       "importance": "normal",
-      "parsedDate": "2025-02-02T16:00:00.000Z"
+      "parsedDate": "2025-02-04T00:00:00.000Z"
     },
     {
       "title": "Introducing deep research",
@@ -4116,6 +4105,17 @@
       "source": "openai-rss",
       "normalizedCategory": "research",
       "importance": "high",
+      "parsedDate": "2025-02-02T16:00:00.000Z"
+    },
+    {
+      "title": "Understanding complex trends with deep research",
+      "description": "How OpenAI deep research helps Bain & Company understand complex industry trends.",
+      "url": "https://openai.com/index/deep-research",
+      "category": "Story",
+      "date": "Sun, 02 Feb 2025 16:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
+      "importance": "normal",
       "parsedDate": "2025-02-02T16:00:00.000Z"
     },
     {
@@ -4163,14 +4163,14 @@
       "parsedDate": "2025-01-28T06:00:00.000Z"
     },
     {
-      "title": "Operator System Card",
-      "description": "Drawing from OpenAI’s established safety frameworks, this document highlights our multi-layered approach, including model and product mitigations we’ve implemented to protect against prompt engineering and jailbreaks, protect privacy and security, as well as details our external red teaming efforts, safety evaluations, and ongoing work to further refine these safeguards.",
-      "url": "https://openai.com/index/operator-system-card",
-      "category": "Safety & Alignment",
+      "title": "Introducing Operator",
+      "description": "A research preview of an agent that can use its own browser to perform tasks for you. Available to Pro users in the U.S.",
+      "url": "https://openai.com/index/introducing-operator",
+      "category": "Product",
       "date": "Thu, 23 Jan 2025 10:00:00 GMT",
       "source": "openai-rss",
-      "normalizedCategory": "safety",
-      "importance": "medium",
+      "normalizedCategory": "product",
+      "importance": "high",
       "parsedDate": "2025-01-23T10:00:00.000Z"
     },
     {
@@ -4185,14 +4185,14 @@
       "parsedDate": "2025-01-23T10:00:00.000Z"
     },
     {
-      "title": "Introducing Operator",
-      "description": "A research preview of an agent that can use its own browser to perform tasks for you. Available to Pro users in the U.S.",
-      "url": "https://openai.com/index/introducing-operator",
-      "category": "Product",
+      "title": "Operator System Card",
+      "description": "Drawing from OpenAI’s established safety frameworks, this document highlights our multi-layered approach, including model and product mitigations we’ve implemented to protect against prompt engineering and jailbreaks, protect privacy and security, as well as details our external red teaming efforts, safety evaluations, and ongoing work to further refine these safeguards.",
+      "url": "https://openai.com/index/operator-system-card",
+      "category": "Safety & Alignment",
       "date": "Thu, 23 Jan 2025 10:00:00 GMT",
       "source": "openai-rss",
-      "normalizedCategory": "product",
-      "importance": "high",
+      "normalizedCategory": "safety",
+      "importance": "medium",
       "parsedDate": "2025-01-23T10:00:00.000Z"
     },
     {
@@ -4218,17 +4218,6 @@
       "parsedDate": "2025-01-22T10:00:00.000Z"
     },
     {
-      "title": "Announcing The Stargate Project",
-      "description": "Announcing The Stargate Project",
-      "url": "https://openai.com/index/announcing-the-stargate-project",
-      "category": "Company",
-      "date": "Tue, 21 Jan 2025 13:30:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "company",
-      "importance": "high",
-      "parsedDate": "2025-01-21T13:30:00.000Z"
-    },
-    {
       "title": "Stargate Infrastructure",
       "description": "OpenAI, and our strategic partners, are thrilled about our shared vision for the Infrastructure of AGI. We are energized by the challenges we face and are excited by the prospect of partnering with firms across the industrial base to deliver against our ambitious mission. Specifically, we want to connect with firms across the built data center infrastructure landscape, from power and land to construction to equipment, and everything in between.",
       "url": "https://openai.com/form/stargate-infrastructure",
@@ -4237,6 +4226,17 @@
       "source": "openai-rss",
       "normalizedCategory": "announcement",
       "importance": "normal",
+      "parsedDate": "2025-01-21T13:30:00.000Z"
+    },
+    {
+      "title": "Announcing The Stargate Project",
+      "description": "Announcing The Stargate Project",
+      "url": "https://openai.com/index/announcing-the-stargate-project",
+      "category": "Company",
+      "date": "Tue, 21 Jan 2025 13:30:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "company",
+      "importance": "high",
       "parsedDate": "2025-01-21T13:30:00.000Z"
     },
     {
@@ -4350,9 +4350,9 @@
       "parsedDate": "2024-12-09T10:00:00.000Z"
     },
     {
-      "title": "Vallée Duhamel & Sora",
-      "description": "Filmmaking duo Vallée Duhamel explains how Sora helps build new worlds.",
-      "url": "https://openai.com/index/sora-vallee-duhamel",
+      "title": "Animator Lyndon Barrois creates new worlds with Sora",
+      "description": "Filmmaker Lyndon Barrois describes how to use Sora as a storytelling tool.",
+      "url": "https://openai.com/index/sora-lyndon-barrois",
       "category": "Story",
       "date": "Mon, 09 Dec 2024 00:00:00 GMT",
       "source": "openai-rss",
@@ -4361,9 +4361,20 @@
       "parsedDate": "2024-12-09T00:00:00.000Z"
     },
     {
-      "title": "Animator Lyndon Barrois creates new worlds with Sora",
-      "description": "Filmmaker Lyndon Barrois describes how to use Sora as a storytelling tool.",
-      "url": "https://openai.com/index/sora-lyndon-barrois",
+      "title": "Minne Atairu & Sora",
+      "description": "Interdisciplinary artist Minne Atairu discusses how Sora helps realize her vision.",
+      "url": "https://openai.com/index/sora-minne-atairu",
+      "category": "Story",
+      "date": "Mon, 09 Dec 2024 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
+      "importance": "normal",
+      "parsedDate": "2024-12-09T00:00:00.000Z"
+    },
+    {
+      "title": "Vallée Duhamel & Sora",
+      "description": "Filmmaking duo Vallée Duhamel explains how Sora helps build new worlds.",
+      "url": "https://openai.com/index/sora-vallee-duhamel",
       "category": "Story",
       "date": "Mon, 09 Dec 2024 00:00:00 GMT",
       "source": "openai-rss",
@@ -4380,17 +4391,6 @@
       "source": "openai-rss",
       "normalizedCategory": "safety",
       "importance": "medium",
-      "parsedDate": "2024-12-09T00:00:00.000Z"
-    },
-    {
-      "title": "Minne Atairu & Sora",
-      "description": "Interdisciplinary artist Minne Atairu discusses how Sora helps realize her vision.",
-      "url": "https://openai.com/index/sora-minne-atairu",
-      "category": "Story",
-      "date": "Mon, 09 Dec 2024 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "announcement",
-      "importance": "normal",
       "parsedDate": "2024-12-09T00:00:00.000Z"
     },
     {
@@ -4966,9 +4966,9 @@
       "parsedDate": "2024-09-12T00:00:00.000Z"
     },
     {
-      "title": "Decoding genetics with OpenAI o1",
-      "description": "Geneticist Catherine Brownstein demonstrates how OpenAI o1 can speed up the process of diagnosing rare medical challenges.",
-      "url": "https://openai.com/index/o1-genetics",
+      "title": "Economics and reasoning with OpenAI o1",
+      "description": "Economist Tyler Cowen explains how OpenAI o1 tackles complex economic questions.",
+      "url": "https://openai.com/index/o1-economics",
       "category": "Story",
       "date": "Thu, 12 Sep 2024 00:00:00 GMT",
       "source": "openai-rss",
@@ -4977,9 +4977,9 @@
       "parsedDate": "2024-09-12T00:00:00.000Z"
     },
     {
-      "title": "Economics and reasoning with OpenAI o1",
-      "description": "Economist Tyler Cowen explains how OpenAI o1 tackles complex economic questions.",
-      "url": "https://openai.com/index/o1-economics",
+      "title": "Decoding genetics with OpenAI o1",
+      "description": "Geneticist Catherine Brownstein demonstrates how OpenAI o1 can speed up the process of diagnosing rare medical challenges.",
+      "url": "https://openai.com/index/o1-genetics",
       "category": "Story",
       "date": "Thu, 12 Sep 2024 00:00:00 GMT",
       "source": "openai-rss",
@@ -5043,17 +5043,6 @@
       "parsedDate": "2024-08-20T11:00:00.000Z"
     },
     {
-      "title": "Fine-tuning now available for GPT-4o",
-      "description": "Fine-tune custom versions of GPT-4o to increase performance and accuracy for your applications",
-      "url": "https://openai.com/index/gpt-4o-fine-tuning",
-      "category": "Product",
-      "date": "Tue, 20 Aug 2024 10:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "product",
-      "importance": "high",
-      "parsedDate": "2024-08-20T10:00:00.000Z"
-    },
-    {
       "title": "Putting AI to work at Upwork",
       "description": "Upwork puts AI to work, uniting team members, operations and product development",
       "url": "https://openai.com/index/upwork",
@@ -5062,6 +5051,17 @@
       "source": "openai-rss",
       "normalizedCategory": "announcement",
       "importance": "normal",
+      "parsedDate": "2024-08-20T10:00:00.000Z"
+    },
+    {
+      "title": "Fine-tuning now available for GPT-4o",
+      "description": "Fine-tune custom versions of GPT-4o to increase performance and accuracy for your applications",
+      "url": "https://openai.com/index/gpt-4o-fine-tuning",
+      "category": "Product",
+      "date": "Tue, 20 Aug 2024 10:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "product",
+      "importance": "high",
       "parsedDate": "2024-08-20T10:00:00.000Z"
     },
     {
@@ -5296,6 +5296,17 @@
       "parsedDate": "2024-06-20T10:00:00.000Z"
     },
     {
+      "title": "Consistency Models",
+      "description": "Diffusion models have significantly advanced the fields of image, audio, and video generation, but they depend on an iterative sampling process that causes slow generation.",
+      "url": "https://openai.com/index/consistency-models",
+      "category": "Research",
+      "date": "Thu, 20 Jun 2024 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "research",
+      "importance": "normal",
+      "parsedDate": "2024-06-20T00:00:00.000Z"
+    },
+    {
       "title": "Improved Techniques for Training Consistency Models",
       "description": "Consistency models are a nascent family of generative models that can sample high quality data in one step without the need for adversarial training.",
       "url": "https://openai.com/index/improved-techniques-for-training-consistency-models",
@@ -5310,17 +5321,6 @@
       "title": "A Holistic Approach to Undesired Content Detection in the Real World",
       "description": "We present a holistic approach to building a robust and useful natural language classification system for real-world content moderation.",
       "url": "https://openai.com/index/a-holistic-approach-to-undesired-content-detection-in-the-real-world",
-      "category": "Research",
-      "date": "Thu, 20 Jun 2024 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "research",
-      "importance": "normal",
-      "parsedDate": "2024-06-20T00:00:00.000Z"
-    },
-    {
-      "title": "Consistency Models",
-      "description": "Diffusion models have significantly advanced the fields of image, audio, and video generation, but they depend on an iterative sampling process that causes slow generation.",
-      "url": "https://openai.com/index/consistency-models",
       "category": "Research",
       "date": "Thu, 20 Jun 2024 00:00:00 GMT",
       "source": "openai-rss",
@@ -5615,17 +5615,6 @@
       "parsedDate": "2024-05-13T10:05:00.000Z"
     },
     {
-      "title": "Introducing GPT-4o and more tools to ChatGPT free users",
-      "description": "Introducing GPT-4o and more tools to ChatGPT free users\nWe are launching our newest flagship model and making more capabilities available for free in ChatGPT.",
-      "url": "https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free",
-      "category": "Product",
-      "date": "Mon, 13 May 2024 10:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "product",
-      "importance": "high",
-      "parsedDate": "2024-05-13T10:00:00.000Z"
-    },
-    {
       "title": "Spring Update",
       "description": "Introducing GPT-4o and making more capabilities available for free in ChatGPT.",
       "url": "https://openai.com/index/spring-update",
@@ -5634,6 +5623,17 @@
       "source": "openai-rss",
       "normalizedCategory": "announcement",
       "importance": "medium",
+      "parsedDate": "2024-05-13T10:00:00.000Z"
+    },
+    {
+      "title": "Introducing GPT-4o and more tools to ChatGPT free users",
+      "description": "Introducing GPT-4o and more tools to ChatGPT free users\nWe are launching our newest flagship model and making more capabilities available for free in ChatGPT.",
+      "url": "https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free",
+      "category": "Product",
+      "date": "Mon, 13 May 2024 10:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "product",
+      "importance": "high",
       "parsedDate": "2024-05-13T10:00:00.000Z"
     },
     {
@@ -5703,9 +5703,9 @@
       "parsedDate": "2024-04-24T00:00:00.000Z"
     },
     {
-      "title": "GPT-4 API general availability and deprecation of older models in the Completions API",
-      "description": "GPT-3.5 Turbo, DALL·E and Whisper APIs are also generally available, and we are releasing a deprecation plan for older models of the Completions API, which will retire at the beginning of 2024.",
-      "url": "https://openai.com/index/gpt-4-api-general-availability",
+      "title": "Introducing ChatGPT and Whisper APIs",
+      "description": "Developers can now integrate ChatGPT and Whisper models into their apps and products through our API.",
+      "url": "https://openai.com/index/introducing-chatgpt-and-whisper-apis",
       "category": "Product",
       "date": "Wed, 24 Apr 2024 00:00:00 GMT",
       "source": "openai-rss",
@@ -5714,9 +5714,9 @@
       "parsedDate": "2024-04-24T00:00:00.000Z"
     },
     {
-      "title": "Introducing ChatGPT and Whisper APIs",
-      "description": "Developers can now integrate ChatGPT and Whisper models into their apps and products through our API.",
-      "url": "https://openai.com/index/introducing-chatgpt-and-whisper-apis",
+      "title": "GPT-4 API general availability and deprecation of older models in the Completions API",
+      "description": "GPT-3.5 Turbo, DALL·E and Whisper APIs are also generally available, and we are releasing a deprecation plan for older models of the Completions API, which will retire at the beginning of 2024.",
+      "url": "https://openai.com/index/gpt-4-api-general-availability",
       "category": "Product",
       "date": "Wed, 24 Apr 2024 00:00:00 GMT",
       "source": "openai-rss",
@@ -5802,17 +5802,6 @@
       "parsedDate": "2024-04-02T00:00:00.000Z"
     },
     {
-      "title": "Reducing health insurance costs and improving care",
-      "description": "Oscar brings AI to health insurance, reducing costs and improving patient care.",
-      "url": "https://openai.com/index/oscar",
-      "category": "Story",
-      "date": "Mon, 01 Apr 2024 00:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "announcement",
-      "importance": "normal",
-      "parsedDate": "2024-04-01T00:00:00.000Z"
-    },
-    {
       "title": "Start using ChatGPT instantly",
       "description": "We’re making it easier for people to experience the benefits of AI without needing to sign up",
       "url": "https://openai.com/index/start-using-chatgpt-instantly",
@@ -5820,6 +5809,17 @@
       "date": "Mon, 01 Apr 2024 00:00:00 GMT",
       "source": "openai-rss",
       "normalizedCategory": "product",
+      "importance": "normal",
+      "parsedDate": "2024-04-01T00:00:00.000Z"
+    },
+    {
+      "title": "Reducing health insurance costs and improving care",
+      "description": "Oscar brings AI to health insurance, reducing costs and improving patient care.",
+      "url": "https://openai.com/index/oscar",
+      "category": "Story",
+      "date": "Mon, 01 Apr 2024 00:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
       "importance": "normal",
       "parsedDate": "2024-04-01T00:00:00.000Z"
     },
@@ -5879,17 +5879,6 @@
       "parsedDate": "2024-03-21T07:00:00.000Z"
     },
     {
-      "title": "Reimagining the email experience with AI",
-      "description": "Superhuman introduces a new era of email with OpenAI.",
-      "url": "https://openai.com/index/superhuman",
-      "category": "Story",
-      "date": "Mon, 18 Mar 2024 07:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "announcement",
-      "importance": "normal",
-      "parsedDate": "2024-03-18T07:00:00.000Z"
-    },
-    {
       "title": "Building a data-driven, efficient culture with AI",
       "description": "Holiday Extras rolls out ChatGPT Enterprise across every team, boosting productivity by 500 hours weekly.",
       "url": "https://openai.com/index/holiday-extras",
@@ -5904,6 +5893,17 @@
       "title": "Enterprise-ready trust and safety",
       "description": "Salesforce integrates OpenAI’s enterprise-ready LLMs to transform customer applications.",
       "url": "https://openai.com/index/salesforce",
+      "category": "Story",
+      "date": "Mon, 18 Mar 2024 07:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
+      "importance": "normal",
+      "parsedDate": "2024-03-18T07:00:00.000Z"
+    },
+    {
+      "title": "Reimagining the email experience with AI",
+      "description": "Superhuman introduces a new era of email with OpenAI.",
+      "url": "https://openai.com/index/superhuman",
       "category": "Story",
       "date": "Mon, 18 Mar 2024 07:00:00 GMT",
       "source": "openai-rss",
@@ -5934,17 +5934,6 @@
       "parsedDate": "2024-03-13T07:00:00.000Z"
     },
     {
-      "title": "OpenAI announces new members to board of directors",
-      "description": "Dr. Sue Desmond-Hellmann, Nicole Seligman, Fidji Simo join; Sam Altman rejoins board",
-      "url": "https://openai.com/index/openai-announces-new-members-to-board-of-directors",
-      "category": "Company",
-      "date": "Fri, 08 Mar 2024 08:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "company",
-      "importance": "normal",
-      "parsedDate": "2024-03-08T08:00:00.000Z"
-    },
-    {
       "title": "Review completed & Altman, Brockman to continue to lead OpenAI",
       "description": "New board members named and enhancements to the governance structure introduced",
       "url": "https://openai.com/index/review-completed-altman-brockman-to-continue-to-lead-openai",
@@ -5956,9 +5945,20 @@
       "parsedDate": "2024-03-08T08:00:00.000Z"
     },
     {
-      "title": "Improving health literacy and patient well-being",
-      "description": "Lifespan uses GPT-4 to radically improve health literacy and patient outcomes.",
-      "url": "https://openai.com/index/lifespan",
+      "title": "OpenAI announces new members to board of directors",
+      "description": "Dr. Sue Desmond-Hellmann, Nicole Seligman, Fidji Simo join; Sam Altman rejoins board",
+      "url": "https://openai.com/index/openai-announces-new-members-to-board-of-directors",
+      "category": "Company",
+      "date": "Fri, 08 Mar 2024 08:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "company",
+      "importance": "normal",
+      "parsedDate": "2024-03-08T08:00:00.000Z"
+    },
+    {
+      "title": "Sparking a more productive company with ChatGPT Enterprise",
+      "description": "Match Group uses ChatGPT Enterprise to spark creativity and impact.",
+      "url": "https://openai.com/index/match-group",
       "category": "Story",
       "date": "Wed, 06 Mar 2024 08:00:00 GMT",
       "source": "openai-rss",
@@ -5978,9 +5978,9 @@
       "parsedDate": "2024-03-06T08:00:00.000Z"
     },
     {
-      "title": "Sparking a more productive company with ChatGPT Enterprise",
-      "description": "Match Group uses ChatGPT Enterprise to spark creativity and impact.",
-      "url": "https://openai.com/index/match-group",
+      "title": "Improving health literacy and patient well-being",
+      "description": "Lifespan uses GPT-4 to radically improve health literacy and patient outcomes.",
+      "url": "https://openai.com/index/lifespan",
       "category": "Story",
       "date": "Wed, 06 Mar 2024 08:00:00 GMT",
       "source": "openai-rss",
@@ -6154,9 +6154,9 @@
       "parsedDate": "2023-12-14T08:00:00.000Z"
     },
     {
-      "title": "Superalignment Fast Grants",
-      "description": "We’re launching $10M in grants to support technical research towards the alignment and safety of superhuman AI systems, including weak-to-strong generalization, interpretability, scalable oversight, and more.",
-      "url": "https://openai.com/index/superalignment-fast-grants",
+      "title": "Practices for Governing Agentic AI Systems",
+      "description": null,
+      "url": "https://openai.com/index/practices-for-governing-agentic-ai-systems",
       "category": "Safety & Alignment",
       "date": "Thu, 14 Dec 2023 08:00:00 GMT",
       "source": "openai-rss",
@@ -6165,9 +6165,9 @@
       "parsedDate": "2023-12-14T08:00:00.000Z"
     },
     {
-      "title": "Practices for Governing Agentic AI Systems",
-      "description": null,
-      "url": "https://openai.com/index/practices-for-governing-agentic-ai-systems",
+      "title": "Superalignment Fast Grants",
+      "description": "We’re launching $10M in grants to support technical research towards the alignment and safety of superhuman AI systems, including weak-to-strong generalization, interpretability, scalable oversight, and more.",
+      "url": "https://openai.com/index/superalignment-fast-grants",
       "category": "Safety & Alignment",
       "date": "Thu, 14 Dec 2023 08:00:00 GMT",
       "source": "openai-rss",
@@ -6297,17 +6297,6 @@
       "parsedDate": "2023-10-19T07:00:00.000Z"
     },
     {
-      "title": "Simplifying contract reviews with AI",
-      "description": "Ironclad uses GPT-4 to simplify the contract review process.",
-      "url": "https://openai.com/index/ironclad",
-      "category": "Story",
-      "date": "Wed, 11 Oct 2023 07:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "announcement",
-      "importance": "normal",
-      "parsedDate": "2023-10-11T07:00:00.000Z"
-    },
-    {
       "title": "OpenAI’s technology explained",
       "description": null,
       "url": "https://openai.com/global-affairs/openai-technology-explained",
@@ -6333,6 +6322,17 @@
       "title": "Evolving online forms into dynamic data",
       "description": "Typeform evolves online forms into dynamic and conversational data collection experiences with GPT-3.5 and GPT-4.",
       "url": "https://openai.com/index/typeform",
+      "category": "Story",
+      "date": "Wed, 11 Oct 2023 07:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
+      "importance": "normal",
+      "parsedDate": "2023-10-11T07:00:00.000Z"
+    },
+    {
+      "title": "Simplifying contract reviews with AI",
+      "description": "Ironclad uses GPT-4 to simplify the contract review process.",
+      "url": "https://openai.com/index/ironclad",
       "category": "Story",
       "date": "Wed, 11 Oct 2023 07:00:00 GMT",
       "source": "openai-rss",
@@ -6572,9 +6572,9 @@
       "parsedDate": "2023-06-28T07:00:00.000Z"
     },
     {
-      "title": "Testimony before the U.S. Senate",
-      "description": "The following is the written testimony of Sam Altman, Chief Executive Officer of OpenAI, before the U.S. Senate Committee on the Judiciary (Subcommittee on Privacy, Technology, & the Law).",
-      "url": "https://openai.com/global-affairs/testimony-of-sam-altman-before-the-us-senate",
+      "title": "Questions for the Record",
+      "description": "The following are the Questions for the Record following Sam Altman's testimony before the U.S. Senate Committee on the Judiciary (Subcommittee on Privacy, Technology, & the Law).",
+      "url": "https://openai.com/global-affairs/sam-altman-senate-questions-for-the-record",
       "category": "Global Affairs",
       "date": "Thu, 22 Jun 2023 00:00:00 GMT",
       "source": "openai-rss",
@@ -6583,9 +6583,9 @@
       "parsedDate": "2023-06-22T00:00:00.000Z"
     },
     {
-      "title": "Questions for the Record",
-      "description": "The following are the Questions for the Record following Sam Altman's testimony before the U.S. Senate Committee on the Judiciary (Subcommittee on Privacy, Technology, & the Law).",
-      "url": "https://openai.com/global-affairs/sam-altman-senate-questions-for-the-record",
+      "title": "Testimony before the U.S. Senate",
+      "description": "The following is the written testimony of Sam Altman, Chief Executive Officer of OpenAI, before the U.S. Senate Committee on the Judiciary (Subcommittee on Privacy, Technology, & the Law).",
+      "url": "https://openai.com/global-affairs/testimony-of-sam-altman-before-the-us-senate",
       "category": "Global Affairs",
       "date": "Thu, 22 Jun 2023 00:00:00 GMT",
       "source": "openai-rss",
@@ -6748,17 +6748,6 @@
       "parsedDate": "2023-03-17T07:00:00.000Z"
     },
     {
-      "title": "Streamlining financial solutions for safety and growth",
-      "description": "Stripe leverages GPT-4 to streamline user experience and combat fraud.",
-      "url": "https://openai.com/index/stripe",
-      "category": "Story",
-      "date": "Tue, 14 Mar 2023 07:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "announcement",
-      "importance": "normal",
-      "parsedDate": "2023-03-14T07:00:00.000Z"
-    },
-    {
       "title": "Powering virtual education for the classroom",
       "description": "Khan Academy explores the potential for GPT-4 in a limited pilot program.",
       "url": "https://openai.com/index/khan-academy",
@@ -6770,9 +6759,9 @@
       "parsedDate": "2023-03-14T07:00:00.000Z"
     },
     {
-      "title": "Transforming visual accessibility",
-      "description": "Be My Eyes uses GPT-4 to transform visual accessibility.",
-      "url": "https://openai.com/index/be-my-eyes",
+      "title": "Streamlining financial solutions for safety and growth",
+      "description": "Stripe leverages GPT-4 to streamline user experience and combat fraud.",
+      "url": "https://openai.com/index/stripe",
       "category": "Story",
       "date": "Tue, 14 Mar 2023 07:00:00 GMT",
       "source": "openai-rss",
@@ -6811,6 +6800,17 @@
       "source": "openai-rss",
       "normalizedCategory": "research",
       "importance": "high",
+      "parsedDate": "2023-03-14T07:00:00.000Z"
+    },
+    {
+      "title": "Transforming visual accessibility",
+      "description": "Be My Eyes uses GPT-4 to transform visual accessibility.",
+      "url": "https://openai.com/index/be-my-eyes",
+      "category": "Story",
+      "date": "Tue, 14 Mar 2023 07:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "announcement",
+      "importance": "normal",
       "parsedDate": "2023-03-14T07:00:00.000Z"
     },
     {
@@ -7386,17 +7386,6 @@
       "parsedDate": "2021-09-23T07:00:00.000Z"
     },
     {
-      "title": "TruthfulQA: Measuring how models mimic human falsehoods",
-      "description": null,
-      "url": "https://openai.com/index/truthfulqa",
-      "category": "Research",
-      "date": "Wed, 08 Sep 2021 07:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "research",
-      "importance": "normal",
-      "parsedDate": "2021-09-08T07:00:00.000Z"
-    },
-    {
       "title": "Helen Toner joins OpenAI’s board of directors",
       "description": "Today, we’re excited to announce the appointment of Helen Toner to our board of directors.",
       "url": "https://openai.com/index/helen-toner-joins",
@@ -7404,6 +7393,17 @@
       "date": "Wed, 08 Sep 2021 07:00:00 GMT",
       "source": "openai-rss",
       "normalizedCategory": "company",
+      "importance": "normal",
+      "parsedDate": "2021-09-08T07:00:00.000Z"
+    },
+    {
+      "title": "TruthfulQA: Measuring how models mimic human falsehoods",
+      "description": null,
+      "url": "https://openai.com/index/truthfulqa",
+      "category": "Research",
+      "date": "Wed, 08 Sep 2021 07:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "research",
       "importance": "normal",
       "parsedDate": "2021-09-08T07:00:00.000Z"
     },
@@ -7738,9 +7738,9 @@
       "parsedDate": "2019-12-03T08:00:00.000Z"
     },
     {
-      "title": "Safety Gym",
-      "description": "We’re releasing Safety Gym, a suite of environments and tools for measuring progress towards reinforcement learning agents that respect safety constraints while training.",
-      "url": "https://openai.com/index/safety-gym",
+      "title": "Benchmarking safe exploration in deep reinforcement learning",
+      "description": null,
+      "url": "https://openai.com/index/benchmarking-safe-exploration-in-deep-reinforcement-learning",
       "category": "Safety & Alignment",
       "date": "Thu, 21 Nov 2019 08:00:00 GMT",
       "source": "openai-rss",
@@ -7749,9 +7749,9 @@
       "parsedDate": "2019-11-21T08:00:00.000Z"
     },
     {
-      "title": "Benchmarking safe exploration in deep reinforcement learning",
-      "description": null,
-      "url": "https://openai.com/index/benchmarking-safe-exploration-in-deep-reinforcement-learning",
+      "title": "Safety Gym",
+      "description": "We’re releasing Safety Gym, a suite of environments and tools for measuring progress towards reinforcement learning agents that respect safety constraints while training.",
+      "url": "https://openai.com/index/safety-gym",
       "category": "Safety & Alignment",
       "date": "Thu, 21 Nov 2019 08:00:00 GMT",
       "source": "openai-rss",
@@ -8431,17 +8431,6 @@
       "parsedDate": "2018-03-20T07:00:00.000Z"
     },
     {
-      "title": "Report from the OpenAI hackathon",
-      "description": "On March 3rd, we hosted our first hackathon with 100 members of the artificial intelligence community.",
-      "url": "https://openai.com/index/hackathon-follow-up",
-      "category": "Company",
-      "date": "Thu, 15 Mar 2018 07:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "company",
-      "importance": "normal",
-      "parsedDate": "2018-03-15T07:00:00.000Z"
-    },
-    {
       "title": "Improving GANs using optimal transport",
       "description": null,
       "url": "https://openai.com/index/improving-gans-using-optimal-transport",
@@ -8449,6 +8438,17 @@
       "date": "Thu, 15 Mar 2018 07:00:00 GMT",
       "source": "openai-rss",
       "normalizedCategory": "research",
+      "importance": "normal",
+      "parsedDate": "2018-03-15T07:00:00.000Z"
+    },
+    {
+      "title": "Report from the OpenAI hackathon",
+      "description": "On March 3rd, we hosted our first hackathon with 100 members of the artificial intelligence community.",
+      "url": "https://openai.com/index/hackathon-follow-up",
+      "category": "Company",
+      "date": "Thu, 15 Mar 2018 07:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "company",
       "importance": "normal",
       "parsedDate": "2018-03-15T07:00:00.000Z"
     },
@@ -8530,17 +8530,6 @@
       "parsedDate": "2018-02-22T08:00:00.000Z"
     },
     {
-      "title": "Preparing for malicious uses of AI",
-      "description": "We’ve co-authored a paper that forecasts how malicious actors could misuse AI technology, and potential ways we can prevent and mitigate these threats. This paper is the outcome of almost a year of sustained work with our colleagues at the Future of Humanity Institute, the Centre for the Study of Existential Risk, the Center for a New American Security, the Electronic Frontier Foundation, and others.",
-      "url": "https://openai.com/index/preparing-for-malicious-uses-of-ai",
-      "category": "Safety & Alignment",
-      "date": "Tue, 20 Feb 2018 08:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "safety",
-      "importance": "normal",
-      "parsedDate": "2018-02-20T08:00:00.000Z"
-    },
-    {
       "title": "OpenAI supporters",
       "description": "We’re excited to welcome new donors to OpenAI.",
       "url": "https://openai.com/index/openai-supporters",
@@ -8548,6 +8537,17 @@
       "date": "Tue, 20 Feb 2018 08:00:00 GMT",
       "source": "openai-rss",
       "normalizedCategory": "company",
+      "importance": "normal",
+      "parsedDate": "2018-02-20T08:00:00.000Z"
+    },
+    {
+      "title": "Preparing for malicious uses of AI",
+      "description": "We’ve co-authored a paper that forecasts how malicious actors could misuse AI technology, and potential ways we can prevent and mitigate these threats. This paper is the outcome of almost a year of sustained work with our colleagues at the Future of Humanity Institute, the Centre for the Study of Existential Risk, the Center for a New American Security, the Electronic Frontier Foundation, and others.",
+      "url": "https://openai.com/index/preparing-for-malicious-uses-of-ai",
+      "category": "Safety & Alignment",
+      "date": "Tue, 20 Feb 2018 08:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "safety",
       "importance": "normal",
       "parsedDate": "2018-02-20T08:00:00.000Z"
     },
@@ -8651,9 +8651,9 @@
       "parsedDate": "2017-10-19T07:00:00.000Z"
     },
     {
-      "title": "Sim-to-real transfer of robotic control with dynamics randomization",
+      "title": "Asymmetric actor critic for image-based robot learning",
       "description": null,
-      "url": "https://openai.com/index/sim-to-real-transfer-of-robotic-control-with-dynamics-randomization",
+      "url": "https://openai.com/index/asymmetric-actor-critic-for-image-based-robot-learning",
       "category": "Research",
       "date": "Wed, 18 Oct 2017 07:00:00 GMT",
       "source": "openai-rss",
@@ -8662,9 +8662,9 @@
       "parsedDate": "2017-10-18T07:00:00.000Z"
     },
     {
-      "title": "Asymmetric actor critic for image-based robot learning",
+      "title": "Sim-to-real transfer of robotic control with dynamics randomization",
       "description": null,
-      "url": "https://openai.com/index/asymmetric-actor-critic-for-image-based-robot-learning",
+      "url": "https://openai.com/index/sim-to-real-transfer-of-robotic-control-with-dynamics-randomization",
       "category": "Research",
       "date": "Wed, 18 Oct 2017 07:00:00 GMT",
       "source": "openai-rss",
@@ -9102,17 +9102,6 @@
       "parsedDate": "2016-12-05T08:00:00.000Z"
     },
     {
-      "title": "OpenAI and Microsoft",
-      "description": "We’re working with Microsoft to start running most of our large-scale experiments on Azure.",
-      "url": "https://openai.com/index/openai-and-microsoft",
-      "category": "Company",
-      "date": "Tue, 15 Nov 2016 08:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "company",
-      "importance": "normal",
-      "parsedDate": "2016-11-15T08:00:00.000Z"
-    },
-    {
       "title": "#Exploration: A study of count-based exploration for deep reinforcement learning",
       "description": null,
       "url": "https://openai.com/index/exploration",
@@ -9120,6 +9109,17 @@
       "date": "Tue, 15 Nov 2016 08:00:00 GMT",
       "source": "openai-rss",
       "normalizedCategory": "research",
+      "importance": "normal",
+      "parsedDate": "2016-11-15T08:00:00.000Z"
+    },
+    {
+      "title": "OpenAI and Microsoft",
+      "description": "We’re working with Microsoft to start running most of our large-scale experiments on Azure.",
+      "url": "https://openai.com/index/openai-and-microsoft",
+      "category": "Company",
+      "date": "Tue, 15 Nov 2016 08:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "company",
       "importance": "normal",
       "parsedDate": "2016-11-15T08:00:00.000Z"
     },
@@ -9289,17 +9289,6 @@
       "parsedDate": "2016-06-16T07:00:00.000Z"
     },
     {
-      "title": "Adversarial training methods for semi-supervised text classification",
-      "description": null,
-      "url": "https://openai.com/index/adversarial-training-methods-for-semi-supervised-text-classification",
-      "category": "Safety & Alignment",
-      "date": "Wed, 25 May 2016 07:00:00 GMT",
-      "source": "openai-rss",
-      "normalizedCategory": "safety",
-      "importance": "normal",
-      "parsedDate": "2016-05-25T07:00:00.000Z"
-    },
-    {
       "title": "Team update",
       "description": "We’d like to welcome the latest set of team members to OpenAI (and we’re still hiring!)",
       "url": "https://openai.com/index/team-update",
@@ -9308,6 +9297,17 @@
       "source": "openai-rss",
       "normalizedCategory": "company",
       "importance": "medium",
+      "parsedDate": "2016-05-25T07:00:00.000Z"
+    },
+    {
+      "title": "Adversarial training methods for semi-supervised text classification",
+      "description": null,
+      "url": "https://openai.com/index/adversarial-training-methods-for-semi-supervised-text-classification",
+      "category": "Safety & Alignment",
+      "date": "Wed, 25 May 2016 07:00:00 GMT",
+      "source": "openai-rss",
+      "normalizedCategory": "safety",
+      "importance": "normal",
       "parsedDate": "2016-05-25T07:00:00.000Z"
     },
     {

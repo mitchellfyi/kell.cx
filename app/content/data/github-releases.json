@@ -1,10 +1,65 @@
 {
-  "generatedAt": "2026-02-21T05:17:21.866Z",
+  "generatedAt": "2026-02-22T05:23:32.964Z",
   "source": "GitHub API",
   "reposTracked": 18,
   "recentCount": 33,
   "totalReleasesFound": 80,
   "recentReleases": [
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.12-stable",
+      "tag": "v1.81.12-stable",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.12-stable",
+      "publishedAt": "2026-02-21T22:46:10Z",
+      "isPrerelease": false,
+      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.12.rc.1...v1.81.12-stable"
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8123",
+      "tag": "b8123",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8123",
+      "publishedAt": "2026-02-21T19:59:51Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nAdd a build target to generate ROCm artifacts using ROCm 7.2 (#19433)\n\nThis builds the following targets:\n * gfx1151\n * gfx1150\n * gfx1200\n * gfx1201\n * gfx1100\n * gfx1101\n * gfx1030\n * gfx908\n * gfx90a\n * gfx942\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://git..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8122",
+      "tag": "b8122",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8122",
+      "publishedAt": "2026-02-21T18:41:43Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nvendor : update cpp-httplib to 0.33.1 (#19778)\n\nSigned-off-by: Adrien Gallouët <adrien@gallouet.fr>\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8122/llama-b8122-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](http..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8121",
+      "tag": "b8121",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8121",
+      "publishedAt": "2026-02-21T11:16:15Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nImprove CUDA graph capture (#19754)\n\n* Improve CUDA graph capture\n\nCurrently, CUDA graphs are eagerly enabled on the first call to ggml_backend_cuda_graph_compute. If the graph properties keep changing (4+ consecutive updates), the graph is permanently disabled. This is suboptimal be..."
+    },
+    {
+      "repo": "ollama/ollama",
+      "company": "Ollama",
+      "category": "local",
+      "name": "v0.17.0",
+      "tag": "v0.17.0-rc1",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.17.0-rc1",
+      "publishedAt": "2026-02-21T06:40:46Z",
+      "isPrerelease": true,
+      "body": "## What's Changed\n* mlx: try loading library via rpath before searching directories by @natl-set in https://github.com/ollama/ollama/pull/14322\n* consolidate the tokenizer by @pdevine in https://github.com/ollama/ollama/pull/14327\n* app: expose server's default context length to UI by @jmorganca in ..."
+    },
     {
       "repo": "ggerganov/llama.cpp",
       "company": "llama.cpp",
@@ -61,28 +116,6 @@
       "body": "Release notes are available [here](https://youtrack.jetbrains.com/articles/IDEA-A-2100662633)"
     },
     {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8117",
-      "tag": "b8117",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8117",
-      "publishedAt": "2026-02-20T13:16:12Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nggml-cpu: add RVV vec dot kernels for quantization types (#18784)\n\n* ggml-cpu: add rvv vec_dot for iq2_s\n\nCo-authored-by: Rehan Qasim <rehan.qasim@10xengineers.ai>\n\n* ggml-cpu: add rvv vec_dot for iq3_s\n\nCo-authored-by: Rehan Qasim <rehan.qasim@10xengineers.ai>\n\n* ggml-cpu: add rvv v..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8116",
-      "tag": "b8116",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8116",
-      "publishedAt": "2026-02-20T10:16:56Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nquantize : add --dry-run option (#19526)\n\n* clean slate for branch\n\n* use 6 characters for tensor dims\n\n* add --dry-run to llama-quantize\n\n* use 6 characters for tensor dims (cont.)\n\n* no need to re-calculate ggml_nbytes for tensor\n\n* fix indent\n\n* show model and quant BPW when quant..."
-    },
-    {
       "repo": "JetBrains/intellij-community",
       "company": "JetBrains",
       "category": "ide",
@@ -103,17 +136,6 @@
       "publishedAt": "2026-02-20T09:08:34Z",
       "isPrerelease": false,
       "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.9-stable.gemini.3.1-pro-patch...v1.81.9-stable.gemini.3.1-pro.sonnet-4.6"
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8115",
-      "tag": "b8115",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8115",
-      "publishedAt": "2026-02-20T05:05:10Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\ntest: mul_mat tests with huge batch size (#19519)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8115/llama-b8115-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/downloa..."
     },
     {
       "repo": "BerriAI/litellm",
@@ -169,17 +191,6 @@
       "publishedAt": "2026-02-19T22:11:27Z",
       "isPrerelease": false,
       "body": "## What's Changed\n*  New `ollama launch cline` added for the Cline CLI\n* `ollama launch <integration>` will now always show the model picker\n* Added Gemma 3, Llama and Qwen 3 architectures to MLX runner\n\n## New Contributors\n* @hellosaumil made their first contribution in https://github.com/ollama/ol..."
-    },
-    {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "v1.81.13.dev1",
-      "tag": "v1.81.13.dev1",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.13.dev1",
-      "publishedAt": "2026-02-19T20:07:33Z",
-      "isPrerelease": false,
-      "body": "## What's Changed\n* Generic Guardrails: Add a configurable fallback to handle generic guardrail endpoint connection failures by @itayov in https://github.com/BerriAI/litellm/pull/21245\n* fix: preserve metadata for custom callbacks on codex/responses path (… by @saneroen in https://github.com/BerriAI..."
     },
     {
       "repo": "anthropics/anthropic-sdk-python",
@@ -213,20 +224,64 @@
       "publishedAt": "2026-02-18T23:03:00Z",
       "isPrerelease": false,
       "body": "Changes since langchain-text-splitters==1.1.0\n\nrelease(text-splitters): 1.1.1 (#35318)\nfix(text-splitters): prevent JSFrameworkTextSplitter from mutating self._separators on each split_text() call (#35316)\nchore: bump transformers from 5.1.0 to 5.2.0 in /libs/text-splitters in the other-deps group a..."
-    },
-    {
-      "repo": "anthropics/claude-code",
-      "company": "Anthropic",
-      "category": "cli",
-      "name": "v2.1.47",
-      "tag": "v2.1.47",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.47",
-      "publishedAt": "2026-02-18T21:38:45Z",
-      "isPrerelease": false,
-      "body": "## What's changed\n\n- Fixed FileWriteTool line counting to preserve intentional trailing blank lines instead of stripping them with `trimEnd()`.\n- Fixed Windows terminal rendering bugs caused by `os.EOL` (`\\r\\n`) in display code — line counts now show correct values instead of always showing 1 on Win..."
     }
   ],
   "allReleases": [
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.12-stable",
+      "tag": "v1.81.12-stable",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.12-stable",
+      "publishedAt": "2026-02-21T22:46:10Z",
+      "isPrerelease": false,
+      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.12.rc.1...v1.81.12-stable"
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8123",
+      "tag": "b8123",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8123",
+      "publishedAt": "2026-02-21T19:59:51Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nAdd a build target to generate ROCm artifacts using ROCm 7.2 (#19433)\n\nThis builds the following targets:\n * gfx1151\n * gfx1150\n * gfx1200\n * gfx1201\n * gfx1100\n * gfx1101\n * gfx1030\n * gfx908\n * gfx90a\n * gfx942\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://git..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8122",
+      "tag": "b8122",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8122",
+      "publishedAt": "2026-02-21T18:41:43Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nvendor : update cpp-httplib to 0.33.1 (#19778)\n\nSigned-off-by: Adrien Gallouët <adrien@gallouet.fr>\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8122/llama-b8122-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](http..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8121",
+      "tag": "b8121",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8121",
+      "publishedAt": "2026-02-21T11:16:15Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nImprove CUDA graph capture (#19754)\n\n* Improve CUDA graph capture\n\nCurrently, CUDA graphs are eagerly enabled on the first call to ggml_backend_cuda_graph_compute. If the graph properties keep changing (4+ consecutive updates), the graph is permanently disabled. This is suboptimal be..."
+    },
+    {
+      "repo": "ollama/ollama",
+      "company": "Ollama",
+      "category": "local",
+      "name": "v0.17.0",
+      "tag": "v0.17.0-rc1",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.17.0-rc1",
+      "publishedAt": "2026-02-21T06:40:46Z",
+      "isPrerelease": true,
+      "body": "## What's Changed\n* mlx: try loading library via rpath before searching directories by @natl-set in https://github.com/ollama/ollama/pull/14322\n* consolidate the tokenizer by @pdevine in https://github.com/ollama/ollama/pull/14327\n* app: expose server's default context length to UI by @jmorganca in ..."
+    },
     {
       "repo": "ggerganov/llama.cpp",
       "company": "llama.cpp",
@@ -283,28 +338,6 @@
       "body": "Release notes are available [here](https://youtrack.jetbrains.com/articles/IDEA-A-2100662633)"
     },
     {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8117",
-      "tag": "b8117",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8117",
-      "publishedAt": "2026-02-20T13:16:12Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nggml-cpu: add RVV vec dot kernels for quantization types (#18784)\n\n* ggml-cpu: add rvv vec_dot for iq2_s\n\nCo-authored-by: Rehan Qasim <rehan.qasim@10xengineers.ai>\n\n* ggml-cpu: add rvv vec_dot for iq3_s\n\nCo-authored-by: Rehan Qasim <rehan.qasim@10xengineers.ai>\n\n* ggml-cpu: add rvv v..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8116",
-      "tag": "b8116",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8116",
-      "publishedAt": "2026-02-20T10:16:56Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nquantize : add --dry-run option (#19526)\n\n* clean slate for branch\n\n* use 6 characters for tensor dims\n\n* add --dry-run to llama-quantize\n\n* use 6 characters for tensor dims (cont.)\n\n* no need to re-calculate ggml_nbytes for tensor\n\n* fix indent\n\n* show model and quant BPW when quant..."
-    },
-    {
       "repo": "JetBrains/intellij-community",
       "company": "JetBrains",
       "category": "ide",
@@ -325,17 +358,6 @@
       "publishedAt": "2026-02-20T09:08:34Z",
       "isPrerelease": false,
       "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.9-stable.gemini.3.1-pro-patch...v1.81.9-stable.gemini.3.1-pro.sonnet-4.6"
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8115",
-      "tag": "b8115",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8115",
-      "publishedAt": "2026-02-20T05:05:10Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\ntest: mul_mat tests with huge batch size (#19519)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8115/llama-b8115-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/downloa..."
     },
     {
       "repo": "BerriAI/litellm",
@@ -391,17 +413,6 @@
       "publishedAt": "2026-02-19T22:11:27Z",
       "isPrerelease": false,
       "body": "## What's Changed\n*  New `ollama launch cline` added for the Cline CLI\n* `ollama launch <integration>` will now always show the model picker\n* Added Gemma 3, Llama and Qwen 3 architectures to MLX runner\n\n## New Contributors\n* @hellosaumil made their first contribution in https://github.com/ollama/ol..."
-    },
-    {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "v1.81.13.dev1",
-      "tag": "v1.81.13.dev1",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.13.dev1",
-      "publishedAt": "2026-02-19T20:07:33Z",
-      "isPrerelease": false,
-      "body": "## What's Changed\n* Generic Guardrails: Add a configurable fallback to handle generic guardrail endpoint connection failures by @itayov in https://github.com/BerriAI/litellm/pull/21245\n* fix: preserve metadata for custom callbacks on codex/responses path (… by @saneroen in https://github.com/BerriAI..."
     },
     {
       "repo": "anthropics/anthropic-sdk-python",
@@ -723,17 +734,6 @@
       "body": "## 0.79.0 (2026-02-07)\n\nFull Changelog: [v0.78.0...v0.79.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.78.0...v0.79.0)\n\n### Features\n\n* **api:** enabling fast-mode in claude-opus-4-6 ([5953ba7](https://github.com/anthropics/anthropic-sdk-python/commit/5953ba7b425ba113595de570bc8c6..."
     },
     {
-      "repo": "ollama/ollama",
-      "company": "Ollama",
-      "category": "local",
-      "name": "v0.15.6",
-      "tag": "v0.15.6",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.15.6",
-      "publishedAt": "2026-02-07T03:58:40Z",
-      "isPrerelease": false,
-      "body": "## What's Changed\n* Fixed context limits when running `ollama launch droid`\n* `ollama launch` will now download missing models instead of erroring\n* Fixed bug where `ollama launch claude` would cause context compaction when providing images\n\n**Full Changelog**: https://github.com/ollama/ollama/compa..."
-    },
-    {
       "repo": "openai/openai-python",
       "company": "OpenAI",
       "category": "sdk",
@@ -780,11 +780,25 @@
   ],
   "repoStats": [
     {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "latestRelease": "v1.81.12-stable",
+      "latestDate": "2026-02-21T22:46:10Z"
+    },
+    {
       "repo": "ggerganov/llama.cpp",
       "company": "llama.cpp",
       "category": "inference",
-      "latestRelease": "b8119",
-      "latestDate": "2026-02-21T02:23:32Z"
+      "latestRelease": "b8123",
+      "latestDate": "2026-02-21T19:59:51Z"
+    },
+    {
+      "repo": "ollama/ollama",
+      "company": "Ollama",
+      "category": "local",
+      "latestRelease": "v0.17.0-rc1",
+      "latestDate": "2026-02-21T06:40:46Z"
     },
     {
       "repo": "anthropics/claude-code",
@@ -801,25 +815,11 @@
       "latestDate": "2026-02-20T17:45:29Z"
     },
     {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "latestRelease": "v1.81.9-stable.patch.1",
-      "latestDate": "2026-02-20T01:04:07Z"
-    },
-    {
       "repo": "microsoft/vscode",
       "company": "Microsoft",
       "category": "ide",
       "latestRelease": "1.109.5",
       "latestDate": "2026-02-20T00:20:02Z"
-    },
-    {
-      "repo": "ollama/ollama",
-      "company": "Ollama",
-      "category": "local",
-      "latestRelease": "v0.16.3",
-      "latestDate": "2026-02-19T22:11:27Z"
     },
     {
       "repo": "anthropics/anthropic-sdk-python",

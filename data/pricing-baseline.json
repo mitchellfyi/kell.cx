@@ -1,50 +1,50 @@
 {
   "Cursor": {
     "prices": [],
-    "lastChecked": "2026-02-21T05:18:30.781Z",
+    "lastChecked": "2026-02-22T05:24:47.215Z",
     "url": "https://cursor.com/pricing"
   },
   "GitHub Copilot": {
     "prices": [],
-    "lastChecked": "2026-02-21T05:18:31.882Z",
+    "lastChecked": "2026-02-22T05:24:48.083Z",
     "url": "https://github.com/features/copilot/plans"
   },
   "Windsurf": {
     "prices": [
       15
     ],
-    "lastChecked": "2026-02-21T05:18:32.939Z",
+    "lastChecked": "2026-02-22T05:24:48.914Z",
     "url": "https://codeium.com/pricing"
   },
   "Tabnine": {
     "prices": [],
-    "lastChecked": "2026-02-21T05:18:34.404Z",
+    "lastChecked": "2026-02-22T05:24:50.308Z",
     "url": "https://www.tabnine.com/pricing"
   },
   "Sourcegraph Cody": {
     "prices": [
       49
     ],
-    "lastChecked": "2026-02-21T05:18:35.145Z",
+    "lastChecked": "2026-02-22T05:24:50.989Z",
     "url": "https://sourcegraph.com/pricing"
   },
   "Amazon Q Developer": {
     "prices": [
       19
     ],
-    "lastChecked": "2026-02-21T05:18:35.930Z",
+    "lastChecked": "2026-02-22T05:24:51.585Z",
     "url": "https://aws.amazon.com/q/developer/pricing/"
   },
   "Replit": {
     "prices": [
       40
     ],
-    "lastChecked": "2026-02-21T05:18:37.451Z",
+    "lastChecked": "2026-02-22T05:24:52.871Z",
     "url": "https://replit.com/pricing"
   },
   "v0.dev": {
     "prices": [],
-    "lastChecked": "2026-02-21T05:18:39.645Z",
+    "lastChecked": "2026-02-22T05:24:54.735Z",
     "url": "https://v0.dev/pricing"
   }
 }
