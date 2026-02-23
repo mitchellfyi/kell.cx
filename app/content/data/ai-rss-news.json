@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-22T05:23:52.016Z",
+  "scraped_at": "2026-02-23T05:29:59.775Z",
   "feeds": [
     {
       "name": "Hugging Face Blog",
@@ -24,6 +24,30 @@
   ],
   "total_count": 40,
   "items": [
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "The Claude C Compiler: What It Reveals About the Future of Software",
+      "url": "https://simonwillison.net/2026/Feb/22/ccc/#atom-everything",
+      "date": "2026-02-22T23:58:43.000Z",
+      "description": "<p><strong><a href=\"https://www.modular.com/blog/the-claude-c-compiler-what-it-reveals-about-the-future-of-software\">The Claude C Compiler: What It Reveals About the Future of Software</a></strong></p..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "London Stock Exchange: Raspberry Pi Holdings plc",
+      "url": "https://simonwillison.net/2026/Feb/22/raspberry-pi-openclaw/#atom-everything",
+      "date": "2026-02-22T23:54:39.000Z",
+      "description": "<p><strong><a href=\"https://www.londonstockexchange.com/stock/RPI/raspberry-pi-holdings-plc/company-page\">London Stock Exchange: Raspberry Pi Holdings plc</a></strong></p> Striking graph illustrating ..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "How I think about Codex",
+      "url": "https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/#atom-everything",
+      "date": "2026-02-22T15:53:43.000Z",
+      "description": "<p><strong><a href=\"https://www.linkedin.com/pulse/how-i-think-codex-gabriel-chua-ukhic\">How I think about Codex</a></strong></p> Gabriel Chua (Developer Experience Engineer for APAC at OpenAI) provid..."
+    },
     {
       "source": "Simon Willison",
       "category": "technical",
@@ -137,14 +161,6 @@
       "description": "<p>Reached the stage of parallel agent psychosis where I've lost a whole feature - I know I had it yesterday, but I can't seem to find the branch or worktree or cloud instance or checkout with it in.<..."
     },
     {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Gemini 3.1 Pro",
-      "url": "https://simonwillison.net/2026/Feb/19/gemini-31-pro/#atom-everything",
-      "date": "2026-02-19T17:58:37.000Z",
-      "description": "<p><strong><a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/\">Gemini 3.1 Pro</a></strong></p> The first in the Gemini 3.1 series, priced the same as Gemi..."
-    },
-    {
       "source": "MIT Tech Review AI",
       "category": "news",
       "title": "Microsoft has a new plan to prove what’s real and what’s AI online",
@@ -191,22 +207,6 @@
       "url": "https://www.technologyreview.com/2026/02/19/1133324/what-it-takes-to-make-agentic-ai-work-in-retail/",
       "date": "2026-02-19T08:54:41.000Z",
       "description": "Thank you for joining us on the &#8220;Enterprise AI hub.&#8221; In this episode of the Infosys Knowledge Institute Podcast, Dylan Cosper speaks with Prasad Banala, director of software engineering at..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Experimenting with sponsorship for my blog and newsletter",
-      "url": "https://simonwillison.net/2026/Feb/19/sponsorship/#atom-everything",
-      "date": "2026-02-19T05:44:29.000Z",
-      "description": "<p>I've long been resistant to the idea of accepting sponsorship for my blog. I value my credibility as an independent voice, and I don't want to risk compromising that reputation.</p> <p>Then I learn..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "SWE-bench February 2026 leaderboard update",
-      "url": "https://simonwillison.net/2026/Feb/19/swe-bench/#atom-everything",
-      "date": "2026-02-19T04:48:47.000Z",
-      "description": "<p><strong><a href=\"https://www.swebench.com/\">SWE-bench February 2026 leaderboard update</a></strong></p> SWE-bench is one of the benchmarks that the labs love to list in their model releases. The of..."
     },
     {
       "source": "AI News (Google)",

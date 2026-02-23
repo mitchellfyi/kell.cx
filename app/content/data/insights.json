@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-22",
+  "date": "2026-02-23",
   "summary": "AI coding tools market shows continued momentum across all metrics",
   "source": "rule-based",
   "vscode": [
@@ -9,17 +9,17 @@
   ],
   "releases": [
     "20 releases across tracked tools this week",
-    "Most recent: LiteLLM v1.81.12-stable",
-    "Most active: LiteLLM (5 releases)"
+    "Most recent: llama.cpp b8132",
+    "Most active: llama.cpp (5 releases)"
   ],
   "news": [
-    "205 AI-related stories on HN (4K total points)",
-    "Top discussion: \"Why is Claude an Electron app?\" (356 pts)",
-    "13 stories with 100+ points"
+    "165 AI-related stories on HN (3K total points)",
+    "Top discussion: \"How I use Claude Code: Separation of planning and ...\" (716 pts)",
+    "8 stories with 100+ points"
   ],
   "market": [
     "AI coding tools market continues rapid growth",
     "30 new AI repos gaining traction this week"
   ],
-  "generatedAt": "2026-02-22T05:25:09.675Z"
+  "generatedAt": "2026-02-23T05:31:13.739Z"
 }

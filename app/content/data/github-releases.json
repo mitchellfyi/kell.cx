@@ -1,10 +1,65 @@
 {
-  "generatedAt": "2026-02-22T05:23:32.964Z",
+  "generatedAt": "2026-02-23T05:29:41.901Z",
   "source": "GitHub API",
   "reposTracked": 18,
-  "recentCount": 33,
+  "recentCount": 32,
   "totalReleasesFound": 80,
   "recentReleases": [
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8132",
+      "tag": "b8132",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8132",
+      "publishedAt": "2026-02-23T00:01:57Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\ncli : provide model with text filename (#19783)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8132/llama-b8132-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8131",
+      "tag": "b8131",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8131",
+      "publishedAt": "2026-02-22T21:34:07Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\njinja: correct stats for tojson and string filters (#19785)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8131/llama-b8131-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releas..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8130",
+      "tag": "b8130",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8130",
+      "publishedAt": "2026-02-22T17:12:48Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\ncommon : fix improper trimming in XML parser on complete message (#19805)\n\nCo-authored-by: Jules LEIDELINGER <11395311+julio75012@users.noreply.github.com>\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8130/llama-..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8128",
+      "tag": "b8128",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8128",
+      "publishedAt": "2026-02-22T15:50:12Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nmodel : add Kanana-2 model support (#19803)\n\n* model: Add Kanana-2 model support\n\n* lint: adjust spacing\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8128/llama-b8128-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)]..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8126",
+      "tag": "b8126",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8126",
+      "publishedAt": "2026-02-22T14:52:25Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nserver : merge contiguous Responses input items into a single assistant message (#19773)\n\n* server : merge contiguous input items into a single assistant message\n\n* cont : simplify tool call msg\n\n* cont : reduce and combine content\n\n* cont : fix merging content items\n\n</details>\n\n**m..."
+    },
     {
       "repo": "BerriAI/litellm",
       "company": "LiteLLM",
@@ -17,59 +72,15 @@
       "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.12.rc.1...v1.81.12-stable"
     },
     {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8123",
-      "tag": "b8123",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8123",
-      "publishedAt": "2026-02-21T19:59:51Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nAdd a build target to generate ROCm artifacts using ROCm 7.2 (#19433)\n\nThis builds the following targets:\n * gfx1151\n * gfx1150\n * gfx1200\n * gfx1201\n * gfx1100\n * gfx1101\n * gfx1030\n * gfx908\n * gfx90a\n * gfx942\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://git..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8122",
-      "tag": "b8122",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8122",
-      "publishedAt": "2026-02-21T18:41:43Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nvendor : update cpp-httplib to 0.33.1 (#19778)\n\nSigned-off-by: Adrien Gallouët <adrien@gallouet.fr>\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8122/llama-b8122-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](http..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8121",
-      "tag": "b8121",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8121",
-      "publishedAt": "2026-02-21T11:16:15Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nImprove CUDA graph capture (#19754)\n\n* Improve CUDA graph capture\n\nCurrently, CUDA graphs are eagerly enabled on the first call to ggml_backend_cuda_graph_compute. If the graph properties keep changing (4+ consecutive updates), the graph is permanently disabled. This is suboptimal be..."
-    },
-    {
       "repo": "ollama/ollama",
       "company": "Ollama",
       "category": "local",
       "name": "v0.17.0",
-      "tag": "v0.17.0-rc1",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.17.0-rc1",
+      "tag": "v0.17.0-rc2",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.17.0-rc2",
       "publishedAt": "2026-02-21T06:40:46Z",
       "isPrerelease": true,
       "body": "## What's Changed\n* mlx: try loading library via rpath before searching directories by @natl-set in https://github.com/ollama/ollama/pull/14322\n* consolidate the tokenizer by @pdevine in https://github.com/ollama/ollama/pull/14327\n* app: expose server's default context length to UI by @jmorganca in ..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8119",
-      "tag": "b8119",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8119",
-      "publishedAt": "2026-02-21T02:23:32Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nhexagon : fix build release (#19444) (#19587)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8119/llama-b8119-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b8..."
     },
     {
       "repo": "anthropics/claude-code",
@@ -81,17 +92,6 @@
       "publishedAt": "2026-02-20T23:48:57Z",
       "isPrerelease": false,
       "body": "## What's changed\n\n- Added support for `startupTimeout` configuration for LSP servers\n- Added `WorktreeCreate` and `WorktreeRemove` hook events, enabling custom VCS setup and teardown when agent worktree isolation creates or removes worktrees.\n- Fixed a bug where resumed sessions could be invisible ..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8118",
-      "tag": "b8118",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8118",
-      "publishedAt": "2026-02-20T22:50:24Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\ncommon : merge qwen3-coder and nemotron nano 3 parsers (#19765)\n\n* common : migrate qwen3-coder to PEG parsing variant\n\n* cont : add JSON parameter test\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8118/llama-b81..."
     },
     {
       "repo": "BerriAI/litellm",
@@ -228,6 +228,61 @@
   ],
   "allReleases": [
     {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8132",
+      "tag": "b8132",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8132",
+      "publishedAt": "2026-02-23T00:01:57Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\ncli : provide model with text filename (#19783)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8132/llama-b8132-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8131",
+      "tag": "b8131",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8131",
+      "publishedAt": "2026-02-22T21:34:07Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\njinja: correct stats for tojson and string filters (#19785)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8131/llama-b8131-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releas..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8130",
+      "tag": "b8130",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8130",
+      "publishedAt": "2026-02-22T17:12:48Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\ncommon : fix improper trimming in XML parser on complete message (#19805)\n\nCo-authored-by: Jules LEIDELINGER <11395311+julio75012@users.noreply.github.com>\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8130/llama-..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8128",
+      "tag": "b8128",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8128",
+      "publishedAt": "2026-02-22T15:50:12Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nmodel : add Kanana-2 model support (#19803)\n\n* model: Add Kanana-2 model support\n\n* lint: adjust spacing\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8128/llama-b8128-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)]..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8126",
+      "tag": "b8126",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8126",
+      "publishedAt": "2026-02-22T14:52:25Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nserver : merge contiguous Responses input items into a single assistant message (#19773)\n\n* server : merge contiguous input items into a single assistant message\n\n* cont : simplify tool call msg\n\n* cont : reduce and combine content\n\n* cont : fix merging content items\n\n</details>\n\n**m..."
+    },
+    {
       "repo": "BerriAI/litellm",
       "company": "LiteLLM",
       "category": "proxy",
@@ -239,59 +294,15 @@
       "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.12.rc.1...v1.81.12-stable"
     },
     {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8123",
-      "tag": "b8123",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8123",
-      "publishedAt": "2026-02-21T19:59:51Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nAdd a build target to generate ROCm artifacts using ROCm 7.2 (#19433)\n\nThis builds the following targets:\n * gfx1151\n * gfx1150\n * gfx1200\n * gfx1201\n * gfx1100\n * gfx1101\n * gfx1030\n * gfx908\n * gfx90a\n * gfx942\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://git..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8122",
-      "tag": "b8122",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8122",
-      "publishedAt": "2026-02-21T18:41:43Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nvendor : update cpp-httplib to 0.33.1 (#19778)\n\nSigned-off-by: Adrien Gallouët <adrien@gallouet.fr>\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8122/llama-b8122-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](http..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8121",
-      "tag": "b8121",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8121",
-      "publishedAt": "2026-02-21T11:16:15Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nImprove CUDA graph capture (#19754)\n\n* Improve CUDA graph capture\n\nCurrently, CUDA graphs are eagerly enabled on the first call to ggml_backend_cuda_graph_compute. If the graph properties keep changing (4+ consecutive updates), the graph is permanently disabled. This is suboptimal be..."
-    },
-    {
       "repo": "ollama/ollama",
       "company": "Ollama",
       "category": "local",
       "name": "v0.17.0",
-      "tag": "v0.17.0-rc1",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.17.0-rc1",
+      "tag": "v0.17.0-rc2",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.17.0-rc2",
       "publishedAt": "2026-02-21T06:40:46Z",
       "isPrerelease": true,
       "body": "## What's Changed\n* mlx: try loading library via rpath before searching directories by @natl-set in https://github.com/ollama/ollama/pull/14322\n* consolidate the tokenizer by @pdevine in https://github.com/ollama/ollama/pull/14327\n* app: expose server's default context length to UI by @jmorganca in ..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8119",
-      "tag": "b8119",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8119",
-      "publishedAt": "2026-02-21T02:23:32Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nhexagon : fix build release (#19444) (#19587)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8119/llama-b8119-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b8..."
     },
     {
       "repo": "anthropics/claude-code",
@@ -303,17 +314,6 @@
       "publishedAt": "2026-02-20T23:48:57Z",
       "isPrerelease": false,
       "body": "## What's changed\n\n- Added support for `startupTimeout` configuration for LSP servers\n- Added `WorktreeCreate` and `WorktreeRemove` hook events, enabling custom VCS setup and teardown when agent worktree isolation creates or removes worktrees.\n- Fixed a bug where resumed sessions could be invisible ..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8118",
-      "tag": "b8118",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8118",
-      "publishedAt": "2026-02-20T22:50:24Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\ncommon : merge qwen3-coder and nemotron nano 3 parsers (#19765)\n\n* common : migrate qwen3-coder to PEG parsing variant\n\n* cont : add JSON parameter test\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8118/llama-b81..."
     },
     {
       "repo": "BerriAI/litellm",
@@ -780,6 +780,13 @@
   ],
   "repoStats": [
     {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "latestRelease": "b8132",
+      "latestDate": "2026-02-23T00:01:57Z"
+    },
+    {
       "repo": "BerriAI/litellm",
       "company": "LiteLLM",
       "category": "proxy",
@@ -787,17 +794,10 @@
       "latestDate": "2026-02-21T22:46:10Z"
     },
     {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "latestRelease": "b8123",
-      "latestDate": "2026-02-21T19:59:51Z"
-    },
-    {
       "repo": "ollama/ollama",
       "company": "Ollama",
       "category": "local",
-      "latestRelease": "v0.17.0-rc1",
+      "latestRelease": "v0.17.0-rc2",
       "latestDate": "2026-02-21T06:40:46Z"
     },
     {
