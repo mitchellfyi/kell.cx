@@ -1,42 +1,148 @@
 {
   "source": "TechCrunch",
   "url": "https://techcrunch.com",
-  "fetched_at": "2026-02-23T05:30:20.401Z",
+  "fetched_at": "2026-02-24T05:27:58.885Z",
   "total_parsed": 20,
-  "ai_filtered": 10,
+  "ai_filtered": 14,
   "articles": [
     {
-      "title": "All the important news from the ongoing India AI Impact Summit",
-      "url": "https://techcrunch.com/2026/02/22/all-the-important-news-from-the-ongoing-india-ai-summit/",
-      "date": "2026-02-22T17:00:00.000Z",
-      "description": "India is hosting a four-day AI Summit this week that will be attended by executives from major AI labs and Big Tech, including OpenAI, Anthropic, Nvidia, Microsoft, Google, and Cloudflare, as well as heads of state.",
-      "author": "Ivan Mehta",
+      "title": "A Meta AI security researcher said an OpenClaw agent ran amok on her inbox",
+      "url": "https://techcrunch.com/2026/02/23/a-meta-ai-security-researcher-said-an-openclaw-agent-ran-amok-on-her-inbox/",
+      "date": "2026-02-24T00:57:14.000Z",
+      "description": "The viral X post from an AI security researcher reads like satire. But it's really a word of warning about what can go wrong when handing tasks to an AI agent.",
+      "author": "Julie Bort",
       "categories": [
         "AI",
-        "Government & Policy",
-        "Google",
-        "Microsoft",
-        "nvidia",
-        "OpenAI",
-        "Anthropic",
-        "India AI summit"
+        "TC",
+        "meta ai",
+        "openclaw"
       ]
     },
     {
-      "title": "Google VP warns that two types of AI startups may not survive",
-      "url": "https://techcrunch.com/2026/02/21/google-vp-warns-that-two-types-of-ai-startups-may-not-survive/",
-      "date": "2026-02-21T16:00:00.000Z",
-      "description": "As generative AI evolves, a Google VP warns that LLM wrappers and AI aggregators face mounting pressure, with shrinking margins and limited differentiation threatening their long-term viability.",
+      "title": "With AI, investor loyalty is (almost) dead: At least a dozen OpenAI VCs now also back Anthropic",
+      "url": "https://techcrunch.com/2026/02/23/with-ai-investor-loyalty-is-almost-dead-at-least-a-dozen-openai-vcs-now-also-back-anthropic/",
+      "date": "2026-02-23T21:46:41.000Z",
+      "description": "While some dual investors are understandable, others were more shocking, and signal the disregard of a longstanding ethical conflict-of-interest rule.",
+      "author": "Julie Bort",
+      "categories": [
+        "AI",
+        "TC",
+        "Venture",
+        "Anthropic",
+        "Founders Fund",
+        "ICONIQ",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "Anthropic accuses Chinese AI labs of mining Claude as US debates AI chip exports",
+      "url": "https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/",
+      "date": "2026-02-23T19:57:27.000Z",
+      "description": "Anthropic accuses DeepSeek, Moonshot, and MiniMax of using 24,000 fake accounts to distill Claude’s AI capabilities, as U.S. officials debate export controls aimed at slowing China’s AI progress.",
       "author": "Rebecca Bellan",
       "categories": [
         "AI",
+        "Government & Policy",
+        "Anthropic",
+        "deepseek",
+        "distillation",
+        "Exclusive",
+        "minimax",
+        "moonshot ai"
+      ]
+    },
+    {
+      "title": "Google's Cloud AI leads on the three frontiers of model capability",
+      "url": "https://techcrunch.com/2026/02/23/googles-cloud-ai-lead-on-the-three-frontiers-of-model-capability/",
+      "date": "2026-02-23T19:18:42.000Z",
+      "description": "AI models are pushing against three frontiers at once: raw intelligence, response time, and a third quality you might call \"extensibility.\"",
+      "author": "Russell Brandom",
+      "categories": [
+        "AI",
+        "Google",
+        "Exclusive",
+        "Vertex"
+      ]
+    },
+    {
+      "title": "How AI agents could destroy the economy",
+      "url": "https://techcrunch.com/2026/02/23/how-ai-agents-could-destroy-the-economy/",
+      "date": "2026-02-23T14:44:03.000Z",
+      "description": "Citrini Research imagines a report from two years in the future, in which unemployment has doubled and the total value of the stock market has fallen by more than a third.",
+      "author": "Russell Brandom",
+      "categories": [
+        "AI",
+        "death of saas",
+        "economic impact",
+        "In Brief"
+      ]
+    },
+    {
+      "title": "OpenAI calls in the consultants for its enterprise push",
+      "url": "https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/",
+      "date": "2026-02-23T18:11:08.000Z",
+      "description": "OpenAI is partnering with four consulting giants in an effort to see more adoption of its OpenAI Frontier AI agent platform.",
+      "author": "Rebecca Szkutak",
+      "categories": [
+        "AI",
+        "Enterprise",
+        "Anthropic",
+        "artificial intelligence",
+        "Enterprise AI",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "Guide Labs debuts a new kind of interpretable LLM",
+      "url": "https://techcrunch.com/2026/02/23/guide-labs-debuts-a-new-kind-of-interpretable-llm/",
+      "date": "2026-02-23T17:53:28.000Z",
+      "description": "The company open sourced an 8-billion-parameter LLM, Steerling-8B, trained with a new architecture designed to make its actions easily interpretable.",
+      "author": "Tim Fernholz",
+      "categories": [
+        "AI",
+        "Exclusive",
+        "Guide Labs",
+        "science"
+      ]
+    },
+    {
+      "title": "Particle's AI news app listens to podcasts for interesting clips so you you don't have to",
+      "url": "https://techcrunch.com/2026/02/23/particles-ai-news-app-listens-to-podcasts-for-interesting-clips-so-you-you-dont-have-to/",
+      "date": "2026-02-23T16:55:40.000Z",
+      "description": "AI news app Particle can now pull in key moments from podcasts, letting readers instantly play short, relevant clips alongside related stories.",
+      "author": "Sarah Perez",
+      "categories": [
+        "AI",
+        "Apps",
         "Startups",
-        "AI startups",
-        "Darren Mowry",
-        "Equity",
-        "google cloud",
-        "llm aggregator",
-        "llm wrapper"
+        "particle"
+      ]
+    },
+    {
+      "title": "Spotify rolls out AI-powered Prompted Playlists to the UK and other markets",
+      "url": "https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/",
+      "date": "2026-02-23T16:50:36.000Z",
+      "description": "Spotify continues to test its AI-powered “Prompted Playlist” feature, now rolling out the tool to Premium subscribers in the U.K., Ireland, Australia, and Sweden.",
+      "author": "Lauren Forristal",
+      "categories": [
+        "AI",
+        "Apps",
+        "Media & Entertainment",
+        "Spotify"
+      ]
+    },
+    {
+      "title": "Wispr Flow launches an Android app for AI-powered dictation",
+      "url": "https://techcrunch.com/2026/02/23/wispr-flow-launches-an-android-app-for-ai-powered-dictation/",
+      "date": "2026-02-23T08:01:00.000Z",
+      "description": "The app can support translation in over 100 languages and can work across other apps. Wispr Flow said it has done an infrastructure rewrite that makes dictation 30% faster than before.",
+      "author": "Ivan Mehta",
+      "categories": [
+        "Apps",
+        "Android",
+        "Dictation",
+        "Wispr",
+        "Wispr flow"
       ]
     },
     {
@@ -48,74 +154,48 @@
       "categories": [
         "Media & Entertainment",
         "bytedance",
+        "creator economy",
         "MrBeast",
         "seedance"
       ]
     },
     {
-      "title": "Microsoft’s new gaming CEO vows not to flood the ecosystem with ‘endless AI slop’",
-      "url": "https://techcrunch.com/2026/02/21/microsofts-new-gaming-ceo-vows-not-to-flood-the-ecosystem-with-endless-ai-slop/",
-      "date": "2026-02-21T17:41:27.000Z",
-      "description": "Is Microsoft's gaming division doubling down on AI?",
-      "author": "Anthony Ha",
+      "title": "Defense Secretary summons Anthropic’s Amodei over military use of Claude",
+      "url": "https://techcrunch.com/2026/02/23/defense-secretary-summons-anthropics-amodei-over-military-use-of-claude/",
+      "date": "2026-02-23T14:19:10.000Z",
+      "description": "Defense Secretary Pete Hegseth has summoned Anthropic CEO Dario Amodei to the Pentagon for a tense discussion over the military's use of Claude. Hegseth has threatened to designate Anthropic a \"supply chain risk.\"",
+      "author": "Rebecca Bellan",
       "categories": [
         "AI",
-        "Media & Entertainment",
-        "asha sharma",
-        "Microsoft"
-      ]
-    },
-    {
-      "title": "India's Sarvam launches Indus AI chat app as competition heats up",
-      "url": "https://techcrunch.com/2026/02/20/indias-sarvam-launches-indus-ai-chat-app-as-competition-heats-up/",
-      "date": "2026-02-21T01:00:00.000Z",
-      "description": "Sarvam's Indus chat app is currently available in beta.",
-      "author": "Jagmeet Singh",
-      "categories": [
-        "AI",
-        "Apps",
-        "Startups",
-        "chat apps",
-        "Indus app",
-        "Sarvam",
-        "Sarvam 105B",
-        "Sarvam AI"
-      ]
-    },
-    {
-      "title": "The creator economy's ad revenue problem and India's AI ambitions",
-      "url": "https://techcrunch.com/video/the-creator-economys-ad-revenue-problem-and-indias-ai-ambitions/",
-      "date": "2026-02-20T23:00:00.000Z",
-      "description": "The&#160;creator&#160;economy is evolving fast, and ad revenue alone&#160;isn't&#160;cutting it anymore.&#160;YouTubers are launching product lines,&#160;acquiring&#160;startups, and building actual business empires.&#160;In fact,&#160;MrBeast's company&#160;bought fintech startup Step, and his chocolate business is outearning his media arm. This&#160;isn't&#160;just&#160;one&#160;creator's&#160;strategy.&#160;For&#160;many,&#160;it's&#160;the&#160;new playbook.&#160; On this episode of TechCrunch's Equity podcast, hosts Kirsten Korosec, Anthony Ha, and Rebecca Bellan unpack how creators are diversifying beyond ads, [...]",
-      "author": "Theresa Loconsolo",
-      "categories": [
-        "Startups",
-        "Media & Entertainment",
-        "AI",
-        "Roundup",
-        "OpenAI",
-        "creator economy",
+        "Government & Policy",
         "Anthropic",
-        "Equity Video",
-        "India AI Impact Summit 2026"
+        "Claude",
+        "dario amodei",
+        "department of defense",
+        "In Brief",
+        "pete hegseth"
       ]
     },
     {
-      "title": "OpenAI debated calling police about suspected Canadian shooter's chats",
-      "url": "https://techcrunch.com/2026/02/21/openai-debated-calling-police-about-suspected-canadian-shooters-chats/",
-      "date": "2026-02-21T15:25:44.000Z",
-      "description": "Jesse Van Rootselaar's descriptions of gun violence were flagged by tools that monitor ChatGPT for misuse.",
-      "author": "Tim Fernholz",
+      "title": "Uber wants to be a Swiss Army Knife for robotaxis",
+      "url": "https://techcrunch.com/2026/02/23/uber-autonomous-solutions-av-robotaxi-delivery-robots/",
+      "date": "2026-02-23T19:54:22.000Z",
+      "description": "Uber Autonomous Solutions will see the company selling both software and services for all the tasks associated with operating a robotaxi, self-driving truck, or sidewalk delivery robot business.",
+      "author": "Kirsten Korosec",
       "categories": [
-        "AI",
-        "OpenAI"
+        "Transportation",
+        "autonomous vehicles",
+        "EVs",
+        "ride-hailing",
+        "robotaxis",
+        "Uber"
       ]
     },
     {
-      "title": "6 days left to lock in the lowest TechCrunch Disrupt 2026 rates",
-      "url": "https://techcrunch.com/2026/02/22/6-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-rates/",
-      "date": "2026-02-22T15:00:00.000Z",
-      "description": "Super Early Bird pricing for TechCrunch Disrupt 2026 ends February 27 at 11:59 p.m. PT. That means you have just 6 days left to secure up to $680 of ticket savings.",
+      "title": "5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates",
+      "url": "https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/",
+      "date": "2026-02-23T15:00:00.000Z",
+      "description": "Five days to save up to $680 on your TechCrunch Disrupt 2026 ticket. These lowest rates of the year disappear on February 27 at 11:59 p.m. PT.",
       "author": "TechCrunch Events",
       "categories": [
         "Startups",
@@ -130,43 +210,7 @@
         "Media & Entertainment",
         "AI",
         "Apps",
-        "Robotics",
-        "Fundraising",
-        "TechCrunch Disrupt 2026"
-      ]
-    },
-    {
-      "title": "Sam Altman would like to remind you that humans use a lot of energy, too",
-      "url": "https://techcrunch.com/2026/02/21/sam-altman-would-like-remind-you-that-humans-use-a-lot-of-energy-too/",
-      "date": "2026-02-21T21:38:01.000Z",
-      "description": "\"It also takes a lot of energy to train a human.\"",
-      "author": "Anthony Ha",
-      "categories": [
-        "AI",
-        "OpenAI",
-        "sam altman"
-      ]
-    },
-    {
-      "title": "7 days until ticket prices rise for TechCrunch Disrupt 2026",
-      "url": "https://techcrunch.com/2026/02/21/7-days-until-ticket-prices-rise-for-techcrunch-disrupt-2026/",
-      "date": "2026-02-21T15:00:00.000Z",
-      "description": "Lowest ticket prices to TechCrunch Disrupt 2026 end February 27. Up to $680 off individual passes and up to 30% off group passes. Register before they go up to join 10,000 founders, tech operators, and VCs.",
-      "author": "TechCrunch Events",
-      "categories": [
-        "TC",
-        "Startups",
-        "Transportation",
-        "Security",
-        "Space",
-        "Hardware",
-        "Climate",
-        "Fintech",
-        "Biotech & Health",
-        "Venture",
-        "Media & Entertainment",
-        "AI",
-        "Apps",
+        "Gadgets",
         "Robotics",
         "Fundraising",
         "TechCrunch Disrupt 2026"

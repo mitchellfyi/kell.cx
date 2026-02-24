@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-23T05:30:28.789Z",
+  "scraped_at": "2026-02-24T05:28:06.227Z",
   "source": "anthropic.com",
   "stats": {
     "news_count": 3,
@@ -21,7 +21,7 @@
     },
     {
       "title": "Products",
-      "url": "https://www.anthropic.com/news/claude-code-security",
+      "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
       "source": "anthropic-news",
       "category": "announcement"
     },
@@ -45,7 +45,7 @@
     },
     {
       "title": "Products",
-      "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
+      "url": "https://www.anthropic.com/research/persona-selection-model",
       "source": "anthropic-research",
       "category": "announcement"
     }

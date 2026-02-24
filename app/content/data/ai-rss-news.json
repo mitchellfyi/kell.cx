@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-23T05:29:59.775Z",
+  "scraped_at": "2026-02-24T05:27:39.438Z",
   "feeds": [
     {
       "name": "Hugging Face Blog",
@@ -25,6 +25,102 @@
   "total_count": 40,
   "items": [
     {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "Deploying Open Source Vision Language Models (VLM) on Jetson",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-on-jetson",
+      "date": "2026-02-24T00:00:21.000Z",
+      "description": null
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Ladybird adopts Rust, with help from AI",
+      "url": "https://simonwillison.net/2026/Feb/23/ladybird-adopts-rust/#atom-everything",
+      "date": "2026-02-23T18:52:53.000Z",
+      "description": "<p><strong><a href=\"https://ladybird.org/posts/adopting-rust/\">Ladybird adopts Rust, with help from AI</a></strong></p> Really interesting case-study from Andreas Kling on advanced, sophisticated use ..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Peptides are everywhere. Here’s what you need to know.",
+      "url": "https://www.technologyreview.com/2026/02/23/1133522/peptides-are-everywhere-heres-what-you-need-to-know/",
+      "date": "2026-02-23T18:52:40.000Z",
+      "description": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. Want to lose weight? ..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Writing about Agentic Engineering Patterns",
+      "url": "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/#atom-everything",
+      "date": "2026-02-23T17:43:02.000Z",
+      "description": "<p>I've started a new project to collect and document <strong><a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/\">Agentic Engineering Patterns</a></strong> - coding practices and ..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "The human work behind humanoid robots is being hidden",
+      "url": "https://www.technologyreview.com/2026/02/23/1133508/the-human-work-behind-humanoid-robots-is-being-hidden/",
+      "date": "2026-02-23T17:05:00.000Z",
+      "description": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. In January, Nvidia’s Jensen Huang, the head of the world’s mos..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Writing code is cheap now",
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/#atom-everything",
+      "date": "2026-02-23T16:20:42.000Z",
+      "description": "<p><em><a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/\">Agentic Engineering Patterns</a> ></em></p> <p>The biggest challenge in adopting agentic engineering practices is gettin..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Quoting Paul Ford",
+      "url": "https://simonwillison.net/2026/Feb/23/paul-ford/#atom-everything",
+      "date": "2026-02-23T16:00:32.000Z",
+      "description": "<blockquote cite=\"https://ftrain.com/leading-thoughts\"><p>The paper asked me to explain vibe coding, and I did so, because I think something big is coming there, and I'm deep in, and I worry that norm..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Reply guy",
+      "url": "https://simonwillison.net/2026/Feb/23/reply-guy/#atom-everything",
+      "date": "2026-02-23T13:11:57.000Z",
+      "description": "<p>The latest scourge of Twitter is AI bots that reply to your tweets with generic, banal commentary slop, often accompanied by a question to \"drive engagement\" and waste as much of your time as possi..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "The Download: Chicago&#8217;s surveillance network, and building better bras",
+      "url": "https://www.technologyreview.com/2026/02/23/1133495/the-download-chicagos-surveillance-network-and-building-better-bras/",
+      "date": "2026-02-23T13:10:00.000Z",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Inside Chicago’s surveillance panopticon Chicago h..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Quoting Summer Yue",
+      "url": "https://simonwillison.net/2026/Feb/23/summer-yue/#atom-everything",
+      "date": "2026-02-23T13:01:13.000Z",
+      "description": "<blockquote cite=\"https://twitter.com/summeryue0/status/2025836517831405980\"><p>Nothing humbles you like telling your OpenClaw “confirm before acting” and watching it speedrun deleting your inbox. I c..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Inside Chicago’s surveillance panopticon",
+      "url": "https://www.technologyreview.com/2026/02/23/1132740/inside-chicago-surveillance-panopticon/",
+      "date": "2026-02-23T10:00:00.000Z",
+      "description": "Early on the morning of September 2, 2024, a Chicago Transit Authority Blue Line train was the scene of a random and horrific mass shooting. Four people were shot and killed on a westbound train as it..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Red/green TDD",
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/#atom-everything",
+      "date": "2026-02-23T07:12:28.000Z",
+      "description": "<p><em><a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/\">Agentic Engineering Patterns</a> ></em></p> <p>\"<strong>Use red/green TDD</strong>\" is a pleasingly succinct way to get ..."
+    },
+    {
       "source": "Simon Willison",
       "category": "technical",
       "title": "The Claude C Compiler: What It Reveals About the Future of Software",
@@ -49,52 +145,12 @@
       "description": "<p><strong><a href=\"https://www.linkedin.com/pulse/how-i-think-codex-gabriel-chua-ukhic\">How I think about Codex</a></strong></p> Gabriel Chua (Developer Experience Engineer for APAC at OpenAI) provid..."
     },
     {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Quoting Thibault Sottiaux",
-      "url": "https://simonwillison.net/2026/Feb/21/thibault-sottiaux/#atom-everything",
-      "date": "2026-02-21T01:30:21.000Z",
-      "description": "<blockquote cite=\"https://twitter.com/thsottiaux/status/2024947946849186064\"><p>We’ve made GPT-5.3-Codex-Spark about 30% faster. It is now serving at over 1200 tokens per second.</p></blockquote> <p c..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Andrej Karpathy talks about \"Claws\"",
-      "url": "https://simonwillison.net/2026/Feb/21/claws/#atom-everything",
-      "date": "2026-02-21T00:37:45.000Z",
-      "description": "<p><strong><a href=\"https://twitter.com/karpathy/status/2024987174077432126\">Andrej Karpathy talks about \"Claws\"</a></strong></p> Andrej Karpathy tweeted a mini-essay about buying a Mac Mini (\"The app..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Adding TILs, releases, museums, tools and research to my blog",
-      "url": "https://simonwillison.net/2026/Feb/20/beats/#atom-everything",
-      "date": "2026-02-20T23:47:10.000Z",
-      "description": "<p>I've been wanting to add indications of my various other online activities to my blog for a while now. I just turned on a new feature I'm calling \"beats\" (after story beats, naming this was hard!) ..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Taalas serves Llama 3.1 8B at 17,000 tokens/second",
-      "url": "https://simonwillison.net/2026/Feb/20/taalas/#atom-everything",
-      "date": "2026-02-20T22:10:04.000Z",
-      "description": "<p><strong><a href=\"https://taalas.com/the-path-to-ubiquitous-ai/\">Taalas serves Llama 3.1 8B at 17,000 tokens/second</a></strong></p> This new Canadian hardware startup just announced their first pro..."
-    },
-    {
       "source": "MIT Tech Review AI",
       "category": "news",
       "title": "Exclusive eBook: The great Al hype correction of 2025",
       "url": "https://www.technologyreview.com/2026/02/20/1133368/exclusive-ebook-the-great-al-hype-correction-of-2025/",
       "date": "2026-02-20T18:46:07.000Z",
       "description": "2025 was a year of reckoning, including how the heads of the top AI companies made promises they couldn’t keep. In this exclusive subscriber-only eBook, you&#8217;ll learn more about why we may need t..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "ggml.ai joins Hugging Face to ensure the long-term progress of Local AI",
-      "url": "https://simonwillison.net/2026/Feb/20/ggmlai-joins-hugging-face/#atom-everything",
-      "date": "2026-02-20T17:12:55.000Z",
-      "description": "<p><strong><a href=\"https://github.com/ggml-org/llama.cpp/discussions/19759\">ggml.ai joins Hugging Face to ensure the long-term progress of Local AI</a></strong></p> I don't normally cover acquisition..."
     },
     {
       "source": "MIT Tech Review AI",
@@ -129,14 +185,6 @@
       "description": "There’s a measles outbreak happening close to where I live. Since the start of this year, 34 cases have been confirmed in Enfield, a northern borough of London. Most of those affected are children und..."
     },
     {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Quoting Thariq Shihipar",
-      "url": "https://simonwillison.net/2026/Feb/20/thariq-shihipar/#atom-everything",
-      "date": "2026-02-20T07:13:19.000Z",
-      "description": "<blockquote cite=\"https://twitter.com/trq212/status/2024574133011673516\"><p>Long running agentic products like Claude Code are made feasible by prompt caching which allows us to reuse computation from..."
-    },
-    {
       "source": "Hugging Face Blog",
       "category": "industry",
       "title": "GGML and llama.cpp join HF to ensure the long-term progress of Local AI",
@@ -153,60 +201,12 @@
       "description": null
     },
     {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Recovering lost code",
-      "url": "https://simonwillison.net/2026/Feb/19/recovering-lost-code/#atom-everything",
-      "date": "2026-02-19T23:48:35.000Z",
-      "description": "<p>Reached the stage of parallel agent psychosis where I've lost a whole feature - I know I had it yesterday, but I can't seem to find the branch or worktree or cloud instance or checkout with it in.<..."
-    },
-    {
       "source": "MIT Tech Review AI",
       "category": "news",
       "title": "Microsoft has a new plan to prove what’s real and what’s AI online",
       "url": "https://www.technologyreview.com/2026/02/19/1133360/microsoft-has-a-new-plan-to-prove-whats-real-and-whats-ai-online/",
       "date": "2026-02-19T16:00:00.000Z",
       "description": "AI-enabled deception now permeates our online lives. There are the high-profile cases you may easily spot, like when White House officials recently shared a manipulated image of a protester in Minneso..."
-    },
-    {
-      "source": "Hugging Face Blog",
-      "category": "industry",
-      "title": "「データ不足」の壁を越える：合成ペルソナが日本のAI開発を加速",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-personas-japan-nttdata-ja",
-      "date": "2026-02-19T15:32:38.000Z",
-      "description": null
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "The Download: autonomous narco submarines, and virtue signaling chatbots",
-      "url": "https://www.technologyreview.com/2026/02/19/1133339/the-download-autonomous-narco-submarines-and-virtue-signaling-chatbots/",
-      "date": "2026-02-19T13:10:00.000Z",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How uncrewed narco subs could transform the Colomb..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "How uncrewed narco subs could transform the Colombian drug trade",
-      "url": "https://www.technologyreview.com/2026/02/19/1132619/uncrewed-narco-subs-transform-columbian-drug-trade/",
-      "date": "2026-02-19T11:00:00.000Z",
-      "description": "On a bright morning last April, a surveillance plane operated by the Colombian military spotted a 40-foot-long shark-like silhouette idling in the ocean just off Tayrona National Park. It was, unmista..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "The building legal case for global climate justice",
-      "url": "https://www.technologyreview.com/2026/02/19/1132877/legal-climate-justice/",
-      "date": "2026-02-19T11:00:00.000Z",
-      "description": "The United States and the European Union grew into economic superpowers by committing climate atrocities. They have burned a wildly disproportionate share of the world’s oil and gas, planting carbon t..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "What it takes to make agentic AI work in retail",
-      "url": "https://www.technologyreview.com/2026/02/19/1133324/what-it-takes-to-make-agentic-ai-work-in-retail/",
-      "date": "2026-02-19T08:54:41.000Z",
-      "description": "Thank you for joining us on the &#8220;Enterprise AI hub.&#8221; In this episode of the Infosys Knowledge Institute Podcast, Dylan Cosper speaks with Prasad Banala, director of software engineering at..."
     },
     {
       "source": "AI News (Google)",
