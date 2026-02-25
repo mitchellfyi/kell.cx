@@ -1,219 +1,159 @@
 {
   "source": "TechCrunch",
   "url": "https://techcrunch.com",
-  "fetched_at": "2026-02-24T05:27:58.885Z",
+  "fetched_at": "2026-02-25T05:29:30.544Z",
   "total_parsed": 20,
-  "ai_filtered": 14,
+  "ai_filtered": 10,
   "articles": [
     {
-      "title": "A Meta AI security researcher said an OpenClaw agent ran amok on her inbox",
-      "url": "https://techcrunch.com/2026/02/23/a-meta-ai-security-researcher-said-an-openclaw-agent-ran-amok-on-her-inbox/",
-      "date": "2026-02-24T00:57:14.000Z",
-      "description": "The viral X post from an AI security researcher reads like satire. But it's really a word of warning about what can go wrong when handing tasks to an AI agent.",
-      "author": "Julie Bort",
+      "title": "Nvidia challenger AI chip startup MatX raised $500M",
+      "url": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
+      "date": "2026-02-25T00:45:47.000Z",
+      "description": "The startup was founded by former Google TPU engineers in 2023.",
+      "author": "Marina Temkin",
       "categories": [
         "AI",
-        "TC",
-        "meta ai",
-        "openclaw"
-      ]
-    },
-    {
-      "title": "With AI, investor loyalty is (almost) dead: At least a dozen OpenAI VCs now also back Anthropic",
-      "url": "https://techcrunch.com/2026/02/23/with-ai-investor-loyalty-is-almost-dead-at-least-a-dozen-openai-vcs-now-also-back-anthropic/",
-      "date": "2026-02-23T21:46:41.000Z",
-      "description": "While some dual investors are understandable, others were more shocking, and signal the disregard of a longstanding ethical conflict-of-interest rule.",
-      "author": "Julie Bort",
-      "categories": [
-        "AI",
-        "TC",
-        "Venture",
-        "Anthropic",
-        "Founders Fund",
-        "ICONIQ",
-        "OpenAI"
-      ]
-    },
-    {
-      "title": "Anthropic accuses Chinese AI labs of mining Claude as US debates AI chip exports",
-      "url": "https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/",
-      "date": "2026-02-23T19:57:27.000Z",
-      "description": "Anthropic accuses DeepSeek, Moonshot, and MiniMax of using 24,000 fake accounts to distill Claude’s AI capabilities, as U.S. officials debate export controls aimed at slowing China’s AI progress.",
-      "author": "Rebecca Bellan",
-      "categories": [
-        "AI",
-        "Government & Policy",
-        "Anthropic",
-        "deepseek",
-        "distillation",
-        "Exclusive",
-        "minimax",
-        "moonshot ai"
-      ]
-    },
-    {
-      "title": "Google's Cloud AI leads on the three frontiers of model capability",
-      "url": "https://techcrunch.com/2026/02/23/googles-cloud-ai-lead-on-the-three-frontiers-of-model-capability/",
-      "date": "2026-02-23T19:18:42.000Z",
-      "description": "AI models are pushing against three frontiers at once: raw intelligence, response time, and a third quality you might call \"extensibility.\"",
-      "author": "Russell Brandom",
-      "categories": [
-        "AI",
-        "Google",
-        "Exclusive",
-        "Vertex"
-      ]
-    },
-    {
-      "title": "How AI agents could destroy the economy",
-      "url": "https://techcrunch.com/2026/02/23/how-ai-agents-could-destroy-the-economy/",
-      "date": "2026-02-23T14:44:03.000Z",
-      "description": "Citrini Research imagines a report from two years in the future, in which unemployment has doubled and the total value of the stock market has fallen by more than a third.",
-      "author": "Russell Brandom",
-      "categories": [
-        "AI",
-        "death of saas",
-        "economic impact",
-        "In Brief"
-      ]
-    },
-    {
-      "title": "OpenAI calls in the consultants for its enterprise push",
-      "url": "https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/",
-      "date": "2026-02-23T18:11:08.000Z",
-      "description": "OpenAI is partnering with four consulting giants in an effort to see more adoption of its OpenAI Frontier AI agent platform.",
-      "author": "Rebecca Szkutak",
-      "categories": [
-        "AI",
-        "Enterprise",
-        "Anthropic",
-        "artificial intelligence",
-        "Enterprise AI",
-        "OpenAI"
-      ]
-    },
-    {
-      "title": "Guide Labs debuts a new kind of interpretable LLM",
-      "url": "https://techcrunch.com/2026/02/23/guide-labs-debuts-a-new-kind-of-interpretable-llm/",
-      "date": "2026-02-23T17:53:28.000Z",
-      "description": "The company open sourced an 8-billion-parameter LLM, Steerling-8B, trained with a new architecture designed to make its actions easily interpretable.",
-      "author": "Tim Fernholz",
-      "categories": [
-        "AI",
-        "Exclusive",
-        "Guide Labs",
-        "science"
-      ]
-    },
-    {
-      "title": "Particle's AI news app listens to podcasts for interesting clips so you you don't have to",
-      "url": "https://techcrunch.com/2026/02/23/particles-ai-news-app-listens-to-podcasts-for-interesting-clips-so-you-you-dont-have-to/",
-      "date": "2026-02-23T16:55:40.000Z",
-      "description": "AI news app Particle can now pull in key moments from podcasts, letting readers instantly play short, relevant clips alongside related stories.",
-      "author": "Sarah Perez",
-      "categories": [
-        "AI",
-        "Apps",
+        "Hardware",
         "Startups",
-        "particle"
+        "AI chips",
+        "chips",
+        "etched",
+        "In Brief",
+        "MatX",
+        "TPU"
       ]
     },
     {
-      "title": "Spotify rolls out AI-powered Prompted Playlists to the UK and other markets",
-      "url": "https://techcrunch.com/2026/02/23/spotify-ai-prompted-playlists-uk-markets/",
-      "date": "2026-02-23T16:50:36.000Z",
-      "description": "Spotify continues to test its AI-powered “Prompted Playlist” feature, now rolling out the tool to Premium subscribers in the U.K., Ireland, Australia, and Sweden.",
-      "author": "Lauren Forristal",
+      "title": "Spanish &#8216;soonicorn' Multiverse Computing releases free compressed AI model",
+      "url": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
+      "date": "2026-02-24T23:32:00.000Z",
+      "description": "Spanish startup Multiverse Computing has released a new version of its HyperNova 60B model on Hugging Face that, it says, bests Mistral's model.",
+      "author": "Anna Heim",
       "categories": [
         "AI",
-        "Apps",
-        "Media & Entertainment",
-        "Spotify"
+        "LLMs",
+        "multiverse computing"
       ]
     },
     {
-      "title": "Wispr Flow launches an Android app for AI-powered dictation",
-      "url": "https://techcrunch.com/2026/02/23/wispr-flow-launches-an-android-app-for-ai-powered-dictation/",
-      "date": "2026-02-23T08:01:00.000Z",
-      "description": "The app can support translation in over 100 languages and can work across other apps. Wispr Flow said it has done an infrastructure rewrite that makes dictation 30% faster than before.",
-      "author": "Ivan Mehta",
-      "categories": [
-        "Apps",
-        "Android",
-        "Dictation",
-        "Wispr",
-        "Wispr flow"
-      ]
-    },
-    {
-      "title": "Can the creator economy stay afloat in a flood of AI slop?",
-      "url": "https://techcrunch.com/2026/02/22/can-the-creator-economy-stay-afloat-in-a-flood-of-ai-slop/",
-      "date": "2026-02-22T22:15:58.000Z",
-      "description": "On the latest episode of Equity, we debated what’s next for the creator economy, and whether there will be any room for the next generation of creators to stand out.",
-      "author": "Anthony Ha",
-      "categories": [
-        "Media & Entertainment",
-        "bytedance",
-        "creator economy",
-        "MrBeast",
-        "seedance"
-      ]
-    },
-    {
-      "title": "Defense Secretary summons Anthropic’s Amodei over military use of Claude",
-      "url": "https://techcrunch.com/2026/02/23/defense-secretary-summons-anthropics-amodei-over-military-use-of-claude/",
-      "date": "2026-02-23T14:19:10.000Z",
-      "description": "Defense Secretary Pete Hegseth has summoned Anthropic CEO Dario Amodei to the Pentagon for a tense discussion over the military's use of Claude. Hegseth has threatened to designate Anthropic a \"supply chain risk.\"",
+      "title": "Anthropic won’t budge as Pentagon escalates AI dispute",
+      "url": "https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/",
+      "date": "2026-02-24T21:18:45.000Z",
+      "description": "The Pentagon has given Anthropic until Friday to loosen AI guardrails or face potential penalties, escalating a high-stakes dispute that raises questions about government leverage, vendor dependence, and investor confidence in defense tech.",
       "author": "Rebecca Bellan",
       "categories": [
         "AI",
         "Government & Policy",
         "Anthropic",
-        "Claude",
         "dario amodei",
-        "department of defense",
-        "In Brief",
+        "dod",
+        "Exclusive",
+        "pentagon",
         "pete hegseth"
       ]
     },
     {
-      "title": "Uber wants to be a Swiss Army Knife for robotaxis",
-      "url": "https://techcrunch.com/2026/02/23/uber-autonomous-solutions-av-robotaxi-delivery-robots/",
-      "date": "2026-02-23T19:54:22.000Z",
-      "description": "Uber Autonomous Solutions will see the company selling both software and services for all the tasks associated with operating a robotaxi, self-driving truck, or sidewalk delivery robot business.",
+      "title": "OpenAI COO says &#8216;we have not yet really seen AI penetrate enterprise business processes'",
+      "url": "https://techcrunch.com/2026/02/24/openai-coo-says-we-have-not-yet-really-seen-ai-penetrate-enterprise-business-processes/",
+      "date": "2026-02-24T17:44:34.000Z",
+      "description": "There is a lot of talk around AI agents taking over business processes and claiming that \"SaaS is dead.\" While these predictions have moved SaaS stocks at times, they haven't really come true.",
+      "author": "Ivan Mehta",
+      "categories": [
+        "AI",
+        "Enterprise",
+        "Brad Lightcap",
+        "India",
+        "OpenAI"
+      ]
+    },
+    {
+      "title": "India's AI boom pushes firms to trade near-term revenue for users",
+      "url": "https://techcrunch.com/2026/02/24/india-ai-boom-pushes-firms-to-trade-near-term-revenue-for-users/",
+      "date": "2026-02-25T02:00:00.000Z",
+      "description": "ChatGPT and rivals are testing whether India's massive AI user boom can translate into paying customers as free offers wind down.",
+      "author": "Jagmeet Singh",
+      "categories": [
+        "AI",
+        "Google",
+        "India",
+        "Exclusive",
+        "gemini",
+        "OpenAI",
+        "ChatGPT",
+        "google gemini",
+        "Perplexity",
+        "ChatGPT Go",
+        "Perplexity Pro"
+      ]
+    },
+    {
+      "title": "Uber engineers built an AI version of their boss",
+      "url": "https://techcrunch.com/2026/02/24/uber-engineers-built-ai-version-of-boss-dara-khosrowshahi/",
+      "date": "2026-02-24T23:09:28.000Z",
+      "description": "Uber CEO Dara Khosrowshahi said the company’s employees have gone all in on AI, going so far as to build a chatbot of him that they use to practice their pitches.",
       "author": "Kirsten Korosec",
       "categories": [
+        "AI",
         "Transportation",
-        "autonomous vehicles",
-        "EVs",
-        "ride-hailing",
-        "robotaxis",
+        "In Brief",
         "Uber"
       ]
     },
     {
-      "title": "5 days left to lock in the lowest TechCrunch Disrupt 2026 ticket rates",
-      "url": "https://techcrunch.com/2026/02/23/5-days-left-to-lock-in-the-lowest-techcrunch-disrupt-2026-ticket-rates/",
-      "date": "2026-02-23T15:00:00.000Z",
-      "description": "Five days to save up to $680 on your TechCrunch Disrupt 2026 ticket. These lowest rates of the year disappear on February 27 at 11:59 p.m. PT.",
-      "author": "TechCrunch Events",
+      "title": "Self-driving tech startup Wayve raises $1.2B from Nvidia, Uber, and three automakers",
+      "url": "https://techcrunch.com/2026/02/24/self-driving-tech-startup-wayve-raises-1-2b-from-nvidia-uber-and-three-automakers/",
+      "date": "2026-02-25T00:37:59.000Z",
+      "description": "Major automakers, tech giants, AI companies, and chipmakers are all trying to get a piece of Wayve.",
+      "author": "Kirsten Korosec",
       "categories": [
-        "Startups",
         "Transportation",
-        "Security",
-        "Space",
-        "Hardware",
-        "Climate",
-        "Fintech",
-        "Biotech & Health",
-        "Venture",
-        "Media & Entertainment",
+        "automated driving",
+        "autonomous vehicles",
+        "robotaxis",
+        "wayve"
+      ]
+    },
+    {
+      "title": "Google adds a way to create automated workflows to Opal",
+      "url": "https://techcrunch.com/2026/02/24/google-adds-a-way-to-create-automated-workflows-to-opal/",
+      "date": "2026-02-24T19:00:00.000Z",
+      "description": "The company said that a new agent being introduced in Opal will allow users to create mini-apps that can let them plan and execute tasks using text prompts.",
+      "author": "Ivan Mehta",
+      "categories": [
         "AI",
         "Apps",
-        "Gadgets",
-        "Robotics",
-        "Fundraising",
-        "TechCrunch Disrupt 2026"
+        "gemini",
+        "Google",
+        "opal",
+        "vibe coding"
+      ]
+    },
+    {
+      "title": "More startups are hitting $10M ARR in 3 months than ever before",
+      "url": "https://techcrunch.com/2026/02/24/more-startups-are-hitting-10m-arr-in-3-months-than-ever-before/",
+      "date": "2026-02-24T19:39:36.000Z",
+      "description": "AI has brought the startup world the rise of companies that instantly hit multimillion-dollar ARR. Stripe revealed some data that shows how common this has become.",
+      "author": "Julie Bort",
+      "categories": [
+        "Fintech",
+        "Startups",
+        "Venture",
+        "annual recurring revenue"
+      ]
+    },
+    {
+      "title": "Apple rolls out age-verification tools worldwide to comply with growing web of child safety laws",
+      "url": "https://techcrunch.com/2026/02/24/apple-rolls-out-age-verification-tools-worldwide-to-comply-with-growing-web-of-child-safety-laws/",
+      "date": "2026-02-24T23:21:54.000Z",
+      "description": "Apple complies with new age-assurance laws in the U.S. and abroad, including those that block users from downloading apps aimed at adults.",
+      "author": "Sarah Perez",
+      "categories": [
+        "Apps",
+        "app store",
+        "Apple",
+        "laws",
+        "minors",
+        "regulation"
       ]
     }
   ]

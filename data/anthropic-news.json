@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-24T05:28:06.227Z",
+  "scraped_at": "2026-02-25T05:29:35.387Z",
   "source": "anthropic.com",
   "stats": {
     "news_count": 3,
@@ -21,7 +21,7 @@
     },
     {
       "title": "Products",
-      "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "url": "https://www.anthropic.com/news/responsible-scaling-policy-v3",
       "source": "anthropic-news",
       "category": "announcement"
     },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-24T05:28:27.718Z",
+  "generatedAt": "2026-02-25T05:29:57.947Z",
   "source": "GitHub API",
   "summary": {
     "recentPopularCount": 30,
@@ -7,7 +7,7 @@
     "topLanguages": [
       {
         "language": "TypeScript",
-        "count": 8
+        "count": 6
       },
       {
         "language": "Python",
@@ -15,11 +15,11 @@
       },
       {
         "language": "Shell",
-        "count": 2
+        "count": 4
       },
       {
-        "language": "HTML",
-        "count": 2
+        "language": "Rust",
+        "count": 4
       },
       {
         "language": "JavaScript",
@@ -32,8 +32,8 @@
       "name": "Leonxlnx/taste-skill",
       "url": "https://github.com/Leonxlnx/taste-skill",
       "description": "Taste-Skill (High-Agency Frontend) - gives your AI good taste. stops the AI from generating boring, generic, \"slop\" ",
-      "stars": 991,
-      "forks": 60,
+      "stars": 1469,
+      "forks": 91,
       "language": null,
       "topics": [
         "agent",
@@ -52,8 +52,8 @@
       "name": "RightNow-AI/picolm",
       "url": "https://github.com/RightNow-AI/picolm",
       "description": "Run a 1-billion parameter LLM on a $10 board with 256MB RAM",
-      "stars": 730,
-      "forks": 75,
+      "stars": 848,
+      "forks": 87,
       "language": "C",
       "topics": [
         "arm",
@@ -70,22 +70,55 @@
       "pushedAt": "2026-02-22T22:05:30Z"
     },
     {
-      "name": "TraderAlice/OpenAlice",
-      "url": "https://github.com/TraderAlice/OpenAlice",
-      "description": "File-driven AI trading agent engine for crypto and securities markets",
-      "stars": 590,
-      "forks": 70,
-      "language": "TypeScript",
+      "name": "kevinho/clawfeed",
+      "url": "https://github.com/kevinho/clawfeed",
+      "description": "ClawFeed — AI-powered news digest with structured summaries from Twitter/RSS feeds and web dashboard",
+      "stars": 517,
+      "forks": 67,
+      "language": "HTML",
       "topics": [],
-      "createdAt": "2026-02-18T16:42:55Z",
-      "pushedAt": "2026-02-23T13:20:36Z"
+      "createdAt": "2026-02-21T10:38:07Z",
+      "pushedAt": "2026-02-24T22:16:51Z"
+    },
+    {
+      "name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": null,
+      "stars": 423,
+      "forks": 38,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-24T02:10:24Z",
+      "pushedAt": "2026-02-25T04:19:27Z"
+    },
+    {
+      "name": "ochyai/vibe-local",
+      "url": "https://github.com/ochyai/vibe-local",
+      "description": "Free AI coding environment: Ollama + Python",
+      "stars": 420,
+      "forks": 51,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-22T04:33:03Z",
+      "pushedAt": "2026-02-24T23:11:39Z"
+    },
+    {
+      "name": "hamelsmu/claude-review-loop",
+      "url": "https://github.com/hamelsmu/claude-review-loop",
+      "description": "Claude Code plugin: automated code review loop with Codex",
+      "stars": 416,
+      "forks": 25,
+      "language": "Shell",
+      "topics": [],
+      "createdAt": "2026-02-21T02:13:01Z",
+      "pushedAt": "2026-02-22T04:26:09Z"
     },
     {
       "name": "quoroom-ai/room",
       "url": "https://github.com/quoroom-ai/room",
       "description": "Autonomous AI agents will earn money — with or without us. It's already happening behind closed doors. We believe this should be studied in the open, where everyone can watch, learn, and build on the results.  Quoroom is a public experiment: let's see what a swarm of AI agents can actually do when given a goal and a wallet.",
-      "stars": 366,
-      "forks": 4,
+      "stars": 387,
+      "forks": 8,
       "language": "TypeScript",
       "topics": [
         "ai",
@@ -99,69 +132,14 @@
         "windows"
       ],
       "createdAt": "2026-02-19T17:35:25Z",
-      "pushedAt": "2026-02-24T04:27:58Z"
-    },
-    {
-      "name": "xaskasdf/ntransformer",
-      "url": "https://github.com/xaskasdf/ntransformer",
-      "description": "High-efficiency LLM inference engine in C++/CUDA. Run Llama 70B on RTX 3090.",
-      "stars": 357,
-      "forks": 17,
-      "language": "C++",
-      "topics": [],
-      "createdAt": "2026-02-18T23:13:38Z",
-      "pushedAt": "2026-02-22T22:59:05Z"
-    },
-    {
-      "name": "badaramoni/wave-field-llm",
-      "url": "https://github.com/badaramoni/wave-field-llm",
-      "description": "An O(n log n) language model architecture using wave equation dynamics instead of O(n²) self-attention. Within 5% of standard transformer quality.",
-      "stars": 355,
-      "forks": 50,
-      "language": "Python",
-      "topics": [],
-      "createdAt": "2026-02-18T17:45:54Z",
-      "pushedAt": "2026-02-23T05:39:08Z"
-    },
-    {
-      "name": "ochyai/vibe-local",
-      "url": "https://github.com/ochyai/vibe-local",
-      "description": "Free AI coding environment: Ollama + Python",
-      "stars": 337,
-      "forks": 42,
-      "language": "Python",
-      "topics": [],
-      "createdAt": "2026-02-22T04:33:03Z",
-      "pushedAt": "2026-02-24T04:50:09Z"
-    },
-    {
-      "name": "hamelsmu/claude-review-loop",
-      "url": "https://github.com/hamelsmu/claude-review-loop",
-      "description": "Claude Code plugin: automated code review loop with Codex",
-      "stars": 328,
-      "forks": 20,
-      "language": "Shell",
-      "topics": [],
-      "createdAt": "2026-02-21T02:13:01Z",
-      "pushedAt": "2026-02-22T04:26:09Z"
-    },
-    {
-      "name": "kevinho/clawfeed",
-      "url": "https://github.com/kevinho/clawfeed",
-      "description": "ClawFeed — AI-powered news digest with structured summaries from Twitter/RSS feeds and web dashboard",
-      "stars": 301,
-      "forks": 40,
-      "language": "HTML",
-      "topics": [],
-      "createdAt": "2026-02-21T10:38:07Z",
-      "pushedAt": "2026-02-24T05:24:09Z"
+      "pushedAt": "2026-02-25T05:29:05Z"
     },
     {
       "name": "vava-nessa/free-coding-models",
       "url": "https://github.com/vava-nessa/free-coding-models",
       "description": "Find the fastest coding LLM models in seconds",
-      "stars": 268,
-      "forks": 21,
+      "stars": 319,
+      "forks": 23,
       "language": "JavaScript",
       "topics": [
         "ai",
@@ -181,124 +159,36 @@
         "opencode"
       ],
       "createdAt": "2026-02-20T23:12:50Z",
-      "pushedAt": "2026-02-23T22:28:46Z"
+      "pushedAt": "2026-02-25T02:27:59Z"
     },
     {
-      "name": "planetscale/database-skills",
-      "url": "https://github.com/planetscale/database-skills",
-      "description": "Skills for AI agents working with databases",
-      "stars": 261,
-      "forks": 16,
-      "language": "HTML",
+      "name": "Chrissotino/swiss-ai-call-agent",
+      "url": "https://github.com/Chrissotino/swiss-ai-call-agent",
+      "description": "Enterprise-grade AI Call Agent for the Swiss market – inbound & outbound calls, multilingual (DE/FR/IT), MCP architecture, Claude AI decision engine, real-time dashboard",
+      "stars": 281,
+      "forks": 76,
+      "language": "TypeScript",
       "topics": [],
-      "createdAt": "2026-02-18T15:48:22Z",
-      "pushedAt": "2026-02-20T21:01:22Z"
+      "createdAt": "2026-02-21T21:27:05Z",
+      "pushedAt": "2026-02-21T22:19:58Z"
     },
     {
       "name": "botiverse/agent-vault",
       "url": "https://github.com/botiverse/agent-vault",
       "description": "Keep your secrets hidden from AI agents.",
-      "stars": 249,
-      "forks": 13,
+      "stars": 281,
+      "forks": 15,
       "language": "TypeScript",
       "topics": [],
       "createdAt": "2026-02-19T04:29:51Z",
       "pushedAt": "2026-02-19T13:28:47Z"
     },
     {
-      "name": "johannesjo/parallel-code",
-      "url": "https://github.com/johannesjo/parallel-code",
-      "description": "Run Claude Code, Codex, and Gemini side by side — each in      its own git worktree",
-      "stars": 231,
-      "forks": 19,
-      "language": "TypeScript",
-      "topics": [
-        "ai-agents",
-        "ai-coding",
-        "ai-tools",
-        "claude-code",
-        "codex-cli",
-        "coding-agent",
-        "developer-tools",
-        "gemini-cli",
-        "git-worktree",
-        "terminal"
-      ],
-      "createdAt": "2026-02-18T09:53:27Z",
-      "pushedAt": "2026-02-22T20:15:33Z"
-    },
-    {
-      "name": "kellyclaudeai/openclaw-deck",
-      "url": "https://github.com/kellyclaudeai/openclaw-deck",
-      "description": "Multi-column chat interface for OpenClaw agents",
-      "stars": 229,
-      "forks": 34,
-      "language": "TypeScript",
-      "topics": [],
-      "createdAt": "2026-02-18T18:23:27Z",
-      "pushedAt": "2026-02-19T02:16:58Z"
-    },
-    {
-      "name": "donghuixin/AI-Vibe-Writing-Skills",
-      "url": "https://github.com/donghuixin/AI-Vibe-Writing-Skills",
-      "description": "Using AI for high quality writing",
-      "stars": 221,
-      "forks": 23,
-      "language": "Python",
-      "topics": [],
-      "createdAt": "2026-02-18T02:01:56Z",
-      "pushedAt": "2026-02-23T06:32:20Z"
-    },
-    {
-      "name": "vikasprogrammer/walkie",
-      "url": "https://github.com/vikasprogrammer/walkie",
-      "description": "P2P communication for AI agents. No server. No setup. Just talk.",
-      "stars": 190,
-      "forks": 18,
-      "language": "JavaScript",
-      "topics": [],
-      "createdAt": "2026-02-19T14:57:30Z",
-      "pushedAt": "2026-02-20T07:28:43Z"
-    },
-    {
-      "name": "zhixianio/clawpal",
-      "url": "https://github.com/zhixianio/clawpal",
-      "description": "ClawPal - Manage OpenClaw agents, models, and configs with a visual interface. Stop editing JSON by hand.",
-      "stars": 181,
-      "forks": 14,
-      "language": "Rust",
-      "topics": [
-        "aiagent",
-        "openclaw"
-      ],
-      "createdAt": "2026-02-19T02:28:43Z",
-      "pushedAt": "2026-02-24T04:58:57Z"
-    },
-    {
-      "name": "GreenSheep01201/claw-empire",
-      "url": "https://github.com/GreenSheep01201/claw-empire",
-      "description": "Command Your AI Agent Empire from the CEO Desk — A local-first AI agent office simulator that orchestrates CLI, OAuth, and API-connected agents (Claude Code, Codex CLI, Gemini CLI, OpenCode, and more) as a virtual autonomous company.",
-      "stars": 168,
-      "forks": 37,
-      "language": "TypeScript",
-      "topics": [
-        "agentic-workflow",
-        "agents",
-        "ochestration",
-        "openclaw",
-        "openclaw-agent",
-        "openclaw-extension",
-        "openclaw-plugin"
-      ],
-      "createdAt": "2026-02-18T13:42:25Z",
-      "pushedAt": "2026-02-24T00:53:00Z"
-    },
-    {
       "name": "harshkedia177/axon",
       "url": "https://github.com/harshkedia177/axon",
       "description": "Graph-powered code intelligence engine — indexes codebases into a knowledge graph, exposed via MCP tools for AI agents and a CLI for developers.",
-      "stars": 165,
-      "forks": 25,
+      "stars": 249,
+      "forks": 42,
       "language": "Python",
       "topics": [
         "claude-code",
@@ -313,71 +203,33 @@
         "typescript"
       ],
       "createdAt": "2026-02-21T07:41:02Z",
-      "pushedAt": "2026-02-23T08:58:58Z"
+      "pushedAt": "2026-02-24T20:20:38Z"
     },
     {
-      "name": "sachaa/openbrowserclaw",
-      "url": "https://github.com/sachaa/openbrowserclaw",
-      "description": "Browser-native personal AI assistant. Zero infrastructure, the browser is the server.",
-      "stars": 163,
-      "forks": 15,
-      "language": "TypeScript",
+      "name": "steveclarke/real-world-rails",
+      "url": "https://github.com/steveclarke/real-world-rails",
+      "description": "200+ production open source Rails apps & engines in one repo. Search across real codebases with AI agents to research architectural patterns.",
+      "stars": 236,
+      "forks": 14,
+      "language": "Shell",
       "topics": [
         "ai-agents",
-        "ai-assistant",
-        "browser",
-        "claude",
-        "claw",
-        "openclaw",
-        "pwa",
-        "typescript"
+        "code-patterns",
+        "learning",
+        "open-source",
+        "rails",
+        "real-world",
+        "ruby"
       ],
-      "createdAt": "2026-02-21T20:52:49Z",
-      "pushedAt": "2026-02-24T02:32:19Z"
-    },
-    {
-      "name": "quailyquaily/aqua",
-      "url": "https://github.com/quailyquaily/aqua",
-      "description": "Aqua, a cli message tool for AI agents ",
-      "stars": 149,
-      "forks": 6,
-      "language": "Go",
-      "topics": [
-        "agent-skills",
-        "agent-tools",
-        "ai-agents"
-      ],
-      "createdAt": "2026-02-21T19:04:48Z",
-      "pushedAt": "2026-02-23T05:57:18Z"
-    },
-    {
-      "name": "jasperan/picooraclaw",
-      "url": "https://github.com/jasperan/picooraclaw",
-      "description": "PicoClaw that works with Oracle AI Database",
-      "stars": 148,
-      "forks": 0,
-      "language": "Go",
-      "topics": [],
-      "createdAt": "2026-02-18T04:44:35Z",
-      "pushedAt": "2026-02-23T07:08:25Z"
-    },
-    {
-      "name": "haiguo123/Agentic-AI-Project-Find-Deal-Opportunities",
-      "url": "https://github.com/haiguo123/Agentic-AI-Project-Find-Deal-Opportunities",
-      "description": null,
-      "stars": 140,
-      "forks": 1,
-      "language": "Jupyter Notebook",
-      "topics": [],
-      "createdAt": "2026-02-18T11:39:06Z",
-      "pushedAt": "2026-02-18T11:39:16Z"
+      "createdAt": "2026-02-23T17:02:02Z",
+      "pushedAt": "2026-02-24T15:14:49Z"
     },
     {
       "name": "sangrokjung/claude-forge",
       "url": "https://github.com/sangrokjung/claude-forge",
       "description": "oh-my-zsh for Claude Code — 11 agents, 36 commands, 15 skills, 6-layer security hooks. Install in 5 min, update with git pull.",
-      "stars": 138,
-      "forks": 39,
+      "stars": 223,
+      "forks": 49,
       "language": "Shell",
       "topics": [
         "agents",
@@ -392,13 +244,147 @@
         "productivity"
       ],
       "createdAt": "2026-02-23T07:46:08Z",
-      "pushedAt": "2026-02-24T00:55:20Z"
+      "pushedAt": "2026-02-24T22:16:56Z"
+    },
+    {
+      "name": "zhixianio/clawpal",
+      "url": "https://github.com/zhixianio/clawpal",
+      "description": "ClawPal - Manage OpenClaw agents, models, and configs with a visual interface. Stop editing JSON by hand.",
+      "stars": 222,
+      "forks": 23,
+      "language": "Rust",
+      "topics": [
+        "aiagent",
+        "openclaw"
+      ],
+      "createdAt": "2026-02-19T02:28:43Z",
+      "pushedAt": "2026-02-25T03:45:58Z"
+    },
+    {
+      "name": "alexknowshtml/api2cli",
+      "url": "https://github.com/alexknowshtml/api2cli",
+      "description": "Audience-aware CLI patterns for Node.js + Commander.js. Build CLIs for humans, AI agents, or both.",
+      "stars": 217,
+      "forks": 6,
+      "language": null,
+      "topics": [
+        "ai-agent",
+        "api",
+        "claude-code",
+        "cli-generator",
+        "commander-js",
+        "nodejs",
+        "skill",
+        "typescript"
+      ],
+      "createdAt": "2026-02-19T23:58:56Z",
+      "pushedAt": "2026-02-20T00:59:15Z"
+    },
+    {
+      "name": "CleverCloud/mdr",
+      "url": "https://github.com/CleverCloud/mdr",
+      "description": "a very light rust based markdown reader with support of mermaid (web, native, TUI). vibe coded ",
+      "stars": 205,
+      "forks": 7,
+      "language": "Rust",
+      "topics": [],
+      "createdAt": "2026-02-22T12:37:58Z",
+      "pushedAt": "2026-02-24T11:38:17Z"
+    },
+    {
+      "name": "vikasprogrammer/walkie",
+      "url": "https://github.com/vikasprogrammer/walkie",
+      "description": "P2P communication for AI agents. No server. No setup. Just talk.",
+      "stars": 203,
+      "forks": 20,
+      "language": "JavaScript",
+      "topics": [],
+      "createdAt": "2026-02-19T14:57:30Z",
+      "pushedAt": "2026-02-24T13:37:01Z"
+    },
+    {
+      "name": "sachaa/openbrowserclaw",
+      "url": "https://github.com/sachaa/openbrowserclaw",
+      "description": "Browser-native personal AI assistant. Zero infrastructure, the browser is the server.",
+      "stars": 189,
+      "forks": 18,
+      "language": "TypeScript",
+      "topics": [
+        "ai-agents",
+        "ai-assistant",
+        "browser",
+        "claude",
+        "claw",
+        "openclaw",
+        "pwa",
+        "typescript"
+      ],
+      "createdAt": "2026-02-21T20:52:49Z",
+      "pushedAt": "2026-02-24T08:01:28Z"
+    },
+    {
+      "name": "disler/pi-vs-claude-code",
+      "url": "https://github.com/disler/pi-vs-claude-code",
+      "description": "Comparison between open source PI agent and closed source Claude Code agent",
+      "stars": 186,
+      "forks": 62,
+      "language": "TypeScript",
+      "topics": [],
+      "createdAt": "2026-02-19T21:09:39Z",
+      "pushedAt": "2026-02-23T02:19:34Z"
+    },
+    {
+      "name": "quailyquaily/aqua",
+      "url": "https://github.com/quailyquaily/aqua",
+      "description": "Aqua, a cli message tool for AI agents ",
+      "stars": 180,
+      "forks": 8,
+      "language": "Go",
+      "topics": [
+        "agent-skills",
+        "agent-tools",
+        "ai-agents"
+      ],
+      "createdAt": "2026-02-21T19:04:48Z",
+      "pushedAt": "2026-02-25T05:28:28Z"
+    },
+    {
+      "name": "originalankur/GenerateAgents.md",
+      "url": "https://github.com/originalankur/GenerateAgents.md",
+      "description": "Automated generation of comprehensive Agents.md for LLMs, driven by the DSPy Recursive language model implementation.",
+      "stars": 149,
+      "forks": 9,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "agentskills",
+        "agentsmd",
+        "dspy",
+        "dspy-rlm",
+        "llm",
+        "python",
+        "recursive-language-models",
+        "rlm"
+      ],
+      "createdAt": "2026-02-22T16:18:45Z",
+      "pushedAt": "2026-02-25T02:54:05Z"
+    },
+    {
+      "name": "wesm/agentsview",
+      "url": "https://github.com/wesm/agentsview",
+      "description": "Fast local coding agent session viewer for Claude, Codex, Gemini, with analytics dashboard and full text search",
+      "stars": 136,
+      "forks": 17,
+      "language": "Go",
+      "topics": [],
+      "createdAt": "2026-02-19T19:33:24Z",
+      "pushedAt": "2026-02-25T00:19:09Z"
     },
     {
       "name": "kimjune01/cord",
       "url": "https://github.com/kimjune01/cord",
       "description": "A coordination protocol for trees of Claude Code agents",
-      "stars": 127,
+      "stars": 129,
       "forks": 15,
       "language": "Python",
       "topics": [],
@@ -406,54 +392,46 @@
       "pushedAt": "2026-02-22T00:21:36Z"
     },
     {
+      "name": "automateyournetwork/netclaw",
+      "url": "https://github.com/automateyournetwork/netclaw",
+      "description": "An AI agent that claws through your network",
+      "stars": 121,
+      "forks": 26,
+      "language": "Shell",
+      "topics": [],
+      "createdAt": "2026-02-19T17:32:47Z",
+      "pushedAt": "2026-02-24T18:58:14Z"
+    },
+    {
       "name": "mfranzon/tdd",
       "url": "https://github.com/mfranzon/tdd",
       "description": "tdd skill for coding agents ",
-      "stars": 117,
+      "stars": 119,
       "forks": 4,
       "language": null,
       "topics": [],
       "createdAt": "2026-02-21T14:29:29Z",
-      "pushedAt": "2026-02-22T18:07:57Z"
+      "pushedAt": "2026-02-24T16:06:37Z"
     },
     {
-      "name": "harlan-zw/vue-ecosystem-skills",
-      "url": "https://github.com/harlan-zw/vue-ecosystem-skills",
-      "description": "AI agent skills for the bleeding edge Vue ecosystem. Built from real docs, issues, and releases.",
-      "stars": 113,
-      "forks": 4,
-      "language": "MDX",
-      "topics": [],
-      "createdAt": "2026-02-18T15:09:25Z",
-      "pushedAt": "2026-02-20T00:45:36Z"
-    },
-    {
-      "name": "disler/pi-vs-claude-code",
-      "url": "https://github.com/disler/pi-vs-claude-code",
-      "description": "Comparison between open source PI agent and closed source Claude Code agent",
-      "stars": 110,
-      "forks": 32,
-      "language": "TypeScript",
-      "topics": [],
-      "createdAt": "2026-02-19T21:09:39Z",
-      "pushedAt": "2026-02-23T02:19:34Z"
-    },
-    {
-      "name": "CleverCloud/mdr",
-      "url": "https://github.com/CleverCloud/mdr",
-      "description": "a very light rust based markdown reader with support of mermaid (web, native, TUI). vibe coded ",
-      "stars": 108,
-      "forks": 2,
+      "name": "nguyenduchoai/bizclaw",
+      "url": "https://github.com/nguyenduchoai/bizclaw",
+      "description": "BizClaw là nền tảng AI Agent kiến trúc trait-driven, có thể chạy mọi nơi — từ Raspberry Pi đến cloud server. Hỗ trợ nhiều LLM provider, kênh giao tiếp, và công cụ thông qua kiến trúc thống nhất, hoán đổi được.",
+      "stars": 118,
+      "forks": 46,
       "language": "Rust",
-      "topics": [],
-      "createdAt": "2026-02-22T12:37:58Z",
-      "pushedAt": "2026-02-24T01:06:05Z"
+      "topics": [
+        "bizclaw",
+        "bizino"
+      ],
+      "createdAt": "2026-02-21T05:00:47Z",
+      "pushedAt": "2026-02-25T01:08:09Z"
     },
     {
       "name": "AThevon/TokenEater",
       "url": "https://github.com/AThevon/TokenEater",
       "description": "Native macOS widget to monitor your Claude AI usage limits in real-time",
-      "stars": 105,
+      "stars": 114,
       "forks": 6,
       "language": "Swift",
       "topics": [
@@ -468,7 +446,57 @@
         "widgetkit"
       ],
       "createdAt": "2026-02-21T15:58:30Z",
-      "pushedAt": "2026-02-23T22:27:28Z"
+      "pushedAt": "2026-02-24T21:00:15Z"
+    },
+    {
+      "name": "Xuanwo/xurl",
+      "url": "https://github.com/Xuanwo/xurl",
+      "description": "xURL: Client for AI Agents URLs",
+      "stars": 109,
+      "forks": 7,
+      "language": "Rust",
+      "topics": [],
+      "createdAt": "2026-02-22T22:08:22Z",
+      "pushedAt": "2026-02-25T05:11:39Z"
+    },
+    {
+      "name": "jkudish/librarium",
+      "url": "https://github.com/jkudish/librarium",
+      "description": "Multi-provider deep research CLI — fans out queries to multiple search/AI APIs in parallel",
+      "stars": 103,
+      "forks": 5,
+      "language": "TypeScript",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "deep-research",
+        "deep-research-agent",
+        "deep-research-api",
+        "gemini",
+        "openai",
+        "perplexity-ai",
+        "research",
+        "search",
+        "search-engine"
+      ],
+      "createdAt": "2026-02-20T18:24:21Z",
+      "pushedAt": "2026-02-24T05:56:33Z"
+    },
+    {
+      "name": "machinae/awesome-claws",
+      "url": "https://github.com/machinae/awesome-claws",
+      "description": "A curated list of awesome AI agents inspired by OpenClaw",
+      "stars": 102,
+      "forks": 10,
+      "language": null,
+      "topics": [
+        "ai-agents",
+        "awesome",
+        "awesome-list",
+        "openclaw"
+      ],
+      "createdAt": "2026-02-19T17:14:57Z",
+      "pushedAt": "2026-02-24T05:47:02Z"
     }
   ],
   "trending": []

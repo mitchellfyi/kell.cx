@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-24T05:27:39.438Z",
+  "scraped_at": "2026-02-25T05:29:10.219Z",
   "feeds": [
     {
       "name": "Hugging Face Blog",
@@ -25,6 +25,118 @@
   "total_count": 40,
   "items": [
     {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Quoting Kellan Elliott-McCrea",
+      "url": "https://simonwillison.net/2026/Feb/25/kellan-elliott-mccrea/#atom-everything",
+      "date": "2026-02-25T03:30:32.000Z",
+      "description": "<blockquote cite=\"https://laughingmeme.org/2026/02/09/code-has-always-been-the-easy-part.html\"><p>It’s also reasonable for people who entered technology in the last couple of decades because it was go..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Linear walkthroughs",
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/#atom-everything",
+      "date": "2026-02-25T01:07:10.000Z",
+      "description": "<p><em><a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/\">Agentic Engineering Patterns</a> ></em></p> <p>Sometimes it's useful to have a coding agent give you a structured walkth..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Just pull a string to turn these tile patterns into useful 3D structures",
+      "url": "https://www.technologyreview.com/2026/02/24/1132074/just-pull-a-string-to-turn-these-tile-patterns-into-useful-3d-structures/",
+      "date": "2026-02-24T22:00:00.000Z",
+      "description": "MIT researchers have developed a new method for designing 3D structures that can spring up from a flat sheet of interconnected tiles with a single pull of a string. The technique could be used to make..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "A retinal reboot for amblyopia",
+      "url": "https://www.technologyreview.com/2026/02/24/1132077/a-retinal-reboot-for-amblyopia/",
+      "date": "2026-02-24T22:00:00.000Z",
+      "description": "In the vision disorder amblyopia (or “lazy eye”), impaired vision in one eye early in life causes neural connections in the brain’s visual system to shift toward supporting the other eye, leaving the ..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "A new way to rejuvenate the immune system",
+      "url": "https://www.technologyreview.com/2026/02/24/1132080/a-new-way-to-rejuvenate-the-immune-system/",
+      "date": "2026-02-24T22:00:00.000Z",
+      "description": "As people age, their immune function weakens. Owing to shrinkage of the thymus, where T cells normally mature and diversify, populations of these immune cells become smaller and can’t react to pathoge..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "A I-designed proteins may help spot cancer",
+      "url": "https://www.technologyreview.com/2026/02/24/1132083/a-i-designed-proteins-may-help-spot-cancer/",
+      "date": "2026-02-24T22:00:00.000Z",
+      "description": "Researchers at MIT and Microsoft have used artificial intelligence to create molecular sensors that could detect early signs of cancer via a urine test. The researchers developed an AI model to design..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Reformulated antibodies could be injected for easier treatment",
+      "url": "https://www.technologyreview.com/2026/02/24/1132086/reformulated-antibodies-could-be-injected-for-easier-treatment/",
+      "date": "2026-02-24T22:00:00.000Z",
+      "description": "Antibody treatments for cancer and other diseases are typically delivered intravenously, requiring patients to go to a hospital and potentially spend hours receiving infusions. Now Professor Patrick D..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Vine-inspired robot fingers can reach out and grab someone",
+      "url": "https://www.technologyreview.com/2026/02/24/1132089/vine-inspired-robot-fingers-can-reach-out-and-grab-someone/",
+      "date": "2026-02-24T22:00:00.000Z",
+      "description": "In the horticultural world, some vines are especially grabby. As they grow, the woody tendrils can wrap around obstacles with enough force to pull down fences and trees. Inspired by vines’ twisty tena..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Recent books from the MIT community",
+      "url": "https://www.technologyreview.com/2026/02/24/1132091/recent-books-from-the-mit-community-27/",
+      "date": "2026-02-24T22:00:00.000Z",
+      "description": "Launching from the Lab: Building a Deep-Tech StartupBy Lita Nelsen ’64, SM ’66, SM ’79, former director of the MIT Technology Licensing Office, and Maureen StancikBoyce, SM ’91, SM ’93, PhD ’95, with ..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "A boost for manufacturing",
+      "url": "https://www.technologyreview.com/2026/02/24/1132163/a-boost-for-manufacturing/",
+      "date": "2026-02-24T22:00:00.000Z",
+      "description": "Several years ago, Suzanne Berger was visiting a manufacturing facility in Ohio, talking to workers on the shop floor, when a machinist offered a thought that could serve as her current credo.&#160; “..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Using big data for good",
+      "url": "https://www.technologyreview.com/2026/02/24/1132172/using-big-data-for-good/",
+      "date": "2026-02-24T22:00:00.000Z",
+      "description": "A photogenic green-eyed Russian Blue named Petra might just be the world’s most sequenced cat. Petra was rescued from an animal shelter in Reno, Nevada, by Charlie Lieu, MBA ’05, SM ’05, a data whiz, ..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Innovation on the move",
+      "url": "https://www.technologyreview.com/2026/02/24/1132181/innovation-on-the-move/",
+      "date": "2026-02-24T22:00:00.000Z",
+      "description": "The Massachusetts Bay Trans­portation Authority moves hundreds of thousands of people across Greater Boston each day—thanks to a vast system of buses, trains, and ferries that depends on coordination ..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "go-size-analyzer",
+      "url": "https://simonwillison.net/2026/Feb/24/go-size-analyzer/#atom-everything",
+      "date": "2026-02-24T16:10:06.000Z",
+      "description": "<p><strong><a href=\"https://github.com/Zxilly/go-size-analyzer\">go-size-analyzer</a></strong></p> The Go ecosystem is <em>really</em> good at tooling. I just learned about this tool for analyzing the ..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "First run the tests",
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/#atom-everything",
+      "date": "2026-02-24T12:30:05.000Z",
+      "description": "<p><em><a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/\">Agentic Engineering Patterns</a> ></em></p> <p>Automated tests are no longer optional when working with coding agents.</..."
+    },
+    {
       "source": "Hugging Face Blog",
       "category": "industry",
       "title": "Deploying Open Source Vision Language Models (VLM) on Jetson",
@@ -41,28 +153,12 @@
       "description": "<p><strong><a href=\"https://ladybird.org/posts/adopting-rust/\">Ladybird adopts Rust, with help from AI</a></strong></p> Really interesting case-study from Andreas Kling on advanced, sophisticated use ..."
     },
     {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Peptides are everywhere. Here’s what you need to know.",
-      "url": "https://www.technologyreview.com/2026/02/23/1133522/peptides-are-everywhere-heres-what-you-need-to-know/",
-      "date": "2026-02-23T18:52:40.000Z",
-      "description": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. Want to lose weight? ..."
-    },
-    {
       "source": "Simon Willison",
       "category": "technical",
       "title": "Writing about Agentic Engineering Patterns",
       "url": "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/#atom-everything",
       "date": "2026-02-23T17:43:02.000Z",
       "description": "<p>I've started a new project to collect and document <strong><a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/\">Agentic Engineering Patterns</a></strong> - coding practices and ..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "The human work behind humanoid robots is being hidden",
-      "url": "https://www.technologyreview.com/2026/02/23/1133508/the-human-work-behind-humanoid-robots-is-being-hidden/",
-      "date": "2026-02-23T17:05:00.000Z",
-      "description": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. In January, Nvidia’s Jensen Huang, the head of the world’s mos..."
     },
     {
       "source": "Simon Willison",
@@ -89,100 +185,12 @@
       "description": "<p>The latest scourge of Twitter is AI bots that reply to your tweets with generic, banal commentary slop, often accompanied by a question to \"drive engagement\" and waste as much of your time as possi..."
     },
     {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "The Download: Chicago&#8217;s surveillance network, and building better bras",
-      "url": "https://www.technologyreview.com/2026/02/23/1133495/the-download-chicagos-surveillance-network-and-building-better-bras/",
-      "date": "2026-02-23T13:10:00.000Z",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Inside Chicago’s surveillance panopticon Chicago h..."
-    },
-    {
       "source": "Simon Willison",
       "category": "technical",
       "title": "Quoting Summer Yue",
       "url": "https://simonwillison.net/2026/Feb/23/summer-yue/#atom-everything",
       "date": "2026-02-23T13:01:13.000Z",
       "description": "<blockquote cite=\"https://twitter.com/summeryue0/status/2025836517831405980\"><p>Nothing humbles you like telling your OpenClaw “confirm before acting” and watching it speedrun deleting your inbox. I c..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Inside Chicago’s surveillance panopticon",
-      "url": "https://www.technologyreview.com/2026/02/23/1132740/inside-chicago-surveillance-panopticon/",
-      "date": "2026-02-23T10:00:00.000Z",
-      "description": "Early on the morning of September 2, 2024, a Chicago Transit Authority Blue Line train was the scene of a random and horrific mass shooting. Four people were shot and killed on a westbound train as it..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Red/green TDD",
-      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/#atom-everything",
-      "date": "2026-02-23T07:12:28.000Z",
-      "description": "<p><em><a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/\">Agentic Engineering Patterns</a> ></em></p> <p>\"<strong>Use red/green TDD</strong>\" is a pleasingly succinct way to get ..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "The Claude C Compiler: What It Reveals About the Future of Software",
-      "url": "https://simonwillison.net/2026/Feb/22/ccc/#atom-everything",
-      "date": "2026-02-22T23:58:43.000Z",
-      "description": "<p><strong><a href=\"https://www.modular.com/blog/the-claude-c-compiler-what-it-reveals-about-the-future-of-software\">The Claude C Compiler: What It Reveals About the Future of Software</a></strong></p..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "London Stock Exchange: Raspberry Pi Holdings plc",
-      "url": "https://simonwillison.net/2026/Feb/22/raspberry-pi-openclaw/#atom-everything",
-      "date": "2026-02-22T23:54:39.000Z",
-      "description": "<p><strong><a href=\"https://www.londonstockexchange.com/stock/RPI/raspberry-pi-holdings-plc/company-page\">London Stock Exchange: Raspberry Pi Holdings plc</a></strong></p> Striking graph illustrating ..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "How I think about Codex",
-      "url": "https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/#atom-everything",
-      "date": "2026-02-22T15:53:43.000Z",
-      "description": "<p><strong><a href=\"https://www.linkedin.com/pulse/how-i-think-codex-gabriel-chua-ukhic\">How I think about Codex</a></strong></p> Gabriel Chua (Developer Experience Engineer for APAC at OpenAI) provid..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Exclusive eBook: The great Al hype correction of 2025",
-      "url": "https://www.technologyreview.com/2026/02/20/1133368/exclusive-ebook-the-great-al-hype-correction-of-2025/",
-      "date": "2026-02-20T18:46:07.000Z",
-      "description": "2025 was a year of reckoning, including how the heads of the top AI companies made promises they couldn’t keep. In this exclusive subscriber-only eBook, you&#8217;ll learn more about why we may need t..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "The Download: Microsoft&#8217;s online reality check, and the worrying rise in measles cases",
-      "url": "https://www.technologyreview.com/2026/02/20/1133396/the-download-microsofts-online-reality-check-and-the-worrying-rise-in-measles-cases/",
-      "date": "2026-02-20T13:10:00.000Z",
-      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Microsoft has a new plan to prove what’s real and ..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Job titles of the future: Breast biomechanic",
-      "url": "https://www.technologyreview.com/2026/02/20/1132629/job-titles-future-breast-biomechanic/",
-      "date": "2026-02-20T11:00:00.000Z",
-      "description": "Twenty years ago, Joanna Wakefield-Scurr was having persistent pain in her breasts. Her doctor couldn’t diagnose the cause but said a good, supportive bra could help. A professor of biomechanics, Wake..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Community service",
-      "url": "https://www.technologyreview.com/2026/02/20/1132640/community-service-science-fiction-story/",
-      "date": "2026-02-20T11:00:00.000Z",
-      "description": "The bird is a beautiful silver-gray, and as she dies twitching in the lasernet I’m grateful for two things: First, that she didn’t make a sound. Second, that this will be the very last time.&#160; The..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Measles cases are rising. Other vaccine-preventable infections could be next.",
-      "url": "https://www.technologyreview.com/2026/02/20/1133365/measles-cases-rising-vaccine-preventable-infections-mumps-hepatitis-b/",
-      "date": "2026-02-20T10:00:00.000Z",
-      "description": "There’s a measles outbreak happening close to where I live. Since the start of this year, 34 cases have been confirmed in Enfield, a northern borough of London. Most of those affected are children und..."
     },
     {
       "source": "Hugging Face Blog",
@@ -199,14 +207,6 @@
       "url": "https://huggingface.co/blog/unsloth-jobs",
       "date": "2026-02-20T00:00:00.000Z",
       "description": null
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Microsoft has a new plan to prove what’s real and what’s AI online",
-      "url": "https://www.technologyreview.com/2026/02/19/1133360/microsoft-has-a-new-plan-to-prove-whats-real-and-whats-ai-online/",
-      "date": "2026-02-19T16:00:00.000Z",
-      "description": "AI-enabled deception now permeates our online lives. There are the high-profile cases you may easily spot, like when White House officials recently shared a manipulated image of a protester in Minneso..."
     },
     {
       "source": "AI News (Google)",

@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-24",
+  "date": "2026-02-25",
   "summary": "AI coding tools market shows continued momentum across all metrics",
   "source": "rule-based",
   "vscode": [
@@ -9,17 +9,17 @@
   ],
   "releases": [
     "20 releases across tracked tools this week",
-    "Most recent: LiteLLM litellm_presidio-dev-v1.81.15",
-    "Most active: LiteLLM (5 releases)"
+    "Most recent: Anthropic v0.84.0",
+    "Most active: Anthropic (5 releases)"
   ],
   "news": [
-    "176 AI-related stories on HN (3K total points)",
-    "Top discussion: \"Ladybird adopts Rust, with help from AI\" (1127 pts)",
-    "7 stories with 100+ points"
+    "222 AI-related stories on HN (7K total points)",
+    "Top discussion: \"IDF killed Gaza aid workers at point blank range i...\" (1521 pts)",
+    "19 stories with 100+ points"
   ],
   "market": [
     "AI coding tools market continues rapid growth",
     "30 new AI repos gaining traction this week"
   ],
-  "generatedAt": "2026-02-24T05:28:50.181Z"
+  "generatedAt": "2026-02-25T05:30:20.166Z"
 }
