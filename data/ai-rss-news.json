@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-25T05:29:10.219Z",
+  "scraped_at": "2026-02-26T05:26:49.105Z",
   "feeds": [
     {
       "name": "Hugging Face Blog",
@@ -24,6 +24,102 @@
   ],
   "total_count": 40,
   "items": [
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Google API Keys Weren't Secrets. But then Gemini Changed the Rules.",
+      "url": "https://simonwillison.net/2026/Feb/26/google-api-keys/#atom-everything",
+      "date": "2026-02-26T04:28:55.000Z",
+      "description": "<p><strong><a href=\"https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules\">Google API Keys Weren&#x27;t Secrets. But then Gemini Changed the Rules.</a></str..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Quoting Benedict Evans",
+      "url": "https://simonwillison.net/2026/Feb/26/benedict-evans/#atom-everything",
+      "date": "2026-02-26T03:44:56.000Z",
+      "description": "<blockquote cite=\"https://www.ben-evans.com/benedictevans/2026/2/19/how-will-openai-compete-nkg2x\"><p>If people are only using this a couple of times a week at most, and can’t think of anything to do ..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Roundtables: Why 2026 Is the Year for Sodium-Ion Batteries",
+      "url": "https://www.technologyreview.com/2026/02/25/1132873/roundtables-why-2026-is-the-year-for-sodium-ion-batteries/",
+      "date": "2026-02-25T21:15:27.000Z",
+      "description": "Listen to the session or watch below Sodium-based batteries could be a cheaper, safer alternative to lithium-ion, and the technology is finally making its way into cars—and energy storage arrays on th..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "tldraw issue: Move tests to closed source repo",
+      "url": "https://simonwillison.net/2026/Feb/25/closed-tests/#atom-everything",
+      "date": "2026-02-25T21:06:53.000Z",
+      "description": "<p><strong><a href=\"https://github.com/tldraw/tldraw/issues/8082\">tldraw issue: Move tests to closed source repo</a></strong></p> It's become very apparent over the past few months that a comprehensiv..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "See the whole picture and find the look with Circle to Search",
+      "url": "https://blog.google/products-and-platforms/products/search/circle-to-search-february-2026/",
+      "date": "2026-02-25T18:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FTL__Try_On_Blog_header.max-600x600.format-webp.webp\">We’ve updated Circle to Search so you can now explore multiple items in ..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "A more intelligent Android on Samsung Galaxy S26",
+      "url": "https://blog.google/products-and-platforms/platforms/android/samsung-unpacked-2026/",
+      "date": "2026-02-25T18:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_header_2096x1182_withoutte.max-600x600.format-webp.webp\">At Samsung Unpacked 2026, we showcased how Samsung Galaxy S26 de..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Claude Code Remote Control",
+      "url": "https://simonwillison.net/2026/Feb/25/claude-code-remote-control/#atom-everything",
+      "date": "2026-02-25T17:33:24.000Z",
+      "description": "<p><strong><a href=\"https://code.claude.com/docs/en/remote-control\">Claude Code Remote Control</a></strong></p> New Claude Code feature dropped yesterday: you can now run a \"remote control\" session on..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "I vibe coded my dream macOS presentation app",
+      "url": "https://simonwillison.net/2026/Feb/25/present/#atom-everything",
+      "date": "2026-02-25T16:46:19.000Z",
+      "description": "<p>I gave a talk this weekend at Social Science FOO Camp in Mountain View. The event was a classic unconference format where anyone could present a talk without needing to propose it in advance. I gra..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "The Download: introducing the Crime issue",
+      "url": "https://www.technologyreview.com/2026/02/25/1133653/the-download-introducing-the-crime-issue/",
+      "date": "2026-02-25T13:10:00.000Z",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Introducing: the Crime issue Technology has long m..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Listen to Earth’s rumbling, secret soundtrack",
+      "url": "https://www.technologyreview.com/2026/02/25/1132829/listen-earths-rumbling-secret-soundtrack/",
+      "date": "2026-02-25T11:00:00.000Z",
+      "description": "The boom of a calving glacier. The crackling rumble of a wildfire. The roar of a surging storm front. They’re the noises of the living Earth, music of this one particular sphere and clues to the true ..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "3 things Juliet Beauchamp is into right now",
+      "url": "https://www.technologyreview.com/2026/02/25/1132836/3-things-juliet-beauchamp/",
+      "date": "2026-02-25T11:00:00.000Z",
+      "description": "The only reality show that matters The Real Housewives of Salt Lake City is one of the best shows on television right now. Not one of the best reality TV shows, but one of the best TV shows, period. C..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Now is a good time for doing crime",
+      "url": "https://www.technologyreview.com/2026/02/25/1132840/editors-letter-march-2026/",
+      "date": "2026-02-25T11:00:00.000Z",
+      "description": "Eons ago, in 2012, I had a weird experience. My iPhone suddenly shut down. When I restarted it, I found it was totally reset—clean, like a new device. This was the early days of iOS, so I wasn’t too c..."
+    },
     {
       "source": "Simon Willison",
       "category": "technical",
@@ -81,46 +177,6 @@
       "description": "Antibody treatments for cancer and other diseases are typically delivered intravenously, requiring patients to go to a hospital and potentially spend hours receiving infusions. Now Professor Patrick D..."
     },
     {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Vine-inspired robot fingers can reach out and grab someone",
-      "url": "https://www.technologyreview.com/2026/02/24/1132089/vine-inspired-robot-fingers-can-reach-out-and-grab-someone/",
-      "date": "2026-02-24T22:00:00.000Z",
-      "description": "In the horticultural world, some vines are especially grabby. As they grow, the woody tendrils can wrap around obstacles with enough force to pull down fences and trees. Inspired by vines’ twisty tena..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Recent books from the MIT community",
-      "url": "https://www.technologyreview.com/2026/02/24/1132091/recent-books-from-the-mit-community-27/",
-      "date": "2026-02-24T22:00:00.000Z",
-      "description": "Launching from the Lab: Building a Deep-Tech StartupBy Lita Nelsen ’64, SM ’66, SM ’79, former director of the MIT Technology Licensing Office, and Maureen StancikBoyce, SM ’91, SM ’93, PhD ’95, with ..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "A boost for manufacturing",
-      "url": "https://www.technologyreview.com/2026/02/24/1132163/a-boost-for-manufacturing/",
-      "date": "2026-02-24T22:00:00.000Z",
-      "description": "Several years ago, Suzanne Berger was visiting a manufacturing facility in Ohio, talking to workers on the shop floor, when a machinist offered a thought that could serve as her current credo.&#160; “..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Using big data for good",
-      "url": "https://www.technologyreview.com/2026/02/24/1132172/using-big-data-for-good/",
-      "date": "2026-02-24T22:00:00.000Z",
-      "description": "A photogenic green-eyed Russian Blue named Petra might just be the world’s most sequenced cat. Petra was rescued from an animal shelter in Reno, Nevada, by Charlie Lieu, MBA ’05, SM ’05, a data whiz, ..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Innovation on the move",
-      "url": "https://www.technologyreview.com/2026/02/24/1132181/innovation-on-the-move/",
-      "date": "2026-02-24T22:00:00.000Z",
-      "description": "The Massachusetts Bay Trans­portation Authority moves hundreds of thousands of people across Greater Boston each day—thanks to a vast system of buses, trains, and ferries that depends on coordination ..."
-    },
-    {
       "source": "Simon Willison",
       "category": "technical",
       "title": "go-size-analyzer",
@@ -151,46 +207,6 @@
       "url": "https://simonwillison.net/2026/Feb/23/ladybird-adopts-rust/#atom-everything",
       "date": "2026-02-23T18:52:53.000Z",
       "description": "<p><strong><a href=\"https://ladybird.org/posts/adopting-rust/\">Ladybird adopts Rust, with help from AI</a></strong></p> Really interesting case-study from Andreas Kling on advanced, sophisticated use ..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Writing about Agentic Engineering Patterns",
-      "url": "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/#atom-everything",
-      "date": "2026-02-23T17:43:02.000Z",
-      "description": "<p>I've started a new project to collect and document <strong><a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/\">Agentic Engineering Patterns</a></strong> - coding practices and ..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Writing code is cheap now",
-      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/#atom-everything",
-      "date": "2026-02-23T16:20:42.000Z",
-      "description": "<p><em><a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/\">Agentic Engineering Patterns</a> ></em></p> <p>The biggest challenge in adopting agentic engineering practices is gettin..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Quoting Paul Ford",
-      "url": "https://simonwillison.net/2026/Feb/23/paul-ford/#atom-everything",
-      "date": "2026-02-23T16:00:32.000Z",
-      "description": "<blockquote cite=\"https://ftrain.com/leading-thoughts\"><p>The paper asked me to explain vibe coding, and I did so, because I think something big is coming there, and I'm deep in, and I worry that norm..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Reply guy",
-      "url": "https://simonwillison.net/2026/Feb/23/reply-guy/#atom-everything",
-      "date": "2026-02-23T13:11:57.000Z",
-      "description": "<p>The latest scourge of Twitter is AI bots that reply to your tweets with generic, banal commentary slop, often accompanied by a question to \"drive engagement\" and waste as much of your time as possi..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Quoting Summer Yue",
-      "url": "https://simonwillison.net/2026/Feb/23/summer-yue/#atom-everything",
-      "date": "2026-02-23T13:01:13.000Z",
-      "description": "<blockquote cite=\"https://twitter.com/summeryue0/status/2025836517831405980\"><p>Nothing humbles you like telling your OpenClaw “confirm before acting” and watching it speedrun deleting your inbox. I c..."
     },
     {
       "source": "Hugging Face Blog",
@@ -313,28 +329,12 @@
       "description": null
     },
     {
-      "source": "AI News (Google)",
-      "category": "industry",
-      "title": "Natively Adaptive Interfaces: A new framework for AI accessibility",
-      "url": "https://blog.google/company-news/outreach-and-initiatives/accessibility/natively-adaptive-interfaces-ai-accessibility/",
-      "date": "2026-02-05T17:00:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Natively_Adaptive_Interfaces_He.max-600x600.format-webp.webp\">Learn how Google's NAI framework uses AI to make technology more..."
-    },
-    {
       "source": "Hugging Face Blog",
       "category": "industry",
       "title": "Introducing SyGra Studio",
       "url": "https://huggingface.co/blog/ServiceNow-AI/sygra-studio",
       "date": "2026-02-05T16:52:28.000Z",
       "description": null
-    },
-    {
-      "source": "AI News (Google)",
-      "category": "industry",
-      "title": "How Google Cloud is helping Team USA elevate their tricks with AI",
-      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/us-ski-snowboard-tool-winter-olympics-2026/",
-      "date": "2026-02-05T16:00:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/helping_Team_USA_Hero.max-600x600.format-webp.webp\">Google Cloud built an industry-first AI tool to help U.S. Ski and Snowboar..."
     },
     {
       "source": "Hugging Face Blog",

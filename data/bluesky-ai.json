@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-25T05:29:24.472Z",
+  "scraped_at": "2026-02-26T05:27:03.033Z",
   "source": "bluesky",
   "stats": {
     "total_fetched": 22,
@@ -87,11 +87,11 @@
       "created_utc": 1685159768,
       "likeCount": 219,
       "repostCount": 5,
-      "replyCount": 11,
+      "replyCount": 12,
       "embed": null,
       "hasImages": false,
       "category": "discussion",
-      "engagement": 240
+      "engagement": 241
     },
     {
       "uri": "at://did:plc:uinkqqbeiydzfm7v7pi4e5mi/app.bsky.feed.post/3ma77bhibf22g",

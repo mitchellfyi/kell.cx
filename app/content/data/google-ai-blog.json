@@ -1,9 +1,36 @@
 {
   "source": "google-ai",
   "description": "Official Google AI blog posts and announcements",
-  "fetched_at": "2026-02-25T05:29:36.330Z",
+  "fetched_at": "2026-02-26T05:27:12.271Z",
   "count": 20,
   "items": [
+    {
+      "title": "A more intelligent Android on Samsung Galaxy S26",
+      "url": "https://blog.google/products-and-platforms/platforms/android/samsung-unpacked-2026/",
+      "date": "2026-02-25T18:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_header_2096x1182_withoutte.max-600x600.format-webp.webp\">At Samsung Unpacked 2026, we showcased how Samsung Galaxy S26 devices are getting the latest in Android’s AI features.",
+      "categories": [
+        "search",
+        "gemini app",
+        "android",
+        "ai"
+      ],
+      "source": "google-ai-blog",
+      "relevanceScore": 4
+    },
+    {
+      "title": "See the whole picture and find the look with Circle to Search",
+      "url": "https://blog.google/products-and-platforms/products/search/circle-to-search-february-2026/",
+      "date": "2026-02-25T18:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FTL__Try_On_Blog_header.max-600x600.format-webp.webp\">We’ve updated Circle to Search so you can now explore multiple items in a single image.",
+      "categories": [
+        "search",
+        "shopping",
+        "ai"
+      ],
+      "source": "google-ai-blog",
+      "relevanceScore": 3
+    },
     {
       "title": "“No technology has me dreaming bigger than AI”",
       "url": "https://blog.google/company-news/inside-google/message-ceo/sundar-pichai-ai-impact-summit-2026/",
@@ -233,31 +260,6 @@
       "categories": [
         "search",
         "gemini models",
-        "ai"
-      ],
-      "source": "google-ai-blog",
-      "relevanceScore": 4
-    },
-    {
-      "title": "In our latest podcast, hear how the “Smoke Jumpers” team brings Gemini to billions of people.",
-      "url": "https://blog.google/products-and-platforms/products/gemini/release-notes-podcast-smokejumpers/",
-      "date": "2026-01-27T10:28:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/thumbnails_EP24_002_ccRelease_N.max-600x600.format-webp.webp\">Bringing Gemini to billions of users requires a massive, coordinated infrastructure effort. In the latest episode of the Google AI: Release Notes podcast, host Logan Kil…",
-      "categories": [
-        "gemini models",
-        "google deepmind",
-        "ai"
-      ],
-      "source": "google-ai-blog",
-      "relevanceScore": 19
-    },
-    {
-      "title": "How animators and AI researchers made ‘Dear Upstairs Neighbors’",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/dear-upstairs-neighbors/",
-      "date": "2026-01-26T18:00:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/DUN_poster_16x9_v02.max-600x600.format-webp.webp\">Today, our animated short film, “Dear Upstairs Neighbors,” previews at the Sundance Film Festival.",
-      "categories": [
-        "google deepmind",
         "ai"
       ],
       "source": "google-ai-blog",

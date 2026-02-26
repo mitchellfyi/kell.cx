@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-25",
+  "date": "2026-02-26",
   "summary": "AI coding tools market shows continued momentum across all metrics",
   "source": "rule-based",
   "vscode": [
@@ -9,17 +9,17 @@
   ],
   "releases": [
     "20 releases across tracked tools this week",
-    "Most recent: Anthropic v0.84.0",
-    "Most active: Anthropic (5 releases)"
+    "Most recent: llama.cpp b8157",
+    "Most active: Anthropic (6 releases)"
   ],
   "news": [
-    "222 AI-related stories on HN (7K total points)",
-    "Top discussion: \"IDF killed Gaza aid workers at point blank range i...\" (1521 pts)",
+    "233 AI-related stories on HN (8K total points)",
+    "Top discussion: \"Never buy a .online domain\" (693 pts)",
     "19 stories with 100+ points"
   ],
   "market": [
     "AI coding tools market continues rapid growth",
-    "30 new AI repos gaining traction this week"
+    "25 new AI repos gaining traction this week"
   ],
-  "generatedAt": "2026-02-25T05:30:20.166Z"
+  "generatedAt": "2026-02-26T05:27:55.874Z"
 }

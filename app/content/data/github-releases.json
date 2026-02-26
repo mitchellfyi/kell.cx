@@ -1,10 +1,120 @@
 {
-  "generatedAt": "2026-02-25T05:28:49.488Z",
+  "generatedAt": "2026-02-26T05:26:30.176Z",
   "source": "GitHub API",
   "reposTracked": 18,
-  "recentCount": 33,
+  "recentCount": 31,
   "totalReleasesFound": 80,
   "recentReleases": [
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8157",
+      "tag": "b8157",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8157",
+      "publishedAt": "2026-02-26T03:08:19Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nsupport permuted, remove check s0/s10 (#19889)\n\nCo-authored-by: Neo Zhang Jianyu <jianyu.zhang@intel.com>\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8157/llama-b8157-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)..."
+    },
+    {
+      "repo": "anthropics/claude-code",
+      "company": "Anthropic",
+      "category": "cli",
+      "name": "v2.1.59",
+      "tag": "v2.1.59",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.59",
+      "publishedAt": "2026-02-26T00:59:24Z",
+      "isPrerelease": false,
+      "body": "## What's changed\n\n- Claude automatically saves useful context to auto-memory. Manage with /memory\n- Added `/copy` command to show an interactive picker when code blocks are present, allowing selection of individual code blocks or the full response.\n- Improved \"always allow\" prefix suggestions for c..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8156",
+      "tag": "b8156",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8156",
+      "publishedAt": "2026-02-26T00:10:53Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nvulkan: check for memory overlap before doing fusion (#19768)\n\n* vulkan: check for memory overlap before doing fusion\n\n* Update ggml/src/ggml-vulkan/ggml-vulkan.cpp\n\n* address feedback\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/r..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8155",
+      "tag": "b8155",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8155",
+      "publishedAt": "2026-02-25T23:40:34Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\ncommon : add more aliases for sampler CLI params (#19797)\n\n* common : add more aliases for sampler CLI params\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8155/llama-b8155-bin-macos-arm64.tar.gz)\n- [macOS Intel (..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8153",
+      "tag": "b8153",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8153",
+      "publishedAt": "2026-02-25T22:50:38Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nserver : enable multi-modal prompt caching (#19877)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8153/llama-b8153-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/downl..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8152",
+      "tag": "b8152",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8152",
+      "publishedAt": "2026-02-25T20:56:11Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nserver : support multi-modal context checkpoints (#19849)\n\n* Modify llama-memory-hybrid-iswa.cpp\n\n* Modify llama-memory-recurrent.cpp\n\n* Modify server-common.cpp\n\n* Modify server-common.h\n\n* Modify server-context.cpp\n\n* Modify server-task.h\n\n* Added comment to llama-memory-hybrid-isw..."
+    },
+    {
+      "repo": "anthropics/claude-code",
+      "company": "Anthropic",
+      "category": "cli",
+      "name": "v2.1.58",
+      "tag": "v2.1.58",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.58",
+      "publishedAt": "2026-02-25T20:00:11Z",
+      "isPrerelease": false,
+      "body": "## What's changed\n\n- Expand Remote Control to more users"
+    },
+    {
+      "repo": "vllm-project/vllm",
+      "company": "vLLM",
+      "category": "inference",
+      "name": "v0.16.0",
+      "tag": "v0.16.0",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.16.0",
+      "publishedAt": "2026-02-25T19:58:49Z",
+      "isPrerelease": false,
+      "body": "# vLLM v0.16.0\nPlease note that this release was branch cut on Feb 8, so any features added to vLLM after that date is not included.\n\n## Highlights\n\nThis release features 440 commits from 203 contributors (7 new)!\n\n* **Async scheduling + Pipeline Parallelism** is now fully supported, delivering **30..."
+    },
+    {
+      "repo": "langchain-ai/langchain",
+      "company": "LangChain",
+      "category": "framework",
+      "name": "langchain-core==1.2.16",
+      "tag": "langchain-core==1.2.16",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.16",
+      "publishedAt": "2026-02-25T16:27:43Z",
+      "isPrerelease": false,
+      "body": "Changes since langchain-core==1.2.15\n\nrelease(core): 1.2.16 (#35439)\nfix(core): treat empty tool chunk ids as missing in merge (#35414)"
+    },
+    {
+      "repo": "anthropics/claude-code",
+      "company": "Anthropic",
+      "category": "cli",
+      "name": "v2.1.56",
+      "tag": "v2.1.56",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.56",
+      "publishedAt": "2026-02-25T06:27:48Z",
+      "isPrerelease": false,
+      "body": "## What's changed\n\n- VS Code: Fixed another cause of \"command 'claude-vscode.editor.openLast' not found\" crashes"
+    },
     {
       "repo": "anthropics/anthropic-sdk-python",
       "company": "Anthropic",
@@ -28,17 +138,6 @@
       "body": "## What's changed\n\n- Fixed BashTool failing on Windows with EINVAL error"
     },
     {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8148",
-      "tag": "b8148",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8148",
-      "publishedAt": "2026-02-25T02:43:17Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nmodels : fix graph splits (#19866)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8148/llama-b8148-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b8148/llama-b..."
-    },
-    {
       "repo": "anthropics/claude-code",
       "company": "Anthropic",
       "category": "cli",
@@ -48,28 +147,6 @@
       "publishedAt": "2026-02-25T00:13:48Z",
       "isPrerelease": false,
       "body": "## What's changed\n\n- Fixed a UI flicker where user input would briefly disappear after submission before the message rendered\n- Fixed bulk agent kill (ctrl+f) to send a single aggregate notification instead of one per agent, and to properly clear the command queue\n- Fixed graceful shutdown sometimes..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8147",
-      "tag": "b8147",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8147",
-      "publishedAt": "2026-02-24T22:24:29Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nserver: fix query params lost when proxying requests in multi-model router mode (#19854)\n\n* server: fix query params lost when proxying requests in multi-model router mode\n\n* server: re-encode query params using httplib::encode_query_component in proxy\n\n</details>\n\n**macOS/iOS:**\n- [..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8146",
-      "tag": "b8146",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8146",
-      "publishedAt": "2026-02-24T21:35:23Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nggml/gguf : prevent integer overflows (#19856)\n\n* gguf : prevent integer overflow for ggml_context mem size\n\n* ggml : fix int overflows in ggml_new_object()\n\n* gguf : prevent string exhaustion\n\n* gguf : prevent array elements exhaustion\n\n* ggml : fix negative tensor type oob\n\n* py : ..."
     },
     {
       "repo": "BerriAI/litellm",
@@ -142,92 +219,125 @@
       "company": "Ollama",
       "category": "local",
       "name": "v0.17.1",
-      "tag": "v0.17.1-rc1",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.17.1-rc1",
+      "tag": "v0.17.1",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.17.1",
       "publishedAt": "2026-02-24T15:00:28Z",
       "isPrerelease": true,
       "body": "## What's Changed\n* models: add nemotron architecture support by @jmorganca in https://github.com/ollama/ollama/pull/14356\n* Avoid Excessive MLX Memory Usage by @jessegross in https://github.com/ollama/ollama/pull/14341\n* ui: use capability-based detection for web search by @hoyyeva in https://githu..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8145",
-      "tag": "b8145",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8145",
-      "publishedAt": "2026-02-24T14:44:46Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nmodel : update label for LFM2-24B-A2B (#19848)\n\n* model : Update label for LFM2-24B-A2B\n\n```\n❯ build/bin/llama-bench -m /data/playground/checkpoints/LFM2-24B-A2B-Preview-Q4_0.gguf,/data/playground/checkpoints/LFM2-8B-A1B-Q4_0.gguf -p 1 -n 0\n| model                          |       si..."
-    },
-    {
-      "repo": "langchain-ai/langchain",
-      "company": "LangChain",
-      "category": "framework",
-      "name": "langchain-anthropic==1.3.4",
-      "tag": "langchain-anthropic==1.3.4",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.3.4",
-      "publishedAt": "2026-02-24T13:54:19Z",
-      "isPrerelease": false,
-      "body": "Changes since langchain-anthropic==1.3.3\n\nrelease(anthropic): 1.3.4 (#35418)\nfix(anthropic): filter out common OpenAI Responses block types (#35417)\nfix(anthropic): update integration tests (#35396)\nrevert: add ChatAnthropicBedrockWrapper (#35371)\nfix(anthropic): replace retired model IDs in tests a..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8144",
-      "tag": "b8144",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8144",
-      "publishedAt": "2026-02-24T09:57:21Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nserver : support max_completion_tokens request property (#19831)\n\n\"max_tokens\" is deprectated in favor of \"max_completion_tokens\" which\nsets the upper bound for reasoning+output token.\n\nCloses: #13700\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml..."
-    },
-    {
-      "repo": "anthropics/claude-code",
-      "company": "Anthropic",
-      "category": "cli",
-      "name": "v2.1.52",
-      "tag": "v2.1.52",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.52",
-      "publishedAt": "2026-02-24T06:39:56Z",
-      "isPrerelease": false,
-      "body": "## What's changed\n\n- VS Code: Fixed extension crash on Windows (\"command 'claude-vscode.editor.openLast' not found\")"
-    },
-    {
-      "repo": "openai/openai-python",
-      "company": "OpenAI",
-      "category": "sdk",
-      "name": "v2.23.0",
-      "tag": "v2.23.0",
-      "url": "https://github.com/openai/openai-python/releases/tag/v2.23.0",
-      "publishedAt": "2026-02-24T03:19:39Z",
-      "isPrerelease": false,
-      "body": "## 2.23.0 (2026-02-24)\n\nFull Changelog: [v2.22.0...v2.23.0](https://github.com/openai/openai-python/compare/v2.22.0...v2.23.0)\n\n### Features\n\n* **api:** add gpt-realtime-1.5 and gpt-audio-1.5 model options to realtime calls ([3300b61](https://github.com/openai/openai-python/commit/3300b61e1d5a34c9d2..."
-    },
-    {
-      "repo": "anthropics/claude-code",
-      "company": "Anthropic",
-      "category": "cli",
-      "name": "v2.1.51",
-      "tag": "v2.1.51",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.51",
-      "publishedAt": "2026-02-24T01:40:58Z",
-      "isPrerelease": false,
-      "body": "## What's changed\n\n- Added `claude remote-control` subcommand for external builds, enabling local environment serving for all users.\n- Updated plugin marketplace default git timeout from 30s to 120s and added `CLAUDE_CODE_PLUGIN_GIT_TIMEOUT_MS` to configure.\n- Added support for custom npm registries..."
-    },
-    {
-      "repo": "openai/openai-python",
-      "company": "OpenAI",
-      "category": "sdk",
-      "name": "v2.22.0",
-      "tag": "v2.22.0",
-      "url": "https://github.com/openai/openai-python/releases/tag/v2.22.0",
-      "publishedAt": "2026-02-23T20:13:52Z",
-      "isPrerelease": false,
-      "body": "## 2.22.0 (2026-02-23)\n\nFull Changelog: [v2.21.0...v2.22.0](https://github.com/openai/openai-python/compare/v2.21.0...v2.22.0)\n\n### Features\n\n* **api:** websockets for responses api ([c01f6fb](https://github.com/openai/openai-python/commit/c01f6fb0d55b7454f73c4904ea7a1954553085dc))\n\n\n### Chores\n\n* *..."
     }
   ],
   "allReleases": [
     {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8157",
+      "tag": "b8157",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8157",
+      "publishedAt": "2026-02-26T03:08:19Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nsupport permuted, remove check s0/s10 (#19889)\n\nCo-authored-by: Neo Zhang Jianyu <jianyu.zhang@intel.com>\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8157/llama-b8157-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)..."
+    },
+    {
+      "repo": "anthropics/claude-code",
+      "company": "Anthropic",
+      "category": "cli",
+      "name": "v2.1.59",
+      "tag": "v2.1.59",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.59",
+      "publishedAt": "2026-02-26T00:59:24Z",
+      "isPrerelease": false,
+      "body": "## What's changed\n\n- Claude automatically saves useful context to auto-memory. Manage with /memory\n- Added `/copy` command to show an interactive picker when code blocks are present, allowing selection of individual code blocks or the full response.\n- Improved \"always allow\" prefix suggestions for c..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8156",
+      "tag": "b8156",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8156",
+      "publishedAt": "2026-02-26T00:10:53Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nvulkan: check for memory overlap before doing fusion (#19768)\n\n* vulkan: check for memory overlap before doing fusion\n\n* Update ggml/src/ggml-vulkan/ggml-vulkan.cpp\n\n* address feedback\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/r..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8155",
+      "tag": "b8155",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8155",
+      "publishedAt": "2026-02-25T23:40:34Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\ncommon : add more aliases for sampler CLI params (#19797)\n\n* common : add more aliases for sampler CLI params\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8155/llama-b8155-bin-macos-arm64.tar.gz)\n- [macOS Intel (..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8153",
+      "tag": "b8153",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8153",
+      "publishedAt": "2026-02-25T22:50:38Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nserver : enable multi-modal prompt caching (#19877)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8153/llama-b8153-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/downl..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8152",
+      "tag": "b8152",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8152",
+      "publishedAt": "2026-02-25T20:56:11Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nserver : support multi-modal context checkpoints (#19849)\n\n* Modify llama-memory-hybrid-iswa.cpp\n\n* Modify llama-memory-recurrent.cpp\n\n* Modify server-common.cpp\n\n* Modify server-common.h\n\n* Modify server-context.cpp\n\n* Modify server-task.h\n\n* Added comment to llama-memory-hybrid-isw..."
+    },
+    {
+      "repo": "anthropics/claude-code",
+      "company": "Anthropic",
+      "category": "cli",
+      "name": "v2.1.58",
+      "tag": "v2.1.58",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.58",
+      "publishedAt": "2026-02-25T20:00:11Z",
+      "isPrerelease": false,
+      "body": "## What's changed\n\n- Expand Remote Control to more users"
+    },
+    {
+      "repo": "vllm-project/vllm",
+      "company": "vLLM",
+      "category": "inference",
+      "name": "v0.16.0",
+      "tag": "v0.16.0",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.16.0",
+      "publishedAt": "2026-02-25T19:58:49Z",
+      "isPrerelease": false,
+      "body": "# vLLM v0.16.0\nPlease note that this release was branch cut on Feb 8, so any features added to vLLM after that date is not included.\n\n## Highlights\n\nThis release features 440 commits from 203 contributors (7 new)!\n\n* **Async scheduling + Pipeline Parallelism** is now fully supported, delivering **30..."
+    },
+    {
+      "repo": "langchain-ai/langchain",
+      "company": "LangChain",
+      "category": "framework",
+      "name": "langchain-core==1.2.16",
+      "tag": "langchain-core==1.2.16",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.2.16",
+      "publishedAt": "2026-02-25T16:27:43Z",
+      "isPrerelease": false,
+      "body": "Changes since langchain-core==1.2.15\n\nrelease(core): 1.2.16 (#35439)\nfix(core): treat empty tool chunk ids as missing in merge (#35414)"
+    },
+    {
+      "repo": "anthropics/claude-code",
+      "company": "Anthropic",
+      "category": "cli",
+      "name": "v2.1.56",
+      "tag": "v2.1.56",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.56",
+      "publishedAt": "2026-02-25T06:27:48Z",
+      "isPrerelease": false,
+      "body": "## What's changed\n\n- VS Code: Fixed another cause of \"command 'claude-vscode.editor.openLast' not found\" crashes"
+    },
+    {
       "repo": "anthropics/anthropic-sdk-python",
       "company": "Anthropic",
       "category": "sdk",
@@ -250,17 +360,6 @@
       "body": "## What's changed\n\n- Fixed BashTool failing on Windows with EINVAL error"
     },
     {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8148",
-      "tag": "b8148",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8148",
-      "publishedAt": "2026-02-25T02:43:17Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nmodels : fix graph splits (#19866)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8148/llama-b8148-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b8148/llama-b..."
-    },
-    {
       "repo": "anthropics/claude-code",
       "company": "Anthropic",
       "category": "cli",
@@ -270,28 +369,6 @@
       "publishedAt": "2026-02-25T00:13:48Z",
       "isPrerelease": false,
       "body": "## What's changed\n\n- Fixed a UI flicker where user input would briefly disappear after submission before the message rendered\n- Fixed bulk agent kill (ctrl+f) to send a single aggregate notification instead of one per agent, and to properly clear the command queue\n- Fixed graceful shutdown sometimes..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8147",
-      "tag": "b8147",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8147",
-      "publishedAt": "2026-02-24T22:24:29Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nserver: fix query params lost when proxying requests in multi-model router mode (#19854)\n\n* server: fix query params lost when proxying requests in multi-model router mode\n\n* server: re-encode query params using httplib::encode_query_component in proxy\n\n</details>\n\n**macOS/iOS:**\n- [..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8146",
-      "tag": "b8146",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8146",
-      "publishedAt": "2026-02-24T21:35:23Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nggml/gguf : prevent integer overflows (#19856)\n\n* gguf : prevent integer overflow for ggml_context mem size\n\n* ggml : fix int overflows in ggml_new_object()\n\n* gguf : prevent string exhaustion\n\n* gguf : prevent array elements exhaustion\n\n* ggml : fix negative tensor type oob\n\n* py : ..."
     },
     {
       "repo": "BerriAI/litellm",
@@ -364,22 +441,11 @@
       "company": "Ollama",
       "category": "local",
       "name": "v0.17.1",
-      "tag": "v0.17.1-rc1",
-      "url": "https://github.com/ollama/ollama/releases/tag/v0.17.1-rc1",
+      "tag": "v0.17.1",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.17.1",
       "publishedAt": "2026-02-24T15:00:28Z",
       "isPrerelease": true,
       "body": "## What's Changed\n* models: add nemotron architecture support by @jmorganca in https://github.com/ollama/ollama/pull/14356\n* Avoid Excessive MLX Memory Usage by @jessegross in https://github.com/ollama/ollama/pull/14341\n* ui: use capability-based detection for web search by @hoyyeva in https://githu..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8145",
-      "tag": "b8145",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8145",
-      "publishedAt": "2026-02-24T14:44:46Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nmodel : update label for LFM2-24B-A2B (#19848)\n\n* model : Update label for LFM2-24B-A2B\n\n```\n❯ build/bin/llama-bench -m /data/playground/checkpoints/LFM2-24B-A2B-Preview-Q4_0.gguf,/data/playground/checkpoints/LFM2-8B-A1B-Q4_0.gguf -p 1 -n 0\n| model                          |       si..."
     },
     {
       "repo": "langchain-ai/langchain",
@@ -393,28 +459,6 @@
       "body": "Changes since langchain-anthropic==1.3.3\n\nrelease(anthropic): 1.3.4 (#35418)\nfix(anthropic): filter out common OpenAI Responses block types (#35417)\nfix(anthropic): update integration tests (#35396)\nrevert: add ChatAnthropicBedrockWrapper (#35371)\nfix(anthropic): replace retired model IDs in tests a..."
     },
     {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8144",
-      "tag": "b8144",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8144",
-      "publishedAt": "2026-02-24T09:57:21Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nserver : support max_completion_tokens request property (#19831)\n\n\"max_tokens\" is deprectated in favor of \"max_completion_tokens\" which\nsets the upper bound for reasoning+output token.\n\nCloses: #13700\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml..."
-    },
-    {
-      "repo": "anthropics/claude-code",
-      "company": "Anthropic",
-      "category": "cli",
-      "name": "v2.1.52",
-      "tag": "v2.1.52",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.52",
-      "publishedAt": "2026-02-24T06:39:56Z",
-      "isPrerelease": false,
-      "body": "## What's changed\n\n- VS Code: Fixed extension crash on Windows (\"command 'claude-vscode.editor.openLast' not found\")"
-    },
-    {
       "repo": "openai/openai-python",
       "company": "OpenAI",
       "category": "sdk",
@@ -424,17 +468,6 @@
       "publishedAt": "2026-02-24T03:19:39Z",
       "isPrerelease": false,
       "body": "## 2.23.0 (2026-02-24)\n\nFull Changelog: [v2.22.0...v2.23.0](https://github.com/openai/openai-python/compare/v2.22.0...v2.23.0)\n\n### Features\n\n* **api:** add gpt-realtime-1.5 and gpt-audio-1.5 model options to realtime calls ([3300b61](https://github.com/openai/openai-python/commit/3300b61e1d5a34c9d2..."
-    },
-    {
-      "repo": "anthropics/claude-code",
-      "company": "Anthropic",
-      "category": "cli",
-      "name": "v2.1.51",
-      "tag": "v2.1.51",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.51",
-      "publishedAt": "2026-02-24T01:40:58Z",
-      "isPrerelease": false,
-      "body": "## What's changed\n\n- Added `claude remote-control` subcommand for external builds, enabling local environment serving for all users.\n- Updated plugin marketplace default git timeout from 30s to 120s and added `CLAUDE_CODE_PLUGIN_GIT_TIMEOUT_MS` to configure.\n- Added support for custom npm registries..."
     },
     {
       "repo": "openai/openai-python",
@@ -468,17 +501,6 @@
       "publishedAt": "2026-02-21T06:40:46Z",
       "isPrerelease": false,
       "body": "## OpenClaw\n\nOpenClaw can now be installed and configured automatically via Ollama, making it the easiest way to get up and running with OpenClaw with open models like Kimi-K2.5, GLM-5, and Minimax-M2.5.\n\n### Get started\n\n`ollama launch openclaw`\n\n<img width=\"2368\" height=\"1830\" alt=\"oc1\" src=\"https..."
-    },
-    {
-      "repo": "anthropics/claude-code",
-      "company": "Anthropic",
-      "category": "cli",
-      "name": "v2.1.50",
-      "tag": "v2.1.50",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.50",
-      "publishedAt": "2026-02-20T23:48:57Z",
-      "isPrerelease": false,
-      "body": "## What's changed\n\n- Added support for `startupTimeout` configuration for LSP servers\n- Added `WorktreeCreate` and `WorktreeRemove` hook events, enabling custom VCS setup and teardown when agent worktree isolation creates or removes worktrees.\n- Fixed a bug where resumed sessions could be invisible ..."
     },
     {
       "repo": "JetBrains/intellij-community",
@@ -578,17 +600,6 @@
       "publishedAt": "2026-02-18T19:06:42Z",
       "isPrerelease": false,
       "body": "# Release Notes\n\n## [2026-02-18]\n\n### llama-index-agent-agentmesh [0.1.0]\n\n- [Integration] AgentMesh: Trust Layer for LlamaIndex Agents ([#20644](https://github.com/run-llama/llama_index/pull/20644))\n\n### llama-index-core [0.14.15]\n\n- Support basic operations for multimodal types ([#20640](https://g..."
-    },
-    {
-      "repo": "langchain-ai/langchain",
-      "company": "LangChain",
-      "category": "framework",
-      "name": "langchain-tests==1.1.5",
-      "tag": "langchain-tests==1.1.5",
-      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-tests%3D%3D1.1.5",
-      "publishedAt": "2026-02-18T16:08:44Z",
-      "isPrerelease": false,
-      "body": "Changes since langchain-tests==1.1.4\n\nchore: bump the other-deps group across 3 directories with 2 updates (#35255)\nstyle: bump ruff version to 0.15 (#35042)\nchore(deps): bump langsmith from 0.4.56 to 0.6.3 in /libs/standard-tests (#35157)\nrelease(standard-tests): release 1.1.5 (#35139)\nchore(deps):..."
     },
     {
       "repo": "anthropics/anthropic-sdk-python",
@@ -765,40 +776,43 @@
       "publishedAt": "2026-02-04T21:08:10Z",
       "isPrerelease": false,
       "body": "Welcome to the January 2026 release of Visual Studio Code. In this release, we are further evolving VS Code to make it the **home for multi-agent development**.\n\n* **Chat UX**: chat just feels better and snappier with faster streaming, improved reasoning results, and a revamped editor inline chat\n\n*..."
+    }
+  ],
+  "repoStats": [
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "latestRelease": "b8157",
+      "latestDate": "2026-02-26T03:08:19Z"
+    },
+    {
+      "repo": "anthropics/claude-code",
+      "company": "Anthropic",
+      "category": "cli",
+      "latestRelease": "v2.1.59",
+      "latestDate": "2026-02-26T00:59:24Z"
     },
     {
       "repo": "vllm-project/vllm",
       "company": "vLLM",
       "category": "inference",
-      "name": "v0.15.1",
-      "tag": "v0.15.1",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.15.1",
-      "publishedAt": "2026-02-04T20:48:08Z",
-      "isPrerelease": false,
-      "body": "v0.15.1 is a patch release with security fixes, RTX Blackwell GPU fixes support, and bug fixes.\n\n## Security\n\n- **CVE-2025-69223**: Updated aiohttp dependency (#33621)\n- **CVE-2026-0994**: Updated Protobuf dependency (#33619)\n\n## Highlights\n\n### Bugfix Hardware Support\n- **RTX Blackwell (SM120)**: F..."
-    }
-  ],
-  "repoStats": [
+      "latestRelease": "v0.16.0",
+      "latestDate": "2026-02-25T19:58:49Z"
+    },
+    {
+      "repo": "langchain-ai/langchain",
+      "company": "LangChain",
+      "category": "framework",
+      "latestRelease": "langchain-core==1.2.16",
+      "latestDate": "2026-02-25T16:27:43Z"
+    },
     {
       "repo": "anthropics/anthropic-sdk-python",
       "company": "Anthropic",
       "category": "sdk",
       "latestRelease": "v0.84.0",
       "latestDate": "2026-02-25T05:22:10Z"
-    },
-    {
-      "repo": "anthropics/claude-code",
-      "company": "Anthropic",
-      "category": "cli",
-      "latestRelease": "v2.1.55",
-      "latestDate": "2026-02-25T03:15:51Z"
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "latestRelease": "b8148",
-      "latestDate": "2026-02-25T02:43:17Z"
     },
     {
       "repo": "openai/openai-python",
@@ -818,15 +832,8 @@
       "repo": "ollama/ollama",
       "company": "Ollama",
       "category": "local",
-      "latestRelease": "v0.17.1-rc1",
+      "latestRelease": "v0.17.1",
       "latestDate": "2026-02-24T15:00:28Z"
-    },
-    {
-      "repo": "langchain-ai/langchain",
-      "company": "LangChain",
-      "category": "framework",
-      "latestRelease": "langchain-anthropic==1.3.4",
-      "latestDate": "2026-02-24T13:54:19Z"
     },
     {
       "repo": "JetBrains/intellij-community",
@@ -855,13 +862,6 @@
       "category": "extension",
       "latestRelease": "v1.3.32-vscode",
       "latestDate": "2026-02-17T20:35:24Z"
-    },
-    {
-      "repo": "vllm-project/vllm",
-      "company": "vLLM",
-      "category": "inference",
-      "latestRelease": "v0.15.1",
-      "latestDate": "2026-02-04T20:48:08Z"
     },
     {
       "repo": "openai/tiktoken",

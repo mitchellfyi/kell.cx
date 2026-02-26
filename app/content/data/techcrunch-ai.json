@@ -1,159 +1,201 @@
 {
   "source": "TechCrunch",
   "url": "https://techcrunch.com",
-  "fetched_at": "2026-02-25T05:29:30.544Z",
+  "fetched_at": "2026-02-26T05:27:09.434Z",
   "total_parsed": 20,
-  "ai_filtered": 10,
+  "ai_filtered": 13,
   "articles": [
     {
-      "title": "Nvidia challenger AI chip startup MatX raised $500M",
-      "url": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
-      "date": "2026-02-25T00:45:47.000Z",
-      "description": "The startup was founded by former Google TPU engineers in 2023.",
-      "author": "Marina Temkin",
+      "title": "Anthropic acquires computer-use AI startup Vercept after Meta poached one of its founders",
+      "url": "https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/",
+      "date": "2026-02-25T23:49:19.000Z",
+      "description": "Seattle-based Vercept developed complex agentic tools, including a computer-use agent that could complete tasks inside applications like a person with a laptop would.",
+      "author": "Julie Bort",
       "categories": [
         "AI",
-        "Hardware",
-        "Startups",
-        "AI chips",
-        "chips",
-        "etched",
-        "In Brief",
-        "MatX",
-        "TPU"
-      ]
-    },
-    {
-      "title": "Spanish &#8216;soonicorn' Multiverse Computing releases free compressed AI model",
-      "url": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
-      "date": "2026-02-24T23:32:00.000Z",
-      "description": "Spanish startup Multiverse Computing has released a new version of its HyperNova 60B model on Hugging Face that, it says, bests Mistral's model.",
-      "author": "Anna Heim",
-      "categories": [
-        "AI",
-        "LLMs",
-        "multiverse computing"
-      ]
-    },
-    {
-      "title": "Anthropic won’t budge as Pentagon escalates AI dispute",
-      "url": "https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/",
-      "date": "2026-02-24T21:18:45.000Z",
-      "description": "The Pentagon has given Anthropic until Friday to loosen AI guardrails or face potential penalties, escalating a high-stakes dispute that raises questions about government leverage, vendor dependence, and investor confidence in defense tech.",
-      "author": "Rebecca Bellan",
-      "categories": [
-        "AI",
-        "Government & Policy",
+        "Venture",
         "Anthropic",
-        "dario amodei",
-        "dod",
-        "Exclusive",
-        "pentagon",
-        "pete hegseth"
+        "Mergers and Acquisitions"
       ]
     },
     {
-      "title": "OpenAI COO says &#8216;we have not yet really seen AI penetrate enterprise business processes'",
-      "url": "https://techcrunch.com/2026/02/24/openai-coo-says-we-have-not-yet-really-seen-ai-penetrate-enterprise-business-processes/",
-      "date": "2026-02-24T17:44:34.000Z",
-      "description": "There is a lot of talk around AI agents taking over business processes and claiming that \"SaaS is dead.\" While these predictions have moved SaaS stocks at times, they haven't really come true.",
-      "author": "Ivan Mehta",
+      "title": "Gushwork bets on AI search for customer leads — and early results are emerging",
+      "url": "https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/",
+      "date": "2026-02-26T00:00:00.000Z",
+      "description": "Gushwork has raised $9 million in a seed round led by SIG and Lightspeed. The startup has seen early customer traction from AI search tools like ChatGPT.",
+      "author": "Jagmeet Singh",
       "categories": [
         "AI",
-        "Enterprise",
-        "Brad Lightcap",
-        "India",
+        "Startups",
+        "AI search",
+        "Exclusive",
+        "Gushwork",
+        "Lightspeed India Venture Partners",
+        "lightspeed venture partners",
+        "Susquehanna International Group"
+      ]
+    },
+    {
+      "title": "The White House wants AI companies to cover rate hikes. Most have already said they would.",
+      "url": "https://techcrunch.com/2026/02/25/the-white-house-wants-ai-companies-to-cover-rate-hikes-most-have-already-said-they-would/",
+      "date": "2026-02-25T20:42:14.000Z",
+      "description": "Many hyperscalers have already made public commitments to cover electricity cost increases.",
+      "author": "Tim Fernholz",
+      "categories": [
+        "AI",
+        "Anthropic",
+        "Donald Trump",
+        "Meta",
+        "Microsoft",
+        "OpenAI",
+        "White House"
+      ]
+    },
+    {
+      "title": "The public opposition to AI infrastructure is heating up",
+      "url": "https://techcrunch.com/2026/02/25/the-public-opposition-to-ai-infrastructure-is-heating-up/",
+      "date": "2026-02-25T19:03:34.000Z",
+      "description": "Public backlash over the data center boom is leading to a variety of draconian policies — including bans on new construction.",
+      "author": "Lucas Ropek",
+      "categories": [
+        "AI",
+        "Microsoft",
+        "data centers",
+        "New York",
         "OpenAI"
       ]
     },
     {
-      "title": "India's AI boom pushes firms to trade near-term revenue for users",
-      "url": "https://techcrunch.com/2026/02/24/india-ai-boom-pushes-firms-to-trade-near-term-revenue-for-users/",
-      "date": "2026-02-25T02:00:00.000Z",
-      "description": "ChatGPT and rivals are testing whether India's massive AI user boom can translate into paying customers as free offers wind down.",
-      "author": "Jagmeet Singh",
+      "title": "OpenClaw creator's advice to AI builders is to be more playful and allow yourself time to improve",
+      "url": "https://techcrunch.com/2026/02/25/openclaw-creators-advice-to-ai-builders-is-to-be-more-playful-and-allow-yourself-time-to-improve/",
+      "date": "2026-02-25T16:54:46.000Z",
+      "description": "Peter Steinberger talks about the creation of his viral AI agent OpenClaw and how being more \"playful\" makes for a better way to learn AI coding.",
+      "author": "Sarah Perez",
       "categories": [
         "AI",
-        "Google",
-        "India",
-        "Exclusive",
-        "gemini",
-        "OpenAI",
-        "ChatGPT",
-        "google gemini",
-        "Perplexity",
-        "ChatGPT Go",
-        "Perplexity Pro"
+        "Builders",
+        "coding",
+        "developers",
+        "openclaw",
+        "Peter Steinberger"
       ]
     },
     {
-      "title": "Uber engineers built an AI version of their boss",
-      "url": "https://techcrunch.com/2026/02/24/uber-engineers-built-ai-version-of-boss-dara-khosrowshahi/",
-      "date": "2026-02-24T23:09:28.000Z",
-      "description": "Uber CEO Dara Khosrowshahi said the company’s employees have gone all in on AI, going so far as to build a chatbot of him that they use to practice their pitches.",
-      "author": "Kirsten Korosec",
+      "title": "Wearable startup CUDIS launches a new health ring line with an AI-fueled &#8216;coach'",
+      "url": "https://techcrunch.com/2026/02/25/wearable-startup-cudis-launches-a-new-health-ring-line-with-an-ai-fueled-coach/",
+      "date": "2026-02-25T19:10:04.000Z",
+      "description": "The wearable incentivizes healthy behavior with points that can be redeemed for health products.",
+      "author": "Lucas Ropek",
       "categories": [
         "AI",
-        "Transportation",
-        "In Brief",
-        "Uber"
+        "CUDIS",
+        "wearables"
       ]
     },
     {
-      "title": "Self-driving tech startup Wayve raises $1.2B from Nvidia, Uber, and three automakers",
-      "url": "https://techcrunch.com/2026/02/24/self-driving-tech-startup-wayve-raises-1-2b-from-nvidia-uber-and-three-automakers/",
-      "date": "2026-02-25T00:37:59.000Z",
-      "description": "Major automakers, tech giants, AI companies, and chipmakers are all trying to get a piece of Wayve.",
-      "author": "Kirsten Korosec",
-      "categories": [
-        "Transportation",
-        "automated driving",
-        "autonomous vehicles",
-        "robotaxis",
-        "wayve"
-      ]
-    },
-    {
-      "title": "Google adds a way to create automated workflows to Opal",
-      "url": "https://techcrunch.com/2026/02/24/google-adds-a-way-to-create-automated-workflows-to-opal/",
-      "date": "2026-02-24T19:00:00.000Z",
-      "description": "The company said that a new agent being introduced in Opal will allow users to create mini-apps that can let them plan and execute tasks using text prompts.",
+      "title": "OpenAI COO says ads will be &#8216;an iterative process'",
+      "url": "https://techcrunch.com/2026/02/25/openai-coo-says-ads-will-be-an-iterative-process/",
+      "date": "2026-02-25T17:37:37.000Z",
+      "description": "COO Brad Lightcap noted that ads can add to the product experience of users if they are done right. He urged to give OpenAI a few months to see how the company fares in rolling out the product.",
       "author": "Ivan Mehta",
       "categories": [
         "AI",
-        "Apps",
-        "gemini",
-        "Google",
-        "opal",
-        "vibe coding"
+        "Ads",
+        "Brad Lightcap",
+        "Exclusive",
+        "OpenAI"
       ]
     },
     {
-      "title": "More startups are hitting $10M ARR in 3 months than ever before",
-      "url": "https://techcrunch.com/2026/02/24/more-startups-are-hitting-10m-arr-in-3-months-than-ever-before/",
-      "date": "2026-02-24T19:39:36.000Z",
-      "description": "AI has brought the startup world the rise of companies that instantly hit multimillion-dollar ARR. Stripe revealed some data that shows how common this has become.",
+      "title": "Salesforce CEO Marc Benioff: This isn't our first SaaSpocalypse",
+      "url": "https://techcrunch.com/2026/02/25/salesforce-ceo-marc-benioff-this-isnt-our-first-saaspocalypse/",
+      "date": "2026-02-26T01:59:12.000Z",
+      "description": "Salesforce reported a solid year-end earnings and then pulled out all the stops to ward off more talk of the death of its business to AI.",
       "author": "Julie Bort",
       "categories": [
-        "Fintech",
-        "Startups",
-        "Venture",
-        "annual recurring revenue"
+        "AI",
+        "Enterprise",
+        "Marc Benioff",
+        "SaaS sales",
+        "Salesforce"
       ]
     },
     {
-      "title": "Apple rolls out age-verification tools worldwide to comply with growing web of child safety laws",
-      "url": "https://techcrunch.com/2026/02/24/apple-rolls-out-age-verification-tools-worldwide-to-comply-with-growing-web-of-child-safety-laws/",
-      "date": "2026-02-24T23:21:54.000Z",
-      "description": "Apple complies with new age-assurance laws in the U.S. and abroad, including those that block users from downloading apps aimed at adults.",
+      "title": "Alphabet-owned robotics software company Intrinsic joins Google",
+      "url": "https://techcrunch.com/2026/02/25/alphabet-owned-robotics-software-company-intrinsic-joins-google/",
+      "date": "2026-02-25T20:00:00.000Z",
+      "description": "Nearly five years after graduating into an independent Alphabet company, Intrinsic is moving under Google's domain.",
+      "author": "Rebecca Szkutak",
+      "categories": [
+        "AI",
+        "Enterprise",
+        "Robotics",
+        "Alphabet",
+        "artificial intelligence",
+        "Exclusive",
+        "Google",
+        "Intrinsic",
+        "Mergers and Acquisitions",
+        "physical ai"
+      ]
+    },
+    {
+      "title": "Gemini can now automate some multi-step tasks on Android",
+      "url": "https://techcrunch.com/2026/02/25/gemini-can-now-automate-some-multi-step-tasks-on-android/",
+      "date": "2026-02-25T18:00:00.000Z",
+      "description": "Gemini on Android will be able to automate tasks involving rideshare requests, or grocery or food delivery, says Google.",
       "author": "Sarah Perez",
       "categories": [
+        "AI",
         "Apps",
-        "app store",
-        "Apple",
-        "laws",
-        "minors",
-        "regulation"
+        "Android",
+        "Automation",
+        "gemini",
+        "Google"
+      ]
+    },
+    {
+      "title": "Nvidia has another record quarter amid record capex spends",
+      "url": "https://techcrunch.com/2026/02/25/nvidia-earnings-record-capex-spend-ai/",
+      "date": "2026-02-25T23:04:42.000Z",
+      "description": "\"The demand for tokens in the world has gone completely exponential,\" Nvidia CEO Jensen Huang said about the company's earnings.",
+      "author": "Russell Brandom",
+      "categories": [
+        "AI",
+        "chips",
+        "earnings",
+        "Jensen Huang",
+        "nvidia"
+      ]
+    },
+    {
+      "title": "Waymo to begin testing in Chicago and Charlotte",
+      "url": "https://techcrunch.com/2026/02/25/waymo-to-begin-testing-in-chicago-and-charlotte/",
+      "date": "2026-02-25T18:33:52.000Z",
+      "description": "Waymo this week will begin mapping and collecting data in Chicago and Charlotte. The move comes as Waymo announces it is currently operating its robotaxis fully autonomously in 10 US cities.",
+      "author": "Rebecca Bellan",
+      "categories": [
+        "Transportation",
+        "charlotte",
+        "chicago",
+        "In Brief",
+        "robotaxis",
+        "Waymo"
+      ]
+    },
+    {
+      "title": "Have hard-won scaling lessons to share? Take the stage at TechCrunch Founder Summit 2026",
+      "url": "https://techcrunch.com/2026/02/25/have-hard-won-scaling-lessons-to-share-take-the-stage-at-techcrunch-founder-summit/",
+      "date": "2026-02-25T16:00:00.000Z",
+      "description": "Apply to speak at TechCrunch Founder Summit 2026 by April 17 for a chance to lead a roundtable or breakout session for 1,000 founders and investors. If you’ve built, backed, or operated inside high-growth startups, your experience could shape how the next wave of founders scales.",
+      "author": "TechCrunch Events",
+      "categories": [
+        "TC",
+        "Startups",
+        "Venture",
+        "AI",
+        "Fundraising",
+        "TechCrunch Founder Summit 2026"
       ]
     }
   ]
