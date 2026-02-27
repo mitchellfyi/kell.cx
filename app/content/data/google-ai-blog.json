@@ -1,9 +1,58 @@
 {
   "source": "google-ai",
   "description": "Official Google AI blog posts and announcements",
-  "fetched_at": "2026-02-26T05:27:12.271Z",
+  "fetched_at": "2026-02-27T05:23:33.232Z",
   "count": 20,
   "items": [
+    {
+      "title": "Google and the Massachusetts AI Hub are launching a new AI training initiative for the Commonwealth.",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/grow-with-google/google-ai-training-massachusetts-residents/",
+      "date": "2026-02-26T18:55:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/691A1377_1920x1080.max-600x600.format-webp.webp\">Google is partnering with the Massachusetts AI Hub to provide every Baystater with no-cost access to Google’s AI training.",
+      "categories": [
+        "public policy",
+        "grow with google",
+        "ai"
+      ],
+      "source": "google-ai-blog",
+      "relevanceScore": 9
+    },
+    {
+      "title": "Get more context and understand translations more deeply with new AI-powered updates in Translate.",
+      "url": "https://blog.google/products-and-platforms/products/translate/translation-context-ai-update/",
+      "date": "2026-02-26T18:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Translate_TextTranslate_1920x10.max-600x600.format-webp.webp\">New alternatives, “understand” and “ask” buttons in Google Translate help you navigate the complexities of natural language.",
+      "categories": [
+        "translate",
+        "ai"
+      ],
+      "source": "google-ai-blog",
+      "relevanceScore": 4
+    },
+    {
+      "title": "Build with Nano Banana 2, our best image generation and editing model",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/",
+      "date": "2026-02-26T16:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BuildWith_Hero.max-600x600.format-webp.webp\">Nano Banana 2 (Gemini 3.1 Flash Image) delivers Pro-level intelligence and fidelity for all image applications.",
+      "categories": [
+        "gemini models",
+        "ai"
+      ],
+      "source": "google-ai-blog",
+      "relevanceScore": 19
+    },
+    {
+      "title": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/",
+      "date": "2026-02-26T16:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NB2_Hero.max-600x600.format-webp.webp\">Our latest image generation model offers advanced world knowledge, production-ready specs, subject consistency and more, all at Flash speed.",
+      "categories": [
+        "gemini models",
+        "ai"
+      ],
+      "source": "google-ai-blog",
+      "relevanceScore": 8
+    },
     {
       "title": "A more intelligent Android on Samsung Galaxy S26",
       "url": "https://blog.google/products-and-platforms/platforms/android/samsung-unpacked-2026/",
@@ -35,7 +84,7 @@
       "title": "“No technology has me dreaming bigger than AI”",
       "url": "https://blog.google/company-news/inside-google/message-ceo/sundar-pichai-ai-impact-summit-2026/",
       "date": "2026-02-19T04:30:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI-Google_2.max-600x600.format-webp.webp\">CEO Sundar Pichai’s remarks at the opening ceremony of the AI Impact Summit 2026",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI-Google_2.max-600x600.format-webp.webp\">Sundar Pichai gave remarks at the opening ceremony of the AI Impact Summit. Read a transcript of his speech.",
       "categories": [
         "a message from our ceo",
         "ai"
@@ -213,57 +262,6 @@
       ],
       "source": "google-ai-blog",
       "relevanceScore": 18
-    },
-    {
-      "title": "Project Genie: Experimenting with infinite, interactive worlds",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/",
-      "date": "2026-01-29T17:00:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/genie-3__project-genie__hero-fi.max-600x600.format-webp_d7CisM6.webp\">Google AI Ultra subscribers in the U.S. can now try out Project Genie.",
-      "categories": [
-        "google one",
-        "google deepmind",
-        "ai"
-      ],
-      "source": "google-ai-blog",
-      "relevanceScore": 4
-    },
-    {
-      "title": "Hear more about interactive world models in our latest podcast.",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/release-notes-podcast-project-genie/",
-      "date": "2026-01-29T15:00:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/RN25_Episode_Thumbnail.max-600x600.format-webp.webp\">The latest episode of the Google AI: Release Notes podcast focuses on Genie 3, a real-time, interactive world model. Host Logan Kilpatrick chats with Diego Rivas, Shlomi…",
-      "categories": [
-        "google deepmind",
-        "ai"
-      ],
-      "source": "google-ai-blog",
-      "relevanceScore": 12
-    },
-    {
-      "title": "Google AI Plus is now available everywhere our AI plans are available, including the U.S.",
-      "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-plus-availability/",
-      "date": "2026-01-27T18:00:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_AI_Plus_Hero_Visual_2096.max-600x600.format-webp_4ffr2GI.webp\">We’re launching Google AI Plus in 35 new countries and territories including the US, making it available everywhere Google AI plans are available.",
-      "categories": [
-        "gemini app",
-        "google one",
-        "ai"
-      ],
-      "source": "google-ai-blog",
-      "relevanceScore": 8
-    },
-    {
-      "title": "Just ask anything: a seamless new Search experience",
-      "url": "https://blog.google/products-and-platforms/products/search/ai-mode-ai-overviews-updates/",
-      "date": "2026-01-27T17:00:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Seamless_Search_-_Blog_header.max-600x600.format-webp.webp\">Search users around the world now have easier access to frontier AI capabilities.",
-      "categories": [
-        "search",
-        "gemini models",
-        "ai"
-      ],
-      "source": "google-ai-blog",
-      "relevanceScore": 4
     }
   ]
 }

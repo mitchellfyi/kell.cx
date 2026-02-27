@@ -1,10 +1,10 @@
 {
-  "scraped_at": "2026-02-26T05:27:03.033Z",
+  "scraped_at": "2026-02-27T05:23:09.978Z",
   "source": "bluesky",
   "stats": {
-    "total_fetched": 22,
-    "ai_relevant": 22,
-    "high_engagement": 18,
+    "total_fetched": 24,
+    "ai_relevant": 24,
+    "high_engagement": 20,
     "recent": 4
   },
   "search_terms": [
@@ -364,6 +364,27 @@
       "engagement": 11
     },
     {
+      "uri": "at://did:plc:qygqevukksg7rnewku4ffpkv/app.bsky.feed.post/3mfsu32il2k2i",
+      "url": "https://bsky.app/profile/sakanaai.bsky.social/post/3mfsu32il2k2i",
+      "author": {
+        "handle": "sakanaai.bsky.social",
+        "displayName": "sakanaai.bsky.social",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qygqevukksg7rnewku4ffpkv/bafkreigl47cnfugoad54fcah6g5l6e25id5zfaqwucqbgvx3ojhgcnlmye@jpeg"
+      },
+      "text": "We are excited to introduce Doc-to-LoRA and Text-to-LoRA, two related papers exploring how to make LLM customization faster. By training a hypernetwork to generate LoRA adapters on the fly, models instantly internalize new info.\n\nBlog: pub.sakana.ai/doc-to-lora/\nDoc-to-LoRA: arxiv.org/abs/2602.15902",
+      "createdAt": "2026-02-27T04:16:57.387Z",
+      "created_utc": 1772165817,
+      "likeCount": 2,
+      "repostCount": 2,
+      "replyCount": 1,
+      "embed": {
+        "type": "app.bsky.embed.video#view"
+      },
+      "hasImages": false,
+      "category": "thread",
+      "engagement": 7
+    },
+    {
       "uri": "at://did:plc:qygqevukksg7rnewku4ffpkv/app.bsky.feed.post/3mcduawtzss2v",
       "url": "https://bsky.app/profile/sakanaai.bsky.social/post/3mcduawtzss2v",
       "author": {
@@ -407,6 +428,27 @@
       "hasImages": false,
       "category": "link",
       "engagement": 6
+    },
+    {
+      "uri": "at://did:plc:7chsbgw6o6oh5oiglpgc3467/app.bsky.feed.post/3mfsv5n2n4s2u",
+      "url": "https://bsky.app/profile/hardmaru.bsky.social/post/3mfsv5n2n4s2u",
+      "author": {
+        "handle": "hardmaru.bsky.social",
+        "displayName": "hardmaru",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7chsbgw6o6oh5oiglpgc3467/bafkreicpq2lhscgzahbyspqimfvb5y34acedy2xqsjiykptgvr2dk2tyga@jpeg"
+      },
+      "text": "Instead of forcing models to hold everything in an active context window, we can use hypernetworks to instantly compile documents and tasks directly into the model's weights. A step towards giving language models durable memory and fast adaptation.\n\nBlog: pub.sakana.ai/doc-to-lora/",
+      "createdAt": "2026-02-27T04:36:17.703Z",
+      "created_utc": 1772166977,
+      "likeCount": 5,
+      "repostCount": 0,
+      "replyCount": 0,
+      "embed": {
+        "type": "app.bsky.embed.record#view"
+      },
+      "hasImages": false,
+      "category": "discussion",
+      "engagement": 5
     }
   ],
   "recent_posts": [

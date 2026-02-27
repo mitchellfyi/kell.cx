@@ -1,8 +1,15 @@
 {
   "source": "deepmind",
-  "fetched_at": "2026-02-26T05:27:27.519Z",
-  "count": 6,
+  "fetched_at": "2026-02-27T05:23:48.631Z",
+  "count": 7,
   "items": [
+    {
+      "title": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed",
+      "url": "https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/",
+      "date": "2026-02-26T16:01:50.000Z",
+      "description": "Our latest image generation model offers advanced world knowledge, production ready specs, subject consistency and more, all at Flash speed.",
+      "source": "deepmind-blog"
+    },
     {
       "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
       "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",

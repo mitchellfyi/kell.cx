@@ -1,6 +1,27 @@
 {
   "changes": [
     {
+      "tool": "Replit",
+      "url": "https://replit.com/pricing",
+      "timestamp": "2026-02-27T05:24:00.926Z",
+      "oldPrices": [
+        40
+      ],
+      "newPrices": [
+        95
+      ],
+      "changes": [
+        {
+          "type": "added",
+          "price": 95
+        },
+        {
+          "type": "removed",
+          "price": 40
+        }
+      ]
+    },
+    {
       "tool": "Windsurf",
       "url": "https://codeium.com/pricing",
       "timestamp": "2026-02-11T22:51:19.630Z",
@@ -61,5 +82,5 @@
       ]
     }
   ],
-  "lastChecked": "2026-02-26T05:27:41.373Z"
+  "lastChecked": "2026-02-27T05:24:03.119Z"
 }

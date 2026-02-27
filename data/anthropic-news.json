@@ -1,27 +1,21 @@
 {
-  "scraped_at": "2026-02-26T05:27:11.597Z",
+  "scraped_at": "2026-02-27T05:23:32.398Z",
   "source": "anthropic.com",
   "stats": {
     "news_count": 3,
     "research_count": 4,
-    "total_unique": 7
+    "total_unique": 6
   },
   "items": [
     {
-      "title": "Introducing Claude Sonnet 4.6",
-      "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
-      "source": "anthropic-news",
-      "category": "model"
-    },
-    {
-      "title": "News",
-      "url": "https://www.anthropic.com/news/claude-opus-4-6",
+      "title": "Statement from Dario Amodei on our discussions with the Department of War",
+      "url": "https://www.anthropic.com/news/statement-department-of-war",
       "source": "anthropic-news",
       "category": "announcement"
     },
     {
-      "title": "Products",
-      "url": "https://www.anthropic.com/news/acquires-vercept",
+      "title": "News",
+      "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
       "source": "anthropic-news",
       "category": "announcement"
     },

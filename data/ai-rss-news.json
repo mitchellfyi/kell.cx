@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-26T05:26:49.105Z",
+  "scraped_at": "2026-02-27T05:22:54.795Z",
   "feeds": [
     {
       "name": "Hugging Face Blog",
@@ -27,6 +27,86 @@
     {
       "source": "Simon Willison",
       "category": "technical",
+      "title": "Hoard things you know how to do",
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/#atom-everything",
+      "date": "2026-02-26T20:33:27.000Z",
+      "description": "<p><em><a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/\">Agentic Engineering Patterns</a> ></em></p> <p>Many of my tips for working productively with coding agents are extension..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Quoting Andrej Karpathy",
+      "url": "https://simonwillison.net/2026/Feb/26/andrej-karpathy/#atom-everything",
+      "date": "2026-02-26T19:03:27.000Z",
+      "description": "<blockquote cite=\"https://twitter.com/karpathy/status/2026731645169185220\"><p>It is hard to communicate how much programming has changed due to AI in the last 2 months: not gradually and over time in ..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "Google and the Massachusetts AI Hub are launching a new AI training initiative for the Commonwealth.",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/grow-with-google/google-ai-training-massachusetts-residents/",
+      "date": "2026-02-26T18:55:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/691A1377_1920x1080.max-600x600.format-webp.webp\">Google is partnering with the Massachusetts AI Hub to provide every Baystater..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "Get more context and understand translations more deeply with new AI-powered updates in Translate.",
+      "url": "https://blog.google/products-and-platforms/products/translate/translation-context-ai-update/",
+      "date": "2026-02-26T18:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Translate_TextTranslate_1920x10.max-600x600.format-webp.webp\">New alternatives, “understand” and “ask” buttons in Google Trans..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "Build with Nano Banana 2, our best image generation and editing model",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/",
+      "date": "2026-02-26T16:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BuildWith_Hero.max-600x600.format-webp.webp\">Nano Banana 2 (Gemini 3.1 Flash Image) delivers Pro-level intelligence and fideli..."
+    },
+    {
+      "source": "AI News (Google)",
+      "category": "industry",
+      "title": "Nano Banana 2: Combining Pro capabilities with lightning-fast speed",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/",
+      "date": "2026-02-26T16:00:00.000Z",
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NB2_Hero.max-600x600.format-webp.webp\">Our latest image generation model offers advanced world knowledge, production-ready spe..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "Finding value with AI and Industry 5.0 transformation",
+      "url": "https://www.technologyreview.com/2026/02/26/1133707/finding-value-with-ai-and-industry-5-0-transformation/",
+      "date": "2026-02-26T15:00:59.000Z",
+      "description": "For years, Industry 4.0 transformation has centered on the convergence of intelligent technologies like AI, cloud, the internet of things, robotics, and digital twins. Industry 5.0 marks a pivotal shi..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "The Download: how America lost its lead in the hunt for alien life, and ambitious battery claims",
+      "url": "https://www.technologyreview.com/2026/02/26/1133734/the-download-how-america-lost-its-lead-in-the-hunt-for-alien-life-and-ambitious-battery-claims/",
+      "date": "2026-02-26T13:10:00.000Z",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. America was winning the race to find Martian life...."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "This company claims a battery breakthrough. Now they need to prove it.",
+      "url": "https://www.technologyreview.com/2026/02/26/1133722/solid-state-batteries-donut-lab/",
+      "date": "2026-02-26T11:00:00.000Z",
+      "description": "When a company claims to have created what’s essentially the holy grail of batteries, there are bound to be some questions. Interest has been swirling since Donut Lab, a Finnish company, announced las..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "America was winning the race to find Martian life. Then China jumped in.",
+      "url": "https://www.technologyreview.com/2026/02/26/1133584/america-china-mars-sample-return-space-race-nasa/",
+      "date": "2026-02-26T10:00:00.000Z",
+      "description": "To most people, rocks are just rocks. To geologists, they are much, much more: crystal-filled time capsules with the power to reveal the state of the planet at the very moment they were forged.&#160; ..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
       "title": "Google API Keys Weren't Secrets. But then Gemini Changed the Rules.",
       "url": "https://simonwillison.net/2026/Feb/26/google-api-keys/#atom-everything",
       "date": "2026-02-26T04:28:55.000Z",
@@ -39,6 +119,14 @@
       "url": "https://simonwillison.net/2026/Feb/26/benedict-evans/#atom-everything",
       "date": "2026-02-26T03:44:56.000Z",
       "description": "<blockquote cite=\"https://www.ben-evans.com/benedictevans/2026/2/19/how-will-openai-compete-nkg2x\"><p>If people are only using this a couple of times a week at most, and can’t think of anything to do ..."
+    },
+    {
+      "source": "Hugging Face Blog",
+      "category": "industry",
+      "title": "Mixture of Experts (MoEs) in Transformers",
+      "url": "https://huggingface.co/blog/moe-transformers",
+      "date": "2026-02-26T00:00:00.000Z",
+      "description": null
     },
     {
       "source": "MIT Tech Review AI",
@@ -145,38 +233,6 @@
       "description": "MIT researchers have developed a new method for designing 3D structures that can spring up from a flat sheet of interconnected tiles with a single pull of a string. The technique could be used to make..."
     },
     {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "A retinal reboot for amblyopia",
-      "url": "https://www.technologyreview.com/2026/02/24/1132077/a-retinal-reboot-for-amblyopia/",
-      "date": "2026-02-24T22:00:00.000Z",
-      "description": "In the vision disorder amblyopia (or “lazy eye”), impaired vision in one eye early in life causes neural connections in the brain’s visual system to shift toward supporting the other eye, leaving the ..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "A new way to rejuvenate the immune system",
-      "url": "https://www.technologyreview.com/2026/02/24/1132080/a-new-way-to-rejuvenate-the-immune-system/",
-      "date": "2026-02-24T22:00:00.000Z",
-      "description": "As people age, their immune function weakens. Owing to shrinkage of the thymus, where T cells normally mature and diversify, populations of these immune cells become smaller and can’t react to pathoge..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "A I-designed proteins may help spot cancer",
-      "url": "https://www.technologyreview.com/2026/02/24/1132083/a-i-designed-proteins-may-help-spot-cancer/",
-      "date": "2026-02-24T22:00:00.000Z",
-      "description": "Researchers at MIT and Microsoft have used artificial intelligence to create molecular sensors that could detect early signs of cancer via a urine test. The researchers developed an AI model to design..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Reformulated antibodies could be injected for easier treatment",
-      "url": "https://www.technologyreview.com/2026/02/24/1132086/reformulated-antibodies-could-be-injected-for-easier-treatment/",
-      "date": "2026-02-24T22:00:00.000Z",
-      "description": "Antibody treatments for cancer and other diseases are typically delivered intravenously, requiring patients to go to a hospital and potentially spend hours receiving infusions. Now Professor Patrick D..."
-    },
-    {
       "source": "Simon Willison",
       "category": "technical",
       "title": "go-size-analyzer",
@@ -185,28 +241,12 @@
       "description": "<p><strong><a href=\"https://github.com/Zxilly/go-size-analyzer\">go-size-analyzer</a></strong></p> The Go ecosystem is <em>really</em> good at tooling. I just learned about this tool for analyzing the ..."
     },
     {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "First run the tests",
-      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/#atom-everything",
-      "date": "2026-02-24T12:30:05.000Z",
-      "description": "<p><em><a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/\">Agentic Engineering Patterns</a> ></em></p> <p>Automated tests are no longer optional when working with coding agents.</..."
-    },
-    {
       "source": "Hugging Face Blog",
       "category": "industry",
       "title": "Deploying Open Source Vision Language Models (VLM) on Jetson",
       "url": "https://huggingface.co/blog/nvidia/cosmos-on-jetson",
       "date": "2026-02-24T00:00:21.000Z",
       "description": null
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Ladybird adopts Rust, with help from AI",
-      "url": "https://simonwillison.net/2026/Feb/23/ladybird-adopts-rust/#atom-everything",
-      "date": "2026-02-23T18:52:53.000Z",
-      "description": "<p><strong><a href=\"https://ladybird.org/posts/adopting-rust/\">Ladybird adopts Rust, with help from AI</a></strong></p> Really interesting case-study from Andreas Kling on advanced, sophisticated use ..."
     },
     {
       "source": "Hugging Face Blog",
@@ -230,7 +270,7 @@
       "title": "“No technology has me dreaming bigger than AI”",
       "url": "https://blog.google/company-news/inside-google/message-ceo/sundar-pichai-ai-impact-summit-2026/",
       "date": "2026-02-19T04:30:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI-Google_2.max-600x600.format-webp.webp\">CEO Sundar Pichai’s remarks at the opening ceremony of the AI Impact Summit 2026"
+      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI-Google_2.max-600x600.format-webp.webp\">Sundar Pichai gave remarks at the opening ceremony of the AI Impact Summit. Read a t..."
     },
     {
       "source": "AI News (Google)",
@@ -273,14 +313,6 @@
       "description": null
     },
     {
-      "source": "AI News (Google)",
-      "category": "industry",
-      "title": "Our 2026 Responsible AI Progress Report",
-      "url": "https://blog.google/innovation-and-ai/products/responsible-ai-2026-report-ongoing-work/",
-      "date": "2026-02-17T22:30:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Stocksy_7137793.max-600x600.format-webp.webp\">A look at our 2026 Responsible AI Progress Report."
-    },
-    {
       "source": "Hugging Face Blog",
       "category": "industry",
       "title": "Custom Kernels for All from Codex and Claude",
@@ -289,36 +321,12 @@
       "description": null
     },
     {
-      "source": "AI News (Google)",
-      "category": "industry",
-      "title": "Gemini 3 Deep Think: Advancing science, research and engineering",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
-      "date": "2026-02-12T16:13:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3_deep-think_keyword_hea.max-600x600.format-webp.webp\">We’re releasing a major upgrade to Gemini 3 Deep Think, our spec..."
-    },
-    {
       "source": "Hugging Face Blog",
       "category": "industry",
       "title": "OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments",
       "url": "https://huggingface.co/blog/openenv-turing",
       "date": "2026-02-12T00:00:00.000Z",
       "description": null
-    },
-    {
-      "source": "AI News (Google)",
-      "category": "industry",
-      "title": "9 fun questions to try asking Google Photos",
-      "url": "https://blog.google/products-and-platforms/products/photos/ask-button-ask-photos-tips/",
-      "date": "2026-02-10T17:00:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/2025-Travel-Trends_hero.max-600x600.format-webp.webp\">Learn more about Google Photos’ new Ask button as well as other function..."
-    },
-    {
-      "source": "AI News (Google)",
-      "category": "industry",
-      "title": "Helping kids and teens learn and grow online on Safer Internet Day",
-      "url": "https://blog.google/innovation-and-ai/technology/safety-security/safer-internet-day-2026-kids-teens/",
-      "date": "2026-02-10T02:30:00.000Z",
-      "description": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Helpingkidsteens_Hero.max-600x600.format-webp.webp\">We’re sharing our latest updates designed to support families, kids and te..."
     },
     {
       "source": "Hugging Face Blog",
@@ -334,14 +342,6 @@
       "title": "Introducing SyGra Studio",
       "url": "https://huggingface.co/blog/ServiceNow-AI/sygra-studio",
       "date": "2026-02-05T16:52:28.000Z",
-      "description": null
-    },
-    {
-      "source": "Hugging Face Blog",
-      "category": "industry",
-      "title": "Community Evals: Because we&apos;re done trusting black-box leaderboards over the community",
-      "url": "https://huggingface.co/blog/community-evals",
-      "date": "2026-02-04T00:00:00.000Z",
       "description": null
     }
   ]

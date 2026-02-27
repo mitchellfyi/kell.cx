@@ -1,39 +1,59 @@
 {
-  "generatedAt": "2026-02-26T05:27:33.670Z",
+  "generatedAt": "2026-02-27T05:23:54.713Z",
   "source": "GitHub API",
   "summary": {
-    "recentPopularCount": 25,
+    "recentPopularCount": 37,
     "trendingCount": 0,
     "topLanguages": [
       {
         "language": "Python",
-        "count": 7
-      },
-      {
-        "language": "TypeScript",
-        "count": 4
-      },
-      {
-        "language": "Shell",
-        "count": 3
+        "count": 13
       },
       {
         "language": "Rust",
-        "count": 3
+        "count": 5
       },
       {
-        "language": "HTML",
-        "count": 1
+        "language": "Shell",
+        "count": 5
+      },
+      {
+        "language": "TypeScript",
+        "count": 5
+      },
+      {
+        "language": "Go",
+        "count": 2
       }
     ]
   },
   "recentPopular": [
     {
+      "name": "RightNow-AI/openfang",
+      "url": "https://github.com/RightNow-AI/openfang",
+      "description": "Open-source Agent Operating System",
+      "stars": 2322,
+      "forks": 244,
+      "language": "Rust",
+      "topics": [
+        "agent-framework",
+        "ai-agents",
+        "llm",
+        "mcp",
+        "open-source",
+        "openclaw",
+        "operating-system",
+        "rust"
+      ],
+      "createdAt": "2026-02-24T23:12:38Z",
+      "pushedAt": "2026-02-26T23:10:48Z"
+    },
+    {
       "name": "Panniantong/Agent-Reach",
       "url": "https://github.com/Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-      "stars": 1119,
-      "forks": 93,
+      "stars": 1975,
+      "forks": 157,
       "language": "Python",
       "topics": [
         "agent-infrastructure",
@@ -55,85 +75,77 @@
         "youtube-transcript"
       ],
       "createdAt": "2026-02-24T02:10:24Z",
-      "pushedAt": "2026-02-26T05:08:15Z"
+      "pushedAt": "2026-02-27T04:57:46Z"
     },
     {
       "name": "kevinho/clawfeed",
       "url": "https://github.com/kevinho/clawfeed",
       "description": "ClawFeed — AI-powered news digest with structured summaries from Twitter/RSS feeds and web dashboard",
-      "stars": 755,
-      "forks": 80,
+      "stars": 1012,
+      "forks": 89,
       "language": "HTML",
       "topics": [],
       "createdAt": "2026-02-21T10:38:07Z",
-      "pushedAt": "2026-02-24T22:16:51Z"
+      "pushedAt": "2026-02-26T06:41:09Z"
     },
     {
-      "name": "hamelsmu/claude-review-loop",
-      "url": "https://github.com/hamelsmu/claude-review-loop",
-      "description": "Claude Code plugin: automated code review loop with Codex",
-      "stars": 479,
-      "forks": 27,
-      "language": "Shell",
+      "name": "mgechev/skills-best-practices",
+      "url": "https://github.com/mgechev/skills-best-practices",
+      "description": "Write professional-grade skills for agents, validate them using LLMs, and maintain a lean context window.",
+      "stars": 650,
+      "forks": 45,
+      "language": null,
       "topics": [],
-      "createdAt": "2026-02-21T02:13:01Z",
-      "pushedAt": "2026-02-22T04:26:09Z"
+      "createdAt": "2026-02-24T19:47:38Z",
+      "pushedAt": "2026-02-24T19:48:52Z"
     },
     {
       "name": "ochyai/vibe-local",
       "url": "https://github.com/ochyai/vibe-local",
       "description": "Free AI coding environment: Ollama + Python",
-      "stars": 472,
-      "forks": 54,
+      "stars": 511,
+      "forks": 60,
       "language": "Python",
       "topics": [],
       "createdAt": "2026-02-22T04:33:03Z",
       "pushedAt": "2026-02-25T15:38:43Z"
     },
     {
-      "name": "better-auth/better-hub",
-      "url": "https://github.com/better-auth/better-hub",
-      "description": "Re-imagining code collaboration for humans and agents",
-      "stars": 445,
-      "forks": 30,
-      "language": "TypeScript",
+      "name": "hamelsmu/claude-review-loop",
+      "url": "https://github.com/hamelsmu/claude-review-loop",
+      "description": "Claude Code plugin: automated code review loop with Codex",
+      "stars": 487,
+      "forks": 28,
+      "language": "Shell",
       "topics": [],
-      "createdAt": "2026-02-20T14:17:47Z",
-      "pushedAt": "2026-02-26T05:15:56Z"
+      "createdAt": "2026-02-21T02:13:01Z",
+      "pushedAt": "2026-02-22T04:26:09Z"
     },
     {
-      "name": "vava-nessa/free-coding-models",
-      "url": "https://github.com/vava-nessa/free-coding-models",
-      "description": "Find the fastest coding LLM models in seconds",
-      "stars": 365,
-      "forks": 27,
-      "language": "JavaScript",
+      "name": "3DCF-Labs/safepilot",
+      "url": "https://github.com/3DCF-Labs/safepilot",
+      "description": "AI assistant that executes real work, safely.",
+      "stars": 377,
+      "forks": 2,
+      "language": "Rust",
       "topics": [
         "ai",
-        "deepseek",
-        "free",
-        "free-ai",
-        "freeai",
-        "gpt",
-        "gptoss",
-        "kimi",
-        "nim",
-        "nvidia",
-        "nvidia-nim",
-        "nvidia-nim-api",
-        "nvidia-nims",
-        "openclaw",
-        "opencode"
+        "assistant",
+        "own-your-data",
+        "personal",
+        "safe",
+        "secure",
+        "self-hosted"
       ],
-      "createdAt": "2026-02-20T23:12:50Z",
-      "pushedAt": "2026-02-26T02:39:24Z"
+      "createdAt": "2026-02-25T09:16:58Z",
+      "pushedAt": "2026-02-25T09:28:55Z"
     },
     {
       "name": "sachaa/openbrowserclaw",
       "url": "https://github.com/sachaa/openbrowserclaw",
       "description": "Browser-native personal AI assistant. Zero infrastructure, the browser is the server.",
-      "stars": 293,
-      "forks": 30,
+      "stars": 366,
+      "forks": 42,
       "language": "TypeScript",
       "topics": [
         "ai-agents",
@@ -152,8 +164,8 @@
       "name": "harshkedia177/axon",
       "url": "https://github.com/harshkedia177/axon",
       "description": "Graph-powered code intelligence engine — indexes codebases into a knowledge graph, exposed via MCP tools for AI agents and a CLI for developers.",
-      "stars": 291,
-      "forks": 54,
+      "stars": 342,
+      "forks": 59,
       "language": "Python",
       "topics": [
         "claude-code",
@@ -168,36 +180,53 @@
         "typescript"
       ],
       "createdAt": "2026-02-21T07:41:02Z",
-      "pushedAt": "2026-02-24T20:20:38Z"
+      "pushedAt": "2026-02-26T20:02:52Z"
     },
     {
-      "name": "mgechev/skills-best-practices",
-      "url": "https://github.com/mgechev/skills-best-practices",
-      "description": "Write professional-grade skills for agents, validate them using LLMs, and maintain a lean context window.",
-      "stars": 286,
-      "forks": 20,
-      "language": null,
+      "name": "6551Team/opennews-mcp",
+      "url": "https://github.com/6551Team/opennews-mcp",
+      "description": "Crypto News Aggregation · AI Ratings · Trading Signals · Real-time Updates",
+      "stars": 328,
+      "forks": 65,
+      "language": "Python",
       "topics": [],
-      "createdAt": "2026-02-24T19:47:38Z",
-      "pushedAt": "2026-02-24T19:48:52Z"
+      "createdAt": "2026-02-26T06:04:49Z",
+      "pushedAt": "2026-02-26T07:41:30Z"
     },
     {
-      "name": "Chrissotino/swiss-ai-call-agent",
-      "url": "https://github.com/Chrissotino/swiss-ai-call-agent",
-      "description": "Enterprise-grade AI Call Agent for the Swiss market – inbound & outbound calls, multilingual (DE/FR/IT), MCP architecture, Claude AI decision engine, real-time dashboard",
-      "stars": 283,
-      "forks": 76,
-      "language": "TypeScript",
+      "name": "whyzhow/PersonalStyleAI-Framework-",
+      "url": "https://github.com/whyzhow/PersonalStyleAI-Framework-",
+      "description": "Let AI think and express like you. This framework provides a complete assembly line: from the noise processing of original chat records, to the seamless switching of multi-model adaptation layers, to local lightweight fine-tuning (LoRA).",
+      "stars": 315,
+      "forks": 2,
+      "language": "Python",
+      "topics": [
+        "ai",
+        "google",
+        "ml",
+        "openai",
+        "python"
+      ],
+      "createdAt": "2026-02-24T17:33:40Z",
+      "pushedAt": "2026-02-24T17:57:24Z"
+    },
+    {
+      "name": "CleverCloud/mdr",
+      "url": "https://github.com/CleverCloud/mdr",
+      "description": "a very light rust based markdown reader with support of mermaid (web, native, TUI). vibe coded ",
+      "stars": 300,
+      "forks": 11,
+      "language": "Rust",
       "topics": [],
-      "createdAt": "2026-02-21T21:27:05Z",
-      "pushedAt": "2026-02-21T22:19:58Z"
+      "createdAt": "2026-02-22T12:37:58Z",
+      "pushedAt": "2026-02-24T11:38:17Z"
     },
     {
       "name": "steveclarke/real-world-rails",
       "url": "https://github.com/steveclarke/real-world-rails",
       "description": "200+ production open source Rails apps & engines in one repo. Search across real codebases with AI agents to research architectural patterns.",
-      "stars": 283,
-      "forks": 17,
+      "stars": 296,
+      "forks": 19,
       "language": "Shell",
       "topics": [
         "ai-agents",
@@ -212,11 +241,22 @@
       "pushedAt": "2026-02-25T12:00:39Z"
     },
     {
+      "name": "Chrissotino/swiss-ai-call-agent",
+      "url": "https://github.com/Chrissotino/swiss-ai-call-agent",
+      "description": "Enterprise-grade AI Call Agent for the Swiss market – inbound & outbound calls, multilingual (DE/FR/IT), MCP architecture, Claude AI decision engine, real-time dashboard",
+      "stars": 283,
+      "forks": 76,
+      "language": "TypeScript",
+      "topics": [],
+      "createdAt": "2026-02-21T21:27:05Z",
+      "pushedAt": "2026-02-21T22:19:58Z"
+    },
+    {
       "name": "sangrokjung/claude-forge",
       "url": "https://github.com/sangrokjung/claude-forge",
       "description": "oh-my-zsh for Claude Code — 11 agents, 36 commands, 15 skills, 6-layer security hooks. Install in 5 min, update with git pull.",
-      "stars": 247,
-      "forks": 52,
+      "stars": 250,
+      "forks": 53,
       "language": "Shell",
       "topics": [
         "agents",
@@ -234,21 +274,10 @@
       "pushedAt": "2026-02-24T22:16:56Z"
     },
     {
-      "name": "CleverCloud/mdr",
-      "url": "https://github.com/CleverCloud/mdr",
-      "description": "a very light rust based markdown reader with support of mermaid (web, native, TUI). vibe coded ",
-      "stars": 234,
-      "forks": 9,
-      "language": "Rust",
-      "topics": [],
-      "createdAt": "2026-02-22T12:37:58Z",
-      "pushedAt": "2026-02-24T11:38:17Z"
-    },
-    {
       "name": "quailyquaily/aqua",
       "url": "https://github.com/quailyquaily/aqua",
       "description": "Aqua, a cli message tool for AI agents ",
-      "stars": 197,
+      "stars": 214,
       "forks": 10,
       "language": "Go",
       "topics": [
@@ -260,117 +289,11 @@
       "pushedAt": "2026-02-26T01:56:22Z"
     },
     {
-      "name": "originalankur/GenerateAgents.md",
-      "url": "https://github.com/originalankur/GenerateAgents.md",
-      "description": "Automated generation of comprehensive Agents.md for LLMs, driven by the DSPy Recursive language model implementation.",
-      "stars": 179,
-      "forks": 14,
-      "language": "Python",
-      "topics": [
-        "agents",
-        "agentskills",
-        "agentsmd",
-        "dspy",
-        "dspy-rlm",
-        "llm",
-        "python",
-        "recursive-language-models",
-        "rlm"
-      ],
-      "createdAt": "2026-02-22T16:18:45Z",
-      "pushedAt": "2026-02-25T16:37:47Z"
-    },
-    {
-      "name": "whyzhow/PersonalStyleAI-Framework-",
-      "url": "https://github.com/whyzhow/PersonalStyleAI-Framework-",
-      "description": "Let AI think and express like you. This framework provides a complete assembly line: from the noise processing of original chat records, to the seamless switching of multi-model adaptation layers, to local lightweight fine-tuning (LoRA).",
-      "stars": 161,
-      "forks": 2,
-      "language": "Python",
-      "topics": [
-        "ai",
-        "google",
-        "ml",
-        "openai",
-        "python"
-      ],
-      "createdAt": "2026-02-24T17:33:40Z",
-      "pushedAt": "2026-02-24T17:57:24Z"
-    },
-    {
-      "name": "Emily2040/seedance-2.0",
-      "url": "https://github.com/Emily2040/seedance-2.0",
-      "description": "Comprehensive production pipeline for quad-modal AI filmmaking with Seedance 2.0",
-      "stars": 150,
-      "forks": 22,
-      "language": null,
-      "topics": [],
-      "createdAt": "2026-02-25T01:28:49Z",
-      "pushedAt": "2026-02-25T06:47:02Z"
-    },
-    {
-      "name": "Xuanwo/xurl",
-      "url": "https://github.com/Xuanwo/xurl",
-      "description": "xURL: Client for AI Agents URLs",
-      "stars": 129,
-      "forks": 7,
-      "language": "Rust",
-      "topics": [],
-      "createdAt": "2026-02-22T22:08:22Z",
-      "pushedAt": "2026-02-25T19:42:38Z"
-    },
-    {
-      "name": "nguyenduchoai/bizclaw",
-      "url": "https://github.com/nguyenduchoai/bizclaw",
-      "description": "BizClaw là nền tảng AI Agent kiến trúc trait-driven, có thể chạy mọi nơi — từ Raspberry Pi đến cloud server. Hỗ trợ nhiều LLM provider, kênh giao tiếp, và công cụ thông qua kiến trúc thống nhất, hoán đổi được.",
-      "stars": 126,
-      "forks": 54,
-      "language": "Rust",
-      "topics": [
-        "bizclaw",
-        "bizino"
-      ],
-      "createdAt": "2026-02-21T05:00:47Z",
-      "pushedAt": "2026-02-25T11:20:33Z"
-    },
-    {
-      "name": "mfranzon/tdd",
-      "url": "https://github.com/mfranzon/tdd",
-      "description": "tdd skill for coding agents ",
-      "stars": 123,
-      "forks": 4,
-      "language": null,
-      "topics": [],
-      "createdAt": "2026-02-21T14:29:29Z",
-      "pushedAt": "2026-02-24T16:06:37Z"
-    },
-    {
-      "name": "AThevon/TokenEater",
-      "url": "https://github.com/AThevon/TokenEater",
-      "description": "Native macOS widget to monitor your Claude AI usage limits in real-time",
-      "stars": 119,
-      "forks": 5,
-      "language": "Swift",
-      "topics": [
-        "anthropic",
-        "claude",
-        "macos",
-        "menu-bar",
-        "swift",
-        "swiftui",
-        "usage-monitor",
-        "widget",
-        "widgetkit"
-      ],
-      "createdAt": "2026-02-21T15:58:30Z",
-      "pushedAt": "2026-02-25T22:39:21Z"
-    },
-    {
       "name": "AlexAnys/awesome-openclaw-usecases-zh",
       "url": "https://github.com/AlexAnys/awesome-openclaw-usecases-zh",
       "description": "🇨🇳 OpenClaw（AI 智能体）中文用例大全 | 29 个真实场景：自动化办公、内容创作、服务器运维、个人助理、知识管理 | 零基础新手友好 | Chinese guide for OpenClaw AI agent use cases",
-      "stars": 117,
-      "forks": 18,
+      "stars": 213,
+      "forks": 28,
       "language": null,
       "topics": [
         "ai-agent",
@@ -398,49 +321,196 @@
       "pushedAt": "2026-02-23T03:42:51Z"
     },
     {
-      "name": "jkudish/librarium",
-      "url": "https://github.com/jkudish/librarium",
-      "description": "Multi-provider deep research CLI — fans out queries to multiple search/AI APIs in parallel",
-      "stars": 104,
-      "forks": 5,
-      "language": "TypeScript",
+      "name": "Emily2040/seedance-2.0",
+      "url": "https://github.com/Emily2040/seedance-2.0",
+      "description": "Comprehensive production pipeline for quad-modal AI filmmaking with Seedance 2.0",
+      "stars": 208,
+      "forks": 35,
+      "language": null,
+      "topics": [],
+      "createdAt": "2026-02-25T01:28:49Z",
+      "pushedAt": "2026-02-26T12:23:54Z"
+    },
+    {
+      "name": "nextlevelbuilder/goclaw",
+      "url": "https://github.com/nextlevelbuilder/goclaw",
+      "description": "Multi-agent AI gateway with teams, delegation & orchestration. Single Go binary, 11+ LLM providers, 5 channels.",
+      "stars": 199,
+      "forks": 57,
+      "language": "Go",
+      "topics": [
+        "agent-orchestration",
+        "ai-agent",
+        "ai-gateway",
+        "anthropic",
+        "chatbot",
+        "discord-bot",
+        "golang",
+        "llm",
+        "mcp",
+        "multi-agent",
+        "openai",
+        "postgresql",
+        "telegram-bot",
+        "websocket"
+      ],
+      "createdAt": "2026-02-22T07:26:36Z",
+      "pushedAt": "2026-02-27T05:11:40Z"
+    },
+    {
+      "name": "originalankur/GenerateAgents.md",
+      "url": "https://github.com/originalankur/GenerateAgents.md",
+      "description": "Automated generation of comprehensive Agents.md for LLMs, driven by the DSPy Recursive language model implementation.",
+      "stars": 195,
+      "forks": 16,
+      "language": "Python",
+      "topics": [
+        "agents",
+        "agentskills",
+        "agentsmd",
+        "dspy",
+        "dspy-rlm",
+        "llm",
+        "python",
+        "recursive-language-models",
+        "rlm"
+      ],
+      "createdAt": "2026-02-22T16:18:45Z",
+      "pushedAt": "2026-02-26T16:14:37Z"
+    },
+    {
+      "name": "xjtulyc/MedgeClaw",
+      "url": "https://github.com/xjtulyc/MedgeClaw",
+      "description": "Medge AI X OpenClaw",
+      "stars": 189,
+      "forks": 50,
+      "language": "Shell",
+      "topics": [],
+      "createdAt": "2026-02-24T16:45:00Z",
+      "pushedAt": "2026-02-26T21:49:07Z"
+    },
+    {
+      "name": "mnemox-ai/idea-reality-mcp",
+      "url": "https://github.com/mnemox-ai/idea-reality-mcp",
+      "description": "MCP server that reality-checks your AI project idea against GitHub, Hacker News, npm, PyPI & Product Hunt. Returns a 0-100 reality signal.",
+      "stars": 152,
+      "forks": 12,
+      "language": "Python",
       "topics": [
         "ai",
-        "ai-agents",
-        "deep-research",
-        "deep-research-agent",
-        "deep-research-api",
-        "gemini",
-        "openai",
-        "perplexity-ai",
-        "research",
-        "search",
-        "search-engine"
+        "developer-tools",
+        "github",
+        "hackernews",
+        "mcp",
+        "model-context-protocol",
+        "npm",
+        "producthunt",
+        "pypi",
+        "reality-check"
       ],
-      "createdAt": "2026-02-20T18:24:21Z",
-      "pushedAt": "2026-02-24T05:56:33Z"
+      "createdAt": "2026-02-24T11:16:50Z",
+      "pushedAt": "2026-02-26T19:55:32Z"
     },
     {
-      "name": "binhanchen25-arch/agent_plus",
-      "url": "https://github.com/binhanchen25-arch/agent_plus",
-      "description": null,
-      "stars": 103,
+      "name": "joeseesun/knowledge-site-creator",
+      "url": "https://github.com/joeseesun/knowledge-site-creator",
+      "description": "一句话生成任何领域的知识学习网站 - AI 理解主题，自动创作内容，生成页面，一键部署",
+      "stars": 139,
+      "forks": 18,
+      "language": "Shell",
+      "topics": [],
+      "createdAt": "2026-02-25T13:55:53Z",
+      "pushedAt": "2026-02-25T14:09:31Z"
+    },
+    {
+      "name": "Xuanwo/xurl",
+      "url": "https://github.com/Xuanwo/xurl",
+      "description": "xURL: Client for AI Agents URLs",
+      "stars": 137,
+      "forks": 7,
+      "language": "Rust",
+      "topics": [],
+      "createdAt": "2026-02-22T22:08:22Z",
+      "pushedAt": "2026-02-25T19:42:38Z"
+    },
+    {
+      "name": "glommer/codemogger",
+      "url": "https://github.com/glommer/codemogger",
+      "description": "Codemogger is a code indexing library and MCP server for AI coding agents",
+      "stars": 136,
       "forks": 8,
-      "language": "Python",
+      "language": "TypeScript",
       "topics": [],
-      "createdAt": "2026-02-21T06:44:14Z",
-      "pushedAt": "2026-02-25T02:37:54Z"
+      "createdAt": "2026-02-24T13:30:59Z",
+      "pushedAt": "2026-02-26T15:39:29Z"
     },
     {
-      "name": "datavorous/challenges",
-      "url": "https://github.com/datavorous/challenges",
-      "description": "Various coding challenges from all around the internet",
-      "stars": 102,
-      "forks": 11,
+      "name": "nguyenduchoai/bizclaw",
+      "url": "https://github.com/nguyenduchoai/bizclaw",
+      "description": "BizClaw là nền tảng AI Agent kiến trúc trait-driven, có thể chạy mọi nơi — từ Raspberry Pi đến cloud server. Hỗ trợ nhiều LLM provider, kênh giao tiếp, và công cụ thông qua kiến trúc thống nhất, hoán đổi được.",
+      "stars": 134,
+      "forks": 58,
+      "language": "Rust",
+      "topics": [
+        "bizclaw",
+        "bizino"
+      ],
+      "createdAt": "2026-02-21T05:00:47Z",
+      "pushedAt": "2026-02-26T10:31:44Z"
+    },
+    {
+      "name": "mfranzon/tdd",
+      "url": "https://github.com/mfranzon/tdd",
+      "description": "tdd skill for coding agents ",
+      "stars": 126,
+      "forks": 5,
+      "language": null,
+      "topics": [],
+      "createdAt": "2026-02-21T14:29:29Z",
+      "pushedAt": "2026-02-24T16:06:37Z"
+    },
+    {
+      "name": "AThevon/TokenEater",
+      "url": "https://github.com/AThevon/TokenEater",
+      "description": "Native macOS widget to monitor your Claude AI usage limits in real-time",
+      "stars": 126,
+      "forks": 6,
+      "language": "Swift",
+      "topics": [
+        "anthropic",
+        "claude",
+        "macos",
+        "menu-bar",
+        "swift",
+        "swiftui",
+        "usage-monitor",
+        "widget",
+        "widgetkit"
+      ],
+      "createdAt": "2026-02-21T15:58:30Z",
+      "pushedAt": "2026-02-26T19:51:02Z"
+    },
+    {
+      "name": "shareAI-lab/claw0",
+      "url": "https://github.com/shareAI-lab/claw0",
+      "description": "0 - 1 learn OpenClaw: sections to build an claw-AI agent from scratch",
+      "stars": 124,
+      "forks": 13,
       "language": "Python",
       "topics": [],
-      "createdAt": "2026-02-23T11:58:43Z",
-      "pushedAt": "2026-02-24T10:35:14Z"
+      "createdAt": "2026-02-24T10:16:38Z",
+      "pushedAt": "2026-02-26T17:01:36Z"
+    },
+    {
+      "name": "Zyora-Dev/zse",
+      "url": "https://github.com/Zyora-Dev/zse",
+      "description": "Zyora Server Inference Engine for LLM . ",
+      "stars": 121,
+      "forks": 1,
+      "language": "Python",
+      "topics": [],
+      "createdAt": "2026-02-24T09:22:49Z",
+      "pushedAt": "2026-02-27T02:33:59Z"
     }
   ],
   "trending": []
