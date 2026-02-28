@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-27T05:22:54.795Z",
+  "scraped_at": "2026-02-28T05:11:48.715Z",
   "feeds": [
     {
       "name": "Hugging Face Blog",
@@ -24,6 +24,62 @@
   ],
   "total_count": 40,
   "items": [
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Please, please, please stop using passkeys for encrypting user data",
+      "url": "https://simonwillison.net/2026/Feb/27/passkeys/#atom-everything",
+      "date": "2026-02-27T22:49:32.000Z",
+      "description": "<p><strong><a href=\"https://blog.timcappalli.me/p/passkeys-prf-warning/\">Please, please, please stop using passkeys for encrypting user data</a></strong></p> Because users lose their passkeys <em>all ..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "MIT Technology Review is a 2026 ASME finalist in reporting",
+      "url": "https://www.technologyreview.com/2026/02/27/1133769/asme-finalist-reporting/",
+      "date": "2026-02-27T21:41:31.000Z",
+      "description": "The American Society of Magazine Editors has named MIT Technology Review as a finalist for a 2026 National Magazine Award in the reporting category. The shortlisted story—“We did the math on AI’s ener..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "An AI agent coding skeptic tries AI agent coding, in excessive detail",
+      "url": "https://simonwillison.net/2026/Feb/27/ai-agent-coding-in-excessive-detail/#atom-everything",
+      "date": "2026-02-27T20:43:41.000Z",
+      "description": "<p><strong><a href=\"https://minimaxir.com/2026/02/ai-agent-coding/\">An AI agent coding skeptic tries AI agent coding, in excessive detail</a></strong></p> Another in the genre of \"OK, coding agents go..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Free Claude Max for (large project) open source maintainers",
+      "url": "https://simonwillison.net/2026/Feb/27/claude-max-oss-six-months/#atom-everything",
+      "date": "2026-02-27T18:08:22.000Z",
+      "description": "<p><strong><a href=\"https://claude.com/contact-sales/claude-for-oss\">Free Claude Max for (large project) open source maintainers</a></strong></p> Anthropic are now offering their $200/month Claude Max..."
+    },
+    {
+      "source": "Simon Willison",
+      "category": "technical",
+      "title": "Unicode Explorer using binary search over fetch() HTTP range requests",
+      "url": "https://simonwillison.net/2026/Feb/27/unicode-explorer/#atom-everything",
+      "date": "2026-02-27T17:50:54.000Z",
+      "description": "<p><strong><a href=\"https://tools.simonwillison.net/unicode-binary-search\">Unicode Explorer using binary search over fetch() HTTP range requests</a></strong></p> Here's a little prototype I built this..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "The Download: how AI is shaking up Go, and a cybersecurity mystery",
+      "url": "https://www.technologyreview.com/2026/02/27/1133754/the-download-how-ai-is-shaking-up-go-and-a-cybersecurity-mystery/",
+      "date": "2026-02-27T13:10:00.000Z",
+      "description": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. AI is rewiring how the world’s best Go players thi..."
+    },
+    {
+      "source": "MIT Tech Review AI",
+      "category": "news",
+      "title": "AI is rewiring how the world’s best Go players think",
+      "url": "https://www.technologyreview.com/2026/02/27/1133624/ai-is-rewiring-how-the-worlds-best-go-players-think/",
+      "date": "2026-02-27T10:00:00.000Z",
+      "description": "Burrowed in the alleys of Hongik-dong, a hushed residential neighborhood in eastern Seoul, is a faded stone-tiled building stamped “Korea Baduk Association,” the governing body for professional Go. Th..."
+    },
     {
       "source": "Simon Willison",
       "category": "technical",
@@ -169,14 +225,6 @@
       "description": "<p><strong><a href=\"https://code.claude.com/docs/en/remote-control\">Claude Code Remote Control</a></strong></p> New Claude Code feature dropped yesterday: you can now run a \"remote control\" session on..."
     },
     {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "I vibe coded my dream macOS presentation app",
-      "url": "https://simonwillison.net/2026/Feb/25/present/#atom-everything",
-      "date": "2026-02-25T16:46:19.000Z",
-      "description": "<p>I gave a talk this weekend at Social Science FOO Camp in Mountain View. The event was a classic unconference format where anyone could present a talk without needing to propose it in advance. I gra..."
-    },
-    {
       "source": "MIT Tech Review AI",
       "category": "news",
       "title": "The Download: introducing the Crime issue",
@@ -191,54 +239,6 @@
       "url": "https://www.technologyreview.com/2026/02/25/1132829/listen-earths-rumbling-secret-soundtrack/",
       "date": "2026-02-25T11:00:00.000Z",
       "description": "The boom of a calving glacier. The crackling rumble of a wildfire. The roar of a surging storm front. They’re the noises of the living Earth, music of this one particular sphere and clues to the true ..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "3 things Juliet Beauchamp is into right now",
-      "url": "https://www.technologyreview.com/2026/02/25/1132836/3-things-juliet-beauchamp/",
-      "date": "2026-02-25T11:00:00.000Z",
-      "description": "The only reality show that matters The Real Housewives of Salt Lake City is one of the best shows on television right now. Not one of the best reality TV shows, but one of the best TV shows, period. C..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Now is a good time for doing crime",
-      "url": "https://www.technologyreview.com/2026/02/25/1132840/editors-letter-march-2026/",
-      "date": "2026-02-25T11:00:00.000Z",
-      "description": "Eons ago, in 2012, I had a weird experience. My iPhone suddenly shut down. When I restarted it, I found it was totally reset—clean, like a new device. This was the early days of iOS, so I wasn’t too c..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Quoting Kellan Elliott-McCrea",
-      "url": "https://simonwillison.net/2026/Feb/25/kellan-elliott-mccrea/#atom-everything",
-      "date": "2026-02-25T03:30:32.000Z",
-      "description": "<blockquote cite=\"https://laughingmeme.org/2026/02/09/code-has-always-been-the-easy-part.html\"><p>It’s also reasonable for people who entered technology in the last couple of decades because it was go..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "Linear walkthroughs",
-      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/linear-walkthroughs/#atom-everything",
-      "date": "2026-02-25T01:07:10.000Z",
-      "description": "<p><em><a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/\">Agentic Engineering Patterns</a> ></em></p> <p>Sometimes it's useful to have a coding agent give you a structured walkth..."
-    },
-    {
-      "source": "MIT Tech Review AI",
-      "category": "news",
-      "title": "Just pull a string to turn these tile patterns into useful 3D structures",
-      "url": "https://www.technologyreview.com/2026/02/24/1132074/just-pull-a-string-to-turn-these-tile-patterns-into-useful-3d-structures/",
-      "date": "2026-02-24T22:00:00.000Z",
-      "description": "MIT researchers have developed a new method for designing 3D structures that can spring up from a flat sheet of interconnected tiles with a single pull of a string. The technique could be used to make..."
-    },
-    {
-      "source": "Simon Willison",
-      "category": "technical",
-      "title": "go-size-analyzer",
-      "url": "https://simonwillison.net/2026/Feb/24/go-size-analyzer/#atom-everything",
-      "date": "2026-02-24T16:10:06.000Z",
-      "description": "<p><strong><a href=\"https://github.com/Zxilly/go-size-analyzer\">go-size-analyzer</a></strong></p> The Go ecosystem is <em>really</em> good at tooling. I just learned about this tool for analyzing the ..."
     },
     {
       "source": "Hugging Face Blog",

@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-27T05:23:09.978Z",
+  "scraped_at": "2026-02-28T05:12:02.286Z",
   "source": "bluesky",
   "stats": {
     "total_fetched": 24,
@@ -64,7 +64,7 @@
       "text": "I’m really excited about our release of Gemini 3 today, the result of hard work by many, many people in the Gemini team and all across Google! 🎊\n\nblog.google/products/gem...\n\nGemini 3 performs quite well on a wide range of benchmarks.",
       "createdAt": "2025-11-19T02:53:48.547Z",
       "created_utc": 1763520828,
-      "likeCount": 184,
+      "likeCount": 185,
       "repostCount": 24,
       "replyCount": 18,
       "embed": {
@@ -72,7 +72,7 @@
       },
       "hasImages": true,
       "category": "release",
-      "engagement": 250
+      "engagement": 251
     },
     {
       "uri": "at://did:plc:j7gi6r4kh6uof7rfrqpm3fej/app.bsky.feed.post/3jwoneqcave2h",
@@ -104,7 +104,7 @@
       "text": "We’ve pushed out the Pareto frontier of efficiency vs. intelligence again.\n\nWith Gemini 3 Flash ⚡️, we are seeing reasoning capabilities previously reserved for our largest models. This opens up entirely new categories of near real-time applications that require complex thought.\n\nMore in thread ⬇️",
       "createdAt": "2025-12-17T17:38:10.585Z",
       "created_utc": 1765993090,
-      "likeCount": 129,
+      "likeCount": 130,
       "repostCount": 18,
       "replyCount": 2,
       "embed": {
@@ -112,7 +112,7 @@
       },
       "hasImages": true,
       "category": "thread",
-      "engagement": 167
+      "engagement": 168
     },
     {
       "uri": "at://did:plc:qygqevukksg7rnewku4ffpkv/app.bsky.feed.post/3mc762xas7c2i",
@@ -136,6 +136,27 @@
       "engagement": 164
     },
     {
+      "uri": "at://did:plc:7chsbgw6o6oh5oiglpgc3467/app.bsky.feed.post/3mfsv5n2n4s2u",
+      "url": "https://bsky.app/profile/hardmaru.bsky.social/post/3mfsv5n2n4s2u",
+      "author": {
+        "handle": "hardmaru.bsky.social",
+        "displayName": "hardmaru",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7chsbgw6o6oh5oiglpgc3467/bafkreicpq2lhscgzahbyspqimfvb5y34acedy2xqsjiykptgvr2dk2tyga@jpeg"
+      },
+      "text": "Instead of forcing models to hold everything in an active context window, we can use hypernetworks to instantly compile documents and tasks directly into the model's weights. A step towards giving language models durable memory and fast adaptation.\n\nBlog: pub.sakana.ai/doc-to-lora/",
+      "createdAt": "2026-02-27T04:36:17.703Z",
+      "created_utc": 1772166977,
+      "likeCount": 104,
+      "repostCount": 14,
+      "replyCount": 2,
+      "embed": {
+        "type": "app.bsky.embed.record#view"
+      },
+      "hasImages": false,
+      "category": "discussion",
+      "engagement": 134
+    },
+    {
       "uri": "at://did:plc:qygqevukksg7rnewku4ffpkv/app.bsky.feed.post/3mcqfpg3ixk2h",
       "url": "https://bsky.app/profile/sakanaai.bsky.social/post/3mcqfpg3ixk2h",
       "author": {
@@ -155,6 +176,27 @@
       "hasImages": false,
       "category": "release",
       "engagement": 73
+    },
+    {
+      "uri": "at://did:plc:qygqevukksg7rnewku4ffpkv/app.bsky.feed.post/3mfsu32il2k2i",
+      "url": "https://bsky.app/profile/sakanaai.bsky.social/post/3mfsu32il2k2i",
+      "author": {
+        "handle": "sakanaai.bsky.social",
+        "displayName": "sakanaai.bsky.social",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qygqevukksg7rnewku4ffpkv/bafkreigl47cnfugoad54fcah6g5l6e25id5zfaqwucqbgvx3ojhgcnlmye@jpeg"
+      },
+      "text": "We are excited to introduce Doc-to-LoRA and Text-to-LoRA, two related papers exploring how to make LLM customization faster. By training a hypernetwork to generate LoRA adapters on the fly, models instantly internalize new info.\n\nBlog: pub.sakana.ai/doc-to-lora/\nDoc-to-LoRA: arxiv.org/abs/2602.15902",
+      "createdAt": "2026-02-27T04:16:57.387Z",
+      "created_utc": 1772165817,
+      "likeCount": 56,
+      "repostCount": 6,
+      "replyCount": 1,
+      "embed": {
+        "type": "app.bsky.embed.video#view"
+      },
+      "hasImages": false,
+      "category": "thread",
+      "engagement": 69
     },
     {
       "uri": "at://did:plc:uinkqqbeiydzfm7v7pi4e5mi/app.bsky.feed.post/3m4xvqlaydk22",
@@ -199,6 +241,27 @@
       "engagement": 32
     },
     {
+      "uri": "at://did:plc:ad6svofinb7goy2sfyeapvcw/app.bsky.feed.post/3m5xbo7wch223",
+      "url": "https://bsky.app/profile/triangulator.org/post/3m5xbo7wch223",
+      "author": {
+        "handle": "triangulator.org",
+        "displayName": "Kevin Webb",
+        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ad6svofinb7goy2sfyeapvcw/bafkreicjglkxciubnhpwwjlmch47badrwceivxclixyty6a6xetkybunre@jpeg"
+      },
+      "text": "The multimodal reasoning is very cool. Something I’ve been tracking with models for a while and Gemini 3 Pro was the first to produce a plausible response.",
+      "createdAt": "2025-11-19T03:09:25.189Z",
+      "created_utc": 1763521765,
+      "likeCount": 18,
+      "repostCount": 4,
+      "replyCount": 0,
+      "embed": {
+        "type": "app.bsky.embed.record#view"
+      },
+      "hasImages": false,
+      "category": "discussion",
+      "engagement": 26
+    },
+    {
       "uri": "at://did:plc:qygqevukksg7rnewku4ffpkv/app.bsky.feed.post/3mcqfrd4c7s2h",
       "url": "https://bsky.app/profile/sakanaai.bsky.social/post/3mcqfrd4c7s2h",
       "author": {
@@ -221,27 +284,6 @@
       "hasImages": false,
       "category": "link",
       "engagement": 26
-    },
-    {
-      "uri": "at://did:plc:ad6svofinb7goy2sfyeapvcw/app.bsky.feed.post/3m5xbo7wch223",
-      "url": "https://bsky.app/profile/triangulator.org/post/3m5xbo7wch223",
-      "author": {
-        "handle": "triangulator.org",
-        "displayName": "Kevin Webb",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ad6svofinb7goy2sfyeapvcw/bafkreicjglkxciubnhpwwjlmch47badrwceivxclixyty6a6xetkybunre@jpeg"
-      },
-      "text": "The multimodal reasoning is very cool. Something I’ve been tracking with models for a while and Gemini 3 Pro was the first to produce a plausible response.",
-      "createdAt": "2025-11-19T03:09:25.189Z",
-      "created_utc": 1763521765,
-      "likeCount": 17,
-      "repostCount": 4,
-      "replyCount": 0,
-      "embed": {
-        "type": "app.bsky.embed.record#view"
-      },
-      "hasImages": false,
-      "category": "discussion",
-      "engagement": 25
     },
     {
       "uri": "at://did:plc:pm3u5k444vz63ficauiqrmo7/app.bsky.feed.post/3ld4n6wbaj22p",
@@ -364,27 +406,6 @@
       "engagement": 11
     },
     {
-      "uri": "at://did:plc:qygqevukksg7rnewku4ffpkv/app.bsky.feed.post/3mfsu32il2k2i",
-      "url": "https://bsky.app/profile/sakanaai.bsky.social/post/3mfsu32il2k2i",
-      "author": {
-        "handle": "sakanaai.bsky.social",
-        "displayName": "sakanaai.bsky.social",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qygqevukksg7rnewku4ffpkv/bafkreigl47cnfugoad54fcah6g5l6e25id5zfaqwucqbgvx3ojhgcnlmye@jpeg"
-      },
-      "text": "We are excited to introduce Doc-to-LoRA and Text-to-LoRA, two related papers exploring how to make LLM customization faster. By training a hypernetwork to generate LoRA adapters on the fly, models instantly internalize new info.\n\nBlog: pub.sakana.ai/doc-to-lora/\nDoc-to-LoRA: arxiv.org/abs/2602.15902",
-      "createdAt": "2026-02-27T04:16:57.387Z",
-      "created_utc": 1772165817,
-      "likeCount": 2,
-      "repostCount": 2,
-      "replyCount": 1,
-      "embed": {
-        "type": "app.bsky.embed.video#view"
-      },
-      "hasImages": false,
-      "category": "thread",
-      "engagement": 7
-    },
-    {
       "uri": "at://did:plc:qygqevukksg7rnewku4ffpkv/app.bsky.feed.post/3mcduawtzss2v",
       "url": "https://bsky.app/profile/sakanaai.bsky.social/post/3mcduawtzss2v",
       "author": {
@@ -428,27 +449,6 @@
       "hasImages": false,
       "category": "link",
       "engagement": 6
-    },
-    {
-      "uri": "at://did:plc:7chsbgw6o6oh5oiglpgc3467/app.bsky.feed.post/3mfsv5n2n4s2u",
-      "url": "https://bsky.app/profile/hardmaru.bsky.social/post/3mfsv5n2n4s2u",
-      "author": {
-        "handle": "hardmaru.bsky.social",
-        "displayName": "hardmaru",
-        "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:7chsbgw6o6oh5oiglpgc3467/bafkreicpq2lhscgzahbyspqimfvb5y34acedy2xqsjiykptgvr2dk2tyga@jpeg"
-      },
-      "text": "Instead of forcing models to hold everything in an active context window, we can use hypernetworks to instantly compile documents and tasks directly into the model's weights. A step towards giving language models durable memory and fast adaptation.\n\nBlog: pub.sakana.ai/doc-to-lora/",
-      "createdAt": "2026-02-27T04:36:17.703Z",
-      "created_utc": 1772166977,
-      "likeCount": 5,
-      "repostCount": 0,
-      "replyCount": 0,
-      "embed": {
-        "type": "app.bsky.embed.record#view"
-      },
-      "hasImages": false,
-      "category": "discussion",
-      "engagement": 5
     }
   ],
   "recent_posts": [

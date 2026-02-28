@@ -1,10 +1,109 @@
 {
-  "generatedAt": "2026-02-27T05:22:37.719Z",
+  "generatedAt": "2026-02-28T05:11:29.845Z",
   "source": "GitHub API",
   "reposTracked": 18,
-  "recentCount": 30,
+  "recentCount": 28,
   "totalReleasesFound": 80,
   "recentReleases": [
+    {
+      "repo": "anthropics/claude-code",
+      "company": "Anthropic",
+      "category": "cli",
+      "name": "v2.1.63",
+      "tag": "v2.1.63",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.63",
+      "publishedAt": "2026-02-28T03:45:37Z",
+      "isPrerelease": false,
+      "body": "## What's changed\n\n- Added `/simplify` and `/batch` bundled slash commands\n- Fixed local slash command output like /cost appearing as user-sent messages instead of system messages in the UI\n- Project configs & auto memory now shared across git worktrees of the same repository\n- Added `ENABLE_CLAUDEA..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.6.rc.6",
+      "tag": "v1.81.6.rc.6",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.6.rc.6",
+      "publishedAt": "2026-02-28T02:56:53Z",
+      "isPrerelease": false,
+      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.6.rc.4...v1.81.6.rc.6"
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8179",
+      "tag": "b8179",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8179",
+      "publishedAt": "2026-02-27T20:28:00Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nCUDA: add CDNA3 MFMA support for flash attention MMA kernel (#19806)\n\n* CUDA: add CDNA3 MFMA support for flash attention MMA kernel\n\nAdd MI300X (gfx942) MFMA tensor core flash attention using\nv_mfma_f32_16x16x16_f16 (FP16 in, FP32 accumulate).\n\n- Add FATTN_WARP_SIZE=64 for CDNA wavef..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8178",
+      "tag": "b8178",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8178",
+      "publishedAt": "2026-02-27T19:42:28Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nserver: Add pragma once to server-context.h (#19944)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8178/llama-b8178-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/down..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.14.rc.2",
+      "tag": "v1.81.14.rc.2",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.14.rc.2",
+      "publishedAt": "2026-02-27T18:19:47Z",
+      "isPrerelease": false,
+      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.6.rc.5...v1.81.14.rc.2"
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8177",
+      "tag": "b8177",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8177",
+      "publishedAt": "2026-02-27T18:15:10Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nserver: Mirroring /v1/responses to /responses to match /v1/chat/completions pattern (#19873)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8177/llama-b8177-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://git..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8175",
+      "tag": "b8175",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8175",
+      "publishedAt": "2026-02-27T14:52:03Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nggml-cpu: add repack for mxfp4 (#19738)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8175/llama-b8175-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b8175/ll..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "litellm_presidio-dev-v1.81.16",
+      "tag": "litellm_presidio-dev-v1.81.16",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/litellm_presidio-dev-v1.81.16",
+      "publishedAt": "2026-02-27T13:09:30Z",
+      "isPrerelease": false,
+      "body": "## What's Changed\n* [Fix] /key/aliases: Add pagination and search to prevent OOMs by @yuneng-jiang in https://github.com/BerriAI/litellm/pull/22137\n* [Feat] Add control for setting upperbound on chunk processing time  by @ishaan-jaff in https://github.com/BerriAI/litellm/pull/22209\n* [Feature] UI - ..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8173",
+      "tag": "b8173",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8173",
+      "publishedAt": "2026-02-27T09:12:28Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nserver : support multiple model aliases via comma-separated --alias (#19926)\n\n* server : support multiple model aliases via comma-separated --alias\n\n* server : update --alias description and regenerate docs\n\n* server : multiple model aliases and tags\n\n- address review feedback from n..."
+    },
     {
       "repo": "ollama/ollama",
       "company": "Ollama",
@@ -15,28 +114,6 @@
       "publishedAt": "2026-02-27T03:47:22Z",
       "isPrerelease": false,
       "body": "## New models\n- [Qwen 3.5](https://ollama.com/library/qwen3.5): a family of open-source multimodal models that delivers exceptional utility and performance.\n- [LFM 2](https://ollama.com/library/lfm2): LFM2 is a family of hybrid models designed for on-device deployment. LFM2-24B-A2B is the largest mo..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8169",
-      "tag": "b8169",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8169",
-      "publishedAt": "2026-02-27T03:25:24Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nggml : fix AMX and add batched support (#19925)\n\nllama-perplexity -hf ggml-org/Qwen3-0.6B-GGUF:Q4_0 -f wikitext-2-raw/wiki.test.raw -c 2048 -b 2048 --chunks 2\n\nbefore this commit:\n\n```\nperplexity: calculating perplexity over 2 chunks, n_ctx=2048, batch_size=2048, n_seq=1\nperplexity: ..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8168",
-      "tag": "b8168",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8168",
-      "publishedAt": "2026-02-27T02:33:30Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nvulkan: fix fp16 Flash Attention on Windows AMD RDNA2 and below (#19921)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8168/llama-b8168-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/lla..."
     },
     {
       "repo": "ollama/ollama",
@@ -50,28 +127,6 @@
       "body": "## What's Changed\n* Fixed issue where tool calls in the Qwen 3 and Qwen 3.5 model families would not be parsed correctly if emitted during thinking\n\n**Full Changelog**: https://github.com/ollama/ollama/compare/v0.17.2...v0.17.3"
     },
     {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8167",
-      "tag": "b8167",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8167",
-      "publishedAt": "2026-02-27T02:04:34Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nmtmd : fix padding of n_tokens (#19930)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8167/llama-b8167-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b8167/ll..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8166",
-      "tag": "b8166",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8166",
-      "publishedAt": "2026-02-27T02:03:30Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nserver : fix ctx checkpoint restore logic (#19924)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8166/llama-b8166-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/downlo..."
-    },
-    {
       "repo": "anthropics/claude-code",
       "company": "Anthropic",
       "category": "cli",
@@ -81,17 +136,6 @@
       "publishedAt": "2026-02-27T01:56:19Z",
       "isPrerelease": false,
       "body": "## What's changed\n\n- Fixed prompt suggestion cache regression that reduced cache hit rates"
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8165",
-      "tag": "b8165",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8165",
-      "publishedAt": "2026-02-27T01:26:19Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nkv-cache : fix can_shift() check to take into account M-RoPE (#19928)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8165/llama-b8165-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama...."
     },
     {
       "repo": "ollama/ollama",
@@ -180,54 +224,109 @@
       "publishedAt": "2026-02-25T16:27:43Z",
       "isPrerelease": false,
       "body": "Changes since langchain-core==1.2.15\n\nrelease(core): 1.2.16 (#35439)\nfix(core): treat empty tool chunk ids as missing in merge (#35414)"
-    },
-    {
-      "repo": "anthropics/claude-code",
-      "company": "Anthropic",
-      "category": "cli",
-      "name": "v2.1.56",
-      "tag": "v2.1.56",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.56",
-      "publishedAt": "2026-02-25T06:27:48Z",
-      "isPrerelease": false,
-      "body": "## What's changed\n\n- VS Code: Fixed another cause of \"command 'claude-vscode.editor.openLast' not found\" crashes"
-    },
-    {
-      "repo": "anthropics/anthropic-sdk-python",
-      "company": "Anthropic",
-      "category": "sdk",
-      "name": "v0.84.0",
-      "tag": "v0.84.0",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.84.0",
-      "publishedAt": "2026-02-25T05:22:10Z",
-      "isPrerelease": false,
-      "body": "## 0.84.0 (2026-02-25)\n\nFull Changelog: [v0.83.0...v0.84.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.83.0...v0.84.0)\n\n### Features\n\n* **api:** change array_format to brackets ([925d2ad](https://github.com/anthropics/anthropic-sdk-python/commit/925d2ad6b76ad7c15de07b9b2768738775f..."
-    },
-    {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "v1.81.12-stable.1",
-      "tag": "v1.81.12-stable.1",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.12-stable.1",
-      "publishedAt": "2026-02-24T20:44:12Z",
-      "isPrerelease": false,
-      "body": "## What's Changed\n* fix(mcp): backport StreamableHTTPSessionManager stateless fix to v1.81.12-stable by @michelligabriele in https://github.com/BerriAI/litellm/pull/22030\n\n\n**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.12-stable...v1.81.12-stable.1"
-    },
-    {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "v1.81.12-stable_gpt-5.3",
-      "tag": "v1.81.12-stable_gpt-5.3",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.12-stable_gpt-5.3",
-      "publishedAt": "2026-02-24T20:36:24Z",
-      "isPrerelease": false,
-      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.12-stable...v1.81.12-stable_gpt-5.3"
     }
   ],
   "allReleases": [
     {
+      "repo": "anthropics/claude-code",
+      "company": "Anthropic",
+      "category": "cli",
+      "name": "v2.1.63",
+      "tag": "v2.1.63",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.63",
+      "publishedAt": "2026-02-28T03:45:37Z",
+      "isPrerelease": false,
+      "body": "## What's changed\n\n- Added `/simplify` and `/batch` bundled slash commands\n- Fixed local slash command output like /cost appearing as user-sent messages instead of system messages in the UI\n- Project configs & auto memory now shared across git worktrees of the same repository\n- Added `ENABLE_CLAUDEA..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.6.rc.6",
+      "tag": "v1.81.6.rc.6",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.6.rc.6",
+      "publishedAt": "2026-02-28T02:56:53Z",
+      "isPrerelease": false,
+      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.6.rc.4...v1.81.6.rc.6"
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8179",
+      "tag": "b8179",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8179",
+      "publishedAt": "2026-02-27T20:28:00Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nCUDA: add CDNA3 MFMA support for flash attention MMA kernel (#19806)\n\n* CUDA: add CDNA3 MFMA support for flash attention MMA kernel\n\nAdd MI300X (gfx942) MFMA tensor core flash attention using\nv_mfma_f32_16x16x16_f16 (FP16 in, FP32 accumulate).\n\n- Add FATTN_WARP_SIZE=64 for CDNA wavef..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8178",
+      "tag": "b8178",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8178",
+      "publishedAt": "2026-02-27T19:42:28Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nserver: Add pragma once to server-context.h (#19944)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8178/llama-b8178-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/down..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "v1.81.14.rc.2",
+      "tag": "v1.81.14.rc.2",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.14.rc.2",
+      "publishedAt": "2026-02-27T18:19:47Z",
+      "isPrerelease": false,
+      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.6.rc.5...v1.81.14.rc.2"
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8177",
+      "tag": "b8177",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8177",
+      "publishedAt": "2026-02-27T18:15:10Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nserver: Mirroring /v1/responses to /responses to match /v1/chat/completions pattern (#19873)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8177/llama-b8177-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://git..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8175",
+      "tag": "b8175",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8175",
+      "publishedAt": "2026-02-27T14:52:03Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nggml-cpu: add repack for mxfp4 (#19738)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8175/llama-b8175-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b8175/ll..."
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "company": "LiteLLM",
+      "category": "proxy",
+      "name": "litellm_presidio-dev-v1.81.16",
+      "tag": "litellm_presidio-dev-v1.81.16",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/litellm_presidio-dev-v1.81.16",
+      "publishedAt": "2026-02-27T13:09:30Z",
+      "isPrerelease": false,
+      "body": "## What's Changed\n* [Fix] /key/aliases: Add pagination and search to prevent OOMs by @yuneng-jiang in https://github.com/BerriAI/litellm/pull/22137\n* [Feat] Add control for setting upperbound on chunk processing time  by @ishaan-jaff in https://github.com/BerriAI/litellm/pull/22209\n* [Feature] UI - ..."
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "name": "b8173",
+      "tag": "b8173",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8173",
+      "publishedAt": "2026-02-27T09:12:28Z",
+      "isPrerelease": false,
+      "body": "<details open>\n\nserver : support multiple model aliases via comma-separated --alias (#19926)\n\n* server : support multiple model aliases via comma-separated --alias\n\n* server : update --alias description and regenerate docs\n\n* server : multiple model aliases and tags\n\n- address review feedback from n..."
+    },
+    {
       "repo": "ollama/ollama",
       "company": "Ollama",
       "category": "local",
@@ -237,28 +336,6 @@
       "publishedAt": "2026-02-27T03:47:22Z",
       "isPrerelease": false,
       "body": "## New models\n- [Qwen 3.5](https://ollama.com/library/qwen3.5): a family of open-source multimodal models that delivers exceptional utility and performance.\n- [LFM 2](https://ollama.com/library/lfm2): LFM2 is a family of hybrid models designed for on-device deployment. LFM2-24B-A2B is the largest mo..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8169",
-      "tag": "b8169",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8169",
-      "publishedAt": "2026-02-27T03:25:24Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nggml : fix AMX and add batched support (#19925)\n\nllama-perplexity -hf ggml-org/Qwen3-0.6B-GGUF:Q4_0 -f wikitext-2-raw/wiki.test.raw -c 2048 -b 2048 --chunks 2\n\nbefore this commit:\n\n```\nperplexity: calculating perplexity over 2 chunks, n_ctx=2048, batch_size=2048, n_seq=1\nperplexity: ..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8168",
-      "tag": "b8168",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8168",
-      "publishedAt": "2026-02-27T02:33:30Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nvulkan: fix fp16 Flash Attention on Windows AMD RDNA2 and below (#19921)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8168/llama-b8168-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/lla..."
     },
     {
       "repo": "ollama/ollama",
@@ -272,28 +349,6 @@
       "body": "## What's Changed\n* Fixed issue where tool calls in the Qwen 3 and Qwen 3.5 model families would not be parsed correctly if emitted during thinking\n\n**Full Changelog**: https://github.com/ollama/ollama/compare/v0.17.2...v0.17.3"
     },
     {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8167",
-      "tag": "b8167",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8167",
-      "publishedAt": "2026-02-27T02:04:34Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nmtmd : fix padding of n_tokens (#19930)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8167/llama-b8167-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/download/b8167/ll..."
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8166",
-      "tag": "b8166",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8166",
-      "publishedAt": "2026-02-27T02:03:30Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nserver : fix ctx checkpoint restore logic (#19924)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8166/llama-b8166-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama.cpp/releases/downlo..."
-    },
-    {
       "repo": "anthropics/claude-code",
       "company": "Anthropic",
       "category": "cli",
@@ -303,17 +358,6 @@
       "publishedAt": "2026-02-27T01:56:19Z",
       "isPrerelease": false,
       "body": "## What's changed\n\n- Fixed prompt suggestion cache regression that reduced cache hit rates"
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "name": "b8165",
-      "tag": "b8165",
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b8165",
-      "publishedAt": "2026-02-27T01:26:19Z",
-      "isPrerelease": false,
-      "body": "<details open>\n\nkv-cache : fix can_shift() check to take into account M-RoPE (#19928)\n\n</details>\n\n**macOS/iOS:**\n- [macOS Apple Silicon (arm64)](https://github.com/ggml-org/llama.cpp/releases/download/b8165/llama-b8165-bin-macos-arm64.tar.gz)\n- [macOS Intel (x64)](https://github.com/ggml-org/llama...."
     },
     {
       "repo": "ollama/ollama",
@@ -404,17 +448,6 @@
       "body": "Changes since langchain-core==1.2.15\n\nrelease(core): 1.2.16 (#35439)\nfix(core): treat empty tool chunk ids as missing in merge (#35414)"
     },
     {
-      "repo": "anthropics/claude-code",
-      "company": "Anthropic",
-      "category": "cli",
-      "name": "v2.1.56",
-      "tag": "v2.1.56",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.56",
-      "publishedAt": "2026-02-25T06:27:48Z",
-      "isPrerelease": false,
-      "body": "## What's changed\n\n- VS Code: Fixed another cause of \"command 'claude-vscode.editor.openLast' not found\" crashes"
-    },
-    {
       "repo": "anthropics/anthropic-sdk-python",
       "company": "Anthropic",
       "category": "sdk",
@@ -424,28 +457,6 @@
       "publishedAt": "2026-02-25T05:22:10Z",
       "isPrerelease": false,
       "body": "## 0.84.0 (2026-02-25)\n\nFull Changelog: [v0.83.0...v0.84.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.83.0...v0.84.0)\n\n### Features\n\n* **api:** change array_format to brackets ([925d2ad](https://github.com/anthropics/anthropic-sdk-python/commit/925d2ad6b76ad7c15de07b9b2768738775f..."
-    },
-    {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "v1.81.12-stable.1",
-      "tag": "v1.81.12-stable.1",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.12-stable.1",
-      "publishedAt": "2026-02-24T20:44:12Z",
-      "isPrerelease": false,
-      "body": "## What's Changed\n* fix(mcp): backport StreamableHTTPSessionManager stateless fix to v1.81.12-stable by @michelligabriele in https://github.com/BerriAI/litellm/pull/22030\n\n\n**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.12-stable...v1.81.12-stable.1"
-    },
-    {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "v1.81.12-stable_gpt-5.3",
-      "tag": "v1.81.12-stable_gpt-5.3",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.12-stable_gpt-5.3",
-      "publishedAt": "2026-02-24T20:36:24Z",
-      "isPrerelease": false,
-      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/v1.81.12-stable...v1.81.12-stable_gpt-5.3"
     },
     {
       "repo": "openai/openai-python",
@@ -457,17 +468,6 @@
       "publishedAt": "2026-02-24T20:01:29Z",
       "isPrerelease": false,
       "body": "## 2.24.0 (2026-02-24)\n\nFull Changelog: [v2.23.0...v2.24.0](https://github.com/openai/openai-python/compare/v2.23.0...v2.24.0)\n\n### Features\n\n* **api:** add phase ([391deb9](https://github.com/openai/openai-python/commit/391deb99f6a92e51bffb25efd8dfe367d144bb9d))\n\n\n### Bug Fixes\n\n* **api:** fix phas..."
-    },
-    {
-      "repo": "BerriAI/litellm",
-      "company": "LiteLLM",
-      "category": "proxy",
-      "name": "v1.81.15-nightly",
-      "tag": "v1.81.15-nightly",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.81.15-nightly",
-      "publishedAt": "2026-02-24T17:29:27Z",
-      "isPrerelease": false,
-      "body": "**Full Changelog**: https://github.com/BerriAI/litellm/compare/litellmv1.81.15.presidio.dev...v1.81.15-nightly"
     },
     {
       "repo": "ollama/ollama",
@@ -780,32 +780,32 @@
   ],
   "repoStats": [
     {
-      "repo": "ollama/ollama",
-      "company": "Ollama",
-      "category": "local",
-      "latestRelease": "v0.17.4",
-      "latestDate": "2026-02-27T03:47:22Z"
-    },
-    {
-      "repo": "ggerganov/llama.cpp",
-      "company": "llama.cpp",
-      "category": "inference",
-      "latestRelease": "b8169",
-      "latestDate": "2026-02-27T03:25:24Z"
-    },
-    {
       "repo": "anthropics/claude-code",
       "company": "Anthropic",
       "category": "cli",
-      "latestRelease": "v2.1.62",
-      "latestDate": "2026-02-27T01:56:19Z"
+      "latestRelease": "v2.1.63",
+      "latestDate": "2026-02-28T03:45:37Z"
     },
     {
       "repo": "BerriAI/litellm",
       "company": "LiteLLM",
       "category": "proxy",
-      "latestRelease": "v1.81.16.custm-auth.dev",
-      "latestDate": "2026-02-26T19:34:59Z"
+      "latestRelease": "v1.81.6.rc.6",
+      "latestDate": "2026-02-28T02:56:53Z"
+    },
+    {
+      "repo": "ggerganov/llama.cpp",
+      "company": "llama.cpp",
+      "category": "inference",
+      "latestRelease": "b8179",
+      "latestDate": "2026-02-27T20:28:00Z"
+    },
+    {
+      "repo": "ollama/ollama",
+      "company": "Ollama",
+      "category": "local",
+      "latestRelease": "v0.17.4",
+      "latestDate": "2026-02-27T03:47:22Z"
     },
     {
       "repo": "vllm-project/vllm",

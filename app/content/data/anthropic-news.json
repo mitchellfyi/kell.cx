@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-27T05:23:32.398Z",
+  "scraped_at": "2026-02-28T05:12:16.622Z",
   "source": "anthropic.com",
   "stats": {
     "news_count": 3,
@@ -8,14 +8,14 @@
   },
   "items": [
     {
-      "title": "Statement from Dario Amodei on our discussions with the Department of War",
-      "url": "https://www.anthropic.com/news/statement-department-of-war",
+      "title": "Statement on the comments from Secretary of War Pete Hegseth",
+      "url": "https://www.anthropic.com/news/statement-comments-secretary-war",
       "source": "anthropic-news",
       "category": "announcement"
     },
     {
       "title": "News",
-      "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "url": "https://www.anthropic.com/news/statement-department-of-war",
       "source": "anthropic-news",
       "category": "announcement"
     },

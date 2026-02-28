@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-02-27T05:23:50.067Z",
+  "scraped_at": "2026-02-28T05:12:34.711Z",
   "source": "huggingface.co",
   "summary": {
     "total_top_models": 30,
@@ -77,8 +77,8 @@
       "author": "deepseek-ai",
       "type": "model",
       "pipeline": "text-generation",
-      "downloads": 768096,
-      "likes": 13025,
+      "downloads": 830553,
+      "likes": 13083,
       "tags": [
         "transformers",
         "safetensors",
@@ -94,8 +94,8 @@
       "author": "black-forest-labs",
       "type": "model",
       "pipeline": "text-to-image",
-      "downloads": 704561,
-      "likes": 12356,
+      "downloads": 728193,
+      "likes": 12359,
       "tags": [
         "diffusers",
         "safetensors",
@@ -111,8 +111,8 @@
       "author": "stabilityai",
       "type": "model",
       "pipeline": "text-to-image",
-      "downloads": 2089773,
-      "likes": 7486,
+      "downloads": 2156024,
+      "likes": 7490,
       "tags": [
         "diffusers",
         "onnx",
@@ -128,8 +128,8 @@
       "author": "CompVis",
       "type": "model",
       "pipeline": "text-to-image",
-      "downloads": 583587,
-      "likes": 6979,
+      "downloads": 596170,
+      "likes": 6980,
       "tags": [
         "diffusers",
         "safetensors",
@@ -145,8 +145,8 @@
       "author": "meta-llama",
       "type": "model",
       "pipeline": "text-generation",
-      "downloads": 1932499,
-      "likes": 6469,
+      "downloads": 2102140,
+      "likes": 6470,
       "tags": [
         "transformers",
         "safetensors",
@@ -162,8 +162,8 @@
       "author": "hexgrad",
       "type": "model",
       "pipeline": "text-to-speech",
-      "downloads": 9582366,
-      "likes": 5766,
+      "downloads": 9822931,
+      "likes": 5773,
       "tags": [
         "text-to-speech",
         "en",
@@ -179,8 +179,8 @@
       "author": "meta-llama",
       "type": "model",
       "pipeline": "text-generation",
-      "downloads": 6267408,
-      "likes": 5496,
+      "downloads": 6505143,
+      "likes": 5498,
       "tags": [
         "transformers",
         "safetensors",
@@ -196,8 +196,8 @@
       "author": "openai",
       "type": "model",
       "pipeline": "automatic-speech-recognition",
-      "downloads": 5917182,
-      "likes": 5426,
+      "downloads": 6043056,
+      "likes": 5427,
       "tags": [
         "transformers",
         "pytorch",
@@ -213,7 +213,7 @@
       "author": "bigscience",
       "type": "model",
       "pipeline": "text-generation",
-      "downloads": 3639,
+      "downloads": 3793,
       "likes": 4985,
       "tags": [
         "transformers",
@@ -230,7 +230,7 @@
       "author": "stabilityai",
       "type": "model",
       "pipeline": "text-to-image",
-      "downloads": 7100,
+      "downloads": 8116,
       "likes": 4909,
       "tags": [
         "diffusion-single-file",
@@ -247,7 +247,7 @@
       "author": "meta-llama",
       "type": "model",
       "pipeline": "text-generation",
-      "downloads": 308888,
+      "downloads": 322287,
       "likes": 4714,
       "tags": [
         "transformers",
@@ -264,8 +264,8 @@
       "author": "black-forest-labs",
       "type": "model",
       "pipeline": "text-to-image",
-      "downloads": 692192,
-      "likes": 4650,
+      "downloads": 709667,
+      "likes": 4654,
       "tags": [
         "diffusers",
         "safetensors",
@@ -281,7 +281,7 @@
       "author": "mistralai",
       "type": "model",
       "pipeline": "unknown",
-      "downloads": 698060,
+      "downloads": 730854,
       "likes": 4640,
       "tags": [
         "vllm",
@@ -298,8 +298,8 @@
       "author": "openai",
       "type": "model",
       "pipeline": "text-generation",
-      "downloads": 3641876,
-      "likes": 4531,
+      "downloads": 3791158,
+      "likes": 4533,
       "tags": [
         "transformers",
         "safetensors",
@@ -315,8 +315,8 @@
       "author": "sentence-transformers",
       "type": "model",
       "pipeline": "sentence-similarity",
-      "downloads": 175932611,
-      "likes": 4515,
+      "downloads": 181930424,
+      "likes": 4517,
       "tags": [
         "sentence-transformers",
         "pytorch",
@@ -332,7 +332,7 @@
       "author": "meta-llama",
       "type": "model",
       "pipeline": "text-generation",
-      "downloads": 203,
+      "downloads": 212,
       "likes": 4451,
       "tags": [
         "facebook",
@@ -349,8 +349,8 @@
       "author": "openai",
       "type": "model",
       "pipeline": "text-generation",
-      "downloads": 5870343,
-      "likes": 4404,
+      "downloads": 6069244,
+      "likes": 4408,
       "tags": [
         "transformers",
         "safetensors",
@@ -366,7 +366,7 @@
       "author": "meta-llama",
       "type": "model",
       "pipeline": "text-generation",
-      "downloads": 1264720,
+      "downloads": 1305529,
       "likes": 4387,
       "tags": [
         "transformers",
@@ -383,8 +383,8 @@
       "author": "Tongyi-MAI",
       "type": "model",
       "pipeline": "text-to-image",
-      "downloads": 1040104,
-      "likes": 4166,
+      "downloads": 1059187,
+      "likes": 4173,
       "tags": [
         "diffusers",
         "safetensors",
@@ -400,8 +400,8 @@
       "author": "mistralai",
       "type": "model",
       "pipeline": "text-generation",
-      "downloads": 415166,
-      "likes": 4045,
+      "downloads": 438137,
+      "likes": 4044,
       "tags": [
         "transformers",
         "pytorch",
@@ -417,7 +417,7 @@
       "author": "deepseek-ai",
       "type": "model",
       "pipeline": "text-generation",
-      "downloads": 1338853,
+      "downloads": 1372411,
       "likes": 4026,
       "tags": [
         "transformers",
@@ -448,8 +448,8 @@
       "author": "WarriorMama777",
       "type": "model",
       "pipeline": "text-to-image",
-      "downloads": 922,
-      "likes": 3890,
+      "downloads": 1019,
+      "likes": 3889,
       "tags": [
         "diffusers",
         "stable-diffusion",
@@ -479,7 +479,7 @@
       "author": "deepseek-ai",
       "type": "model",
       "pipeline": "any-to-any",
-      "downloads": 32727,
+      "downloads": 34820,
       "likes": 3565,
       "tags": [
         "transformers",
@@ -496,8 +496,8 @@
       "author": "microsoft",
       "type": "model",
       "pipeline": "text-generation",
-      "downloads": 1528253,
-      "likes": 3426,
+      "downloads": 1572183,
+      "likes": 3427,
       "tags": [
         "transformers",
         "safetensors",
@@ -513,8 +513,8 @@
       "author": "coqui",
       "type": "model",
       "pipeline": "text-to-speech",
-      "downloads": 7633211,
-      "likes": 3407,
+      "downloads": 7807053,
+      "likes": 3408,
       "tags": [
         "coqui",
         "text-to-speech",
@@ -529,8 +529,8 @@
       "author": "stabilityai",
       "type": "model",
       "pipeline": "text-to-image",
-      "downloads": 42982,
-      "likes": 3373,
+      "downloads": 43958,
+      "likes": 3375,
       "tags": [
         "diffusers",
         "safetensors",
@@ -546,8 +546,8 @@
       "author": "google",
       "type": "model",
       "pipeline": "text-generation",
-      "downloads": 110943,
-      "likes": 3275,
+      "downloads": 112803,
+      "likes": 3277,
       "tags": [
         "transformers",
         "safetensors",
@@ -563,7 +563,7 @@
       "author": "stabilityai",
       "type": "model",
       "pipeline": "image-to-video",
-      "downloads": 143887,
+      "downloads": 147636,
       "likes": 3236,
       "tags": [
         "diffusers",
@@ -582,8 +582,8 @@
       "author": "sentence-transformers",
       "type": "model",
       "pipeline": "sentence-similarity",
-      "downloads": 175932611,
-      "likes": 4515,
+      "downloads": 181930424,
+      "likes": 4517,
       "tags": [
         "sentence-transformers",
         "pytorch",
@@ -599,8 +599,8 @@
       "author": "google-bert",
       "type": "model",
       "pipeline": "fill-mask",
-      "downloads": 56444487,
-      "likes": 2573,
+      "downloads": 58784300,
+      "likes": 2577,
       "tags": [
         "transformers",
         "pytorch",
@@ -616,7 +616,7 @@
       "author": "google",
       "type": "model",
       "pipeline": "unknown",
-      "downloads": 44923296,
+      "downloads": 46640533,
       "likes": 83,
       "tags": [
         "transformers",
@@ -633,8 +633,8 @@
       "author": "Falconsai",
       "type": "model",
       "pipeline": "image-classification",
-      "downloads": 37917476,
-      "likes": 998,
+      "downloads": 39192143,
+      "likes": 999,
       "tags": [
         "transformers",
         "pytorch",
@@ -650,8 +650,8 @@
       "author": "sentence-transformers",
       "type": "model",
       "pipeline": "sentence-similarity",
-      "downloads": 24977437,
-      "likes": 1251,
+      "downloads": 25681447,
+      "likes": 1253,
       "tags": [
         "sentence-transformers",
         "pytorch",
@@ -667,7 +667,7 @@
       "author": "FacebookAI",
       "type": "model",
       "pipeline": "fill-mask",
-      "downloads": 23387542,
+      "downloads": 23939779,
       "likes": 791,
       "tags": [
         "transformers",
@@ -684,7 +684,7 @@
       "author": "timm",
       "type": "model",
       "pipeline": "image-classification",
-      "downloads": 22299474,
+      "downloads": 22994861,
       "likes": 51,
       "tags": [
         "timm",
@@ -701,7 +701,7 @@
       "author": "FacebookAI",
       "type": "model",
       "pipeline": "fill-mask",
-      "downloads": 20529212,
+      "downloads": 20766603,
       "likes": 266,
       "tags": [
         "transformers",
@@ -718,8 +718,8 @@
       "author": "sentence-transformers",
       "type": "model",
       "pipeline": "sentence-similarity",
-      "downloads": 19834139,
-      "likes": 1141,
+      "downloads": 20378832,
+      "likes": 1142,
       "tags": [
         "sentence-transformers",
         "pytorch",
@@ -735,7 +735,7 @@
       "author": "laion",
       "type": "model",
       "pipeline": "audio-classification",
-      "downloads": 18721383,
+      "downloads": 19265574,
       "likes": 54,
       "tags": [
         "transformers",
@@ -752,7 +752,7 @@
       "author": "openai",
       "type": "model",
       "pipeline": "zero-shot-image-classification",
-      "downloads": 18301972,
+      "downloads": 18939142,
       "likes": 869,
       "tags": [
         "transformers",
@@ -765,28 +765,11 @@
       "url": "https://huggingface.co/openai/clip-vit-base-patch32"
     },
     {
-      "id": "BAAI/bge-m3",
-      "author": "BAAI",
-      "type": "model",
-      "pipeline": "sentence-similarity",
-      "downloads": 17263453,
-      "likes": 2778,
-      "tags": [
-        "sentence-transformers",
-        "pytorch",
-        "onnx",
-        "xlm-roberta",
-        "feature-extraction"
-      ],
-      "createdAt": "2024-01-27T17:07:29.000Z",
-      "url": "https://huggingface.co/BAAI/bge-m3"
-    },
-    {
       "id": "Qwen/Qwen2.5-7B-Instruct",
       "author": "Qwen",
       "type": "model",
       "pipeline": "text-generation",
-      "downloads": 17262198,
+      "downloads": 18024732,
       "likes": 1101,
       "tags": [
         "transformers",
@@ -799,12 +782,29 @@
       "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
     },
     {
+      "id": "BAAI/bge-m3",
+      "author": "BAAI",
+      "type": "model",
+      "pipeline": "sentence-similarity",
+      "downloads": 17838971,
+      "likes": 2779,
+      "tags": [
+        "sentence-transformers",
+        "pytorch",
+        "onnx",
+        "xlm-roberta",
+        "feature-extraction"
+      ],
+      "createdAt": "2024-01-27T17:07:29.000Z",
+      "url": "https://huggingface.co/BAAI/bge-m3"
+    },
+    {
       "id": "amazon/chronos-2",
       "author": "amazon",
       "type": "model",
       "pipeline": "time-series-forecasting",
-      "downloads": 16785640,
-      "likes": 189,
+      "downloads": 17474320,
+      "likes": 190,
       "tags": [
         "chronos-forecasting",
         "safetensors",
@@ -820,7 +820,7 @@
       "author": "pyannote",
       "type": "model",
       "pipeline": "unknown",
-      "downloads": 14861738,
+      "downloads": 15352935,
       "likes": 104,
       "tags": [
         "pyannote-audio",
@@ -839,7 +839,7 @@
       "author": "enzostvs",
       "type": "space",
       "sdk": "docker",
-      "likes": 16525,
+      "likes": 16530,
       "tags": [
         "docker",
         "region:us"
@@ -894,7 +894,7 @@
       "author": "black-forest-labs",
       "type": "space",
       "sdk": "gradio",
-      "likes": 9399,
+      "likes": 9400,
       "tags": [
         "gradio",
         "region:us"
@@ -907,7 +907,7 @@
       "author": "mteb",
       "type": "space",
       "sdk": "docker",
-      "likes": 7070,
+      "likes": 7072,
       "tags": [
         "docker",
         "leaderboard",
@@ -921,7 +921,7 @@
       "author": "dalle-mini",
       "type": "space",
       "sdk": "static",
-      "likes": 5652,
+      "likes": 5655,
       "tags": [
         "static",
         "region:us"
@@ -976,7 +976,7 @@
       "author": "Wan-AI",
       "type": "space",
       "sdk": "gradio",
-      "likes": 4837,
+      "likes": 4844,
       "tags": [
         "gradio",
         "region:us"
@@ -1002,7 +1002,7 @@
       "author": "lmarena-ai",
       "type": "space",
       "sdk": "static",
-      "likes": 4729,
+      "likes": 4731,
       "tags": [
         "static",
         "leaderboard",
@@ -1025,6 +1025,19 @@
       "url": "https://huggingface.co/spaces/KingNish/OpenGPT-4o"
     },
     {
+      "id": "nanotron/ultrascale-playbook",
+      "author": "nanotron",
+      "type": "space",
+      "sdk": "static",
+      "likes": 3713,
+      "tags": [
+        "static",
+        "region:us"
+      ],
+      "createdAt": "2024-06-18T17:12:28.000Z",
+      "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook"
+    },
+    {
       "id": "KlingTeam/LivePortrait",
       "author": "KlingTeam",
       "type": "space",
@@ -1039,19 +1052,6 @@
       ],
       "createdAt": "2024-07-05T16:35:24.000Z",
       "url": "https://huggingface.co/spaces/KlingTeam/LivePortrait"
-    },
-    {
-      "id": "nanotron/ultrascale-playbook",
-      "author": "nanotron",
-      "type": "space",
-      "sdk": "static",
-      "likes": 3710,
-      "tags": [
-        "static",
-        "region:us"
-      ],
-      "createdAt": "2024-06-18T17:12:28.000Z",
-      "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook"
     },
     {
       "id": "InstantX/InstantID",
@@ -1071,7 +1071,7 @@
       "author": "tencent",
       "type": "space",
       "sdk": "gradio",
-      "likes": 3219,
+      "likes": 3222,
       "tags": [
         "gradio",
         "region:us"
@@ -1084,7 +1084,7 @@
       "author": "hexgrad",
       "type": "space",
       "sdk": "gradio",
-      "likes": 3203,
+      "likes": 3204,
       "tags": [
         "gradio",
         "region:us"
@@ -1111,8 +1111,8 @@
       "id": "fka/prompts.chat",
       "author": "fka",
       "type": "dataset",
-      "downloads": 18949,
-      "likes": 9601,
+      "downloads": 19338,
+      "likes": 9602,
       "tags": [
         "task_categories:question-answering",
         "task_categories:text-generation",
@@ -1127,8 +1127,8 @@
       "id": "HuggingFaceFW/fineweb",
       "author": "HuggingFaceFW",
       "type": "dataset",
-      "downloads": 163562,
-      "likes": 2676,
+      "downloads": 163436,
+      "likes": 2678,
       "tags": [
         "task_categories:text-generation",
         "language:en",
@@ -1143,7 +1143,7 @@
       "id": "Anthropic/hh-rlhf",
       "author": "Anthropic",
       "type": "dataset",
-      "downloads": 17609,
+      "downloads": 17506,
       "likes": 1664,
       "tags": [
         "license:mit",
@@ -1159,7 +1159,7 @@
       "id": "Open-Orca/OpenOrca",
       "author": "Open-Orca",
       "type": "dataset",
-      "downloads": 17086,
+      "downloads": 16725,
       "likes": 1502,
       "tags": [
         "task_categories:text-classification",
@@ -1175,7 +1175,7 @@
       "id": "OpenAssistant/oasst1",
       "author": "OpenAssistant",
       "type": "dataset",
-      "downloads": 11478,
+      "downloads": 11518,
       "likes": 1483,
       "tags": [
         "language:en",
@@ -1191,8 +1191,8 @@
       "id": "openai/gsm8k",
       "author": "openai",
       "type": "dataset",
-      "downloads": 465032,
-      "likes": 1175,
+      "downloads": 470393,
+      "likes": 1176,
       "tags": [
         "benchmark:official",
         "task_categories:text-generation",
@@ -1207,7 +1207,7 @@
       "id": "gsdf/EasyNegative",
       "author": "gsdf",
       "type": "dataset",
-      "downloads": 25635,
+      "downloads": 26327,
       "likes": 1166,
       "tags": [
         "license:other",
@@ -1223,7 +1223,7 @@
       "id": "wikimedia/wikipedia",
       "author": "wikimedia",
       "type": "dataset",
-      "downloads": 71359,
+      "downloads": 70877,
       "likes": 1144,
       "tags": [
         "task_categories:text-generation",
@@ -1239,7 +1239,7 @@
       "id": "togethercomputer/RedPajama-Data-1T",
       "author": "togethercomputer",
       "type": "dataset",
-      "downloads": 2315,
+      "downloads": 2355,
       "likes": 1137,
       "tags": [
         "task_categories:text-generation",
@@ -1255,7 +1255,7 @@
       "id": "FreedomIntelligence/medical-o1-reasoning-SFT",
       "author": "FreedomIntelligence",
       "type": "dataset",
-      "downloads": 3104,
+      "downloads": 3207,
       "likes": 1066,
       "tags": [
         "task_categories:question-answering",
@@ -1271,7 +1271,7 @@
       "id": "allenai/dolma",
       "author": "allenai",
       "type": "dataset",
-      "downloads": 5378,
+      "downloads": 5666,
       "likes": 992,
       "tags": [
         "task_categories:text-generation",
@@ -1287,8 +1287,8 @@
       "id": "HuggingFaceFW/fineweb-edu",
       "author": "HuggingFaceFW",
       "type": "dataset",
-      "downloads": 224680,
-      "likes": 963,
+      "downloads": 224324,
+      "likes": 965,
       "tags": [
         "task_categories:text-generation",
         "language:en",
@@ -1303,8 +1303,8 @@
       "id": "bigcode/the-stack",
       "author": "bigcode",
       "type": "dataset",
-      "downloads": 21437,
-      "likes": 959,
+      "downloads": 20985,
+      "likes": 960,
       "tags": [
         "task_categories:text-generation",
         "language_creators:crowdsourced",
@@ -1319,7 +1319,7 @@
       "id": "Nerfgun3/bad_prompt",
       "author": "Nerfgun3",
       "type": "dataset",
-      "downloads": 3374,
+      "downloads": 3430,
       "likes": 934,
       "tags": [
         "language:en",
@@ -1335,7 +1335,7 @@
       "id": "databricks/databricks-dolly-15k",
       "author": "databricks",
       "type": "dataset",
-      "downloads": 15811,
+      "downloads": 16023,
       "likes": 923,
       "tags": [
         "task_categories:question-answering",
@@ -1350,164 +1350,164 @@
   ],
   "recent_models_24h": [
     {
-      "id": "NathanRoll/writing-rlvr-qwen3-8b-lora",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-27T05:23:48.000Z",
-      "url": "https://huggingface.co/NathanRoll/writing-rlvr-qwen3-8b-lora"
-    },
-    {
-      "id": "Hi-Satoh/adv_MoE_sft3_dpo_merged",
+      "id": "juvereturn/Qwen3-0.6B-bible-assistant",
       "pipeline": "text-generation",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-27T05:23:46.000Z",
-      "url": "https://huggingface.co/Hi-Satoh/adv_MoE_sft3_dpo_merged"
+      "lastModified": "2026-02-28T05:12:30.000Z",
+      "url": "https://huggingface.co/juvereturn/Qwen3-0.6B-bible-assistant"
     },
     {
-      "id": "eoinf/H2_L2_dm128_metric_random_SeqUniform_L8_mix_random_tokens_uniform_vocab2000_f0d1",
+      "id": "WareefAlzubaidi/diac-KSAA-SharedTask",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-27T05:23:42.000Z",
-      "url": "https://huggingface.co/eoinf/H2_L2_dm128_metric_random_SeqUniform_L8_mix_random_tokens_uniform_vocab2000_f0d1"
+      "lastModified": "2026-02-28T05:12:30.000Z",
+      "url": "https://huggingface.co/WareefAlzubaidi/diac-KSAA-SharedTask"
     },
     {
-      "id": "arithmetic-circuit-overloading/Qwen3-32B-3d-1M-100K-0.1-reverse-padzero-plus-mul-sub-99-64D-1L-8H-256I",
+      "id": "krishna-munjam-sunking/whisper_large_sw_transcription_finetuning_checkpoint_6000_20260227_063129",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-27T05:23:30.000Z",
-      "url": "https://huggingface.co/arithmetic-circuit-overloading/Qwen3-32B-3d-1M-100K-0.1-reverse-padzero-plus-mul-sub-99-64D-1L-8H-256I"
+      "lastModified": "2026-02-28T05:12:27.000Z",
+      "url": "https://huggingface.co/krishna-munjam-sunking/whisper_large_sw_transcription_finetuning_checkpoint_6000_20260227_063129"
     },
     {
-      "id": "kgmrn/qwen2.5-7B-agent-trajectory-lora-v10",
+      "id": "neptunes5thmoon/equivariance",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-27T05:23:19.000Z",
-      "url": "https://huggingface.co/kgmrn/qwen2.5-7B-agent-trajectory-lora-v10"
+      "lastModified": "2026-02-28T05:12:23.000Z",
+      "url": "https://huggingface.co/neptunes5thmoon/equivariance"
     },
     {
-      "id": "SELEE/qwen3-4b-agent-v3-lora-v5",
+      "id": "xiaodayuda/model130",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-27T05:23:14.000Z",
-      "url": "https://huggingface.co/SELEE/qwen3-4b-agent-v3-lora-v5"
+      "lastModified": "2026-02-28T05:12:21.000Z",
+      "url": "https://huggingface.co/xiaodayuda/model130"
+    },
+    {
+      "id": "rajthakkar123/Omega-3060-Nano-1245",
+      "pipeline": "unknown",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-28T05:12:15.000Z",
+      "url": "https://huggingface.co/rajthakkar123/Omega-3060-Nano-1245"
+    },
+    {
+      "id": "zyouyc/qwen2_5-3b-instruct-trl-sft-ChartQA",
+      "pipeline": "unknown",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-28T05:12:13.000Z",
+      "url": "https://huggingface.co/zyouyc/qwen2_5-3b-instruct-trl-sft-ChartQA"
+    },
+    {
+      "id": "xiaodayuda/model129",
+      "pipeline": "unknown",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-28T05:12:10.000Z",
+      "url": "https://huggingface.co/xiaodayuda/model129"
+    },
+    {
+      "id": "xiaodayuda/model128",
+      "pipeline": "unknown",
+      "downloads": 0,
+      "likes": 0,
+      "lastModified": "2026-02-28T05:12:02.000Z",
+      "url": "https://huggingface.co/xiaodayuda/model128"
     },
     {
       "id": "RaushanTurganbay/audio-flamingo-3-hf-lora-finetuned",
       "pipeline": "text-generation",
-      "downloads": 57,
+      "downloads": 64,
       "likes": 0,
-      "lastModified": "2026-02-27T05:23:07.000Z",
+      "lastModified": "2026-02-28T05:12:01.000Z",
       "url": "https://huggingface.co/RaushanTurganbay/audio-flamingo-3-hf-lora-finetuned"
     },
     {
-      "id": "Firworks/Qwen3.5-35B-A3B-nvfp4",
+      "id": "SakethVemula/sslm-models",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-27T05:22:46.000Z",
-      "url": "https://huggingface.co/Firworks/Qwen3.5-35B-A3B-nvfp4"
+      "lastModified": "2026-02-28T05:11:55.000Z",
+      "url": "https://huggingface.co/SakethVemula/sslm-models"
     },
     {
-      "id": "tk256ailab/matsuo-llm-2025-advanced-v05",
+      "id": "zoramt/whisper-medium-khasi",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-27T05:22:37.000Z",
-      "url": "https://huggingface.co/tk256ailab/matsuo-llm-2025-advanced-v05"
+      "lastModified": "2026-02-28T05:11:52.000Z",
+      "url": "https://huggingface.co/zoramt/whisper-medium-khasi"
     },
     {
-      "id": "laion/dev_set_part1_10k_glm_4_7_traces_jupiter_cleaned",
+      "id": "xiaodayuda/model127",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-27T05:22:32.000Z",
-      "url": "https://huggingface.co/laion/dev_set_part1_10k_glm_4_7_traces_jupiter_cleaned"
+      "lastModified": "2026-02-28T05:11:50.000Z",
+      "url": "https://huggingface.co/xiaodayuda/model127"
     },
     {
-      "id": "ShaswatRobotics/franka_openpi_clean_contact",
+      "id": "xiaodayuda/model126",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-27T05:22:25.000Z",
-      "url": "https://huggingface.co/ShaswatRobotics/franka_openpi_clean_contact"
+      "lastModified": "2026-02-28T05:11:44.000Z",
+      "url": "https://huggingface.co/xiaodayuda/model126"
     },
     {
-      "id": "FloatDo/qwen3-0.6b-float-right-tagger-GGUF",
-      "pipeline": "text-generation",
+      "id": "mradermacher/CAT-Translate-7b-i1-GGUF",
+      "pipeline": "translation",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-27T05:22:24.000Z",
-      "url": "https://huggingface.co/FloatDo/qwen3-0.6b-float-right-tagger-GGUF"
+      "lastModified": "2026-02-28T05:11:40.000Z",
+      "url": "https://huggingface.co/mradermacher/CAT-Translate-7b-i1-GGUF"
     },
     {
-      "id": "Leia9719/whisper-PEFTtest10",
+      "id": "LogAIPlatform/NeKa-1",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-27T05:22:09.000Z",
-      "url": "https://huggingface.co/Leia9719/whisper-PEFTtest10"
+      "lastModified": "2026-02-28T05:11:39.000Z",
+      "url": "https://huggingface.co/LogAIPlatform/NeKa-1"
     },
     {
-      "id": "mradermacher/SwarmMed-14B-v2-merged-i1-GGUF",
+      "id": "xiaodayuda/model125",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-27T05:22:03.000Z",
-      "url": "https://huggingface.co/mradermacher/SwarmMed-14B-v2-merged-i1-GGUF"
+      "lastModified": "2026-02-28T05:11:37.000Z",
+      "url": "https://huggingface.co/xiaodayuda/model125"
     },
     {
-      "id": "alfiyahqthz/mentalbert-ce-dass-ann",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-27T05:21:58.000Z",
-      "url": "https://huggingface.co/alfiyahqthz/mentalbert-ce-dass-ann"
-    },
-    {
-      "id": "yfuruhashi/qwen3-4b-structured-sft_exp",
-      "pipeline": "unknown",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-27T05:21:51.000Z",
-      "url": "https://huggingface.co/yfuruhashi/qwen3-4b-structured-sft_exp"
-    },
-    {
-      "id": "meaisae/REQUESTMODELS",
+      "id": "mradermacher/MedQWEN-2.5-32B-i1-GGUF",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 1,
-      "lastModified": "2026-02-27T05:21:49.000Z",
-      "url": "https://huggingface.co/meaisae/REQUESTMODELS"
+      "lastModified": "2026-02-28T05:11:32.000Z",
+      "url": "https://huggingface.co/mradermacher/MedQWEN-2.5-32B-i1-GGUF"
     },
     {
-      "id": "FloatDo/qwen3-0.6b-float-right-tagger",
-      "pipeline": "text-generation",
-      "downloads": 0,
-      "likes": 0,
-      "lastModified": "2026-02-27T05:21:25.000Z",
-      "url": "https://huggingface.co/FloatDo/qwen3-0.6b-float-right-tagger"
-    },
-    {
-      "id": "shaheen6/PixelSmolLM_Full_converge",
+      "id": "xiaodayuda/model124",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-27T05:21:16.000Z",
-      "url": "https://huggingface.co/shaheen6/PixelSmolLM_Full_converge"
+      "lastModified": "2026-02-28T05:11:30.000Z",
+      "url": "https://huggingface.co/xiaodayuda/model124"
     },
     {
-      "id": "yunhaoli012/PPO_Qwen2.5-Math-1.5B-Instruct",
+      "id": "jasonhuang3/101-caldpo-dataset-our-76-zephyr-7b-sft-full-lora",
       "pipeline": "unknown",
       "downloads": 0,
       "likes": 0,
-      "lastModified": "2026-02-27T05:21:14.000Z",
-      "url": "https://huggingface.co/yunhaoli012/PPO_Qwen2.5-Math-1.5B-Instruct"
+      "lastModified": "2026-02-28T05:11:22.000Z",
+      "url": "https://huggingface.co/jasonhuang3/101-caldpo-dataset-our-76-zephyr-7b-sft-full-lora"
     }
   ]
 }

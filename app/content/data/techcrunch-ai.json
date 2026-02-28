@@ -1,160 +1,194 @@
 {
   "source": "TechCrunch",
   "url": "https://techcrunch.com",
-  "fetched_at": "2026-02-27T05:23:26.365Z",
+  "fetched_at": "2026-02-28T05:12:08.058Z",
   "total_parsed": 20,
-  "ai_filtered": 10,
+  "ai_filtered": 12,
   "articles": [
     {
-      "title": "Mistral AI inks a deal with global consulting giant Accenture",
-      "url": "https://techcrunch.com/2026/02/26/mistral-ai-inks-a-deal-with-global-consulting-giant-accenture/",
-      "date": "2026-02-26T19:17:27.000Z",
-      "description": "Mistral AI lands a partnership with Accenture, the consultant that has also recently announced partnerships with rivals OpenAI and Anthropic.",
-      "author": "Rebecca Szkutak",
+      "title": "Employees at Google and OpenAI support Anthropic's Pentagon stand in open letter",
+      "url": "https://techcrunch.com/2026/02/27/employees-at-google-and-openai-support-anthropics-pentagon-stand-in-open-letter/",
+      "date": "2026-02-27T16:23:58.000Z",
+      "description": "While Anthropic has an existing partnership with the Pentagon, the AI company has remained firm that its technology not be used for mass domestic surveillance or fully autonomous weaponry.",
+      "author": "Amanda Silberling",
       "categories": [
         "AI",
-        "Enterprise",
-        "Accenture",
         "Anthropic",
+        "dario amodei",
+        "pentagon"
+      ]
+    },
+    {
+      "title": "ChatGPT reaches 900M weekly active users",
+      "url": "https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users/",
+      "date": "2026-02-27T18:25:51.000Z",
+      "description": "OpenAI shared the new numbers as part of its announcement that it has raised $110 billion in private funding.",
+      "author": "Aisha Malik",
+      "categories": [
+        "AI",
+        "Apps",
+        "ChatGPT",
         "In Brief",
-        "Mistral AI",
         "OpenAI"
       ]
     },
     {
-      "title": "So, we're getting Prada Meta AI glasses, right?",
-      "url": "https://techcrunch.com/2026/02/26/so-were-getting-prada-meta-ai-glasses-right/",
-      "date": "2026-02-26T20:11:55.000Z",
-      "description": "Mark Zuckerberg was at Prada's fashion week event in Milan, leaving everyone to wonder if we're getting Meta AI glasses under the Prada brand.",
-      "author": "Sarah Perez",
+      "title": "OpenAI raises $110B in one of the largest private funding rounds in history",
+      "url": "https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/",
+      "date": "2026-02-27T14:13:01.000Z",
+      "description": "The new funding consists of a $50 billion investment from Amazon as well as $30 billion each from Nvidia and SoftBank, against a $730 billion valuation.",
+      "author": "Russell Brandom",
       "categories": [
         "AI",
-        "Gadgets",
-        "ai glasses",
-        "Fashion",
-        "Meta",
-        "prada",
-        "smartglasses"
+        "Fundraising",
+        "Amazon",
+        "nvidia",
+        "OpenAI",
+        "Softbank"
       ]
     },
     {
-      "title": "Read AI launches an email-based &#8216;digital twin' to help you with schedules and answers",
-      "url": "https://techcrunch.com/2026/02/26/read-ai-launches-an-email-based-digital-twin-to-help-you-with-schedules-and-answers/",
-      "date": "2026-02-26T17:00:00.000Z",
-      "description": "Read AI is launching Ada, which can reply with your availability and extract answers from the company knowledge base and the web.",
-      "author": "Ivan Mehta",
+      "title": "AI music generator Suno hits 2M paid subscribers and $300M in annual recurring revenue",
+      "url": "https://techcrunch.com/2026/02/27/ai-music-generator-suno-hits-2-million-paid-subscribers-and-300m-in-annual-recurring-revenue/",
+      "date": "2026-02-27T17:22:02.000Z",
+      "description": "Suno lets users create music using natural language prompts, making it possible for people with little experience to generate audio with little effort.",
+      "author": "Amanda Silberling",
       "categories": [
         "AI",
-        "meeting notes",
-        "Read AI"
+        "Media & Entertainment",
+        "ai music",
+        "In Brief",
+        "Music",
+        "suno"
       ]
     },
     {
-      "title": "Anthropic CEO stands firm as Pentagon deadline looms",
-      "url": "https://techcrunch.com/2026/02/26/anthropic-ceo-stands-firm-as-pentagon-deadline-looms/",
-      "date": "2026-02-26T23:19:06.000Z",
-      "description": "Anthropic CEO Dario Amodei said Thursday that he \"cannot in good conscience accede\" to the Pentagon's demands to give the military unrestricted access to its AI systems.",
+      "title": "Perplexity's new Computer is another bet that users need many AI models",
+      "url": "https://techcrunch.com/2026/02/27/perplexitys-new-computer-is-another-bet-that-users-need-many-ai-models/",
+      "date": "2026-02-27T17:00:55.000Z",
+      "description": "Perplexity Computer, in the company’s words, \"unifies every current AI capability into a single system.\"",
+      "author": "Tim Fernholz",
+      "categories": [
+        "AI",
+        "Perplexity"
+      ]
+    },
+    {
+      "title": "Anthropic vs. the Pentagon: What’s actually at stake?",
+      "url": "https://techcrunch.com/2026/02/27/anthropic-vs-the-pentagon-whats-actually-at-stake/",
+      "date": "2026-02-27T19:11:04.000Z",
+      "description": "Anthropic and the Pentagon are clashing over AI use in autonomous weapons and surveillance, raising high-stakes questions about national security, corporate control, and who sets the rules for military AI.",
       "author": "Rebecca Bellan",
       "categories": [
         "AI",
         "Government & Policy",
-        "pentagon",
-        "dod",
         "Anthropic",
+        "Claude",
         "dario amodei",
+        "dod",
         "pete hegseth"
       ]
     },
     {
-      "title": "Google paid startup Form Energy $1B for its massive 100-hour battery",
-      "url": "https://techcrunch.com/2026/02/26/google-paid-startup-form-energy-1b-for-its-massive-100-hour-battery/",
-      "date": "2026-02-26T21:04:23.000Z",
-      "description": "The deal paves the way for Form Energy to raise a new funding round before potentially going public next year.",
-      "author": "Tim De Chant",
-      "categories": [
-        "Crypto",
-        "Enterprise",
-        "Batteries",
-        "data centers",
-        "energy storage",
-        "Form Energy",
-        "Google",
-        "In Brief",
-        "renewable power"
-      ]
-    },
-    {
-      "title": "Bumble adds AI-powered photo feedback and profile guidance tools",
-      "url": "https://techcrunch.com/2026/02/26/bumble-adds-ai-powered-photo-feedback-and-profile-guidance-tools/",
-      "date": "2026-02-26T16:38:59.000Z",
-      "description": "Bumble and other popular dating apps, like Match Group's Tinder and Hinge, have all embraced AI-powered features.",
-      "author": "Amanda Silberling",
+      "title": "Musk bashes OpenAI in deposition, saying &#8216;nobody committed suicide because of Grok'",
+      "url": "https://techcrunch.com/2026/02/27/musk-bashes-openai-in-deposition-saying-nobody-committed-suicide-because-of-grok/",
+      "date": "2026-02-27T19:42:00.000Z",
+      "description": "In his lawsuit against OpenAI, Musk touted xAI safety compared with ChatGPT. A few months later, xAI's Grok flooded X with nonconsensual nude images.",
+      "author": "Sarah Perez",
       "categories": [
         "AI",
-        "Apps",
-        "bumble",
-        "dating apps"
-      ]
-    },
-    {
-      "title": "Google launches Nano Banana 2 model with faster image generation",
-      "url": "https://techcrunch.com/2026/02/26/google-launches-nano-banana-2-model-with-faster-image-generation/",
-      "date": "2026-02-26T16:00:00.000Z",
-      "description": "Google is making Nano Banana 2 a default model in Gemini app and in AI mode.",
-      "author": "Ivan Mehta",
-      "categories": [
-        "AI",
-        "Apps",
-        "TC",
-        "gemini",
-        "Google",
-        "image generation",
-        "Nano Banana 2"
-      ]
-    },
-    {
-      "title": "Jack Dorsey just halved the size of Block's employee base — and he says your company is next",
-      "url": "https://techcrunch.com/2026/02/26/jack-dorsey-block-layoffs-4000-halved-employees-your-company-is-next/",
-      "date": "2026-02-26T23:43:32.000Z",
-      "description": "Jack Dorsey has long been an open admirer of Elon Musk. Now, it seems, he may have been taking notes.",
-      "author": "Connie Loizos",
-      "categories": [
-        "AI",
-        "Fintech",
-        "Amazon",
-        "block",
+        "ChatGPT",
         "Elon Musk",
-        "jack dorsey",
-        "Layoffs"
+        "Grok",
+        "lawsuit",
+        "musk vs altman",
+        "OpenAI",
+        "xAI"
       ]
     },
     {
-      "title": "Sophia Space raises $10M seed to demo novel space computers",
-      "url": "https://techcrunch.com/2026/02/26/sophia-space-raises-10m-seed-to-demo-novel-space-computers/",
-      "date": "2026-02-26T19:55:20.000Z",
-      "description": "The company's modular computer tiles offer a new vision for space data centers.",
-      "author": "Tim Fernholz",
+      "title": "OpenAI fires employee for using confidential info on prediction markets",
+      "url": "https://techcrunch.com/2026/02/27/openai-fires-employee-for-using-confidential-info-on-prediction-markets/",
+      "date": "2026-02-27T23:00:54.000Z",
+      "description": "The company said such trades violates its internal company policies about using confidential information for personal gain.",
+      "author": "Julie Bort",
+      "categories": [
+        "Apps",
+        "Fintech",
+        "TC",
+        "In Brief",
+        "insider trading",
+        "OpenAI",
+        "Polymarket"
+      ]
+    },
+    {
+      "title": "Pentagon moves to designate Anthropic as a supply-chain risk",
+      "url": "https://techcrunch.com/2026/02/27/pentagon-moves-to-designate-anthropic-as-a-supply-chain-risk/",
+      "date": "2026-02-27T21:53:14.000Z",
+      "description": "\"We don't need it, we don't want it, and will not do business with them again,\" the president wrote in the post.",
+      "author": "Russell Brandom",
       "categories": [
         "AI",
-        "Space",
-        "Exclusive",
-        "orbital computers"
+        "Anthropic",
+        "autonomous weapons",
+        "In Brief",
+        "pentagon"
       ]
     },
     {
-      "title": "Self-driving truck startup Einride raises $113M PIPE ahead of public debut",
-      "url": "https://techcrunch.com/2026/02/26/self-driving-truck-startup-einride-raises-113m-pipe-ahead-of-public-debut/",
-      "date": "2026-02-26T16:32:31.000Z",
-      "description": "The proceeds will support Einride’s technology roadmap, global expansion, and autonomous deployments in North America, Europe, and the Middle East.",
-      "author": "Rebecca Bellan",
+      "title": "India disrupts access to popular developer platform Supabase with blocking order",
+      "url": "https://techcrunch.com/2026/02/27/india-disrupts-access-to-popular-developer-platform-supabase-with-blocking-order/",
+      "date": "2026-02-28T03:51:52.000Z",
+      "description": "India, one of Supabase’s biggest markets, is seeing patchy access after a government block order.",
+      "author": "Jagmeet Singh",
       "categories": [
-        "Fundraising",
+        "Enterprise",
+        "Government & Policy",
+        "Security",
+        "Startups",
+        "Airtel",
+        "Exclusive",
+        "JioFiber",
+        "reliance jio",
+        "Supabase"
+      ]
+    },
+    {
+      "title": "Apple and Netflix team up to air Formula 1 Canadian Grand Prix",
+      "url": "https://techcrunch.com/2026/02/27/apple-and-netflix-team-up-to-air-formula-1-canadian-grand-prix/",
+      "date": "2026-02-27T17:17:18.000Z",
+      "description": "As Netflix continues its live sports push, the company has partnered with Apple to air the Formula 1 Canadian Grand Prix.",
+      "author": "Lauren Forristal",
+      "categories": [
+        "Media & Entertainment",
+        "apple tv",
+        "formula 1",
+        "Live Sports",
+        "Netflix"
+      ]
+    },
+    {
+      "title": "Last 24 hours to get TechCrunch Disrupt 2026 tickets at the lowest rates of the year",
+      "url": "https://techcrunch.com/2026/02/27/last-24-hours-to-get-techcrunch-disrupt-2026-tickets-at-the-lowest-rates-of-the-year/",
+      "date": "2026-02-27T15:00:00.000Z",
+      "description": "The lowest rates of the year for TechCrunch Disrupt 2026 end after today. Prices go up at 11:59 p.m. PT. Don't miss connecting with 10,000 founders, investors, and operators, and key takeaways from 250+ industry leaders. Register now to save up to $680, or up to 30% on group passes.",
+      "author": "TechCrunch Events",
+      "categories": [
         "Startups",
         "Transportation",
-        "autonomous trucks",
-        "einride",
-        "self-driving trucks",
-        "SPAC"
+        "Space",
+        "Hardware",
+        "Fintech",
+        "Biotech & Health",
+        "Venture",
+        "Media & Entertainment",
+        "AI",
+        "Apps",
+        "Gadgets",
+        "Robotics",
+        "Fundraising",
+        "TechCrunch Disrupt 2026"
       ]
     }
   ]
